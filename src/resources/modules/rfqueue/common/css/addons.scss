@@ -1,0 +1,94 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ADDONS */
+
+.text-nowrap {
+  white-space: nowrap!important;
+}
+
+.custom-filter-dropdown {
+    padding: 8px;
+    border-radius: 6px;
+    background: $white;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .15);
+}
+
+.custom-filter-dropdown input {
+    width: 130px;
+    margin-right: 8px;
+}
+
+.rfq__upload {
+    display: block;
+    .ant-upload {
+        height: 350px;
+    }
+}
+
+.rfq__widget__count__value {
+    height: 3.9em;
+}
+
+.rfq__count__value {
+    height: 2.3em;
+}
+
+.rfq__products__value {
+    height: 2.1em;
+}
+
+.rfq__not-found-page {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding-top: rem(90);
+
+    &__text {
+        padding-top: rem(170);
+
+        img {
+            margin-left: -10px;
+        }
+    }
+
+    &__img {
+        @media (max-width: $md-max-width) {
+            text-align: center;
+        }
+    }
+}
+
+.rfq__utility__loading-fullscreen {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f2f4f8;
+}
+
+.cat__pages__login--fullscreen {
+    z-index: 1000;
+}
+
+.ant-notification {
+    z-index: 1002;
+}
+
+.rfq__submitRequestContainer {
+  @media (max-width: $sm-max-width) {
+    display: none !important;
+  }
+  .ant-steps-description {
+    @media (max-width: $md-max-width) {
+      display: none !important;
+    }
+  }
+}

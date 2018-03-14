@@ -1,0 +1,34 @@
+{
+  "progressGroup": {
+    "first": {
+      "name": "Work Progress:",
+      "description": "Ipsum is simply dummy",
+      "progress": "87",
+      "status": "active"
+    },
+    "second": {
+      "name": "Airplanes:",
+      "description": "Typesetting industry",
+      "progress": "23",
+      "status": "active"
+    },
+    "third": {
+      "name": "Robots:",
+      "description": "Typesetting industry",
+      "progress": "46",
+      "status": "exception"
+    },
+    "fourth": {
+      "name": "Automotive:",
+      "description": "Typesetting industry",
+      "progress": "78",
+      "status": "active"
+    },
+    "fives": {
+      "name": "Total Time:",
+      "description": "Printing and typesetting",
+      "progress": "100",
+      "status": ""
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../../resources/modules/core/common/css/_mixins.scss';
+
+.cat__core__widget {
+  border: 0px solid $white;
+  background: $white;
+  position: relative;
+  border-radius: .25rem;
+  margin-bottom: 1.35rem;
+
+  &--border {
+    border: 1px solid $gray-border;
+  }
+
+  &__2 {
+    &__head {
+      height: rem(250);
+      background: $gray-lighten-more;
+      background-size: cover;
+      background-position: center center;
+      border-radius: .25rem;
+      line-height: 1.1;
+      padding: rem(25) rem(30);
+    }
+
+    &__left {
+      float: left;
+      padding-left: rem(20);
+      margin-top: rem(-50);
+    }
+
+    &__right {
+      margin-left: rem(140);
+      padding-top: rem(45);
+      padding-right: rem(20);
+      padding-bottom: 1px;
+    }
+  }
+}

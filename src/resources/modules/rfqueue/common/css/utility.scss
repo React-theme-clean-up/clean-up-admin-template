@@ -1,0 +1,135 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  UTILITIES */
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.rfq {
+  &__utility {
+
+    &__fix-error-input {
+      .has-error .ant-input, .has-error .ant-input:hover {
+        border-color: rgb(228, 233, 240) !important;
+      }
+    }
+
+    &__highlight {
+      background: yellow;
+    }
+
+    &__loading-fullscreen {
+      z-index: 900;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+    }
+
+    &__form-fix {
+      height: 1px;
+    }
+
+    &__negative-margin--10 {
+      margin-bottom: rem(-10);
+    }
+
+    &__line {
+      padding-bottom: rem(20);
+      margin-bottom: rem(30);
+      border-bottom: 1px solid $gray-border;
+    }
+
+    &__arrow {
+      color: $text-lighten;
+      font-size: rem(11);
+      line-height: 1;
+      position: relative;
+      top: rem(-2);
+      margin: 0 rem(10);
+    }
+
+    &__browser-icon {
+      font-size: rem(30);
+      margin-right: rem(10);
+      position: relative;
+      margin-bottom: rem(30);
+      display: inline-block;
+    }
+
+    &__reg-steps {
+      &__title {
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-size: rem(16);
+        text-transform: uppercase;
+        margin: rem(20) 0;
+      }
+    }
+
+    @at-root {
+      .tab-pane > .row {
+        width: 100%;
+      }
+
+      .carousel--dark-controls {
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+          background: none;
+          color: $text;
+          font-size: rem(32);
+        }
+
+        .carousel-indicators li {
+          background: $gray;
+          &.active {
+            background: $gray;
+          }
+        }
+      }
+
+      .carousel--cards {
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+          margin-top: rem(-180);
+        }
+      }
+
+      .modal-dialog {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+        @media(max-width: 768px) {
+          min-height: calc(100vh - 20px);
+        }
+      }
+
+      .px-5-sm {
+        @media (min-width: $sm-min-width) {
+          padding-left: 5rem;
+          padding-right: 5rem;
+        }
+      }
+
+      @media (max-width: $sm-max-width) {
+        .nav-tabs-horizontal .nav {
+          display: block;
+          border: none;
+
+          .nav-item {
+            display: inline-block;
+
+            .nav-link {
+              margin-bottom: rem(10);
+            }
+          }
+        }
+      }
+    }
+  }
+}

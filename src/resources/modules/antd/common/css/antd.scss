@@ -1,0 +1,226 @@
+// Import mixins from "core" module
+@import '../../../core/common/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN */
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  CUSTOM */
+
+.rfq {
+  &__ant {
+
+    &__modalInfo {
+      margin: 150px auto 30px;
+      display: block !important;
+
+      .ant-btn {
+        height: auto;
+        padding: 10px 15px;
+      }
+    }
+
+    // VERTICAL MODAL FIX
+    &__modal {
+      text-align: center;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 0;
+      }
+
+      .ant-modal-body {
+        padding: 20px;
+      }
+    }
+
+    &__form-checkbox {
+      line-height: 1.5;
+    }
+
+    &__label-fix {
+      label, .ant-form-item-label {
+        line-height: 1.6;
+      }
+
+      .ant-form-item-control {
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.ant-form-horizontal {
+  .ant-form-item label, .ant-form-item-label {
+    line-height: 36px;
+  }
+}
+
+.ant-form-item-control {
+  line-height: 1;
+}
+
+.ant-badge-count {
+  font-family: inherit;
+}
+
+.ant-dropdown-menu {
+  border: 1px solid #e9e9e9;
+}
+
+.ant-calendar {
+  border: 1px solid #e9e9e9;
+}
+
+.ant-select-dropdown {
+  border: 1px solid #e9e9e9;
+}
+
+.ant-cascader-menus {
+  border: 1px solid #e9e9e9;
+}
+
+.ant-pagination-item-active {
+  color: white;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: none;
+}
+
+.ant-slider-with-marks {
+  margin-bottom: 19px;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* MODAL */
+.ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+
+.ant-modal-body {
+  padding: 0;
+}
+
+.ant-modal-close {
+  outline: none !important;
+}
+
+.ant-modal-mask {
+  background: rgba(#0f0c29, .5);
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* DROPDOWN */
+
+.ant-dropdown {
+  animation-duration: 0s !important;
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  font-size: rem(14);
+  padding: rem(8) rem(20);
+}
+
+.ant-dropdown-menu-item > a,
+.ant-dropdown-menu-submenu-title > a {
+  padding: rem(8) rem(20);
+  margin: rem(-8) rem(-20);
+}
+
+.ant-dropdown-menu-item > a.btn,
+.ant-dropdown-menu-submenu-title > a.btn {
+  margin: rem(-8) 0;
+}
+
+.ant-dropdown-menu-item-group-title {
+  font-weight: bold;
+  font-size: rem(14);
+  padding: rem(12) rem(20);
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* FORMS */
+
+.ant-input {
+  padding: 10px 13px;
+}
+
+.ant-input-disabled {
+  background: $gray-lighten-more-more;
+}
+
+.ant-form-item-label {
+  text-align: left;
+  label {
+    margin-bottom: 0;
+  }
+}
+
+.ant-form-item > .ant-form-item, .ant-form-item :not(.ant-form) > .ant-form-item {
+  margin-top: -2px;
+}
+
+form .ant-select:only-child, form .ant-cascader-picker:only-child {
+  display: inline-block;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* CALENDAR */
+
+.ant-calendar-picker-container {
+  animation-duration: 0s !important;
+}
+
+.ant-calendar-range .ant-calendar-input-wrap {
+  height: 38px;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* SELECT */
+
+.ant-select-dropdown {
+  animation-duration: 0s !important;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* AUTOCOMPLETE */
+
+.ant-select-auto-complete {
+  ol, ul, dl {
+    margin: 0;
+  }
+}
+
+.ant-select-dropdown {
+  animation-duration: 0s !important;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* BACK TOP */
+
+
+.ant-back-top {
+  right: rem(50);
+  bottom: rem(50);
+}
+
+.ant-collapse {
+  background: transparent;
+}
