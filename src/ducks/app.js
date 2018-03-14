@@ -59,9 +59,9 @@ export function initAuth(dispatch) {
   }
 }
 
-export function login( username, password, dispatch ) {
-  if ( username === "nicktabolich@live.com" && password === "123123") {
-    window.localStorage.setItem('app.Authorization', "qwerty")
+export function login(username, password, dispatch) {
+  if (username === 'nicktabolich@live.com' && password === '123123') {
+    window.localStorage.setItem('app.Authorization', 'qwerty')
     dispatch(_setHideLogin(true))
     dispatch(setCommonLogin())
     dispatch(push('/dashboard'))
@@ -88,8 +88,8 @@ export const logout = () => (dispatch: Function, getState: Function) => {
 const initialState = {
   from: '',
   isMenuLeft:
-  (window.localStorage.getItem('app.isMenuLeft') ||
-    (window.localStorage.setItem('app.isMenuLeft', 'on'), 'on')) === 'on',
+    (window.localStorage.getItem('app.isMenuLeft') ||
+      (window.localStorage.setItem('app.isMenuLeft', 'on'), 'on')) === 'on',
   isUpdatingContent: false,
   isUpdatingDashboard: false,
   commonLogin: '',

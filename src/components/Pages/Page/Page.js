@@ -81,10 +81,10 @@ class Page extends React.Component {
 
   componentDidMount() {
     const { onMounted, dispatch } = this.props
-    let initLoggined = initAuth( dispatch )
+    let initLoggined = initAuth(dispatch)
 
     if (initLoggined) {
-      this._onMounted = function () {
+      this._onMounted = function() {
         return onMounted()
       }
     } else {
@@ -102,11 +102,11 @@ class Page extends React.Component {
         }
       }, 300) // демонстрировать state.app.isLoading не менее 300 мс
       if (this._onMounted) {
-          isResolve = true
-          if (!this.timeoutId) {
-            this.stopLoading()
-          }
+        isResolve = true
+        if (!this.timeoutId) {
+          this.stopLoading()
         }
+      }
     } else {
       this.updateContent()
     }

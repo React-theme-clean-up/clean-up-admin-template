@@ -13,7 +13,7 @@ export const submit = ({ username, password }: { username: string, password: str
 
   let isLoggined = app.login(username, password, dispatch)
 
-  if ( isLoggined ) {
+  if (isLoggined) {
     dispatch(app.deleteSubmitForm(REDUCER))
   } else {
     dispatch(app.deleteSubmitForm(REDUCER))

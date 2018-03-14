@@ -11,7 +11,7 @@ class Search extends React.Component {
     return (
       <div className="cat__top-bar__search">
         <i className="icmn-search" />
-          <Input size="small" type="text" placeholder="Type of search..." />
+        <Input size="small" type="text" placeholder="Type of search..." />
       </div>
     )
   }

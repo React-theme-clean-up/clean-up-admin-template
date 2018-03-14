@@ -18,9 +18,9 @@ class TopBar extends React.Component {
               <strong>Clean ui logo</strong>
             </Link>
           </div>
-            <div className="cat__top-bar__item hidden-lg-down">
-              <Search />
-            </div>
+          <div className="cat__top-bar__item hidden-lg-down">
+            <Search />
+          </div>
         </div>
         <div className="cat__top-bar__right">
           <div className="cat__top-bar__item">
