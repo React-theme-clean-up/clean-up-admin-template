@@ -11,11 +11,9 @@ class SliderCard extends React.Component {
   getParams = () => {
     let params = this.props
 
-    let {
-      inverse,
-    } = this.state
+    let { inverse } = this.state
 
-    if ( params.inverse !==undefined ) {
+    if (params.inverse !== undefined) {
       inverse = params.inverse
     }
 
@@ -29,14 +27,10 @@ class SliderCard extends React.Component {
   }
 
   render() {
-    let {
-      inverse,
-    } = this.state
+    let { inverse } = this.state
 
     return (
-      <div className={`sliderCard ${inverse === true
-        ? 'sliderCard--inverse'
-        : ''}`}>
+      <div className={`sliderCard ${inverse === true ? 'sliderCard--inverse' : ''}`}>
         <Carousel autoplay>
           <div className="sliderCard__item">
             <a href="javascript: void(0);" className="sliderCard__body">

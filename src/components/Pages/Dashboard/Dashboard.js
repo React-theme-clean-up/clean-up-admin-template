@@ -345,10 +345,10 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-4">
-                    <UserCard type="warning"/>
+                    <UserCard type="warning" />
                   </div>
                   <div className="col-xl-4">
-                    <UserCard type="default"/>
+                    <UserCard type="default" />
                   </div>
                   <div className="col-xl-4">
                     <UserCard />
@@ -404,7 +404,7 @@ class Dashboard extends React.Component {
                     <SliderCard />
                   </div>
                   <div className="col-lg-6">
-                    <SliderCard inverse={true}/>
+                    <SliderCard inverse={true} />
                   </div>
                 </div>
               </div>
@@ -455,13 +455,13 @@ class Dashboard extends React.Component {
             <div className="card-body">
               <div className="row">
                 <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="database" btnType='success'/>
+                  <InfoCard form="interactive" icon="database" btnType="success" />
                 </div>
                 <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="users" btnType="warning"/>
+                  <InfoCard form="interactive" icon="users" btnType="warning" />
                 </div>
                 <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="home" btnType="default"/>
+                  <InfoCard form="interactive" icon="home" btnType="default" />
                 </div>
               </div>
             </div>
