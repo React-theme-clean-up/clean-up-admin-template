@@ -6,15 +6,14 @@ class InfoCard extends React.Component {
   state = {
     form: 'stats',
     icon: 'bullhorn',
-    type: 'success',
+    type: '',
     className: 'infoCard',
+    btnType: 'default',
   }
 
   getParams = () => {
     let params = this.props
-    let { form, icon, type, className } = this.state
-
-    console.log(params)
+    let { form, icon, type, className, btnType } = this.state
 
     if (params.form !== undefined) {
       form = params.form
@@ -31,11 +30,18 @@ class InfoCard extends React.Component {
       className = className + '  infoCard--' + type
     }
 
+    if (params.btnType !== undefined) {
+      btnType = params.btnType
+    } else {
+      btnType = type
+    }
+
     this.setState({
       form: form,
       icon: icon,
       type: type,
       className: className,
+      btnType: btnType,
     })
   }
 
@@ -44,12 +50,12 @@ class InfoCard extends React.Component {
   }
 
   render() {
-    const { form, icon, className, type } = this.state
+    const { form, icon, className, type, btnType } = this.state
 
     return (
       <div>
         {form === 'stats' &&
-          <div className={className + ' mb-4'}>
+          <div className={className + ' mb-2'}>
             <span className="infoCard__digit">
               <i className={'icmn-' + icon} />
             </span>
@@ -63,7 +69,7 @@ class InfoCard extends React.Component {
             </div>
           </div>}
         {form === 'interactive' &&
-          <div className={className + ' infoCard--interactive px-3 py-5'}>
+          <div className={className + ' infoCard--interactive px-3 py-5 mb-2'}>
             <div className="infoCard__icon text-center font-size-30">
               <i className={'icmn-' + icon} />
             </div>
@@ -71,13 +77,13 @@ class InfoCard extends React.Component {
               <div className="mb-2">
                 <p>Lorem Ipsum is simply dummy text of printing the printing and typesetti...</p>
               </div>
-              <a href="javascript: void(0)" className={'btn btn-outline-' + type}>
+              <a href="javascript: void(0)" className={'btn btn-outline-' + btnType}>
                 Information
               </a>
             </div>
           </div>}
         {form === 'bordered' &&
-          <div className={className + ' infoCard--bordered'}>
+          <div className={className + ' infoCard--bordered mb-2'}>
             <span className="infoCard__digit">
               <i className={'icmn-' + icon} />
             </span>

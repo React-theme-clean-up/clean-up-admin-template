@@ -4,28 +4,60 @@ import { Carousel } from 'antd'
 import './SliderCard.css'
 
 class SliderCard extends React.Component {
+  state = {
+    inverse: false,
+  }
+
+  getParams = () => {
+    let params = this.props
+
+    let {
+      inverse,
+    } = this.state
+
+    if ( params.inverse !==undefined ) {
+      inverse = params.inverse
+    }
+
+    this.setState({
+      inverse: inverse,
+    })
+  }
+
+  componentWillMount() {
+    this.getParams()
+  }
+
   render() {
+    let {
+      inverse,
+    } = this.state
+
     return (
-      <Carousel autoplay>
-        <div className="sliderCard__item bg-default active">
-          <a href="javascript: void(0);" className="sliderCard__body text-white">
-            <div className="sliderCard__icon">
-              <i className="icmn-accessibility" />
-            </div>
-            <h2 className="text-white">Sales Growth</h2>
-            <p>View Report</p>
-          </a>
-        </div>
-        <div className="sliderCard__item bg-default">
-          <a href="javascript: void(0);" className="sliderCard__body text-white">
-            <div className="sliderCard__icon">
-              <i className="icmn-download" />
-            </div>
-            <h2 className="text-white">All Reports</h2>
-            <p>Pdf Download</p>
-          </a>
-        </div>
-      </Carousel>
+      <div className={`sliderCard ${inverse === true
+        ? 'sliderCard--inverse'
+        : ''}`}>
+        <Carousel autoplay>
+          <div className="sliderCard__item">
+            <a href="javascript: void(0);" className="sliderCard__body">
+              <div className="sliderCard__icon">
+                <i className="icmn-accessibility" />
+              </div>
+              <h2>Sales Growth</h2>
+              <p>View Report</p>
+            </a>
+          </div>
+          <div className="sliderCard__item">
+            <a href="javascript: void(0);" className="sliderCard__body">
+              <div className="sliderCard__icon">
+                <i className="icmn-download" />
+              </div>
+              <h2>All Reports</h2>
+              <p>Pdf Download</p>
+            </a>
+          </div>
+        </Carousel>
+      </div>
     )
   }
 }

@@ -8,6 +8,24 @@
   margin-bottom: 1.35rem;
   border: 1px solid $gray-border;
 
+  &--typed {
+
+    .userCard {
+
+      &__userName {
+        color: $white;
+      }
+
+      &__post {
+        color: $white;
+      }
+    }
+  }
+
+  &__post {
+     color: $text-lighten;
+  }
+
   &__plusBtn {
     font-size: 0;
     background-color: $white;
