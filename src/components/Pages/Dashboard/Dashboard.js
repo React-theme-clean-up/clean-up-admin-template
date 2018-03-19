@@ -4,7 +4,14 @@ import { Slider, Calendar, Badge, Table, Input, Dropdown, Button, Icon, Carousel
 import ChartistGraph from 'react-chartist'
 import Chartist from 'chartist'
 
-import { rangeSlider, calendarData, weekChartistData, monthCartistData, taskTableData, tableData } from './data.json'
+import {
+  rangeSlider,
+  calendarData,
+  weekChartistData,
+  monthCartistData,
+  taskTableData,
+  tableData,
+} from './data.json'
 
 import Donut from 'components/CleanComponents/Donut/Donut'
 import UserCard from 'components/CleanComponents/UserCard/UserCard'
@@ -28,32 +35,30 @@ const rangeMarks = {
   80: '80',
   90: '90',
   100: '100',
-};
+}
 
 // Calendar Settings //
 function getListData(value) {
-  let date = value.date();
-  let itemName = 'date_' + date;
-  let listData;
+  let date = value.date()
+  let itemName = 'date_' + date
+  let listData
   if (calendarData[itemName] !== undefined) {
     listData = calendarData[itemName]
   }
-  return listData || [];
+  return listData || []
 }
 
 function dateCellRender(value) {
-  const listData = getListData(value);
+  const listData = getListData(value)
   return (
     <ul className="events">
-      {
-        listData.map(item => (
-          <li key={item.content}>
-            <Badge status={item.type} text={item.content}/>
-          </li>
-        ))
-      }
+      {listData.map(item =>
+        <li key={item.content}>
+          <Badge status={item.type} text={item.content} />
+        </li>,
+      )}
     </ul>
-  );
+  )
 }
 
 // Week Chartist Settings //
@@ -77,7 +82,6 @@ const monthChartistOptions = {
 }
 
 class Dashboard extends React.Component {
-
   state = {
     rangeMarks: rangeMarks,
     weekChartistData: weekChartistData,
@@ -88,16 +92,15 @@ class Dashboard extends React.Component {
     searchText: '',
     filtered: false,
     sortedInfo: null,
-  };
+  }
 
   // Task Table Settings //
   onSelectChange = taskTableSelectedRowKeys => {
     this.setState({ taskTableSelectedRowKeys })
   }
 
-
   onInputChange = e => {
-    this.setState({searchText: e.target.value})
+    this.setState({ searchText: e.target.value })
   }
 
   handleChange = (pagination, filters, sorter) => {
@@ -114,43 +117,42 @@ class Dashboard extends React.Component {
       filterDropdownVisible: false,
       filtered: !!searchText,
       tableData: tableData
-      .map(record => {
-        const match = record.name.match(reg)
-        if (!match) {
-          return null
-        }
-        return {
-          ...record,
-          name: (
-            <span>
+        .map(record => {
+          const match = record.name.match(reg)
+          if (!match) {
+            return null
+          }
+          return {
+            ...record,
+            name: (
+              <span>
                 {record.name.split(reg).map(
                   (text, i) =>
                     i > 0
                       ? [
-                        <span style={{backgroundColor: 'yellow'}}>
+                          <span style={{ backgroundColor: 'yellow' }}>
                             {match[0]}
                           </span>,
-                        text,
-                      ]
+                          text,
+                        ]
                       : text,
                 )}
               </span>
-          ),
-        }
-      })
-      .filter(record => !!record),
+            ),
+          }
+        })
+        .filter(record => !!record),
     })
   }
 
   render() {
-
     let {
       rangeMarks,
       weekChartistData,
       monthCartistData,
       taskTableSelectedRowKeys,
       // sortedInfo,
-    } = this.state;
+    } = this.state
 
     // Task Table Settings //
     const taskTableRowSelection = {
@@ -217,7 +219,7 @@ class Dashboard extends React.Component {
           </div>
         ),
         filterIcon: (
-          <Icon type="search" style={{color: this.state.filtered ? '#108ee9' : '#aaa'}}/>
+          <Icon type="search" style={{ color: this.state.filtered ? '#108ee9' : '#aaa' }} />
         ),
         filterDropdownVisible: this.state.filterDropdownVisible,
         onFilterDropdownVisibleChange: visible => {
@@ -270,10 +272,10 @@ class Dashboard extends React.Component {
               </div>
               <div className="card-body">
                 <div className="mb-5">
-                  <Slider marks={rangeMarks} defaultValue={rangeSlider.first}/>
+                  <Slider marks={rangeMarks} defaultValue={rangeSlider.first} />
                 </div>
                 <div className="mb-4">
-                  <Slider range marks={rangeMarks} defaultValue={rangeSlider.second}/>
+                  <Slider range marks={rangeMarks} defaultValue={rangeSlider.second} />
                 </div>
               </div>
             </div>
@@ -284,9 +286,7 @@ class Dashboard extends React.Component {
                 </h5>
               </div>
               <div className="card-body">
-                <Calendar
-                  dateCellRender={dateCellRender}
-                />
+                <Calendar dateCellRender={dateCellRender} />
               </div>
             </div>
             <div className="card">
@@ -294,9 +294,9 @@ class Dashboard extends React.Component {
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Week Revenue Statistics, Billions</strong>
                 </h5>
-                <Donut type="primary" name="Nuts"/>
-                <Donut type="success" name="Apples"/>
-                <Donut color="yellow" name="Peaches"/>
+                <Donut type="primary" name="Nuts" />
+                <Donut type="success" name="Apples" />
+                <Donut color="yellow" name="Peaches" />
               </div>
               <div className="card-body">
                 <ChartistGraph
@@ -312,8 +312,8 @@ class Dashboard extends React.Component {
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Month Site Visits Growth, %</strong>
                 </h5>
-                <Donut type="primary" name="Income"/>
-                <Donut type="success" name="Outcome"/>
+                <Donut type="primary" name="Income" />
+                <Donut type="success" name="Outcome" />
               </div>
               <div className="card-body">
                 <ChartistGraph
@@ -331,7 +331,7 @@ class Dashboard extends React.Component {
                 </h5>
               </div>
               <div className="card-body">
-                <Chat/>
+                <Chat />
               </div>
             </div>
           </div>
@@ -345,13 +345,13 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-4">
-                    <UserCard/>
+                    <UserCard />
                   </div>
                   <div className="col-xl-4">
-                    <UserCard/>
+                    <UserCard />
                   </div>
                   <div className="col-xl-4">
-                    <UserCard/>
+                    <UserCard />
                   </div>
                 </div>
               </div>
@@ -365,10 +365,10 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-7">
-                    <ProfileHeadCard/>
+                    <ProfileHeadCard />
                   </div>
                   <div className="col-xl-5">
-                    <ProgressGroup/>
+                    <ProgressGroup />
                   </div>
                 </div>
               </div>
@@ -386,7 +386,8 @@ class Dashboard extends React.Component {
                       columns={taskTableColumns}
                       dataSource={taskTableData}
                       rowSelection={taskTableRowSelection}
-                      pagination={false} />
+                      pagination={false}
+                    />
                   </div>
                 </div>
               </div>
@@ -400,10 +401,10 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-6">
-                    <SliderCard/>
+                    <SliderCard />
                   </div>
                   <div className="col-lg-6">
-                    <SliderCard/>
+                    <SliderCard />
                   </div>
                 </div>
               </div>
@@ -417,16 +418,16 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="database"/>
+                    <InfoCard form="stats" icon="database" />
                   </div>
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="users" type="primary"/>
+                    <InfoCard form="stats" icon="users" type="primary" />
                   </div>
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="bullhorn" type="warning"/>
+                    <InfoCard form="stats" icon="bullhorn" type="warning" />
                   </div>
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="price-tags" type="danger"/>
+                    <InfoCard form="stats" icon="price-tags" type="danger" />
                   </div>
                 </div>
               </div>
@@ -440,13 +441,13 @@ class Dashboard extends React.Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="database" type="default"/>
+                    <InfoCard form="interactive" icon="database" type="default" />
                   </div>
                   <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="users" type="primary"/>
+                    <InfoCard form="interactive" icon="users" type="primary" />
                   </div>
                   <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="home" type="warning"/>
+                    <InfoCard form="interactive" icon="home" type="warning" />
                   </div>
                 </div>
               </div>
@@ -459,16 +460,16 @@ class Dashboard extends React.Component {
               <div className="card-header">
                 <div className="row">
                   <div className="col-lg-3">
-                    <InfoCard form="bordered" icon="home" type="danger"/>
+                    <InfoCard form="bordered" icon="home" type="danger" />
                   </div>
                   <div className="col-lg-3">
-                    <InfoCard form="bordered" icon="key" type="primary"/>
+                    <InfoCard form="bordered" icon="key" type="primary" />
                   </div>
                   <div className="col-lg-3">
-                    <InfoCard form="bordered" icon="play2" type="warning"/>
+                    <InfoCard form="bordered" icon="play2" type="warning" />
                   </div>
                   <div className="col-lg-3">
-                    <InfoCard form="bordered" icon="database" type="sucess"/>
+                    <InfoCard form="bordered" icon="database" type="sucess" />
                   </div>
                 </div>
               </div>
@@ -483,7 +484,7 @@ class Dashboard extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 

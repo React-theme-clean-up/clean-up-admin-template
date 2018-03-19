@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Dashboard from 'components/Pages/Dashboard/Dashboard'
 
 class DashboardPage extends React.Component {
-
   static defaultProps = {
     pathName: 'Dashboard',
   }

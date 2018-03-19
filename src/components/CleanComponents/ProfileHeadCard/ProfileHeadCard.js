@@ -21,7 +21,7 @@ class ProfileHeadCard extends React.Component {
         </div>
         <div className="ProfileHeadCard__content">
           <div className="ProfileHeadCard__left">
-            <Avatar src={user.avatar} size="90" borderColor="white" border="true"/>
+            <Avatar src={user.avatar} size="90" borderColor="white" border="true" />
             <br />
             <strong>
               {user.name}

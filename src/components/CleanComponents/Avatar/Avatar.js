@@ -2,33 +2,30 @@ import React from 'react'
 import './Avatar.css'
 
 class Avatar extends React.Component {
-
   state = {
     size: undefined,
-    border: "false",
+    border: 'false',
     borderColor: '#d2d9e5',
     src: undefined,
-    className: "avatar"
+    className: 'avatar',
   }
 
   getParams = () => {
     let params = this.props
 
-    let {
-      className,
-    } = this.state
+    let { className } = this.state
 
     if (params.size !== undefined) {
-      className = className + " avatar--" + params.size
+      className = className + ' avatar--' + params.size
     }
 
-    if (params.border === "true") {
-      className = className + " avatar--border"
+    if (params.border === 'true') {
+      className = className + ' avatar--border'
     }
 
     if (params.borderColor !== undefined) {
       this.setState({
-        borderColor: params.borderColor
+        borderColor: params.borderColor,
       })
     }
 
@@ -43,22 +40,17 @@ class Avatar extends React.Component {
   }
 
   render() {
-    const {
-      className,
-      src,
-      borderColor
-    } = this.state
-
+    const { className, src, borderColor } = this.state
 
     return (
       <a
-        className={"d-block mx-auto " + className}
+        className={'d-block mx-auto ' + className}
         href="javascript:void(0);"
         style={{
           borderColor: borderColor,
         }}
       >
-        <img src={src} alt="User"/>
+        <img src={src} alt="User" />
       </a>
     )
   }

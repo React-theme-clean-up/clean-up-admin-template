@@ -12,7 +12,7 @@ class Donut extends React.Component {
   getParams = () => {
     let params = this.props
     this.setState({
-      ...params
+      ...params,
     })
   }
 
@@ -21,17 +21,13 @@ class Donut extends React.Component {
   }
 
   render() {
-    const {
-      name,
-      color,
-      type,
-    } = this.state
+    const { name, color, type } = this.state
 
     return (
       <span className="mr-2 nowrap">
         <span
-          className={color === undefined ? "donut " + "donut--" + type : "donut"}
-          style={color !== undefined ? {borderColor: color} : {}}
+          className={color === undefined ? 'donut ' + 'donut--' + type : 'donut'}
+          style={color !== undefined ? { borderColor: color } : {}}
         />
         {name}
       </span>
