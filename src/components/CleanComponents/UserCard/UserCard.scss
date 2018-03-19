@@ -1,51 +1,46 @@
 @import '../../../resources/modules/core/common/css/_mixins.scss';
 
-.cat__core__widget {
+.userCard {
   border: 0px solid $white;
   background: $white;
   position: relative;
   border-radius: .25rem;
   margin-bottom: 1.35rem;
+  border: 1px solid $gray-border;
 
-  &--border {
-    border: 1px solid $gray-border;
-  }
+  &__plusBtn {
+    font-size: 0;
+    background-color: $white;
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+    width: rem(21);
+    height: rem(21);
+    border: 1px solid $gray;
+    border-radius: 500px;
+    cursor: pointer;
+    opacity: .7;
 
-  &__1 {
-    &__plus {
-      font-size: 0;
-      background-color: $white;
+    &:after {
+      content: "";
       position: absolute;
-      top: rem(20);
-      right: rem(20);
-      width: rem(21);
-      height: rem(21);
-      border: 1px solid $gray;
-      border-radius: 500px;
-      cursor: pointer;
-      opacity: .7;
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: rem(3);
-        left: rem(9);
-        height: rem(13);
-        width: 1px;
-        background: $gray;
-      }
-      &:before {
-        content: "";
-        position: absolute;
-        width: rem(13);
-        height: 1px;
-        left: rem(3);
-        top: rem(9);
-        background: $gray;
-      }
-      &:hover {
-        opacity: 1;
-      }
+      top: rem(3);
+      left: rem(9);
+      height: rem(13);
+      width: 1px;
+      background: $gray;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: rem(13);
+      height: 1px;
+      left: rem(3);
+      top: rem(9);
+      background: $gray;
+    }
+    &:hover {
+      opacity: 1;
     }
   }
 }

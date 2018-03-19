@@ -1,0 +1,67 @@
+import React from 'react'
+import './Avatar.css'
+
+class Avatar extends React.Component {
+
+  state = {
+    size: undefined,
+    border: "false",
+    borderColor: '#d2d9e5',
+    src: undefined,
+    className: "avatar"
+  }
+
+  getParams = () => {
+    let params = this.props
+
+    let {
+      className,
+    } = this.state
+
+    if (params.size !== undefined) {
+      className = className + " avatar--" + params.size
+    }
+
+    if (params.border === "true") {
+      className = className + " avatar--border"
+    }
+
+    if (params.borderColor !== undefined) {
+      this.setState({
+        borderColor: params.borderColor
+      })
+    }
+
+    this.setState({
+      className: className,
+      src: params.src,
+    })
+  }
+
+  componentWillMount() {
+    this.getParams()
+  }
+
+  render() {
+    const {
+      className,
+      src,
+      borderColor
+    } = this.state
+
+
+    return (
+      <a
+        className={"d-block mx-auto " + className}
+        href="javascript:void(0);"
+        style={{
+          borderColor: borderColor,
+        }}
+      >
+        <img src={src} alt="User"/>
+      </a>
+    )
+  }
+}
+
+export default Avatar

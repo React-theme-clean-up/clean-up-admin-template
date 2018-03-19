@@ -498,6 +498,7 @@ pre {
         position: relative;
         top: rem(2);
         margin-right: rem(4);
+
         &--default {
             border-color: $default;
         }
@@ -519,6 +520,7 @@ pre {
         &--info {
             border-color: $info;
         }
+
         &--yellow {
             border-color: $yellow;
         }

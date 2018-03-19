@@ -2,9 +2,14 @@
 import React from 'react'
 import Page from 'components/Pages/Page'
 import Helmet from 'react-helmet'
-import Dashboard from 'components/Pages/Dashboard'
+import Dashboard from 'components/Pages/Dashboard/Dashboard'
 
 class DashboardPage extends React.Component {
+
+  static defaultProps = {
+    pathName: 'Dashboard',
+  }
+
   render() {
     const props = this.props
     return (

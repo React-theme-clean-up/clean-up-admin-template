@@ -1,13 +1,14 @@
 import React from 'react'
-import './AccountInformation.css'
+import './ProfileHeadCard.css'
 import { user } from './data.json'
+import Avatar from 'components/CleanComponents/Avatar/Avatar'
 
-class AccountInformation extends React.Component {
+class ProfileHeadCard extends React.Component {
   render() {
     return (
-      <div className="cat__core__widget cat__core__widget__2">
+      <div className="ProfileHeadCard">
         <div
-          className="cat__core__widget__2__head"
+          className="ProfileHeadCard__head"
           style={{
             backgroundImage: 'url(' + user.cover + ')',
           }}
@@ -18,14 +19,9 @@ class AccountInformation extends React.Component {
             </strong>
           </h2>
         </div>
-        <div className="cat__core__widget__2__content">
-          <div className="cat__core__widget__2__left">
-            <a
-              className="cat__core__avatar cat__core__avatar--90 cat__core__avatar--border-white"
-              href="javascript:void(0);"
-            >
-              <img src={user.avatar} alt="User" />
-            </a>
+        <div className="ProfileHeadCard__content">
+          <div className="ProfileHeadCard__left">
+            <Avatar src={user.avatar} size="90" borderColor="white" border="true"/>
             <br />
             <strong>
               {user.name}
@@ -35,7 +31,7 @@ class AccountInformation extends React.Component {
               {user.link}
             </span>
           </div>
-          <div className="cat__core__widget__2__right">
+          <div className="ProfileHeadCard__right">
             <p>
               {user.description}
             </p>
@@ -45,4 +41,4 @@ class AccountInformation extends React.Component {
     )
   }
 }
-export default AccountInformation
+export default ProfileHeadCard
