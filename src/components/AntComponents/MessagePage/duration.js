@@ -1,18 +1,11 @@
 import React from 'react'
 import './style/style.css'
-import { message, Button } from 'antd';
-
-
-
+import { message, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  
-const success = () => {
-  message.success('This is a prompt message for success, and it will disappear in 10 seconds', 10);
-};
+  const success = () => {
+    message.success('This is a prompt message for success, and it will disappear in 10 seconds', 10)
+  }
 
-ReactDOM.render(
-  <Button onClick={success}>Customized display duration</Button>
-, mountNode);
-
+  ReactDOM.render(<Button onClick={success}>Customized display duration</Button>, mountNode)
 }

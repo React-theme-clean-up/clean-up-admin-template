@@ -1,45 +1,36 @@
 import React from 'react'
 import './style/style.css'
-import { AutoComplete } from 'antd';
-
-
-
+import { AutoComplete } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  
-function onSelect(value) {
-  console.log('onSelect', value);
-}
-
-class Complete extends React.Component {
-  state = {
-    dataSource: [],
+  function onSelect(value) {
+    console.log('onSelect', value)
   }
 
-  handleSearch = (value) => {
-    this.setState({
-      dataSource: !value ? [] : [
-        value,
-        value + value,
-        value + value + value,
-      ],
-    });
+  class Complete extends React.Component {
+    state = {
+      dataSource: [],
+    }
+
+    handleSearch = value => {
+      this.setState({
+        dataSource: !value ? [] : [value, value + value, value + value + value],
+      })
+    }
+
+    render() {
+      const { dataSource } = this.state
+      return (
+        <AutoComplete
+          dataSource={dataSource}
+          style={{ width: 200 }}
+          onSelect={onSelect}
+          onSearch={this.handleSearch}
+          placeholder="input here"
+        />
+      )
+    }
   }
 
-  render() {
-    const { dataSource } = this.state;
-    return (
-      <AutoComplete
-        dataSource={dataSource}
-        style={{ width: 200 }}
-        onSelect={onSelect}
-        onSearch={this.handleSearch}
-        placeholder="input here"
-      />
-    );
-  }
-}
-
-ReactDOM.render(<Complete />, mountNode);
-
+  ReactDOM.render(<Complete />, mountNode)
 }

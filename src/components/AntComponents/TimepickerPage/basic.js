@@ -1,21 +1,16 @@
 import React from 'react'
 import './style/style.css'
-import { TimePicker } from 'antd';
+import { TimePicker } from 'antd'
 
-import moment from 'moment';
-
-
-
+import moment from 'moment'
 
 export default function(ReactDOM, mountNode) {
-  
-function onChange(time, timeString) {
-  console.log(time, timeString);
-}
+  function onChange(time, timeString) {
+    console.log(time, timeString)
+  }
 
-ReactDOM.render(
-  <TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />,
-  mountNode
-);
-
+  ReactDOM.render(
+    <TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />,
+    mountNode,
+  )
 }

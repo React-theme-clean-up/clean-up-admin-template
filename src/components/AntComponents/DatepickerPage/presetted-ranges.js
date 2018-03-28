@@ -1,35 +1,31 @@
 import React from 'react'
 import './style/style.css'
-import { DatePicker } from 'antd';
+import { DatePicker } from 'antd'
 
-import moment from 'moment';
-
-
+import moment from 'moment'
 
 export default function(ReactDOM, mountNode) {
-  
-const RangePicker = DatePicker.RangePicker;
+  const RangePicker = DatePicker.RangePicker
 
-function onChange(dates, dateStrings) {
-  console.log('From: ', dates[0], ', to: ', dates[1]);
-  console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
-}
+  function onChange(dates, dateStrings) {
+    console.log('From: ', dates[0], ', to: ', dates[1])
+    console.log('From: ', dateStrings[0], ', to: ', dateStrings[1])
+  }
 
-ReactDOM.render(
-  <div>
-    <RangePicker
-      ranges={{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }}
-      onChange={onChange}
-    />
-    <br />
-    <RangePicker
-      ranges={{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }}
-      showTime
-      format="YYYY/MM/DD HH:mm:ss"
-      onChange={onChange}
-    />
-  </div>,
-  mountNode
-);
-
+  ReactDOM.render(
+    <div>
+      <RangePicker
+        ranges={{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }}
+        onChange={onChange}
+      />
+      <br />
+      <RangePicker
+        ranges={{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }}
+        showTime
+        format="YYYY/MM/DD HH:mm:ss"
+        onChange={onChange}
+      />
+    </div>,
+    mountNode,
+  )
 }

@@ -1,27 +1,22 @@
 import React from 'react'
 import './style/style.css'
-import { TimePicker } from 'antd';
-
-
-
+import { TimePicker } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  
-class Demo extends React.Component {
-  state = {
-    value: null,
-  };
+  class Demo extends React.Component {
+    state = {
+      value: null,
+    }
 
-  onChange = (time) => {
-    console.log(time);
-    this.setState({ value: time });
+    onChange = time => {
+      console.log(time)
+      this.setState({ value: time })
+    }
+
+    render() {
+      return <TimePicker value={this.state.value} onChange={this.onChange} />
+    }
   }
 
-  render() {
-    return <TimePicker value={this.state.value} onChange={this.onChange} />;
-  }
-}
-
-ReactDOM.render(<Demo />, mountNode);
-
+  ReactDOM.render(<Demo />, mountNode)
 }

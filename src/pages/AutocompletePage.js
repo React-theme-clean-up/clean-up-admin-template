@@ -14,7 +14,7 @@ class AutocompletePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - AutoComplete" />
-        <AutocomplitePageItems/>
+        <AutocomplitePageItems />
       </Page>
     )
   }

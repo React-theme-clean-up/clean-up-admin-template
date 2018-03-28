@@ -1,12 +1,7 @@
 import React from 'react'
 import './style/style.css'
-import { Progress } from 'antd';
-
-
-
+import { Progress } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  
-ReactDOM.render(<Progress type="dashboard" percent={75} />, mountNode);
-
+  ReactDOM.render(<Progress type="dashboard" percent={75} />, mountNode)
 }

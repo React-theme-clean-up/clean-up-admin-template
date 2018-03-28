@@ -1,32 +1,33 @@
 import React from 'react'
 import './style/style.css'
-import { Collapse } from 'antd';
-
-
+import { Collapse } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  
-const Panel = Collapse.Panel;
+  const Panel = Collapse.Panel
 
-function callback(key) {
-  console.log(key);
-}
+  function callback(key) {
+    console.log(key)
+  }
 
-const text = `
+  const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
-`;
+`
 
-ReactDOM.render(
-  <Collapse defaultActiveKey={['1']} onChange={callback}>
-    <Panel header="This is panel header with arrow icon" key="1">
-      <p>{text}</p>
-    </Panel>
-    <Panel showArrow={false} header="This is panel header with no arrow icon" key="2">
-      <p>{text}</p>
-    </Panel>
-  </Collapse>
-, mountNode);
-
+  ReactDOM.render(
+    <Collapse defaultActiveKey={['1']} onChange={callback}>
+      <Panel header="This is panel header with arrow icon" key="1">
+        <p>
+          {text}
+        </p>
+      </Panel>
+      <Panel showArrow={false} header="This is panel header with no arrow icon" key="2">
+        <p>
+          {text}
+        </p>
+      </Panel>
+    </Collapse>,
+    mountNode,
+  )
 }
