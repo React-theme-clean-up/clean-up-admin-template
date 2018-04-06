@@ -168,6 +168,45 @@ const loadableRoutes = {
   '/localeproviderpage': {
     component: loadable(() => import('pages/LocaleproviderPage')),
   },
+  '/loginalpha': {
+    component: loadable(() => import('pages/LoginAlphaPage')),
+  },
+  '/loginbeta': {
+    component: loadable(() => import('pages/LoginBetaPage')),
+  },
+  '/registerpage': {
+    component: loadable(() => import('pages/RegisterPage')),
+  },
+  '/lockscreenpage': {
+    component: loadable(() => import('pages/LockscreenPage')),
+  },
+  '/pricingtablepage': {
+    component: loadable(() => import('pages/PricingtablePage')),
+  },
+  '/invoicepage': {
+    component: loadable(() => import('pages/InvoicePage')),
+  },
+  '/ecommercedashboardpage': {
+    component: loadable(() => import('pages/EcommerceDashboardPage')),
+  },
+  '/productscatalogpage': {
+    component: loadable(() => import('pages/ProductsCatalogPage')),
+  },
+  '/productdetailspage': {
+    component: loadable(() => import('pages/ProductDetailsPage')),
+  },
+  '/producteditpage': {
+    component: loadable(() => import('pages/ProductEditPage')),
+  },
+  '/productslistpage': {
+    component: loadable(() => import('pages/ProductsListPage')),
+  },
+  '/orderspage': {
+    component: loadable(() => import('pages/OrdersPage')),
+  },
+  '/cartpage': {
+    component: loadable(() => import('pages/CartPage')),
+  },
 }
 
 class Routes extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './InfoCard.css'
-import { stats, information } from './data.json'
+import { stats, information, commerceStats } from './data.json'
 
 class InfoCard extends React.Component {
   state = {
@@ -56,9 +56,11 @@ class InfoCard extends React.Component {
       <div>
         {form === 'stats' &&
           <div className={className + ' mb-2'}>
-            <span className="infoCard__digit">
-              <i className={'icmn-' + icon} />
-            </span>
+            {icon !== false &&
+              <span className="infoCard__digit">
+                <i className={'icmn-' + icon}/>
+              </span>
+            }
             <div className="infoCard__desc">
               <span className="infoCard__title">
                 {stats.title}
@@ -68,11 +70,26 @@ class InfoCard extends React.Component {
               </p>
             </div>
           </div>}
+        {form === 'stats-large' &&
+          <div className={className + ' mb-2'}>
+            <h5 className="text-uppercase mb-3 text-white">{commerceStats.title}</h5>
+            <div className="clearfix"></div>
+            <div>
+              <span className="pull-right font-size-36">
+                <strong>{commerceStats.count}</strong>
+              </span>
+              {icon !== false &&
+                <i className={'font-size-36 icmn-' + icon}></i>
+              }
+            </div>
+          </div>}
         {form === 'interactive' &&
           <div className={className + ' infoCard--interactive px-3 py-5 mb-2'}>
-            <div className="infoCard__icon text-center font-size-30">
-              <i className={'icmn-' + icon} />
-            </div>
+            {icon !== false &&
+              <div className="infoCard__icon text-center font-size-30">
+                <i className={'icmn-' + icon}/>
+              </div>
+            }
             <div className="mt-2 text-center">
               <div className="mb-2">
                 <p>Lorem Ipsum is simply dummy text of printing the printing and typesetti...</p>
@@ -84,9 +101,11 @@ class InfoCard extends React.Component {
           </div>}
         {form === 'bordered' &&
           <div className={className + ' infoCard--bordered mb-2'}>
-            <span className="infoCard__digit">
-              <i className={'icmn-' + icon} />
-            </span>
+            {icon !== false &&
+              <span className="infoCard__digit">
+                <i className={'icmn-' + icon}/>
+              </span>
+            }
             <div className="infoCard__desc">
               <span className="infoCard__title">
                 {stats.title}
