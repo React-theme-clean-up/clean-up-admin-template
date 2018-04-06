@@ -1,75 +1,92 @@
 import React from 'react'
-import { Form, Input, Icon, Checkbox, Button } from 'antd';
+import { Form, Input, Icon, Checkbox, Button } from 'antd'
 
-const FormItem = Form.Item;
+const FormItem = Form.Item
 
 class RegisterFormComponent extends React.Component {
   state = {
     confirmDirty: false,
-  };
-
-  handleConfirmBlur = (e) => {
-    const value = e.target.value;
-    this.setState({ confirmDirty: this.state.confirmDirty || !!value });
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleConfirmBlur = e => {
+    const value = e.target.value
+    this.setState({ confirmDirty: this.state.confirmDirty || !!value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        console.log('Received values of form: ', values)
       }
-    });
+    })
   }
 
   compareToFirstPassword = (rule, value, callback) => {
-    const form = this.props.form;
+    const form = this.props.form
     if (value && value !== form.getFieldValue('password')) {
-      callback('Two passwords that you enter is inconsistent!');
+      callback('Two passwords that you enter is inconsistent!')
     } else {
-      callback();
+      callback()
     }
   }
 
   validateToNextPassword = (rule, value, callback) => {
-    const form = this.props.form;
+    const form = this.props.form
     if (value && this.state.confirmDirty) {
-      form.validateFields(['confirm'], { force: true });
+      form.validateFields(['confirm'], { force: true })
     }
-    callback();
+    callback()
   }
 
   render() {
-    const {getFieldDecorator} = this.props.form;
+    const { getFieldDecorator } = this.props.form
     return (
       <Form onSubmit={this.handleSubmit} className="login-form">
         <FormItem validateStatus="validating">
           {getFieldDecorator('Nickname', {
-            rules: [{required: true, message: 'Please input your Nickname!'}],
+            rules: [{ required: true, message: 'Please input your Nickname!' }],
           })(
-            <Input prefix={<Icon type="user" style={{color: 'rgba(0,0,0,.25)'}}/>} placeholder="Email or Nickname"/>
+            <Input
+              prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+              placeholder="Email or Nickname"
+            />,
           )}
         </FormItem>
         <FormItem>
           {getFieldDecorator('password', {
-            rules: [{
-              required: true,
-            }, {
-              validator: this.validateToNextPassword,
-            }],
+            rules: [
+              {
+                required: true,
+              },
+              {
+                validator: this.validateToNextPassword,
+              },
+            ],
           })(
-            <Input prefix={<Icon type="lock" style={{color: 'rgba(0,0,0,.25)'}}/>} type="password" placeholder="Input your password" />
+            <Input
+              prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+              type="password"
+              placeholder="Input your password"
+            />,
           )}
         </FormItem>
         <FormItem>
           {getFieldDecorator('confirm', {
-            rules: [{
-              required: true,
-            }, {
-              validator: this.compareToFirstPassword,
-            }],
+            rules: [
+              {
+                required: true,
+              },
+              {
+                validator: this.compareToFirstPassword,
+              },
+            ],
           })(
-            <Input type="password" onBlur={this.handleConfirmBlur} placeholder="Confirm your password"/>
+            <Input
+              type="password"
+              onBlur={this.handleConfirmBlur}
+              placeholder="Confirm your password"
+            />,
           )}
         </FormItem>
 
@@ -81,15 +98,13 @@ class RegisterFormComponent extends React.Component {
             {getFieldDecorator('mailsubscription', {
               valuePropName: 'checked',
               initialValue: true,
-            })(
-              <Checkbox>Mail Subscription</Checkbox>
-            )}
+            })(<Checkbox>Mail Subscription</Checkbox>)}
           </span>
         </div>
       </Form>
-    );
+    )
   }
 }
 
-const RegisterForm = Form.create()(RegisterFormComponent);
+const RegisterForm = Form.create()(RegisterFormComponent)
 export default RegisterForm

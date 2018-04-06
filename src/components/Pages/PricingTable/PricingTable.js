@@ -7,16 +7,16 @@ class Pricingtable extends React.Component {
     return (
       <div>
         <div className="pricing-table">
-          <PricingItem type="success" extended={true}/>
-          <PricingItem btnType="primary"/>
-          <PricingItem btnType="warning"/>
-          <PricingItem type="default"/>
+          <PricingItem type="success" extended={true} />
+          <PricingItem btnType="primary" />
+          <PricingItem btnType="warning" />
+          <PricingItem type="default" />
         </div>
         <div className="pricing-table">
-          <PricingItem type="warning"/>
-          <PricingItem btnType="primary"/>
-          <PricingItem extended={true} btnType="primary"/>
-          <PricingItem btnType="primary"/>
+          <PricingItem type="warning" />
+          <PricingItem btnType="primary" />
+          <PricingItem extended={true} btnType="primary" />
+          <PricingItem btnType="primary" />
         </div>
       </div>
     )

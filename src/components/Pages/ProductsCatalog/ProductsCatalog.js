@@ -3,7 +3,6 @@ import React from 'react'
 import InfoCard from 'components/CleanComponents/InfoCard/InfoCard'
 import ProductCard from 'components/CleanComponents/ProductCard/ProductCard'
 
-
 class ProductsCatalog extends React.Component {
   static defaultProps = {
     pathName: 'Products Catalog',
@@ -16,22 +15,22 @@ class ProductsCatalog extends React.Component {
         <div className="card-header">
           <div className="row">
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="primary" icon={false}/>
+              <InfoCard form="bordered" type="primary" icon={false} />
             </div>
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="default" icon={false}/>
+              <InfoCard form="bordered" type="default" icon={false} />
             </div>
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="danger" icon={false}/>
+              <InfoCard form="bordered" type="danger" icon={false} />
             </div>
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="default" icon={false}/>
+              <InfoCard form="bordered" type="default" icon={false} />
             </div>
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="warning" icon={false}/>
+              <InfoCard form="bordered" type="warning" icon={false} />
             </div>
             <div className="col-lg-2">
-              <InfoCard form="bordered" type="success" icon={false}/>
+              <InfoCard form="bordered" type="success" icon={false} />
             </div>
           </div>
         </div>
@@ -39,40 +38,40 @@ class ProductsCatalog extends React.Component {
           <div className="productsCatalog">
             <div className="row">
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <ProductCard/>
+                <ProductCard />
               </div>
             </div>
           </div>

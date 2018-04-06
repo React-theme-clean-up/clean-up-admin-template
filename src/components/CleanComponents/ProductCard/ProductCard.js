@@ -2,9 +2,8 @@
 import React from 'react'
 import './ProductCard.css'
 import data from './data.json'
-import { Tooltip } from 'antd';
+import { Tooltip } from 'antd'
 class ProductCard extends React.Component {
-
   state = {
     productImg: data.productImg,
     productName: data.productName,
@@ -21,7 +20,7 @@ class ProductCard extends React.Component {
       productPrice,
       productOldPrice,
       productNote,
-      productStatus
+      productStatus,
     } = this.state
     return (
       <div className="productCard">
@@ -29,17 +28,18 @@ class ProductCard extends React.Component {
           {productStatus === 'new' &&
             <div className="productCard__status">
               <span className="productCard__status__title">New</span>
-            </div>
-          }
+            </div>}
           <div className="productCard__like">
-            <i className="icmn-heart"></i>
+            <i className="icmn-heart" />
           </div>
           <a href="javascript: void(0);">
             <img src={productImg} />
           </a>
         </div>
         <div className="productCard__title">
-          <a href="javascript: void(0);">{productName}</a>
+          <a href="javascript: void(0);">
+            {productName}
+          </a>
           <div className="productCard__price">
             {productPrice}
             <div className="productCard__price--old">

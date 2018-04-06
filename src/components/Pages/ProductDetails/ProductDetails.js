@@ -1,12 +1,11 @@
 import React from 'react'
 import './ProductDetails.css'
-import { Carousel, Breadcrumb, Rate, Select, Tooltip, Button, Icon, Tabs } from 'antd';
+import { Carousel, Breadcrumb, Rate, Select, Tooltip, Button, Icon, Tabs } from 'antd'
 import data from './data.json'
-const TabPane = Tabs.TabPane;
-const Option = Select.Option;
+const TabPane = Tabs.TabPane
+const Option = Select.Option
 
 class ProductDetails extends React.Component {
-
   state = {
     imgActiveStatus: [],
     images: data.images,
@@ -21,10 +20,7 @@ class ProductDetails extends React.Component {
   }
 
   generateImgStatus = () => {
-    let {
-      imgActiveStatus,
-      images,
-    } = this.state
+    let { imgActiveStatus, images } = this.state
     images.forEach((img, index) => {
       imgActiveStatus[index] = 'not-active'
       if (index === 0) {
@@ -33,18 +29,16 @@ class ProductDetails extends React.Component {
     })
   }
 
-  setActiveImg = (imgNumber) => {
-    let {
-      imgActiveStatus
-    } = this.state
+  setActiveImg = imgNumber => {
+    let { imgActiveStatus } = this.state
     imgActiveStatus.forEach((imgStatus, index) => {
-      imgActiveStatus[index] = "not-active"
+      imgActiveStatus[index] = 'not-active'
       if (imgNumber === index) {
-        imgActiveStatus[index] = "active"
+        imgActiveStatus[index] = 'active'
       }
     })
     this.setState({
-      imgActiveStatus: imgActiveStatus
+      imgActiveStatus: imgActiveStatus,
     })
   }
 
@@ -53,7 +47,6 @@ class ProductDetails extends React.Component {
   }
 
   render() {
-
     let {
       imgActiveStatus,
       images,
@@ -71,9 +64,9 @@ class ProductDetails extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-        <span className="cat__core__title">
-            <strong>Product Details</strong>
-        </span>
+            <span className="cat__core__title">
+              <strong>Product Details</strong>
+            </span>
           </div>
           <div className="card-body">
             <div className="row">
@@ -84,10 +77,15 @@ class ProductDetails extends React.Component {
                       <span className="productDetails__item__status__title">New</span>
                     </div>
                     <div className="productDetails__item__like productDetails__item__like--selected">
-                      <i className="icmn-heart"></i>
+                      <i className="icmn-heart" />
                     </div>
-                    <Carousel ref={node => (this.slider = node)} autoplay={false} dots={false} effect="fade">
-                      {images.map((image) =>
+                    <Carousel
+                      ref={node => (this.slider = node)}
+                      autoplay={false}
+                      dots={false}
+                      effect="fade"
+                    >
+                      {images.map(image =>
                         <div>
                           <img className="productDetails__item__img-item" src={image} />
                         </div>,
@@ -97,7 +95,15 @@ class ProductDetails extends React.Component {
                 </div>
                 <div className="productDetails__photos clearfix">
                   {images.map((image, index) =>
-                    <div onClick={e => this.slider.slick.innerSlider.slickGoTo(index) & this.setActiveImg(index)} className={imgActiveStatus[index] === 'active' ? "productDetails__photos-item productDetails__photos-item--active" : "productDetails__photos-item"}>
+                    <div
+                      onClick={e =>
+                        this.slider.slick.innerSlider.slickGoTo(index) & this.setActiveImg(index)}
+                      className={
+                        imgActiveStatus[index] === 'active'
+                          ? 'productDetails__photos-item productDetails__photos-item--active'
+                          : 'productDetails__photos-item'
+                      }
+                    >
                       <img src={image} />
                     </div>,
                   )}
@@ -129,32 +135,33 @@ class ProductDetails extends React.Component {
                   </Breadcrumb>
                 </div>
                 <div className="productDetails__sku">
-                  {"SKU: #" + sku}
+                  {'SKU: #' + sku}
                   <br />
                   <div className="productDetails__rating">
-                    <Rate value={rate} disabled={true} allowHalf={true}/>
+                    <Rate value={rate} disabled={true} allowHalf={true} />
                   </div>
                 </div>
                 <h4 className="productDetails__main-title">
-                  <strong>{name}</strong>
+                  <strong>
+                    {name}
+                  </strong>
                 </h4>
                 <div className="productDetails__price">
                   {'$' + price}
                   {oldPrice &&
                     <div className="productDetails__price-before">
                       {'$' + oldPrice}
-                    </div>
-                  }
+                    </div>}
                 </div>
                 <hr />
                 <div className="productDetails__descr mb-1">
-                  <p>{shortDescr}</p>
+                  <p>
+                    {shortDescr}
+                  </p>
                 </div>
                 <div className="row">
                   <div className="col-lg-6">
-                    <div className="productDetails__option_title">
-                      Color
-                    </div>
+                    <div className="productDetails__option_title">Color</div>
                     <div className="productDetails__option">
                       <Select defaultValue="Red" size="small" style={{ width: 120 }}>
                         <Option value="red">Red</Option>
@@ -163,9 +170,7 @@ class ProductDetails extends React.Component {
                         <Option value="blue">Blue</Option>
                       </Select>
                     </div>
-                    <div className="productDetails__option_title">
-                      Available Size
-                    </div>
+                    <div className="productDetails__option_title">Available Size</div>
                     <div className="productDetails__option">
                       <div className="productDetails__item__descr__sizes">
                         <Tooltip placement="top" title="Size S">
@@ -187,11 +192,11 @@ class ProductDetails extends React.Component {
                     <Icon type="shopping-cart" />Buy now
                   </Button>
                   <a href="javascript: void(0);" className="btn btn-link">
-                    <i className="icmn-heart mr-1"></i>
+                    <i className="icmn-heart mr-1" />
                     Add to Wishlist
                   </a>
                   <a href="javascript: void(0);" className="btn btn-link">
-                    <i className="icmn-stats-bars mr-1"></i>
+                    <i className="icmn-stats-bars mr-1" />
                     Add to Compare
                   </a>
                 </div>
@@ -200,7 +205,10 @@ class ProductDetails extends React.Component {
                     <TabPane tab="Information" key="1">
                       {properties.map((property, index) =>
                         <div className="productDetails__property mb-1">
-                            <strong className="mr-1">{property.name + ': '}</strong>{property.value}
+                          <strong className="mr-1">
+                            {property.name + ': '}
+                          </strong>
+                          {property.value}
                         </div>,
                       )}
                     </TabPane>

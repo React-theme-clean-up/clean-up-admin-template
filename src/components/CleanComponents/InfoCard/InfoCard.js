@@ -58,9 +58,8 @@ class InfoCard extends React.Component {
           <div className={className + ' mb-2'}>
             {icon !== false &&
               <span className="infoCard__digit">
-                <i className={'icmn-' + icon}/>
-              </span>
-            }
+                <i className={'icmn-' + icon} />
+              </span>}
             <div className="infoCard__desc">
               <span className="infoCard__title">
                 {stats.title}
@@ -72,24 +71,25 @@ class InfoCard extends React.Component {
           </div>}
         {form === 'stats-large' &&
           <div className={className + ' mb-2'}>
-            <h5 className="text-uppercase mb-3 text-white">{commerceStats.title}</h5>
-            <div className="clearfix"></div>
+            <h5 className="text-uppercase mb-3 text-white">
+              {commerceStats.title}
+            </h5>
+            <div className="clearfix" />
             <div>
               <span className="pull-right font-size-36">
-                <strong>{commerceStats.count}</strong>
+                <strong>
+                  {commerceStats.count}
+                </strong>
               </span>
-              {icon !== false &&
-                <i className={'font-size-36 icmn-' + icon}></i>
-              }
+              {icon !== false && <i className={'font-size-36 icmn-' + icon} />}
             </div>
           </div>}
         {form === 'interactive' &&
           <div className={className + ' infoCard--interactive px-3 py-5 mb-2'}>
             {icon !== false &&
               <div className="infoCard__icon text-center font-size-30">
-                <i className={'icmn-' + icon}/>
-              </div>
-            }
+                <i className={'icmn-' + icon} />
+              </div>}
             <div className="mt-2 text-center">
               <div className="mb-2">
                 <p>Lorem Ipsum is simply dummy text of printing the printing and typesetti...</p>
@@ -103,9 +103,8 @@ class InfoCard extends React.Component {
           <div className={className + ' infoCard--bordered mb-2'}>
             {icon !== false &&
               <span className="infoCard__digit">
-                <i className={'icmn-' + icon}/>
-              </span>
-            }
+                <i className={'icmn-' + icon} />
+              </span>}
             <div className="infoCard__desc">
               <span className="infoCard__title">
                 {stats.title}

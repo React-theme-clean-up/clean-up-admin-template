@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import { Form, Icon, Input, Button, Checkbox } from 'antd'
 import LoginForm from './LoginForm.js'
 import './LoginBeta.css'
 
@@ -10,63 +10,71 @@ class LoginBeta extends React.Component {
   }
 
   generateBackground = () => {
-    let {
-      backgroundImage,
-    } = this.state
+    let { backgroundImage } = this.state
 
     let min = 1
     let max = 5
-    let picNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
 
-    backgroundImage = 'url(../../modules/dummy-assets/common/img/login/' + picNumber + '.jpg)',
-
-    this.setState({
-      backgroundImage: backgroundImage
+    ;(backgroundImage =
+      'url(../../modules/dummy-assets/common/img/login/' + picNumber + '.jpg)'), this.setState({
+      backgroundImage: backgroundImage,
     })
   }
 
   switchSize = () => {
-    let {
-      fullSize,
-    } = this.state
+    let { fullSize } = this.state
 
     fullSize = !fullSize
 
     console.log(fullSize)
 
     this.setState({
-      fullSize: fullSize
+      fullSize: fullSize,
     })
   }
 
-
-
   render() {
-    const {
-      backgroundImage,
-      fullSize,
-    } = this.state
+    const { backgroundImage, fullSize } = this.state
 
     return (
-      <div className={fullSize === false ? 'login': 'login login--fullscreen'} style={{backgroundImage: backgroundImage}}>
+      <div
+        className={fullSize === false ? 'login' : 'login login--fullscreen'}
+        style={{ backgroundImage: backgroundImage }}
+      >
         <div className="login__header">
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
                 <a href="javascript: void(0);">
-                  <img src="../../modules/dummy-assets/common/img/login/logo-inverse.png" alt="Clean UI Admin Template"/>
+                  <img
+                    src="../../modules/dummy-assets/common/img/login/logo-inverse.png"
+                    alt="Clean UI Admin Template"
+                  />
                 </a>
-                <Button className="ml-3" onClick={this.switchSize} size="small">Switch Fullscreen / Windowed</Button>
-                <Button className="ml-3" onClick={this.generateBackground} size="small">Randomize Background Image</Button>
+                <Button className="ml-3" onClick={this.switchSize} size="small">
+                  Switch Fullscreen / Windowed
+                </Button>
+                <Button className="ml-3" onClick={this.generateBackground} size="small">
+                  Randomize Background Image
+                </Button>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="login__header__menu">
                 <ul className="list-unstyled list-inline">
-                  <li className="list-inline-item"><a href="javascript: history.back();">&larr; Back</a></li>
-                  <li className="list-inline-item active"><a href="javascript: void(0);">Login</a></li>
-                  <li className="list-inline-item"><a href="javascript: void(0);">About</a></li>
-                  <li className="list-inline-item"><a href="javascript: void(0);">Support</a></li>
+                  <li className="list-inline-item">
+                    <a href="javascript: history.back();">&larr; Back</a>
+                  </li>
+                  <li className="list-inline-item active">
+                    <a href="javascript: void(0);">Login</a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="javascript: void(0);">About</a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="javascript: void(0);">Support</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -79,15 +87,17 @@ class LoginBeta extends React.Component {
                 <h1 className="mb-3 text-white">
                   <strong>WELCOME TO CLEAN UI ADMIN TEMPLATE</strong>
                 </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the industry's standard dummy text ever since the 1500s.</p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
               </div>
               <div className="login__block__inner">
                 <div className="login__block__form">
                   <h4 className="text-uppercase">
                     <strong>Please log in</strong>
                   </h4>
-                  <br/>
+                  <br />
                   <LoginForm />
                 </div>
                 <div className="login__block__sidebar">
@@ -97,14 +107,14 @@ class LoginBeta extends React.Component {
                     <span>2017</span>
                   </h4>
                   <div className="login__block__sidebar__item">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
                   </div>
                   <div className="login__block__sidebar__item">
                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                   </div>
                   <div className="login__block__sidebar__place">
-                    <i className="icmn-location mr-3"></i>
+                    <i className="icmn-location mr-3" />
                     New York, USA
                   </div>
                 </div>
@@ -114,11 +124,21 @@ class LoginBeta extends React.Component {
         </div>
         <div className="login__footer text-center">
           <ul className="list-unstyled list-inline">
-            <li className="list-inline-item"><a href="javascript: void(0);">Terms of Use</a></li>
-            <li className="active list-inline-item"><a href="javascript: void(0);">Compliance</a></li>
-            <li className="list-inline-item"><a href="javascript: void(0);">Confidential Information</a></li>
-            <li className="list-inline-item"><a href="javascript: void(0);">Support</a></li>
-            <li className="list-inline-item"><a href="javascript: void(0);">Contacts</a></li>
+            <li className="list-inline-item">
+              <a href="javascript: void(0);">Terms of Use</a>
+            </li>
+            <li className="active list-inline-item">
+              <a href="javascript: void(0);">Compliance</a>
+            </li>
+            <li className="list-inline-item">
+              <a href="javascript: void(0);">Confidential Information</a>
+            </li>
+            <li className="list-inline-item">
+              <a href="javascript: void(0);">Support</a>
+            </li>
+            <li className="list-inline-item">
+              <a href="javascript: void(0);">Contacts</a>
+            </li>
           </ul>
         </div>
       </div>

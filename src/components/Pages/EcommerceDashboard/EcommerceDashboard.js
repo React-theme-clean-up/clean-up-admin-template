@@ -1,13 +1,12 @@
 import React from 'react'
-import { Tabs, Select, Table } from 'antd';
+import { Tabs, Select, Table } from 'antd'
 import ChartistGraph from 'react-chartist'
 import Chartist from 'chartist'
 import data from './data.json'
 import InfoCard from 'components/CleanComponents/InfoCard/InfoCard'
 
-
-const TabPane = Tabs.TabPane;
-const Option = Select.Option;
+const TabPane = Tabs.TabPane
+const Option = Select.Option
 
 class EcommerceDashboard extends React.Component {
   state = {
@@ -53,115 +52,138 @@ class EcommerceDashboard extends React.Component {
       ],
     }
 
-    const bestsellersColumns = [{
-      title: 'ID',
-      dataIndex: 'id',
-      key: 'id',
-      sorter: (a, b) => a.id - b.id,
-    }, {
-      title: 'Product',
-      dataIndex: 'product',
-      key: 'product',
-      render: text =>
-        <a href="#">
-          {text}
-        </a>,
-      sorter: (a, b) => a.product - b.product,
-    }, {
-      title: 'Price',
-      dataIndex: 'price',
-      key: 'price',
-      sorter: (a, b) => a.price - b.price,
-      render: text => '$' + text,
-    }, {
-      title: 'Order Quantity',
-      dataIndex: 'orderquantity',
-      key: 'orderquantity',
-      sorter: (a, b) => a.orderquantity - b.orderquantity,
-    }]
+    const bestsellersColumns = [
+      {
+        title: 'ID',
+        dataIndex: 'id',
+        key: 'id',
+        sorter: (a, b) => a.id - b.id,
+      },
+      {
+        title: 'Product',
+        dataIndex: 'product',
+        key: 'product',
+        render: text =>
+          <a href="#">
+            {text}
+          </a>,
+        sorter: (a, b) => a.product - b.product,
+      },
+      {
+        title: 'Price',
+        dataIndex: 'price',
+        key: 'price',
+        sorter: (a, b) => a.price - b.price,
+        render: text => '$' + text,
+      },
+      {
+        title: 'Order Quantity',
+        dataIndex: 'orderquantity',
+        key: 'orderquantity',
+        sorter: (a, b) => a.orderquantity - b.orderquantity,
+      },
+    ]
 
-    const mostViewedColumns = [{
-      title: 'ID',
-      dataIndex: 'id',
-      key: 'id',
-      sorter: (a, b) => a.id - b.id,
-    }, {
-      title: 'Product',
-      dataIndex: 'product',
-      key: 'product',
-      render: text =>
-        <a href="#">
-          {text}
-        </a>,
-      sorter: (a, b) => a.product - b.product,
-    }, {
-      title: 'Price',
-      dataIndex: 'price',
-      key: 'price',
-      sorter: (a, b) => a.price - b.price,
-      render: text => '$' + text,
-    }, {
-      title: 'Views',
-      dataIndex: 'views',
-      key: 'views',
-      sorter: (a, b) => a.views - b.views,
-    }]
+    const mostViewedColumns = [
+      {
+        title: 'ID',
+        dataIndex: 'id',
+        key: 'id',
+        sorter: (a, b) => a.id - b.id,
+      },
+      {
+        title: 'Product',
+        dataIndex: 'product',
+        key: 'product',
+        render: text =>
+          <a href="#">
+            {text}
+          </a>,
+        sorter: (a, b) => a.product - b.product,
+      },
+      {
+        title: 'Price',
+        dataIndex: 'price',
+        key: 'price',
+        sorter: (a, b) => a.price - b.price,
+        render: text => '$' + text,
+      },
+      {
+        title: 'Views',
+        dataIndex: 'views',
+        key: 'views',
+        sorter: (a, b) => a.views - b.views,
+      },
+    ]
 
-    const customersColumns = [{
-      title: 'ID',
-      dataIndex: 'id',
-      key: 'id',
-      sorter: (a, b) => a.id - b.id,
-    }, {
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
-      render: text =>
-        <a href="#">
-          {text}
-        </a>,
-      sorter: (a, b) => a.name - b.name,
-    }, {
-      title: 'Date',
-      dataIndex: 'date',
-      key: 'date',
-      sorter: (a, b) => a.date - b.date,
-    }, {
-      title: 'Total',
-      dataIndex: 'total',
-      key: 'total',
-      sorter: (a, b) => a.total - b.total,
-      render: text =>'$' + text,
-    }]
+    const customersColumns = [
+      {
+        title: 'ID',
+        dataIndex: 'id',
+        key: 'id',
+        sorter: (a, b) => a.id - b.id,
+      },
+      {
+        title: 'Name',
+        dataIndex: 'name',
+        key: 'name',
+        render: text =>
+          <a href="#">
+            {text}
+          </a>,
+        sorter: (a, b) => a.name - b.name,
+      },
+      {
+        title: 'Date',
+        dataIndex: 'date',
+        key: 'date',
+        sorter: (a, b) => a.date - b.date,
+      },
+      {
+        title: 'Total',
+        dataIndex: 'total',
+        key: 'total',
+        sorter: (a, b) => a.total - b.total,
+        render: text => '$' + text,
+      },
+    ]
 
-    const lastOrdersColumns = [{
-      title: 'Customers',
-      dataIndex: 'customer',
-      key: 'customer'
-    }, {
-      title: 'Items',
-      dataIndex: 'items',
-      key: 'items'
-    }, {
-      title: 'Total',
-      dataIndex: 'total',
-      key: 'total',
-      render: text =>'$' + text,
-    }]
+    const lastOrdersColumns = [
+      {
+        title: 'Customers',
+        dataIndex: 'customer',
+        key: 'customer',
+      },
+      {
+        title: 'Items',
+        dataIndex: 'items',
+        key: 'items',
+      },
+      {
+        title: 'Total',
+        dataIndex: 'total',
+        key: 'total',
+        render: text => '$' + text,
+      },
+    ]
 
-    const searchColumns = [{
-      title: 'Search Term',
-      dataIndex: 'searchTerm',
-      key: 'searchTerm'
-    }, {
-      title: 'Results',
-      dataIndex: 'result',
-      key: 'result'
-    }, {
-      title: 'Uses',
-      dataIndex: 'uses',
-      key: 'uses'
-    }]
+    const searchColumns = [
+      {
+        title: 'Search Term',
+        dataIndex: 'searchTerm',
+        key: 'searchTerm',
+      },
+      {
+        title: 'Results',
+        dataIndex: 'result',
+        key: 'result',
+      },
+      {
+        title: 'Uses',
+        dataIndex: 'uses',
+        key: 'uses',
+      },
+    ]
 
     return (
       <div className="row">
@@ -170,7 +192,7 @@ class EcommerceDashboard extends React.Component {
             <Tabs defaultActiveKey="1">
               <TabPane tab="Orders" key="1">
                 <div>
-                  <Select defaultValue="lastDay" style={{width: 120}}>
+                  <Select defaultValue="lastDay" style={{ width: 120 }}>
                     <Option value="lastDay">Last Day</Option>
                     <Option value="lastWeek">Last Week</Option>
                     <Option value="lastMonth">Last Month</Option>
@@ -186,41 +208,41 @@ class EcommerceDashboard extends React.Component {
                 <div className="row">
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Revenue
-                      </div>
+                      <div className="font-size-16 mb-2">Revenue</div>
                       <div className="font-size-20 text-black">
-                        <strong>{ordersInfo.revenue}</strong>
+                        <strong>
+                          {ordersInfo.revenue}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Tax
-                      </div>
+                      <div className="font-size-16 mb-2">Tax</div>
                       <div className="font-size-20 text-black">
-                        <strong>{ordersInfo.tax}</strong>
+                        <strong>
+                          {ordersInfo.tax}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Shipping
-                      </div>
+                      <div className="font-size-16 mb-2">Shipping</div>
                       <div className="font-size-20 text-black">
-                        <strong>{ordersInfo.shipping}</strong>
+                        <strong>
+                          {ordersInfo.shipping}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Quantity
-                      </div>
+                      <div className="font-size-16 mb-2">Quantity</div>
                       <div className="font-size-20">
-                        <strong>{ordersInfo.quantity}</strong>
+                        <strong>
+                          {ordersInfo.quantity}
+                        </strong>
                       </div>
                     </div>
                   </div>
@@ -228,7 +250,7 @@ class EcommerceDashboard extends React.Component {
               </TabPane>
               <TabPane tab="Amount" key="2">
                 <div>
-                  <Select defaultValue="lastDay" style={{width: 120}}>
+                  <Select defaultValue="lastDay" style={{ width: 120 }}>
                     <Option value="lastDay">Last Day</Option>
                     <Option value="lastWeek">Last Week</Option>
                     <Option value="lastMonth">Last Month</Option>
@@ -244,41 +266,41 @@ class EcommerceDashboard extends React.Component {
                 <div className="row">
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Revenue
-                      </div>
+                      <div className="font-size-16 mb-2">Revenue</div>
                       <div className="font-size-20 text-black">
-                        <strong>{amountInfo.revenue}</strong>
+                        <strong>
+                          {amountInfo.revenue}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Tax
-                      </div>
+                      <div className="font-size-16 mb-2">Tax</div>
                       <div className="font-size-20 text-black">
-                        <strong>{amountInfo.tax}</strong>
+                        <strong>
+                          {amountInfo.tax}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Shipping
-                      </div>
+                      <div className="font-size-16 mb-2">Shipping</div>
                       <div className="font-size-20 text-black">
-                        <strong>{amountInfo.shipping}</strong>
+                        <strong>
+                          {amountInfo.shipping}
+                        </strong>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-3 col-6">
                     <div className="mb-3">
-                      <div className="font-size-16 mb-2">
-                        Quantity
-                      </div>
+                      <div className="font-size-16 mb-2">Quantity</div>
                       <div className="font-size-20">
-                        <strong>{amountInfo.quantity}</strong>
+                        <strong>
+                          {amountInfo.quantity}
+                        </strong>
                       </div>
                     </div>
                   </div>
@@ -292,13 +314,13 @@ class EcommerceDashboard extends React.Component {
                 <Table columns={bestsellersColumns} dataSource={bestsellersData} />
               </TabPane>
               <TabPane tab="Most Viewed Products" key="2">
-                <Table columns={mostViewedColumns} dataSource={mostViewedData}/>
+                <Table columns={mostViewedColumns} dataSource={mostViewedData} />
               </TabPane>
               <TabPane tab="New Customers" key="3">
-                <Table columns={customersColumns} dataSource={newCustomersData}/>
+                <Table columns={customersColumns} dataSource={newCustomersData} />
               </TabPane>
               <TabPane tab="Top Customers" key="4">
-                <Table columns={customersColumns} dataSource={topCustomersData}/>
+                <Table columns={customersColumns} dataSource={topCustomersData} />
               </TabPane>
             </Tabs>
           </div>
@@ -306,10 +328,10 @@ class EcommerceDashboard extends React.Component {
         <div className="col-xl-4 col-lg-12">
           <div className="row mb-5">
             <div className="col-xl-12 col-lg-6 col-sm-12">
-              <InfoCard form="stats-large" icon="download" type="primary"/>
+              <InfoCard form="stats-large" icon="download" type="primary" />
             </div>
             <div className="col-xl-12 col-lg-6 col-sm-12">
-              <InfoCard form="stats-large" icon="stack" type="default"/>
+              <InfoCard form="stats-large" icon="stack" type="default" />
             </div>
           </div>
           <div className="row mb-5">
@@ -317,7 +339,7 @@ class EcommerceDashboard extends React.Component {
               <div className="font-size-16 text-black mb-3">
                 <strong>Last Orders</strong>
               </div>
-              <Table columns={lastOrdersColumns} dataSource={lastOrdersData} pagination={false}/>
+              <Table columns={lastOrdersColumns} dataSource={lastOrdersData} pagination={false} />
             </div>
           </div>
           <div className="row mb-5">
@@ -325,7 +347,7 @@ class EcommerceDashboard extends React.Component {
               <div className="font-size-16 text-black mb-3">
                 <strong>Last Search Terms</strong>
               </div>
-              <Table columns={searchColumns} dataSource={lastSearchData} pagination={false}/>
+              <Table columns={searchColumns} dataSource={lastSearchData} pagination={false} />
             </div>
           </div>
           <div className="row mb-5">
@@ -333,7 +355,7 @@ class EcommerceDashboard extends React.Component {
               <div className="font-size-16 text-black mb-3">
                 <strong>Top Search Terms</strong>
               </div>
-              <Table columns={searchColumns} dataSource={topSearchData} pagination={false}/>
+              <Table columns={searchColumns} dataSource={topSearchData} pagination={false} />
             </div>
           </div>
         </div>
