@@ -31,7 +31,6 @@ class Avatar extends React.Component {
 
     this.setState({
       className: className,
-      src: params.src,
     })
   }
 
@@ -40,7 +39,7 @@ class Avatar extends React.Component {
   }
 
   render() {
-    const { className, src, borderColor } = this.state
+    const { className, borderColor } = this.state
 
     return (
       <a
@@ -50,7 +49,7 @@ class Avatar extends React.Component {
           borderColor: borderColor,
         }}
       >
-        <img src={src} alt="User" />
+        <img src={this.props.src} alt="User" />
       </a>
     )
   }
