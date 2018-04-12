@@ -1,18 +1,17 @@
 @import '../../../resources/modules/core/common/css/_mixins.scss';
 
 .cart {
-  &__step-icon {
-    width: rem(45);
-    height: rem(45);
-    border: 3px solid #0190fe;
-    border-radius: 50%;
-    position: relative;
+  .steps-content {
+    border: none;
+    min-height: initial;
+    background: none;
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+    padding-top: 0;
+    text-align: left;
+  }
 
-    i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  .steps-action {
+    margin-top: 0;
   }
 }

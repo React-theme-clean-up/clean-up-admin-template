@@ -16,7 +16,6 @@ class Lockscreen extends React.Component {
     let min = 1
     let max = 5
     let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
-
     ;(backgroundImage =
       'url(../../modules/dummy-assets/common/img/login/' + picNumber + '.jpg)'), this.setState({
       backgroundImage: backgroundImage,

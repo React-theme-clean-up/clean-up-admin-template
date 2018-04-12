@@ -9,8 +9,8 @@
     "img": "../../modules/dummy-assets/common/img/avatars/2.jpg"
   }, {
     "username": "Chris Evans",
-    "content": "Lorem ipsum dolor sit amet, nibh ipsum. Cum class sem inceptos incidunt sed sed. Tempus wisi enim id, arcu sed lectus aliquam, nulla vitae est bibendum molestie elit risus.",
-    "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+    "img": "../../modules/dummy-assets/common/img/avatars/1.jpg",
+    "content": "Lorem ipsum dolor sit amet, nibh ipsum. Cum class sem inceptos incidunt sed sed. Tempus wisi enim id, arcu sed lectus aliquam, nulla vitae est bibendum molestie elit risus."
   }, {
     "username": "Chris Evans",
     "content": "So",

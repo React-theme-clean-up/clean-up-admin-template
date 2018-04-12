@@ -207,6 +207,15 @@ const loadableRoutes = {
   '/cartpage': {
     component: loadable(() => import('pages/CartPage')),
   },
+  '/chartistpage': {
+    component: loadable(() => import('pages/ChartistPage')),
+  },
+  '/mailtemplatespage': {
+    component: loadable(() => import('pages/MailTemplatesPage')),
+  },
+  '/messagingapppage': {
+    component: loadable(() => import('pages/MessagingAppPage')),
+  },
 }
 
 class Routes extends React.Component {
