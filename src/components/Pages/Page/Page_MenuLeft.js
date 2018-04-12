@@ -2,52 +2,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { toggleMenuLeft } from 'ducks/app'
-import { Link, NavLink } from 'react-router-dom'
-import { ConnectedRoute } from 'reactRouterConnected'
-import cx from 'classnames'
 
-@connect()
-class MenuLink extends React.Component {
-  static defaultProps = {
-    exact: true,
-  }
-
-  render() {
-    const { to, exact, children } = this.props
-    return (
-      <ConnectedRoute
-        path={to}
-        exact={exact}
-        children={({ match }) =>
-          <li
-            className={cx('cat__menu-left__item cat__menu-left--colorful--yellow', {
-              'cat__menu-left__item--active': match,
-            })}
-          >
-            <Link to={to} onClick={this.handleClick}>
-              {children}
-            </Link>
-          </li>}
-      />
-    )
-  }
-}
-
-const SubMenuLink = ({ to, children }) =>
-  <ConnectedRoute
-    path={to}
-    exact
-    children={({ match }) =>
-      <li
-        className={cx('cat__menu-left__item', {
-          'cat__menu-left__item--active': match,
-        })}
-      >
-        <Link to={to}>
-          {children}
-        </Link>
-      </li>}
-  />
+import { Menu, Icon, Switch } from 'antd';
+const SubMenu = Menu.SubMenu;
 
 const mapStateToProps = (state, props) => ({})
 
@@ -64,6 +21,22 @@ class MenuLeft extends React.Component {
     // this.props.dispatch(toggleMenuReports())
   }
 
+  state = {
+    theme: 'dark',
+    current: '1',
+  }
+  changeTheme = (value) => {
+    this.setState({
+      theme: value ? 'dark' : 'light',
+    });
+  }
+  handleClick = (e) => {
+    console.log('click ', e);
+    this.setState({
+      current: e.key,
+    });
+  }
+
   render() {
     return (
       <div>
@@ -77,56 +50,48 @@ class MenuLeft extends React.Component {
             </div>
           </div>
           <div className="cat__menu-left__logo">
-            <NavLink to="/">
+            <a to="/">
               <strong>Clan ui logo</strong>
-            </NavLink>
+            </a>
           </div>
-          <div className="cat__menu-left__inner">
-            <div>
-              <ul className="cat__menu-left__list cat__menu-left__list--root">
-                <MenuLink exact={false} to="/dashboard">
-                  <div>
-                    <span className="cat__menu-left__icon icmn-home" />
-                    Dashboard
-                  </div>
-                </MenuLink>
-                <li className="cat__menu-left__divider">
-                  {/* */}
-                </li>
-                <li
-                  className={cx(
-                    'cat__menu-left__item cat__menu-left__submenu cat__menu-left--colorful--primary',
-                    {
-                      // 'cat__menu-left__submenu--toggled': isMenuReports,
-                    },
-                  )}
-                >
-                  <a href="/" onClick={this.handleMenuToggle}>
-                    <span className="cat__menu-left__icon icmn-file-text" />
-                    Reports
-                  </a>
-                  <ul
-                    className="cat__menu-left__list"
-                    style={{
-                      // display: isMenuReports ? 'block' : 'none',
-                    }}
-                  >
-                    <SubMenuLink to="/reports/pricing-report">
-                      <div>
-                        <span className="cat__menu-left__icon">PR</span>
-                        Pricing Report
-                      </div>
-                    </SubMenuLink>
-                    <SubMenuLink to="/reports/out-of-stock">
-                      <div>
-                        <span className="cat__menu-left__icon">OS</span>
-                        Out of Stock
-                      </div>
-                    </SubMenuLink>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+          <div>
+            <Switch
+              checked={this.state.theme === 'dark'}
+              onChange={this.changeTheme}
+              checkedChildren="Dark"
+              unCheckedChildren="Light"
+            />
+            <br />
+            <br />
+            <Menu
+              theme={this.state.theme}
+              onClick={this.handleClick}
+              style={{ width: 256 }}
+              defaultOpenKeys={['sub1']}
+              selectedKeys={[this.state.current]}
+              mode="inline"
+            >
+              <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
+                <Menu.Item key="1">Option 1</Menu.Item>
+                <Menu.Item key="2">Option 2</Menu.Item>
+                <Menu.Item key="3">Option 3</Menu.Item>
+                <Menu.Item key="4">Option 4</Menu.Item>
+              </SubMenu>
+              <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>Navigtion Two</span></span>}>
+                <Menu.Item key="5">Option 5</Menu.Item>
+                <Menu.Item key="6">Option 6</Menu.Item>
+                <SubMenu key="sub3" title="Submenu">
+                  <Menu.Item key="7">Option 7</Menu.Item>
+                  <Menu.Item key="8">Option 8</Menu.Item>
+                </SubMenu>
+              </SubMenu>
+              <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
+                <Menu.Item key="9">Option 9</Menu.Item>
+                <Menu.Item key="10">Option 10</Menu.Item>
+                <Menu.Item key="11">Option 11</Menu.Item>
+                <Menu.Item key="12">Option 12</Menu.Item>
+              </SubMenu>
+            </Menu>
           </div>
         </nav>
         <div
