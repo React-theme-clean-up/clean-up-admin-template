@@ -5,15 +5,21 @@ import './Messaging.css'
 import data from './data.json'
 
 const TabPane = Tabs.TabPane
-const Search = Input.Search;
+const Search = Input.Search
 
 const actionsMenu = (
   <Menu>
-    <Menu.Item key="1"><Icon style={{ marginRight: 3 }} type="sound" />Mute</Menu.Item>
-    <Menu.Item key="2"><Icon style={{ marginRight: 3 }} type="delete" />Delete chat</Menu.Item>
-    <Menu.Item key="3"><Icon style={{ marginRight: 3 }} type="setting" />Settings</Menu.Item>
+    <Menu.Item key="1">
+      <Icon style={{ marginRight: 3 }} type="sound" />Mute
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Icon style={{ marginRight: 3 }} type="delete" />Delete chat
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Icon style={{ marginRight: 3 }} type="setting" />Settings
+    </Menu.Item>
   </Menu>
-);
+)
 
 const chatTab = chat => {
   let tabName = chat.companionName
@@ -30,14 +36,13 @@ const chatTab = chat => {
         <div className="messaging__tab-name">
           {tabName}
         </div>
-        <div className="messaging__tab-text" dangerouslySetInnerHTML={ {__html: lastMessage} }>
-        </div>
+        <div className="messaging__tab-text" dangerouslySetInnerHTML={{ __html: lastMessage }} />
       </div>
     </div>
   )
 }
 
-const Message = (message) => {
+const Message = message => {
   let content = message.message.content
   let messageOwner = message.message.username
   let messageImg = message.message.img
@@ -55,10 +60,10 @@ const Message = (message) => {
         <strong>
           {messageOwner}
         </strong>
-        <div dangerouslySetInnerHTML={ {__html: content} }>
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
-    </div>)
+    </div>
+  )
 }
 
 class MessagingApp extends React.Component {
@@ -67,10 +72,10 @@ class MessagingApp extends React.Component {
     chatsData: [],
     activeChatNumber: 0,
     selectedChatData: {},
-    messagesData : []
+    messagesData: [],
   }
 
-  changeChat = (chatNumber) => {
+  changeChat = chatNumber => {
     this.setState({
       activeChatNumber: chatNumber,
     })
@@ -81,7 +86,7 @@ class MessagingApp extends React.Component {
       chatOwner: data.chatsOwner,
       chatsData: data.chats,
       selectedChatData: {},
-      messagesData : [],
+      messagesData: [],
     })
   }
 
@@ -94,11 +99,7 @@ class MessagingApp extends React.Component {
       <div className="card messaging">
         <div className="messaging__sidebar">
           <div className="messaging__sidebar-header">
-            <Search
-              placeholder="input search text"
-              size="small"
-              style={{ width: "100%" }}
-            />
+            <Search placeholder="input search text" size="small" style={{ width: '100%' }} />
           </div>
           <div className="messaging__tabs">
             <Tabs defaultActiveKey="0" tabPosition={'left'} onChange={this.changeChat}>
@@ -109,7 +110,9 @@ class MessagingApp extends React.Component {
         <div className="messaging__content">
           <div className="card-header clearfix">
             <h4 className="mt-1 mb-1 text-black d-inline-block">
-              <strong>{selectedChatData.companionName}</strong>
+              <strong>
+                {selectedChatData.companionName}
+              </strong>
             </h4>
             <div className="pull-right">
               <Dropdown overlay={actionsMenu}>
@@ -121,10 +124,15 @@ class MessagingApp extends React.Component {
           </div>
           <div className="messaging__content-wrapper">
             <div className="messaging__chat height-700">
-              {messagesData.map((message, index) => <Message message={message} key={index} chatOwner={chatOwner} />)}
+              {messagesData.map((message, index) =>
+                <Message message={message} key={index} chatOwner={chatOwner} />,
+              )}
             </div>
             <form className="form-group mt-4 mb-3">
-              <textarea className="form-control adjustable-textarea" placeholder="Type message..." />
+              <textarea
+                className="form-control adjustable-textarea"
+                placeholder="Type message..."
+              />
               <div className="mt-3">
                 <button type="submit" className="btn btn-primary width-200">
                   <i className="fa fa-send mr-2" />
