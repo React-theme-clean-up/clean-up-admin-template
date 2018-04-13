@@ -4,11 +4,7 @@ import { Form, Icon, Input, Button, Upload } from 'antd'
 const FormItem = Form.Item
 
 class ProfileSettings extends React.Component {
-
-  state = {
-
-  }
-
+  state = {}
 
   render() {
     const { getFieldDecorator } = this.props.form
@@ -24,9 +20,7 @@ class ProfileSettings extends React.Component {
               <label className="form-label mb-0">Username</label>
               {getFieldDecorator('userName', {
                 rules: [{ required: false }],
-              })(
-                <Input placeholder="Username" />,
-              )}
+              })(<Input placeholder="Username" />)}
             </FormItem>
           </div>
           <div className="col-lg-6">
@@ -34,9 +28,7 @@ class ProfileSettings extends React.Component {
               <label className="form-label mb-0">Email</label>
               {getFieldDecorator('email', {
                 rules: [{ required: false }],
-              })(
-                <Input placeholder="Email" />,
-              )}
+              })(<Input placeholder="Email" />)}
             </FormItem>
           </div>
         </div>
@@ -47,17 +39,13 @@ class ProfileSettings extends React.Component {
           <div className="col-lg-6">
             <FormItem>
               <label className="form-label mb-0">Password</label>
-              {getFieldDecorator('password')(
-                <Input placeholder="New password" />,
-              )}
+              {getFieldDecorator('password')(<Input placeholder="New password" />)}
             </FormItem>
           </div>
           <div className="col-lg-6">
             <FormItem>
               <label className="form-label mb-0">Confirm Password</label>
-              {getFieldDecorator('confirmpassword')(
-                <Input placeholder="Confirm password" />,
-              )}
+              {getFieldDecorator('confirmpassword')(<Input placeholder="Confirm password" />)}
             </FormItem>
           </div>
         </div>
@@ -84,12 +72,10 @@ class ProfileSettings extends React.Component {
           </div>
         </div>
         <div className="form-actions">
-          <Button style={{width: 150}} type="primary" htmlType="submit" className="mr-3">
+          <Button style={{ width: 150 }} type="primary" htmlType="submit" className="mr-3">
             Submit
           </Button>
-          <Button htmlType="submit">
-            Cancel
-          </Button>
+          <Button htmlType="submit">Cancel</Button>
         </div>
       </Form>
     )
