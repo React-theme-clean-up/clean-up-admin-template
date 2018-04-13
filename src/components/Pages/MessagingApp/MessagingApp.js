@@ -71,8 +71,6 @@ class MessagingApp extends React.Component {
     chatOwner: '',
     chatsData: [],
     activeChatNumber: 0,
-    selectedChatData: {},
-    messagesData: [],
   }
 
   changeChat = chatNumber => {
@@ -85,8 +83,6 @@ class MessagingApp extends React.Component {
     this.setState({
       chatOwner: data.chatsOwner,
       chatsData: data.chats,
-      selectedChatData: {},
-      messagesData: [],
     })
   }
 

@@ -72,16 +72,16 @@
         "content": "<p>Hello World!</p>",
         "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
       },
-      {
-        "username": "Olga Venka",
-        "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/3.jpg"
-      },
-      {
-        "username": "Chris Evans",
-        "content": "<p>Good stuff!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
-      }
+        {
+          "username": "Olga Venka",
+          "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>",
+          "img": "../../modules/dummy-assets/common/img/avatars/3.jpg"
+        },
+        {
+          "username": "Chris Evans",
+          "content": "<p>Good stuff!</p>",
+          "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        }
       ]
     },
     {
@@ -97,3 +97,5 @@
 
   ]
 }
+
+

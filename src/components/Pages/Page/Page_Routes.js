@@ -216,6 +216,12 @@ const loadableRoutes = {
   '/messagingapppage': {
     component: loadable(() => import('pages/MessagingAppPage')),
   },
+  '/mailapppage': {
+    component: loadable(() => import('pages/MailAppPage')),
+  },
+  '/profilepage': {
+    component: loadable(() => import('pages/ProfilePage')),
+  },
 }
 
 class Routes extends React.Component {
