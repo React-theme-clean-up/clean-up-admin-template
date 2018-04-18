@@ -72,8 +72,7 @@ class Dialog extends React.Component {
         afterClose={afterClose}
         width={null}
       >
-        {isDialogForm &&
-          <DialogForm {...{ show, close }} />}
+        {isDialogForm && <DialogForm {...{ show, close }} />}
       </Modal>
     )
   }

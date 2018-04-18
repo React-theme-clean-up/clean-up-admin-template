@@ -16,8 +16,7 @@ class Lockscreen extends React.Component {
     let min = 1
     let max = 5
     let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
-    ;(backgroundImage =
-      'url(resources/images/login/' + picNumber + '.jpg)'), this.setState({
+    ;(backgroundImage = 'url(resources/images/login/' + picNumber + '.jpg)'), this.setState({
       backgroundImage: backgroundImage,
     })
   }
@@ -69,11 +68,7 @@ class Lockscreen extends React.Component {
                 <div className="login__block__form">
                   <form id="form-validation" name="form-validation" method="POST">
                     <div className="text-center mb-3">
-                      <Avatar
-                        src="resources/images/avatars/1.jpg"
-                        border="true"
-                        size="90"
-                      />
+                      <Avatar src="resources/images/avatars/1.jpg" border="true" size="90" />
                     </div>
                     <h2 style={{ color: '#514d6a' }} className="text-center">
                       <i className="icmn-lock" />

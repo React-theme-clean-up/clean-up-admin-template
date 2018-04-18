@@ -3,7 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Menu, Icon, Switch, Layout } from 'antd'
 
-const { Sider } = Layout;
+const { Sider } = Layout
 const SubMenu = Menu.SubMenu
 
 const mapStateToProps = (state, props) => ({})
@@ -28,9 +28,7 @@ class AppMenu extends React.Component {
 
   render() {
     return (
-      <Sider
-        width={256}
-      >
+      <Sider width={256}>
         <Switch
           checked={this.state.theme === 'dark'}
           onChange={this.changeTheme}
@@ -51,9 +49,9 @@ class AppMenu extends React.Component {
             key="sub1"
             title={
               <span>
-                    <Icon type="mail" />
-                    <span>Navigation One</span>
-                  </span>
+                <Icon type="mail" />
+                <span>Navigation One</span>
+              </span>
             }
           >
             <Menu.Item key="1">Option 1</Menu.Item>
@@ -65,9 +63,9 @@ class AppMenu extends React.Component {
             key="sub2"
             title={
               <span>
-                    <Icon type="appstore" />
-                    <span>Navigtion Two</span>
-                  </span>
+                <Icon type="appstore" />
+                <span>Navigtion Two</span>
+              </span>
             }
           >
             <Menu.Item key="5">Option 5</Menu.Item>
@@ -81,9 +79,9 @@ class AppMenu extends React.Component {
             key="sub4"
             title={
               <span>
-                    <Icon type="setting" />
-                    <span>Navigation Three</span>
-                  </span>
+                <Icon type="setting" />
+                <span>Navigation Three</span>
+              </span>
             }
           >
             <Menu.Item key="9">Option 9</Menu.Item>
@@ -92,7 +90,6 @@ class AppMenu extends React.Component {
             <Menu.Item key="12">Option 12</Menu.Item>
           </SubMenu>
         </Menu>
-
       </Sider>
     )
   }

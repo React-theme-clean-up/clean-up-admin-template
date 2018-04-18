@@ -21,7 +21,7 @@ import { AppLayout } from 'components/Pages/Page'
 import reducer from 'ducks'
 
 import 'resources/_antd.less' // redefinition Ant Design variables
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'resources/AntStyles/AntDesign/antd.cleanui.css'
 import 'resources/CleanStyles/Core/core.cleanui.css'
