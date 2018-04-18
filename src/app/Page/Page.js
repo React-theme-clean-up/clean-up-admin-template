@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { initAuth, setLoading, setUpdatingContent, resetHideLogin } from 'ducks/app'
-import NotFound from 'components/Pages/NotFound'
+import NotFoundPage from 'pages/DefaultPages/NotFoundPage'
 import AppLayout from 'app/Layout'
 import Dialog from './Page_Dialog'
 
@@ -57,7 +57,7 @@ class Page extends React.Component {
   updateContent = () => {
     const { setContentBuffer } = this.context
     const { isNotFound, pathName, children, dispatch } = this.props
-    setContentBuffer({ pathName, content: isNotFound ? <NotFound /> : children })
+    setContentBuffer({ pathName, content: isNotFound ? <NotFoundPage /> : children })
     dispatch(setUpdatingContent(true))
     if (this.isFirstContent) {
       this.isFirstContent = false

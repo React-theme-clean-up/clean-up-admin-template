@@ -26,7 +26,7 @@ class Donut extends React.Component {
     return (
       <span className="mr-2 nowrap">
         <span
-          className={color === undefined ? 'donut ' + 'donut--' + type : 'donut'}
+          className={color === undefined ? 'donut donut--' + type : 'donut'}
           style={color !== undefined ? { borderColor: color } : {}}
         />
         {name}

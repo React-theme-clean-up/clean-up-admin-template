@@ -32,7 +32,7 @@ class UserCard extends React.Component {
 
     return (
       <div
-        className={`userCard px-3 py-5 ${type.length > 0 ? 'userCard--typed ' + 'bg-' + type : ''}`}
+        className={`userCard px-3 py-5 ${type.length > 0 ? 'userCard--typed bg-' + type : ''}`}
       >
         <button className="userCard__plusBtn">Add</button>
         <Avatar

@@ -2,9 +2,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import ProfileMenu from './AppHeader_ProfileMenu'
-import { Layout } from 'antd'
-
-const { Header } = Layout
 
 const mapStateToProps = (state, props) => ({})
 

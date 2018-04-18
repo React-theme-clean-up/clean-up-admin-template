@@ -3,8 +3,8 @@ import { Route } from 'react-router-dom'
 import { ConnectedSwitch } from 'reactRouterConnected'
 import Loadable from 'react-loadable'
 import Page from 'app/Page'
-import NotFound from 'components/Pages/NotFound'
-import HomePage from 'pages/HomePage'
+import NotFoundPage from 'pages/DefaultPages/NotFoundPage'
+import HomePage from 'pages/DefaultPages/HomePage'
 
 const loadable = loader =>
   Loadable({
@@ -14,15 +14,39 @@ const loadable = loader =>
   })
 
 const loadableRoutes = {
+  // Default Pages
   '/login': {
-    component: loadable(() => import('pages/LoginPage')),
+    component: loadable(() => import('pages/DefaultPages/LoginPage')),
   },
-  '/dashboard': {
-    component: loadable(() => import('pages/DashboardPage')),
+
+  // Dashboards
+  '/dashboard/alpha': {
+    component: loadable(() => import('pages/Dashboard/DashboardAlphaPage')),
   },
-  '/buttonpage': {
-    component: loadable(() => import('pages/ButtonPage')),
-  },
+
+  // Apps
+
+
+  // Ecommerce
+
+
+  // Icons
+
+
+  // Layout
+
+
+  // Charts
+
+
+  // AntDesign
+
+
+
+
+  // '/buttonpage': {
+  //   component: loadable(() => import('pages/ButtonPage')),
+  // },
   // '/gridpage': {
   //   component: loadable(() => import('pages/GridPage')),
   // },
@@ -272,7 +296,7 @@ class Routes extends React.Component {
         <Route
           render={() =>
             <Page>
-              <NotFound />
+              <NotFoundPage />
             </Page>}
         />
       </ConnectedSwitch>
