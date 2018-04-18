@@ -222,6 +222,30 @@ const loadableRoutes = {
   '/profilepage': {
     component: loadable(() => import('pages/ProfilePage')),
   },
+  '/gallerypage': {
+    component: loadable(() => import('pages/GalleryPage')),
+  },
+  '/gridbootstrappage': {
+    component: loadable(() => import('pages/GridBootstrapPage')),
+  },
+  '/gridcardpage': {
+    component: loadable(() => import('pages/GridCardPage')),
+  },
+  '/utilitiespage': {
+    component: loadable(() => import('pages/UtilitiesPage')),
+  },
+  '/typographypage': {
+    component: loadable(() => import('pages/TypographyPage')),
+  },
+  '/fontawesomeiconspage': {
+    component: loadable(() => import('pages/FontAwesomeIconsPage')),
+  },
+  '/lineariconspage': {
+    component: loadable(() => import('pages/LinearIconsPage')),
+  },
+  '/icomooniconspage': {
+    component: loadable(() => import('pages/IcomoonIconsPage')),
+  },
 }
 
 class Routes extends React.Component {
