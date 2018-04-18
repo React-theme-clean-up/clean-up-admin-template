@@ -50,10 +50,10 @@ export function initAuth(dispatch) {
   if (key === 'qwerty') {
     dispatch(_setHideLogin(true))
     dispatch(setCommonLogin())
-    // dispatch(push('/dashboard'))
+    dispatch(push('/dashboard'))
     return true
   } else {
-    // dispatch(push('/login'))
+    dispatch(push('/login'))
     dispatch(_setFrom(''))
     return false
   }
@@ -64,10 +64,10 @@ export function login(username, password, dispatch) {
     window.localStorage.setItem('app.Authorization', 'qwerty')
     dispatch(_setHideLogin(true))
     dispatch(setCommonLogin())
-    // dispatch(push('/dashboard'))
+    dispatch(push('/dashboard'))
     return true
   } else {
-    // dispatch(push('/login'))
+    dispatch(push('/login'))
     dispatch(_setFrom(''))
     return false
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from 'components/Pages/Page'
+import Page from 'app/Page/Page'
 import Helmet from 'react-helmet'
 import GridCard from 'components/Pages/GridCard/GridCard'
 

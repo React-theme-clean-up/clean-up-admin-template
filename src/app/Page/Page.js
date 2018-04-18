@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { initAuth, setLoading, setUpdatingContent, resetHideLogin } from 'ducks/app'
 import NotFound from 'components/Pages/NotFound'
-import AppLayout from './Page_Layout'
+import AppLayout from 'app/Layout'
 import Dialog from './Page_Dialog'
 
 const mapStateToProps = (state, props) => ({

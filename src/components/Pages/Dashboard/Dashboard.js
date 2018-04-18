@@ -15,7 +15,7 @@ import {
 
 import Donut from 'components/CleanComponents/Donut/Donut'
 import UserCard from 'components/CleanComponents/UserCard/UserCard'
-import ProfileHeadCard from '../../CleanComponents/ProfileHeadCard/ProfileHeadCard'
+import ProfileHeadCard from 'components/CleanComponents/ProfileHeadCard/ProfileHeadCard'
 import ProgressGroup from 'components/CleanComponents/ProgressGroup/ProgressGroup'
 import SliderCard from 'components/CleanComponents/SliderCard/SliderCard'
 import InfoCard from 'components/CleanComponents/InfoCard/InfoCard'

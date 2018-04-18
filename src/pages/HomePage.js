@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import Page from 'components/Pages/Page'
+import Page from 'app/Page/Page'
 
 class HomePage extends React.Component {
   static defaultProps = {

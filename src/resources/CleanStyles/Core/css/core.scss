@@ -327,10 +327,6 @@ pre {
             border-bottom: 1px solid $gray-border;
         }
 
-        &--border-red {
-            border-bottom: 3px solid $cba;
-        }
-
         @media (max-width: $sm-max-width) {
             margin-left: 0;
             margin-right: 0;

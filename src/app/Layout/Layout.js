@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Spinner } from 'react-redux-spinner'
-import { BackTop } from 'antd'
-import Routes from './Page_Routes'
+import { BackTop, Layout } from 'antd'
+import Routes from 'app/Routes'
 import AppHeader from 'components/CleanComponents/AppHeader/AppHeader'
 import AppFooter from 'components/CleanComponents/AppFooter/AppFooter'
 import AppMenu from 'components/CleanComponents/AppMenu/AppMenu'
-import AppContent from './Page_Content'
-import { Layout } from 'antd'
+import AppContent from 'app/Page/Page_Content'
 
 const { Content, Header, Footer } = Layout
 
