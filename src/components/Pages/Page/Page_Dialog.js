@@ -61,11 +61,8 @@ class Dialog extends React.Component {
       close,
       afterClose,
     } = this.props
-    // нужно сохранять инстанс Modal, чтобы диалог выплывал от вызвавшей кнопки
     return (
       <Modal
-        // сбрасываю форму, чтобы инициировать значения полей
-        // https://ant.design/components/modal/#Destroy-on-close
         key={isDialogForm}
         title={title}
         wrapClassName="rfq__ant__modal"
@@ -76,7 +73,6 @@ class Dialog extends React.Component {
         width={null}
       >
         {isDialogForm &&
-          // по флагу isDialogForm создается-удаляется содержимое диалога
           <DialogForm {...{ show, close }} />}
       </Modal>
     )

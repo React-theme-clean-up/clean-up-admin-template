@@ -1,6 +1,6 @@
 {
   "productStatus": "new",
-  "productImg": "../../modules/dummy-assets/common/img/ecommerce/004.jpg",
+  "productImg": "resources/images/ecommerce/004.jpg",
   "productName": "Comfortable chair",
   "productPrice": "$542.00",
   "productOldPrice": "$356.00",

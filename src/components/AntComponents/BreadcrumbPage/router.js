@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/style.css'
-import { Router, Route, Link, hashHistory } from 'react-router'
-
+import { Router, Route } from 'react-router'
+import { Link } from 'react-router-dom'
 import { Breadcrumb, Alert } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -27,7 +27,7 @@ export default function(ReactDOM, mountNode) {
     </div>
 
   ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router>
       <Route name="home" breadcrumbName="Home" path="/" component={Home}>
         <Route name="apps" breadcrumbName="Application List" path="apps" component={Apps}>
           <Route name="app" breadcrumbName="Application:id" path=":id">

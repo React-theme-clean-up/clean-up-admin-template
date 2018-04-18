@@ -17,20 +17,15 @@ import { LocaleProvider } from 'antd'
 import enGB from 'antd/lib/locale-provider/en_GB'
 import registerServiceWorker from 'registerServiceWorker'
 
-import { Layout } from 'components/Pages/Page'
+import { AppLayout } from 'components/Pages/Page'
 import reducer from 'ducks'
 
-import 'resources/modules/antd/common/import.antd.cleanui.less'
-import 'resources/modules/core/common/core.cleanui.css'
-import 'resources/modules/vendors/common/vendors.cleanui.css'
-import 'resources/modules/themes/common/themes.cleanui.css'
-import 'resources/modules/menu-left/common/menu-left.cleanui.css'
-import 'resources/modules/top-bar/common/top-bar.cleanui.css'
-import 'resources/modules/footer/common/footer.cleanui.css'
-import 'resources/modules/pages/common/pages.cleanui.css'
-import 'resources/modules/apps/common/apps.cleanui.css'
-import 'resources/modules/rfqueue/common/rfqueue.cleanui.css'
-import 'resources/modules/antd/common/antd.cleanui.css'
+import 'resources/_antd.less' // redefinition Ant Design variables
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import 'resources/AntStyles/AntDesign/antd.cleanui.css'
+import 'resources/CleanStyles/Core/core.cleanui.css'
+import 'resources/CleanStyles/Vendors/vendors.cleanui.css'
 
 const history = createHistory()
 const router = routerMiddleware(history)
@@ -49,7 +44,7 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <LocaleProvider locale={enGB}>
-        <Layout />
+        <AppLayout />
       </LocaleProvider>
     </ConnectedRouter>
   </Provider>,

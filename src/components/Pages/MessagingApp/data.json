@@ -3,94 +3,94 @@
   "chats": [
     {
       "companionName": "Chris Obama",
-      "companionImg": "../../modules/dummy-assets/common/img/avatars/1.jpg",
+      "companionImg": "resources/images/avatars/1.jpg",
       "chatMessages": [{
         "username": "Chris Obama",
         "content": "<p>Hello World!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Chris Evans",
         "content": "<p>Hello World!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/4.jpg"
+        "img": "resources/images/avatars/4.jpg"
       }, {
         "username": "Chris Obama",
-        "content": "<p>Lorem Ipsum is simply dummy text of the printing</p><img class=\"messaging__inner-img\" src=\"../../modules/dummy-assets/common/img/photos/4.jpeg\"/><img class=\"messaging__inner-img\" src=\"../../modules/dummy-assets/common/img/photos/3.jpeg\"/><img class=\"messaging__inner-img\" src=\"../../modules/dummy-assets/common/img/photos/2.jpeg\"/>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "content": "<p>Lorem Ipsum is simply dummy text of the printing</p><img class=\"messaging__inner-img\" src=\"resources/images/photos/4.jpeg\"/><img class=\"messaging__inner-img\" src=\"resources/images/photos/3.jpeg\"/><img class=\"messaging__inner-img\" src=\"resources/images/photos/2.jpeg\"/>",
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Chris Obama",
         "content": "<p>Ok. Thanks!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Chris Evans",
         "content": "<p>It's looks great</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/4.jpg"
+        "img": "resources/images/avatars/4.jpg"
       }, {
         "username": "Chris Obama",
         "content": "<p>That's awesome!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }
       ]
     },
     {
       "companionName": "Diana May",
-      "companionImg": "../../modules/dummy-assets/common/img/avatars/2.jpg",
+      "companionImg": "resources/images/avatars/2.jpg",
       "chatMessages": [{
         "username": "Chris Evans",
         "content": "<p>Hello World!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Diana May",
         "content": "<p>Love it!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/2.jpg"
+        "img": "resources/images/avatars/2.jpg"
       }, {
         "username": "Chris Evans",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg",
+        "img": "resources/images/avatars/1.jpg",
         "content": "<p>Lorem ipsum dolor sit amet, nibh ipsum. Cum class sem inceptos incidunt sed sed. Tempus wisi enim id, arcu sed lectus aliquam, nulla vitae est bibendum molestie elit risus.</p>"
       }, {
         "username": "Chris Evans",
         "content": "<p>So</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Chris Evans",
         "content": "<p>Chilltime is going to be an app for you to view videos with friends</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Chris Evans",
         "content": "<p>You can sign-up now to try out our private beta!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       }, {
         "username": "Diana May",
         "content": "<p>Definitely! Sounds great!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/2.jpg"
+        "img": "resources/images/avatars/2.jpg"
       }]
     },
     {
       "companionName": "Olga Venka",
-      "companionImg": "../../modules/dummy-assets/common/img/avatars/3.jpg",
+      "companionImg": "resources/images/avatars/3.jpg",
       "chatMessages": [{
         "username": "Chris Evans",
         "content": "<p>Hello World!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+        "img": "resources/images/avatars/1.jpg"
       },
         {
           "username": "Olga Venka",
           "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>",
-          "img": "../../modules/dummy-assets/common/img/avatars/3.jpg"
+          "img": "resources/images/avatars/3.jpg"
         },
         {
           "username": "Chris Evans",
           "content": "<p>Good stuff!</p>",
-          "img": "../../modules/dummy-assets/common/img/avatars/1.jpg"
+          "img": "resources/images/avatars/1.jpg"
         }
       ]
     },
     {
       "companionName": "Nick Cave",
-      "companionImg": "../../modules/dummy-assets/common/img/avatars/4.jpg",
+      "companionImg": "resources/images/avatars/4.jpg",
       "chatMessages": [{
         "username": "Nick Cave",
         "content": "<p>Hello World!</p>",
-        "img": "../../modules/dummy-assets/common/img/avatars/4.jpg"
+        "img": "resources/images/avatars/4.jpg"
       }
       ]
     }

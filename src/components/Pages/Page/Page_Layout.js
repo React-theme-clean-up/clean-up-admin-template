@@ -1,22 +1,22 @@
-// @flow
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Spinner } from 'react-redux-spinner'
 import { BackTop } from 'antd'
 import Routes from './Page_Routes'
-import MenuLeft from './Page_MenuLeft'
-import TopBar from './Page_TopBar'
-import Content from './Page_Content'
-import BodyClass from './Page_BodyClass'
-import HideLogin from './Page_HideLogin'
-import Footer from './Page_Footer'
+import AppHeader from 'components/CleanComponents/AppHeader/AppHeader'
+import AppFooter from 'components/CleanComponents/AppFooter/AppFooter'
+import AppMenu from 'components/CleanComponents/AppMenu/AppMenu'
+import AppContent from './Page_Content'
+import { Layout } from 'antd'
+
+const { Content, Header, Footer } = Layout
 
 let contentBuffer = {
   pathName: null,
   content: null,
 }
 
-class Layout extends React.Component {
+class AppLayout extends React.Component {
   static childContextTypes = {
     getContentBuffer: PropTypes.func,
     setContentBuffer: PropTypes.func,
@@ -25,26 +25,31 @@ class Layout extends React.Component {
   getChildContext() {
     return {
       getContentBuffer: () => contentBuffer,
-      // $FlowFixMe
       setContentBuffer: ({ pathName, content }) => (contentBuffer = { pathName, content }),
     }
   }
 
   render() {
     return (
-      <div>
-        <BodyClass />
+      <Layout>
         <Spinner />
         <BackTop />
         <Routes />
-        <MenuLeft />
-        <TopBar />
-        <Content />
-        <Footer />
-        <HideLogin />
-      </div>
+        <AppMenu />
+        <Layout>
+          <Header>
+            <AppHeader />
+          </Header>
+          <Content style={{ height: '100%' }}>
+            <AppContent />
+          </Content>
+          <Footer>
+            <AppFooter />
+          </Footer>
+        </Layout>
+      </Layout>
     )
   }
 }
 
-export default Layout
+export default AppLayout

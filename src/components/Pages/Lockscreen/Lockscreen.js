@@ -6,7 +6,7 @@ import './Lockscreen.css'
 
 class Lockscreen extends React.Component {
   state = {
-    backgroundImage: 'url(../../modules/dummy-assets/common/img/login/1.jpg)',
+    backgroundImage: 'url(resources/images/login/1.jpg)',
     fullSize: false,
   }
 
@@ -17,7 +17,7 @@ class Lockscreen extends React.Component {
     let max = 5
     let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
     ;(backgroundImage =
-      'url(../../modules/dummy-assets/common/img/login/' + picNumber + '.jpg)'), this.setState({
+      'url(resources/images/login/' + picNumber + '.jpg)'), this.setState({
       backgroundImage: backgroundImage,
     })
   }
@@ -48,7 +48,7 @@ class Lockscreen extends React.Component {
               <div className="login__header__logo">
                 <a href="javascript: void(0);">
                   <img
-                    src="../../modules/dummy-assets/common/img/login/logo-inverse.png"
+                    src="resources/images/login/logo-inverse.png"
                     alt="Clean UI Admin Template"
                   />
                 </a>
@@ -70,7 +70,7 @@ class Lockscreen extends React.Component {
                   <form id="form-validation" name="form-validation" method="POST">
                     <div className="text-center mb-3">
                       <Avatar
-                        src="../../modules/dummy-assets/common/img/avatars/1.jpg"
+                        src="resources/images/avatars/1.jpg"
                         border="true"
                         size="90"
                       />

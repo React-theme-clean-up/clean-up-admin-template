@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom'
 import { ConnectedSwitch } from 'reactRouterConnected'
 import Loadable from 'react-loadable'
 import Page from './Page'
-import NotFound from './Page_NotFound'
+import NotFound from 'components/Pages/NotFound'
 import HomePage from 'pages/HomePage'
 
 const loadable = loader =>
@@ -96,9 +96,9 @@ const loadableRoutes = {
   '/avatarpage': {
     component: loadable(() => import('pages/AvatarPage')),
   },
-  '/badgepage': {
-    component: loadable(() => import('pages/BadgePage')),
-  },
+  // '/badgepage': {
+  //   component: loadable(() => import('pages/BadgePage')),
+  // },
   '/calendarpage': {
     component: loadable(() => import('pages/CalendarPage')),
   },

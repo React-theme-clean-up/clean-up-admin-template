@@ -4,14 +4,13 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { setUpdatingContent } from 'ducks/app'
 import { isEmpty } from 'lodash'
-import Path from './Page_Path'
 
 const mapStateToProps = (state, props) => ({
   isUpdatingContent: state.app.isUpdatingContent,
 })
 
 @connect(mapStateToProps)
-class Content extends React.Component {
+class AppContent extends React.Component {
   static contextTypes = {
     getContentBuffer: PropTypes.func,
   }
@@ -37,11 +36,10 @@ class Content extends React.Component {
     const { pathName, content } = getContentBuffer()
     return isEmpty(content)
       ? <div className="rfq__utility__loading-fullscreen" />
-      : <div className="cat__content">
-          <Path name={pathName} />
+      : <div>
           {content}
         </div>
   }
 }
 
-export default Content
+export default AppContent

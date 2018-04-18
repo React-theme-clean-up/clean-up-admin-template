@@ -28,7 +28,7 @@ class MailTemplates extends React.Component {
                       <tr>
                         <td style={{ verticalAlign: 'top' }}>
                           <img
-                            src="../../modules/dummy-assets/common/img/logo.png"
+                            src="resources/images/logo.png"
                             alt="Clean UI Admin Template"
                             style={{ height: '40px' }}
                           />
@@ -121,7 +121,7 @@ class MailTemplates extends React.Component {
                       <tr>
                         <td style={{ verticalAlign: 'top' }}>
                           <img
-                            src="../../modules/dummy-assets/common/img/logo.png"
+                            src="resources/images/logo.png"
                             alt="Clean UI Admin Template"
                             style={{ height: '40px' }}
                           />
@@ -228,7 +228,7 @@ class MailTemplates extends React.Component {
                       <tr>
                         <td style={{ verticalAlign: 'top' }}>
                           <img
-                            src="../../modules/dummy-assets/common/img/logo.png"
+                            src="resources/images/logo.png"
                             alt="Clean UI Admin Template"
                             style={{ height: '40px' }}
                           />
@@ -635,7 +635,7 @@ class MailTemplates extends React.Component {
                       <tr>
                         <td style={{ verticalAlign: 'top' }}>
                           <img
-                            src="../../modules/dummy-assets/common/img/logo.png"
+                            src="resources/images/logo.png"
                             alt="Clean UI Admin Template"
                             style={{ height: '40px' }}
                           />

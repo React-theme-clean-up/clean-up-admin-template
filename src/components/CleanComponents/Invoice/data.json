@@ -1,7 +1,7 @@
 {
   "invoiceData": {
     "senderName": "Amazon Delivery",
-    "senderLogo": "../../modules/dummy-assets/common/img/amazon.jpg",
+    "senderLogo": "resources/images/amazon.jpg",
     "senderAdress": "795 Folsom Ave, Suite 600, San Francisco, CA, 94107 ",
     "senderEmail": "example@amazon.com",
     "senderPhone": "(123) 456-7890",

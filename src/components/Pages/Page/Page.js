@@ -3,8 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { initAuth, setLoading, setUpdatingContent, resetHideLogin } from 'ducks/app'
-import NotFound from './Page_NotFound'
-import Layout from './Page_Layout'
+import NotFound from 'components/Pages/NotFound'
+import AppLayout from './Page_Layout'
 import Dialog from './Page_Dialog'
 
 const mapStateToProps = (state, props) => ({
@@ -69,9 +69,6 @@ class Page extends React.Component {
     if (this.isStartLoading) {
       this.isStartLoading = false
       const { dispatch } = this.props
-      // setTimeout нужен для предотвращения мигания индикатора загрузки,
-      // когда следующая страница грузится раньше, чем умрет текущая;
-      // кроме того, флаг isHideLogin зависит от pendingTasks
       setTimeout(() => {
         dispatch(setLoading(false))
         dispatch(resetHideLogin())
@@ -100,7 +97,7 @@ class Page extends React.Component {
         if (isResolve) {
           this.stopLoading()
         }
-      }, 300) // демонстрировать state.app.isLoading не менее 300 мс
+      }, 300) // show app loading 300ms
       if (this._onMounted) {
         isResolve = true
         if (!this.timeoutId) {
@@ -131,5 +128,5 @@ class Page extends React.Component {
   }
 }
 
-export { Layout, Dialog }
+export { AppLayout, Dialog }
 export default Page

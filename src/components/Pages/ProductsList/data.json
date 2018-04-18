@@ -1,7 +1,7 @@
 {
   "data": [{
     "key": "1",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/001.jpg",
+    "thumbnail": "resources/images/ecommerce/001.jpg",
     "name": "Rounded Chair",
     "id": 2412,
     "type": "Furniture",
@@ -12,7 +12,7 @@
     "status": "Disabled"
   }, {
     "key": "2",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/002.jpg",
+    "thumbnail": "resources/images/ecommerce/002.jpg",
     "name": "Scoop",
     "id": 262,
     "type": "Cleaning",
@@ -23,7 +23,7 @@
     "status": "Enabled"
   }, {
     "key": "3",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/003.jpg",
+    "thumbnail": "resources/images/ecommerce/003.jpg",
     "name": "Pure Wooden chair",
     "id": 3255,
     "type": "Furniture",
@@ -34,7 +34,7 @@
     "status": "Enabled"
   }, {
     "key": "4",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/004.jpg",
+    "thumbnail": "resources/images/ecommerce/004.jpg",
     "name": "Gray Chair",
     "id": 2362,
     "type": "Furniture",
@@ -45,7 +45,7 @@
     "status": "Enabled"
   }, {
     "key": "5",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/001.jpg",
+    "thumbnail": "resources/images/ecommerce/001.jpg",
     "name": "Rounded Chair",
     "id": 2412,
     "type": "Furniture",
@@ -56,7 +56,7 @@
     "status": "Disabled"
   }, {
     "key": "6",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/002.jpg",
+    "thumbnail": "resources/images/ecommerce/002.jpg",
     "name": "Scoop",
     "id": 262,
     "type": "Cleaning",
@@ -67,7 +67,7 @@
     "status": "Enabled"
   }, {
     "key": "7",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/003.jpg",
+    "thumbnail": "resources/images/ecommerce/003.jpg",
     "name": "Pure Wooden chair",
     "id": 3255,
     "type": "Furniture",
@@ -78,7 +78,7 @@
     "status": "Enabled"
   }, {
     "key": "8",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/004.jpg",
+    "thumbnail": "resources/images/ecommerce/004.jpg",
     "name": "Gray Chair",
     "id": 2362,
     "type": "Furniture",
@@ -89,7 +89,7 @@
     "status": "Enabled"
   }, {
     "key": "9",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/001.jpg",
+    "thumbnail": "resources/images/ecommerce/001.jpg",
     "name": "Rounded Chair",
     "id": 2412,
     "type": "Furniture",
@@ -100,7 +100,7 @@
     "status": "Disabled"
   }, {
     "key": "10",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/002.jpg",
+    "thumbnail": "resources/images/ecommerce/002.jpg",
     "name": "Scoop",
     "id": 262,
     "type": "Cleaning",
@@ -111,7 +111,7 @@
     "status": "Enabled"
   }, {
     "key": "11",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/003.jpg",
+    "thumbnail": "resources/images/ecommerce/003.jpg",
     "name": "Pure Wooden chair",
     "id": 3255,
     "type": "Furniture",
@@ -122,7 +122,7 @@
     "status": "Enabled"
   }, {
     "key": "12",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/004.jpg",
+    "thumbnail": "resources/images/ecommerce/004.jpg",
     "name": "Gray Chair",
     "id": 2362,
     "type": "Furniture",
@@ -133,7 +133,7 @@
     "status": "Enabled"
   }, {
     "key": "13",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/001.jpg",
+    "thumbnail": "resources/images/ecommerce/001.jpg",
     "name": "Rounded Chair",
     "id": 2412,
     "type": "Furniture",
@@ -144,7 +144,7 @@
     "status": "Disabled"
   }, {
     "key": "14",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/002.jpg",
+    "thumbnail": "resources/images/ecommerce/002.jpg",
     "name": "Scoop",
     "id": 262,
     "type": "Cleaning",
@@ -155,7 +155,7 @@
     "status": "Enabled"
   }, {
     "key": "15",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/003.jpg",
+    "thumbnail": "resources/images/ecommerce/003.jpg",
     "name": "Pure Wooden chair",
     "id": 3255,
     "type": "Furniture",
@@ -166,7 +166,7 @@
     "status": "Enabled"
   }, {
     "key": "16",
-    "thumbnail": "../../modules/dummy-assets/common/img/ecommerce/004.jpg",
+    "thumbnail": "resources/images/ecommerce/004.jpg",
     "name": "Gray Chair",
     "id": 2362,
     "type": "Furniture",
