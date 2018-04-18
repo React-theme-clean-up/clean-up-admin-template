@@ -26,23 +26,15 @@ const loadableRoutes = {
 
   // Apps
 
-
   // Ecommerce
-
 
   // Icons
 
-
   // Layout
-
 
   // Charts
 
-
   // AntDesign
-
-
-
 
   // '/buttonpage': {
   //   component: loadable(() => import('pages/ButtonPage')),

@@ -31,9 +31,7 @@ class UserCard extends React.Component {
     let { type } = this.state
 
     return (
-      <div
-        className={`userCard px-3 py-5 ${type.length > 0 ? 'userCard--typed bg-' + type : ''}`}
-      >
+      <div className={`userCard px-3 py-5 ${type.length > 0 ? 'userCard--typed bg-' + type : ''}`}>
         <button className="userCard__plusBtn">Add</button>
         <Avatar
           src={user.avatar}
