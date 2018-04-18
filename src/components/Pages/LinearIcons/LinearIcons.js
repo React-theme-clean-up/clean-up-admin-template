@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tooltip } from 'antd';
+import { Tooltip } from 'antd'
 
 import data from './data.json'
 
@@ -10,31 +10,37 @@ class LinearIcons extends React.Component {
 
   componentWillMount() {
     this.setState({
-      iconsData: data.iconsData
+      iconsData: data.iconsData,
     })
   }
   render() {
-    let {
-      iconsData,
-    } = this.state
+    let { iconsData } = this.state
 
     return (
       <div>
         <section className="card">
           <div className="card-header">
-        <span className="cat__core__title">
-            <strong>Linear Icons Free</strong>
-            <a href="https://linearicons.com/free" target="_blank" className="btn btn-sm btn-primary ml-2">Official Documentation <i className="icmn-link ml-1"></i></a>
-        </span>
+            <span className="cat__core__title">
+              <strong>Linear Icons Free</strong>
+              <a
+                href="https://linearicons.com/free"
+                target="_blank"
+                className="btn btn-sm btn-primary ml-2"
+              >
+                Official Documentation <i className="icmn-link ml-1" />
+              </a>
+            </span>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col-xl-6 offset-xl-3">
                 <ul className="cat__core__icons-block list-unstyled">
                   {iconsData.map((icon, index) =>
-                    <Tooltip title={"lnr " + icon} key={index}>
-                      <li><i className={"lnr " + icon}></i></li>
-                    </Tooltip>
+                    <Tooltip title={'lnr ' + icon} key={index}>
+                      <li>
+                        <i className={'lnr ' + icon} />
+                      </li>
+                    </Tooltip>,
                   )}
                 </ul>
               </div>

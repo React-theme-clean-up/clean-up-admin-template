@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'antd'
 
 const dropdownMenu = (
   <Menu>
@@ -16,14 +16,14 @@ const dropdownMenu = (
       <a href="javascript:void(0)">Marketing</a>
     </Menu.Item>
     <Menu.Item>
-      <a href="javascript:void(0)"><i className="dropdown-icon icmn-cog"></i> Settings</a>
+      <a href="javascript:void(0)">
+        <i className="dropdown-icon icmn-cog" /> Settings
+      </a>
     </Menu.Item>
   </Menu>
-);
+)
 
 class GridCard extends React.Component {
-
-
   render() {
     return (
       <div>
@@ -31,7 +31,13 @@ class GridCard extends React.Component {
           <div className="card-header">
             <span className="cat__core__title">
               <strong>Cards</strong>
-              <a href="http://v4-alpha.getbootstrap.com/components/card/" target="_blank" className="btn btn-sm btn-primary ml-2">Official Documentation <i className="icmn-link ml-1"></i></a>
+              <a
+                href="http://v4-alpha.getbootstrap.com/components/card/"
+                target="_blank"
+                className="btn btn-sm btn-primary ml-2"
+              >
+                Official Documentation <i className="icmn-link ml-1" />
+              </a>
             </span>
           </div>
           <div className="card-body">
@@ -44,11 +50,13 @@ class GridCard extends React.Component {
         <section className="card">
           <div className="card-header">
             <div className="pull-right mt-2">
-              <span className="mr-3">User: <a href="javascript: void(0);">Administrator</a></span>
+              <span className="mr-3">
+                User: <a href="javascript: void(0);">Administrator</a>
+              </span>
               <div className="d-inline-block">
                 <Dropdown overlay={dropdownMenu}>
                   <a href="#">
-                    <i className="icmn-database mr-2"></i>
+                    <i className="icmn-database mr-2" />
                     <span className="hidden-lg-down mr-2">Dashboards</span>
                     <Icon type="down" />
                   </a>
@@ -71,11 +79,13 @@ class GridCard extends React.Component {
             <section className="card">
               <div className="card-header">
                 <span className="cat__core__title">
-                    <strong>Card in Grid</strong>
+                  <strong>Card in Grid</strong>
                 </span>
               </div>
               <div className="card-body">
-                <span>Grid: <code>.col-lg-4</code></span>
+                <span>
+                  Grid: <code>.col-lg-4</code>
+                </span>
               </div>
               <div className="card-footer">
                 <span>Default Card footer</span>
@@ -90,7 +100,9 @@ class GridCard extends React.Component {
                 </span>
               </div>
               <div className="card-body">
-                <span>Grid: <code>.col-lg-8</code></span>
+                <span>
+                  Grid: <code>.col-lg-8</code>
+                </span>
               </div>
               <div className="card-footer">
                 <span>Default Card footer</span>
