@@ -4,8 +4,6 @@ function rewire(config, env) {
   }).options
   const babelrc = require(babelOptions.presets[0])
   babelrc.plugins = [
-    // 1. не работает jest, заменил на NODE_PATH=src/ в .env
-    // 2. не работает webpack2, заменил на config.resolve.modules
     // ['module-resolver', { root: ['src'] }],
     [
       'import-inspector',
@@ -13,12 +11,10 @@ function rewire(config, env) {
         // serverSideRequirePath: true,
         webpackRequireWeakId: true,
       },
-    ], // см. react-loadable
-    ['import', { libraryName: 'antd', style: false }], // сократил на 122 KB
-    'lodash', // сократил на 23 KB
+    ],
+    ['import', { libraryName: 'antd', style: false }],
+    'lodash',
     'babel-plugin-idx',
-    // 'styled-jsx-postcss/babel',
-    // 'flow-react-proptypes',
     'tcomb',
     'transform-decorators-legacy',
   ].concat(babelrc.plugins || [])

@@ -9,8 +9,6 @@ export const pure = (fn: Function) => {
       return fn(this.props, this.context)
     }
   }
-  // не надо, т.к. подписывает на контекст как и функциональный компонент,
-  // так и оболочку-PureComponent; лучше назначать сразу оболочке (снаружи)
   // Wrapper.contextTypes = fn.contextTypes
   Wrapper.displayName = `pure(${fn.name})`
   return Wrapper

@@ -33,7 +33,7 @@ class SliderCard extends React.Component {
       <div className={`sliderCard ${inverse === true ? 'sliderCard--inverse' : ''}`}>
         <Carousel autoplay>
           <div className="sliderCard__item">
-            <a href="javascript: void(0);" className="sliderCard__body">
+            <a href={''} className="sliderCard__body">
               <div className="sliderCard__icon">
                 <i className="icmn-accessibility" />
               </div>
@@ -42,7 +42,7 @@ class SliderCard extends React.Component {
             </a>
           </div>
           <div className="sliderCard__item">
-            <a href="javascript: void(0);" className="sliderCard__body">
+            <a href={''} className="sliderCard__body">
               <div className="sliderCard__icon">
                 <i className="icmn-download" />
               </div>

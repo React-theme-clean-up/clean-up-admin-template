@@ -1,6 +1,6 @@
 import React from 'react'
 import './InfoCard.css'
-import { stats, information, commerceStats } from './data.json'
+import { stats, commerceStats } from './data.json'
 
 class InfoCard extends React.Component {
   state = {
@@ -50,7 +50,7 @@ class InfoCard extends React.Component {
   }
 
   render() {
-    const { form, icon, className, type, btnType } = this.state
+    const { form, icon, className, btnType } = this.state
 
     return (
       <div>
@@ -94,7 +94,7 @@ class InfoCard extends React.Component {
               <div className="mb-2">
                 <p>Lorem Ipsum is simply dummy text of printing the printing and typesetti...</p>
               </div>
-              <a href="javascript: void(0)" className={'btn btn-outline-' + btnType}>
+              <a href={''} className={'btn btn-outline-' + btnType}>
                 Information
               </a>
             </div>
