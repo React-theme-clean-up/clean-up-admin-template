@@ -35,13 +35,8 @@ class AppMenu extends React.Component {
 
   render() {
     return (
-      <Sider
-        width={256}
-        collapsed={this.state.collapsed}
-      >
-        <div className="appMenu__logo">
-
-        </div>
+      <Sider width={256} collapsed={this.state.collapsed}>
+        <div className="appMenu__logo" />
         <Menu
           theme={this.state.theme}
           onClick={this.handleClick}
@@ -63,7 +58,15 @@ class AppMenu extends React.Component {
               </span>
             }
           >
-            <div style={{ height: 100, padding: 10, lineHeight: '20px', whiteSpace: 'normal', width: 150 }}>
+            <div
+              style={{
+                height: 100,
+                padding: 10,
+                lineHeight: '20px',
+                whiteSpace: 'normal',
+                width: 150,
+              }}
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </div>
             <Menu.Item key="1">Option 1</Menu.Item>

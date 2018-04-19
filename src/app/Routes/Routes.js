@@ -39,7 +39,6 @@ const loadableRoutes = {
     component: loadable(() => import('pages/AntDesign/ButtonPage')),
   },
 
-
   // '/gridpage': {
   //   component: loadable(() => import('pages/GridPage')),
   // },
