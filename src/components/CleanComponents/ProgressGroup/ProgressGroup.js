@@ -9,7 +9,7 @@ class ProgressGroup extends React.Component {
         <strong>
           {progressGroup.first.name}
         </strong>
-        <p className="text-muted">
+        <p className="text-muted mb-1">
           {progressGroup.first.description}
         </p>
         <div className="mb-3">
@@ -18,7 +18,7 @@ class ProgressGroup extends React.Component {
         <strong>
           {progressGroup.second.name}
         </strong>
-        <p className="text-muted">
+        <p className="text-muted mb-1">
           {progressGroup.second.description}
         </p>
         <div className="mb-3">
@@ -27,7 +27,7 @@ class ProgressGroup extends React.Component {
         <strong>
           {progressGroup.third.name}
         </strong>
-        <p className="text-muted">
+        <p className="text-muted mb-1">
           {progressGroup.third.description}
         </p>
         <div className="mb-3">
@@ -36,7 +36,7 @@ class ProgressGroup extends React.Component {
         <strong>
           {progressGroup.fourth.name}
         </strong>
-        <p className="text-muted">
+        <p className="text-muted mb-1">
           {progressGroup.fourth.description}
         </p>
         <div className="mb-3">
@@ -45,7 +45,7 @@ class ProgressGroup extends React.Component {
         <strong>
           {progressGroup.fives.name}
         </strong>
-        <p className="text-muted">
+        <p className="text-muted mb-1">
           {progressGroup.fives.description}
         </p>
         <div className="mb-3">

@@ -267,6 +267,120 @@ class DashboardAlpha extends React.Component {
             <div className="card">
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Account Information</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-xl-7">
+                    <ProfileHeadCard />
+                  </div>
+                  <div className="col-xl-5">
+                    <ProgressGroup />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Employees</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-xl-4">
+                    <UserCard />
+                  </div>
+                  <div className="col-xl-4">
+                    <UserCard />
+                  </div>
+                  <div className="col-xl-4">
+                    <UserCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Task Table</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <Table
+                      columns={taskTableColumns}
+                      dataSource={taskTableData}
+                      rowSelection={taskTableRowSelection}
+                      pagination={false}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Chat</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <Chat />
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Information Cards</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="database" type="danger" />
+                  </div>
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="users" type="danger" />
+                  </div>
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="home" />
+                  </div>
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="database" btnType="success" type="default" />
+                  </div>
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="users" btnType="warning" />
+                  </div>
+                  <div className="col-lg-4">
+                    <InfoCard form="interactive" icon="home" btnType="default" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                  <strong>Server Info</strong>
+                </h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <SliderCard />
+                  </div>
+                  <div className="col-lg-6">
+                    <SliderCard inverse={true} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Server Configuration</strong>
                 </h5>
               </div>
@@ -282,11 +396,24 @@ class DashboardAlpha extends React.Component {
             <div className="card">
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Calendar</strong>
+                  <strong>Server Statistics</strong>
                 </h5>
               </div>
               <div className="card-body">
-                <Calendar dateCellRender={dateCellRender} />
+                <div className="row">
+                  <div className="col-lg-6">
+                    <InfoCard form="stats" icon="database" type="success" />
+                  </div>
+                  <div className="col-lg-6">
+                    <InfoCard form="stats" icon="users" type="primary" />
+                  </div>
+                  <div className="col-lg-6">
+                    <InfoCard form="stats" icon="bullhorn" type="warning" />
+                  </div>
+                  <div className="col-lg-6">
+                    <InfoCard form="stats" icon="price-tags" type="danger" />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="card">
@@ -327,142 +454,11 @@ class DashboardAlpha extends React.Component {
             <div className="card">
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Chat</strong>
+                  <strong>Calendar</strong>
                 </h5>
               </div>
               <div className="card-body">
-                <Chat />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Employees</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-xl-4">
-                    <UserCard type="warning" />
-                  </div>
-                  <div className="col-xl-4">
-                    <UserCard type="default" />
-                  </div>
-                  <div className="col-xl-4">
-                    <UserCard />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Account Information</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-xl-7">
-                    <ProfileHeadCard />
-                  </div>
-                  <div className="col-xl-5">
-                    <ProgressGroup />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Task Table</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <Table
-                      columns={taskTableColumns}
-                      dataSource={taskTableData}
-                      rowSelection={taskTableRowSelection}
-                      pagination={false}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Server Info</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <SliderCard />
-                  </div>
-                  <div className="col-lg-6">
-                    <SliderCard inverse={true} />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Statistics Info</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <InfoCard form="stats" icon="database" type="success" />
-                  </div>
-                  <div className="col-lg-6">
-                    <InfoCard form="stats" icon="users" type="primary" />
-                  </div>
-                  <div className="col-lg-6">
-                    <InfoCard form="stats" icon="bullhorn" type="warning" />
-                  </div>
-                  <div className="col-lg-6">
-                    <InfoCard form="stats" icon="price-tags" type="danger" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
-                  <strong>Information Cards</strong>
-                </h5>
-              </div>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="database" type="default" />
-                  </div>
-                  <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="users" type="primary" />
-                  </div>
-                  <div className="col-lg-4">
-                    <InfoCard form="interactive" icon="home" type="warning" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card-body">
-              <div className="row">
-                <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="database" btnType="success" />
-                </div>
-                <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="users" btnType="warning" />
-                </div>
-                <div className="col-lg-4">
-                  <InfoCard form="interactive" icon="home" btnType="default" />
-                </div>
+                <Calendar dateCellRender={dateCellRender} />
               </div>
             </div>
           </div>

@@ -35,10 +35,11 @@ const loadableRoutes = {
   // Charts
 
   // AntDesign
+  '/buttonpage': {
+    component: loadable(() => import('pages/AntDesign/ButtonPage')),
+  },
 
-  // '/buttonpage': {
-  //   component: loadable(() => import('pages/ButtonPage')),
-  // },
+
   // '/gridpage': {
   //   component: loadable(() => import('pages/GridPage')),
   // },

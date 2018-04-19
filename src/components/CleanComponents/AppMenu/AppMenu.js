@@ -2,6 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Menu, Icon, Switch, Layout } from 'antd'
+import './AppMenu.css'
 
 const { Sider } = Layout
 const SubMenu = Menu.SubMenu
@@ -12,11 +13,17 @@ const mapStateToProps = (state, props) => ({})
 class AppMenu extends React.Component {
   state = {
     theme: 'dark',
+    collapsed: false,
     current: '1',
   }
   changeTheme = value => {
     this.setState({
       theme: value ? 'dark' : 'light',
+    })
+  }
+  changeCollapsed = value => {
+    this.setState({
+      collapsed: !!value,
     })
   }
   handleClick = e => {
@@ -28,23 +35,25 @@ class AppMenu extends React.Component {
 
   render() {
     return (
-      <Sider width={256}>
-        <Switch
-          checked={this.state.theme === 'dark'}
-          onChange={this.changeTheme}
-          checkedChildren="Dark"
-          unCheckedChildren="Light"
-        />
-        <br />
-        <br />
+      <Sider
+        width={256}
+        collapsed={this.state.collapsed}
+      >
+        <div className="appMenu__logo">
+
+        </div>
         <Menu
           theme={this.state.theme}
           onClick={this.handleClick}
-          style={{ width: 256 }}
+          //style={{ width: 256 }}
           defaultOpenKeys={['sub1']}
           selectedKeys={[this.state.current]}
           mode="inline"
         >
+          <Menu.Item key="122">
+            <Icon type="user" />
+            <span>Option 1</span>
+          </Menu.Item>
           <SubMenu
             key="sub1"
             title={
@@ -54,6 +63,9 @@ class AppMenu extends React.Component {
               </span>
             }
           >
+            <div style={{ height: 100, padding: 10, lineHeight: '20px', whiteSpace: 'normal', width: 150 }}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
             <Menu.Item key="1">Option 1</Menu.Item>
             <Menu.Item key="2">Option 2</Menu.Item>
             <Menu.Item key="3">Option 3</Menu.Item>
@@ -90,6 +102,26 @@ class AppMenu extends React.Component {
             <Menu.Item key="12">Option 12</Menu.Item>
           </SubMenu>
         </Menu>
+
+        <br />
+        <br />
+
+        <Switch
+          checked={this.state.theme === 'dark'}
+          onChange={this.changeTheme}
+          checkedChildren="Dark"
+          unCheckedChildren="Light"
+        />
+
+        <br />
+        <br />
+
+        <Switch
+          checked={this.state.collapsed}
+          onChange={this.changeCollapsed}
+          checkedChildren="Collapsed"
+          unCheckedChildren="Uncollapsed"
+        />
       </Sider>
     )
   }
