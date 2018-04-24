@@ -24,9 +24,9 @@
       z-index: 10;
       &__title {
         position: relative;
-        top: rem(-6);
-        left: rem(-17);
-        display: block;
+        top: rem(-19);
+        left: rem(-18);
+        display: inline-block;
         transform: rotate(-45deg);
         color: $white !important;
         text-transform: uppercase;

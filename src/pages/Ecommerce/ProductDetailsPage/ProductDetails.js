@@ -85,8 +85,8 @@ class ProductDetails extends React.Component {
                       dots={false}
                       effect="fade"
                     >
-                      {images.map(image =>
-                        <div>
+                      {images.map((image, index) =>
+                        <div key={index}>
                           <img className="productDetails__item__img-item" src={image} />
                         </div>,
                       )}

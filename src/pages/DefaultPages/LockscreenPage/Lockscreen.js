@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'antd'
-import Avatar from '../../CleanComponents/Avatar/Avatar'
+import Avatar from 'components/CleanComponents/Avatar/Avatar'
 import LockscreenForm from './LockscreenForm.js'
 import './Lockscreen.css'
 

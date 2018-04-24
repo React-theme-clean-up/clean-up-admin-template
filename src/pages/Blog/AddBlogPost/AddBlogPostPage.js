@@ -1,22 +1,23 @@
+// @flow
 import React from 'react'
 import Page from 'app/Page/Page'
 import Helmet from 'react-helmet'
-import GridCard from './GridCard'
+import AddBlogPost from './AddBlogPost'
 
-class GridCardPage extends React.Component {
+class BlogFeedPage extends React.Component {
   static defaultProps = {
-    pathName: 'Card',
+    pathName: 'Add Blog Post',
   }
 
   render() {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Card" />
-        <GridCard />
+        <Helmet title="Clean UI - Add Blog Post" />
+        <AddBlogPost />
       </Page>
     )
   }
 }
 
-export default GridCardPage
+export default BlogFeedPage

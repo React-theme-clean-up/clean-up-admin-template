@@ -1,7 +1,7 @@
 import React from 'react'
 import { Steps, Button, message, Icon, Table, InputNumber } from 'antd'
 import WrappedCartCheckoutForm from './CartCheckoutForm'
-import Invoice from '../../CleanComponents/Invoice/Invoice'
+import Invoice from 'components/CleanComponents/Invoice/Invoice'
 import data from './data.json'
 import './Cart.css'
 

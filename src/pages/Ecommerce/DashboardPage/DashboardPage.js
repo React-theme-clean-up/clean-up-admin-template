@@ -2,7 +2,7 @@
 import React from 'react'
 import Page from 'app/Page/Page'
 import Helmet from 'react-helmet'
-import EcommerceDashboard from './EcommerceDashboard'
+import Dashboard from './Dashboard'
 
 class DashboardPage extends React.Component {
   static defaultProps = {
@@ -16,7 +16,7 @@ class DashboardPage extends React.Component {
         <Helmet title="Clean UI - Ecommerce Dashboard" />
         <div className="card">
           <div className="card-body">
-            <EcommerceDashboard />
+            <Dashboard />
           </div>
         </div>
       </Page>

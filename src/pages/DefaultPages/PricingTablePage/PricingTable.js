@@ -1,5 +1,5 @@
 import React from 'react'
-import PricingItem from '../../CleanComponents/PricingItem/PricingItem'
+import PricingItem from 'components/CleanComponents/PricingItem/PricingItem'
 import './PricingTable.css'
 
 class PricingTable extends React.Component {

@@ -18,6 +18,27 @@ const loadableRoutes = {
   '/login': {
     component: loadable(() => import('pages/DefaultPages/LoginPage')),
   },
+  '/pages/login-alpha': {
+    component: loadable(() => import('pages/DefaultPages/LoginAlphaPage')),
+  },
+  '/pages/login-beta': {
+    component: loadable(() => import('pages/DefaultPages/LoginBetaPage')),
+  },
+  '/pages/register': {
+    component: loadable(() => import('pages/DefaultPages/RegisterPage')),
+  },
+  '/pages/lockscreen': {
+    component: loadable(() => import('pages/DefaultPages/LockscreenPage')),
+  },
+  '/pages/pricing-table': {
+    component: loadable(() => import('pages/DefaultPages/PricingTablePage')),
+  },
+  '/pages/invoice': {
+    component: loadable(() => import('pages/DefaultPages/InvoicePage')),
+  },
+  '/pages/livesearch': {
+    component: loadable(() => import('pages/DefaultPages/LiveSearch/LiveSearchPage')),
+  },
 
   // Dashboards
   '/dashboard/alpha': {
@@ -25,239 +46,247 @@ const loadableRoutes = {
   },
 
   // Apps
+  '/apps/messaging': {
+    component: loadable(() => import('pages/Apps/MessagingAppPage')),
+  },
+  '/apps/mail': {
+    component: loadable(() => import('pages/Apps/MailAppPage')),
+  },
+  '/apps/profile': {
+    component: loadable(() => import('pages/Apps/ProfileAppPage')),
+  },
+  '/apps/gallery': {
+    component: loadable(() => import('pages/Apps/GalleryAppPage')),
+  },
 
   // Ecommerce
+  '/ecommerce/dashboard': {
+    component: loadable(() => import('pages/Ecommerce/DashboardPage')),
+  },
+  '/ecommerce/products-catalog': {
+    component: loadable(() => import('pages/Ecommerce/ProductsCatalogPage')),
+  },
+  '/ecommerce/product-details': {
+    component: loadable(() => import('pages/Ecommerce/ProductDetailsPage')),
+  },
+  '/ecommerce/product-edit': {
+    component: loadable(() => import('pages/Ecommerce/ProductEditPage')),
+  },
+  '/ecommerce/products-list': {
+    component: loadable(() => import('pages/Ecommerce/ProductsListPage')),
+  },
+  '/ecommerce/orders': {
+    component: loadable(() => import('pages/Ecommerce/OrdersPage')),
+  },
+  '/ecommerce/cart': {
+    component: loadable(() => import('pages/Ecommerce/CartPage')),
+  },
 
   // Icons
+  '/icons/fontawesome': {
+    component: loadable(() => import('pages/Icons/FontAwesomeIconsPage')),
+  },
+  '/icons/linear': {
+    component: loadable(() => import('pages/Icons/LinearIconsPage')),
+  },
+  '/icons/icomoon': {
+    component: loadable(() => import('pages/Icons/IcomoonIconsPage')),
+  },
 
   // Layout
+  '/layout/bootstrap': {
+    component: loadable(() => import('pages/Layout/GridBootstrapPage')),
+  },
+  '/layout/card': {
+    component: loadable(() => import('pages/Layout/GridCardPage')),
+  },
+  '/layout/utilities': {
+    component: loadable(() => import('pages/Layout/UtilitiesPage')),
+  },
+  '/layout/typography': {
+    component: loadable(() => import('pages/Layout/TypographyPage')),
+  },
+  '/layout/mail-templates': {
+    component: loadable(() => import('pages/Layout/MailTemplatesPage')),
+  },
 
   // Charts
-
-  // AntDesign
-
-  // '/buttonpage': {
-  //   component: loadable(() => import('pages/ButtonPage')),
-  // },
-  // '/gridpage': {
-  //   component: loadable(() => import('pages/GridPage')),
-  // },
-  // '/affixpage': {
-  //   component: loadable(() => import('pages/AffixPage')),
-  // },
-  // '/dropdownpage': {
-  //   component: loadable(() => import('pages/DropdownPage')),
-  // },
-  // '/menupage': {
-  //   component: loadable(() => import('pages/MenuPage')),
-  // },
-  // '/paginationpage': {
-  //   component: loadable(() => import('pages/PaginationPage')),
-  // },
-  // '/stepspage': {
-  //   component: loadable(() => import('pages/StepsPage')),
-  // },
-  // '/autocompletepage': {
-  //   component: loadable(() => import('pages/AutocompletePage')),
-  // },
-  // '/cascaderpage': {
-  //   component: loadable(() => import('pages/CascaderPage')),
-  // },
-  // '/datepickerpage': {
-  //   component: loadable(() => import('pages/DatepickerPage')),
-  // },
-  // '/formpage': {
-  //   component: loadable(() => import('pages/FormPage')),
-  // },
-  // '/inputpage': {
-  //   component: loadable(() => import('pages/InputPage')),
-  // },
-  // '/inputnumberpage': {
-  //   component: loadable(() => import('pages/InputnumberPage')),
-  // },
-  // '/mentionpage': {
-  //   component: loadable(() => import('pages/MentionPage')),
-  // },
-  // '/ratepage': {
-  //   component: loadable(() => import('pages/RatePage')),
-  // },
-  // '/radiopage': {
-  //   component: loadable(() => import('pages/RadioPage')),
-  // },
-  // '/selectpage': {
-  //   component: loadable(() => import('pages/SelectPage')),
-  // },
-  // '/sliderpage': {
-  //   component: loadable(() => import('pages/SliderPage')),
-  // },
-  // '/switchpage': {
-  //   component: loadable(() => import('pages/SwitchPage')),
-  // },
-  // '/treeselectpage': {
-  //   component: loadable(() => import('pages/TreeselectPage')),
-  // },
-  // '/timepickerpage': {
-  //   component: loadable(() => import('pages/TimepickerPage')),
-  // },
-  // '/transferpage': {
-  //   component: loadable(() => import('pages/TransferPage')),
-  // },
-  // '/uploadpage': {
-  //   component: loadable(() => import('pages/UploadPage')),
-  // },
-  // '/avatarpage': {
-  //   component: loadable(() => import('pages/AvatarPage')),
-  // },
-  // '/badgepage': {
-  //   component: loadable(() => import('pages/BadgePage')),
-  // },
-  // '/calendarpage': {
-  //   component: loadable(() => import('pages/CalendarPage')),
-  // },
-  // '/cardpage': {
-  //   component: loadable(() => import('pages/CardPage')),
-  // },
-  // '/carouselpage': {
-  //   component: loadable(() => import('pages/CarouselPage')),
-  // },
-  // '/collapsepage': {
-  //   component: loadable(() => import('pages/CollapsePage')),
-  // },
-  // '/listpage': {
-  //   component: loadable(() => import('pages/ListPage')),
-  // },
-  // '/popoverpage': {
-  //   component: loadable(() => import('pages/PopoverPage')),
-  // },
-  // '/tooltippage': {
-  //   component: loadable(() => import('pages/TooltipPage')),
-  // },
-  // '/tablepage': {
-  //   component: loadable(() => import('pages/TablePage')),
-  // },
-  // '/tabspage': {
-  //   component: loadable(() => import('pages/TabsPage')),
-  // },
-  // '/tagpage': {
-  //   component: loadable(() => import('pages/TagPage')),
-  // },
-  // '/timelinepage': {
-  //   component: loadable(() => import('pages/TimelinePage')),
-  // },
-  // '/treepage': {
-  //   component: loadable(() => import('pages/TreePage')),
-  // },
-  // '/alertpage': {
-  //   component: loadable(() => import('pages/AlertPage')),
-  // },
-  // '/modalpage': {
-  //   component: loadable(() => import('pages/ModalPage')),
-  // },
-  // '/messagepage': {
-  //   component: loadable(() => import('pages/MessagePage')),
-  // },
-  // '/notificationpage': {
-  //   component: loadable(() => import('pages/NotificationPage')),
-  // },
-  // '/progresspage': {
-  //   component: loadable(() => import('pages/ProgressPage')),
-  // },
-  // '/popconfirmpage': {
-  //   component: loadable(() => import('pages/PopconfirmPage')),
-  // },
-  // '/spinpage': {
-  //   component: loadable(() => import('pages/SpinPage')),
-  // },
-  // '/anchorpage': {
-  //   component: loadable(() => import('pages/AnchorPage')),
-  // },
-  // '/backtoppage': {
-  //   component: loadable(() => import('pages/BacktopPage')),
-  // },
-  // '/dividerpage': {
-  //   component: loadable(() => import('pages/DividerPage')),
-  // },
-  // '/localeproviderpage': {
-  //   component: loadable(() => import('pages/LocaleproviderPage')),
-  // },
-  // '/loginalpha': {
-  //   component: loadable(() => import('pages/LoginAlphaPage')),
-  // },
-  // '/loginbeta': {
-  //   component: loadable(() => import('pages/LoginBetaPage')),
-  // },
-  // '/registerpage': {
-  //   component: loadable(() => import('pages/RegisterPage')),
-  // },
-  // '/lockscreenpage': {
-  //   component: loadable(() => import('pages/LockscreenPage')),
-  // },
-  // '/pricingtablepage': {
-  //   component: loadable(() => import('pages/PricingtablePage')),
-  // },
-  // '/invoicepage': {
-  //   component: loadable(() => import('pages/InvoicePage')),
-  // },
-  // '/ecommercedashboardpage': {
-  //   component: loadable(() => import('pages/EcommerceDashboardPage')),
-  // },
-  // '/productscatalogpage': {
-  //   component: loadable(() => import('pages/ProductsCatalogPage')),
-  // },
-  // '/productdetailspage': {
-  //   component: loadable(() => import('pages/ProductDetailsPage')),
-  // },
-  // '/producteditpage': {
-  //   component: loadable(() => import('pages/ProductEditPage')),
-  // },
-  // '/productslistpage': {
-  //   component: loadable(() => import('pages/ProductsListPage')),
-  // },
-  // '/orderspage': {
-  //   component: loadable(() => import('pages/OrdersPage')),
-  // },
-  // '/cartpage': {
-  //   component: loadable(() => import('pages/CartPage')),
-  // },
-  // '/chartistpage': {
+  // '/charts': {
   //   component: loadable(() => import('pages/ChartistPage')),
   // },
-  // '/mailtemplatespage': {
-  //   component: loadable(() => import('pages/MailTemplatesPage')),
-  // },
-  // '/messagingapppage': {
-  //   component: loadable(() => import('pages/MessagingAppPage')),
-  // },
-  // '/mailapppage': {
-  //   component: loadable(() => import('pages/MailAppPage')),
-  // },
-  // '/profilepage': {
-  //   component: loadable(() => import('pages/ProfilePage')),
-  // },
-  // '/gallerypage': {
-  //   component: loadable(() => import('pages/GalleryPage')),
-  // },
-  // '/gridbootstrappage': {
-  //   component: loadable(() => import('pages/GridBootstrapPage')),
-  // },
-  // '/gridcardpage': {
-  //   component: loadable(() => import('pages/GridCardPage')),
-  // },
-  // '/utilitiespage': {
-  //   component: loadable(() => import('pages/UtilitiesPage')),
-  // },
-  // '/typographypage': {
-  //   component: loadable(() => import('pages/TypographyPage')),
-  // },
-  // '/fontawesomeiconspage': {
-  //   component: loadable(() => import('pages/FontAwesomeIconsPage')),
-  // },
-  // '/lineariconspage': {
-  //   component: loadable(() => import('pages/LinearIconsPage')),
-  // },
-  // '/icomooniconspage': {
-  //   component: loadable(() => import('pages/IcomoonIconsPage')),
-  // },
+
+  // Blog
+  '/blog/feed': {
+    component: loadable(() => import('pages/Blog/BlogFeed/BlogFeedPage')),
+  },
+  '/blog/post': {
+    component: loadable(() => import('pages/Blog/BlogPost/BlogPostPage')),
+  },
+  '/blog/add-blog-post': {
+    component: loadable(() => import('pages/Blog/AddBlogPost/AddBlogPostPage')),
+  },
+
+  //YouTube
+  '/youtube/feed': {
+    component: loadable(() => import('pages/YouTube/YouTubeFeed/YouTubeFeedPage')),
+  },
+  '/youtube/view': {
+    component: loadable(() => import('pages/YouTube/YouTubeView/YouTubeViewPage')),
+  },
+
+  //GitHub
+  '/github/explore': {
+    component: loadable(() => import('pages/GitHub/GitHubExplore/GitHubExplorePage')),
+  },
+  '/github/discuss': {
+    component: loadable(() => import('pages/GitHub/GitHubDiscuss/GitHubDiscussPage')),
+  },
+
+  // AntDesign
+  '/antdesign/button': {
+    component: loadable(() => import('pages/AntDesign/ButtonPage')),
+  },
+  '/antdesign/grid': {
+    component: loadable(() => import('pages/AntDesign/GridPage')),
+  },
+  '/antdesign/affix': {
+    component: loadable(() => import('pages/AntDesign/AffixPage')),
+  },
+  '/antdesign/dropdown': {
+    component: loadable(() => import('pages/AntDesign/DropdownPage')),
+  },
+  '/antdesign/menu': {
+    component: loadable(() => import('pages/AntDesign/MenuPage')),
+  },
+  '/antdesign/pagination': {
+    component: loadable(() => import('pages/AntDesign/PaginationPage')),
+  },
+  '/antdesign/steps': {
+    component: loadable(() => import('pages/AntDesign/StepsPage')),
+  },
+  '/antdesign/autocomplete': {
+    component: loadable(() => import('pages/AntDesign/AutocompletePage')),
+  },
+  '/antdesign/cascader': {
+    component: loadable(() => import('pages/AntDesign/CascaderPage')),
+  },
+  '/antdesign/datepicker': {
+    component: loadable(() => import('pages/AntDesign/DatepickerPage')),
+  },
+  '/antdesign/form': {
+    component: loadable(() => import('pages/AntDesign/FormPage')),
+  },
+  '/antdesign/input': {
+    component: loadable(() => import('pages/AntDesign/InputPage')),
+  },
+  '/antdesign/inputnumber': {
+    component: loadable(() => import('pages/AntDesign/InputnumberPage')),
+  },
+  '/antdesign/mention': {
+    component: loadable(() => import('pages/AntDesign/MentionPage')),
+  },
+  '/antdesign/rate': {
+    component: loadable(() => import('pages/AntDesign/RatePage')),
+  },
+  '/antdesign/radio': {
+    component: loadable(() => import('pages/AntDesign/RadioPage')),
+  },
+  '/antdesign/select': {
+    component: loadable(() => import('pages/AntDesign/SelectPage')),
+  },
+  '/antdesign/slider': {
+    component: loadable(() => import('pages/AntDesign/SliderPage')),
+  },
+  '/antdesign/switch': {
+    component: loadable(() => import('pages/AntDesign/SwitchPage')),
+  },
+  '/antdesign/treeselect': {
+    component: loadable(() => import('pages/AntDesign/TreeSelectPage')),
+  },
+  '/antdesign/timepicker': {
+    component: loadable(() => import('pages/AntDesign/TimepickerPage')),
+  },
+  '/antdesign/transfer': {
+    component: loadable(() => import('pages/AntDesign/TransferPage')),
+  },
+  '/antdesign/upload': {
+    component: loadable(() => import('pages/AntDesign/UploadPage')),
+  },
+  '/antdesign/avatar': {
+    component: loadable(() => import('pages/AntDesign/AvatarPage')),
+  },
+  '/antdesign/badge': {
+    component: loadable(() => import('pages/AntDesign/BadgePage')),
+  },
+  '/antdesign/calendar': {
+    component: loadable(() => import('pages/AntDesign/CalendarPage')),
+  },
+  '/antdesign/card': {
+    component: loadable(() => import('pages/AntDesign/CardPage')),
+  },
+  '/antdesign/carousel': {
+    component: loadable(() => import('pages/AntDesign/CarouselPage')),
+  },
+  '/antdesign/collapse': {
+    component: loadable(() => import('pages/AntDesign/CollapsePage')),
+  },
+  '/antdesign/list': {
+    component: loadable(() => import('pages/AntDesign/ListPage')),
+  },
+  '/antdesign/popover': {
+    component: loadable(() => import('pages/AntDesign/PopoverPage')),
+  },
+  '/antdesign/tooltip': {
+    component: loadable(() => import('pages/AntDesign/TooltipPage')),
+  },
+  '/antdesign/table': {
+    component: loadable(() => import('pages/AntDesign/TablePage')),
+  },
+  '/antdesign/tabs': {
+    component: loadable(() => import('pages/AntDesign/TabsPage')),
+  },
+  '/antdesign/tag': {
+    component: loadable(() => import('pages/AntDesign/TagPage')),
+  },
+  '/antdesign/timeline': {
+    component: loadable(() => import('pages/AntDesign/TimelinePage')),
+  },
+  '/antdesign/tree': {
+    component: loadable(() => import('pages/AntDesign/TreePage')),
+  },
+  '/antdesign/alert': {
+    component: loadable(() => import('pages/AntDesign/AlertPage')),
+  },
+  '/antdesign/modal': {
+    component: loadable(() => import('pages/AntDesign/ModalPage')),
+  },
+  '/antdesign/message': {
+    component: loadable(() => import('pages/AntDesign/MessagePage')),
+  },
+  '/antdesign/notification': {
+    component: loadable(() => import('pages/AntDesign/NotificationPage')),
+  },
+  '/antdesign/progress': {
+    component: loadable(() => import('pages/AntDesign/ProgressPage')),
+  },
+  '/antdesign/popconfirm': {
+    component: loadable(() => import('pages/AntDesign/PopconfirmPage')),
+  },
+  '/antdesign/spin': {
+    component: loadable(() => import('pages/AntDesign/SpinPage')),
+  },
+  '/antdesign/anchor': {
+    component: loadable(() => import('pages/AntDesign/AnchorPage')),
+  },
+  '/antdesign/backtop': {
+    component: loadable(() => import('pages/AntDesign/BacktopPage')),
+  },
+  '/antdesign/divider': {
+    component: loadable(() => import('pages/AntDesign/DividerPage')),
+  },
+  '/antdesign/localeprovider': {
+    component: loadable(() => import('pages/AntDesign/LocaleproviderPage')),
+  },
 }
 
 class Routes extends React.Component {
