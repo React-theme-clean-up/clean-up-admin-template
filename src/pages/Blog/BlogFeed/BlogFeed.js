@@ -1,9 +1,9 @@
 import React from 'react'
-import { Input, Icon, Button, Pagination } from 'antd';
+import { Input, Icon, Button, Pagination } from 'antd'
 import './BlogFeed.css'
 import data from './data.json'
 
-const Search = Input.Search;
+const Search = Input.Search
 
 class BlogFeed extends React.Component {
   state = {
@@ -13,11 +13,7 @@ class BlogFeed extends React.Component {
   }
 
   render() {
-    let {
-      articlesData,
-      articlesCategories,
-      latesArticlesData,
-    } = this.state
+    let { articlesData, articlesCategories, latesArticlesData } = this.state
     return (
       <section className="card">
         <div className="card-header">
@@ -31,12 +27,14 @@ class BlogFeed extends React.Component {
               <div className="row">
                 <div className="col-lg-8">
                   <main className="blog-feed__postbar">
-                    {articlesData.map((article, index)=>
+                    {articlesData.map((article, index) =>
                       <article className="blog-feed__article" key={index}>
                         <div className="blog-feed__article-information">
                           <div className="blog-feed__article-title">
                             <h1>
-                              <a href="#">{article.name}</a>
+                              <a href="#">
+                                {article.name}
+                              </a>
                             </h1>
                           </div>
                           <ul className="blog-feed__article-meta">
@@ -47,7 +45,7 @@ class BlogFeed extends React.Component {
                             </li>
                             <li className="blog-feed__article-meta-inf">
                               <span className="blog-feed__article-date">
-                                {"On " + article.date}
+                                {'On ' + article.date}
                               </span>
                             </li>
                           </ul>
@@ -62,7 +60,10 @@ class BlogFeed extends React.Component {
                           <div className="blog-feed__article-more">
                             <Button type="primary">
                               Read more
-                              <i className="blog-feed__more-icon fa fa-angle-right" aria-hidden="true"></i>
+                              <i
+                                className="blog-feed__more-icon fa fa-angle-right"
+                                aria-hidden="true"
+                              />
                             </Button>
                           </div>
                         </div>
@@ -71,7 +72,9 @@ class BlogFeed extends React.Component {
                             <div className="col-8">
                               <div className="blog-feed__article-hashtags">
                                 {article.tags.map((tag, index) =>
-                                  <a href="#" key={index}>{tag}</a>
+                                  <a href="#" key={index}>
+                                    {tag}
+                                  </a>,
                                 )}
                               </div>
                             </div>
@@ -79,24 +82,24 @@ class BlogFeed extends React.Component {
                               <ul className="blog-feed__share">
                                 <li className="blog-feed__share-item">
                                   <a href="#">
-                                    <i className="fa fa-facebook"></i>
+                                    <i className="fa fa-facebook" />
                                   </a>
                                 </li>
                                 <li className="blog-feed__share-item">
                                   <a href="#">
-                                    <i className="fa fa-twitter"></i>
+                                    <i className="fa fa-twitter" />
                                   </a>
                                 </li>
                                 <li className="blog-feed__share-item">
                                   <a href="#">
-                                    <i className="fa fa-pinterest-p"></i>
+                                    <i className="fa fa-pinterest-p" />
                                   </a>
                                 </li>
                               </ul>
                             </div>
                           </div>
                         </footer>
-                      </article>
+                      </article>,
                     )}
                   </main>
                   <Pagination defaultCurrent={1} total={50} />
@@ -108,7 +111,14 @@ class BlogFeed extends React.Component {
                         <span className="blog-feed__partition-name">Search</span>
                       </div>
                       <div className="input-group">
-                        <Search placeholder="Search ..." enterButton={<span><Icon type="search" /> Search</span>}/>
+                        <Search
+                          placeholder="Search ..."
+                          enterButton={
+                            <span>
+                              <Icon type="search" /> Search
+                            </span>
+                          }
+                        />
                       </div>
                     </div>
                     <div className="blog-feed__sidebar-partition">
@@ -116,12 +126,12 @@ class BlogFeed extends React.Component {
                         <span className="blog-feed__partition-name">Categories</span>
                       </div>
                       <ul className="blog-feed__categories-list">
-                        {articlesCategories.map((category, index)=>
+                        {articlesCategories.map((category, index) =>
                           <li className="blog-feed__categories-item" key={index}>
                             <a className="blog-feed__categories-link" href="#">
                               {category}
                             </a>
-                          </li>
+                          </li>,
                         )}
                       </ul>
                     </div>
@@ -139,7 +149,9 @@ class BlogFeed extends React.Component {
                           <div className="blog-feed__latest-data">
                             <div className="blog-feed__latest-name">
                               <h2>
-                                <a href="#">{latestArticle.name}</a>
+                                <a href="#">
+                                  {latestArticle.name}
+                                </a>
                               </h2>
                             </div>
                             <ul className="blog-feed__article-meta blog-feed__article-meta--latest">
@@ -150,12 +162,12 @@ class BlogFeed extends React.Component {
                               </li>
                               <li className="blog-feed__article-meta-inf">
                                 <span className="blog-feed__article-date">
-                                  {"On " + latestArticle.date}
+                                  {'On ' + latestArticle.date}
                                 </span>
                               </li>
                             </ul>
                           </div>
-                        </article>
+                        </article>,
                       )}
                     </div>
                     <div className="blog-feed__sidebar-partition">
@@ -163,7 +175,11 @@ class BlogFeed extends React.Component {
                         <span className="blog-feed__partition-name">Subscribe</span>
                       </div>
                       <div className="input-group">
-                        <Input addonBefore={<Icon type="mail" />} placeholder="Email adress"  size="default"/>
+                        <Input
+                          addonBefore={<Icon type="mail" />}
+                          placeholder="Email adress"
+                          size="default"
+                        />
                       </div>
                     </div>
                   </aside>

@@ -5,7 +5,7 @@ import Avatar from 'components/CleanComponents/Avatar/Avatar'
 import './GitHubDiscuss.css'
 import data from './data.json'
 
-const TabPane = Tabs.TabPane;
+const TabPane = Tabs.TabPane
 
 const postActions = (
   <Menu>
@@ -21,18 +21,15 @@ const postActions = (
   </Menu>
 )
 
-
 class GitHubDiscuss extends React.Component {
-  state ={
+  state = {
     discuss: data.discuss,
   }
 
   render() {
-    let {
-      discuss,
-    } = this.state
+    let { discuss } = this.state
 
-    return(
+    return (
       <section className="card">
         <div className="card-header">
           <span className="core__title">
@@ -44,16 +41,53 @@ class GitHubDiscuss extends React.Component {
             <div className="container">
               <div className="discuss__menu mt-4">
                 <Tabs type="card" defaultActiveKey="2">
-                  <TabPane tab={<span><i className="mr-2 fa fa-home"></i>Home</span>} key="1"></TabPane>
-                  <TabPane tab={<span><i className="mr-2 fa fa-comments"></i>Discussion</span>} key="2"></TabPane>
-                  <TabPane tab={<span><i className="mr-2 fa fa-user"></i>Profile</span>} key="3"></TabPane>
-                  <TabPane tab={<span><i className="mr-2 fa fa-envelope"></i>Messages</span>} key="4"></TabPane>
-                  <TabPane tab={<span><i className="mr-2 fa fa-cog"></i>Settings</span>} key="5"></TabPane>
+                  <TabPane
+                    tab={
+                      <span>
+                        <i className="mr-2 fa fa-home" />Home
+                      </span>
+                    }
+                    key="1"
+                  />
+                  <TabPane
+                    tab={
+                      <span>
+                        <i className="mr-2 fa fa-comments" />Discussion
+                      </span>
+                    }
+                    key="2"
+                  />
+                  <TabPane
+                    tab={
+                      <span>
+                        <i className="mr-2 fa fa-user" />Profile
+                      </span>
+                    }
+                    key="3"
+                  />
+                  <TabPane
+                    tab={
+                      <span>
+                        <i className="mr-2 fa fa-envelope" />Messages
+                      </span>
+                    }
+                    key="4"
+                  />
+                  <TabPane
+                    tab={
+                      <span>
+                        <i className="mr-2 fa fa-cog" />Settings
+                      </span>
+                    }
+                    key="5"
+                  />
                 </Tabs>
               </div>
               <div className="discuss__header clearfix">
                 <div className="discuss__title">
-                  <h1 className="discuss__title-text">{discuss.title}</h1>
+                  <h1 className="discuss__title-text">
+                    {discuss.title}
+                  </h1>
                   <div className="discuss__open">
                     <Button type="primary" size="small">
                       New discussion
@@ -61,23 +95,25 @@ class GitHubDiscuss extends React.Component {
                   </div>
                 </div>
                 <div className="discuss__meta">
-                  {discuss.status === "open" &&
+                  {discuss.status === 'open' &&
                     <span className="discuss__status btn btn-success btn-sm">
-                      <i className="fa fa-check-circle-o mr-2"></i>
+                      <i className="fa fa-check-circle-o mr-2" />
                       Open
-                    </span>
-                  }
-                  {discuss.status === "closed" &&
+                    </span>}
+                  {discuss.status === 'closed' &&
                     <span className="discuss__status btn btn-danger btn-sm">
-                      <i className="fa fa-times-circle mr-2"></i>
-                        Closed
-                    </span>
-                  }
+                      <i className="fa fa-times-circle mr-2" />
+                      Closed
+                    </span>}
                   <div className="discuss__meta-text">
-                    <a href="#" className="discuss__owner mr-1">{discuss.authorName}</a>
+                    <a href="#" className="discuss__owner mr-1">
+                      {discuss.authorName}
+                    </a>
                     opened this discussion on
                     <span className="discuss__create-date ml-1">{discuss.date}</span> ·
-                    <span className="discuss__comments-count ml-1">{discuss.commentsCount + " comments"}</span>
+                    <span className="discuss__comments-count ml-1">
+                      {discuss.commentsCount + ' comments'}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -102,66 +138,64 @@ class GitHubDiscuss extends React.Component {
                               <strong>{comment.authorName}</strong> posted:
                               <small className="text-muted ml-2">{comment.date}</small>
                             </div>
-                            <div className="discuss__comment-content" dangerouslySetInnerHTML={{ __html: comment.content }}/>
+                            <div
+                              className="discuss__comment-content"
+                              dangerouslySetInnerHTML={{ __html: comment.content }}
+                            />
                             <div className="discuss__comment-bottom">
                               <a href="javascript: void(0);" className="mr-2">
-                                <i className="icmn-heart mr-1"></i>
-                                {comment.likesCount > 0 && <span>{comment.likesCount + ' Likes'}</span>}
-                                {comment.likesCount === 0 && <span>{comment.likesCount + ' Like'}</span>}
+                                <i className="icmn-heart mr-1" />
+                                {comment.likesCount > 0 &&
+                                  <span>
+                                    {comment.likesCount + ' Likes'}
+                                  </span>}
+                                {comment.likesCount === 0 &&
+                                  <span>
+                                    {comment.likesCount + ' Like'}
+                                  </span>}
                               </a>
                               <a href="javascript: void(0);" className="mr-2">
-                                <i className="icmn-reply mr-1"></i>
+                                <i className="icmn-reply mr-1" />
                                 Reply
                               </a>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div>,
                     )}
                   </div>
-                  {discuss.status === "open" &&
+                  {discuss.status === 'open' &&
                     <div className="discuss__add-comment clearfix">
                       <div className="discuss__comment-avatar">
-                        <Avatar size="50" src={discuss.authorImg}/>
+                        <Avatar size="50" src={discuss.authorImg} />
                       </div>
                       <div className="discuss__content-wrapper">
                         <div className="discuss__comment-head discuss__comment-head--empty">
                           <Editor />
                         </div>
                         <div className="discuss__comment-bottom">
-                          <Button type="primary">
-                            Comment
-                          </Button>
+                          <Button type="primary">Comment</Button>
                         </div>
                       </div>
-                    </div>
-                  }
+                    </div>}
                 </div>
                 <div className="col-lg-2">
                   <div className="discuss__sidebar">
                     <div className="discuss__sidebar-item">
                       <div className="discuss__sidebar-head">Assignees</div>
-                      <div className="discuss__sidebar-item-content">
-                        No one assigned
-                      </div>
+                      <div className="discuss__sidebar-item-content">No one assigned</div>
                     </div>
                     <div className="discuss__sidebar-item">
                       <div className="discuss__sidebar-head">Labels</div>
-                      <div className="discuss__sidebar-item-content">
-                        None yet
-                      </div>
+                      <div className="discuss__sidebar-item-content">None yet</div>
                     </div>
                     <div className="discuss__sidebar-item">
                       <div className="discuss__sidebar-head">Projects</div>
-                      <div className="discuss__sidebar-item-content">
-                        None yet
-                      </div>
+                      <div className="discuss__sidebar-item-content">None yet</div>
                     </div>
                     <div className="discuss__sidebar-item">
                       <div className="discuss__sidebar-head">Milenstone</div>
-                      <div className="discuss__sidebar-item-content">
-                        No milestone
-                      </div>
+                      <div className="discuss__sidebar-item-content">No milestone</div>
                     </div>
                     <div className="discuss__sidebar-item">
                       <div className="discuss__sidebar-head">Notifications</div>
@@ -175,8 +209,8 @@ class GitHubDiscuss extends React.Component {
                         <ul className="discuss__participants-list">
                           {discuss.participants.map((participant, index) =>
                             <li className="discuss__participants-item" key={index}>
-                              <Avatar size="25" src={participant}/>
-                            </li>
+                              <Avatar size="25" src={participant} />
+                            </li>,
                           )}
                         </ul>
                       </div>

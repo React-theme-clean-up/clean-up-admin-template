@@ -24,7 +24,11 @@ class BlogFeedPage extends React.Component {
           <div className="card-block">
             <div className="add-post">
               <div className="container">
-                <img src="resources/images/photos/1.jpeg" alt="" style={{width: "100%", height: "auto"}}/>
+                <img
+                  src="resources/images/photos/1.jpeg"
+                  alt=""
+                  style={{ width: '100%', height: 'auto' }}
+                />
               </div>
             </div>
           </div>

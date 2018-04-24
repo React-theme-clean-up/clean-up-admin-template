@@ -1,5 +1,5 @@
 import React from 'react'
-import { Checkbox, Dropdown, Icon, Menu, Input, Button } from 'antd';
+import { Checkbox, Dropdown, Icon, Menu, Input, Button } from 'antd'
 import Avatar from 'components/CleanComponents/Avatar/Avatar'
 import './YouTubeView.css'
 import data from './data.json'
@@ -20,38 +20,42 @@ const actions = (
   </Menu>
 )
 
-
 class YouTubeView extends React.Component {
-
   state = {
     viewData: data.viewData,
     upNext: data.upNext,
   }
 
   render() {
-    let {
-      viewData,
-      upNext,
-    } = this.state
+    let { viewData, upNext } = this.state
     return (
       <section className="card">
         <div className="card-header">
-        <span className="core__title">
+          <span className="core__title">
             <strong>YouTube View</strong>
-        </span>
+          </span>
         </div>
         <div className="card-block">
           <div className="video-page clearfix">
             <div className="video-page__main-content">
               <div className="mediatec-cleanvideoplayer">
                 <ul data-theme="default">
-                  <li data-title={viewData.title} data-type={viewData.type} data-url={viewData.url} data-poster={viewData.cover} data-free="true"></li>
+                  <li
+                    data-title={viewData.title}
+                    data-type={viewData.type}
+                    data-url={viewData.url}
+                    data-poster={viewData.cover}
+                    data-free="true"
+                  />
                 </ul>
               </div>
               <div className="video-page__descr">
                 <div className="video-page__descr-wrapper card">
                   <div className="video-page__published mb-2">
-                    <strong>Published on <span className="video-page__published-time">{viewData.date}</span></strong>
+                    <strong>
+                      Published on{' '}
+                      <span className="video-page__published-time">{viewData.date}</span>
+                    </strong>
                     <div className="pull-right">
                       <Dropdown overlay={actions}>
                         <a className="ant-dropdown-link" href="#">
@@ -60,17 +64,19 @@ class YouTubeView extends React.Component {
                       </Dropdown>
                     </div>
                   </div>
-                  <p className="video-page__descr-text mb-0">{viewData.description}</p>
+                  <p className="video-page__descr-text mb-0">
+                    {viewData.description}
+                  </p>
                 </div>
               </div>
               <div className="video-page__comments">
                 <div className="video-page__comments-wrapper card">
                   <div className="video-page__add-comment">
                     <div className="video-page__comment-user">
-                      <Avatar size="50" src={viewData.accountImg}/>
+                      <Avatar size="50" src={viewData.accountImg} />
                     </div>
                     <div className="video-page__comment-form">
-                      <TextArea rows={3} placeholder="Write a comment..."/>
+                      <TextArea rows={3} placeholder="Write a comment..." />
                       <div className="mt-3">
                         <Button className="mr-2" type="primary" style={{ width: 200 }}>
                           <i className="fa fa-send mr-2" />
@@ -83,26 +89,33 @@ class YouTubeView extends React.Component {
                     {viewData.comments.map((comment, index) =>
                       <div className="video-page__comment-item clearfix">
                         <div className="video-page__comment-avatar">
-                          <Avatar src={comment.avatar} size="50" border="false"/>
+                          <Avatar src={comment.avatar} size="50" border="false" />
                         </div>
                         <div className="video-page__comment-content">
-                          <strong>{comment.name}
-                            <span className="video-page__comment-time text-muted ml-2">{comment.date}</span>
+                          <strong>
+                            {comment.name}
+                            <span className="video-page__comment-time text-muted ml-2">
+                              {comment.date}
+                            </span>
                           </strong>
-                          <p className="mb-0">{comment.content}</p>
+                          <p className="mb-0">
+                            {comment.content}
+                          </p>
                           <div className="video-page__comment-like">
                             <a className="mr-2" href="javascript: void(0);">
-                              <i className="icmn-heart mr-2"></i>
+                              <i className="icmn-heart mr-2" />
                               {comment.likesCount > 0 &&
-                                <span>{comment.likesCount + ' Likes'}</span>
-                              }
+                                <span>
+                                  {comment.likesCount + ' Likes'}
+                                </span>}
                               {comment.likesCount === 0 &&
-                                <span>{comment.likesCount + ' Like'}</span>
-                              }
+                                <span>
+                                  {comment.likesCount + ' Like'}
+                                </span>}
                             </a>
                           </div>
                         </div>
-                      </div>
+                      </div>,
                     )}
                   </div>
                 </div>
@@ -120,18 +133,26 @@ class YouTubeView extends React.Component {
                   <li className="video-page__next-item clearfix" key={index}>
                     <a href="#" className="video-page__next-item-link">
                       <div className="video-page__item-thumb">
-                        <img className="video-page__item-thumb-img" src={video.cover} alt={video.name} />
+                        <img
+                          className="video-page__item-thumb-img"
+                          src={video.cover}
+                          alt={video.name}
+                        />
                       </div>
                       <div className="video-page__item-descr">
-                        <span className="video-page__item-name">{video.name}</span>
-                        <span className="video-page__item-author">{video.author}</span>
+                        <span className="video-page__item-name">
+                          {video.name}
+                        </span>
+                        <span className="video-page__item-author">
+                          {video.author}
+                        </span>
                         <span class="cat__video-page__item-views text-muted">
                           <span class="cat__video-page__item-count">{video.views}</span>
                           views
                         </span>
                       </div>
                     </a>
-                  </li>
+                  </li>,
                 )}
               </ul>
             </div>
