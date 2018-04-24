@@ -55,7 +55,7 @@ class InfoCard extends React.Component {
     return (
       <div>
         {form === 'stats' &&
-          <div className={className + ' mb-2'}>
+          <div className={className + ' mb-4'}>
             {icon !== false &&
               <span className="infoCard__digit">
                 <i className={'icmn-' + icon} />
@@ -70,7 +70,7 @@ class InfoCard extends React.Component {
             </div>
           </div>}
         {form === 'stats-large' &&
-          <div className={className + ' mb-2'}>
+          <div className={className + ' mb-4'}>
             <h5 className="text-uppercase mb-3 text-white">
               {commerceStats.title}
             </h5>
@@ -85,7 +85,7 @@ class InfoCard extends React.Component {
             </div>
           </div>}
         {form === 'interactive' &&
-          <div className={className + ' infoCard--interactive px-3 py-5 mb-2'}>
+          <div className={className + ' infoCard--interactive px-3 py-5 mb-4'}>
             {icon !== false &&
               <div className="infoCard__icon text-center font-size-30">
                 <i className={'icmn-' + icon} />
@@ -100,7 +100,7 @@ class InfoCard extends React.Component {
             </div>
           </div>}
         {form === 'bordered' &&
-          <div className={className + ' infoCard--bordered mb-2'}>
+          <div className={className + ' infoCard--bordered mb-4'}>
             {icon !== false &&
               <span className="infoCard__digit">
                 <i className={'icmn-' + icon} />
