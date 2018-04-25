@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { connect } from 'react-redux'
-import { setCommonLogin, setActiveDialog } from 'ducks/app'
+import { setActiveDialog } from 'ducks/app'
 import { REDUCER, submit } from 'ducks/login'
 import { Form, Input, Button } from 'antd'
 import { Link } from 'react-router-dom'
@@ -13,16 +13,8 @@ const mapStateToProps = (state, props) => ({
   commonLogin: state.app.commonLogin,
 })
 
-const formOptions = {
-  onValuesChange: (props, values) => {
-    if (values.hasOwnProperty('username')) {
-      props.dispatch(setCommonLogin(values['username']))
-    }
-  },
-}
-
 @connect(mapStateToProps)
-@Form.create(formOptions)
+@Form.create()
 class LoginForm extends React.Component {
   static defaultProps = {}
 

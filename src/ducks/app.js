@@ -2,6 +2,7 @@
 import { createAction, createReducer } from 'redux-act'
 import { push } from 'react-router-redux'
 import { pendingTask, begin, end } from 'react-redux-spinner'
+import axios from 'axios'
 
 const REDUCER = 'app'
 const NS = `@@${REDUCER}/`
@@ -17,11 +18,6 @@ export const setActiveDialog = createAction(`${NS}SET_ACTIVE_DIALOG`)
 export const deleteDialogForm = createAction(`${NS}DELETE_DIALOG_FORM`)
 export const addSubmitForm = createAction(`${NS}ADD_SUBMIT_FORM`)
 export const deleteSubmitForm = createAction(`${NS}DELETE_SUBMIT_FORM`)
-export const setCommonLogin = createAction(`${NS}SET_COMMON_LOGIN`)
-export const setCommonCompany = createAction(`${NS}SET_COMMON_COMPANY`)
-export const setCommonAgent = createAction(`${NS}SET_COMMON_AGENT`)
-export const setUpdatingCompany = createAction(`${NS}SET_UPDATING_COMPANY`)
-export const setCardDetails = createAction(`${NS}SET_CARD_DETAILS`)
 
 export const setLoading = (isLoading: boolean) => {
   const action = _setLoading(isLoading)
@@ -45,80 +41,134 @@ export const toggleMenuLeft = () => (dispatch: Function, getState: Function) => 
   return Promise.resolve()
 }
 
-export function initAuth(dispatch) {
-  let key = window.localStorage.getItem('app.Authorization')
-  if (key === 'qwerty') {
-    dispatch(_setHideLogin(true))
-    dispatch(setCommonLogin())
-    //dispatch(push('/dashboard'))
-    return true
+export const initAuth = (roles: Array<string>) => (dispatch: Function, getState: Function) => {
+
+  // Use Axios there to get User Data by Auth Token with Bearer Method Authentication
+
+  const role = window.localStorage.getItem('app.Role')
+  const state = getState()
+  let data = null
+
+  console.log(role)
+
+  if (role === 'administrator') {
+    data = {
+      email: 'admin@mediatec.org',
+      role: 'administrator',
+    }
+    dispatch(
+      setUserState({
+        userState: {
+          ...data,
+        },
+      }),
+    )
+    if (!roles.find(role => role === 'administrator')) {
+      if (!(state.routing.location.pathname === '/dashboard/alpha')) {
+        dispatch(push('/dashboard/alpha'))
+      }
+      return Promise.resolve(false)
+    }
+    return Promise.resolve(true)
+  } else if (role === 'agent') {
+    data = {
+      email: 'agent@mediatec.org',
+      role: 'agent'
+    }
+    dispatch(
+      setUserState({
+        userState: {
+          ...data,
+        },
+      }),
+    )
+    if (!roles.find(role => role === 'agent')) {
+      if (!(state.routing.location.pathname === '/dashboard/alpha')) {
+        dispatch(push('/dashboard/alpha'))
+      }
+      return Promise.resolve(false)
+    }
+    return Promise.resolve(true)
   } else {
-    //dispatch(push('/login'))
-    dispatch(_setFrom(''))
-    return false
+    const state = getState()
+    const location = state.routing.location
+    const from = location.pathname + location.search
+    dispatch(_setFrom(from))
+    dispatch(push('/login'))
+    return Promise.reject()
   }
+
 }
 
 export function login(username, password, dispatch) {
-  if (username === 'nicktabolich@live.com' && password === '123123') {
-    window.localStorage.setItem('app.Authorization', 'qwerty')
+
+  // Use Axios there to get User Auth Token with Basic Method Authentication
+
+  if (username === 'admin@mediatec.org' && password === '123123') {
+    window.localStorage.setItem('app.Authorization', '')
+    window.localStorage.setItem('app.Role', 'administrator')
     dispatch(_setHideLogin(true))
-    dispatch(setCommonLogin())
-    //dispatch(push('/dashboard'))
+    dispatch(push('/dashboard/alpha'))
     return true
-  } else {
-    //dispatch(push('/login'))
-    dispatch(_setFrom(''))
-    return false
   }
+
+  if (username === 'agent@mediatec.org' && password === '123123') {
+    window.localStorage.setItem('app.Authorization', '')
+    window.localStorage.setItem('app.Role', 'agent')
+    dispatch(_setHideLogin(true))
+    dispatch(push('/dashboard/alpha'))
+    return true
+  }
+
+  dispatch(push('/login'))
+  dispatch(_setFrom(''))
+
+  return false
 }
 
 export const logout = () => (dispatch: Function, getState: Function) => {
   dispatch(
     setUserState({
       userState: {
-        login: '',
+        email: '',
+        role: '',
       },
     }),
   )
   dispatch(push('/login'))
   window.localStorage.setItem('app.Authorization', '')
+  window.localStorage.setItem('app.Role', '')
 }
 
 const initialState = {
+
+  // APP PARAMETERS
   from: '',
   isMenuLeft:
     (window.localStorage.getItem('app.isMenuLeft') ||
       (window.localStorage.setItem('app.isMenuLeft', 'on'), 'on')) === 'on',
   isUpdatingContent: false,
-  isUpdatingDashboard: false,
-  commonLogin: '',
   isLoading: false,
   activeDialog: '',
   dialogForms: {},
   submitForms: {},
   isHideLogin: false,
+
+  // USER PARAMETERS
   userState: {
-    login: '',
+    email: '',
+    role: '',
   },
-  cardDetails: {},
-  commonCompany: {},
-  isUpdatingCompany: false,
 }
 
 export default createReducer(
   {
     [_setFrom]: (state, from) => ({ ...state, from }),
-    [_setMenuLeft]: (state, isMenuLeft) => ({ ...state, isMenuLeft }),
-    [setUserState]: (state, { userState }) => ({ ...state, userState }),
-    [setCardDetails]: (state, { cardDetails }) => ({ ...state, cardDetails }),
-    [setUpdatingContent]: (state, isUpdatingContent) => ({ ...state, isUpdatingContent }),
-    [setCommonLogin]: (state, commonLogin) => ({ ...state, commonLogin }),
-    [setCommonCompany]: (state, commonCompany) => ({ ...state, commonCompany }),
-    [setCommonAgent]: (state, commonAgent) => ({ ...state, commonAgent }),
     [_setLoading]: (state, isLoading) => ({ ...state, isLoading }),
+    [_setMenuLeft]: (state, isMenuLeft) => ({ ...state, isMenuLeft }),
     [_setHideLogin]: (state, isHideLogin) => ({ ...state, isHideLogin }),
-    [setUpdatingCompany]: (state, isUpdatingCompany) => ({ ...state, isUpdatingCompany }),
+    [setUpdatingContent]: (state, isUpdatingContent) => ({ ...state, isUpdatingContent }),
+    [setUserState]: (state, { userState }) => ({ ...state, userState }),
     [setActiveDialog]: (state, activeDialog) => {
       const result = { ...state, activeDialog }
       if (activeDialog !== '') {

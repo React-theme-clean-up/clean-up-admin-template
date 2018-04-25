@@ -3,9 +3,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { initAuth, setLoading, setUpdatingContent, resetHideLogin } from 'ducks/app'
+import axios from 'axios'
 import NotFoundPage from 'pages/DefaultPages/NotFoundPage'
 import AppLayout from 'app/Layout'
 import Dialog from './Page_Dialog'
+
+let source = null
 
 const mapStateToProps = (state, props) => ({
   isLoading: state.app.isLoading,
@@ -41,6 +44,7 @@ class Page extends React.Component {
   }
 
   static defaultProps = {
+    roles: [],
     pathName: null,
     isNotFound: false,
     onMounted: null,
@@ -77,17 +81,25 @@ class Page extends React.Component {
   }
 
   componentDidMount() {
-    const { onMounted, dispatch } = this.props
-    let initLoggined = initAuth(dispatch)
+    if (source) {
+      // FIXME https://github.com/mzabriskie/axios/issues/1013
+      source.cancel()
+    }
+    source = axios.CancelToken.source()
+    axios.defaults.cancelToken = source.token
+    const { onMounted, roles, dispatch } = this.props
 
-    if (initLoggined) {
-      this._onMounted = function() {
-        return onMounted()
+    if (roles.length > 0) {
+      this._onMounted = () => {
+        return dispatch(initAuth(roles)).then(response => {
+          if (response && onMounted) {
+            return onMounted()
+          }
+        })
       }
     } else {
       this._onMounted = onMounted
     }
-
     if (this._onMounted) {
       dispatch(setLoading(true))
       this.isStartLoading = true
@@ -97,12 +109,22 @@ class Page extends React.Component {
         if (isResolve) {
           this.stopLoading()
         }
-      }, 300) // show app loading 300ms
+      }, 300) // show state.app.isLoading equal or more then 300ms
       if (this._onMounted) {
-        isResolve = true
-        if (!this.timeoutId) {
-          this.stopLoading()
-        }
+        this._onMounted()
+          .catch(error => {
+            if (axios.isCancel(error)) {
+              // nothing
+            } else {
+              //console.log('error', error)
+            }
+          })
+          .then(() => {
+            isResolve = true
+            if (!this.timeoutId) {
+              this.stopLoading()
+            }
+          })
       }
     } else {
       this.updateContent()

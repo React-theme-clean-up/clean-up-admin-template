@@ -7,6 +7,7 @@ import DashboardAlpha from './DashboardAlpha'
 class DashboardAlphaPage extends React.Component {
   static defaultProps = {
     pathName: 'Dashboard Alpha',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

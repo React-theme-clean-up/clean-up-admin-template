@@ -58,17 +58,6 @@ class AppMenu extends React.Component {
               </span>
             }
           >
-            <div
-              style={{
-                height: 100,
-                padding: 10,
-                lineHeight: '20px',
-                whiteSpace: 'normal',
-                width: 150,
-              }}
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
             <Menu.Item key="1">Option 1</Menu.Item>
             <Menu.Item key="2">Option 2</Menu.Item>
             <Menu.Item key="3">Option 3</Menu.Item>

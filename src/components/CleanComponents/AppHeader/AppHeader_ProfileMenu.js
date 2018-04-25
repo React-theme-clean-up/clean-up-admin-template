@@ -68,7 +68,7 @@ class ProfileMenu extends React.Component {
         <Dropdown overlay={menu} trigger={['click']} placement="bottomRight">
           <a className="ant-dropdown-link" href="/">
             <span className="cat__top-bar__avatar cat__core__avatar--border">
-              <img src="/modules/dummy-assets/common/img/avatars/temp.jpg" alt="" />
+              <img src="/resources/images/avatars/temp.jpg" alt="" />
             </span>
           </a>
         </Dropdown>
