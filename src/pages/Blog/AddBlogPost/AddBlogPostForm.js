@@ -2,7 +2,7 @@
 import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
 import { Form, Input, Button, Radio, Select, Upload, Icon } from 'antd'
-import './wysiwyg-editor.css'
+//import './wysiwyg-editor.css'
 
 const FormItem = Form.Item
 const RadioGroup = Radio.Group

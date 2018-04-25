@@ -42,7 +42,6 @@ export const toggleMenuLeft = () => (dispatch: Function, getState: Function) => 
 }
 
 export const initAuth = (roles: Array<string>) => (dispatch: Function, getState: Function) => {
-
   // Use Axios there to get User Data by Auth Token with Bearer Method Authentication
 
   const role = window.localStorage.getItem('app.Role')
@@ -73,7 +72,7 @@ export const initAuth = (roles: Array<string>) => (dispatch: Function, getState:
   } else if (role === 'agent') {
     data = {
       email: 'agent@mediatec.org',
-      role: 'agent'
+      role: 'agent',
     }
     dispatch(
       setUserState({
@@ -97,11 +96,9 @@ export const initAuth = (roles: Array<string>) => (dispatch: Function, getState:
     dispatch(push('/login'))
     return Promise.reject()
   }
-
 }
 
 export function login(username, password, dispatch) {
-
   // Use Axios there to get User Auth Token with Basic Method Authentication
 
   if (username === 'admin@mediatec.org' && password === '123123') {
@@ -141,7 +138,6 @@ export const logout = () => (dispatch: Function, getState: Function) => {
 }
 
 const initialState = {
-
   // APP PARAMETERS
   from: '',
   isMenuLeft:
