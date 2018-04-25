@@ -227,6 +227,9 @@ const loadableRoutes = {
   '/antdesign/carousel': {
     component: loadable(() => import('pages/AntDesign/CarouselPage')),
   },
+  '/antdesign/checkbox': {
+    component: loadable(() => import('pages/AntDesign/CheckboxPage')),
+  },
   '/antdesign/collapse': {
     component: loadable(() => import('pages/AntDesign/CollapsePage')),
   },
