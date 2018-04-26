@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ModalPageItems from 'components/AntDesign/ModalPage/index'
+import ModalItems from 'components/AntDesign/Modal/index'
 
 class ModalPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class ModalPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Modal" />
-        <ModalPageItems />
+        <ModalItems />
       </Page>
     )
   }

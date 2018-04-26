@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CascaderPageItems from 'components/AntDesign/CascaderPage/index'
+import CascaderItems from 'components/AntDesign/Cascader/index'
 
 class CascaderPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class CascaderPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <CascaderPageItems />
+        <CascaderItems />
       </Page>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CalendarPageItems from 'components/AntDesign/CalendarPage/index'
+import CalendarItems from 'components/AntDesign/Calendar/index'
 
 class CalendarPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class CalendarPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Calendar" />
-        <CalendarPageItems />
+        <CalendarItems />
       </Page>
     )
   }

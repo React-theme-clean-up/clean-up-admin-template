@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MenuPageItems from 'components/AntDesign/MenuPage/index'
+import MenuItems from 'components/AntDesign/Menu/index'
 
 class MenuPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class MenuPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Menu" />
-        <MenuPageItems />
+        <MenuItems />
       </Page>
     )
   }

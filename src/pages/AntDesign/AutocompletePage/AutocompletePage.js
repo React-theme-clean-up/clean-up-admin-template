@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AutocomplitePageItems from 'components/AntDesign/AutocompletePage/index'
+import AutocompleteItems from 'components/AntDesign/Autocomplete/index'
 
 class AutocompletePage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class AutocompletePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - AutoComplete" />
-        <AutocomplitePageItems />
+        <AutocompleteItems />
       </Page>
     )
   }

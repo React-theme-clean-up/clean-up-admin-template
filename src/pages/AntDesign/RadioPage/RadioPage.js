@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import RadioPageItems from 'components/AntDesign/RadioPage/index'
+import RadioItems from 'components/AntDesign/Radio/index'
 
 class RadioPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class RadioPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <RadioPageItems />
+        <RadioItems />
       </Page>
     )
   }

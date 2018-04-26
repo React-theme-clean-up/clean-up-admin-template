@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TimepickerPageItems from 'components/AntDesign/TimepickerPage/index'
+import TimepickerItems from 'components/AntDesign/Timepicker/index'
 
 class TimepickerPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TimepickerPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Timepicker" />
-        <TimepickerPageItems />
+        <TimepickerItems />
       </Page>
     )
   }

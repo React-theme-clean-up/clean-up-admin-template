@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import DropdownPageItems from 'components/AntDesign/DropdownPage/index'
+import DropdownItems from 'components/AntDesign/Dropdown/index'
 
 class DropdownPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class DropdownPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <DropdownPageItems />
+        <DropdownItems />
       </Page>
     )
   }

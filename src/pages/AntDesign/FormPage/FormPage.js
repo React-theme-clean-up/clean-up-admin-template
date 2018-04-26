@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import FormPageItems from 'components/AntDesign/FormPage/index'
+import FormItems from 'components/AntDesign/Form/index'
 
 class FormPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class FormPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <FormPageItems />
+        <FormItems />
       </Page>
     )
   }

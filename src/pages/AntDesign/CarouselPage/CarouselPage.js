@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CarouselPageItems from 'components/AntDesign/CarouselPage/index'
+import CarouselItems from 'components/AntDesign/Carousel/index'
 
 class CarouselPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class CarouselPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Carousel" />
-        <CarouselPageItems />
+        <CarouselItems />
       </Page>
     )
   }

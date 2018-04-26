@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AvatarPageItems from 'components/AntDesign/AvatarPage/index'
+import AvatarItems from 'components/AntDesign/Avatar/index'
 
 class AvatarPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class AvatarPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Avatar" />
-        <AvatarPageItems />
+        <AvatarItems />
       </Page>
     )
   }

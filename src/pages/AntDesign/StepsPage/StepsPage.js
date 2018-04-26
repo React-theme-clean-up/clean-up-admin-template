@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import StepsPageItems from 'components/AntDesign/StepsPage/index'
+import StepsItems from 'components/AntDesign/Steps/index'
 
 class StepsPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class StepsPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <StepsPageItems />
+        <StepsItems />
       </Page>
     )
   }

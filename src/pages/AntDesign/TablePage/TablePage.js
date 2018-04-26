@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TablePageItems from 'components/AntDesign/TablePage/index'
+import TableItems from 'components/AntDesign/Table/index'
 
 class TablePage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TablePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Table" />
-        <TablePageItems />
+        <TableItems />
       </Page>
     )
   }

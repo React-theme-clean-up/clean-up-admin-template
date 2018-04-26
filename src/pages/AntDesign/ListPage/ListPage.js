@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ListPageItems from 'components/AntDesign/ListPage/index'
+import ListItems from 'components/AntDesign/List/index'
 
 class ListPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class ListPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - List" />
-        <ListPageItems />
+        <ListItems />
       </Page>
     )
   }

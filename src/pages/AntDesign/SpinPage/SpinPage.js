@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SpinPageItems from 'components/AntDesign/SpinPage/index'
+import SpinItems from 'components/AntDesign/Spin/index'
 
 class SpinPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class SpinPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Spin" />
-        <SpinPageItems />
+        <SpinItems />
       </Page>
     )
   }

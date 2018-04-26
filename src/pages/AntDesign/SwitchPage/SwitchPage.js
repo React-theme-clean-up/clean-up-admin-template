@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SwitchPageItems from 'components/AntDesign/SwitchPage/index'
+import SwitchItems from 'components/AntDesign/Switch/index'
 
 class SwitchPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class SwitchPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Switch" />
-        <SwitchPageItems />
+        <SwitchItems />
       </Page>
     )
   }

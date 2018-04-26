@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ProgressPageItems from 'components/AntDesign/ProgressPage/index'
+import ProgressItems from 'components/AntDesign/Progress/index'
 
 class ProgressPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class ProgressPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Progress" />
-        <ProgressPageItems />
+        <ProgressItems />
       </Page>
     )
   }

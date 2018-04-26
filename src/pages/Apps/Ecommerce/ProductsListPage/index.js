@@ -1,18 +1,18 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ProductsList from './ProductsList'
+import ProductsList from './ProductList/'
 
 class ProductsListPage extends React.Component {
   static defaultProps = {
-    pathName: 'Products List',
+    pathName: 'Product List',
   }
 
   render() {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Products List" />
+        <Helmet title="Clean UI - Product List" />
         <ProductsList />
       </Page>
     )

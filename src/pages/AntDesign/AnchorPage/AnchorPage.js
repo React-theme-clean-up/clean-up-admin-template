@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AnchorPageItems from 'components/AntDesign/AnchorPage/index'
+import AnchorItems from 'components/AntDesign/Anchor/index'
 
 class AnchorPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class AnchorPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Anchor" />
-        <AnchorPageItems />
+        <AnchorItems />
       </Page>
     )
   }

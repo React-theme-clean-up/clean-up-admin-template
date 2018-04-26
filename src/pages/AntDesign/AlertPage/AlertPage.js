@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AlertPageItems from 'components/AntDesign/AlertPage/index'
+import AlertItems from 'components/AntDesign/Alert/index'
 
 class AlertPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class AlertPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Alert" />
-        <AlertPageItems />
+        <AlertItems />
       </Page>
     )
   }

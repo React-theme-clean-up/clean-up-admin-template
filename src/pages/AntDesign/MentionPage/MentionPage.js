@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MentionPageItems from 'components/AntDesign/MentionPage/index'
+import MentionItems from 'components/AntDesign/Mention/index'
 
 class MentionPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class MentionPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <MentionPageItems />
+        <MentionItems />
       </Page>
     )
   }

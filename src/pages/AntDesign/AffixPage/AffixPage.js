@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AffixPageItems from 'components/AntDesign/AffixPage/index'
+import AffixItems from 'components/AntDesign/Affix/index'
 
 class AffixPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class AffixPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <AffixPageItems />
+        <AffixItems />
       </Page>
     )
   }

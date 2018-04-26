@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PopconfirmPageItems from 'components/AntDesign/PopconfirmPage/index'
+import PopconfirmItems from 'components/AntDesign/Popconfirm/index'
 
 class PopconfirmPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class PopconfirmPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Popconfirm" />
-        <PopconfirmPageItems />
+        <PopconfirmItems />
       </Page>
     )
   }

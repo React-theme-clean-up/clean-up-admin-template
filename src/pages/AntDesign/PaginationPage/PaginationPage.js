@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PaginationPageItems from 'components/AntDesign/PaginationPage/index'
+import PaginationItems from 'components/AntDesign/Pagination/index'
 
 class PaginationPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class PaginationPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <PaginationPageItems />
+        <PaginationItems />
       </Page>
     )
   }

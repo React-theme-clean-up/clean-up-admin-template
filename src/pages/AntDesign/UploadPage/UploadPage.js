@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import UploadPageItems from 'components/AntDesign/UploadPage/index'
+import UploadItems from 'components/AntDesign/Upload/index'
 
 class UploadPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class UploadPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Upload" />
-        <UploadPageItems />
+        <UploadItems />
       </Page>
     )
   }

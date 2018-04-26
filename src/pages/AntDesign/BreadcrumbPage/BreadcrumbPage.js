@@ -1,11 +1,11 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BreadcrumbPageItems from 'components/AntDesign/BreadcrumbPage/index'
+import BreadcrumbItems from 'components/AntDesign/Breadcrumb/index'
 
 class BreadcrumbPage extends React.Component {
   static defaultProps = {
-    pathName: 'Button',
+    pathName: 'Breadcrumb',
   }
 
   render() {
@@ -13,7 +13,7 @@ class BreadcrumbPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Breadcrumb" />
-        <BreadcrumbPageItems />
+        <BreadcrumbItems />
       </Page>
     )
   }

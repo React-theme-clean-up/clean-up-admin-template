@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import DatepickerPageItems from 'components/AntDesign/DatepickerPage/index'
+import DatepickerItems from 'components/AntDesign/Datepicker/index'
 
 class DatepickerPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class DatepickerPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Date picker" />
-        <DatepickerPageItems />
+        <DatepickerItems />
       </Page>
     )
   }

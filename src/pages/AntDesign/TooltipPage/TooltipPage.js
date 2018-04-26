@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TooltipPageItems from 'components/AntDesign/TooltipPage/index'
+import TooltipItems from 'components/AntDesign/Tooltip/index'
 
 class TooltipPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TooltipPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Tooltip" />
-        <TooltipPageItems />
+        <TooltipItems />
       </Page>
     )
   }

@@ -209,4 +209,4 @@ class MailList extends React.Component {
   }
 }
 
-export default MailApp
+export default MailList

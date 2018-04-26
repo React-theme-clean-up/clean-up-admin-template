@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BadgePageItems from 'components/AntDesign/BadgePage/index'
+import BadgeItems from 'components/AntDesign/Badge/index'
 
 class BadgePage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class BadgePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Badge" />
-        <BadgePageItems />
+        <BadgeItems />
       </Page>
     )
   }

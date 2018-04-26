@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BacktopPageItems from 'components/AntDesign/BacktopPage/index'
+import BacktopItems from 'components/AntDesign/Backtop/index'
 
 class BacktopPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class BacktopPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Backtop" />
-        <BacktopPageItems />
+        <BacktopItems />
       </Page>
     )
   }

@@ -1,19 +1,19 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import InputPageItems from 'components/AntDesign/InputPage/index'
+import InputItems from 'components/AntDesign/Input/index'
 
 class InputPage extends React.Component {
   static defaultProps = {
-    pathName: 'Button',
+    pathName: 'Input',
   }
 
   render() {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Buttons" />
-        <InputPageItems />
+        <Helmet title="Clean UI - Input" />
+        <InputItems />
       </Page>
     )
   }

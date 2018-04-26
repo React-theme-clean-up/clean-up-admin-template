@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TagPageItems from 'components/AntDesign/TagPage/index'
+import TagItems from 'components/AntDesign/Tag/index'
 
 class TagPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TagPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Tag" />
-        <TagPageItems />
+        <TagItems />
       </Page>
     )
   }

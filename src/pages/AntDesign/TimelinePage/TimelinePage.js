@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TimelineItems from 'components/AntDesign/TimelinePage/index'
+import TimelineItems from 'components/AntDesign/Timeline/index'
 
 class TimelinePage extends React.Component {
   static defaultProps = {

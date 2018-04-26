@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TreeselectPageItems from 'components/AntDesign/TreeselectPage/index'
+import TreeselectItems from 'components/AntDesign/Treeselect/index'
 
 class TreeselectPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TreeselectPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - TreeSelect" />
-        <TreeselectPageItems />
+        <TreeselectItems />
       </Page>
     )
   }

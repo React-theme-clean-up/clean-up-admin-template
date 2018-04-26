@@ -33,6 +33,7 @@
     "react-infinite-scroller": "^1.1.3",
     "react-scripts": "^1.0.10",
     "react-slick": "^0.23.1",
+    "react-syntax-highlighter": "^7.0.2",
     "react-test-renderer": "^15.5.4",
     "redux-devtools-extension": "^2.13.0",
     "redux-logger": "^3.0.1",

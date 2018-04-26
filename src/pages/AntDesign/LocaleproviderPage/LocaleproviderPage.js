@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import LocaleproviderPageItems from 'components/AntDesign/LocaleproviderPage/index'
+import LocaleproviderItems from 'components/AntDesign/Localeprovider/index'
 
 class LocaleproviderPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class LocaleproviderPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Localeprovider" />
-        <LocaleproviderPageItems />
+        <LocaleproviderItems />
       </Page>
     )
   }

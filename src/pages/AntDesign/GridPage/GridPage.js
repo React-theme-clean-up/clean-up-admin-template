@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import GridPageItems from 'components/AntDesign/GridPage/index'
+import GridItems from 'components/AntDesign/Grid/index'
 
 class GridPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class GridPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Grid" />
-        <GridPageItems />
+        <GridItems />
       </Page>
     )
   }

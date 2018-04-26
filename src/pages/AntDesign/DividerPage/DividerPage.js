@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import DividerPageItems from 'components/AntDesign/DividerPage/index'
+import DividerItems from 'components/AntDesign/Divider/index'
 
 class DividerPage extends React.Component {
   static defaultProps = {
@@ -12,8 +12,8 @@ class DividerPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Devider" />
-        <DividerPageItems />
+        <Helmet title="Clean UI - Divider" />
+        <DividerItems />
       </Page>
     )
   }

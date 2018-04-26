@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CollapsePageItems from 'components/AntDesign/CollapsePage/index'
+import CollapseItems from 'components/AntDesign/Collapse/index'
 
 class CollapsePage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class CollapsePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Collapse" />
-        <CollapsePageItems />
+        <CollapseItems />
       </Page>
     )
   }

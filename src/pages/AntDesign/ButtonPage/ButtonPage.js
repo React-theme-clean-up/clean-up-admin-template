@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ButtonPageItems from 'components/AntDesign/ButtonPage/index'
+import ButtonItems from 'components/AntDesign/Button/index'
 
 class ButtonPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class ButtonPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Buttons" />
-        <ButtonPageItems />
+        <ButtonItems />
       </Page>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MessagePageItems from 'components/AntDesign/MessagePage/index'
+import MessageItems from 'components/AntDesign/Message/index'
 
 class MessagePage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class MessagePage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Message" />
-        <MessagePageItems />
+        <MessageItems />
       </Page>
     )
   }

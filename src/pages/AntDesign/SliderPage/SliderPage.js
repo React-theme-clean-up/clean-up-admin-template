@@ -1,19 +1,19 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SliderPageItems from 'components/AntDesign/SliderPage/index'
+import SliderItems from 'components/AntDesign/Slider/index'
 
 class SliderPage extends React.Component {
   static defaultProps = {
-    pathName: 'Button',
+    pathName: 'Slider',
   }
 
   render() {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Buttons" />
-        <SliderPageItems />
+        <Helmet title="Clean UI - Slider" />
+        <SliderItems />
       </Page>
     )
   }

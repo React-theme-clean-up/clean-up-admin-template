@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CheckboxPageItems from 'components/AntDesign/CheckboxPage/index'
+import CheckboxItems from 'components/AntDesign/Checkbox/index'
 
 class CheckboxPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class CheckboxPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Checkbox" />
-        <CheckboxPageItems />
+        <CheckboxItems />
       </Page>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TransferPageItems from 'components/AntDesign/TransferPage/index'
+import TransferItems from 'components/AntDesign/Transfer/index'
 
 class TransferPage extends React.Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ class TransferPage extends React.Component {
     return (
       <Page {...props}>
         <Helmet title="Clean UI - Transfer" />
-        <TransferPageItems />
+        <TransferItems />
       </Page>
     )
   }
