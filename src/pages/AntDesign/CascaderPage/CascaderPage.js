@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CascaderPageItems from 'components/AntComponents/CascaderPage/index'
+import CascaderPageItems from 'components/AntDesign/CascaderPage/index'
 
 class CascaderPage extends React.Component {
   static defaultProps = {

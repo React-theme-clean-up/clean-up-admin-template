@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AlertPageItems from 'components/AntComponents/AlertPage/index'
+import AlertPageItems from 'components/AntDesign/AlertPage/index'
 
 class AlertPage extends React.Component {
   static defaultProps = {

@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import FormPageItems from 'components/AntComponents/FormPage/index'
+import FormPageItems from 'components/AntDesign/FormPage/index'
 
 class FormPage extends React.Component {
   static defaultProps = {

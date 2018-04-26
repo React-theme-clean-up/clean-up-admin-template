@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CollapsePageItems from 'components/AntComponents/CollapsePage/index'
+import CollapsePageItems from 'components/AntDesign/CollapsePage/index'
 
 class CollapsePage extends React.Component {
   static defaultProps = {

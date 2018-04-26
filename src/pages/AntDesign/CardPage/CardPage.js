@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CardPageItems from 'components/AntComponents/CardPage/index'
+import CardPageItems from 'components/AntDesign/CardPage/index'
 
 class CardPage extends React.Component {
   static defaultProps = {

@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import DatepickerPageItems from 'components/AntComponents/DatepickerPage/index'
+import DatepickerPageItems from 'components/AntDesign/DatepickerPage/index'
 
 class DatepickerPage extends React.Component {
   static defaultProps = {

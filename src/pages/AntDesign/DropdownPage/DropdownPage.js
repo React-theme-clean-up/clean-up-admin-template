@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import DropdownPageItems from 'components/AntComponents/DropdownPage/index'
+import DropdownPageItems from 'components/AntDesign/DropdownPage/index'
 
 class DropdownPage extends React.Component {
   static defaultProps = {

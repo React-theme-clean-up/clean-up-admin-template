@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BacktopPageItems from 'components/AntComponents/BacktopPage/index'
+import BacktopPageItems from 'components/AntDesign/BacktopPage/index'
 
 class BacktopPage extends React.Component {
   static defaultProps = {

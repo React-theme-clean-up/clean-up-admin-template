@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CalendarPageItems from 'components/AntComponents/CalendarPage/index'
+import CalendarPageItems from 'components/AntDesign/CalendarPage/index'
 
 class CalendarPage extends React.Component {
   static defaultProps = {

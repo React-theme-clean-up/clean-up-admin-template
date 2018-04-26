@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TreeselectPageItems from 'components/AntComponents/TreeselectPage/index'
+import TreeselectPageItems from 'components/AntDesign/TreeselectPage/index'
 
 class TreeselectPage extends React.Component {
   static defaultProps = {

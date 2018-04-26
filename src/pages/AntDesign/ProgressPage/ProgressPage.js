@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import ProgressPageItems from 'components/AntComponents/ProgressPage/index'
+import ProgressPageItems from 'components/AntDesign/ProgressPage/index'
 
 class ProgressPage extends React.Component {
   static defaultProps = {

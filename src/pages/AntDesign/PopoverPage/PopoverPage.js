@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PopoverPageItems from 'components/AntComponents/PopoverPage/index'
+import PopoverPageItems from 'components/AntDesign/PopoverPage/index'
 
 class PopoverPage extends React.Component {
   static defaultProps = {

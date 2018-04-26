@@ -1,4 +1,3 @@
-// @flow
 import { createReducer } from 'redux-act'
 import * as app from './app'
 import { message } from 'antd'

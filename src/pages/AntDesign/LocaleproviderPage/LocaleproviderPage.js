@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import LocaleproviderPageItems from 'components/AntComponents/LocaleproviderPage/index'
+import LocaleproviderPageItems from 'components/AntDesign/LocaleproviderPage/index'
 
 class LocaleproviderPage extends React.Component {
   static defaultProps = {

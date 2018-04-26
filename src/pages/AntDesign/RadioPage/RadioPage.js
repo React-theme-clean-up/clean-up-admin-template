@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import RadioPageItems from 'components/AntComponents/RadioPage/index'
+import RadioPageItems from 'components/AntDesign/RadioPage/index'
 
 class RadioPage extends React.Component {
   static defaultProps = {

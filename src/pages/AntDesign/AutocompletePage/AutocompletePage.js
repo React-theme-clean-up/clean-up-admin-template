@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AutocomplitePageItems from 'components/AntComponents/AutocompletePage/index'
+import AutocomplitePageItems from 'components/AntDesign/AutocompletePage/index'
 
 class AutocompletePage extends React.Component {
   static defaultProps = {

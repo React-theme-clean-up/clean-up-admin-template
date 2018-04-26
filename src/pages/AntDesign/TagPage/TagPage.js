@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TagPageItems from 'components/AntComponents/TagPage/index'
+import TagPageItems from 'components/AntDesign/TagPage/index'
 
 class TagPage extends React.Component {
   static defaultProps = {

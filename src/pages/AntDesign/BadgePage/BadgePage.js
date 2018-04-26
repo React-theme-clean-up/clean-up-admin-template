@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BadgePageItems from 'components/AntComponents/BadgePage/index'
+import BadgePageItems from 'components/AntDesign/BadgePage/index'
 
 class BadgePage extends React.Component {
   static defaultProps = {

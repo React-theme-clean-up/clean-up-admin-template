@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TimepickerPageItems from 'components/AntComponents/TimepickerPage/index'
+import TimepickerPageItems from 'components/AntDesign/TimepickerPage/index'
 
 class TimepickerPage extends React.Component {
   static defaultProps = {

@@ -1,0 +1,17 @@
+@import '../../../../../resources/mixins';
+
+.cart {
+  .steps-content {
+    border: none;
+    min-height: initial;
+    background: none;
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .steps-action {
+    margin-top: 0;
+  }
+}

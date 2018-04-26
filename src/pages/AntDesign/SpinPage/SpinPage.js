@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SpinPageItems from 'components/AntComponents/SpinPage/index'
+import SpinPageItems from 'components/AntDesign/SpinPage/index'
 
 class SpinPage extends React.Component {
   static defaultProps = {

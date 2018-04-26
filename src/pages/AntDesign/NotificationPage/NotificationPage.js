@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import NotificationPageItems from 'components/AntComponents/NotificationPage/index'
+import NotificationPageItems from 'components/AntDesign/NotificationPage/index'
 
 class NotificationPage extends React.Component {
   static defaultProps = {

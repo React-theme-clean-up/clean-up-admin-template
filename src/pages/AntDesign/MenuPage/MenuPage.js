@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MenuPageItems from 'components/AntComponents/MenuPage/index'
+import MenuPageItems from 'components/AntDesign/MenuPage/index'
 
 class MenuPage extends React.Component {
   static defaultProps = {

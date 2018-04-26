@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AffixPageItems from 'components/AntComponents/AffixPage/index'
+import AffixPageItems from 'components/AntDesign/AffixPage/index'
 
 class AffixPage extends React.Component {
   static defaultProps = {

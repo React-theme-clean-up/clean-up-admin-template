@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import BreadcrumbPageItems from 'components/AntComponents/BreadcrumbPage/index'
+import BreadcrumbPageItems from 'components/AntDesign/BreadcrumbPage/index'
 
 class BreadcrumbPage extends React.Component {
   static defaultProps = {

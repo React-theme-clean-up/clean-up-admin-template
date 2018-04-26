@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import AvatarPageItems from 'components/AntComponents/AvatarPage/index'
+import AvatarPageItems from 'components/AntDesign/AvatarPage/index'
 
 class AvatarPage extends React.Component {
   static defaultProps = {

@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import TimelineItems from 'components/AntComponents/TimelinePage/index'
+import TimelineItems from 'components/AntDesign/TimelinePage/index'
 
 class TimelinePage extends React.Component {
   static defaultProps = {

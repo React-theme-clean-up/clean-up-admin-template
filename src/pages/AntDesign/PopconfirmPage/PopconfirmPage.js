@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PopconfirmPageItems from 'components/AntComponents/PopconfirmPage/index'
+import PopconfirmPageItems from 'components/AntDesign/PopconfirmPage/index'
 
 class PopconfirmPage extends React.Component {
   static defaultProps = {

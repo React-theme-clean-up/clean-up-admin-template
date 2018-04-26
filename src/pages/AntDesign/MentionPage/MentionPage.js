@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MentionPageItems from 'components/AntComponents/MentionPage/index'
+import MentionPageItems from 'components/AntDesign/MentionPage/index'
 
 class MentionPage extends React.Component {
   static defaultProps = {

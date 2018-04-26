@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CarouselPageItems from 'components/AntComponents/CarouselPage/index'
+import CarouselPageItems from 'components/AntDesign/CarouselPage/index'
 
 class CarouselPage extends React.Component {
   static defaultProps = {

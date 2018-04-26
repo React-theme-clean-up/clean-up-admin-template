@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import CheckboxPageItems from 'components/AntComponents/CheckboxPage/index'
+import CheckboxPageItems from 'components/AntDesign/CheckboxPage/index'
 
 class CheckboxPage extends React.Component {
   static defaultProps = {

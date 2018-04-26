@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import InputPageItems from 'components/AntComponents/InputPage/index'
+import InputPageItems from 'components/AntDesign/InputPage/index'
 
 class InputPage extends React.Component {
   static defaultProps = {

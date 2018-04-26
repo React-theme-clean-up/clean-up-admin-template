@@ -1,4 +1,4 @@
-// @flow
+
 import { createAction, createReducer } from 'redux-act'
 import { push } from 'react-router-redux'
 import { pendingTask, begin, end } from 'react-redux-spinner'

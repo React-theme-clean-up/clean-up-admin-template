@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SelectPageItems from 'components/AntComponents/SelectPage/index'
+import SelectPageItems from 'components/AntDesign/SelectPage/index'
 
 class SelectPage extends React.Component {
   static defaultProps = {

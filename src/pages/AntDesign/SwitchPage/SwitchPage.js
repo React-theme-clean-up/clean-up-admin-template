@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import SwitchPageItems from 'components/AntComponents/SwitchPage/index'
+import SwitchPageItems from 'components/AntDesign/SwitchPage/index'
 
 class SwitchPage extends React.Component {
   static defaultProps = {

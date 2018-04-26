@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import MessagePageItems from 'components/AntComponents/MessagePage/index'
+import MessagePageItems from 'components/AntDesign/MessagePage/index'
 
 class MessagePage extends React.Component {
   static defaultProps = {

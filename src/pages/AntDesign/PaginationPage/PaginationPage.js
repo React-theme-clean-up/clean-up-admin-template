@@ -1,8 +1,8 @@
-// @flow
+
 import React from 'react'
-import Page from 'app/Page/Page'
+import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PaginationPageItems from 'components/AntComponents/PaginationPage/index'
+import PaginationPageItems from 'components/AntDesign/PaginationPage/index'
 
 class PaginationPage extends React.Component {
   static defaultProps = {
