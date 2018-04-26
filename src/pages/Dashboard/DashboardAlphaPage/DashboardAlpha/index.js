@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Slider, Calendar, Badge, Table, Input, Dropdown, Button, Icon, Menu } from 'antd'
 import ChartistGraph from 'react-chartist'
