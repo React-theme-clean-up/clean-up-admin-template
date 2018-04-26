@@ -1,38 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderCascaderBasic } from './Basic/index.js';
-import { default as renderCascaderChangeonselect } from './Changeonselect/index.js';
-import { default as renderCascaderCustomrender } from './Customrender/index.js';
-import { default as renderCascaderCustomtrigger } from './Customtrigger/index.js';
-import { default as renderCascaderDefaultvalue } from './Defaultvalue/index.js';
-import { default as renderCascaderDisabledoption } from './Disabledoption/index.js';
-import { default as renderCascaderHover } from './Hover/index.js';
-import { default as renderCascaderLazy } from './Lazy/index.js';
-import { default as renderCascaderSearch } from './Search/index.js';
-import { default as renderCascaderSize } from './Size/index.js';
+import { default as renderCascaderBasic } from './Basic/index.js'
+import { default as renderCascaderChangeonselect } from './Changeonselect/index.js'
+import { default as renderCascaderCustomrender } from './Customrender/index.js'
+import { default as renderCascaderCustomtrigger } from './Customtrigger/index.js'
+import { default as renderCascaderDefaultvalue } from './Defaultvalue/index.js'
+import { default as renderCascaderDisabledoption } from './Disabledoption/index.js'
+import { default as renderCascaderHover } from './Hover/index.js'
+import { default as renderCascaderLazy } from './Lazy/index.js'
+import { default as renderCascaderSearch } from './Search/index.js'
+import { default as renderCascaderSize } from './Size/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class CascaderItems extends React.Component {
-
   componentDidMount() {
-    renderCascaderBasic(ReactDOM, document.getElementById("CascaderBasic"));
-renderCascaderChangeonselect(ReactDOM, document.getElementById("CascaderChangeonselect"));
-renderCascaderCustomrender(ReactDOM, document.getElementById("CascaderCustomrender"));
-renderCascaderCustomtrigger(ReactDOM, document.getElementById("CascaderCustomtrigger"));
-renderCascaderDefaultvalue(ReactDOM, document.getElementById("CascaderDefaultvalue"));
-renderCascaderDisabledoption(ReactDOM, document.getElementById("CascaderDisabledoption"));
-renderCascaderHover(ReactDOM, document.getElementById("CascaderHover"));
-renderCascaderLazy(ReactDOM, document.getElementById("CascaderLazy"));
-renderCascaderSearch(ReactDOM, document.getElementById("CascaderSearch"));
-renderCascaderSize(ReactDOM, document.getElementById("CascaderSize"));
-
+    renderCascaderBasic(ReactDOM, document.getElementById('CascaderBasic'))
+    renderCascaderChangeonselect(ReactDOM, document.getElementById('CascaderChangeonselect'))
+    renderCascaderCustomrender(ReactDOM, document.getElementById('CascaderCustomrender'))
+    renderCascaderCustomtrigger(ReactDOM, document.getElementById('CascaderCustomtrigger'))
+    renderCascaderDefaultvalue(ReactDOM, document.getElementById('CascaderDefaultvalue'))
+    renderCascaderDisabledoption(ReactDOM, document.getElementById('CascaderDisabledoption'))
+    renderCascaderHover(ReactDOM, document.getElementById('CascaderHover'))
+    renderCascaderLazy(ReactDOM, document.getElementById('CascaderLazy'))
+    renderCascaderSearch(ReactDOM, document.getElementById('CascaderSearch'))
+    renderCascaderSize(ReactDOM, document.getElementById('CascaderSize'))
   }
 
   render() {
@@ -50,20 +46,47 @@ renderCascaderSize(ReactDOM, document.getElementById("CascaderSize"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-cascader-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Cascade selection box for selecting province/city/district.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Cascade selection box for selecting province/city/district.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -97,29 +120,56 @@ ReactDOM.render(
   <Cascader options=\{options\} onChange=\{onChange\} placeholder="Please select" />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderBasic" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-custom-render">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Custom render</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>For instance, add an external link after the selected value.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderBasic" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-custom-render">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Custom render</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>For instance, add an external link after the selected value.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -173,29 +223,56 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderCustomrender" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-default-value">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Default value</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Specifies default value by an array.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderCustomrender" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-default-value">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Default value</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Specifies default value by an array.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -229,29 +306,56 @@ ReactDOM.render(
   <Cascader defaultValue=\{['zhejiang', 'hangzhou', 'xihu']\} options=\{options\} onChange=\{onChange\} />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderDefaultvalue" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-hover">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Hover</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Hover to expand sub menu, click to select option.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderDefaultvalue" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-hover">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Hover</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Hover to expand sub menu, click to select option.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -295,31 +399,61 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderHover" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-search">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Search</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Search and select options directly.
-
-> Now, <code>{'Cascader[showSearch]'}</code> doesn't support search on server, more info [#5547](https://github.com/ant-design/ant-design/issues/5547)
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderHover" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-search">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Search</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Search and select options directly. > Now,{' '}
+                              <code>{'Cascader[showSearch]'}</code> doesn't support search on
+                              server, more info
+                              [#5547](https://github.com/ant-design/ant-design/issues/5547)
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -367,32 +501,58 @@ ReactDOM.render(
   mountNode
 );
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderSearch" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderSearch" />
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-cascader-demo-change-on-select">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Change on select</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Allow only select parent options.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Change on select</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Allow only select parent options.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -426,29 +586,56 @@ ReactDOM.render(
   <Cascader options=\{options\} onChange=\{onChange\} changeOnSelect />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderChangeonselect" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-custom-trigger">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Custom trigger</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Separate trigger button and result.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderChangeonselect" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-custom-trigger">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Custom trigger</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Separate trigger button and result.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -491,29 +678,59 @@ class CitySwitcher extends React.Component \{
 
 ReactDOM.render(<CitySwitcher />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderCustomtrigger" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-disabled-option">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Disabled option</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Disable option by specifying the <code>{'disabled'}</code> property in <code>{'options'}</code>.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderCustomtrigger" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-disabled-option">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Disabled option</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Disable option by specifying the <code>{'disabled'}</code> property in{' '}
+                              <code>{'options'}</code>.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -548,31 +765,59 @@ ReactDOM.render(
   <Cascader options=\{options\} onChange=\{onChange\} />
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderDisabledoption" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-lazy">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Load Options Lazily</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Load options lazily with <code>{'loadData'}</code>.
-
-> Note: <code>{'loadData'}</code> cannot work with <code>{'showSearch'}</code>.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderDisabledoption" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-lazy">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Load Options Lazily</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Load options lazily with <code>{'loadData'}</code>. > Note:{' '}
+                              <code>{'loadData'}</code> cannot work with <code>{'showSearch'}</code>.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -624,29 +869,56 @@ class LazyOptions extends React.Component \{
 
 ReactDOM.render(<LazyOptions />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderLazy" />
-  </div>
-</div>
-<div className="card" id="components-cascader-demo-size">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Size</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Cascade selection box of different sizes.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Cascader \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderLazy" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-cascader-demo-size">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Size</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Cascade selection box of different sizes.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Cascader \} from 'antd';
 
 const options = [\{
   value\: 'zhejiang',
@@ -684,15 +956,14 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="CascaderSize" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="CascaderSize" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

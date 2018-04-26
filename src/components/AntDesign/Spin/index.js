@@ -1,32 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderSpinBasic } from './Basic/index.js';
-import { default as renderSpinCustomindicator } from './Customindicator/index.js';
-import { default as renderSpinDelayAndDebounce } from './DelayAndDebounce/index.js';
-import { default as renderSpinInside } from './Inside/index.js';
-import { default as renderSpinNested } from './Nested/index.js';
-import { default as renderSpinSize } from './Size/index.js';
-import { default as renderSpinTip } from './Tip/index.js';
+import { default as renderSpinBasic } from './Basic/index.js'
+import { default as renderSpinCustomindicator } from './Customindicator/index.js'
+import { default as renderSpinDelayAndDebounce } from './DelayAndDebounce/index.js'
+import { default as renderSpinInside } from './Inside/index.js'
+import { default as renderSpinNested } from './Nested/index.js'
+import { default as renderSpinSize } from './Size/index.js'
+import { default as renderSpinTip } from './Tip/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class SpinItems extends React.Component {
-
   componentDidMount() {
-    renderSpinBasic(ReactDOM, document.getElementById("SpinBasic"));
-renderSpinCustomindicator(ReactDOM, document.getElementById("SpinCustomindicator"));
-renderSpinDelayAndDebounce(ReactDOM, document.getElementById("SpinDelayAndDebounce"));
-renderSpinInside(ReactDOM, document.getElementById("SpinInside"));
-renderSpinNested(ReactDOM, document.getElementById("SpinNested"));
-renderSpinSize(ReactDOM, document.getElementById("SpinSize"));
-renderSpinTip(ReactDOM, document.getElementById("SpinTip"));
-
+    renderSpinBasic(ReactDOM, document.getElementById('SpinBasic'))
+    renderSpinCustomindicator(ReactDOM, document.getElementById('SpinCustomindicator'))
+    renderSpinDelayAndDebounce(ReactDOM, document.getElementById('SpinDelayAndDebounce'))
+    renderSpinInside(ReactDOM, document.getElementById('SpinInside'))
+    renderSpinNested(ReactDOM, document.getElementById('SpinNested'))
+    renderSpinSize(ReactDOM, document.getElementById('SpinSize'))
+    renderSpinTip(ReactDOM, document.getElementById('SpinTip'))
   }
 
   render() {
@@ -44,46 +40,103 @@ renderSpinTip(ReactDOM, document.getElementById("SpinTip"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-spin-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">basic Usage</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>A simple loading status.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">basic Usage</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>A simple loading status.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin \} from 'antd';
 
 ReactDOM.render(<Spin />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinBasic" />
-  </div>
-</div>
-<div className="card" id="components-spin-demo-delayAndDebounce">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">delay</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Specifies a delay for loading state. If <code>{'spinning'}</code> ends during delay, loading status won't appear.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin, Alert, Switch \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinBasic" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-spin-demo-delayAndDebounce">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">delay</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Specifies a delay for loading state. If <code>{'spinning'}</code> ends
+                              during delay, loading status won't appear.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin, Alert, Switch \} from 'antd';
 
 class Card extends React.Component \{
   state = \{ loading\: false \}
@@ -111,29 +164,59 @@ class Card extends React.Component \{
 
 ReactDOM.render(<Card />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinDelayAndDebounce" />
-  </div>
-</div>
-<div className="card" id="components-spin-demo-nested">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Embedded mode</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Embedding content into <code>{'Spin'}</code> will alter it into loading state.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin, Switch, Alert \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinDelayAndDebounce" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-spin-demo-nested">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Embedded mode</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Embedding content into <code>{'Spin'}</code> will alter it into
+                              loading state.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin, Switch, Alert \} from 'antd';
 
 class Card extends React.Component \{
   state = \{ loading\: false \}
@@ -160,29 +243,56 @@ class Card extends React.Component \{
 
 ReactDOM.render(<Card />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinNested" />
-  </div>
-</div>
-<div className="card" id="components-spin-demo-tip">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Customized description</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Customized description content.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin, Alert \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinNested" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-spin-demo-tip">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Customized description</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Customized description content.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin, Alert \} from 'antd';
 
 ReactDOM.render(
   <Spin tip="Loading...">
@@ -194,60 +304,113 @@ ReactDOM.render(
   </Spin>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinTip" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinTip" />
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-spin-demo-custom-indicator">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Custom spinning indicator</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Use custom loading indicator.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin, Icon \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Custom spinning indicator</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Use custom loading indicator.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin, Icon \} from 'antd';
 
 const antIcon = <Icon type="loading" style=\{\{ fontSize\: 24 \}\} spin />;
 
 ReactDOM.render(<Spin indicator=\{antIcon\} />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinCustomindicator" />
-  </div>
-</div>
-<div className="card" id="components-spin-demo-inside">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Inside a container</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Spin in a container.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinCustomindicator" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-spin-demo-inside">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Inside a container</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Spin in a container.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin \} from 'antd';
 
 ReactDOM.render(
   <div className="example">
@@ -255,29 +418,60 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinInside" />
-  </div>
-</div>
-<div className="card" id="components-spin-demo-size">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Size</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>A small <code>{'Spin'}</code> use in loading text, default <code>{'Spin'}</code> use in loading card-level block, and large <code>{'Spin'}</code> use in loading **page**.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Spin \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinInside" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-spin-demo-size">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Size</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              A small <code>{'Spin'}</code> use in loading text, default{' '}
+                              <code>{'Spin'}</code> use in loading card-level block, and large{' '}
+                              <code>{'Spin'}</code> use in loading **page**.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Spin \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -287,15 +481,14 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="SpinSize" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="SpinSize" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

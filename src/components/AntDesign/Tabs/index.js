@@ -1,40 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderTabsBasic } from './Basic/index.js';
-import { default as renderTabsCardtop } from './Cardtop/index.js';
-import { default as renderTabsCard } from './Card/index.js';
-import { default as renderTabsCustomaddtrigger } from './Customaddtrigger/index.js';
-import { default as renderTabsDisabled } from './Disabled/index.js';
-import { default as renderTabsEditablecard } from './Editablecard/index.js';
-import { default as renderTabsExtra } from './Extra/index.js';
-import { default as renderTabsIcon } from './Icon/index.js';
-import { default as renderTabsPosition } from './Position/index.js';
-import { default as renderTabsSize } from './Size/index.js';
-import { default as renderTabsSlide } from './Slide/index.js';
+import { default as renderTabsBasic } from './Basic/index.js'
+import { default as renderTabsCardtop } from './Cardtop/index.js'
+import { default as renderTabsCard } from './Card/index.js'
+import { default as renderTabsCustomaddtrigger } from './Customaddtrigger/index.js'
+import { default as renderTabsDisabled } from './Disabled/index.js'
+import { default as renderTabsEditablecard } from './Editablecard/index.js'
+import { default as renderTabsExtra } from './Extra/index.js'
+import { default as renderTabsIcon } from './Icon/index.js'
+import { default as renderTabsPosition } from './Position/index.js'
+import { default as renderTabsSize } from './Size/index.js'
+import { default as renderTabsSlide } from './Slide/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class TabsItems extends React.Component {
-
   componentDidMount() {
-    renderTabsBasic(ReactDOM, document.getElementById("TabsBasic"));
-renderTabsCardtop(ReactDOM, document.getElementById("TabsCardtop"));
-renderTabsCard(ReactDOM, document.getElementById("TabsCard"));
-renderTabsCustomaddtrigger(ReactDOM, document.getElementById("TabsCustomaddtrigger"));
-renderTabsDisabled(ReactDOM, document.getElementById("TabsDisabled"));
-renderTabsEditablecard(ReactDOM, document.getElementById("TabsEditablecard"));
-renderTabsExtra(ReactDOM, document.getElementById("TabsExtra"));
-renderTabsIcon(ReactDOM, document.getElementById("TabsIcon"));
-renderTabsPosition(ReactDOM, document.getElementById("TabsPosition"));
-renderTabsSize(ReactDOM, document.getElementById("TabsSize"));
-renderTabsSlide(ReactDOM, document.getElementById("TabsSlide"));
-
+    renderTabsBasic(ReactDOM, document.getElementById('TabsBasic'))
+    renderTabsCardtop(ReactDOM, document.getElementById('TabsCardtop'))
+    renderTabsCard(ReactDOM, document.getElementById('TabsCard'))
+    renderTabsCustomaddtrigger(ReactDOM, document.getElementById('TabsCustomaddtrigger'))
+    renderTabsDisabled(ReactDOM, document.getElementById('TabsDisabled'))
+    renderTabsEditablecard(ReactDOM, document.getElementById('TabsEditablecard'))
+    renderTabsExtra(ReactDOM, document.getElementById('TabsExtra'))
+    renderTabsIcon(ReactDOM, document.getElementById('TabsIcon'))
+    renderTabsPosition(ReactDOM, document.getElementById('TabsPosition'))
+    renderTabsSize(ReactDOM, document.getElementById('TabsSize'))
+    renderTabsSlide(ReactDOM, document.getElementById('TabsSlide'))
   }
 
   render() {
@@ -52,20 +48,47 @@ renderTabsSlide(ReactDOM, document.getElementById("TabsSlide"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-tabs-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Default activate first tab.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Default activate first tab.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 function callback(key) \{
@@ -80,30 +103,56 @@ ReactDOM.render(
   </Tabs>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsBasic" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-card">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Card type tab</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Another type Tabs, which doesn't support vertical mode.
-
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsBasic" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-card">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Card type tab</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Another type Tabs, which doesn't support vertical mode.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 function callback(key) \{
@@ -118,29 +167,56 @@ ReactDOM.render(
   </Tabs>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsCard" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-disabled">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Disabled</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Disabled a tab.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsCard" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-disabled">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Disabled</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Disabled a tab.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(
@@ -151,30 +227,56 @@ ReactDOM.render(
   </Tabs>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsDisabled" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-extra">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Extra content</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>You can add extra actions to the right of Tabs.
-
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsDisabled" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-extra">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Extra content</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>You can add extra actions to the right of Tabs.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Button \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 const operations = <Button>Extra Action</Button>;
@@ -187,29 +289,56 @@ ReactDOM.render(
   </Tabs>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsExtra" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-position">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Position</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Tab's position: left, right, top or bottom.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Select \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsExtra" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-position">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Position</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>Tab's position: left, right, top or bottom.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Select \} from 'antd';
 const TabPane = Tabs.TabPane;
 const Option = Select.Option;
 
@@ -249,29 +378,59 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsPosition" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-slide">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Slide</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Tab can be slide to left or right(up or down), which is used for a lot of tabs.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Radio \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsPosition" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-slide">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Slide</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Tab can be slide to left or right(up or down), which is used for a lot
+                              of tabs.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Radio \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 class SlidingTabsDemo extends React.Component \{
@@ -317,32 +476,60 @@ class SlidingTabsDemo extends React.Component \{
 
 ReactDOM.render(<SlidingTabsDemo />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsSlide" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsSlide" />
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-tabs-demo-card-top">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Container of card type Tab</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Should be used at the top of container, needs to override styles.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Container of card type Tab</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Should be used at the top of container, needs to override styles.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(
@@ -367,30 +554,58 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsCardtop" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-custom-add-trigger">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Customized trigger of new tab</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Hide default plus icon, and bind event for customized trigger.
-
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsCardtop" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-custom-add-trigger">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Customized trigger of new tab</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Hide default plus icon, and bind event for customized trigger.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Button \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 class Demo extends React.Component \{
@@ -455,30 +670,59 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsCustomaddtrigger" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-editable-card">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Add</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Only card type Tabs support adding & closable.
-+Use <code>{'closable={false}'}</code> to disable close.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsCustomaddtrigger" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-editable-card">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Add</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Only card type Tabs support adding & closable. +Use{' '}
+                              <code>{'closable={false}'}</code> to disable close.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 class Demo extends React.Component \{
@@ -538,30 +782,56 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsEditablecard" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-icon">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Icon</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>The Tab with Icon.
-
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsEditablecard" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-icon">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Icon</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>The Tab with Icon.</div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Icon \} from 'antd';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(
@@ -575,29 +845,59 @@ ReactDOM.render(
   </Tabs>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsIcon" />
-  </div>
-</div>
-<div className="card" id="components-tabs-demo-size">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Size</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Large size tabs are usally used in page header, and small size could be used in Modal.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Tabs, Radio \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsIcon" />
+                      </div>
+                    </div>
+                    <div className="card" id="components-tabs-demo-size">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Size</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Large size tabs are usally used in page header, and small size could
+                              be used in Modal.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tabs, Radio \} from 'antd';
 const \{ TabPane \} = Tabs;
 
 class Demo extends React.Component \{
@@ -626,15 +926,14 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="TabsSize" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="TabsSize" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

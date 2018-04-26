@@ -1,22 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderLocaleproviderAll } from './All/index.js';
-import { default as renderLocaleproviderBasic } from './Basic/index.js';
+import { default as renderLocaleproviderAll } from './All/index.js'
+import { default as renderLocaleproviderBasic } from './Basic/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class LocaleproviderItems extends React.Component {
-
   componentDidMount() {
-    renderLocaleproviderAll(ReactDOM, document.getElementById("LocaleproviderAll"));
-renderLocaleproviderBasic(ReactDOM, document.getElementById("LocaleproviderBasic"));
-
+    renderLocaleproviderAll(ReactDOM, document.getElementById('LocaleproviderAll'))
+    renderLocaleproviderBasic(ReactDOM, document.getElementById('LocaleproviderBasic'))
   }
 
   render() {
@@ -34,20 +30,50 @@ renderLocaleproviderBasic(ReactDOM, document.getElementById("LocaleproviderBasic
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-locale-provider-demo-all">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">All components</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Components which need localization support are listed here, you can toggle the language in the demo.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">All components</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Components which need localization support are listed here, you can
+                              toggle the language in the demo.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
          Popconfirm, Table, Modal, Button, Select, Transfer, Radio \} from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
@@ -173,32 +199,61 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="LocaleproviderAll" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="LocaleproviderAll" />
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-locale-provider-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Localization</strong>
-    </h5>
-  </div>
-  <div className="cat__ant-component-collapse-descr">
-    <Collapse bordered={false} defaultActiveKey={['1']}>
-      <Panel header={<span><Icon style={{ fontSize: 16, color: '#9f9f9f' }} type="info-circle-o" /><span className="ml-2 text-primary">Description</span></span>} key="1" showArrow={false}>
-        <div>Wrap your app with <code>{'LocaleProvider'}</code>, and apply the corresponding language package.
-</div>
-      </Panel>
-      <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-        <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-          {`import \{ Pagination, LocaleProvider \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Localization</strong>
+                        </h5>
+                      </div>
+                      <div className="cat__ant-component-collapse-descr">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <Icon
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                  type="info-circle-o"
+                                />
+                                <span className="ml-2 text-primary">Description</span>
+                              </span>
+                            }
+                            key="1"
+                            showArrow={false}
+                          >
+                            <div>
+                              Wrap your app with <code>{'LocaleProvider'}</code>, and apply the
+                              corresponding language package.
+                            </div>
+                          </Panel>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Pagination, LocaleProvider \} from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 
 const App = () => (
@@ -213,15 +268,14 @@ ReactDOM.render(
   </LocaleProvider>
 , mountNode);
 `}
-        </SyntaxHighlighter>
-      </Panel>
-    </Collapse>
-  </div>
-  <div className="card-body">
-    <div id="LocaleproviderBasic" />
-  </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                      <div className="card-body">
+                        <div id="LocaleproviderBasic" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
