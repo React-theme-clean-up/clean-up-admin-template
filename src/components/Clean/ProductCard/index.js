@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import './style.css'
 import data from './data.json'
 import { Tooltip } from 'antd'
 

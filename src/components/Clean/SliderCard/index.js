@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from 'antd'
-import './styles.css'
+import './style.css'
 
 class SliderCard extends React.Component {
   state = {

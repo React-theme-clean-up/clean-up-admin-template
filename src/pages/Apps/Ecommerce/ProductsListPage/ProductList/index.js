@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table, Icon, Input, Button } from 'antd'
 import tableData from './data.json'
-import './styles.css'
+import './style.css'
 
 const defaultPagination = {
   pageSizeOptions: ['10', '50', '100', '250'],

@@ -1,6 +1,6 @@
 import React from 'react'
 import AddForm from './AddForm'
-import './styles.css'
+import './style.css'
 
 class BlogAddPost extends React.Component {
   render() {

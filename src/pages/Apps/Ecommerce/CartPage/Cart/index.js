@@ -3,7 +3,7 @@ import { Steps, Button, message, Icon, Table, InputNumber } from 'antd'
 import WrappedCartCheckoutForm from './CheckoutForm/index'
 import Invoice from 'components/Clean/Invoice'
 import data from './data.json'
-import './styles.css'
+import './style.css'
 
 const Step = Steps.Step
 

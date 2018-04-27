@@ -2,7 +2,7 @@ import React from 'react'
 import { Input, Icon, Button, Menu, Dropdown } from 'antd'
 import Avatar from 'components/Clean/Avatar'
 import CommentForm from './CommentForm'
-import './styles.css'
+import './style.css'
 import data from './data.json'
 
 const Search = Input.Search

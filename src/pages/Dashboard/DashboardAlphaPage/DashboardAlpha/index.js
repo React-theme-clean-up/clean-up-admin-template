@@ -9,7 +9,7 @@ import ProgressGroup from 'components/Clean/ProgressGroup'
 import SliderCard from 'components/Clean/SliderCard'
 import InfoCard from 'components/Clean/InfoCard'
 import Chat from 'components/Clean/Chat'
-import './styles.css'
+import './style.css'
 import {
   rangeSlider,
   calendarData,

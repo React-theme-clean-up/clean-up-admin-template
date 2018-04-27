@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Menu, Icon, Switch, Layout } from 'antd'
-import './styles.css'
+import './style.css'
 
 const { Sider } = Layout
 const SubMenu = Menu.SubMenu

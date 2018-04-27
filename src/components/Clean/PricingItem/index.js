@@ -1,6 +1,6 @@
 import React from 'react'
 import item from './data.json'
-import './styles.css'
+import './style.css'
 
 class PricingItem extends React.Component {
   state = {

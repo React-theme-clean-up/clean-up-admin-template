@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel, Breadcrumb, Rate, Select, Tooltip, Button, Icon, Tabs } from 'antd'
-import './styles.css'
+import './style.css'
 import data from './data.json'
 const TabPane = Tabs.TabPane
 const Option = Select.Option
