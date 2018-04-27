@@ -736,6 +736,17 @@ pre {
         -o-animation: fa-spin-delayed 3s infinite ease-in-out;
         animation: fa-spin-delayed 3s infinite ease-in-out;
     }
+
+    &__code-collapse {
+        .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
+            padding-left: rem(18);
+        }
+
+        .ant-collapse-borderless > .ant-collapse-item {
+            border-top: 1px solid $gray-border;
+            border-bottom: none;
+        }
+    }
 }
 
 
