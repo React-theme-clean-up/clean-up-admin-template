@@ -1,35 +1,30 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderAutocompleteBasic } from './Basic/index.js'
-import { default as renderAutocompleteCertaincategory } from './Certaincategory/index.js'
-import { default as renderAutocompleteCustom } from './Custom/index.js'
-import { default as renderAutocompleteNoncasesensitive } from './Noncasesensitive/index.js'
-import { default as renderAutocompleteOptions } from './Options/index.js'
-import { default as renderAutocompleteUncertaincategory } from './Uncertaincategory/index.js'
+import { default as renderAutocompleteBasic } from './Basic/index.js';
+import { default as renderAutocompleteCertaincategory } from './Certaincategory/index.js';
+import { default as renderAutocompleteCustom } from './Custom/index.js';
+import { default as renderAutocompleteNoncasesensitive } from './Noncasesensitive/index.js';
+import { default as renderAutocompleteOptions } from './Options/index.js';
+import { default as renderAutocompleteUncertaincategory } from './Uncertaincategory/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class AutocompleteItems extends React.Component {
+
   componentDidMount() {
-    renderAutocompleteBasic(ReactDOM, document.getElementById('AutocompleteBasic'))
-    renderAutocompleteCertaincategory(
-      ReactDOM,
-      document.getElementById('AutocompleteCertaincategory'),
-    )
-    renderAutocompleteCustom(ReactDOM, document.getElementById('AutocompleteCustom'))
-    renderAutocompleteNoncasesensitive(
-      ReactDOM,
-      document.getElementById('AutocompleteNoncasesensitive'),
-    )
-    renderAutocompleteOptions(ReactDOM, document.getElementById('AutocompleteOptions'))
-    renderAutocompleteUncertaincategory(
-      ReactDOM,
-      document.getElementById('AutocompleteUncertaincategory'),
-    )
+    renderAutocompleteBasic(ReactDOM, document.getElementById("AutocompleteBasic"));
+renderAutocompleteCertaincategory(ReactDOM, document.getElementById("AutocompleteCertaincategory"));
+renderAutocompleteCustom(ReactDOM, document.getElementById("AutocompleteCustom"));
+renderAutocompleteNoncasesensitive(ReactDOM, document.getElementById("AutocompleteNoncasesensitive"));
+renderAutocompleteOptions(ReactDOM, document.getElementById("AutocompleteOptions"));
+renderAutocompleteUncertaincategory(ReactDOM, document.getElementById("AutocompleteUncertaincategory"));
+
   }
 
   render() {
@@ -47,50 +42,21 @@ class AutocompleteItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-auto-complete-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic Usage</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ AutoComplete \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic Usage</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Basic Usage, set datasource of autocomplete with <code>{'dataSource'}</code> property.
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteBasic" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ AutoComplete \} from 'antd';
 
 function onSelect(value) \{
   console.log('onSelect', value);
@@ -127,56 +93,27 @@ class Complete extends React.Component \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteBasic" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-auto-complete-demo-custom">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customize Input Component</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Customize Input Component</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ AutoComplete, Input \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-auto-complete-demo-custom">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customize Input Component</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Customize Input Component
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteCustom" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ AutoComplete, Input \} from 'antd';
 const \{ TextArea \} = Input;
 
 function onSelect(value) \{
@@ -224,60 +161,27 @@ class Complete extends React.Component \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteCustom" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-auto-complete-demo-options">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You could pass <code>{'AutoComplete.Option'}</code> as children of{' '}
-                              <code>{'AutoComplete'}</code>, instead of using{' '}
-                              <code>{'dataSource'}</code>。
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ AutoComplete \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-auto-complete-demo-options">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">You could pass <code>{'AutoComplete.Option'}</code> as children of <code>{'AutoComplete'}</code>, instead of using <code>{'dataSource'}</code>。
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteOptions" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ AutoComplete \} from 'antd';
 
 const Option = AutoComplete.Option;
 
@@ -315,63 +219,31 @@ class Complete extends React.Component \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteOptions" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-auto-complete-demo-certain-category">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Demonstration of [Lookup Patterns: Certain
-                              Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Icon, Input, AutoComplete \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Demonstration of [Lookup Patterns: Certain Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
+Basic Usage, set datasource of autocomplete with <code>{'dataSource'}</code> property.
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteCertaincategory" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Icon, Input, AutoComplete \} from 'antd';
 const Option = AutoComplete.Option;
 const OptGroup = AutoComplete.OptGroup;
 
@@ -462,56 +334,27 @@ function Complete() \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteCertaincategory" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-auto-complete-demo-non-case-sensitive">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A non-case-sensitive AutoComplete</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ AutoComplete \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-auto-complete-demo-non-case-sensitive">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A non-case-sensitive AutoComplete
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteNoncasesensitive" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ AutoComplete \} from 'antd';
 
 const dataSource = ['Burns Bay Road', 'Downing Street', 'Wall Street'];
 
@@ -528,61 +371,28 @@ function Complete() \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteNoncasesensitive" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-auto-complete-demo-uncertain-category">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Demonstration of [Lookup Patterns: Uncertain
-                              Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Icon, Button, Input, AutoComplete \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-auto-complete-demo-uncertain-category">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Demonstration of [Lookup Patterns: Uncertain Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
+Basic Usage, set datasource of autocomplete with <code>{'dataSource'}</code> property.
+</div>
+    <div className="card-body pb-0">
+      <div id="AutocompleteUncertaincategory" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Icon, Button, Input, AutoComplete \} from 'antd';
 const Option = AutoComplete.Option;
 
 function onSelect(value) \{
@@ -659,14 +469,12 @@ class Complete extends React.Component \{
 
 ReactDOM.render(<Complete />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteUncertaincategory" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

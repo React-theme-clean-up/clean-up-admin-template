@@ -1,35 +1,36 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderStepsCustomizedprogressdot } from './Customizedprogressdot/index.js'
-import { default as renderStepsError } from './Error/index.js'
-import { default as renderStepsIcon } from './Icon/index.js'
-import { default as renderStepsProgressdot } from './Progressdot/index.js'
-import { default as renderStepsSimple } from './Simple/index.js'
-import { default as renderStepsSmallsize } from './Smallsize/index.js'
-import { default as renderStepsStepnext } from './Stepnext/index.js'
-import { default as renderStepsVerticalsmall } from './Verticalsmall/index.js'
-import { default as renderStepsVertical } from './Vertical/index.js'
+import { default as renderStepsCustomizedprogressdot } from './Customizedprogressdot/index.js';
+import { default as renderStepsError } from './Error/index.js';
+import { default as renderStepsIcon } from './Icon/index.js';
+import { default as renderStepsProgressdot } from './Progressdot/index.js';
+import { default as renderStepsSimple } from './Simple/index.js';
+import { default as renderStepsSmallsize } from './Smallsize/index.js';
+import { default as renderStepsStepnext } from './Stepnext/index.js';
+import { default as renderStepsVerticalsmall } from './Verticalsmall/index.js';
+import { default as renderStepsVertical } from './Vertical/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class StepsItems extends React.Component {
+
   componentDidMount() {
-    renderStepsCustomizedprogressdot(
-      ReactDOM,
-      document.getElementById('StepsCustomizedprogressdot'),
-    )
-    renderStepsError(ReactDOM, document.getElementById('StepsError'))
-    renderStepsIcon(ReactDOM, document.getElementById('StepsIcon'))
-    renderStepsProgressdot(ReactDOM, document.getElementById('StepsProgressdot'))
-    renderStepsSimple(ReactDOM, document.getElementById('StepsSimple'))
-    renderStepsSmallsize(ReactDOM, document.getElementById('StepsSmallsize'))
-    renderStepsStepnext(ReactDOM, document.getElementById('StepsStepnext'))
-    renderStepsVerticalsmall(ReactDOM, document.getElementById('StepsVerticalsmall'))
-    renderStepsVertical(ReactDOM, document.getElementById('StepsVertical'))
+    renderStepsCustomizedprogressdot(ReactDOM, document.getElementById("StepsCustomizedprogressdot"));
+renderStepsError(ReactDOM, document.getElementById("StepsError"));
+renderStepsIcon(ReactDOM, document.getElementById("StepsIcon"));
+renderStepsProgressdot(ReactDOM, document.getElementById("StepsProgressdot"));
+renderStepsSimple(ReactDOM, document.getElementById("StepsSimple"));
+renderStepsSmallsize(ReactDOM, document.getElementById("StepsSmallsize"));
+renderStepsStepnext(ReactDOM, document.getElementById("StepsStepnext"));
+renderStepsVerticalsmall(ReactDOM, document.getElementById("StepsVerticalsmall"));
+renderStepsVertical(ReactDOM, document.getElementById("StepsVertical"));
+
   }
 
   render() {
@@ -47,49 +48,21 @@ class StepsItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-steps-demo-customized-progress-dot">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized Dot Style</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can customize the display for Steps with progress dot style.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps, Popover \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized Dot Style</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">You can customize the display for Steps with progress dot style.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsCustomizedprogressdot" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps, Popover \} from 'antd';
 const Step = Steps.Step;
 
 const customDot = (dot, \{ status, index \}) => (
@@ -107,59 +80,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsCustomizedprogressdot" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-icon">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">With icon</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can use your own custom icons by setting the property{' '}
-                              <code>{'icon'}</code> for <code>{'Steps.Step'}</code>.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-icon">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">With icon</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">You can use your own custom icons by setting the property <code>{'icon'}</code> for <code>{'Steps.Step'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsIcon" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps, Icon \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -171,56 +112,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsIcon" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-simple">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The most basic step bar.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-simple">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The most basic step bar.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsSimple" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -231,59 +143,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsSimple" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-step-next">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Switch Step</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Cooperate with the content and buttons, to represent the progress of a
-                              process.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps, Button, message \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-step-next">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Switch Step</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Cooperate with the content and buttons, to represent the progress of a process.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsStepnext" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps, Button, message \} from 'antd';
 const Step = Steps.Step;
 
 const steps = [\{
@@ -346,56 +226,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsStepnext" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-vertical">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Vertical</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple step bar in the vertical direction.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-vertical">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Vertical</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A simple step bar in the vertical direction.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsVertical" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -406,61 +257,30 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsVertical" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-steps-demo-error">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Error status</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By using <code>{'status'}</code> of <code>{'Steps'}</code>, you can
-                              specify the state for current step.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Error status</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">By using <code>{'status'}</code> of <code>{'Steps'}</code>, you can specify the state for current step.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsError" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -471,56 +291,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsError" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-progress-dot">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Dot Style</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Steps with progress dot style.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-progress-dot">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Dot Style</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Steps with progress dot style.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsProgressdot" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -531,59 +322,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsProgressdot" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-small-size">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Mini version</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By setting like this: <code>{'<Steps size="small">'}</code>, you can
-                              get a mini version.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-small-size">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Mini version</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">By setting like this: <code>{'<Steps size="small">'}</code>, you can get a mini version.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsSmallsize" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -594,56 +353,27 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsSmallsize" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-steps-demo-vertical-small">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Vertical mini version</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple mini version step bar in the vertical direction.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Steps \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-steps-demo-vertical-small">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Vertical mini version</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A simple mini version step bar in the vertical direction.
+</div>
+    <div className="card-body pb-0">
+      <div id="StepsVerticalsmall" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Steps \} from 'antd';
 const Step = Steps.Step;
 
 ReactDOM.render(
@@ -654,14 +384,12 @@ ReactDOM.render(
   </Steps>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsVerticalsmall" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

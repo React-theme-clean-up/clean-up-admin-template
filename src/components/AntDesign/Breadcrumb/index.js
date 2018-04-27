@@ -1,24 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderBreadcrumbBasic } from './Basic/index.js'
-import { default as renderBreadcrumbRouter4 } from './Router4/index.js'
-import { default as renderBreadcrumbRouter } from './Router/index.js'
-import { default as renderBreadcrumbSeparator } from './Separator/index.js'
-import { default as renderBreadcrumbWithIcon } from './WithIcon/index.js'
+import { default as renderBreadcrumbBasic } from './Basic/index.js';
+import { default as renderBreadcrumbRouter4 } from './Router4/index.js';
+import { default as renderBreadcrumbRouter } from './Router/index.js';
+import { default as renderBreadcrumbSeparator } from './Separator/index.js';
+import { default as renderBreadcrumbWithIcon } from './WithIcon/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class BreadcrumbItems extends React.Component {
+
   componentDidMount() {
-    renderBreadcrumbBasic(ReactDOM, document.getElementById('BreadcrumbBasic'))
-    renderBreadcrumbRouter4(ReactDOM, document.getElementById('BreadcrumbRouter4'))
-    renderBreadcrumbRouter(ReactDOM, document.getElementById('BreadcrumbRouter'))
-    renderBreadcrumbSeparator(ReactDOM, document.getElementById('BreadcrumbSeparator'))
-    renderBreadcrumbWithIcon(ReactDOM, document.getElementById('BreadcrumbWithIcon'))
+    renderBreadcrumbBasic(ReactDOM, document.getElementById("BreadcrumbBasic"));
+renderBreadcrumbRouter4(ReactDOM, document.getElementById("BreadcrumbRouter4"));
+renderBreadcrumbRouter(ReactDOM, document.getElementById("BreadcrumbRouter"));
+renderBreadcrumbSeparator(ReactDOM, document.getElementById("BreadcrumbSeparator"));
+renderBreadcrumbWithIcon(ReactDOM, document.getElementById("BreadcrumbWithIcon"));
+
   }
 
   render() {
@@ -36,47 +40,21 @@ class BreadcrumbItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-breadcrumb-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic Usage</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest use</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Breadcrumb \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic Usage</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The simplest use
+</div>
+    <div className="card-body pb-0">
+      <div id="BreadcrumbBasic" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Breadcrumb \} from 'antd';
 
 ReactDOM.render(
   <Breadcrumb>
@@ -87,59 +65,27 @@ ReactDOM.render(
   </Breadcrumb>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbBasic" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-breadcrumb-demo-router">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">React Router Integration</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Used together with <code>{'react-router@2'}</code>{' '}
-                              <code>{'react-router@3'}</code>.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Router, Route, Link, hashHistory \} from 'react-router';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-breadcrumb-demo-router">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">React Router Integration</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Used together with <code>{'react-router@2'}</code> <code>{'react-router@3'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="BreadcrumbRouter" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Router, Route, Link, hashHistory \} from 'react-router';
 import \{ Breadcrumb, Alert \} from 'antd';
 
 const Apps = () => (
@@ -177,56 +123,27 @@ ReactDOM.render(
   </Router>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbRouter" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-breadcrumb-demo-withIcon">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">With an Icon</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The icon should be placed in front of the text.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Breadcrumb, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-breadcrumb-demo-withIcon">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">With an Icon</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The icon should be placed in front of the text.
+</div>
+    <div className="card-body pb-0">
+      <div id="BreadcrumbWithIcon" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Breadcrumb, Icon \} from 'antd';
 
 ReactDOM.render(
   <Breadcrumb>
@@ -243,60 +160,30 @@ ReactDOM.render(
   </Breadcrumb>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbWithIcon" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-breadcrumb-demo-router-4">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Other Router Integration</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Used together with <code>{'react-router@4'}</code> or other router.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ HashRouter as Router, Route, Switch, Link, withRouter \} from 'react-router-dom';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Other Router Integration</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Used together with <code>{'react-router@4'}</code> or other router.
+</div>
+    <div className="card-body pb-0">
+      <div id="BreadcrumbRouter4" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ HashRouter as Router, Route, Switch, Link, withRouter \} from 'react-router-dom';
 import \{ Breadcrumb, Alert \} from 'antd';
 
 const Apps = () => (
@@ -359,59 +246,27 @@ ReactDOM.render(
   </Router>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbRouter4" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-breadcrumb-demo-separator">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Configuring the Separator</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The separator can be customized by setting the separator property:
-                              separator=">"
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Breadcrumb \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-breadcrumb-demo-separator">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Configuring the Separator</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The separator can be customized by setting the separator property: separator=">"
+</div>
+    <div className="card-body pb-0">
+      <div id="BreadcrumbSeparator" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Breadcrumb \} from 'antd';
 
 ReactDOM.render(
   <Breadcrumb separator=">">
@@ -422,14 +277,12 @@ ReactDOM.render(
   </Breadcrumb>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbSeparator" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

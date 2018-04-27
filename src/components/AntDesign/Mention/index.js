@@ -1,36 +1,40 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderMentionAsync } from './Async/index.js'
-import { default as renderMentionAvatar } from './Avatar/index.js'
-import { default as renderMentionBasic } from './Basic/index.js'
-import { default as renderMentionControlldersimple } from './Controlldersimple/index.js'
-import { default as renderMentionControlled } from './Controlled/index.js'
-import { default as renderMentionCustomtag } from './Customtag/index.js'
-import { default as renderMentionMultilines } from './Multilines/index.js'
-import { default as renderMentionMultipletrigger } from './Multipletrigger/index.js'
-import { default as renderMentionPlacement } from './Placement/index.js'
-import { default as renderMentionPopupContainer } from './PopupContainer/index.js'
-import { default as renderMentionReadonly } from './Readonly/index.js'
+import { default as renderMentionAsync } from './Async/index.js';
+import { default as renderMentionAvatar } from './Avatar/index.js';
+import { default as renderMentionBasic } from './Basic/index.js';
+import { default as renderMentionControlldersimple } from './Controlldersimple/index.js';
+import { default as renderMentionControlled } from './Controlled/index.js';
+import { default as renderMentionCustomtag } from './Customtag/index.js';
+import { default as renderMentionMultilines } from './Multilines/index.js';
+import { default as renderMentionMultipletrigger } from './Multipletrigger/index.js';
+import { default as renderMentionPlacement } from './Placement/index.js';
+import { default as renderMentionPopupContainer } from './PopupContainer/index.js';
+import { default as renderMentionReadonly } from './Readonly/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class MentionItems extends React.Component {
+
   componentDidMount() {
-    renderMentionAsync(ReactDOM, document.getElementById('MentionAsync'))
-    renderMentionAvatar(ReactDOM, document.getElementById('MentionAvatar'))
-    renderMentionBasic(ReactDOM, document.getElementById('MentionBasic'))
-    renderMentionControlldersimple(ReactDOM, document.getElementById('MentionControlldersimple'))
-    renderMentionControlled(ReactDOM, document.getElementById('MentionControlled'))
-    renderMentionCustomtag(ReactDOM, document.getElementById('MentionCustomtag'))
-    renderMentionMultilines(ReactDOM, document.getElementById('MentionMultilines'))
-    renderMentionMultipletrigger(ReactDOM, document.getElementById('MentionMultipletrigger'))
-    renderMentionPlacement(ReactDOM, document.getElementById('MentionPlacement'))
-    renderMentionPopupContainer(ReactDOM, document.getElementById('MentionPopupContainer'))
-    renderMentionReadonly(ReactDOM, document.getElementById('MentionReadonly'))
+    renderMentionAsync(ReactDOM, document.getElementById("MentionAsync"));
+renderMentionAvatar(ReactDOM, document.getElementById("MentionAvatar"));
+renderMentionBasic(ReactDOM, document.getElementById("MentionBasic"));
+renderMentionControlldersimple(ReactDOM, document.getElementById("MentionControlldersimple"));
+renderMentionControlled(ReactDOM, document.getElementById("MentionControlled"));
+renderMentionCustomtag(ReactDOM, document.getElementById("MentionCustomtag"));
+renderMentionMultilines(ReactDOM, document.getElementById("MentionMultilines"));
+renderMentionMultipletrigger(ReactDOM, document.getElementById("MentionMultipletrigger"));
+renderMentionPlacement(ReactDOM, document.getElementById("MentionPlacement"));
+renderMentionPopupContainer(ReactDOM, document.getElementById("MentionPopupContainer"));
+renderMentionReadonly(ReactDOM, document.getElementById("MentionReadonly"));
+
   }
 
   render() {
@@ -48,47 +52,21 @@ class MentionItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-mention-demo-async">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Asynchronous loading</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>async</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Asynchronous loading</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">async
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionAsync" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 
 const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai'];
 
@@ -128,56 +106,27 @@ class AsyncMention extends React.Component \{
 
 ReactDOM.render(<AsyncMention />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionAsync" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic usage.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-basic">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Basic usage.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionBasic" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toString, toContentState \} = Mention;
 
 function onChange(contentState) \{
@@ -198,58 +147,27 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionBasic" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-controlled">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">With Form</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Controlled mode, for example, to work with <code>{'Form'}</code>.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention, Form, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-controlled">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">With Form</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Controlled mode, for example, to work with <code>{'Form'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionControlled" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention, Form, Button \} from 'antd';
 const \{ toContentState, getMentions \} = Mention;
 const FormItem = Form.Item;
 
@@ -317,56 +235,27 @@ const FormDemo = Form.create()(App);
 
 ReactDOM.render(<FormDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionControlled" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-multilines">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Multi lines mode.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-multilines">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Multi lines mode.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionMultilines" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toString \} = Mention;
 
 function onChange(editorState) \{
@@ -382,56 +271,27 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionMultilines" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-placement">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Placement</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Change the suggestions placement.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-placement">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Placement</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Change the suggestions placement.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionPlacement" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toString \} = Mention;
 
 function onChange(contentState) \{
@@ -452,58 +312,27 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionPlacement" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-readonly">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">disabled or readOnly</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Configurate <code>{'disabled'}</code> and <code>{'readOnly'}</code>.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-readonly">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">disabled or readOnly</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Configurate <code>{'disabled'}</code> and <code>{'readOnly'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionReadonly" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toString \} = Mention;
 
 function onChange(editorState) \{
@@ -540,58 +369,30 @@ ReactDOM.render(
   <App />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionReadonly" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-mention-demo-avatar">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Icon Image</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Customize suggestions.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention, Avatar \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Icon Image</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Customize suggestions.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionAvatar" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention, Avatar \} from 'antd';
 const Nav = Mention.Nav;
 
 const webFrameworks = [
@@ -640,56 +441,27 @@ class CustomNavMention extends React.Component \{
 
 ReactDOM.render(<CustomNavMention />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionAvatar" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-controllder-simple">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Controlled</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Controlled mode.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-controllder-simple">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Controlled</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Controlled mode.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionControlldersimple" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toContentState \} = Mention;
 
 class App extends React.Component \{
@@ -718,56 +490,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionControlldersimple" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-custom-tag">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customize Suggestion</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Customize suggestions.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-custom-tag">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customize Suggestion</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Customize suggestions.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionCustomtag" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const Nav = Mention.Nav;
 
 const webFrameworks = [
@@ -817,59 +560,27 @@ class CustomNavMention extends React.Component \{
 
 ReactDOM.render(<CustomNavMention />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionCustomtag" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-multiple-trigger">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customize Trigger Token</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Customize Trigger Token by <code>{'prefix'}</code> props. Default to{' '}
-                              <code>{'@'}</code>, <code>{'Array<string>'}</code> also supported.
-                            </div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-multiple-trigger">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customize Trigger Token</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Customize Trigger Token by <code>{'prefix'}</code> props. Default to <code>{'@'}</code>, <code>{'Array<string>'}</code> also supported.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionMultipletrigger" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention \} from 'antd';
 const \{ toString \} = Mention;
 
 function onChange(editorState) \{
@@ -916,56 +627,27 @@ ReactDOM.render(
   <App />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionMultipletrigger" />
-                      </div>
-                    </div>
-                    <div className="card" id="components-mention-demo-popupContainer">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">SuggestionContainer</strong>
-                        </h5>
-                      </div>
-                      <div className="cat__ant-component-collapse-descr">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>To set the container of the suggestion.</div>
-                          </Panel>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Mention, Popover, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-mention-demo-popupContainer">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">SuggestionContainer</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">To set the container of the suggestion.
+</div>
+    <div className="card-body pb-0">
+      <div id="MentionPopupContainer" />
+    </div>
+    <div className="cat__core__code-collapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Mention, Popover, Button \} from 'antd';
 const \{ toString, toContentState \} = Mention;
 
 function onChange(editorState) \{
@@ -1013,14 +695,12 @@ class PopoverContainer extends React.Component \{
 
 ReactDOM.render(<PopoverContainer />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MentionPopupContainer" />
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>
