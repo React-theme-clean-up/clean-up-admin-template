@@ -1,32 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderTreeBasiccontrolled } from './Basiccontrolled/index.js';
-import { default as renderTreeBasic } from './Basic/index.js';
-import { default as renderTreeCustomizedicon } from './Customizedicon/index.js';
-import { default as renderTreeDraggable } from './Draggable/index.js';
-import { default as renderTreeDynamic } from './Dynamic/index.js';
-import { default as renderTreeLine } from './Line/index.js';
-import { default as renderTreeSearch } from './Search/index.js';
+import { default as renderTreeBasiccontrolled } from './Basiccontrolled/index.js'
+import { default as renderTreeBasic } from './Basic/index.js'
+import { default as renderTreeCustomizedicon } from './Customizedicon/index.js'
+import { default as renderTreeDraggable } from './Draggable/index.js'
+import { default as renderTreeDynamic } from './Dynamic/index.js'
+import { default as renderTreeLine } from './Line/index.js'
+import { default as renderTreeSearch } from './Search/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class TreeItems extends React.Component {
-
   componentDidMount() {
-    renderTreeBasiccontrolled(ReactDOM, document.getElementById("TreeBasiccontrolled"));
-renderTreeBasic(ReactDOM, document.getElementById("TreeBasic"));
-renderTreeCustomizedicon(ReactDOM, document.getElementById("TreeCustomizedicon"));
-renderTreeDraggable(ReactDOM, document.getElementById("TreeDraggable"));
-renderTreeDynamic(ReactDOM, document.getElementById("TreeDynamic"));
-renderTreeLine(ReactDOM, document.getElementById("TreeLine"));
-renderTreeSearch(ReactDOM, document.getElementById("TreeSearch"));
-
+    renderTreeBasiccontrolled(ReactDOM, document.getElementById('TreeBasiccontrolled'))
+    renderTreeBasic(ReactDOM, document.getElementById('TreeBasic'))
+    renderTreeCustomizedicon(ReactDOM, document.getElementById('TreeCustomizedicon'))
+    renderTreeDraggable(ReactDOM, document.getElementById('TreeDraggable'))
+    renderTreeDynamic(ReactDOM, document.getElementById('TreeDynamic'))
+    renderTreeLine(ReactDOM, document.getElementById('TreeLine'))
+    renderTreeSearch(ReactDOM, document.getElementById('TreeSearch'))
   }
 
   render() {
@@ -44,21 +40,36 @@ renderTreeSearch(ReactDOM, document.getElementById("TreeSearch"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-tree-demo-basic-controlled">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">basic controlled example</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">basic controlled example
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeBasiccontrolled" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">basic controlled example</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">basic controlled example</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeBasiccontrolled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 const treeData = [\{
@@ -153,27 +164,44 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tree-demo-customized-icon">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Customize Icon</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">You can customize icons for different nodes by styles override.
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeCustomizedicon" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tree-demo-customized-icon">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Customize Icon</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        You can customize icons for different nodes by styles override.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeCustomizedicon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component \{
@@ -206,27 +234,44 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tree-demo-dynamic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">load data asynchronously</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">To load data asynchronously when click to expand a treeNode.
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeDynamic" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tree-demo-dynamic">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">load data asynchronously</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        To load data asynchronously when click to expand a treeNode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeDynamic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component \{
@@ -278,27 +323,42 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tree-demo-search">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Searchable</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Searchable Tree.
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeSearch" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree, Input \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tree-demo-search">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Searchable</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Searchable Tree.</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeSearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree, Input \} from 'antd';
 
 const TreeNode = Tree.TreeNode;
 const Search = Input.Search;
@@ -424,30 +484,47 @@ class SearchTree extends React.Component \{
 
 ReactDOM.render(<SearchTree />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-tree-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The most basic usage, tell you how to use checkable, selectable, disabled, defaultExpandKeys, and etc.
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeBasic" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The most basic usage, tell you how to use checkable, selectable, disabled,
+                        defaultExpandKeys, and etc.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component \{
@@ -483,27 +560,45 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tree-demo-draggable">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">draggable</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Drag treeNode to insert after the other treeNode or insert into the other parent TreeNode.
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeDraggable" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tree-demo-draggable">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">draggable</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Drag treeNode to insert after the other treeNode or insert into the other
+                        parent TreeNode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeDraggable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 const x = 3;
@@ -615,27 +710,42 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tree-demo-line">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Tree With Line</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Tree With Line
-</div>
-    <div className="card-body pb-0">
-      <div id="TreeLine" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tree \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tree-demo-line">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Tree With Line</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Tree With Line</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeLine" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tree \} from 'antd';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component \{
@@ -670,12 +780,11 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

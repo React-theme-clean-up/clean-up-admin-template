@@ -1,36 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderModalAsync } from './Async/index.js';
-import { default as renderModalBasic } from './Basic/index.js';
-import { default as renderModalConfirmpromise } from './Confirmpromise/index.js';
-import { default as renderModalConfirm } from './Confirm/index.js';
-import { default as renderModalFooter } from './Footer/index.js';
-import { default as renderModalInfo } from './Info/index.js';
-import { default as renderModalLocale } from './Locale/index.js';
-import { default as renderModalManual } from './Manual/index.js';
-import { default as renderModalPosition } from './Position/index.js';
+import { default as renderModalAsync } from './Async/index.js'
+import { default as renderModalBasic } from './Basic/index.js'
+import { default as renderModalConfirmpromise } from './Confirmpromise/index.js'
+import { default as renderModalConfirm } from './Confirm/index.js'
+import { default as renderModalFooter } from './Footer/index.js'
+import { default as renderModalInfo } from './Info/index.js'
+import { default as renderModalLocale } from './Locale/index.js'
+import { default as renderModalManual } from './Manual/index.js'
+import { default as renderModalPosition } from './Position/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class ModalItems extends React.Component {
-
   componentDidMount() {
-    renderModalAsync(ReactDOM, document.getElementById("ModalAsync"));
-renderModalBasic(ReactDOM, document.getElementById("ModalBasic"));
-renderModalConfirmpromise(ReactDOM, document.getElementById("ModalConfirmpromise"));
-renderModalConfirm(ReactDOM, document.getElementById("ModalConfirm"));
-renderModalFooter(ReactDOM, document.getElementById("ModalFooter"));
-renderModalInfo(ReactDOM, document.getElementById("ModalInfo"));
-renderModalLocale(ReactDOM, document.getElementById("ModalLocale"));
-renderModalManual(ReactDOM, document.getElementById("ModalManual"));
-renderModalPosition(ReactDOM, document.getElementById("ModalPosition"));
-
+    renderModalAsync(ReactDOM, document.getElementById('ModalAsync'))
+    renderModalBasic(ReactDOM, document.getElementById('ModalBasic'))
+    renderModalConfirmpromise(ReactDOM, document.getElementById('ModalConfirmpromise'))
+    renderModalConfirm(ReactDOM, document.getElementById('ModalConfirm'))
+    renderModalFooter(ReactDOM, document.getElementById('ModalFooter'))
+    renderModalInfo(ReactDOM, document.getElementById('ModalInfo'))
+    renderModalLocale(ReactDOM, document.getElementById('ModalLocale'))
+    renderModalManual(ReactDOM, document.getElementById('ModalManual'))
+    renderModalPosition(ReactDOM, document.getElementById('ModalPosition'))
   }
 
   render() {
@@ -48,22 +44,39 @@ renderModalPosition(ReactDOM, document.getElementById("ModalPosition"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-modal-demo-async">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Asynchronously close</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Asynchronously close a modal dialog when a user clicked OK button, for example,
-you can use this pattern when you submit a form.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalAsync" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Asynchronously close</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Asynchronously close a modal dialog when a user clicked OK button, for
+                        example, you can use this pattern when you submit a form.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalAsync" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -114,28 +127,45 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-confirm-promise">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Confirmation modal dialog</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">To use <code>{'confirm()'}</code> to popup confirmation modal dialog. Let onCancel/onOk function return a promise object to
-delay closing the dialog.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalConfirmpromise" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-confirm-promise">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Confirmation modal dialog</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        To use <code>{'confirm()'}</code> to popup confirmation modal dialog. Let
+                        onCancel/onOk function return a promise object to delay closing the dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalConfirmpromise" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 const confirm = Modal.confirm;
 
 function showConfirm() \{
@@ -157,31 +187,48 @@ ReactDOM.render(
   </Button>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-footer">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Customized Footer</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A more complex example which define a customized footer button bar,
-the dialog will change to loading state after clicking submit button, when the loading is over,
-the modal dialog will be closed.
-
-You could set <code>{'footer'}</code> to <code>{'null'}</code> if you don't need default footer buttons.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalFooter" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-footer">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Customized Footer</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        A more complex example which define a customized footer button bar, the
+                        dialog will change to loading state after clicking submit button, when the
+                        loading is over, the modal dialog will be closed. You could set{' '}
+                        <code>{'footer'}</code> to <code>{'null'}</code> if you don't need default
+                        footer buttons.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalFooter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -234,27 +281,45 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-locale">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Internationalization</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">To customize the text of the buttons, you need to set <code>{'okText'}</code> and <code>{'cancelText'}</code> props.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalLocale" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-locale">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Internationalization</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        To customize the text of the buttons, you need to set{' '}
+                        <code>{'okText'}</code> and <code>{'cancelText'}</code> props.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalLocale" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 class LocalizedModal extends React.Component \{
   state = \{ visible\: false \}
@@ -307,28 +372,48 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-position">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">To customize the position of modal</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">After release <code>{'1.0'}</code>,  Modal's <code>{'align'}</code> prop was removed. You can use <code>{'style.top'}</code> or other styles to
-set position of modal dialog.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalPosition" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-position">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">
+                            To customize the position of modal
+                          </strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        After release <code>{'1.0'}</code>, Modal's <code>{'align'}</code> prop was
+                        removed. You can use <code>{'style.top'}</code> or other styles to set
+                        position of modal dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalPosition" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -376,30 +461,44 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-modal-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Basic modal.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalBasic" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Basic modal.</div>
+                      <div className="card-body pb-0">
+                        <div id="ModalBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{ visible\: false \}
@@ -441,27 +540,44 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-confirm">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Confirmation modal dialog</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">To use <code>{'confirm()'}</code> to popup a confirmation modal dialog.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalConfirm" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-confirm">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Confirmation modal dialog</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        To use <code>{'confirm()'}</code> to popup a confirmation modal dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalConfirm" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 const confirm = Modal.confirm;
 
 function showConfirm() \{
@@ -504,27 +620,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-info">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Information modal dialog</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">In the various types of information modal dialog, only one button to close dialog is provided.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalInfo" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-info">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Information modal dialog</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        In the various types of information modal dialog, only one button to close
+                        dialog is provided.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalInfo" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 function info() \{
   Modal.info(\{
@@ -570,27 +704,42 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-modal-demo-manual">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Manual to destroy</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Manually destroying a modal.
-</div>
-    <div className="card-body pb-0">
-      <div id="ModalManual" />
-    </div>
-    <div className="cat__core__code-collapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Modal, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-modal-demo-manual">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Manual to destroy</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Manually destroying a modal.</div>
+                      <div className="card-body pb-0">
+                        <div id="ModalManual" />
+                      </div>
+                      <div className="cat__core__code-collapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Modal, Button \} from 'antd';
 
 function success() \{
   const modal = Modal.success(\{
@@ -606,12 +755,11 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
