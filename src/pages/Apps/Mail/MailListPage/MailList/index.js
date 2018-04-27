@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tabs, Input, Icon, Table, Button } from 'antd'
-import './styles.css'
+import './style.css'
 import data from './data.json'
 
 const TabPane = Tabs.TabPane

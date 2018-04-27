@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import './style.css'
 
 class Avatar extends React.Component {
   state = {

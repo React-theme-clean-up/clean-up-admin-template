@@ -1,6 +1,6 @@
 import React from 'react'
 import PricingItem from 'components/Clean/PricingItem'
-import './styles.css'
+import './style.css'
 
 class PricingTable extends React.Component {
   render() {

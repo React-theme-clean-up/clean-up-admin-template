@@ -1,7 +1,7 @@
 import React from 'react'
 import { Checkbox, Dropdown, Icon, Menu, Input, Button } from 'antd'
 import Avatar from 'components/Clean/Avatar'
-import './styles.css'
+import './style.css'
 import data from './data.json'
 
 const { TextArea } = Input
