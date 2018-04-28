@@ -117,6 +117,12 @@ const loadableRoutes = {
   '/charts/chart': {
     component: loadable(() => import('pages/Charts/ChartPage')),
   },
+  '/charts/piety': {
+    component: loadable(() => import('pages/Charts/PietyPage')),
+  },
+  '/charts/c3': {
+    component: loadable(() => import('pages/Charts/C3Page')),
+  },
 
   // // Blog
   // '/blog/feed': {
