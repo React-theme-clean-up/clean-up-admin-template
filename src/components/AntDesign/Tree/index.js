@@ -45,23 +45,12 @@ class TreeItems extends React.Component {
                           <strong className="text-capitalize">basic controlled example</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">basic controlled example</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeBasiccontrolled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>basic controlled example</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -179,9 +168,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeBasiccontrolled" />
-                      </div>
                     </div>
                     <div className="card" id="components-tree-demo-customized-icon">
                       <div className="card-header">
@@ -189,25 +175,14 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Customize Icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can customize icons for different nodes by styles override.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeCustomizedicon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can customize icons for different nodes by styles override.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -263,9 +238,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeCustomizedicon" />
-                      </div>
                     </div>
                     <div className="card" id="components-tree-demo-dynamic">
                       <div className="card-header">
@@ -273,23 +245,14 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">load data asynchronously</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To load data asynchronously when click to expand a treeNode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeDynamic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>To load data asynchronously when click to expand a treeNode.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -364,9 +327,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeDynamic" />
-                      </div>
                     </div>
                     <div className="card" id="components-tree-demo-search">
                       <div className="card-header">
@@ -374,23 +334,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Searchable</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Searchable Tree.</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeSearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Searchable Tree.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -539,9 +488,6 @@ ReactDOM.render(<SearchTree />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeSearch" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -551,26 +497,15 @@ ReactDOM.render(<SearchTree />, mountNode);
                           <strong className="text-capitalize">basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The most basic usage, tell you how to use checkable, selectable, disabled,
+                        defaultExpandKeys, and etc.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The most basic usage, tell you how to use checkable, selectable,
-                              disabled, defaultExpandKeys, and etc.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -629,9 +564,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-tree-demo-draggable">
                       <div className="card-header">
@@ -639,26 +571,15 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">draggable</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Drag treeNode to insert after the other treeNode or insert into the other
+                        parent TreeNode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TreeDraggable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Drag treeNode to insert after the other treeNode or insert into the
-                              other parent TreeNode.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -793,9 +714,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TreeDraggable" />
-                      </div>
                     </div>
                     <div className="card" id="components-tree-demo-line">
                       <div className="card-header">
@@ -803,23 +721,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Tree With Line</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Tree With Line</div>
+                      <div className="card-body pb-0">
+                        <div id="TreeLine" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Tree With Line</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -876,9 +783,6 @@ ReactDOM.render(<Demo />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TreeLine" />
                       </div>
                     </div>
                   </div>

@@ -39,23 +39,14 @@ class CarouselItems extends React.Component {
                           <strong className="text-capitalize">Scroll automatically</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Timing of scrolling to the next card/picture.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CarouselAutoplay" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Timing of scrolling to the next card/picture.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -89,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CarouselAutoplay" />
-                      </div>
                     </div>
                     <div className="card" id="components-carousel-demo-fade">
                       <div className="card-header">
@@ -99,23 +87,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Fade in</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Slides use fade for transition.</div>
+                      <div className="card-body pb-0">
+                        <div id="CarouselFade" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Slides use fade for transition.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -149,9 +126,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CarouselFade" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -161,23 +135,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="CarouselBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -215,9 +178,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CarouselBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-carousel-demo-vertical">
                       <div className="card-header">
@@ -225,23 +185,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Vertical pagination.</div>
+                      <div className="card-body pb-0">
+                        <div id="CarouselVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Vertical pagination.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -274,9 +223,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="CarouselVertical" />
                       </div>
                     </div>
                   </div>

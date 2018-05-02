@@ -52,26 +52,15 @@ class AutocompleteItems extends React.Component {
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Basic Usage, set datasource of autocomplete with <code>{'dataSource'}</code>{' '}
+                        property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -131,9 +120,6 @@ ReactDOM.render(<Complete />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AutocompleteBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-auto-complete-demo-custom">
                       <div className="card-header">
@@ -141,23 +127,12 @@ ReactDOM.render(<Complete />, mountNode);
                           <strong className="text-capitalize">Customize Input Component</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Customize Input Component</div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteCustom" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Customize Input Component</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -228,9 +203,6 @@ ReactDOM.render(<Complete />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AutocompleteCustom" />
-                      </div>
                     </div>
                     <div className="card" id="components-auto-complete-demo-options">
                       <div className="card-header">
@@ -238,27 +210,15 @@ ReactDOM.render(<Complete />, mountNode);
                           <strong className="text-capitalize">Customized</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You could pass <code>{'AutoComplete.Option'}</code> as children of{' '}
+                        <code>{'AutoComplete'}</code>, instead of using <code>{'dataSource'}</code>。
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteOptions" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You could pass <code>{'AutoComplete.Option'}</code> as children of{' '}
-                              <code>{'AutoComplete'}</code>, instead of using{' '}
-                              <code>{'dataSource'}</code>。
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -319,9 +279,6 @@ ReactDOM.render(<Complete />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AutocompleteOptions" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -331,28 +288,17 @@ ReactDOM.render(<Complete />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Demonstration of [Lookup Patterns: Certain
+                        Category](https://ant.design/docs/spec/reaction#Lookup-Patterns). Basic
+                        Usage, set datasource of autocomplete with <code>{'dataSource'}</code>{' '}
+                        property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteCertaincategory" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Demonstration of [Lookup Patterns: Certain
-                              Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -466,9 +412,6 @@ ReactDOM.render(<Complete />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AutocompleteCertaincategory" />
-                      </div>
                     </div>
                     <div className="card" id="components-auto-complete-demo-non-case-sensitive">
                       <div className="card-header">
@@ -476,23 +419,12 @@ ReactDOM.render(<Complete />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A non-case-sensitive AutoComplete</div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteNoncasesensitive" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A non-case-sensitive AutoComplete</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -532,9 +464,6 @@ ReactDOM.render(<Complete />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AutocompleteNoncasesensitive" />
-                      </div>
                     </div>
                     <div className="card" id="components-auto-complete-demo-uncertain-category">
                       <div className="card-header">
@@ -542,28 +471,17 @@ ReactDOM.render(<Complete />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Demonstration of [Lookup Patterns: Uncertain
+                        Category](https://ant.design/docs/spec/reaction#Lookup-Patterns). Basic
+                        Usage, set datasource of autocomplete with <code>{'dataSource'}</code>{' '}
+                        property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AutocompleteUncertaincategory" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Demonstration of [Lookup Patterns: Uncertain
-                              Category](https://ant.design/docs/spec/reaction#Lookup-Patterns).
-                              Basic Usage, set datasource of autocomplete with{' '}
-                              <code>{'dataSource'}</code> property.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -662,9 +580,6 @@ ReactDOM.render(<Complete />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AutocompleteUncertaincategory" />
                       </div>
                     </div>
                   </div>

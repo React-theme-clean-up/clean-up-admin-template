@@ -35,23 +35,12 @@ class BacktopItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The most basic usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="BacktopBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The most basic usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -86,9 +75,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BacktopBasic" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -98,26 +84,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can customize the style of the button, just note the size limit: no more
+                        than <code>{'40px * 40px'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BacktopCustom" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can customize the style of the button, just note the size limit:
-                              no more than <code>{'40px * 40px'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -153,9 +128,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BacktopCustom" />
                       </div>
                     </div>
                   </div>

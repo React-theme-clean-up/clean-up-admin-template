@@ -53,23 +53,14 @@ class DatepickerItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Basic use case. Users can select or input a date in panel.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic use case. Users can select or input a date in panel.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -111,9 +102,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-disabled-date">
                       <div className="card-header">
@@ -121,28 +109,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Disabled Date</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Disabled part of dates and time by <code>{'disabledDate'}</code> and{' '}
+                        <code>{'disabledTime'}</code> respectively, and{' '}
+                        <code>{'disabledTime'}</code> only works with <code>{'showTime'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDisableddate" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Disabled part of dates and time by <code>{'disabledDate'}</code> and{' '}
-                              <code>{'disabledTime'}</code> respectively, and{' '}
-                              <code>{'disabledTime'}</code> only works with{' '}
-                              <code>{'showTime'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -229,9 +205,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerDisableddate" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-extra-footer">
                       <div className="card-header">
@@ -239,23 +212,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Extra Footer</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Render extra footer in panel for customized requirements.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerExtrafooter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Render extra footer in panel for customized requirements.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -291,9 +255,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerExtrafooter" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-mode">
                       <div className="card-header">
@@ -301,26 +262,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Controlled Panels</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Determing which panel to show with <code>{'mode'}</code> and{' '}
+                        <code>{'onPanelChange'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerMode" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Determing which panel to show with <code>{'mode'}</code> and{' '}
-                              <code>{'onPanelChange'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -409,9 +359,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerMode" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-size">
                       <div className="card-header">
@@ -419,26 +366,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Three Sizes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The input box comes in three sizes. <code>{'default'}</code> will be used if{' '}
+                        <code>{'size'}</code> is omitted.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The input box comes in three sizes. <code>{'default'}</code> will be
-                              used if <code>{'size'}</code> is omitted.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -497,9 +433,6 @@ ReactDOM.render(<PickerSizesDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerSize" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-time">
                       <div className="card-header">
@@ -507,27 +440,16 @@ ReactDOM.render(<PickerSizesDemo />, mountNode);
                           <strong className="text-capitalize">Choose Time</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        This property provide an additional time selection. When{' '}
+                        <code>{'showTime'}</code> is an Object, its properties will be passed on to
+                        built-in <code>{'TimePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerTime" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              This property provide an additional time selection. When{' '}
-                              <code>{'showTime'}</code> is an Object, its properties will be passed
-                              on to built-in <code>{'TimePicker'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -582,9 +504,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerTime" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -594,27 +513,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Date Rendering</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We can customize the rendering of date cells in the calendar by providing a{' '}
+                        <code>{'dateRender'}</code> function to <code>{'DatePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDaterender" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We can customize the rendering of date cells in the calendar by
-                              providing a <code>{'dateRender'}</code> function to{' '}
-                              <code>{'DatePicker'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -673,9 +580,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerDaterender" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-disabled">
                       <div className="card-header">
@@ -683,25 +587,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A disabled state of the <code>{'DatePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A disabled state of the <code>{'DatePicker'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -742,9 +635,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-format">
                       <div className="card-header">
@@ -752,25 +642,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Date Format</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We can set the date format by <code>{'format'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerFormat" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We can set the date format by <code>{'format'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -812,9 +691,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerFormat" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-presetted-ranges">
                       <div className="card-header">
@@ -822,25 +698,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Presetted Ranges</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We can set presetted ranges to RangePicker to improve user experience.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerPresettedranges" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We can set presetted ranges to RangePicker to improve user experience.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -889,9 +754,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DatepickerPresettedranges" />
-                      </div>
                     </div>
                     <div className="card" id="components-date-picker-demo-start-end">
                       <div className="card-header">
@@ -899,29 +761,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Range Picker</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        When <code>{'RangePicker'}</code> does not satisfied your requirements, try
+                        to implement similar functionality with two <code>{'DatePicker'}</code>. > *
+                        Use the <code>{'disabledDate'}</code> property to limit the start and end
+                        dates. > * Improve user experience with <code>{'open'}</code> and{' '}
+                        <code>{'onOpenChange'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerStartend" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              When <code>{'RangePicker'}</code> does not satisfied your
-                              requirements, try to implement similar functionality with two{' '}
-                              <code>{'DatePicker'}</code>. > * Use the <code>{'disabledDate'}</code>{' '}
-                              property to limit the start and end dates. > * Improve user experience
-                              with <code>{'open'}</code> and <code>{'onOpenChange'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1022,9 +873,6 @@ ReactDOM.render(<DateRange />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="DatepickerStartend" />
                       </div>
                     </div>
                   </div>

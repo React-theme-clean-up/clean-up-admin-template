@@ -39,23 +39,12 @@ class AvatarItems extends React.Component {
                           <strong className="text-capitalize">With Badge</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Usually used for messages remind.</div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarBadge" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Usually used for messages remind.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -91,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AvatarBadge" />
-                      </div>
                     </div>
                     <div className="card" id="components-avatar-demo-dynamic">
                       <div className="card-header">
@@ -101,27 +87,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Autoset Font Size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        For letter type Avatar, when the letters are too long to display, the font
+                        size can be automatically adjusted according to the width of the Avatar.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarDynamic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              For letter type Avatar, when the letters are too long to display, the
-                              font size can be automatically adjusted according to the width of the
-                              Avatar.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -181,9 +155,6 @@ ReactDOM.render(<Autoset />
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AvatarDynamic" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -193,23 +164,14 @@ ReactDOM.render(<Autoset />
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Three sizes and two shapes are available.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Three sizes and two shapes are available.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -249,9 +211,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AvatarBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-avatar-demo-type">
                       <div className="card-header">
@@ -259,26 +218,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Type</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Image, Icon and letter are supported, and the latter two kinds avatar can
+                        have custom colors and background colors.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarType" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Image, Icon and letter are supported, and the latter two kinds avatar
-                              can have custom colors and background colors.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -313,9 +261,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AvatarType" />
                       </div>
                     </div>
                   </div>

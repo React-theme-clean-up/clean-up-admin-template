@@ -47,26 +47,15 @@ class TimepickerItems extends React.Component {
                           <strong className="text-capitalize">12 hours</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        TimePicker of 12 hours format, with default format{' '}
+                        <code>{'h:mm:ss a'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="Timepicker12hours" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              TimePicker of 12 hours format, with default format{' '}
-                              <code>{'h:mm:ss a'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -103,9 +92,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="Timepicker12hours" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-basic">
                       <div className="card-header">
@@ -113,26 +99,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Click <code>{'TimePicker'}</code>, and then we could select or input a time
+                        in panel.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Click <code>{'TimePicker'}</code>, and then we could select or input a
-                              time in panel.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -167,9 +142,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-hide-column">
                       <div className="card-header">
@@ -177,26 +149,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Hour and minute</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        While part of <code>{'format'}</code> is omitted, the corresponding column
+                        in panel will disappear, too.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerHidecolumn" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              While part of <code>{'format'}</code> is omitted, the corresponding
-                              column in panel will disappear, too.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -228,9 +189,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerHidecolumn" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-size">
                       <div className="card-header">
@@ -238,26 +196,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Three Sizes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The input box comes in three sizes. large is used in the form, while the
+                        medium size is the default.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The input box comes in three sizes. large is used in the form, while
-                              the medium size is the default.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -291,9 +238,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerSize" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -303,23 +247,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Addon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Render addon contents to timepicker panel's bottom.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerAddon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Render addon contents to timepicker panel's bottom.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -370,9 +305,6 @@ ReactDOM.render(<TimePickerAddonDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerAddon" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-disabled">
                       <div className="card-header">
@@ -380,25 +312,14 @@ ReactDOM.render(<TimePickerAddonDemo />, mountNode);
                           <strong className="text-capitalize">disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A disabled state of the <code>{'TimePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A disabled state of the <code>{'TimePicker'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -428,9 +349,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-interval-options">
                       <div className="card-header">
@@ -438,26 +356,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">interval option</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Show stepped options by <code>{'hourStep'}</code>{' '}
+                        <code>{'minuteStep'}</code> <code>{'secondStep'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerIntervaloptions" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Show stepped options by <code>{'hourStep'}</code>{' '}
-                              <code>{'minuteStep'}</code> <code>{'secondStep'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -486,9 +393,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimepickerIntervaloptions" />
-                      </div>
                     </div>
                     <div className="card" id="components-time-picker-demo-value">
                       <div className="card-header">
@@ -496,26 +400,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Under Control</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'value'}</code> and <code>{'onChange'}</code> should be used
+                        together,
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimepickerValue" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'value'}</code> and <code>{'onChange'}</code> should be used
-                              together,
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -556,9 +449,6 @@ ReactDOM.render(<Demo />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TimepickerValue" />
                       </div>
                     </div>
                   </div>

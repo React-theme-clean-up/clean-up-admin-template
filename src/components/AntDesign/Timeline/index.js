@@ -39,23 +39,12 @@ class TimelineItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic timeline.</div>
+                      <div className="card-body pb-0">
+                        <div id="TimelineBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic timeline.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -89,9 +78,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimelineBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-timeline-demo-custom">
                       <div className="card-header">
@@ -99,23 +85,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Set a node as an icon or other custom element.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimelineCustom" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Set a node as an icon or other custom element.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -149,9 +126,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimelineCustom" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -161,27 +135,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Color</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Set the color of circles. <code>{'green'}</code> means completed or success
+                        status, <code>{'red'}</code> means warning or error, and{' '}
+                        <code>{'blue'}</code> means ongoing or other default status.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimelineColor" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Set the color of circles. <code>{'green'}</code> means completed or
-                              success status, <code>{'red'}</code> means warning or error, and{' '}
-                              <code>{'blue'}</code> means ongoing or other default status.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -223,9 +186,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TimelineColor" />
-                      </div>
                     </div>
                     <div className="card" id="components-timeline-demo-pending">
                       <div className="card-header">
@@ -233,30 +193,19 @@ ReactDOM.render(
                           <strong className="text-capitalize">Last node</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        When the timeline is incomplete and ongoing, put a ghost node at last. set{' '}
+                        <code>{'pending={true}'}</code> or{' '}
+                        <code>{'pending={a React Element}'}</code>. Used in ascend chronological
+                        order. When <code>{'pending'}</code> is not false, set{' '}
+                        <code>{'pendingDot={a React Element}'}</code> to replace the default pending
+                        dot.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TimelinePending" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              When the timeline is incomplete and ongoing, put a ghost node at last.
-                              set <code>{'pending={true}'}</code> or{' '}
-                              <code>{'pending={a React Element}'}</code>. Used in ascend
-                              chronological order. When <code>{'pending'}</code> is not false, set{' '}
-                              <code>{'pendingDot={a React Element}'}</code> to replace the default
-                              pending dot.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -288,9 +237,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TimelinePending" />
                       </div>
                     </div>
                   </div>

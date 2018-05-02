@@ -50,23 +50,12 @@ class ListItems extends React.Component {
                           <strong className="text-capitalize">Basic list</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic list.</div>
+                      <div className="card-body pb-0">
+                        <div id="ListBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic list.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -122,9 +111,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-infinite-load">
                       <div className="card-header">
@@ -132,26 +118,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Scrolling loaded</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The example of infinite load with
+                        [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListInfiniteload" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The example of infinite load with
-                              [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller).
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -259,9 +234,6 @@ ReactDOM.render(<InfiniteListExample />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListInfiniteload" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-loadmore">
                       <div className="card-header">
@@ -269,25 +241,14 @@ ReactDOM.render(<InfiniteListExample />, mountNode);
                           <strong className="text-capitalize">Load more</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Load more list with <code>{'loadMore'}</code> property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListLoadmore" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Load more list with <code>{'loadMore'}</code> property.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -391,9 +352,6 @@ ReactDOM.render(<LoadMoreList />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListLoadmore" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-simple">
                       <div className="card-header">
@@ -401,29 +359,18 @@ ReactDOM.render(<LoadMoreList />, mountNode);
                           <strong className="text-capitalize">Simple list</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Ant Design supports a default list size as well as a large and small size.
+                        If a large or small list is desired, set the size property to either large
+                        or small respectively. Omit the size property for a list with the default
+                        size. Customizing the header and footer of list by setting{' '}
+                        <code>{'header'}</code> and <code>{'footer'}</code> property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListSimple" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Ant Design supports a default list size as well as a large and small
-                              size. If a large or small list is desired, set the size property to
-                              either large or small respectively. Omit the size property for a list
-                              with the default size. Customizing the header and footer of list by
-                              setting <code>{'header'}</code> and <code>{'footer'}</code> property.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -487,9 +434,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListSimple" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -499,26 +443,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Grid</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Creating a grid list by setting the <code>{'grid'}</code> property of List
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListGrid" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Creating a grid list by setting the <code>{'grid'}</code> property of
-                              List
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -570,9 +502,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListGrid" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-infinite-virtualized-load">
                       <div className="card-header">
@@ -580,31 +509,19 @@ ReactDOM.render(
                           <strong className="text-capitalize">Infinite</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        An example of infinite list & virtualized loading using
+                        [react-virtualized](https://github.com/bvaughn/react-virtualized). [Learn
+                        more](https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization/)
+                        <code>{'Virtualized'}</code> rendering is a technique to mount big sets of
+                        data. It reduces the amount of rendered DOM nodes by tracking and hiding
+                        whatever isn't currently visible.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListInfinitevirtualizedload" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              An example of infinite list & virtualized loading using
-                              [react-virtualized](https://github.com/bvaughn/react-virtualized).
-                              [Learn
-                              more](https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization/)
-                              <code>{'Virtualized'}</code> rendering is a technique to mount big
-                              sets of data. It reduces the amount of rendered DOM nodes by tracking
-                              and hiding whatever isn't currently visible.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -751,9 +668,6 @@ ReactDOM.render(<VirtualizedExample />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListInfinitevirtualizedload" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-resposive">
                       <div className="card-header">
@@ -761,26 +675,15 @@ ReactDOM.render(<VirtualizedExample />, mountNode);
                           <strong className="text-capitalize">Responsive grid list</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Responsive grid list. The size property is as same as [Layout
+                        Grid](https://ant.design/components/grid/#Col).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListResposive" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Responsive grid list. The size property is as same as [Layout
-                              Grid](https://ant.design/components/grid/#Col).
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -838,9 +741,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ListResposive" />
-                      </div>
                     </div>
                     <div className="card" id="components-list-demo-vertical">
                       <div className="card-header">
@@ -848,26 +748,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Setting <code>{'itemLayout'}</code> property with <code>{'vertical'}</code>{' '}
+                        to create a vertical list.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Setting <code>{'itemLayout'}</code> property with{' '}
-                              <code>{'vertical'}</code> to create a vertical list.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -939,9 +828,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="ListVertical" />
                       </div>
                     </div>
                   </div>

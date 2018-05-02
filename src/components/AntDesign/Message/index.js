@@ -39,26 +39,15 @@ class MessageItems extends React.Component {
                           <strong className="text-capitalize">Customize duration</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Customize message display duration from default <code>{'3s'}</code> to{' '}
+                        <code>{'10s'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MessageDuration" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Customize message display duration from default <code>{'3s'}</code> to{' '}
-                              <code>{'10s'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -91,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MessageDuration" />
-                      </div>
                     </div>
                     <div className="card" id="components-message-demo-loading">
                       <div className="card-header">
@@ -101,26 +87,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Message of loading</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Display a global loading indicator, which is dismissed by itself
+                        asynchronously.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MessageLoading" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Display a global loading indicator, which is dismissed by itself
-                              asynchronously.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -155,9 +130,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MessageLoading" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -167,23 +139,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Normal prompt</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Normal messages as feedbacks.</div>
+                      <div className="card-body pb-0">
+                        <div id="MessageInfo" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Normal messages as feedbacks.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -216,9 +177,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MessageInfo" />
-                      </div>
                     </div>
                     <div className="card" id="components-message-demo-other">
                       <div className="card-header">
@@ -226,23 +184,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Other types of message</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Messages of success, error and warning types.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MessageOther" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Messages of success, error and warning types.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -286,9 +235,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MessageOther" />
                       </div>
                     </div>
                   </div>

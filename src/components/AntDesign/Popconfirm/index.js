@@ -39,23 +39,12 @@ class PopconfirmItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The basic example.</div>
+                      <div className="card-body pb-0">
+                        <div id="PopconfirmBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The basic example.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -96,9 +85,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PopconfirmBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-popconfirm-demo-locale">
                       <div className="card-header">
@@ -106,26 +92,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Locale text</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Set <code>{'okText'}</code> and <code>{'cancelText'}</code> props to
+                        customise the button's labels.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopconfirmLocale" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Set <code>{'okText'}</code> and <code>{'cancelText'}</code> props to
-                              customise the button's labels.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -156,9 +131,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PopconfirmLocale" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -168,23 +140,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Conditional trigger</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Make it pop up under some conditions.</div>
+                      <div className="card-body pb-0">
+                        <div id="PopconfirmDynamictrigger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Make it pop up under some conditions.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -262,9 +223,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PopconfirmDynamictrigger" />
-                      </div>
                     </div>
                     <div className="card" id="components-popconfirm-demo-placement">
                       <div className="card-header">
@@ -272,27 +230,16 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Placement</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are 12 <code>{'placement'}</code> options available. Use{' '}
+                        <code>{'arrowPointAtCenter'}</code> if you want arrow point at the center of
+                        target.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopconfirmPlacement" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are 12 <code>{'placement'}</code> options available. Use{' '}
-                              <code>{'arrowPointAtCenter'}</code> if you want arrow point at the
-                              center of target.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -371,9 +318,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="PopconfirmPlacement" />
                       </div>
                     </div>
                   </div>

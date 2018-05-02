@@ -49,23 +49,12 @@ class InputItems extends React.Component {
                           <strong className="text-capitalize">Pre</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Using pre & post tabs example.</div>
+                      <div className="card-body pb-0">
+                        <div id="InputAddon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Using pre & post tabs example.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -120,9 +109,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputAddon" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-basic">
                       <div className="card-header">
@@ -130,23 +116,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic usage example.</div>
+                      <div className="card-body pb-0">
+                        <div id="InputBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic usage example.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -173,9 +148,6 @@ ReactDOM.render(<Input placeholder="Basic usage" />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-presuffix">
                       <div className="card-header">
@@ -183,23 +155,12 @@ ReactDOM.render(<Input placeholder="Basic usage" />, mountNode);
                           <strong className="text-capitalize">prefix and suffix</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Add prefix or suffix icons inside input.</div>
+                      <div className="card-body pb-0">
+                        <div id="InputPresuffix" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Add prefix or suffix icons inside input.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -256,9 +217,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputPresuffix" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-size">
                       <div className="card-header">
@@ -266,27 +224,16 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Three sizes of Input</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are three sizes of an Input box: <code>{'large'}</code> (40px)、<code>{'default'}</code>{' '}
+                        (32px) and <code>{'small'}</code> (24px). Note: Inside of forms, only the
+                        large size is used.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are three sizes of an Input box: <code>{'large'}</code> (40px)、<code>{'default'}</code>{' '}
-                              (32px) and <code>{'small'}</code> (24px). Note: Inside of forms, only
-                              the large size is used.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -319,9 +266,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputSize" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-tooltip">
                       <div className="card-header">
@@ -329,27 +273,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Format Tooltip Input</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can use the Input in conjunction with [Tooltip](/components/tooltip)
+                        component to create a Numeric Input, which can provide a good experience for
+                        extra-long content display.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputTooltip" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can use the Input in conjunction with
-                              [Tooltip](/components/tooltip) component to create a Numeric Input,
-                              which can provide a good experience for extra-long content display.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -449,9 +382,6 @@ ReactDOM.render(<NumericInputDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputTooltip" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -463,29 +393,18 @@ ReactDOM.render(<NumericInputDemo />, mountNode);
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'autosize'}</code> prop for a <code>{'textarea'}</code> type of{' '}
+                        <code>{'Input'}</code> makes the height to automatically adjust based on the
+                        content. An options object can be provided to <code>{'autosize'}</code> to
+                        specify the minimum and maximum number of lines the textarea will
+                        automatically adjust.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputAutosizetextarea" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'autosize'}</code> prop for a <code>{'textarea'}</code> type of{' '}
-                              <code>{'Input'}</code> makes the height to automatically adjust based
-                              on the content. An options object can be provided to{' '}
-                              <code>{'autosize'}</code> to specify the minimum and maximum number of
-                              lines the textarea will automatically adjust.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -519,9 +438,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputAutosizetextarea" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-group">
                       <div className="card-header">
@@ -529,26 +445,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Input Group</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Input.Group example Note: You don't need <code>{'Col'}</code> to control the
+                        width in the <code>{'compact'}</code> mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputGroup" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Input.Group example Note: You don't need <code>{'Col'}</code> to
-                              control the width in the <code>{'compact'}</code> mode.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -699,9 +604,6 @@ ReactDOM.render(<CompactDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputGroup" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-search-input">
                       <div className="card-header">
@@ -709,26 +611,15 @@ ReactDOM.render(<CompactDemo />, mountNode);
                           <strong className="text-capitalize">Search box</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Example of creating a search box by grouping a standard input with a search
+                        button, added in <code>{'2.5.0'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputSearchinput" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Example of creating a search box by grouping a standard input with a
-                              search button, added in <code>{'2.5.0'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -772,9 +663,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputSearchinput" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-demo-textarea">
                       <div className="card-header">
@@ -782,23 +670,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">TextArea</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">For multi-line input.</div>
+                      <div className="card-body pb-0">
+                        <div id="InputTextarea" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>For multi-line input.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -825,9 +702,6 @@ ReactDOM.render(<TextArea rows=\{4\} />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="InputTextarea" />
                       </div>
                     </div>
                   </div>

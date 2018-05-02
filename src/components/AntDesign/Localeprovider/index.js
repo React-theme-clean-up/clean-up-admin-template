@@ -35,26 +35,15 @@ class LocaleproviderItems extends React.Component {
                           <strong className="text-capitalize">All components</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Components which need localization support are listed here, you can toggle
+                        the language in the demo.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LocaleproviderAll" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Components which need localization support are listed here, you can
-                              toggle the language in the demo.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -203,9 +192,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LocaleproviderAll" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -215,26 +201,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Localization</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Wrap your app with <code>{'LocaleProvider'}</code>, and apply the
+                        corresponding language package.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LocaleproviderBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Wrap your app with <code>{'LocaleProvider'}</code>, and apply the
-                              corresponding language package.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -271,9 +246,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="LocaleproviderBasic" />
                       </div>
                     </div>
                   </div>

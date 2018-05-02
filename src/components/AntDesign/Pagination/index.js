@@ -49,23 +49,12 @@ class PaginationItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic pagination.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic pagination.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -92,9 +81,6 @@ ReactDOM.render(<Pagination defaultCurrent=\{1\} total=\{50\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-controlled">
                       <div className="card-header">
@@ -102,23 +88,12 @@ ReactDOM.render(<Pagination defaultCurrent=\{1\} total=\{50\} />, mountNode);
                           <strong className="text-capitalize">Controlled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Controlled page number.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationControlled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Controlled page number.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -160,9 +135,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationControlled" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-jump">
                       <div className="card-header">
@@ -170,23 +142,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Jumper</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Jump to a page directly.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationJump" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Jump to a page directly.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -220,9 +181,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationJump" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-more">
                       <div className="card-header">
@@ -230,23 +188,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">More</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">More pages.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationMore" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>More pages.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -275,9 +222,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationMore" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-total">
                       <div className="card-header">
@@ -285,26 +229,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Total number</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can show the total number of data by setting <code>{'showTotal'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationTotal" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can show the total number of data by setting{' '}
-                              <code>{'showTotal'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -347,9 +279,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationTotal" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -359,25 +288,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Changer</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Change <code>{'pageSize'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationChanger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Change <code>{'pageSize'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -410,9 +328,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationChanger" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-itemRender">
                       <div className="card-header">
@@ -420,23 +335,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Prev and next</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Use text link for prev and next button.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationItemRender" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Use text link for prev and next button.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -474,9 +378,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationItemRender" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-mini">
                       <div className="card-header">
@@ -484,23 +385,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Mini size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Mini size pagination.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationMini" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Mini size pagination.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -537,9 +427,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="PaginationMini" />
-                      </div>
                     </div>
                     <div className="card" id="components-pagination-demo-simple">
                       <div className="card-header">
@@ -547,23 +434,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Simple mode</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Simple mode.</div>
+                      <div className="card-body pb-0">
+                        <div id="PaginationSimple" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Simple mode.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -591,9 +467,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="PaginationSimple" />
                       </div>
                     </div>
                   </div>

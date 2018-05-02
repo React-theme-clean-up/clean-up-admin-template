@@ -45,23 +45,12 @@ class SpinItems extends React.Component {
                           <strong className="text-capitalize">basic Usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A simple loading status.</div>
+                      <div className="card-body pb-0">
+                        <div id="SpinBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple loading status.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -88,9 +77,6 @@ ReactDOM.render(<Spin />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-spin-demo-delayAndDebounce">
                       <div className="card-header">
@@ -98,26 +84,15 @@ ReactDOM.render(<Spin />, mountNode);
                           <strong className="text-capitalize">delay</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Specifies a delay for loading state. If <code>{'spinning'}</code> ends
+                        during delay, loading status won't appear.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SpinDelayAndDebounce" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Specifies a delay for loading state. If <code>{'spinning'}</code> ends
-                              during delay, loading status won't appear.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -168,9 +143,6 @@ ReactDOM.render(<Card />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinDelayAndDebounce" />
-                      </div>
                     </div>
                     <div className="card" id="components-spin-demo-nested">
                       <div className="card-header">
@@ -178,26 +150,15 @@ ReactDOM.render(<Card />, mountNode);
                           <strong className="text-capitalize">Embedded mode</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Embedding content into <code>{'Spin'}</code> will alter it into loading
+                        state.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SpinNested" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Embedding content into <code>{'Spin'}</code> will alter it into
-                              loading state.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -247,9 +208,6 @@ ReactDOM.render(<Card />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinNested" />
-                      </div>
                     </div>
                     <div className="card" id="components-spin-demo-tip">
                       <div className="card-header">
@@ -257,23 +215,12 @@ ReactDOM.render(<Card />, mountNode);
                           <strong className="text-capitalize">Customized description</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Customized description content.</div>
+                      <div className="card-body pb-0">
+                        <div id="SpinTip" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Customized description content.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -308,9 +255,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinTip" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -320,23 +264,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom spinning indicator</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Use custom loading indicator.</div>
+                      <div className="card-body pb-0">
+                        <div id="SpinCustomindicator" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Use custom loading indicator.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -365,9 +298,6 @@ ReactDOM.render(<Spin indicator=\{antIcon\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinCustomindicator" />
-                      </div>
                     </div>
                     <div className="card" id="components-spin-demo-inside">
                       <div className="card-header">
@@ -375,23 +305,12 @@ ReactDOM.render(<Spin indicator=\{antIcon\} />, mountNode);
                           <strong className="text-capitalize">Inside a container</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Spin in a container.</div>
+                      <div className="card-body pb-0">
+                        <div id="SpinInside" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Spin in a container.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -422,9 +341,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SpinInside" />
-                      </div>
                     </div>
                     <div className="card" id="components-spin-demo-size">
                       <div className="card-header">
@@ -432,27 +348,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A small <code>{'Spin'}</code> use in loading text, default{' '}
+                        <code>{'Spin'}</code> use in loading card-level block, and large{' '}
+                        <code>{'Spin'}</code> use in loading **page**.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SpinSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A small <code>{'Spin'}</code> use in loading text, default{' '}
-                              <code>{'Spin'}</code> use in loading card-level block, and large{' '}
-                              <code>{'Spin'}</code> use in loading **page**.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -484,9 +389,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="SpinSize" />
                       </div>
                     </div>
                   </div>

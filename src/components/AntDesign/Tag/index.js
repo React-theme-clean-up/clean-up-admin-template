@@ -41,27 +41,16 @@ class TagItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Usage of basic Tag, and it could be closable by set{' '}
+                        <code>{'closable'}</code> property. Closable Tag supports{' '}
+                        <code>{'onClose'}</code> <code>{'afterClose'}</code> events.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Usage of basic Tag, and it could be closable by set{' '}
-                              <code>{'closable'}</code> property. Closable Tag supports{' '}
-                              <code>{'onClose'}</code> <code>{'afterClose'}</code> events.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -105,9 +94,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TagBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-tag-demo-colorful">
                       <div className="card-header">
@@ -115,27 +101,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Colorful Tag</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We preset a series of colorful tag style for different situation usage. And
+                        you can always set it to a hex color string for custom color.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagColorful" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We preset a series of colorful tag style for different situation
-                              usage. And you can always set it to a hex color string for custom
-                              color.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -186,9 +160,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TagColorful" />
-                      </div>
                     </div>
                     <div className="card" id="components-tag-demo-hot-tags">
                       <div className="card-header">
@@ -196,23 +167,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Hot Tags</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Select your favourite topics.</div>
+                      <div className="card-body pb-0">
+                        <div id="TagHottags" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Select your favourite topics.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -275,9 +235,6 @@ ReactDOM.render(<HotTags />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TagHottags" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -287,27 +244,16 @@ ReactDOM.render(<HotTags />, mountNode);
                           <strong className="text-capitalize">Checkable</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'CheckableTag'}</code> works like Checkbox, click it to toggle
+                        checked state. > it is an absolute controlled component and has no
+                        uncontrolled mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagCheckable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'CheckableTag'}</code> works like Checkbox, click it to toggle
-                              checked state. > it is an absolute controlled component and has no
-                              uncontrolled mode.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -351,9 +297,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TagCheckable" />
-                      </div>
                     </div>
                     <div className="card" id="components-tag-demo-control">
                       <div className="card-header">
@@ -361,27 +304,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Add</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Generating a set of Tags by array, you can add and remove dynamically. It's
+                        based on <code>{'afterClose'}</code> event, which will be triggered while
+                        the close animation end.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagControl" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Generating a set of Tags by array, you can add and remove dynamically.
-                              It's based on <code>{'afterClose'}</code> event, which will be
-                              triggered while the close animation end.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -483,9 +415,6 @@ ReactDOM.render(<EditableTagGroup />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TagControl" />
                       </div>
                     </div>
                   </div>

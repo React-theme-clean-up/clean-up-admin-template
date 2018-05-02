@@ -49,26 +49,15 @@ class ModalItems extends React.Component {
                           <strong className="text-capitalize">Asynchronously close</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Asynchronously close a modal dialog when a user clicked OK button, for
+                        example, you can use this pattern when you submit a form.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalAsync" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Asynchronously close a modal dialog when a user clicked OK button, for
-                              example, you can use this pattern when you submit a form.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -142,9 +131,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalAsync" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-confirm-promise">
                       <div className="card-header">
@@ -152,27 +138,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Confirmation modal dialog</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To use <code>{'confirm()'}</code> to popup confirmation modal dialog. Let
+                        onCancel/onOk function return a promise object to delay closing the dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalConfirmpromise" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              To use <code>{'confirm()'}</code> to popup confirmation modal dialog.
-                              Let onCancel/onOk function return a promise object to delay closing
-                              the dialog.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -217,9 +191,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalConfirmpromise" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-footer">
                       <div className="card-header">
@@ -227,29 +198,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Footer</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A more complex example which define a customized footer button bar, the
+                        dialog will change to loading state after clicking submit button, when the
+                        loading is over, the modal dialog will be closed. You could set{' '}
+                        <code>{'footer'}</code> to <code>{'null'}</code> if you don't need default
+                        footer buttons.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalFooter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A more complex example which define a customized footer button bar,
-                              the dialog will change to loading state after clicking submit button,
-                              when the loading is over, the modal dialog will be closed. You could
-                              set <code>{'footer'}</code> to <code>{'null'}</code> if you don't need
-                              default footer buttons.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -325,9 +285,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalFooter" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-locale">
                       <div className="card-header">
@@ -335,26 +292,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Internationalization</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To customize the text of the buttons, you need to set{' '}
+                        <code>{'okText'}</code> and <code>{'cancelText'}</code> props.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalLocale" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              To customize the text of the buttons, you need to set{' '}
-                              <code>{'okText'}</code> and <code>{'cancelText'}</code> props.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -430,9 +376,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalLocale" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-position">
                       <div className="card-header">
@@ -442,27 +385,16 @@ ReactDOM.render(
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        After release <code>{'1.0'}</code>, Modal's <code>{'align'}</code> prop was
+                        removed. You can use <code>{'style.top'}</code> or other styles to set
+                        position of modal dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalPosition" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              After release <code>{'1.0'}</code>, Modal's <code>{'align'}</code>{' '}
-                              prop was removed. You can use <code>{'style.top'}</code> or other
-                              styles to set position of modal dialog.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -533,9 +465,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalPosition" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -545,23 +474,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic modal.</div>
+                      <div className="card-body pb-0">
+                        <div id="ModalBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic modal.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -626,9 +544,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-confirm">
                       <div className="card-header">
@@ -636,26 +551,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Confirmation modal dialog</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To use <code>{'confirm()'}</code> to popup a confirmation modal dialog.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalConfirm" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              To use <code>{'confirm()'}</code> to popup a confirmation modal
-                              dialog.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -721,9 +624,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalConfirm" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-info">
                       <div className="card-header">
@@ -731,26 +631,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Information modal dialog</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        In the various types of information modal dialog, only one button to close
+                        dialog is provided.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ModalInfo" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              In the various types of information modal dialog, only one button to
-                              close dialog is provided.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -819,9 +708,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ModalInfo" />
-                      </div>
                     </div>
                     <div className="card" id="components-modal-demo-manual">
                       <div className="card-header">
@@ -829,23 +715,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Manual to destroy</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Manually destroying a modal.</div>
+                      <div className="card-body pb-0">
+                        <div id="ModalManual" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Manually destroying a modal.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -883,9 +758,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="ModalManual" />
                       </div>
                     </div>
                   </div>

@@ -58,26 +58,15 @@ class SelectItems extends React.Component {
                           <strong className="text-capitalize">Automatic tokenization</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Try to copy <code>{'Lucy,Jack'}</code> to the input. Only available in tags
+                        and multiple mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectAutomatictokenization" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Try to copy <code>{'Lucy,Jack'}</code> to the input. Only available in
-                              tags and multiple mode.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -123,9 +112,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectAutomatictokenization" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-combobox">
                       <div className="card-header">
@@ -133,27 +119,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Automatic completion</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Automatic completion of select input. Using the
+                        [AutoComplete](/components/auto-complete/) component is strongly recommended
+                        instead as it is more flexible and capable.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectCombobox" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Automatic completion of select input. Using the
-                              [AutoComplete](/components/auto-complete/) component is strongly
-                              recommended instead as it is more flexible and capable.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -213,9 +188,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectCombobox" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-label-in-value">
                       <div className="card-header">
@@ -223,28 +195,17 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Get value of selected item</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        As a default behavior, the onChange callback can only get the value of the
+                        selected item. The labelInValue prop can be used to get the label property
+                        of the selected item. The label of the selected item will be packed as an
+                        object for passing to the onChange callback.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectLabelinvalue" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              As a default behavior, the onChange callback can only get the value of
-                              the selected item. The labelInValue prop can be used to get the label
-                              property of the selected item. The label of the selected item will be
-                              packed as an object for passing to the onChange callback.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -281,9 +242,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectLabelinvalue" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-optgroup">
                       <div className="card-header">
@@ -291,25 +249,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Option Group</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Using <code>{'OptGroup'}</code> to group the options.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectOptgroup" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Using <code>{'OptGroup'}</code> to group the options.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -355,9 +302,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectOptgroup" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-search">
                       <div className="card-header">
@@ -365,23 +309,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Select with search field</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Search the options while expanded.</div>
+                      <div className="card-body pb-0">
+                        <div id="SelectSearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Search the options while expanded.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -436,9 +369,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectSearch" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-size">
                       <div className="card-header">
@@ -446,26 +376,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Sizes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The height of the input field for the select defaults to 32px. If size is
+                        set to large, the height will be 40px, and if set to small, 24px.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The height of the input field for the select defaults to 32px. If size
-                              is set to large, the height will be 40px, and if set to small, 24px.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -566,9 +485,6 @@ ReactDOM.render(<SelectSizesDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectSize" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -578,23 +494,12 @@ ReactDOM.render(<SelectSizesDemo />, mountNode);
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic Usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="SelectBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic Usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -638,9 +543,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-coordinate">
                       <div className="card-header">
@@ -648,28 +550,17 @@ ReactDOM.render(
                           <strong className="text-capitalize">coordinate</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Coordinating the selection of provinces and cities is a common use case and
+                        demonstrates how selection can be coordinated. Using the
+                        [Cascader](/components/cascader) component is strongly recommended instead
+                        as it is more flexible and capable.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectCoordinate" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Coordinating the selection of provinces and cities is a common use
-                              case and demonstrates how selection can be coordinated. Using the
-                              [Cascader](/components/cascader) component is strongly recommended
-                              instead as it is more flexible and capable.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -735,9 +626,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectCoordinate" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-multiple">
                       <div className="card-header">
@@ -745,25 +633,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">multiple selection</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Multiple selection, selecting from existing items (scroll the menu).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectMultiple" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Multiple selection, selecting from existing items (scroll the menu).
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -810,9 +687,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectMultiple" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-search-box">
                       <div className="card-header">
@@ -820,23 +694,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Search Box</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Autocomplete with remote ajax data.</div>
+                      <div className="card-body pb-0">
+                        <div id="SelectSearchbox" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Autocomplete with remote ajax data.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -931,9 +794,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectSearchbox" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-select-users">
                       <div className="card-header">
@@ -941,26 +801,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Search and Select Users</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A complete multiple select sample with remote search, debounce fetch, ajax
+                        callback order flow, and loading state.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectSelectusers" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A complete multiple select sample with remote search, debounce fetch,
-                              ajax callback order flow, and loading state.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1045,9 +894,6 @@ ReactDOM.render(<UserRemoteSelect />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SelectSelectusers" />
-                      </div>
                     </div>
                     <div className="card" id="components-select-demo-tags">
                       <div className="card-header">
@@ -1055,23 +901,14 @@ ReactDOM.render(<UserRemoteSelect />, mountNode);
                           <strong className="text-capitalize">Tags</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Select with tags, transform input to tag (scroll the menu)
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SelectTags" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Select with tags, transform input to tag (scroll the menu)</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1116,9 +953,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="SelectTags" />
                       </div>
                     </div>
                   </div>

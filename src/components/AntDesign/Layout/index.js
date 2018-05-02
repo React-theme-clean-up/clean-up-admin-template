@@ -49,23 +49,12 @@ class LayoutItems extends React.Component {
                           <strong className="text-capitalize">Basic Structure</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Classic page layouts.</div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Classic page layouts.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -128,9 +117,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-fixed-sider">
                       <div className="card-header">
@@ -138,26 +124,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Fixed Sider</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        When dealing with long content, a fixed sider can provide a better user
+                        experience.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutFixedsider" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              When dealing with long content, a fixed sider can provide a better
-                              user experience.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -248,9 +223,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutFixedsider" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-responsive">
                       <div className="card-header">
@@ -258,30 +230,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Responsive</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Layout.Sider supports responsive layout. > Note: You can get a responsive
+                        layout by setting <code>{'breakpoint'}</code>, the Sider will collapse to
+                        the width of <code>{'collapsedWidth'}</code> when window width is below the{' '}
+                        <code>{'breakpoint'}</code>. And a special trigger will appear if the{' '}
+                        <code>{'collapsedWidth'}</code> is set to <code>{'0'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutResponsive" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Layout.Sider supports responsive layout. > Note: You can get a
-                              responsive layout by setting <code>{'breakpoint'}</code>, the Sider
-                              will collapse to the width of <code>{'collapsedWidth'}</code> when
-                              window width is below the <code>{'breakpoint'}</code>. And a special
-                              trigger will appear if the <code>{'collapsedWidth'}</code> is set to{' '}
-                              <code>{'0'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -348,9 +308,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutResponsive" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-top-side-2">
                       <div className="card-header">
@@ -358,26 +315,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Header Sider 2</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Both the top navigation and the sidebar, commonly used in application site.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutTopside2" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Both the top navigation and the sidebar, commonly used in application
-                              site.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -461,9 +406,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutTopside2" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-top">
                       <div className="card-header">
@@ -471,36 +413,24 @@ ReactDOM.render(
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The most basic "header-content-footer" layout. Generally, the mainnav is
+                        placed at the top of the page, and includes the logo, the first level
+                        navigation, and the secondary menu (users, settings, notifications) from
+                        left to right in it. We always put contents in a fixed size navigation (eg:{' '}
+                        <code>{'1200px'}</code>), the layout of the whole page is stable, it's not
+                        affected by viewing area. Top-bottom structure is conform with the
+                        top-bottom viewing habit, it's a classical navigation pattern of websites.
+                        This pattern demonstrates efficiency in the main workarea, while using some
+                        vertical space. And because the horizontal space of the navigation is
+                        limited, this pattern is not suitable for cases when the first level
+                        navigation contains many elements or links
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutTop" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The most basic "header-content-footer" layout. Generally, the mainnav
-                              is placed at the top of the page, and includes the logo, the first
-                              level navigation, and the secondary menu (users, settings,
-                              notifications) from left to right in it. We always put contents in a
-                              fixed size navigation (eg: <code>{'1200px'}</code>), the layout of the
-                              whole page is stable, it's not affected by viewing area. Top-bottom
-                              structure is conform with the top-bottom viewing habit, it's a
-                              classical navigation pattern of websites. This pattern demonstrates
-                              efficiency in the main workarea, while using some vertical space. And
-                              because the horizontal space of the navigation is limited, this
-                              pattern is not suitable for cases when the first level navigation
-                              contains many elements or links
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -555,9 +485,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutTop" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -567,26 +494,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom trigger</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        If you want to use a customized trigger, you can hide the default one by
+                        setting <code>{'trigger={null}'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutCustomtrigger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              If you want to use a customized trigger, you can hide the default one
-                              by setting <code>{'trigger={null}'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -664,9 +580,6 @@ ReactDOM.render(<SiderDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutCustomtrigger" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-fixed">
                       <div className="card-header">
@@ -674,26 +587,15 @@ ReactDOM.render(<SiderDemo />, mountNode);
                           <strong className="text-capitalize">Fixed Header</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Fixed Header is generally used to fix the top navigation to facilitate page
+                        switching.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutFixed" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Fixed Header is generally used to fix the top navigation to facilitate
-                              page switching.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -748,9 +650,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutFixed" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-side">
                       <div className="card-header">
@@ -758,35 +657,23 @@ ReactDOM.render(
                           <strong className="text-capitalize">Sider</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Two-columns layout. The sider menu can be collapsed when horizontal space is
+                        limited. Generally, the mainnav is placed on the left side of the page, and
+                        the secondary menu is placed on the top of the working area. Contents will
+                        adapt the layout to the viewing area to improve the horizontal space usage,
+                        while the layout of the whole page is not stable. The level of the aisde
+                        navigation is scalable. The first, second, and third level navigations could
+                        be present more fluently and relevantly, and aside navigation can be fixed,
+                        allowing the user to quickly switch and spot the current position, improving
+                        the user experience. However, this navigation occupies some horizontal space
+                        of the contents
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutSide" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Two-columns layout. The sider menu can be collapsed when horizontal
-                              space is limited. Generally, the mainnav is placed on the left side of
-                              the page, and the secondary menu is placed on the top of the working
-                              area. Contents will adapt the layout to the viewing area to improve
-                              the horizontal space usage, while the layout of the whole page is not
-                              stable. The level of the aisde navigation is scalable. The first,
-                              second, and third level navigations could be present more fluently and
-                              relevantly, and aside navigation can be fixed, allowing the user to
-                              quickly switch and spot the current position, improving the user
-                              experience. However, this navigation occupies some horizontal space of
-                              the contents
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -882,9 +769,6 @@ ReactDOM.render(<SiderDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="LayoutSide" />
-                      </div>
                     </div>
                     <div className="card" id="components-layout-demo-top-side">
                       <div className="card-header">
@@ -892,26 +776,15 @@ ReactDOM.render(<SiderDemo />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Both the top navigation and the sidebar, commonly used in documentation
+                        site.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="LayoutTopside" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Both the top navigation and the sidebar, commonly used in
-                              documentation site.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -997,9 +870,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="LayoutTopside" />
                       </div>
                     </div>
                   </div>

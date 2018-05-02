@@ -43,23 +43,12 @@ class CheckboxItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Basic usage of checkbox.</div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Basic usage of checkbox.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -92,9 +81,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CheckboxBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-checkbox-demo-controller">
                       <div className="card-header">
@@ -102,23 +88,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Controlled Checkbox</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Communicated with other components.</div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxController" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Communicated with other components.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -197,9 +172,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CheckboxController" />
-                      </div>
                     </div>
                     <div className="card" id="components-checkbox-demo-group">
                       <div className="card-header">
@@ -207,23 +179,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Checkbox Group</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Generate a group of checkboxes from an array.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxGroup" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Generate a group of checkboxes from an array.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -275,9 +238,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CheckboxGroup" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -287,26 +247,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Check all</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The <code>{'indeterminate'}</code> property can help you to achieve a 'check
+                        all' effect.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxCheckall" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The <code>{'indeterminate'}</code> property can help you to achieve a
-                              'check all' effect.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -376,9 +325,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CheckboxCheckall" />
-                      </div>
                     </div>
                     <div className="card" id="components-checkbox-demo-disabled">
                       <div className="card-header">
@@ -386,23 +332,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Disabled checkbox.</div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Disabled checkbox.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -435,9 +370,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CheckboxDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-checkbox-demo-layout">
                       <div className="card-header">
@@ -445,26 +377,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Use with Grid</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We can use Checkbox and Grid in Checkbox.Group, to implement complex layout.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CheckboxLayout" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We can use Checkbox and Grid in Checkbox.Group, to implement complex
-                              layout.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -505,9 +425,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="CheckboxLayout" />
                       </div>
                     </div>
                   </div>

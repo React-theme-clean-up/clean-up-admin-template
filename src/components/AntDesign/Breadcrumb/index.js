@@ -41,23 +41,12 @@ class BreadcrumbItems extends React.Component {
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest use</div>
+                      <div className="card-body pb-0">
+                        <div id="BreadcrumbBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest use</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -91,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-breadcrumb-demo-router">
                       <div className="card-header">
@@ -101,26 +87,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">React Router Integration</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Used together with <code>{'react-router@2'}</code>{' '}
+                        <code>{'react-router@3'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BreadcrumbRouter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Used together with <code>{'react-router@2'}</code>{' '}
-                              <code>{'react-router@3'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -181,9 +156,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbRouter" />
-                      </div>
                     </div>
                     <div className="card" id="components-breadcrumb-demo-withIcon">
                       <div className="card-header">
@@ -191,23 +163,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">With an Icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The icon should be placed in front of the text.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BreadcrumbWithIcon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The icon should be placed in front of the text.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -247,9 +210,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbWithIcon" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -259,25 +219,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Other Router Integration</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Used together with <code>{'react-router@4'}</code> or other router.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BreadcrumbRouter4" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Used together with <code>{'react-router@4'}</code> or other router.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -363,9 +312,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbRouter4" />
-                      </div>
                     </div>
                     <div className="card" id="components-breadcrumb-demo-separator">
                       <div className="card-header">
@@ -373,26 +319,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Configuring the Separator</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The separator can be customized by setting the separator property:
+                        separator=">"
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BreadcrumbSeparator" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The separator can be customized by setting the separator property:
-                              separator=">"
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -425,9 +360,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BreadcrumbSeparator" />
                       </div>
                     </div>
                   </div>

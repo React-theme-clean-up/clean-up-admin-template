@@ -39,23 +39,14 @@ class CalendarItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A basic calendar component with Year/Month switch.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CalendarBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A basic calendar component with Year/Month switch.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -88,9 +79,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CalendarBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-calendar-demo-notice-calendar">
                       <div className="card-header">
@@ -98,27 +86,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Notice Calendar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        This component can be rendered by using <code>{'dateCellRender'}</code> and{' '}
+                        <code>{'monthCellRender'}</code> with the data you need.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CalendarNoticecalendar" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              This component can be rendered by using{' '}
-                              <code>{'dateCellRender'}</code> and <code>{'monthCellRender'}</code>{' '}
-                              with the data you need.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -206,9 +182,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CalendarNoticecalendar" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -218,25 +191,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Card</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Nested inside a container element for rendering in limited space.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CalendarCard" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Nested inside a container element for rendering in limited space.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -271,9 +233,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CalendarCard" />
-                      </div>
                     </div>
                     <div className="card" id="components-calendar-demo-select">
                       <div className="card-header">
@@ -281,23 +240,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Selectable Calendar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A basic calendar component with Year/Month switch.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CalendarSelect" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A basic calendar component with Year/Month switch.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -349,9 +299,6 @@ ReactDOM.render(<App />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="CalendarSelect" />
                       </div>
                     </div>
                   </div>

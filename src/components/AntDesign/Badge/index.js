@@ -45,27 +45,15 @@ class BadgeItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Simplest Usage. Badge will be hidden when <code>{'count'}</code> is{' '}
+                        <code>{'0'}</code>, but we can use <code>{'showZero'}</code> to show it.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Simplest Usage. Badge will be hidden when <code>{'count'}</code> is{' '}
-                              <code>{'0'}</code>, but we can use <code>{'showZero'}</code> to show
-                              it.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -101,9 +89,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-badge-demo-dot">
                       <div className="card-header">
@@ -111,26 +96,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Red badge</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        This will simply display a red badge, without a specific count. If count
+                        equals 0, it won't display the dot.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeDot" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              This will simply display a red badge, without a specific count. If
-                              count equals 0, it won't display the dot.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -169,9 +143,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeDot" />
-                      </div>
                     </div>
                     <div className="card" id="components-badge-demo-no-wrapper">
                       <div className="card-header">
@@ -179,23 +150,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Standalone</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Used in standalone when children is empty.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeNowrapper" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Used in standalone when children is empty.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -228,9 +190,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeNowrapper" />
-                      </div>
                     </div>
                     <div className="card" id="components-badge-demo-status">
                       <div className="card-header">
@@ -238,23 +197,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Status</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Standalone badge with status.</div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeStatus" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Standalone badge with status.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -299,9 +247,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeStatus" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -311,23 +256,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Dynamic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The count will be animated as it changes.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeChange" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The count will be animated as it changes.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -405,9 +341,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeChange" />
-                      </div>
                     </div>
                     <div className="card" id="components-badge-demo-link">
                       <div className="card-header">
@@ -415,26 +348,14 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Clickable</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The badge can be wrapped with <code>{'a'}</code> tag to make it linkable.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeLink" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The badge can be wrapped with <code>{'a'}</code> tag to make it
-                              linkable.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -467,9 +388,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="BadgeLink" />
-                      </div>
                     </div>
                     <div className="card" id="components-badge-demo-overflow">
                       <div className="card-header">
@@ -477,27 +395,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Overflow Count</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'${overflowCount}+'}</code> is displayed when count is larger than{' '}
+                        <code>{'overflowCount'}</code>. The default value of{' '}
+                        <code>{'overflowCount'}</code> is <code>{'99'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="BadgeOverflow" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'${overflowCount}+'}</code> is displayed when count is larger
-                              than <code>{'overflowCount'}</code>. The default value of{' '}
-                              <code>{'overflowCount'}</code> is <code>{'99'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -538,9 +445,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="BadgeOverflow" />
                       </div>
                     </div>
                   </div>

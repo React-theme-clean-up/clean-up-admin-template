@@ -64,27 +64,16 @@ class FormItems extends React.Component {
                           <strong className="text-capitalize">Advanced search</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Three columns layout is often used for advanced searching of data table.
+                        Because the width of label is not fixed, you may need to adjust it by
+                        customizing its style.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormAdvancedsearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Three columns layout is often used for advanced searching of data
-                              table. Because the width of label is not fixed, you may need to adjust
-                              it by customizing its style.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -182,9 +171,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormAdvancedsearch" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-customized-form-controls">
                       <div className="card-header">
@@ -192,31 +178,19 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Form Controls</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Customized or third-party form controls can be used in Form, too. Controls
+                        must follow these conventions: > * It has a controlled property{' '}
+                        <code>{'value'}</code> or other name which is equal to the value of [<code>{'valuePropName'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
+                        > * It has event <code>{'onChange'}</code> or an event which name is equal
+                        to the value of [<code>{'trigger'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
+                        > * It must be a class component.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormCustomizedformcontrols" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Customized or third-party form controls can be used in Form, too.
-                              Controls must follow these conventions: > * It has a controlled
-                              property <code>{'value'}</code> or other name which is equal to the
-                              value of [<code>{'valuePropName'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
-                              > * It has event <code>{'onChange'}</code> or an event which name is
-                              equal to the value of [<code>{'trigger'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
-                              > * It must be a class component.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -347,9 +321,6 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormCustomizedformcontrols" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-dynamic-rule">
                       <div className="card-header">
@@ -357,25 +328,14 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                           <strong className="text-capitalize">Dynamic Rules</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Perform different check rules according to different situations.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormDynamicrule" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Perform different check rules according to different situations.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -475,9 +435,6 @@ ReactDOM.render(<WrappedDynamicRule />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormDynamicrule" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-global-state">
                       <div className="card-header">
@@ -487,33 +444,20 @@ ReactDOM.render(<WrappedDynamicRule />, mountNode);
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We can store form data into upper component or
+                        [Redux](https://github.com/reactjs/redux) or
+                        [dva](https://github.com/dvajs/dva) by using <code>{'onFieldsChange'}</code>{' '}
+                        and <code>{'mapPropsToFields'}</code>, see more at this [rc-form
+                        demo](http://react-component.github.io/form/examples/redux.html). **Note:**
+                        You must wrap field data with <code>{'Form.createFormField'}</code> in{' '}
+                        <code>{'mapPropsToFields'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormGlobalstate" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We can store form data into upper component or
-                              [Redux](https://github.com/reactjs/redux) or
-                              [dva](https://github.com/dvajs/dva) by using{' '}
-                              <code>{'onFieldsChange'}</code> and <code>{'mapPropsToFields'}</code>,
-                              see more at this [rc-form
-                              demo](http://react-component.github.io/form/examples/redux.html).
-                              **Note:** You must wrap field data with{' '}
-                              <code>{'Form.createFormField'}</code> in{' '}
-                              <code>{'mapPropsToFields'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -595,9 +539,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormGlobalstate" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-layout">
                       <div className="card-header">
@@ -605,26 +546,15 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Form Layout</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are three layout for form: <code>{'horizontal'}</code>,{' '}
+                        <code>{'vertical'}</code>, <code>{'inline'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormLayout" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are three layout for form: <code>{'horizontal'}</code>,{' '}
-                              <code>{'vertical'}</code>, <code>{'inline'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -705,9 +635,6 @@ ReactDOM.render(<FormLayoutDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormLayout" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-register">
                       <div className="card-header">
@@ -715,23 +642,14 @@ ReactDOM.render(<FormLayoutDemo />, mountNode);
                           <strong className="text-capitalize">Registration</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Fill in this form to create a new account for you.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormRegister" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Fill in this form to create a new account for you.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -998,9 +916,6 @@ ReactDOM.render(<WrappedRegistrationForm />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormRegister" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-validate-other">
                       <div className="card-header">
@@ -1008,26 +923,15 @@ ReactDOM.render(<WrappedRegistrationForm />, mountNode);
                           <strong className="text-capitalize">Other Form Controls</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Demostration for validataion configuration for form controls which are not
+                        show in the above demos.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormValidateother" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Demostration for validataion configuration for form controls which are
-                              not show in the above demos.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1239,9 +1143,6 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormValidateother" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-without-form-create">
                       <div className="card-header">
@@ -1249,28 +1150,17 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                           <strong className="text-capitalize">Handle Form Data Manually</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'Form.create'}</code> will collect and validate form data
+                        automatically. But if you don't need this feature or the default behaviour
+                        cannot satisfy your business, you can drop <code>{'Form.create'}</code> and
+                        handle form data manually.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormWithoutformcreate" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'Form.create'}</code> will collect and validate form data
-                              automatically. But if you don't need this feature or the default
-                              behaviour cannot satisfy your business, you can drop{' '}
-                              <code>{'Form.create'}</code> and handle form data manually.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1352,9 +1242,6 @@ ReactDOM.render(<RawForm />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormWithoutformcreate" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -1364,26 +1251,15 @@ ReactDOM.render(<RawForm />, mountNode);
                           <strong className="text-capitalize">Coordinated Controls</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'setFieldsValue'}</code> to set other control's value
+                        programmaticly.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormCoordinated" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'setFieldsValue'}</code> to set other control's value
-                              programmaticly.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1473,9 +1349,6 @@ ReactDOM.render(<WrappedApp />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormCoordinated" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-dynamic-form-item">
                       <div className="card-header">
@@ -1483,23 +1356,12 @@ ReactDOM.render(<WrappedApp />, mountNode);
                           <strong className="text-capitalize">Dynamic Form Item</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Add or remove form items dynamically.</div>
+                      <div className="card-body pb-0">
+                        <div id="FormDynamicformitem" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Add or remove form items dynamically.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1632,9 +1494,6 @@ ReactDOM.render(<WrappedDynamicFieldSet />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormDynamicformitem" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-form-in-modal">
                       <div className="card-header">
@@ -1642,27 +1501,16 @@ ReactDOM.render(<WrappedDynamicFieldSet />, mountNode);
                           <strong className="text-capitalize">Form in Modal to Create</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        When user visit a page with a list of items, and want to create a new item.
+                        The page can popup a form in Modal, then let user fills in the form to
+                        create an item.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormForminmodal" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              When user visit a page with a list of items, and want to create a new
-                              item. The page can popup a form in Modal, then let user fills in the
-                              form to create an item.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1771,9 +1619,6 @@ ReactDOM.render(<CollectionsPage />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormForminmodal" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-horizontal-login">
                       <div className="card-header">
@@ -1781,23 +1626,14 @@ ReactDOM.render(<CollectionsPage />, mountNode);
                           <strong className="text-capitalize">Horizontal Login Form</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Horizontal login form is often used in navigation bar.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormHorizontallogin" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Horizontal login form is often used in navigation bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1886,9 +1722,6 @@ ReactDOM.render(<WrappedHorizontalLoginForm />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormHorizontallogin" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-normal-login">
                       <div className="card-header">
@@ -1896,23 +1729,14 @@ ReactDOM.render(<WrappedHorizontalLoginForm />, mountNode);
                           <strong className="text-capitalize">Login Form</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Normal login form which can contain more elements.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormNormallogin" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Normal login form which can contain more elements.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1987,9 +1811,6 @@ ReactDOM.render(<WrappedNormalLoginForm />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormNormallogin" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-time-related-controls">
                       <div className="card-header">
@@ -1997,27 +1818,16 @@ ReactDOM.render(<WrappedNormalLoginForm />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        After <code>{'antd@2.0'}</code>, the <code>{'value'}</code> of time-related
+                        components had been changed to <code>{'moment'}</code>. So, we need to
+                        pre-process those values.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormTimerelatedcontrols" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              After <code>{'antd@2.0'}</code>, the <code>{'value'}</code> of
-                              time-related components had been changed to <code>{'moment'}</code>.
-                              So, we need to pre-process those values.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2157,9 +1967,6 @@ ReactDOM.render(<WrappedTimeRelatedForm />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="FormTimerelatedcontrols" />
-                      </div>
                     </div>
                     <div className="card" id="components-form-demo-validate-static">
                       <div className="card-header">
@@ -2167,32 +1974,20 @@ ReactDOM.render(<WrappedTimeRelatedForm />, mountNode);
                           <strong className="text-capitalize">Customized Validation</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        We provide properties like <code>{'validateStatus'}</code>{' '}
+                        <code>{'help'}</code> <code>{'hasFeedback'}</code> to customize your own
+                        validate status and message, without using <code>{'Form.create'}</code> and{' '}
+                        <code>{'getFieldDecorator'}</code>. 1. <code>{'validateStatus'}</code>:
+                        validate status of form components which could be 'success', 'warning',
+                        'error', 'validating'. 2. <code>{'hasFeedback'}</code>: display feed icon of
+                        input control 3. <code>{'help'}</code>: display validate message.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="FormValidatestatic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              We provide properties like <code>{'validateStatus'}</code>{' '}
-                              <code>{'help'}</code> <code>{'hasFeedback'}</code> to customize your
-                              own validate status and message, without using{' '}
-                              <code>{'Form.create'}</code> and <code>{'getFieldDecorator'}</code>.
-                              1. <code>{'validateStatus'}</code>: validate status of form components
-                              which could be 'success', 'warning', 'error', 'validating'. 2.{' '}
-                              <code>{'hasFeedback'}</code>: display feed icon of input control 3.{' '}
-                              <code>{'help'}</code>: display validate message.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2359,9 +2154,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="FormValidatestatic" />
                       </div>
                     </div>
                   </div>

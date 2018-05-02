@@ -49,23 +49,12 @@ class DropdownItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The most basic dropdown menu.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The most basic dropdown menu.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -112,9 +101,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-dropdown-button">
                       <div className="card-header">
@@ -122,26 +108,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Button with dropdown menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A button is on the left, and a related functional menu is on the right.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownDropdownbutton" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A button is on the left, and a related functional menu is on the
-                              right.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -205,9 +179,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownDropdownbutton" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-item">
                       <div className="card-header">
@@ -215,23 +186,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Other elements</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Divider and disabled menu item.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownItem" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Divider and disabled menu item.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -277,9 +237,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownItem" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-placement">
                       <div className="card-header">
@@ -287,23 +244,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Placement</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Support 6 placements.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownPlacement" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Support 6 placements.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -366,9 +312,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownPlacement" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-trigger">
                       <div className="card-header">
@@ -376,26 +319,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Trigger mode</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The default trigger mode is <code>{'hover'}</code>, you can change it to{' '}
+                        <code>{'click'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownTrigger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The default trigger mode is <code>{'hover'}</code>, you can change it
-                              to <code>{'click'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -441,9 +373,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownTrigger" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -453,26 +382,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Context Menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The default trigger mode is <code>{'hover'}</code>, you can change it to{' '}
+                        <code>{'click'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownContextmenu" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The default trigger mode is <code>{'hover'}</code>, you can change it
-                              to <code>{'click'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -511,9 +429,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownContextmenu" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-event">
                       <div className="card-header">
@@ -521,26 +436,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Click event</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        An event will be triggered when you click menu items, in which you can make
+                        different operations according to item's key.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownEvent" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              An event will be triggered when you click menu items, in which you can
-                              make different operations according to item's key.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -584,9 +488,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownEvent" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-overlay-visible">
                       <div className="card-header">
@@ -594,26 +495,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">The way of hiding</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The default is to close the menu when you click on menu items, this feature
+                        can be turned off.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownOverlayvisible" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The default is to close the menu when you click on menu items, this
-                              feature can be turned off.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -673,9 +563,6 @@ ReactDOM.render(<OverlayVisible />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DropdownOverlayvisible" />
-                      </div>
                     </div>
                     <div className="card" id="components-dropdown-demo-sub-menu">
                       <div className="card-header">
@@ -683,23 +570,12 @@ ReactDOM.render(<OverlayVisible />, mountNode);
                           <strong className="text-capitalize">Cascading menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The menu has multiple levels.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownSubmenu" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The menu has multiple levels.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -747,9 +623,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="DropdownSubmenu" />
                       </div>
                     </div>
                   </div>

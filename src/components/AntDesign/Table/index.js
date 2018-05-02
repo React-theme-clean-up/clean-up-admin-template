@@ -80,28 +80,17 @@ class TableItems extends React.Component {
                           <strong className="text-capitalize">Ajax</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        This example shows how to fetch and present data from remote server, and how
+                        to implement filtering and sorting in server side by sending related
+                        parameters to server. **Note, this example use [Mock
+                        API](https://randomuser.me) that you can look up in Network Console.**
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableAjax" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              This example shows how to fetch and present data from remote server,
-                              and how to implement filtering and sorting in server side by sending
-                              related parameters to server. **Note, this example use [Mock
-                              API](https://randomuser.me) that you can look up in Network Console.**
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -207,9 +196,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableAjax" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-bordered">
                       <div className="card-header">
@@ -217,23 +203,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Add border, title and footer for table.</div>
+                      <div className="card-body pb-0">
+                        <div id="TableBordered" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Add border, title and footer for table.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -298,9 +273,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableBordered" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-custom-filter-panel">
                       <div className="card-header">
@@ -308,28 +280,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized filter panel</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Implement a customized column search example via{' '}
+                        <code>{'filterDropdown'}</code>, <code>{'filterDropdownVisible'}</code> and{' '}
+                        <code>{'filterDropdownVisibleChange'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableCustomfilterpanel" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Implement a customized column search example via{' '}
-                              <code>{'filterDropdown'}</code>,{' '}
-                              <code>{'filterDropdownVisible'}</code> and{' '}
-                              <code>{'filterDropdownVisibleChange'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -457,9 +417,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableCustomfilterpanel" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-dynamic-settings">
                       <div className="card-header">
@@ -467,23 +424,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Dynamic Settings</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Select different settings to see the result.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableDynamicsettings" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Select different settings to see the result.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -672,9 +620,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableDynamicsettings" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-edit-row">
                       <div className="card-header">
@@ -682,23 +627,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Editable Rows</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Table with editable rows.</div>
+                      <div className="card-body pb-0">
+                        <div id="TableEditrow" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Table with editable rows.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -834,9 +768,6 @@ ReactDOM.render(<EditableTable />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableEditrow" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-expand">
                       <div className="card-header">
@@ -844,26 +775,15 @@ ReactDOM.render(<EditableTable />, mountNode);
                           <strong className="text-capitalize">Expandable Row</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        When there's too much information to show and the table can't display all at
+                        once.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableExpand" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              When there's too much information to show and the table can't display
-                              all at once.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -909,9 +829,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableExpand" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-fixed-columns">
                       <div className="card-header">
@@ -919,30 +836,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Fixed Columns</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To fix some columns and scroll inside other columns, and you must set{' '}
+                        <code>{'scroll.x'}</code> meanwhile. > Specify the width of columns if
+                        header and cell do not align properly. > A fixed value which is greater than
+                        table width for <code>{'scroll.x'}</code> is recommended. The sum of unfixed
+                        columns should not greater than <code>{'scroll.x'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableFixedcolumns" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              To fix some columns and scroll inside other columns, and you must set{' '}
-                              <code>{'scroll.x'}</code> meanwhile. > Specify the width of columns if
-                              header and cell do not align properly. > A fixed value which is
-                              greater than table width for <code>{'scroll.x'}</code> is recommended.
-                              The sum of unfixed columns should not greater than{' '}
-                              <code>{'scroll.x'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1001,9 +906,6 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableFixedcolumns" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-grouping-columns">
                       <div className="card-header">
@@ -1011,25 +913,14 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                           <strong className="text-capitalize">Grouping table head</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Group table head with <code>{'columns[n].children'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableGroupingcolumns" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Group table head with <code>{'columns[n].children'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1142,9 +1033,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableGroupingcolumns" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-jsx">
                       <div className="card-header">
@@ -1152,28 +1040,17 @@ ReactDOM.render(
                           <strong className="text-capitalize">JSX style API</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Using JSX style API (introduced in 2.5.0) > Since this is just a syntax
+                        sugar for the prop <code>{'columns'}</code>, so that you can't compose{' '}
+                        <code>{'Column'}</code> and <code>{'ColumnGroup'}</code> with other
+                        Components.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableJsx" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Using JSX style API (introduced in 2.5.0) > Since this is just a
-                              syntax sugar for the prop <code>{'columns'}</code>, so that you can't
-                              compose <code>{'Column'}</code> and <code>{'ColumnGroup'}</code> with
-                              other Components.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1262,9 +1139,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableJsx" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-reset-filter">
                       <div className="card-header">
@@ -1272,30 +1146,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Reset filters and sorters</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Control filters and sorters by <code>{'filteredValue'}</code> and{' '}
+                        <code>{'sortOrder'}</code>. > 1. Defining <code>{'filteredValue'}</code> or{' '}
+                        <code>{'sortOrder'}</code> means that it is in the controlled mode. > 2.
+                        Make sure <code>{'sortOrder'}</code> is assigned for only one column. > 3.{' '}
+                        <code>{'column.key'}</code> is required.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableResetfilter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Control filters and sorters by <code>{'filteredValue'}</code> and{' '}
-                              <code>{'sortOrder'}</code>. > 1. Defining{' '}
-                              <code>{'filteredValue'}</code> or <code>{'sortOrder'}</code> means
-                              that it is in the controlled mode. > 2. Make sure{' '}
-                              <code>{'sortOrder'}</code> is assigned for only one column. > 3.{' '}
-                              <code>{'column.key'}</code> is required.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1421,9 +1283,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableResetfilter" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-row-selection-custom">
                       <div className="card-header">
@@ -1431,27 +1290,16 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Custom selection</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'rowSelection.selections'}</code> custom selections, default no
+                        select dropdown, show default selections via setting to{' '}
+                        <code>{'true'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableRowselectioncustom" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'rowSelection.selections'}</code> custom selections,
-                              default no select dropdown, show default selections via setting to{' '}
-                              <code>{'true'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1556,9 +1404,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableRowselectioncustom" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-size">
                       <div className="card-header">
@@ -1566,27 +1411,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Two compacted table size: <code>{'middle'}</code> and <code>{'small'}</code>,{' '}
+                        <code>{'small'}</code> size is used in Modal only.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Two compacted table size: <code>{'middle'}</code> and{' '}
-                              <code>{'small'}</code>, <code>{'small'}</code> size is used in Modal
-                              only.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1647,9 +1480,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableSize" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -1659,23 +1489,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Simple table with actions.</div>
+                      <div className="card-body pb-0">
+                        <div id="TableBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Simple table with actions.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1748,9 +1567,6 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-colspan-rowspan">
                       <div className="card-header">
@@ -1758,29 +1574,17 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} />, mountNode);
                           <strong className="text-capitalize">colSpan and rowSpan</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Table column title supports <code>{'colSpan'}</code> that set in{' '}
+                        <code>{'column'}</code>. Table cell supports <code>{'colSpan'}</code> and{' '}
+                        <code>{'rowSpan'}</code> that set in render return object. When each of them
+                        is set to <code>{'0'}</code>, the cell will not be rendered.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableColspanrowspan" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Table column title supports <code>{'colSpan'}</code> that set in{' '}
-                              <code>{'column'}</code>. Table cell supports <code>{'colSpan'}</code>{' '}
-                              and <code>{'rowSpan'}</code> that set in render return object. When
-                              each of them is set to <code>{'0'}</code>, the cell will not be
-                              rendered.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -1908,9 +1712,6 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} bordered />
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableColspanrowspan" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-drag-sorting">
                       <div className="card-header">
@@ -1918,26 +1719,15 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} bordered />
                           <strong className="text-capitalize">Drag sorting</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        By using custom components, we can integrate table with react-dnd to
+                        implement drag sorting.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableDragsorting" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By using custom components, we can integrate table with react-dnd to
-                              implement drag sorting.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2138,9 +1928,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableDragsorting" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-edit-cell">
                       <div className="card-header">
@@ -2148,23 +1935,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Editable Cells</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Table with editable cells.</div>
+                      <div className="card-body pb-0">
+                        <div id="TableEditcell" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Table with editable cells.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2330,9 +2106,6 @@ ReactDOM.render(<EditableTable />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableEditcell" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-expand-children">
                       <div className="card-header">
@@ -2340,27 +2113,16 @@ ReactDOM.render(<EditableTable />, mountNode);
                           <strong className="text-capitalize">Tree data</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Display tree structure data in Table, control the indent width by setting{' '}
+                        <code>{'indentSize'}</code>. > Note, no support for recursive selection of
+                        tree structure data table yet.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableExpandchildren" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Display tree structure data in Table, control the indent width by
-                              setting <code>{'indentSize'}</code>. > Note, no support for recursive
-                              selection of tree structure data table yet.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2469,9 +2231,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableExpandchildren" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-fixed-columns-header">
                       <div className="card-header">
@@ -2479,29 +2238,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Fixed Columns and Header</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A Solution for displaying large amounts of data with long columns. > Specify
+                        the width of columns if header and cell do not align properly. > A fixed
+                        value which is greater than table width for <code>{'scroll.x'}</code> is
+                        recommended. The sum of unfixed columns should not greater than{' '}
+                        <code>{'scroll.x'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableFixedcolumnsheader" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A Solution for displaying large amounts of data with long columns. >
-                              Specify the width of columns if header and cell do not align properly.
-                              > A fixed value which is greater than table width for{' '}
-                              <code>{'scroll.x'}</code> is recommended. The sum of unfixed columns
-                              should not greater than <code>{'scroll.x'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2558,9 +2306,6 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableFixedcolumnsheader" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-fixed-header">
                       <div className="card-header">
@@ -2568,26 +2313,15 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                           <strong className="text-capitalize">Fixed Header</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Display large amounts of data in scrollable view. > Specify the width of
+                        each column if header and cell do not align properly.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableFixedheader" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Display large amounts of data in scrollable view. > Specify the width
-                              of each column if header and cell do not align properly.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2639,9 +2373,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableFixedheader" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-head">
                       <div className="card-header">
@@ -2649,31 +2380,20 @@ ReactDOM.render(
                           <strong className="text-capitalize">Filter and sorter</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'filters'}</code> to generate filter menu in columns,{' '}
+                        <code>{'onFilter'}</code> to determine filtered result, and{' '}
+                        <code>{'filterMultiple'}</code> to indicate whether it's multiple or single
+                        selection. Use <code>{'sorter'}</code> to make a column sortable.{' '}
+                        <code>{'sorter'}</code> can be a function{' '}
+                        <code>{'function(a, b) { ... }'}</code> for sorting data locally. Uses{' '}
+                        <code>{'defaultSortOrder'}</code> to make a column sorted by default.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableHead" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'filters'}</code> to generate filter menu in columns,{' '}
-                              <code>{'onFilter'}</code> to determine filtered result, and{' '}
-                              <code>{'filterMultiple'}</code> to indicate whether it's multiple or
-                              single selection. Use <code>{'sorter'}</code> to make a column
-                              sortable. <code>{'sorter'}</code> can be a function{' '}
-                              <code>{'function(a, b) { ... }'}</code> for sorting data locally. Uses{' '}
-                              <code>{'defaultSortOrder'}</code> to make a column sorted by default.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2772,9 +2492,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableHead" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-nested-table">
                       <div className="card-header">
@@ -2782,23 +2499,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Nested tables</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Showing more detailed info of every row.</div>
+                      <div className="card-body pb-0">
+                        <div id="TableNestedtable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Showing more detailed info of every row.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -2913,9 +2619,6 @@ ReactDOM.render(<NestedTable />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableNestedtable" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-row-selection-and-operation">
                       <div className="card-header">
@@ -2923,27 +2626,15 @@ ReactDOM.render(<NestedTable />, mountNode);
                           <strong className="text-capitalize">Selection and operation</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To perform operations and clear selections after selecting some rows, use{' '}
+                        <code>{'rowSelection.selectedRowKeys'}</code> to control selected rows.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableRowselectionandoperation" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              To perform operations and clear selections after selecting some rows,
-                              use <code>{'rowSelection.selectedRowKeys'}</code> to control selected
-                              rows.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -3038,9 +2729,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TableRowselectionandoperation" />
-                      </div>
                     </div>
                     <div className="card" id="components-table-demo-row-selection">
                       <div className="card-header">
@@ -3048,28 +2736,17 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">selection</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Rows can be selectable by making first column as a selectable column. >
+                        selection happens when clicking checkbox defaultly. You can see
+                        https://codesandbox.io/s/000vqw38rl if you need row-click selection
+                        behavior.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TableRowselection" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Rows can be selectable by making first column as a selectable column.
-                              > selection happens when clicking checkbox defaultly. You can see
-                              https://codesandbox.io/s/000vqw38rl if you need row-click selection
-                              behavior.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -3141,9 +2818,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TableRowselection" />
                       </div>
                     </div>
                   </div>

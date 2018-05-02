@@ -51,23 +51,14 @@ class CascaderItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Cascade selection box for selecting province/city/district.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Cascade selection box for selecting province/city/district.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -124,9 +115,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-custom-render">
                       <div className="card-header">
@@ -134,23 +122,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom render</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        For instance, add an external link after the selected value.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderCustomrender" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>For instance, add an external link after the selected value.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -227,9 +206,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderCustomrender" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-default-value">
                       <div className="card-header">
@@ -237,23 +213,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Default value</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Specifies default value by an array.</div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderDefaultvalue" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Specifies default value by an array.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -310,9 +275,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderDefaultvalue" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-hover">
                       <div className="card-header">
@@ -320,23 +282,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Hover</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Hover to expand sub menu, click to select option.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderHover" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Hover to expand sub menu, click to select option.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -403,9 +356,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderHover" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-search">
                       <div className="card-header">
@@ -413,28 +363,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Search</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Search and select options directly. > Now,{' '}
+                        <code>{'Cascader[showSearch]'}</code> doesn't support search on server, more
+                        info [#5547](https://github.com/ant-design/ant-design/issues/5547)
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderSearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Search and select options directly. > Now,{' '}
-                              <code>{'Cascader[showSearch]'}</code> doesn't support search on
-                              server, more info
-                              [#5547](https://github.com/ant-design/ant-design/issues/5547)
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -505,9 +443,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderSearch" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -517,23 +452,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Change on select</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Allow only select parent options.</div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderChangeonselect" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Allow only select parent options.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -590,9 +514,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderChangeonselect" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-custom-trigger">
                       <div className="card-header">
@@ -600,23 +521,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom trigger</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Separate trigger button and result.</div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderCustomtrigger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Separate trigger button and result.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -682,9 +592,6 @@ ReactDOM.render(<CitySwitcher />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderCustomtrigger" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-disabled-option">
                       <div className="card-header">
@@ -692,26 +599,15 @@ ReactDOM.render(<CitySwitcher />, mountNode);
                           <strong className="text-capitalize">Disabled option</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Disable option by specifying the <code>{'disabled'}</code> property in{' '}
+                        <code>{'options'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderDisabledoption" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Disable option by specifying the <code>{'disabled'}</code> property in{' '}
-                              <code>{'options'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -769,9 +665,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderDisabledoption" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-lazy">
                       <div className="card-header">
@@ -779,26 +672,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Load Options Lazily</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Load options lazily with <code>{'loadData'}</code>. > Note:{' '}
+                        <code>{'loadData'}</code> cannot work with <code>{'showSearch'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderLazy" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Load options lazily with <code>{'loadData'}</code>. > Note:{' '}
-                              <code>{'loadData'}</code> cannot work with <code>{'showSearch'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -873,9 +755,6 @@ ReactDOM.render(<LazyOptions />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CascaderLazy" />
-                      </div>
                     </div>
                     <div className="card" id="components-cascader-demo-size">
                       <div className="card-header">
@@ -883,23 +762,14 @@ ReactDOM.render(<LazyOptions />, mountNode);
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Cascade selection box of different sizes.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CascaderSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Cascade selection box of different sizes.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -959,9 +829,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="CascaderSize" />
                       </div>
                     </div>
                   </div>

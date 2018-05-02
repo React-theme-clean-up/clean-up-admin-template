@@ -41,23 +41,12 @@ class InputnumberItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Numeric-only input box.</div>
+                      <div className="card-body pb-0">
+                        <div id="InputnumberBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Numeric-only input box.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -90,9 +79,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputnumberBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-number-demo-disabled">
                       <div className="card-header">
@@ -100,25 +86,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Click the button to toggle between available and disabled states.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputnumberDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Click the button to toggle between available and disabled states.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -166,9 +141,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputnumberDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-number-demo-size">
                       <div className="card-header">
@@ -176,28 +148,17 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Sizes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are three sizes available to a numeric input box. By default, the size
+                        is <code>{'32px'}</code>. The two additional sizes are{' '}
+                        <code>{'large'}</code> and <code>{'small'}</code> which means{' '}
+                        <code>{'40px'}</code> and <code>{'24px'}</code>, respectively.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputnumberSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are three sizes available to a numeric input box. By default,
-                              the size is <code>{'32px'}</code>. The two additional sizes are{' '}
-                              <code>{'large'}</code> and <code>{'small'}</code> which means{' '}
-                              <code>{'40px'}</code> and <code>{'24px'}</code>, respectively.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -234,9 +195,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputnumberSize" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -246,27 +204,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Decimals</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A numeric-only input box whose values can be increased or decreased using a
+                        decimal step. The number of decimals (also known as precision) is determined
+                        by the step prop.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputnumberDigit" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A numeric-only input box whose values can be increased or decreased
-                              using a decimal step. The number of decimals (also known as precision)
-                              is determined by the step prop.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -299,9 +246,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="InputnumberDigit" />
-                      </div>
                     </div>
                     <div className="card" id="components-input-number-demo-formatter">
                       <div className="card-header">
@@ -309,26 +253,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Formatter</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Display value within it's situation with <code>{'formatter'}</code>, and we
+                        usually use <code>{'parser'}</code> at the same time.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="InputnumberFormatter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Display value within it's situation with <code>{'formatter'}</code>,
-                              and we usually use <code>{'parser'}</code> at the same time.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -375,9 +308,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="InputnumberFormatter" />
                       </div>
                     </div>
                   </div>

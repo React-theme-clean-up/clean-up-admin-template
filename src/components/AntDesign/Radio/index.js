@@ -47,23 +47,12 @@ class RadioItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest use.</div>
+                      <div className="card-body pb-0">
+                        <div id="RadioBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest use.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -90,9 +79,6 @@ ReactDOM.render(<Radio>Radio</Radio>, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-radiobutton">
                       <div className="card-header">
@@ -100,23 +86,12 @@ ReactDOM.render(<Radio>Radio</Radio>, mountNode);
                           <strong className="text-capitalize">radio style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The combination of radio button style.</div>
+                      <div className="card-body pb-0">
+                        <div id="RadioRadiobutton" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The combination of radio button style.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -176,9 +151,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioRadiobutton" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-radiogroup-options">
                       <div className="card-header">
@@ -186,26 +158,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">RadioGroup group</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Render radios by configuring <code>{'options'}</code>. > support after{' '}
+                        <code>{'2.9.0'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="RadioRadiogroupoptions" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Render radios by configuring <code>{'options'}</code>. > support after{' '}
-                              <code>{'2.9.0'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -280,9 +241,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioRadiogroupoptions" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-radiogroup">
                       <div className="card-header">
@@ -290,23 +248,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Radio Group</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A group of radio components.</div>
+                      <div className="card-body pb-0">
+                        <div id="RadioRadiogroup" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A group of radio components.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -356,9 +303,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioRadiogroup" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -368,23 +312,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Radio unavailable.</div>
+                      <div className="card-body pb-0">
+                        <div id="RadioDisable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Radio unavailable.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -436,9 +369,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioDisable" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-radiogroup-more">
                       <div className="card-header">
@@ -446,23 +376,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Vertical RadioGroup</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Vertical RadioGroup, with more radios.</div>
+                      <div className="card-body pb-0">
+                        <div id="RadioRadiogroupmore" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Vertical RadioGroup, with more radios.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -520,9 +439,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioRadiogroupmore" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-radiogroup-with-name">
                       <div className="card-header">
@@ -530,29 +446,18 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">RadioGroup with name</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Passing the <code>{'name'}</code> property to all{' '}
+                        <code>{'input[type="radio"]'}</code> that are in the same RadioGroup. It is
+                        usually used to let the browser see your RadioGroup as a real "group" and
+                        keep the default behavior. For example, using left/right keyboard arrow to
+                        change your selection that in the same RadioGroup.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="RadioRadiogroupwithname" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Passing the <code>{'name'}</code> property to all{' '}
-                              <code>{'input[type="radio"]'}</code> that are in the same RadioGroup.
-                              It is usually used to let the browser see your RadioGroup as a real
-                              "group" and keep the default behavior. For example, using left/right
-                              keyboard arrow to change your selection that in the same RadioGroup.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -591,9 +496,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RadioRadiogroupwithname" />
-                      </div>
                     </div>
                     <div className="card" id="components-radio-demo-size">
                       <div className="card-header">
@@ -601,26 +503,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are three sizes available: large, medium, and small. It can coordinate
+                        with input box.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="RadioSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are three sizes available: large, medium, and small. It can
-                              coordinate with input box.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -675,9 +566,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="RadioSize" />
                       </div>
                     </div>
                   </div>

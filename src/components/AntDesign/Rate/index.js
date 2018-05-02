@@ -43,23 +43,12 @@ class RateItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="RateBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -86,9 +75,6 @@ ReactDOM.render(<Rate />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RateBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-rate-demo-clear">
                       <div className="card-header">
@@ -96,23 +82,14 @@ ReactDOM.render(<Rate />, mountNode);
                           <strong className="text-capitalize">Clear star</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Support set allow to clear star when click again.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="RateClear" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Support set allow to clear star when click again.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -145,9 +122,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RateClear" />
-                      </div>
                     </div>
                     <div className="card" id="components-rate-demo-half">
                       <div className="card-header">
@@ -155,23 +129,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Half star</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Support select half star.</div>
+                      <div className="card-body pb-0">
+                        <div id="RateHalf" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Support select half star.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -198,9 +161,6 @@ ReactDOM.render(<Rate allowHalf defaultValue=\{2.5\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RateHalf" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -210,26 +170,15 @@ ReactDOM.render(<Rate allowHalf defaultValue=\{2.5\} />, mountNode);
                           <strong className="text-capitalize">Other Character</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Replace the default star to other character like alphabet, digit, iconfont
+                        or even Chinese word.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="RateCharacter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Replace the default star to other character like alphabet, digit,
-                              iconfont or even Chinese word.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -264,9 +213,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RateCharacter" />
-                      </div>
                     </div>
                     <div className="card" id="components-rate-demo-disabled">
                       <div className="card-header">
@@ -274,23 +220,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Read only</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Read only, can't use mouse to interact.</div>
+                      <div className="card-body pb-0">
+                        <div id="RateDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Read only, can't use mouse to interact.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -317,9 +252,6 @@ ReactDOM.render(<Rate disabled defaultValue=\{2\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="RateDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-rate-demo-text">
                       <div className="card-header">
@@ -327,23 +259,12 @@ ReactDOM.render(<Rate disabled defaultValue=\{2\} />, mountNode);
                           <strong className="text-capitalize">Show copywriting</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Add copywriting in rate components.</div>
+                      <div className="card-body pb-0">
+                        <div id="RateText" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Add copywriting in rate components.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -387,9 +308,6 @@ ReactDOM.render(<Rater />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="RateText" />
                       </div>
                     </div>
                   </div>

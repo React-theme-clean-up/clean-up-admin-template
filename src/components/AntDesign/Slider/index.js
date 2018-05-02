@@ -45,27 +45,16 @@ class SliderItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Basic slider. When <code>{'range'}</code> is <code>{'true'}</code>, display
+                        as dual thumb mode. When <code>{'disable'}</code> is <code>{'true'}</code>,
+                        the slider will not be interactable.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Basic slider. When <code>{'range'}</code> is <code>{'true'}</code>,
-                              display as dual thumb mode. When <code>{'disable'}</code> is{' '}
-                              <code>{'true'}</code>, the slider will not be interactable.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -111,9 +100,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-slider-demo-icon-slider">
                       <div className="card-header">
@@ -121,23 +107,14 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Slider with icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can add an icon beside the slider to make it meaningful.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderIconslider" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>You can add an icon beside the slider to make it meaningful.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -187,9 +164,6 @@ ReactDOM.render(<IconSlider min=\{0\} max=\{20\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderIconslider" />
-                      </div>
                     </div>
                     <div className="card" id="components-slider-demo-mark">
                       <div className="card-header">
@@ -197,29 +171,18 @@ ReactDOM.render(<IconSlider min=\{0\} max=\{20\} />, mountNode);
                           <strong className="text-capitalize">Graduated slider</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Using <code>{'marks'}</code> property to mark a graduated slider, use{' '}
+                        <code>{'value'}</code> or <code>{'defaultValue'}</code> to specify the
+                        position of thumb. When <code>{'included'}</code> is false, means that
+                        different thumbs are coordinative. when <code>{'step'}</code> is null, users
+                        can only slide the thumbs onto marks.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderMark" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Using <code>{'marks'}</code> property to mark a graduated slider, use{' '}
-                              <code>{'value'}</code> or <code>{'defaultValue'}</code> to specify the
-                              position of thumb. When <code>{'included'}</code> is false, means that
-                              different thumbs are coordinative. when <code>{'step'}</code> is null,
-                              users can only slide the thumbs onto marks.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -273,9 +236,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderMark" />
-                      </div>
                     </div>
                     <div className="card" id="components-slider-demo-vertical">
                       <div className="card-header">
@@ -283,23 +243,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The vertical Slider.</div>
+                      <div className="card-body pb-0">
+                        <div id="SliderVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The vertical Slider.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -357,9 +306,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderVertical" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -369,27 +315,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Event</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The <code>{'onChange'}</code> callback function will fire when the user
+                        changes the slider's value. The <code>{'onAfterChange'}</code> callback
+                        function will fire when <code>{'onmouseup'}</code> fired.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderEvent" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The <code>{'onChange'}</code> callback function will fire when the
-                              user changes the slider's value. The <code>{'onAfterChange'}</code>{' '}
-                              callback function will fire when <code>{'onmouseup'}</code> fired.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -430,9 +365,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderEvent" />
-                      </div>
                     </div>
                     <div className="card" id="components-slider-demo-input-number">
                       <div className="card-header">
@@ -440,25 +372,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Slider with InputNumber</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Synchronize with [InptNumber](/components/input-number/) component.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderInputnumber" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Synchronize with [InptNumber](/components/input-number/) component.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -549,9 +470,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SliderInputnumber" />
-                      </div>
                     </div>
                     <div className="card" id="components-slider-demo-tip-formatter">
                       <div className="card-header">
@@ -559,27 +477,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customerize tooltip</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'tipFormatter'}</code> to format content of{' '}
+                        <code>{'Toolip'}</code>. If <code>{'tipFormatter'}</code> is null, hide it.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SliderTipformatter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'tipFormatter'}</code> to format content of{' '}
-                              <code>{'Toolip'}</code>. If <code>{'tipFormatter'}</code> is null,
-                              hide it.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -615,9 +521,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="SliderTipformatter" />
                       </div>
                     </div>
                   </div>

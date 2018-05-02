@@ -43,26 +43,15 @@ class CollapseItems extends React.Component {
                           <strong className="text-capitalize">Accordion</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Accordion mode, only one panel can be expanded at a time. The first panel
+                        will be expanded by default.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseAccordion" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Accordion mode, only one panel can be expanded at a time. The first
-                              panel will be expanded by default.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -108,9 +97,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CollapseAccordion" />
-                      </div>
                     </div>
                     <div className="card" id="components-collapse-demo-borderless">
                       <div className="card-header">
@@ -118,23 +104,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Borderless</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A borderless style of Collapse.</div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseBorderless" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A borderless style of Collapse.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -182,9 +157,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CollapseBorderless" />
-                      </div>
                     </div>
                     <div className="card" id="components-collapse-demo-mix">
                       <div className="card-header">
@@ -192,26 +164,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Nested panel</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'Collapse'}</code> is nested inside the <code>{'Collapse'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseMix" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'Collapse'}</code> is nested inside the{' '}
-                              <code>{'Collapse'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -265,9 +225,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CollapseMix" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -277,26 +234,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Collapse</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        More than one panel can be expanded at a time, the first panel is
+                        initialized to be active in this case.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              More than one panel can be expanded at a time, the first panel is
-                              initialized to be active in this case.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -346,9 +292,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CollapseBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-collapse-demo-custom">
                       <div className="card-header">
@@ -356,25 +299,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom Panel</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Customize the background, border and margin styles for each panel.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseCustom" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Customize the background, border and margin styles for each panel.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -428,9 +360,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="CollapseCustom" />
-                      </div>
                     </div>
                     <div className="card" id="components-collapse-demo-noarrow">
                       <div className="card-header">
@@ -438,27 +367,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">No arrow</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can disable showing arrow icon by passing{' '}
+                        <code>{'showArrow={false}'}</code> to <code>{'CollapsePanel'}</code>{' '}
+                        component.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="CollapseNoarrow" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can disable showing arrow icon by passing{' '}
-                              <code>{'showArrow={false}'}</code> to <code>{'CollapsePanel'}</code>{' '}
-                              component.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -504,9 +422,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="CollapseNoarrow" />
                       </div>
                     </div>
                   </div>

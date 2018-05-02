@@ -35,26 +35,15 @@ class DividerItems extends React.Component {
                           <strong className="text-capitalize">Horizontal</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Divider default type is <code>{'horizontal'}</code>. Support inner text
+                        inside Divider.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DividerHorizontal" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Divider default type is <code>{'horizontal'}</code>. Support inner
-                              text inside Divider.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -95,9 +84,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="DividerHorizontal" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -107,25 +93,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'type="vertical"'}</code> make it vertical.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DividerVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'type="vertical"'}</code> make it vertical.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -159,9 +134,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="DividerVertical" />
                       </div>
                     </div>
                   </div>

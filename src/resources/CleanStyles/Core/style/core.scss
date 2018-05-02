@@ -69,9 +69,10 @@ pre {
   background: $gray-lighten-more;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////
-/*  CORE TEMPLATE OPTIONS */
-
+// ant design font overrides
+button, input, select, textarea {
+  font-family: inherit;
+}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -155,6 +156,19 @@ pre {
 
   // quick max-width
   @at-root {
+    .max-width-50 {max-width: rem(50);}
+    .max-width-75 {max-width: rem(75);}
+    .max-width-100 {max-width: rem(100);}
+    .max-width-200 {max-width: rem(200);}
+    .max-width-300 {max-width: rem(300);}
+    .max-width-400 {max-width: rem(400);}
+    .max-width-500 {max-width: rem(500);}
+    .max-width-600 {max-width: rem(600);}
+    .max-width-700 {max-width: rem(700);}
+    .max-width-30p {max-width: 30%;}
+    .max-width-50p {max-width: 50%;}
+    .max-width-60p {max-width: 60%;}
+    .max-width-100p {max-width: 100%;}
     .max-width-100p {max-width: 100% !important;}
   }
 
@@ -242,6 +256,18 @@ pre {
     -webkit-animation: fa-spin-delayed 3s infinite ease-in-out;
     -o-animation: fa-spin-delayed 3s infinite ease-in-out;
     animation: fa-spin-delayed 3s infinite ease-in-out;
+  }
+
+  // ant design example blocks
+  &__codeCollapse {
+    .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
+      padding-left: rem(18);
+    }
+
+    .antCollapse--borderless > .ant-collapse-item {
+      border-top: 1px solid $gray-border;
+      border-bottom: none;
+    }
   }
 }
 

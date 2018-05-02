@@ -35,23 +35,12 @@ class AnchorItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="AnchorBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -88,9 +77,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AnchorBasic" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -100,23 +86,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Static Anchor</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Do not change state when page is scrolling.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AnchorStatic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Do not change state when page is scrolling.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -152,9 +129,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AnchorStatic" />
                       </div>
                     </div>
                   </div>

@@ -47,23 +47,14 @@ class AlertItems extends React.Component {
                           <strong className="text-capitalize">Banner</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Display Alert as a banner at top of page.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AlertBanner" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Display Alert as a banner at top of page.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -100,9 +91,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertBanner" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-closable">
                       <div className="card-header">
@@ -110,23 +98,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Closable</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">To show close button.</div>
+                      <div className="card-body pb-0">
+                        <div id="AlertClosable" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>To show close button.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -173,9 +150,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertClosable" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-description">
                       <div className="card-header">
@@ -183,23 +157,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Description</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Additional description for alert message.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AlertDescription" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Additional description for alert message.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -249,9 +214,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertDescription" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-smooth-closed">
                       <div className="card-header">
@@ -259,23 +221,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Smoothly Unmount</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Smoothly and unaffectedly unmount Alert.</div>
+                      <div className="card-body pb-0">
+                        <div id="AlertSmoothclosed" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Smoothly and unaffectedly unmount Alert.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -330,9 +281,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertSmoothclosed" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -342,23 +290,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest usage for short messages.</div>
+                      <div className="card-body pb-0">
+                        <div id="AlertBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest usage for short messages.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -387,9 +324,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-close-text">
                       <div className="card-header">
@@ -397,23 +331,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Close Text</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Replace the default icon with customized text.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AlertClosetext" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Replace the default icon with customized text.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -442,9 +367,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertClosetext" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-icon">
                       <div className="card-header">
@@ -452,23 +374,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Decent icon make information more clear and more friendly.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AlertIcon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Decent icon make information more clear and more friendly.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -526,9 +439,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AlertIcon" />
-                      </div>
                     </div>
                     <div className="card" id="components-alert-demo-style">
                       <div className="card-header">
@@ -536,27 +446,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">More types</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are 4 types of Alert: <code>{'success'}</code>, <code>{'info'}</code>,{' '}
+                        <code>{'warning'}</code>, <code>{'error'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AlertStyle" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are 4 types of Alert: <code>{'success'}</code>,{' '}
-                              <code>{'info'}</code>, <code>{'warning'}</code>,{' '}
-                              <code>{'error'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -589,9 +487,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AlertStyle" />
                       </div>
                     </div>
                   </div>

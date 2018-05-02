@@ -53,23 +53,12 @@ class TabsItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Default activate first tab.</div>
+                      <div className="card-body pb-0">
+                        <div id="TabsBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Default activate first tab.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -107,9 +96,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-card">
                       <div className="card-header">
@@ -117,23 +103,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Card type tab</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Another type Tabs, which doesn't support vertical mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsCard" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Another type Tabs, which doesn't support vertical mode.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -171,9 +148,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsCard" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-disabled">
                       <div className="card-header">
@@ -181,23 +155,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Disabled a tab.</div>
+                      <div className="card-body pb-0">
+                        <div id="TabsDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Disabled a tab.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -231,9 +194,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-extra">
                       <div className="card-header">
@@ -241,23 +201,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Extra content</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can add extra actions to the right of Tabs.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsExtra" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>You can add extra actions to the right of Tabs.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -293,9 +244,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsExtra" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-position">
                       <div className="card-header">
@@ -303,23 +251,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Position</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Tab's position: left, right, top or bottom.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsPosition" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Tab's position: left, right, top or bottom.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -382,9 +321,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsPosition" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-slide">
                       <div className="card-header">
@@ -392,26 +328,15 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Slide</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Tab can be slide to left or right(up or down), which is used for a lot of
+                        tabs.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsSlide" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Tab can be slide to left or right(up or down), which is used for a lot
-                              of tabs.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -480,9 +405,6 @@ ReactDOM.render(<SlidingTabsDemo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsSlide" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -492,25 +414,14 @@ ReactDOM.render(<SlidingTabsDemo />, mountNode);
                           <strong className="text-capitalize">Container of card type Tab</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Should be used at the top of container, needs to override styles.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsCardtop" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Should be used at the top of container, needs to override styles.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -558,9 +469,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsCardtop" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-custom-add-trigger">
                       <div className="card-header">
@@ -568,25 +476,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized trigger of new tab</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Hide default plus icon, and bind event for customized trigger.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsCustomaddtrigger" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Hide default plus icon, and bind event for customized trigger.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -674,9 +571,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsCustomaddtrigger" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-editable-card">
                       <div className="card-header">
@@ -684,26 +578,15 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Add</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Only card type Tabs support adding & closable. +Use{' '}
+                        <code>{'closable={false}'}</code> to disable close.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsEditablecard" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Only card type Tabs support adding & closable. +Use{' '}
-                              <code>{'closable={false}'}</code> to disable close.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -786,9 +669,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsEditablecard" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-icon">
                       <div className="card-header">
@@ -796,23 +676,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The Tab with Icon.</div>
+                      <div className="card-body pb-0">
+                        <div id="TabsIcon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The Tab with Icon.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -849,9 +718,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TabsIcon" />
-                      </div>
                     </div>
                     <div className="card" id="components-tabs-demo-size">
                       <div className="card-header">
@@ -859,26 +725,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Large size tabs are usally used in page header, and small size could be used
+                        in Modal.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TabsSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Large size tabs are usally used in page header, and small size could
-                              be used in Modal.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -929,9 +784,6 @@ ReactDOM.render(<Demo />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TabsSize" />
                       </div>
                     </div>
                   </div>

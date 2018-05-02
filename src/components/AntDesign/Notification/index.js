@@ -45,25 +45,14 @@ class NotificationItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The simplest usage that close the notification box after 4.5s.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The simplest usage that close the notification box after 4.5s.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -99,9 +88,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-notification-demo-custom-style">
                       <div className="card-header">
@@ -109,25 +95,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The style and className are available to customize Notification.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationCustomstyle" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The style and className are available to customize Notification.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -167,9 +142,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationCustomstyle" />
-                      </div>
                     </div>
                     <div className="card" id="components-notification-demo-placement">
                       <div className="card-header">
@@ -177,27 +149,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Placement</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A notification box can pop up from <code>{'topRight'}</code> or{' '}
+                        <code>{'bottomRight'}</code> or <code>{'bottomLeft'}</code> or{' '}
+                        <code>{'topLeft'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationPlacement" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              A notification box can pop up from <code>{'topRight'}</code> or{' '}
-                              <code>{'bottomRight'}</code> or <code>{'bottomLeft'}</code> or{' '}
-                              <code>{'topLeft'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -253,9 +214,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationPlacement" />
-                      </div>
                     </div>
                     <div className="card" id="components-notification-demo-with-icon">
                       <div className="card-header">
@@ -263,23 +221,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Notification with icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A notification box with a icon at the left side.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationWithicon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A notification box with a icon at the left side.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -320,9 +269,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationWithicon" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -332,23 +278,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Customized Icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The icon can be customized to any react node.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationCustomicon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The icon can be customized to any react node.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -385,9 +322,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationCustomicon" />
-                      </div>
                     </div>
                     <div className="card" id="components-notification-demo-duration">
                       <div className="card-header">
@@ -397,29 +331,17 @@ ReactDOM.render(
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'Duration'}</code> can be used to specify how long the notification
+                        stays open. After the duration time elapses, the notification closes
+                        automatically. If not specified, default value is 4.5 seconds. If you set
+                        the value to 0, the notification box will never close automatically.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationDuration" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'Duration'}</code> can be used to specify how long the
-                              notification stays open. After the duration time elapses, the
-                              notification closes automatically. If not specified, default value is
-                              4.5 seconds. If you set the value to 0, the notification box will
-                              never close automatically.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -457,9 +379,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="NotificationDuration" />
-                      </div>
                     </div>
                     <div className="card" id="components-notification-demo-with-btn">
                       <div className="card-header">
@@ -467,23 +386,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Custom close button</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To customize the style or font of the close button.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="NotificationWithbtn" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>To customize the style or font of the close button.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -533,9 +443,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="NotificationWithbtn" />
                       </div>
                     </div>
                   </div>

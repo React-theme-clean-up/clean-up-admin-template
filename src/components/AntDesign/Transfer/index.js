@@ -41,27 +41,16 @@ class TransferItems extends React.Component {
                           <strong className="text-capitalize">Advanced</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Advanced Usage of Transfer. You can customize the labels of the transfer
+                        buttons, the width and height of the columns, and what should be displayed
+                        in the footer.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TransferAdvanced" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Advanced Usage of Transfer. You can customize the labels of the
-                              transfer buttons, the width and height of the columns, and what should
-                              be displayed in the footer.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -146,9 +135,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TransferAdvanced" />
-                      </div>
                     </div>
                     <div className="card" id="components-transfer-demo-custom-item">
                       <div className="card-header">
@@ -156,26 +142,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Custom datasource</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Custom each Transfer Item, and in this way you can render a complex
+                        datasource.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TransferCustomitem" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Custom each Transfer Item, and in this way you can render a complex
-                              datasource.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -259,9 +234,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TransferCustomitem" />
-                      </div>
                     </div>
                     <div className="card" id="components-transfer-demo-search">
                       <div className="card-header">
@@ -269,23 +241,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Search</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Transfer with a search box.</div>
+                      <div className="card-body pb-0">
+                        <div id="TransferSearch" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Transfer with a search box.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -357,9 +318,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TransferSearch" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -369,27 +327,16 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        The most basic usage of <code>{'Transfer'}</code> involves providing the
+                        source data and target keys arrays, plus the rendering and some callback
+                        functions.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TransferBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              The most basic usage of <code>{'Transfer'}</code> involves providing
-                              the source data and target keys arrays, plus the rendering and some
-                              callback functions.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -473,9 +420,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="TransferBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-transfer-demo-large-data">
                       <div className="card-header">
@@ -483,23 +427,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Performance Test</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">2000 items.</div>
+                      <div className="card-body pb-0">
+                        <div id="TransferLargedata" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>2000 items.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -566,9 +499,6 @@ ReactDOM.render(<App />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="TransferLargedata" />
                       </div>
                     </div>
                   </div>

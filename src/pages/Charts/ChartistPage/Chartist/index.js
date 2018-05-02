@@ -1,47 +1,34 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import ChartistGraph from 'react-chartist'
+import Chartist from 'chartist'
 
 class ChartistsItems extends React.Component {
-  state = {}
-
   render() {
     var data = {
       labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
       series: [[1, 2, 4, 8, 6, -2, -1, -4, -6, -2]],
     }
 
-    var options = {
-      high: 10,
-      low: -10,
-      axisX: {
-        labelInterpolationFnc: function(value, index) {
-          return index % 2 === 0 ? value : null
-        },
+    var type = 'Bar'
+
+    const options = {
+      fullWidth: true,
+      showArea: false,
+      chartPadding: {
+        right: 30,
+        left: 0,
       },
+      plugins: [
+        Chartist.plugins.tooltip({
+          seriesName: false,
+        }),
+      ],
     }
 
-    var type = 'Bar'
     return (
-      <section className="card">
-        <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
-            <strong>Chartist.js</strong>
-            <a
-              href="https://gionkunz.github.io/chartist-js/"
-              target="_blank"
-              class="btn btn-sm btn-primary ml-2"
-            >
-              Official Documentation <i class="icmn-link ml-1" />
-            </a>
-          </h5>
-        </div>
-        <div className="card-body">
-          <div className="row">
-            <div className="col-lg-6" />
-          </div>
-        </div>
-      </section>
+      <div>
+        <ChartistGraph data={data} type={type} options={options} />
+      </div>
     )
   }
 }

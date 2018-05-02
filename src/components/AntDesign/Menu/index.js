@@ -45,23 +45,12 @@ class MenuItems extends React.Component {
                           <strong className="text-capitalize">Top Navigation</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Horizontal top navigation menu.</div>
+                      <div className="card-body pb-0">
+                        <div id="MenuHorizontal" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Horizontal top navigation menu.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -131,9 +120,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuHorizontal" />
-                      </div>
                     </div>
                     <div className="card" id="components-menu-demo-inline">
                       <div className="card-header">
@@ -141,23 +127,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Inline menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Vertical menu with inline submenus.</div>
+                      <div className="card-body pb-0">
+                        <div id="MenuInline" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Vertical menu with inline submenus.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -228,9 +203,6 @@ ReactDOM.render(<Sider />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuInline" />
-                      </div>
                     </div>
                     <div className="card" id="components-menu-demo-switch-mode">
                       <div className="card-header">
@@ -238,25 +210,14 @@ ReactDOM.render(<Sider />, mountNode);
                           <strong className="text-capitalize">Switch the menu type</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Show the dynamic switching mode (between 'inline' and 'vertical').
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MenuSwitchmode" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Show the dynamic switching mode (between 'inline' and 'vertical').
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -342,9 +303,6 @@ ReactDOM.render(<Sider />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuSwitchmode" />
-                      </div>
                     </div>
                     <div className="card" id="components-menu-demo-vertical">
                       <div className="card-header">
@@ -352,23 +310,12 @@ ReactDOM.render(<Sider />, mountNode);
                           <strong className="text-capitalize">Vertical menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Submenus open as pop-ups.</div>
+                      <div className="card-body pb-0">
+                        <div id="MenuVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Submenus open as pop-ups.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -428,9 +375,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuVertical" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -440,27 +384,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Collapsed inline menu</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Inline menu could be collapsed. Here is [a complete
+                        demo](/components/layout/#components-layout-demo-side) with sider layout.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MenuInlinecollapsed" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Inline menu could be collapsed. Here is [a complete
-                              demo](/components/layout/#components-layout-demo-side) with sider
-                              layout.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -542,9 +474,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuInlinecollapsed" />
-                      </div>
                     </div>
                     <div className="card" id="components-menu-demo-sider-current">
                       <div className="card-header">
@@ -552,26 +481,15 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Open current submenu only</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Click the menu and you will see that all the other menus gets collapsed to
+                        keep the entire menu compact.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MenuSidercurrent" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Click the menu and you will see that all the other menus gets
-                              collapsed to keep the entire menu compact.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -648,9 +566,6 @@ ReactDOM.render(<Sider />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="MenuSidercurrent" />
-                      </div>
                     </div>
                     <div className="card" id="components-menu-demo-theme">
                       <div className="card-header">
@@ -658,26 +573,15 @@ ReactDOM.render(<Sider />, mountNode);
                           <strong className="text-capitalize">Menu Themes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        There are two built-in themes: 'light' and 'dark'. The default value is
+                        'light'.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="MenuTheme" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              There are two built-in themes: 'light' and 'dark'. The default value
-                              is 'light'.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -765,9 +669,6 @@ ReactDOM.render(<Sider />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="MenuTheme" />
                       </div>
                     </div>
                   </div>

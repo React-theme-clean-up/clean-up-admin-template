@@ -49,23 +49,12 @@ class ProgressItems extends React.Component {
                           <strong className="text-capitalize">Dynamic circular progress bar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A dynamic progress bar is better.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCircledynamic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A dynamic progress bar is better.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -124,9 +113,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressCircledynamic" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-circle">
                       <div className="card-header">
@@ -134,23 +120,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Circular progress bar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A circular progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCircle" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A circular progress bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -183,9 +158,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressCircle" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-dynamic">
                       <div className="card-header">
@@ -193,23 +165,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Dynamic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A dynamic progress bar is better.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressDynamic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A dynamic progress bar is better.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -268,9 +229,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressDynamic" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-line-mini">
                       <div className="card-header">
@@ -278,23 +236,12 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Mini size progress bar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Appropriate for a narrow area.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressLinemini" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Appropriate for a narrow area.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -328,9 +275,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressLinemini" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-segment">
                       <div className="card-header">
@@ -340,23 +284,12 @@ ReactDOM.render(
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A standard progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressSegment" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A standard progress bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -387,9 +320,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressSegment" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -401,23 +331,12 @@ ReactDOM.render(
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A smaller circular progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCirclemini" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A smaller circular progress bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -450,9 +369,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressCirclemini" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-dashboard">
                       <div className="card-header">
@@ -460,26 +376,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Dashboard</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        By setting <code>{'type=dashboard'}</code>, you can get a dashboard style of
+                        progress easily.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressDashboard" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By setting <code>{'type=dashboard'}</code>, you can get a dashboard
-                              style of progress easily.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -506,9 +411,6 @@ ReactDOM.render(<Progress type="dashboard" percent=\{75\} />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressDashboard" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-format">
                       <div className="card-header">
@@ -516,25 +418,14 @@ ReactDOM.render(<Progress type="dashboard" percent=\{75\} />, mountNode);
                           <strong className="text-capitalize">Custom text format</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can custom text format by setting <code>{'format'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressFormat" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can custom text format by setting <code>{'format'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -566,9 +457,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="ProgressFormat" />
-                      </div>
                     </div>
                     <div className="card" id="components-progress-demo-line">
                       <div className="card-header">
@@ -576,23 +464,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Progress bar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">A standard progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressLine" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A standard progress bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -626,9 +503,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="ProgressLine" />
                       </div>
                     </div>
                   </div>

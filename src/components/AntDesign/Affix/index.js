@@ -37,23 +37,12 @@ class AffixItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The simplest usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="AffixBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The simplest usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -91,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AffixBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-affix-demo-target">
                       <div className="card-header">
@@ -101,26 +87,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Container to</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Set a <code>{'target'}</code> for 'Affix', which is listen to scroll event
+                        of target element (default is <code>{'window'}</code>).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AffixTarget" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Set a <code>{'target'}</code> for 'Affix', which is listen to scroll
-                              event of target element (default is <code>{'window'}</code>).
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -163,9 +138,6 @@ ReactDOM.render(<Demo />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="AffixTarget" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -175,23 +147,12 @@ ReactDOM.render(<Demo />, mountNode);
                           <strong className="text-capitalize">Callback</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Callback with affixed state.</div>
+                      <div className="card-body pb-0">
+                        <div id="AffixOnchange" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Callback with affixed state.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -222,9 +183,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="AffixOnchange" />
                       </div>
                     </div>
                   </div>

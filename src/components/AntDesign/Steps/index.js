@@ -52,25 +52,14 @@ class StepsItems extends React.Component {
                           <strong className="text-capitalize">Customized Dot Style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can customize the display for Steps with progress dot style.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsCustomizedprogressdot" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can customize the display for Steps with progress dot style.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -111,9 +100,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsCustomizedprogressdot" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-icon">
                       <div className="card-header">
@@ -121,26 +107,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">With icon</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can use your own custom icons by setting the property{' '}
+                        <code>{'icon'}</code> for <code>{'Steps.Step'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsIcon" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can use your own custom icons by setting the property{' '}
-                              <code>{'icon'}</code> for <code>{'Steps.Step'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -175,9 +150,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsIcon" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-simple">
                       <div className="card-header">
@@ -185,23 +157,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The most basic step bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="StepsSimple" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The most basic step bar.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -235,9 +196,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsSimple" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-step-next">
                       <div className="card-header">
@@ -245,26 +203,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Switch Step</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Cooperate with the content and buttons, to represent the progress of a
+                        process.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsStepnext" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Cooperate with the content and buttons, to represent the progress of a
-                              process.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -350,9 +297,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsStepnext" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-vertical">
                       <div className="card-header">
@@ -360,23 +304,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A simple step bar in the vertical direction.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsVertical" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple step bar in the vertical direction.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -410,9 +345,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsVertical" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -422,26 +354,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Error status</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        By using <code>{'status'}</code> of <code>{'Steps'}</code>, you can specify
+                        the state for current step.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsError" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By using <code>{'status'}</code> of <code>{'Steps'}</code>, you can
-                              specify the state for current step.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -475,9 +396,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsError" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-progress-dot">
                       <div className="card-header">
@@ -485,23 +403,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Dot Style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Steps with progress dot style.</div>
+                      <div className="card-body pb-0">
+                        <div id="StepsProgressdot" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Steps with progress dot style.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -535,9 +442,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsProgressdot" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-small-size">
                       <div className="card-header">
@@ -545,26 +449,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Mini version</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        By setting like this: <code>{'<Steps size="small">'}</code>, you can get a
+                        mini version.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsSmallsize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By setting like this: <code>{'<Steps size="small">'}</code>, you can
-                              get a mini version.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -598,9 +491,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="StepsSmallsize" />
-                      </div>
                     </div>
                     <div className="card" id="components-steps-demo-vertical-small">
                       <div className="card-header">
@@ -608,23 +498,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Vertical mini version</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A simple mini version step bar in the vertical direction.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="StepsVerticalsmall" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple mini version step bar in the vertical direction.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -657,9 +538,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="StepsVerticalsmall" />
                       </div>
                     </div>
                   </div>

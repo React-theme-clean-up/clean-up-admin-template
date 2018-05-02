@@ -41,23 +41,12 @@ class SwitchItems extends React.Component {
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">The most basic usage.</div>
+                      <div className="card-body pb-0">
+                        <div id="SwitchBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>The most basic usage.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -91,9 +80,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SwitchBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-switch-demo-loading">
                       <div className="card-header">
@@ -101,23 +87,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Loading</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Mark a pending state of switch.</div>
+                      <div className="card-body pb-0">
+                        <div id="SwitchLoading" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Mark a pending state of switch.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -150,9 +125,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SwitchLoading" />
-                      </div>
                     </div>
                     <div className="card" id="components-switch-demo-text">
                       <div className="card-header">
@@ -160,23 +132,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Text</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">With text and icon.</div>
+                      <div className="card-body pb-0">
+                        <div id="SwitchText" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>With text and icon.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -211,9 +172,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SwitchText" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -223,25 +181,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Disabled state of <code>{'Switch'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SwitchDisabled" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Disabled state of <code>{'Switch'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -288,9 +235,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="SwitchDisabled" />
-                      </div>
                     </div>
                     <div className="card" id="components-switch-demo-size">
                       <div className="card-header">
@@ -298,25 +242,14 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Two sizes</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'size="small"'}</code> represents a small sized switch.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="SwitchSize" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'size="small"'}</code> represents a small sized switch.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -348,9 +281,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="SwitchSize" />
                       </div>
                     </div>
                   </div>

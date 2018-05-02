@@ -51,28 +51,17 @@ class GridItems extends React.Component {
                           <strong className="text-capitalize">Basic Grid</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        From the stack to the horizontal arrangement. You can create a basic grid
+                        system by using a single set of <code>{'Row'}</code> and{' '}
+                        <code>{'Col'}</code> grid assembly, all of the columns (Col) must be placed
+                        in <code>{'Row'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              From the stack to the horizontal arrangement. You can create a basic
-                              grid system by using a single set of <code>{'Row'}</code> and{' '}
-                              <code>{'Col'}</code> grid assembly, all of the columns (Col) must be
-                              placed in <code>{'Row'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -118,9 +107,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-flex-order">
                       <div className="card-header">
@@ -128,23 +114,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Flex Order</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        To change the element sort by Flex layout order.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridFlexorder" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>To change the element sort by Flex layout order.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -181,9 +158,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridFlexorder" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-gutter">
                       <div className="card-header">
@@ -191,30 +165,17 @@ ReactDOM.render(
                           <strong className="text-capitalize">Grid Gutter</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can use the <code>{'gutter'}</code> property of <code>{'Row'}</code> as
+                        grid spacing, we recommend set it to <code>{'(16 + 8n) px'}</code>. (<code>{'n'}</code>{' '}
+                        stands for natural number.) You can set it to a object like{' '}
+                        <code>{'{ xs: 8, sm: 16, md: 24, lg: 32 }'}</code> for responsive design.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridGutter" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can use the <code>{'gutter'}</code> property of{' '}
-                              <code>{'Row'}</code> as grid spacing, we recommend set it to{' '}
-                              <code>{'(16 + 8n) px'}</code>. (<code>{'n'}</code> stands for natural
-                              number.) You can set it to a object like{' '}
-                              <code>{'{ xs: 8, sm: 16, md: 24, lg: 32 }'}</code> for responsive
-                              design.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -258,9 +219,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridGutter" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-playground">
                       <div className="card-header">
@@ -268,23 +226,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Playground</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        A simple playground for column count and gutter.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridPlayground" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>A simple playground for column count and gutter.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -375,9 +324,6 @@ ReactDOM.render(<App />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridPlayground" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-responsive">
                       <div className="card-header">
@@ -385,28 +331,17 @@ ReactDOM.render(<App />, mountNode);
                           <strong className="text-capitalize">Responsive</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Referring to the Bootstrap [responsive design]
+                        (http://getbootstrap.com/css/#grid-media-queries), here preset five
+                        dimensions: <code>{'xs'}</code> <code>{'sm'}</code> <code>{'md'}</code>{' '}
+                        <code>{'lg'}</code> <code>{'xl'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridResponsive" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Referring to the Bootstrap [responsive design]
-                              (http://getbootstrap.com/css/#grid-media-queries), here preset five
-                              dimensions: <code>{'xs'}</code> <code>{'sm'}</code>{' '}
-                              <code>{'md'}</code> <code>{'lg'}</code> <code>{'xl'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -439,9 +374,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridResponsive" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -451,23 +383,12 @@ ReactDOM.render(
                           <strong className="text-capitalize">Flex Alignment</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">Flex child elements vertically aligned.</div>
+                      <div className="card-body pb-0">
+                        <div id="GridFlexalign" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>Flex child elements vertically aligned.</div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -523,9 +444,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridFlexalign" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-flex">
                       <div className="card-header">
@@ -533,29 +451,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">Flex Layout</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'row-flex'}</code> define <code>{'flex'}</code> layout, its child
+                        elements depending on the value of the <code>{'start'}</code>,<code>{' center'}</code>,{' '}
+                        <code>{'end'}</code>,<code>{' space-between'}</code>,{' '}
+                        <code>{'space-around'}</code>, which are defined in its parent node layout
+                        mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridFlex" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'row-flex'}</code> define <code>{'flex'}</code> layout, its
-                              child elements depending on the value of the <code>{'start'}</code>,<code>{' center'}</code>,{' '}
-                              <code>{'end'}</code>,<code>{' space-between'}</code>,{' '}
-                              <code>{'space-around'}</code>, which are defined in its parent node
-                              layout mode.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -625,9 +532,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridFlex" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-offset">
                       <div className="card-header">
@@ -635,27 +539,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Column offset</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'Offset'}</code> can set the column to the right side. For example,
+                        using <code>{'offset = {4}'}</code> can set the element shifted to the right
+                        four columns width.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridOffset" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'Offset'}</code> can set the column to the right side. For
-                              example, using <code>{'offset = {4}'}</code> can set the element
-                              shifted to the right four columns width.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -697,9 +590,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridOffset" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-responsive-more">
                       <div className="card-header">
@@ -707,30 +597,18 @@ ReactDOM.render(
                           <strong className="text-capitalize">More responsive</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        <code>{'span'}</code> <code>{'pull'}</code> <code>{'push'}</code>{' '}
+                        <code>{'offset'}</code> <code>{'order'}</code> property can be embedded into{' '}
+                        <code>{'xs'}</code> <code>{'sm'}</code> <code>{'md'}</code>{' '}
+                        <code>{'lg'}</code> <code>{'xl'}</code> properties to use, where{' '}
+                        <code>{'xs = {6}'}</code> is equivalent to <code>{'xs = {{span: 6}}'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridResponsivemore" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              <code>{'span'}</code> <code>{'pull'}</code> <code>{'push'}</code>{' '}
-                              <code>{'offset'}</code> <code>{'order'}</code> property can be
-                              embedded into <code>{'xs'}</code> <code>{'sm'}</code>{' '}
-                              <code>{'md'}</code> <code>{'lg'}</code> <code>{'xl'}</code> properties
-                              to use, where <code>{'xs = {6}'}</code> is equivalent to{' '}
-                              <code>{'xs = {{span: 6}}'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -763,9 +641,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="GridResponsivemore" />
-                      </div>
                     </div>
                     <div className="card" id="components-grid-demo-sort">
                       <div className="card-header">
@@ -773,26 +648,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Grid sort</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        By using <code>{'push'}</code> and<code>{' pull'}</code> class you can
+                        easily change column order.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="GridSort" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              By using <code>{'push'}</code> and<code>{' pull'}</code> class you can
-                              easily change column order.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -826,9 +690,6 @@ ReactDOM.render(
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="GridSort" />
                       </div>
                     </div>
                   </div>

@@ -47,29 +47,17 @@ class UploadItems extends React.Component {
                           <strong className="text-capitalize">Avatar</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Click to upload user's avatar, and validate size and format of picture with{' '}
+                        <code>{'beforeUpload'}</code>. > The return value of function{' '}
+                        <code>{'beforeUpload'}</code> can be a Promise to check asynchronously.
+                        [demo](http://react-component.github.io/upload/examples/beforeUpload.html)
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadAvatar" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Click to upload user's avatar, and validate size and format of picture
-                              with <code>{'beforeUpload'}</code>. > The return value of function{' '}
-                              <code>{'beforeUpload'}</code> can be a Promise to check
-                              asynchronously.
-                              [demo](http://react-component.github.io/upload/examples/beforeUpload.html)
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -155,9 +143,6 @@ ReactDOM.render(<Avatar />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadAvatar" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-defaultFileList">
                       <div className="card-header">
@@ -165,26 +150,14 @@ ReactDOM.render(<Avatar />, mountNode);
                           <strong className="text-capitalize">Default Files</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Use <code>{'defaultFileList'}</code> for uploaded files when page init.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadDefaultFileList" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Use <code>{'defaultFileList'}</code> for uploaded files when page
-                              init.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -244,9 +217,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadDefaultFileList" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-fileList">
                       <div className="card-header">
@@ -256,29 +226,18 @@ ReactDOM.render(
                           </strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can gain full control over filelist by configuring{' '}
+                        <code>{'fileList'}</code>. You can accomplish all kinds of customed
+                        functions. The following shows three circumstances: 1) limit the number of
+                        uploaded files. 2) read from response and show file link. 3) filter
+                        successfully uploaded files according to response from server.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadFileList" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can gain full control over filelist by configuring{' '}
-                              <code>{'fileList'}</code>. You can accomplish all kinds of customed
-                              functions. The following shows three circumstances: 1) limit the
-                              number of uploaded files. 2) read from response and show file link. 3)
-                              filter successfully uploaded files according to response from server.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -356,9 +315,6 @@ ReactDOM.render(<MyUpload />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadFileList" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-picture-style">
                       <div className="card-header">
@@ -366,27 +322,16 @@ ReactDOM.render(<MyUpload />, mountNode);
                           <strong className="text-capitalize">Pictures with list style</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        If uploaded file is a picture, the thumbnail can be shown.{' '}
+                        <code>{'IE8/9'}</code> do not support local thumbnail show. Please use{' '}
+                        <code>{'thumbUrl'}</code> instead.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadPicturestyle" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              If uploaded file is a picture, the thumbnail can be shown.{' '}
-                              <code>{'IE8/9'}</code> do not support local thumbnail show. Please use{' '}
-                              <code>{'thumbUrl'}</code> instead.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -455,9 +400,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadPicturestyle" />
-                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -467,26 +409,14 @@ ReactDOM.render(
                           <strong className="text-capitalize">Upload by clicking</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Classic mode. File selection dialog pops up when upload button is clicked.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadBasic" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Classic mode. File selection dialog pops up when upload button is
-                              clicked.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -537,9 +467,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadBasic" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-drag">
                       <div className="card-header">
@@ -547,28 +474,16 @@ ReactDOM.render(
                           <strong className="text-capitalize">Drag and Drop</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        You can drag files to a specific area, to upload. Alternatively, you can
+                        also upload by selecting. We can upload serveral files at once in modern
+                        browsers by giving the input the <code>{'multiple'}</code> attribute.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadDrag" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              You can drag files to a specific area, to upload. Alternatively, you
-                              can also upload by selecting. We can upload serveral files at once in
-                              modern browsers by giving the input the <code>{'multiple'}</code>{' '}
-                              attribute.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -621,9 +536,6 @@ ReactDOM.render(
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadDrag" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-picture-card">
                       <div className="card-header">
@@ -631,26 +543,15 @@ ReactDOM.render(
                           <strong className="text-capitalize">Pictures Wall</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        After users upload picture, the thumbnail will be shown in list. The upload
+                        button will disappear when count meets limitation.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadPicturecard" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              After users upload picture, the thumbnail will be shown in list. The
-                              upload button will disappear when count meets limitation.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -727,9 +628,6 @@ ReactDOM.render(<PicturesWall />, mountNode);
                           </Panel>
                         </Collapse>
                       </div>
-                      <div className="card-body">
-                        <div id="UploadPicturecard" />
-                      </div>
                     </div>
                     <div className="card" id="components-upload-demo-upload-manually">
                       <div className="card-header">
@@ -737,26 +635,15 @@ ReactDOM.render(<PicturesWall />, mountNode);
                           <strong className="text-capitalize">Upload manually</strong>
                         </h5>
                       </div>
-                      <div className="cat__ant-component-collapse-descr">
+                      <div className="card-body pb-0">
+                        Upload files manually after <code>{'beforeUpload'}</code> returns{' '}
+                        <code>{'false'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="UploadUploadmanually" />
+                      </div>
+                      <div className="cat__core__code-collapse">
                         <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <Icon
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                  type="info-circle-o"
-                                />
-                                <span className="ml-2 text-primary">Description</span>
-                              </span>
-                            }
-                            key="1"
-                            showArrow={false}
-                          >
-                            <div>
-                              Upload files manually after <code>{'beforeUpload'}</code> returns{' '}
-                              <code>{'false'}</code>.
-                            </div>
-                          </Panel>
                           <Panel
                             header={
                               <span>
@@ -866,9 +753,6 @@ ReactDOM.render(<Demo />, mountNode);
                             </SyntaxHighlighter>
                           </Panel>
                         </Collapse>
-                      </div>
-                      <div className="card-body">
-                        <div id="UploadUploadmanually" />
                       </div>
                     </div>
                   </div>
