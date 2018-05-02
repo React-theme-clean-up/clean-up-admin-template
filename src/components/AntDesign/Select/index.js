@@ -1,41 +1,42 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderSelectAutomatictokenization } from './Automatictokenization/index.js'
-import { default as renderSelectBasic } from './Basic/index.js'
-import { default as renderSelectCombobox } from './Combobox/index.js'
-import { default as renderSelectCoordinate } from './Coordinate/index.js'
-import { default as renderSelectLabelinvalue } from './Labelinvalue/index.js'
-import { default as renderSelectMultiple } from './Multiple/index.js'
-import { default as renderSelectOptgroup } from './Optgroup/index.js'
-import { default as renderSelectSearchbox } from './Searchbox/index.js'
-import { default as renderSelectSearch } from './Search/index.js'
-import { default as renderSelectSelectusers } from './Selectusers/index.js'
-import { default as renderSelectSize } from './Size/index.js'
-import { default as renderSelectTags } from './Tags/index.js'
+import { default as renderSelectAutomatictokenization } from './Automatictokenization/index.js';
+import { default as renderSelectBasic } from './Basic/index.js';
+import { default as renderSelectCombobox } from './Combobox/index.js';
+import { default as renderSelectCoordinate } from './Coordinate/index.js';
+import { default as renderSelectLabelinvalue } from './Labelinvalue/index.js';
+import { default as renderSelectMultiple } from './Multiple/index.js';
+import { default as renderSelectOptgroup } from './Optgroup/index.js';
+import { default as renderSelectSearchbox } from './Searchbox/index.js';
+import { default as renderSelectSearch } from './Search/index.js';
+import { default as renderSelectSelectusers } from './Selectusers/index.js';
+import { default as renderSelectSize } from './Size/index.js';
+import { default as renderSelectTags } from './Tags/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class SelectItems extends React.Component {
+
   componentDidMount() {
-    renderSelectAutomatictokenization(
-      ReactDOM,
-      document.getElementById('SelectAutomatictokenization'),
-    )
-    renderSelectBasic(ReactDOM, document.getElementById('SelectBasic'))
-    renderSelectCombobox(ReactDOM, document.getElementById('SelectCombobox'))
-    renderSelectCoordinate(ReactDOM, document.getElementById('SelectCoordinate'))
-    renderSelectLabelinvalue(ReactDOM, document.getElementById('SelectLabelinvalue'))
-    renderSelectMultiple(ReactDOM, document.getElementById('SelectMultiple'))
-    renderSelectOptgroup(ReactDOM, document.getElementById('SelectOptgroup'))
-    renderSelectSearchbox(ReactDOM, document.getElementById('SelectSearchbox'))
-    renderSelectSearch(ReactDOM, document.getElementById('SelectSearch'))
-    renderSelectSelectusers(ReactDOM, document.getElementById('SelectSelectusers'))
-    renderSelectSize(ReactDOM, document.getElementById('SelectSize'))
-    renderSelectTags(ReactDOM, document.getElementById('SelectTags'))
+    renderSelectAutomatictokenization(ReactDOM, document.getElementById("SelectAutomatictokenization"));
+renderSelectBasic(ReactDOM, document.getElementById("SelectBasic"));
+renderSelectCombobox(ReactDOM, document.getElementById("SelectCombobox"));
+renderSelectCoordinate(ReactDOM, document.getElementById("SelectCoordinate"));
+renderSelectLabelinvalue(ReactDOM, document.getElementById("SelectLabelinvalue"));
+renderSelectMultiple(ReactDOM, document.getElementById("SelectMultiple"));
+renderSelectOptgroup(ReactDOM, document.getElementById("SelectOptgroup"));
+renderSelectSearchbox(ReactDOM, document.getElementById("SelectSearchbox"));
+renderSelectSearch(ReactDOM, document.getElementById("SelectSearch"));
+renderSelectSelectusers(ReactDOM, document.getElementById("SelectSelectusers"));
+renderSelectSize(ReactDOM, document.getElementById("SelectSize"));
+renderSelectTags(ReactDOM, document.getElementById("SelectTags"));
+
   }
 
   render() {
@@ -53,39 +54,21 @@ class SelectItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-select-demo-automatic-tokenization">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Automatic tokenization</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Try to copy <code>{'Lucy,Jack'}</code> to the input. Only available in tags
-                        and multiple mode.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectAutomatictokenization" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Automatic tokenization</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Try to copy <code>{'Lucy,Jack'}</code> to the input. Only available in tags and multiple mode.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectAutomatictokenization" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 const children = [];
@@ -108,46 +91,30 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-combobox">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Automatic completion</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Automatic completion of select input. Using the
-                        [AutoComplete](/components/auto-complete/) component is strongly recommended
-                        instead as it is more flexible and capable.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectCombobox" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-combobox">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Automatic completion</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Automatic completion of select input.
+
+Using the [AutoComplete](/components/auto-complete/) component is strongly recommended instead as it is more flexible and capable.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectCombobox" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 class App extends React.Component \{
@@ -184,47 +151,29 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-label-in-value">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Get value of selected item</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        As a default behavior, the onChange callback can only get the value of the
-                        selected item. The labelInValue prop can be used to get the label property
-                        of the selected item. The label of the selected item will be packed as an
-                        object for passing to the onChange callback.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectLabelinvalue" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-label-in-value">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Get value of selected item</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">As a default behavior, the onChange callback can only get the value of the selected item. The labelInValue prop can be used to get the label property of the selected item.
+
+The label of the selected item will be packed as an object for passing to the onChange callback.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectLabelinvalue" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 function handleChange(value) \{
@@ -238,44 +187,27 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-optgroup">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Option Group</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Using <code>{'OptGroup'}</code> to group the options.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectOptgroup" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-optgroup">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Option Group</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Using <code>{'OptGroup'}</code> to group the options.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectOptgroup" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const \{ Option, OptGroup \} = Select;
 
 function handleChange(value) \{
@@ -298,42 +230,27 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-search">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Select with search field</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Search the options while expanded.</div>
-                      <div className="card-body pb-0">
-                        <div id="SelectSearch" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-search">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Select with search field</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Search the options while expanded.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectSearch" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 function handleChange(value) \{
@@ -365,45 +282,27 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-size">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Sizes</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        The height of the input field for the select defaults to 32px. If size is
-                        set to large, the height will be 40px, and if set to small, 24px.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectSize" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select, Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-size">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Sizes</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The height of the input field for the select defaults to 32px. If size is set to large, the height will be 40px, and if set to small, 24px.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectSize" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select, Radio \} from 'antd';
 const Option = Select.Option;
 
 const children = [];
@@ -481,44 +380,30 @@ class SelectSizesDemo extends React.Component \{
 
 ReactDOM.render(<SelectSizesDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-select-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic Usage</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Basic Usage.</div>
-                      <div className="card-body pb-0">
-                        <div id="SelectBasic" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic Usage</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Basic Usage.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 function handleChange(value) \{
@@ -539,47 +424,30 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-coordinate">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">coordinate</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Coordinating the selection of provinces and cities is a common use case and
-                        demonstrates how selection can be coordinated. Using the
-                        [Cascader](/components/cascader) component is strongly recommended instead
-                        as it is more flexible and capable.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectCoordinate" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-coordinate">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">coordinate</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Coordinating the selection of provinces and cities is a common use case and demonstrates how selection can be coordinated.
+
+Using the [Cascader](/components/cascader) component is strongly recommended instead as it is more flexible and capable.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectCoordinate" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 const provinceData = ['Zhejiang', 'Jiangsu'];
@@ -622,44 +490,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-multiple">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">multiple selection</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Multiple selection, selecting from existing items (scroll the menu).
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectMultiple" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-multiple">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">multiple selection</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Multiple selection, selecting from existing items (scroll the menu).
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectMultiple" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 const children = [];
@@ -683,42 +534,27 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-search-box">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Search Box</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Autocomplete with remote ajax data.</div>
-                      <div className="card-body pb-0">
-                        <div id="SelectSearchbox" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-search-box">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Search Box</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Autocomplete with remote ajax data.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectSearchbox" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 import jsonp from 'fetch-jsonp';
 import querystring from 'querystring';
 const Option = Select.Option;
@@ -790,45 +626,27 @@ ReactDOM.render(
   <SearchInput placeholder="input search text" style=\{\{ width\: 200 \}\} />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-select-users">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Search and Select Users</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        A complete multiple select sample with remote search, debounce fetch, ajax
-                        callback order flow, and loading state.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectSelectusers" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select, Spin \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-select-users">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Search and Select Users</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A complete multiple select sample with remote search, debounce fetch, ajax callback order flow, and loading state.
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectSelectusers" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select, Spin \} from 'antd';
 import debounce from 'lodash/debounce';
 const Option = Select.Option;
 
@@ -890,44 +708,27 @@ class UserRemoteSelect extends React.Component \{
 
 ReactDOM.render(<UserRemoteSelect />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-select-demo-tags">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Tags</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Select with tags, transform input to tag (scroll the menu)
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="SelectTags" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Select \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-select-demo-tags">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Tags</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Select with tags, transform input to tag (scroll the menu)
+</div>
+    <div className="card-body pb-0">
+      <div id="SelectTags" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Select \} from 'antd';
 const Option = Select.Option;
 
 const children = [];
@@ -950,11 +751,12 @@ ReactDOM.render(
   </Select>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

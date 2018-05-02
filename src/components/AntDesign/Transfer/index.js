@@ -1,24 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderTransferAdvanced } from './Advanced/index.js'
-import { default as renderTransferBasic } from './Basic/index.js'
-import { default as renderTransferCustomitem } from './Customitem/index.js'
-import { default as renderTransferLargedata } from './Largedata/index.js'
-import { default as renderTransferSearch } from './Search/index.js'
+import { default as renderTransferAdvanced } from './Advanced/index.js';
+import { default as renderTransferBasic } from './Basic/index.js';
+import { default as renderTransferCustomitem } from './Customitem/index.js';
+import { default as renderTransferLargedata } from './Largedata/index.js';
+import { default as renderTransferSearch } from './Search/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class TransferItems extends React.Component {
+
   componentDidMount() {
-    renderTransferAdvanced(ReactDOM, document.getElementById('TransferAdvanced'))
-    renderTransferBasic(ReactDOM, document.getElementById('TransferBasic'))
-    renderTransferCustomitem(ReactDOM, document.getElementById('TransferCustomitem'))
-    renderTransferLargedata(ReactDOM, document.getElementById('TransferLargedata'))
-    renderTransferSearch(ReactDOM, document.getElementById('TransferSearch'))
+    renderTransferAdvanced(ReactDOM, document.getElementById("TransferAdvanced"));
+renderTransferBasic(ReactDOM, document.getElementById("TransferBasic"));
+renderTransferCustomitem(ReactDOM, document.getElementById("TransferCustomitem"));
+renderTransferLargedata(ReactDOM, document.getElementById("TransferLargedata"));
+renderTransferSearch(ReactDOM, document.getElementById("TransferSearch"));
+
   }
 
   render() {
@@ -36,40 +40,23 @@ class TransferItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-transfer-demo-advanced">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Advanced</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Advanced Usage of Transfer. You can customize the labels of the transfer
-                        buttons, the width and height of the columns, and what should be displayed
-                        in the footer.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TransferAdvanced" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Transfer, Button \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Advanced</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Advanced Usage of Transfer.
+
+You can customize the labels of the transfer buttons, the width and height of the columns, and what should be displayed in the footer.
+</div>
+    <div className="card-body pb-0">
+      <div id="TransferAdvanced" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Transfer, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -131,45 +118,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-transfer-demo-custom-item">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Custom datasource</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Custom each Transfer Item, and in this way you can render a complex
-                        datasource.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TransferCustomitem" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Transfer \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-transfer-demo-custom-item">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Custom datasource</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Custom each Transfer Item, and in this way you can render a complex datasource.
+</div>
+    <div className="card-body pb-0">
+      <div id="TransferCustomitem" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Transfer \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -230,42 +199,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-transfer-demo-search">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Search</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Transfer with a search box.</div>
-                      <div className="card-body pb-0">
-                        <div id="TransferSearch" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Transfer \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-transfer-demo-search">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Search</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Transfer with a search box.
+</div>
+    <div className="card-body pb-0">
+      <div id="TransferSearch" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Transfer \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -314,48 +268,30 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-transfer-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        The most basic usage of <code>{'Transfer'}</code> involves providing the
-                        source data and target keys arrays, plus the rendering and some callback
-                        functions.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TransferBasic" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Transfer \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The most basic usage of <code>{'Transfer'}</code> involves providing the source data and target keys arrays, plus the rendering and some callback functions.
+</div>
+    <div className="card-body pb-0">
+      <div id="TransferBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Transfer \} from 'antd';
 
 const mockData = [];
 for (let i = 0; i < 20; i++) \{
@@ -416,42 +352,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-transfer-demo-large-data">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Performance Test</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">2000 items.</div>
-                      <div className="card-body pb-0">
-                        <div id="TransferLargedata" />
-                      </div>
-                      <div className="cat__core__code-collapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Transfer \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-transfer-demo-large-data">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Performance Test</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">2000 items.
+</div>
+    <div className="card-body pb-0">
+      <div id="TransferLargedata" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Transfer \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -496,11 +417,12 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

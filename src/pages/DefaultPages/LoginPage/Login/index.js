@@ -7,7 +7,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="login" style={{ backgroundImage: 'url(resources/images/login/4.jpg)' }}>
+      <div className="login login--fullscreen" style={{ backgroundImage: 'url(resources/images/login/4.jpg)' }}>
         <div className="login__header">
           <div className="row">
             <div className="col-lg-12">
@@ -22,7 +22,7 @@ class Login extends React.Component {
             </div>
           </div>
         </div>
-        <div className="login__block login__block--pb200">
+        <div className="login__block pb-0">
           <div className="row">
             <div className="col-xl-12">
               <div className="login__block__promo text-white text-center">
