@@ -1,28 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderTagBasic } from './Basic/index.js';
-import { default as renderTagCheckable } from './Checkable/index.js';
-import { default as renderTagColorful } from './Colorful/index.js';
-import { default as renderTagControl } from './Control/index.js';
-import { default as renderTagHottags } from './Hottags/index.js';
+import { default as renderTagBasic } from './Basic/index.js'
+import { default as renderTagCheckable } from './Checkable/index.js'
+import { default as renderTagColorful } from './Colorful/index.js'
+import { default as renderTagControl } from './Control/index.js'
+import { default as renderTagHottags } from './Hottags/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class TagItems extends React.Component {
-
   componentDidMount() {
-    renderTagBasic(ReactDOM, document.getElementById("TagBasic"));
-renderTagCheckable(ReactDOM, document.getElementById("TagCheckable"));
-renderTagColorful(ReactDOM, document.getElementById("TagColorful"));
-renderTagControl(ReactDOM, document.getElementById("TagControl"));
-renderTagHottags(ReactDOM, document.getElementById("TagHottags"));
-
+    renderTagBasic(ReactDOM, document.getElementById('TagBasic'))
+    renderTagCheckable(ReactDOM, document.getElementById('TagCheckable'))
+    renderTagColorful(ReactDOM, document.getElementById('TagColorful'))
+    renderTagControl(ReactDOM, document.getElementById('TagControl'))
+    renderTagHottags(ReactDOM, document.getElementById('TagHottags'))
   }
 
   render() {
@@ -40,21 +36,40 @@ renderTagHottags(ReactDOM, document.getElementById("TagHottags"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-tag-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Usage of basic Tag, and it could be closable by set <code>{'closable'}</code> property. Closable Tag supports <code>{'onClose'}</code> <code>{'afterClose'}</code> events.
-</div>
-    <div className="card-body pb-0">
-      <div id="TagBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tag \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Usage of basic Tag, and it could be closable by set{' '}
+                        <code>{'closable'}</code> property. Closable Tag supports{' '}
+                        <code>{'onClose'}</code> <code>{'afterClose'}</code> events.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tag \} from 'antd';
 
 function log(e) \{
   console.log(e);
@@ -75,28 +90,45 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tag-demo-colorful">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Colorful Tag</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">We preset a series of colorful tag style for different situation usage.
-And you can always set it to a hex color string for custom color.
-</div>
-    <div className="card-body pb-0">
-      <div id="TagColorful" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tag \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tag-demo-colorful">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Colorful Tag</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        We preset a series of colorful tag style for different situation usage. And
+                        you can always set it to a hex color string for custom color.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagColorful" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tag \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -124,27 +156,42 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tag-demo-hot-tags">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Hot Tags</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Select your favourite topics.
-</div>
-    <div className="card-body pb-0">
-      <div id="TagHottags" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tag \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tag-demo-hot-tags">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Hot Tags</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Select your favourite topics.</div>
+                      <div className="card-body pb-0">
+                        <div id="TagHottags" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tag \} from 'antd';
 const CheckableTag = Tag.CheckableTag;
 
 const tagsFromServer = ['Movies', 'Books', 'Music', 'Sports'];
@@ -184,32 +231,48 @@ class HotTags extends React.Component \{
 
 ReactDOM.render(<HotTags />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-tag-demo-checkable">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Checkable</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0"><code>{'CheckableTag'}</code> works like Checkbox, click it to toggle checked state.
-
-> it is an absolute controlled component and has no uncontrolled mode.
-</div>
-    <div className="card-body pb-0">
-      <div id="TagCheckable" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tag \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Checkable</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        <code>{'CheckableTag'}</code> works like Checkbox, click it to toggle
+                        checked state. > it is an absolute controlled component and has no
+                        uncontrolled mode.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagCheckable" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tag \} from 'antd';
 const \{ CheckableTag \} = Tag;
 
 class MyTag extends React.Component \{
@@ -230,28 +293,46 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-tag-demo-control">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Add</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Generating a set of Tags by array, you can add and remove dynamically.
-It's based on <code>{'afterClose'}</code> event, which will be triggered while the close animation end.
-</div>
-    <div className="card-body pb-0">
-      <div id="TagControl" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tag, Input, Tooltip, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-tag-demo-control">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Add</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Generating a set of Tags by array, you can add and remove dynamically. It's
+                        based on <code>{'afterClose'}</code> event, which will be triggered while
+                        the close animation end.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="TagControl" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tag, Input, Tooltip, Icon \} from 'antd';
 
 class EditableTagGroup extends React.Component \{
   state = \{
@@ -331,12 +412,11 @@ class EditableTagGroup extends React.Component \{
 
 ReactDOM.render(<EditableTagGroup />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

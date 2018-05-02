@@ -7,7 +7,10 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="login login--fullscreen" style={{ backgroundImage: 'url(resources/images/login/4.jpg)' }}>
+      <div
+        className="login login--fullscreen"
+        style={{ backgroundImage: 'url(resources/images/login/4.jpg)' }}
+      >
         <div className="login__header">
           <div className="row">
             <div className="col-lg-12">

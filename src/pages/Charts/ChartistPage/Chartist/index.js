@@ -14,7 +14,7 @@ const animationData = {
 
 const animatonOptions = {
   axisX: {
-    labelInterpolationFnc: function (value, index) {
+    labelInterpolationFnc: function(value, index) {
       return index % 2 !== 0 ? !1 : value
     },
   },
@@ -37,10 +37,10 @@ let smilOptions = {
 }
 
 let smilListener = {
-  created: function () {
+  created: function() {
     smilOptions.seq = 0
   },
-  draw: function (data) {
+  draw: function(data) {
     let delays = 80
     let durations = 500
 
@@ -114,8 +114,8 @@ let smilListener = {
         },
         ctAnimations = {}
       ;(ctAnimations[data.axis.units.pos + '1'] = pos1Animation), (ctAnimations[
-      data.axis.units.pos + '2'
-        ] = pos2Animation), (ctAnimations.opacity = {
+        data.axis.units.pos + '2'
+      ] = pos2Animation), (ctAnimations.opacity = {
         begin: smilOptions.seq * delays,
         dur: durations,
         from: 0,
@@ -150,49 +150,49 @@ let areaOptions = {
   plugins: [Chartist.plugins.tooltip()],
 }
 
-let scatterTimes = function (n) {
-  return Array.apply(null, new Array(n));
-};
+let scatterTimes = function(n) {
+  return Array.apply(null, new Array(n))
+}
 
-let scatterData = scatterTimes(52).map(Math.random).reduce(function (scatterData, rnd, index) {
-  scatterData.labels.push(index + 1);
-  scatterData.series.forEach(function (series) {
+let scatterData = scatterTimes(52).map(Math.random).reduce(function(scatterData, rnd, index) {
+  scatterData.labels.push(index + 1)
+  scatterData.series.forEach(function(series) {
     series.push(Math.random() * 100)
-  });
-  return scatterData;
+  })
+  return scatterData
 }, {
   labels: [],
-  series: scatterTimes(4).map(function () {
+  series: scatterTimes(4).map(function() {
     return new Array()
-  })
+  }),
 })
 
 let scatterOptions = {
   showLine: false,
   axisX: {
-    labelInterpolationFnc: function (value, index) {
-      return index % 13 === 0 ? 'W' + value : null;
-    }
+    labelInterpolationFnc: function(value, index) {
+      return index % 13 === 0 ? 'W' + value : null
+    },
   },
   plugins: [Chartist.plugins.tooltip()],
 }
 
 let scatterResponsiveOptions = [
-  ['screen and (min-width: 640px)', {
-    axisX: {
-      labelInterpolationFnc: function (value, index) {
-        return index % 4 === 0 ? 'W' + value : null;
-      }
-    }
-  }]
+  [
+    'screen and (min-width: 640px)',
+    {
+      axisX: {
+        labelInterpolationFnc: function(value, index) {
+          return index % 4 === 0 ? 'W' + value : null
+        },
+      },
+    },
+  ],
 ]
 
 let horizontalData = {
-  labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-  series: [
-    [5, 4, 3, 7, 5, 10, 3],
-    [3, 2, 9, 5, 4, 6, 4]
-  ]
+  labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  series: [[5, 4, 3, 7, 5, 10, 3], [3, 2, 9, 5, 4, 6, 4]],
 }
 
 let horizontalOptions = {
@@ -200,11 +200,9 @@ let horizontalOptions = {
   reverseData: !0,
   horizontalBars: !0,
   axisY: {
-    offset: 70
+    offset: 70,
   },
-  plugins: [
-    Chartist.plugins.tooltip()
-  ]
+  plugins: [Chartist.plugins.tooltip()],
 }
 
 let biPolarLineData = {
@@ -213,8 +211,8 @@ let biPolarLineData = {
     [1, 2, 3, 1, -2, 0, 1, 0],
     [-2, -1, -2, -1, -2.5, -1, -2, -1],
     [0, 0, 0, 1, 2, 2.5, 2, 1],
-    [2.5, 2, 1, .5, 1, .5, -1, -2.5]
-  ]
+    [2.5, 2, 1, 0.5, 1, 0.5, -1, -2.5],
+  ],
 }
 
 let biPolarLineOptions = {
@@ -226,114 +224,107 @@ let biPolarLineOptions = {
   fullWidth: !0,
   axisX: {
     showLabel: false,
-    showGrid: false
+    showGrid: false,
   },
-  plugins: [
-    Chartist.plugins.tooltip()
-  ]
+  plugins: [Chartist.plugins.tooltip()],
 }
 
 let biPolarBarData = {
-  labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10"],
-  series: [
-    [1, 2, 4, 8, 6, -2, -1, -4, -6, -2]
-  ]
+  labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
+  series: [[1, 2, 4, 8, 6, -2, -1, -4, -6, -2]],
 }
 
 let biPolarBarOptions = {
   high: 10,
   low: -10,
   axisX: {
-    labelInterpolationFnc: function (value, index) {
+    labelInterpolationFnc: function(value, index) {
       return index % 2 === 0 ? value : null
-    }
+    },
   },
-  plugins: [
-    Chartist.plugins.tooltip()
-  ]
+  plugins: [Chartist.plugins.tooltip()],
 }
 
 let stackedBarData = {
-  labels: ["Q1", "Q2", "Q3", "Q4"],
-  series: [
-    [8e5, 12e5, 14e5, 13e5],
-    [2e5, 4e5, 5e5, 3e5],
-    [1e5, 2e5, 4e5, 6e5]
-  ]
+  labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+  series: [[8e5, 12e5, 14e5, 13e5], [2e5, 4e5, 5e5, 3e5], [1e5, 2e5, 4e5, 6e5]],
 }
 
 let stackedBarOptions = {
   stackBars: !0,
   axisY: {
-    labelInterpolationFnc: function (value) {
-      return value / 1e3 + "k"
-    }
+    labelInterpolationFnc: function(value) {
+      return value / 1e3 + 'k'
+    },
   },
-  plugins: [
-    Chartist.plugins.tooltip()
-  ]
+  plugins: [Chartist.plugins.tooltip()],
 }
 
 let stackedBarListener = {
-  draw: function (data) {
-    "bar" === data.type && data.element.attr({
-      style: "stroke-width: 30px"
-    })
-  }
+  draw: function(data) {
+    'bar' === data.type &&
+      data.element.attr({
+        style: 'stroke-width: 30px',
+      })
+  },
 }
 
 let overlappingBarData = {
-  labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  series: [
-    [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
-    [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
-  ]
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  series: [[5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8], [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]],
 }
 
 let overlappingBarOptions = {
   seriesBarDistance: 10,
-  plugins: [
-    Chartist.plugins.tooltip()
-  ]
+  plugins: [Chartist.plugins.tooltip()],
 }
 
 let overlappingResponsiveOptions = [
-  ["", {
-    seriesBarDistance: 5,
-    axisX: {
-      labelInterpolationFnc: function (value) {
-        return value[0]
-      }
-    }
-  }]
+  [
+    '',
+    {
+      seriesBarDistance: 5,
+      axisX: {
+        labelInterpolationFnc: function(value) {
+          return value[0]
+        },
+      },
+    },
+  ],
 ]
 
 let labelsPieData = {
-  labels: ["Bananas", "Apples", "Grapes"],
-  series: [20, 15, 40]
+  labels: ['Bananas', 'Apples', 'Grapes'],
+  series: [20, 15, 40],
 }
 let labelsPieOptions = {
-  labelInterpolationFnc: function (value) {
+  labelInterpolationFnc: function(value) {
     return value[0]
-  }
+  },
 }
 let labelsPieResponsiveOptions = [
-  ["screen and (min-width: 640px)", {
-    chartPadding: 30,
-    labelOffset: 100,
-    labelDirection: "explode",
-    labelInterpolationFnc: function (value) {
-      return value
-    }
-  }],
-  ["screen and (min-width: 1024px)", {
-    labelOffset: 80,
-    chartPadding: 20
-  }]
-];
+  [
+    'screen and (min-width: 640px)',
+    {
+      chartPadding: 30,
+      labelOffset: 100,
+      labelDirection: 'explode',
+      labelInterpolationFnc: function(value) {
+        return value
+      },
+    },
+  ],
+  [
+    'screen and (min-width: 1024px)',
+    {
+      labelOffset: 80,
+      chartPadding: 20,
+    },
+  ],
+]
 
 let simplePieData = {
-  series: [5, 3, 4]
+  series: [5, 3, 4],
 }
 
 let simplePieSum = function(a, b) {
@@ -342,8 +333,8 @@ let simplePieSum = function(a, b) {
 
 let simplePieOptions = {
   labelInterpolationFnc: function(value) {
-    return Math.round(value / simplePieData.series.reduce(simplePieSum) * 100) + "%"
-  }
+    return Math.round(value / simplePieData.series.reduce(simplePieSum) * 100) + '%'
+  },
 }
 
 class ChartistsItems extends React.Component {
@@ -358,7 +349,7 @@ class ChartistsItems extends React.Component {
               target="_blank"
               className="btn btn-sm btn-primary ml-2"
             >
-              Official Documentation <i className="icmn-link ml-1"/>
+              Official Documentation <i className="icmn-link ml-1" />
             </a>
           </span>
         </div>
@@ -373,7 +364,7 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
@@ -395,7 +386,7 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
@@ -420,7 +411,7 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
@@ -442,7 +433,7 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
@@ -466,7 +457,7 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
@@ -489,12 +480,17 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" type="Bar" data={horizontalData} options={horizontalOptions}/>
+                <ChartistGraph
+                  className="height-300"
+                  type="Bar"
+                  data={horizontalData}
+                  options={horizontalOptions}
+                />
               </div>
             </div>
           </div>
@@ -508,12 +504,17 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={biPolarLineData} options={biPolarLineOptions} type="Line"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={biPolarLineData}
+                  options={biPolarLineOptions}
+                  type="Line"
+                />
               </div>
             </div>
             <div className="col-lg-6">
@@ -525,12 +526,17 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={biPolarBarData} options={biPolarBarOptions} type="Bar"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={biPolarBarData}
+                  options={biPolarBarOptions}
+                  type="Bar"
+                />
               </div>
             </div>
           </div>
@@ -544,13 +550,18 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={stackedBarData} options={stackedBarOptions}
-                               listener={stackedBarListener} type="Bar"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={stackedBarData}
+                  options={stackedBarOptions}
+                  listener={stackedBarListener}
+                  type="Bar"
+                />
               </div>
             </div>
             <div className="col-lg-6">
@@ -562,12 +573,18 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={overlappingBarData} options={overlappingBarOptions} responsive-options={overlappingResponsiveOptions} type="Bar"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={overlappingBarData}
+                  options={overlappingBarOptions}
+                  responsive-options={overlappingResponsiveOptions}
+                  type="Bar"
+                />
               </div>
             </div>
           </div>
@@ -581,12 +598,17 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={simplePieData} options={simplePieOptions} type="Pie"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={simplePieData}
+                  options={simplePieOptions}
+                  type="Pie"
+                />
               </div>
             </div>
             <div className="col-lg-6">
@@ -598,12 +620,18 @@ class ChartistsItems extends React.Component {
                 <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
                   official documentation
                   <small>
-                    <i className="icmn-link ml-1"/>
+                    <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <ChartistGraph className="height-300" data={labelsPieData} options={labelsPieOptions} responsive-options={labelsPieResponsiveOptions} type="Pie"/>
+                <ChartistGraph
+                  className="height-300"
+                  data={labelsPieData}
+                  options={labelsPieOptions}
+                  responsive-options={labelsPieResponsiveOptions}
+                  type="Pie"
+                />
               </div>
             </div>
           </div>
