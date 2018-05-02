@@ -6,7 +6,7 @@ class Utilities extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Utilities</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/"
@@ -15,7 +15,7 @@ class Utilities extends React.Component {
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <div className="alert alert-warning" role="alert">
@@ -283,13 +283,13 @@ class Utilities extends React.Component {
                     <tbody>
                       <tr>
                         <td className="text-nowrap">
-                          <code>.cat__core__link--underlined</code>
+                          <code>.utils__link--underlined</code>
                         </td>
                         <td>
                           <a
                             href="javascript: void(0)"
                             target="_blank"
-                            className="cat__core__link--underlined"
+                            className="utils__link--underlined"
                           >
                             Underlined Link
                           </a>
@@ -297,13 +297,13 @@ class Utilities extends React.Component {
                       </tr>
                       <tr>
                         <td className="text-nowrap">
-                          <code>.cat__core__link--blue</code>
+                          <code>.utils__link--blue</code>
                         </td>
                         <td>
                           <a
                             href="javascript: void(0)"
                             target="_blank"
-                            className="cat__core__link--blue"
+                            className="utils__link--blue"
                           >
                             Blue Link
                           </a>
@@ -311,13 +311,13 @@ class Utilities extends React.Component {
                       </tr>
                       <tr>
                         <td className="text-nowrap">
-                          <code>.cat__core__link--underlined.cat__core__link--blue</code>
+                          <code>.utils__link--underlined.cat__core__link--blue</code>
                         </td>
                         <td>
                           <a
                             href="javascript: void(0)"
                             target="_blank"
-                            className="cat__core__link--underlined cat__core__link--blue"
+                            className="utils__link--underlined utils__link--blue"
                           >
                             Underlined and Blue Link
                           </a>
@@ -412,7 +412,7 @@ class Utilities extends React.Component {
                     </table>
                   </div>
                   <br />
-                  <div className="cat__core__example">
+                  <div className="utils__example">
                     <p className="text-lowercase">Lowercased text</p>
                     <p className="text-uppercase">Uppercased text</p>
                     <p className="text-capitalize">Capitalized text</p>
@@ -458,7 +458,7 @@ class Utilities extends React.Component {
                     </tbody>
                   </table>
                   <br />
-                  <div className="cat__core__example">
+                  <div className="utils__example">
                     <div className="row">
                       <div className="col-md-4">
                         <div
@@ -610,7 +610,7 @@ class Utilities extends React.Component {
                     </tbody>
                   </table>
                   <br />
-                  <div className="cat__core__example">
+                  <div className="utils__example">
                     <p className="text-left">Left aligned text</p>
                     <p className="text-center">Center aligned text</p>
                     <p className="text-right">Right aligned text</p>

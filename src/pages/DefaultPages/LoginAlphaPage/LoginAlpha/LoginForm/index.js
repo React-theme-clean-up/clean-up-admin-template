@@ -58,7 +58,7 @@ class LoginFormComponent extends React.Component {
             Sign in
           </Button>
           <span className="ml-3 register-link">
-            <a href="javascript: void(0);" className="text-primary cat__core__link--underlined">
+            <a href={null} className="text-primary utils__link--underlined">
               Register
             </a>{' '}
             if you don't have account
@@ -67,16 +67,16 @@ class LoginFormComponent extends React.Component {
         <div className="form-group">
           <span>Use another service to Log In</span>
           <div className="mt-2">
-            <a href="javascript: void(0);" className="btn btn-icon mr-2">
+            <a href={null} className="btn btn-icon mr-2">
               <i className="icmn-facebook" />
             </a>
-            <a href="javascript: void(0);" className="btn btn-icon mr-2">
+            <a href={null} className="btn btn-icon mr-2">
               <i className="icmn-google" />
             </a>
-            <a href="javascript: void(0);" className="btn btn-icon mr-2">
+            <a href={null} className="btn btn-icon mr-2">
               <i className="icmn-windows" />
             </a>
-            <a href="javascript: void(0);" className="btn btn-icon mr-2">
+            <a href={null} className="btn btn-icon mr-2">
               <i className="icmn-twitter" />
             </a>
           </div>

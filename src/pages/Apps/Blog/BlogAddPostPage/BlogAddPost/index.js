@@ -7,9 +7,9 @@ class BlogAddPost extends React.Component {
     return (
       <section className="card">
         <div className="card-header mb-2">
-          <div className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Post Add/Edit</strong>
-          </div>
+          </h5>>
         </div>
         <div className="card-block">
           <div className="add-post">

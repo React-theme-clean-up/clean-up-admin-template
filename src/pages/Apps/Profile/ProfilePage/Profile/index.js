@@ -265,7 +265,7 @@ class ProfileApp extends React.Component {
                                 className="mb-3"
                               />
                               <div className="mr-3">
-                                <a href="javascript: void(0);" className="mr-3">
+                                <a href={null} className="mr-3">
                                   <i className="icmn-heart mr-2" />
                                   {post.likesCount > 0 &&
                                     <span>
@@ -276,7 +276,7 @@ class ProfileApp extends React.Component {
                                       {post.likesCount + ' Like'}
                                     </span>}
                                 </a>
-                                <a href="javascript: void(0);">
+                                <a href={null}>
                                   <i className="icmn-bubble mr-2" />
                                   {post.commentsCount > 0 &&
                                     <span>
@@ -315,7 +315,7 @@ class ProfileApp extends React.Component {
                                         dangerouslySetInnerHTML={{ __html: postComment.content }}
                                       />
                                       <div>
-                                        <a href="javascript: void(0);" className="mr-2">
+                                        <a href={null} className="mr-2">
                                           <i className="icmn-heart mr-2" />
                                           {postComment.likesCount > 0 &&
                                             <span>

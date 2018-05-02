@@ -86,7 +86,7 @@ class ProductsList extends React.Component {
         dataIndex: 'id',
         key: 'id',
         render: text =>
-          <a className="cat__core__link--underlined" href="#">
+          <a className="utils__link--underlined" href="#">
             {'#' + text}
           </a>,
         sorter: (a, b) => a.id - b.id,
@@ -96,7 +96,7 @@ class ProductsList extends React.Component {
         dataIndex: 'thumbnail',
         key: 'thumbnail',
         render: text =>
-          <a href="javascript: void(0);" className="productsList__thumbnail">
+          <a href={null} className="productsList__thumbnail">
             <img src={text} />
           </a>,
       },
@@ -106,7 +106,7 @@ class ProductsList extends React.Component {
         key: 'name',
         sorter: (a, b) => a.name.length - b.name.length,
         render: text =>
-          <a className="cat__core__link--underlined" href="#">
+          <a className="utils__link--underlined" href="#">
             {text}
           </a>,
         filterDropdown: (
@@ -194,9 +194,9 @@ class ProductsList extends React.Component {
     return (
       <div className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Products List</strong>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <Table

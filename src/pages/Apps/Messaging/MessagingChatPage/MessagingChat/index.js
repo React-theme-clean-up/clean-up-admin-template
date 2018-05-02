@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, Radio, Input, Menu, Dropdown, Button, Icon } from 'antd'
+import { Tabs, Input, Menu, Dropdown, Button, Icon } from 'antd'
 import Avatar from 'components/Clean/Avatar'
 import './style.css'
 import data from './data.json'

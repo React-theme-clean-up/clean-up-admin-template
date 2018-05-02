@@ -29,7 +29,7 @@ class GridCard extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Cards</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/components/card/"
@@ -38,7 +38,7 @@ class GridCard extends React.Component {
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <span>Default Card Body</span>
@@ -51,7 +51,7 @@ class GridCard extends React.Component {
           <div className="card-header">
             <div className="pull-right mt-2">
               <span className="mr-3">
-                User: <a href="javascript: void(0);">Administrator</a>
+                User: <a href={null}>Administrator</a>
               </span>
               <div className="d-inline-block">
                 <Dropdown overlay={dropdownMenu}>
@@ -63,9 +63,9 @@ class GridCard extends React.Component {
                 </Dropdown>
               </div>
             </div>
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Default Card Heading w/ Controls</strong>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <span>Default Card Body</span>
@@ -78,9 +78,9 @@ class GridCard extends React.Component {
           <div className="col-lg-4">
             <section className="card">
               <div className="card-header">
-                <span className="cat__core__title">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Card in Grid</strong>
-                </span>
+                </h5>
               </div>
               <div className="card-body">
                 <span>
@@ -95,9 +95,9 @@ class GridCard extends React.Component {
           <div className="col-lg-8">
             <section className="card">
               <div className="card-header">
-                <span className="cat__core__title">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Card in Grid</strong>
-                </span>
+                </h5>
               </div>
               <div className="card-body">
                 <span>
@@ -112,23 +112,23 @@ class GridCard extends React.Component {
         </section>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Nested Cards</strong>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <section className="card">
               <div className="card-header">
-                <span className="cat__core__title">
+                <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Nested Card Heading: Level 1</strong>
-                </span>
+                </h5>
               </div>
               <div className="card-body">
                 <section className="card">
                   <div className="card-header">
-                    <span className="cat__core__title">
+                    <h5 className="mb-0 mr-3 d-inline-block text-black">
                       <strong>Nested Card Heading: Level 2</strong>
-                    </span>
+                    </h5>
                   </div>
                   <div className="card-body">
                     <span>Nested Card body: Level 2</span>
@@ -139,9 +139,9 @@ class GridCard extends React.Component {
                 </section>
                 <section className="card">
                   <div className="card-header">
-                    <span className="cat__core__title">
+                    <h5 className="mb-0 mr-3 d-inline-block text-black">
                       <strong>Nested Card Heading: Level 2</strong>
-                    </span>
+                    </h5>
                   </div>
                   <div className="card-body">
                     <span>Nested Card body: Level 2</span>

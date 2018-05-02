@@ -143,7 +143,7 @@ class GitHubDiscuss extends React.Component {
                               dangerouslySetInnerHTML={{ __html: comment.content }}
                             />
                             <div className="discuss__comment-bottom">
-                              <a href="javascript: void(0);" className="mr-2">
+                              <a href={null} className="mr-2">
                                 <i className="icmn-heart mr-1" />
                                 {comment.likesCount > 0 &&
                                   <span>
@@ -154,7 +154,7 @@ class GitHubDiscuss extends React.Component {
                                     {comment.likesCount + ' Like'}
                                   </span>}
                               </a>
-                              <a href="javascript: void(0);" className="mr-2">
+                              <a href={null} className="mr-2">
                                 <i className="icmn-reply mr-1" />
                                 Reply
                               </a>

@@ -44,7 +44,7 @@ class Avatar extends React.Component {
     return (
       <a
         className={'d-block mx-auto ' + className}
-        href={''}
+        href={null}
         style={{
           borderColor: borderColor,
         }}

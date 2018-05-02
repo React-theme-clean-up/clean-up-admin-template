@@ -35,7 +35,7 @@ class UnlockForm extends React.Component {
           </button>
         </div>
         <div className="text-center">
-          <a href="javascript: void(0);" className="text-default">
+          <a href={null} className="text-default">
             Or sign in as a different user
           </a>
         </div>

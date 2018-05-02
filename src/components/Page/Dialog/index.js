@@ -64,7 +64,7 @@ class Dialog extends React.Component {
       <Modal
         key={isDialogForm}
         title={title}
-        wrapClassName="rfq__ant__modal"
+        wrapClassName="ant-modal-centered"
         visible={isOpen}
         onCancel={close}
         footer={null}

@@ -102,7 +102,7 @@ class YouTubeView extends React.Component {
                             {comment.content}
                           </p>
                           <div className="video-page__comment-like">
-                            <a className="mr-2" href="javascript: void(0);">
+                            <a className="mr-2" href={null}>
                               <i className="icmn-heart mr-2" />
                               {comment.likesCount > 0 &&
                                 <span>

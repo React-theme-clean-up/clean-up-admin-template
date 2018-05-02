@@ -94,7 +94,7 @@ class InfoCard extends React.Component {
               <div className="mb-2">
                 <p>Lorem Ipsum is simply dummy text of printing the printing and typesetti...</p>
               </div>
-              <a href={''} className={'btn btn-outline-' + btnType}>
+              <a href={null} className={'btn btn-outline-' + btnType}>
                 Information
               </a>
             </div>

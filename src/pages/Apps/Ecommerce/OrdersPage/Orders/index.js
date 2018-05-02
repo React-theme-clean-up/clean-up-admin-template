@@ -85,7 +85,7 @@ class Orders extends React.Component {
         dataIndex: 'id',
         key: 'id',
         render: text =>
-          <a className="cat__core__link--underlined" href="#">
+          <a className="utils__link--underlined" href="#">
             {'#' + text}
           </a>,
         sorter: (a, b) => a.id - b.id,
@@ -101,7 +101,7 @@ class Orders extends React.Component {
         key: 'customer',
         sorter: (a, b) => a.name.length - b.name.length,
         render: text =>
-          <a className="cat__core__link--underlined" href="#">
+          <a className="utils__link--underlined" href="#">
             {text}
           </a>,
         filterDropdown: (
@@ -194,9 +194,9 @@ class Orders extends React.Component {
     return (
       <div className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Orders</strong>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <Table
