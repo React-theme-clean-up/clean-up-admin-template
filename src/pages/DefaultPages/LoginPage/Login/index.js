@@ -2,13 +2,12 @@ import React from 'react'
 import LoginForm from './LoginForm'
 import './style.css'
 
-
 class Login extends React.Component {
   state = {}
 
   render() {
     return (
-      <div className="login" style={{ backgroundImage: 'url(resources/images/login/4.jpg)', }}>
+      <div className="login" style={{ backgroundImage: 'url(resources/images/login/4.jpg)' }}>
         <div className="login__header">
           <div className="row">
             <div className="col-lg-12">
