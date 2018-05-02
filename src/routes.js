@@ -15,12 +15,12 @@ const loadable = loader =>
 
 const loadableRoutes = {
   // Default Pages
-  // '/login': {
-  //   component: loadable(() => import('pages/DefaultPages/LoginPage')),
-  // },
-  // '/pages/login-alpha': {
-  //   component: loadable(() => import('pages/DefaultPages/LoginAlphaPage')),
-  // },
+  '/login': {
+    component: loadable(() => import('pages/DefaultPages/LoginPage')),
+  },
+  '/pages/login-alpha': {
+    component: loadable(() => import('pages/DefaultPages/LoginAlphaPage')),
+  },
   // '/pages/login-beta': {
   //   component: loadable(() => import('pages/DefaultPages/LoginBetaPage')),
   // },
@@ -41,9 +41,9 @@ const loadableRoutes = {
   // },
   //
   // // Dashboards
-  // '/dashboard/alpha': {
-  //   component: loadable(() => import('pages/Dashboard/DashboardAlphaPage')),
-  // },
+  '/dashboard/alpha': {
+    component: loadable(() => import('pages/Dashboard/DashboardAlphaPage')),
+  },
   //
   // // Apps
   // '/apps/messaging': {

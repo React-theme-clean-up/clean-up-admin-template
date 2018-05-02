@@ -1,33 +1,40 @@
 import React from 'react'
 import LoginForm from './LoginForm'
+import './style.css'
+
 
 class Login extends React.Component {
   state = {}
 
   render() {
     return (
-      <div className="cat__pages__login cat__pages__login--fullscreen">
-        <div className="cat__pages__login__header">
+      <div className="login" style={{ backgroundImage: 'url(resources/images/login/4.jpg)', }}>
+        <div className="login__header">
           <div className="row">
-            <div className="col-lg-8">
-              <div className="cat__pages__login__header__logo">
-                <a href="/">
-                  <strong>Clean UI</strong>
+            <div className="col-lg-12">
+              <div className="login__header__logo">
+                <a href="javascript: void(0);">
+                  <img
+                    src="resources/images/login/logo-inverse.png"
+                    alt="Clean UI Admin Template"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="cat__pages__login__block">
+        <div className="login__block login__block--pb200">
           <div className="row">
             <div className="col-xl-12">
-              <div className="cat__pages__login__block__promo text-white text-center">
+              <div className="login__block__promo text-white text-center">
                 <h1 className="mb-3 text-white">
-                  <strong>WELCOME TO CLEAN UI</strong>
+                  <strong>WELCOME TO CLEAN UI ADMIN TEMPLATE</strong>
                 </h1>
               </div>
-              <div className="cat__pages__login__block__inner">
-                <LoginForm email={this.state.restoredEmail} />
+              <div className="login__block__inner">
+                <div className="login__block__form">
+                  <LoginForm email={this.state.restoredEmail} />
+                </div>
               </div>
             </div>
           </div>
