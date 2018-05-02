@@ -9,7 +9,6 @@ import ProgressGroup from 'components/Clean/ProgressGroup'
 import SliderCard from 'components/Clean/SliderCard'
 import InfoCard from 'components/Clean/InfoCard'
 import Chat from 'components/Clean/Chat'
-import './style.css'
 import {
   rangeSlider,
   calendarData,
@@ -170,7 +169,7 @@ class DashboardAlpha extends React.Component {
         title: 'Name',
         dataIndex: 'name',
         render: text =>
-          <a href={''}>
+          <a href={null}>
             {text}
           </a>,
       },
@@ -178,7 +177,7 @@ class DashboardAlpha extends React.Component {
         title: 'Username',
         dataIndex: 'username',
         render: text =>
-          <a href={''}>
+          <a href={null}>
             {text}
           </a>,
       },

@@ -1,7 +1,6 @@
 import { createAction, createReducer } from 'redux-act'
 import { push } from 'react-router-redux'
 import { pendingTask, begin, end } from 'react-redux-spinner'
-import axios from 'axios'
 
 const REDUCER = 'app'
 const NS = `@@${REDUCER}/`

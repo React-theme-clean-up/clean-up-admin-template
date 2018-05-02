@@ -1,0 +1,18 @@
+// Import mixins from "core" module
+@import '../../../mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN BACKTOP */
+
+.ant-back-top {
+  right: rem(50);
+  bottom: rem(50);
+}
+
+.ant-collapse {
+  background: transparent;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}

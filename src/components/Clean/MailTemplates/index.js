@@ -5,9 +5,9 @@ class MailTemplates extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Mail Templates</strong>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <div className="row">
@@ -49,7 +49,7 @@ class MailTemplates extends React.Component {
                                 design and clear call to action.
                               </p>
                               <a
-                                href="javascript: void(0);"
+                                href={null}
                                 style={{
                                   display: 'inline-block',
                                   padding: '11px 30px 6px',
@@ -85,7 +85,7 @@ class MailTemplates extends React.Component {
                         <br />
                         Don't like these emails?{' '}
                         <a
-                          href="javascript: void(0);"
+                          href={null}
                           style={{
                             color: '#a09bb9',
                             textDecoration: 'underline',
@@ -151,7 +151,7 @@ class MailTemplates extends React.Component {
                               </p>
                               <div style={{ textAlign: 'center' }}>
                                 <a
-                                  href="javascript: void(0);"
+                                  href={null}
                                   style={{
                                     display: 'inline-block',
                                     padding: '11px 30px 6px',
@@ -189,7 +189,7 @@ class MailTemplates extends React.Component {
                         <br />
                         Don't like these emails?{' '}
                         <a
-                          href="javascript: void(0);"
+                          href={null}
                           style={{ color: '#a09bb9', textDecoration: 'underline' }}
                         >
                           Unsubscribe
@@ -577,7 +577,7 @@ class MailTemplates extends React.Component {
                               <p style={{ textAlign: 'center' }}>
                                 Notice something wrong?{' '}
                                 <a
-                                  href="javascript: void(0);"
+                                  href={null}
                                   style={{ color: '#01a8fe', textDecoration: 'underline' }}
                                 >
                                   Contact our support team
@@ -602,7 +602,7 @@ class MailTemplates extends React.Component {
                         <br />
                         Don't like these emails?{' '}
                         <a
-                          href="javascript: void(0);"
+                          href={null}
                           style={{ color: '#a09bb9', textDecoration: 'underline' }}
                         >
                           Unsubscribe
@@ -687,7 +687,7 @@ class MailTemplates extends React.Component {
                               <p>Congratulations! Something good has appened.</p>
                               <div style={{ textAlign: 'center' }}>
                                 <a
-                                  href="javascript: void(0);"
+                                  href={null}
                                   style={{
                                     display: 'inline-block',
                                     padding: '11px 30px 6px',
@@ -720,7 +720,7 @@ class MailTemplates extends React.Component {
                         <br />
                         Don't like these emails?{' '}
                         <a
-                          href="javascript: void(0);"
+                          href={null}
                           style={{ color: '#a09bb9', textDecoration: 'underline' }}
                         >
                           Unsubscribe

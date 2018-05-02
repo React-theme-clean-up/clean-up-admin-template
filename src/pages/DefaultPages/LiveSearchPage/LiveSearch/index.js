@@ -58,7 +58,7 @@ class LiveSearch extends React.Component {
         <div className="container-fluid">
           <div className="livesearch__wrapper">
             <div className="livesearch__logo">
-              <img className="livesearch__logo-img" src="resources/images/logo.png" />
+              <img className="livesearch__logo-img" src="resources/images/logo.png" alt="" />
             </div>
             <div className="livesearch__search">
               <input

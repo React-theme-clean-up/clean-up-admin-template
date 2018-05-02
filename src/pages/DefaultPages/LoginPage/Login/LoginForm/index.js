@@ -65,12 +65,11 @@ class LoginForm extends React.Component {
             <Link
               to={`/register`}
               onClick={this.showDialog('resetPassword')}
-              className="cat__core__link--blue cat__core__link--underlined"
+              className="utils__link--blue utils__link--underlined"
             >
               Forgot password
             </Link>
           </div>
-          <div className="rfq__utility__form-fix" />
           <div className="form-actions">
             <Button type="primary" className="width-100" htmlType="submit" loading={isSubmitForm}>
               Login

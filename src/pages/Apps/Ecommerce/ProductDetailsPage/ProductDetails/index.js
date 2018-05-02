@@ -64,9 +64,9 @@ class ProductDetails extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Product Details</strong>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <div className="row">
@@ -114,22 +114,22 @@ class ProductDetails extends React.Component {
                   <Breadcrumb separator="">
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href="javascript: void(0);">Catalog</a>
+                        <a href={null}>Catalog</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href="javascript: void(0);">Chairs</a>
+                        <a href={null}>Chairs</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href="javascript: void(0);">With background</a>
+                        <a href={null}>With background</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href="javascript: void(0);">White</a>
+                        <a href={null}>White</a>
                       </span>
                     </Breadcrumb.Item>
                   </Breadcrumb>
@@ -191,11 +191,11 @@ class ProductDetails extends React.Component {
                   <Button type="primary" size="large">
                     <Icon type="shopping-cart" />Buy now
                   </Button>
-                  <a href="javascript: void(0);" className="btn btn-link">
+                  <a href={null} className="btn btn-link">
                     <i className="icmn-heart mr-1" />
                     Add to Wishlist
                   </a>
-                  <a href="javascript: void(0);" className="btn btn-link">
+                  <a href={null} className="btn btn-link">
                     <i className="icmn-stats-bars mr-1" />
                     Add to Compare
                   </a>

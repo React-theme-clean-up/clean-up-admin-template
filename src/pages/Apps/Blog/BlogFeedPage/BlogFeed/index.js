@@ -17,9 +17,9 @@ class BlogFeed extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <div className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Blog Feed</strong>
-          </div>
+          </h5>
         </div>
         <div className="card-body">
           <div className="blog-feed">

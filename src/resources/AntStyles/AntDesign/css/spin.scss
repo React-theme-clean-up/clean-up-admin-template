@@ -2,8 +2,8 @@
 @import '../../../mixins';
 
 /////////////////////////////////////////////////////////////////////////////////////////
-/*  ANT DESIGN OVERALL */
+/*  ANT DESIGN SPIN */
 
-button, input, select, textarea {
-  font-family: inherit;
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: none;
 }

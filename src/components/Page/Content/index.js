@@ -34,8 +34,8 @@ class AppContent extends React.Component {
     const { getContentBuffer } = this.context
     const { content } = getContentBuffer()
     return isEmpty(content)
-      ? <div className="rfq__utility__loading-fullscreen" />
-      : <div>
+      ? <div />
+      : <div className="utils__content">
           {content}
         </div>
   }

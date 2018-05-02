@@ -6,7 +6,7 @@ class GridBootstrap extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Grid Options</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/layout/grid/"
@@ -15,7 +15,7 @@ class GridBootstrap extends React.Component {
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <p>
@@ -131,9 +131,9 @@ class GridBootstrap extends React.Component {
         </section>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Example: Stacked-to-Horizontal</strong>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <p>
@@ -212,9 +212,9 @@ class GridBootstrap extends React.Component {
         </section>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Example: Mobile and Desktop</strong>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Icon, Input, Button, Checkbox } from 'antd'
+import { Button } from 'antd'
 import LoginForm from './LoginForm'
 import './style.css'
 
@@ -15,7 +15,8 @@ class LoginBeta extends React.Component {
     let min = 1
     let max = 5
     let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
-    ;(backgroundImage = 'url(resources/images/login/' + picNumber + '.jpg)'), this.setState({
+    backgroundImage = 'url(resources/images/login/' + picNumber + '.jpg)'
+    this.setState({
       backgroundImage: backgroundImage,
     })
   }
@@ -44,7 +45,7 @@ class LoginBeta extends React.Component {
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
-                <a href="javascript: void(0);">
+                <a href={null}>
                   <img
                     src="resources/images/login/logo-inverse.png"
                     alt="Clean UI Admin Template"
@@ -62,16 +63,16 @@ class LoginBeta extends React.Component {
               <div className="login__header__menu">
                 <ul className="list-unstyled list-inline">
                   <li className="list-inline-item">
-                    <a href="javascript: history.back();">&larr; Back</a>
+                    <a href={null}>&larr; Back</a>
                   </li>
                   <li className="list-inline-item active">
-                    <a href="javascript: void(0);">Login</a>
+                    <a href={null}>Login</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="javascript: void(0);">About</a>
+                    <a href={null}>About</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="javascript: void(0);">Support</a>
+                    <a href={null}>Support</a>
                   </li>
                 </ul>
               </div>
@@ -123,19 +124,19 @@ class LoginBeta extends React.Component {
         <div className="login__footer text-center">
           <ul className="list-unstyled list-inline">
             <li className="list-inline-item">
-              <a href="javascript: void(0);">Terms of Use</a>
+              <a href={null}>Terms of Use</a>
             </li>
             <li className="active list-inline-item">
-              <a href="javascript: void(0);">Compliance</a>
+              <a href={null}>Compliance</a>
             </li>
             <li className="list-inline-item">
-              <a href="javascript: void(0);">Confidential Information</a>
+              <a href={null}>Confidential Information</a>
             </li>
             <li className="list-inline-item">
-              <a href="javascript: void(0);">Support</a>
+              <a href={null}>Support</a>
             </li>
             <li className="list-inline-item">
-              <a href="javascript: void(0);">Contacts</a>
+              <a href={null}>Contacts</a>
             </li>
           </ul>
         </div>

@@ -34,9 +34,9 @@ class BlogPost extends React.Component {
     return (
       <section className="card">
         <div className="card-header mb-2">
-          <div className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Blog Post</strong>
-          </div>
+          </h5>
         </div>
         <div className="card-block">
           <div className="blog-feed">
@@ -163,7 +163,7 @@ class BlogPost extends React.Component {
                                 </div>
                                 <div dangerouslySetInnerHTML={{ __html: postComment.content }} />
                                 <div>
-                                  <a href="javascript: void(0);" className="mr-3">
+                                  <a href={null} className="mr-3">
                                     <i className="icmn-heart mr-2" />
                                     {postComment.likesCount > 0 &&
                                       <span>
@@ -174,7 +174,7 @@ class BlogPost extends React.Component {
                                         {postComment.likesCount + ' Like'}
                                       </span>}
                                   </a>
-                                  <a href="javascript: void(0);" className="mr-3">
+                                  <a href={null} className="mr-3">
                                     <i className="icmn-bubble mr-2" />
                                     {postComment.commentsCount > 0 &&
                                       <span>
@@ -185,7 +185,7 @@ class BlogPost extends React.Component {
                                         {postComment.commentsCount + ' Comment'}
                                       </span>}
                                   </a>
-                                  <a href="javascript: void(0);">
+                                  <a href={null}>
                                     <i className="icmn-reply mr-2" />
                                     <span>Reply</span>
                                   </a>
@@ -222,7 +222,7 @@ class BlogPost extends React.Component {
                                             dangerouslySetInnerHTML={{ __html: subComment.content }}
                                           />
                                           <div>
-                                            <a href="javascript: void(0);" className="mr-3">
+                                            <a href={null} className="mr-3">
                                               <i className="icmn-heart mr-2" />
                                               {subComment.likesCount > 0 &&
                                                 <span>
@@ -233,7 +233,7 @@ class BlogPost extends React.Component {
                                                   {subComment.likesCount + ' Like'}
                                                 </span>}
                                             </a>
-                                            <a href="javascript: void(0);" className="mr-3">
+                                            <a href={null} className="mr-3">
                                               <i className="icmn-bubble mr-2" />
                                               {subComment.commentsCount > 0 &&
                                                 <span>
@@ -244,7 +244,7 @@ class BlogPost extends React.Component {
                                                   {subComment.commentsCount + ' Comment'}
                                                 </span>}
                                             </a>
-                                            <a href="javascript: void(0);">
+                                            <a href={null}>
                                               <i className="icmn-reply mr-2" />
                                               <span>Reply</span>
                                             </a>
@@ -257,7 +257,7 @@ class BlogPost extends React.Component {
                             </div>,
                           )}
                         </div>}
-                      <a href="javascript: void(0);" className="btn btn-default btn-block">
+                      <a href={null} className="btn btn-default btn-block">
                         Load More
                       </a>
                     </div>

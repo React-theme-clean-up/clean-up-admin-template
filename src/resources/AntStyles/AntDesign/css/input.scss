@@ -2,8 +2,13 @@
 @import '../../../mixins';
 
 /////////////////////////////////////////////////////////////////////////////////////////
-/*  ANT DESIGN OVERALL */
+/*  ANT DESIGN INPUT */
 
-button, input, select, textarea {
-  font-family: inherit;
+
+.ant-input {
+  padding: 10px 13px;
+}
+
+.ant-input-disabled {
+  background: $gray-lighten-more-more;
 }

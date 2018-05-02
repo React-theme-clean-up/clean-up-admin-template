@@ -2,8 +2,8 @@
 @import '../../../mixins';
 
 /////////////////////////////////////////////////////////////////////////////////////////
-/*  ANT DESIGN OVERALL */
+/*  ANT DESIGN CASCADER */
 
-button, input, select, textarea {
-  font-family: inherit;
+.ant-cascader-menus {
+  border: 1px solid #e9e9e9;
 }

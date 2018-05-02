@@ -19,7 +19,7 @@ class FontAwesomeIcons extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <span className="cat__core__title">
+            <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>FontAwesome</strong>
               <a
                 href="http://fontawesome.io/"
@@ -28,7 +28,7 @@ class FontAwesomeIcons extends React.Component {
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </span>
+            </h5>
           </div>
           <div className="card-body">
             <div className="row">
@@ -53,7 +53,7 @@ class FontAwesomeIcons extends React.Component {
                         {iconsSet.setName}
                       </strong>
                     </h3>
-                    <ul className="cat__core__icons-block list-unstyled">
+                    <ul className="utils__iconsBlock list-unstyled">
                       {iconsSet.icons.map((icon, index) =>
                         <Tooltip title={'fa ' + icon}>
                           <li>
