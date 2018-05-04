@@ -1,15 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { setActiveDialog } from 'ducks/app'
 import { REDUCER, submit } from 'ducks/login'
 import { Form, Input, Button } from 'antd'
-import { Link } from 'react-router-dom'
 
 const FormItem = Form.Item
 
 const mapStateToProps = (state, props) => ({
   isSubmitForm: state.app.submitForms[REDUCER],
-  commonLogin: state.app.commonLogin,
 })
 
 @connect(mapStateToProps)
@@ -30,15 +27,8 @@ class LoginForm extends React.Component {
     }
   }
 
-  // $FlowFixMe
-  showDialog = (dialog: string) => event => {
-    event.preventDefault()
-    const { dispatch } = this.props
-    dispatch(setActiveDialog(dialog))
-  }
-
   render() {
-    const { form, isSubmitForm, commonLogin } = this.props
+    const { form, isSubmitForm } = this.props
 
     return (
       <div className="cat__pages__login__block__form">
@@ -49,7 +39,7 @@ class LoginForm extends React.Component {
         <Form layout="vertical" hideRequiredMark onSubmit={this.onSubmit(isSubmitForm)}>
           <FormItem label="Email">
             {form.getFieldDecorator('username', {
-              initialValue: commonLogin,
+              initialValue: 'admin@mediatec.org',
               rules: [
                 { type: 'email', message: 'The input is not a valid e-mail address' },
                 { required: true, message: 'Please input your e-mail address' },
@@ -58,27 +48,24 @@ class LoginForm extends React.Component {
           </FormItem>
           <FormItem label="Password">
             {form.getFieldDecorator('password', {
+              initialValue: '123123',
               rules: [{ required: true, message: 'Please input your password' }],
             })(<Input size="default" type="password" />)}
           </FormItem>
           <div className="mb-2">
-            <Link
-              to={`/register`}
-              onClick={this.showDialog('resetPassword')}
+            <a href={null}
               className="utils__link--blue utils__link--underlined"
             >
               Forgot password
-            </Link>
+            </a>
           </div>
           <div className="form-actions">
-            <Button type="primary" className="width-100" htmlType="submit" loading={isSubmitForm}>
+            <Button type="primary" className="width-100 mr-4" htmlType="submit" loading={isSubmitForm}>
               Login
             </Button>
-            <Link to={`/registration`} className="ml-3">
-              <Button className="width-100" htmlType="submit">
-                Sign Up
-              </Button>
-            </Link>
+            <Button className="width-100" htmlType="button">
+              Sign Up
+            </Button>
           </div>
         </Form>
       </div>

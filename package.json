@@ -46,7 +46,6 @@
     "bootstrap": "^4.1.0",
     "chart.js": "^2.7.2",
     "chartist": "^0.11.0",
-    "chartist-plugin-tooltip": "^0.0.11",
     "chartist-plugin-tooltips": "0.0.17",
     "classnames": "^2.2.5",
     "fast-memoize": "^2.2.7",
