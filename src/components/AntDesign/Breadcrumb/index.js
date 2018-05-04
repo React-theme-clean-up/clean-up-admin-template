@@ -5,8 +5,6 @@ import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/p
 import { Collapse, Icon } from 'antd'
 
 import { default as renderBreadcrumbBasic } from './Basic/index.js'
-import { default as renderBreadcrumbRouter4 } from './Router4/index.js'
-import { default as renderBreadcrumbRouter } from './Router/index.js'
 import { default as renderBreadcrumbSeparator } from './Separator/index.js'
 import { default as renderBreadcrumbWithIcon } from './WithIcon/index.js'
 
@@ -15,8 +13,6 @@ const Panel = Collapse.Panel
 class BreadcrumbItems extends React.Component {
   componentDidMount() {
     renderBreadcrumbBasic(ReactDOM, document.getElementById('BreadcrumbBasic'))
-    renderBreadcrumbRouter4(ReactDOM, document.getElementById('BreadcrumbRouter4'))
-    renderBreadcrumbRouter(ReactDOM, document.getElementById('BreadcrumbRouter'))
     renderBreadcrumbSeparator(ReactDOM, document.getElementById('BreadcrumbSeparator'))
     renderBreadcrumbWithIcon(ReactDOM, document.getElementById('BreadcrumbWithIcon'))
   }

@@ -4,4 +4,31 @@
   &__logo {
     height: 64px;
   }
+
+  &__navigation {
+    .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow {
+      right: rem(66);
+    }
+
+    .ant-menu-inline .ant-menu-submenu-title {
+      padding-right: rem(70);
+    }
+
+    &.ant-menu-inline-collapsed {
+      .appMenu__item-title {
+        display: none;
+      }
+
+      .ant-menu-submenu > .ant-menu-submenu-title .ant-menu-submenu-arrow {
+        display: block;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: rem(28);
+    width: rem(20);
+    top: rem(12);
+  }
 }
