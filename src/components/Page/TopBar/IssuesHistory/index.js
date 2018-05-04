@@ -6,14 +6,10 @@ class IssuesHistory extends React.Component {
     const menu = (
       <Menu selectable={false}>
         <Menu.Item>
-          <a href={null}>
-            Current search
-          </a>
+          <a href={null}>Current search</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
-            Search for issues
-          </a>
+          <a href={null}>Search for issues</a>
         </Menu.Item>
         <Menu.Divider />
         <span className="topbar__dropdownTitle">
@@ -21,50 +17,37 @@ class IssuesHistory extends React.Component {
         </span>
         <Menu.Item>
           <a href={null}>
-            <i className="topbar__dropdownMenuIcon icmn-checkmark" />
-            {' '}
-            CLNUI-253 Project implemen...
+            <i className="topbar__dropdownMenuIcon icmn-checkmark" /> CLNUI-253 Project implemen...
           </a>
         </Menu.Item>
         <Menu.Item>
           <a href={null}>
-            <i className="topbar__dropdownMenuIcon icmn-checkmark" />
-            {' '}
-            CLNUI-234 Active history iss...
+            <i className="topbar__dropdownMenuIcon icmn-checkmark" /> CLNUI-234 Active history
+            iss...
           </a>
         </Menu.Item>
         <Menu.Item>
           <a href={null}>
-            <i className="topbar__dropdownMenuIcon icmn-clock" />
-            {' '}
-            CLNUI-424 Ionicons intergrat...
+            <i className="topbar__dropdownMenuIcon icmn-clock" /> CLNUI-424 Ionicons intergrat...
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
-            More...
-          </a>
+          <a href={null}>More...</a>
         </Menu.Item>
         <Menu.Divider />
         <span className="topbar__dropdownTitle">
           <strong>Filters</strong>
         </span>
         <Menu.Item>
-          <a href={null}>
-            My open issues
-          </a>
+          <a href={null}>My open issues</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
-            Reported by me
-          </a>
+          <a href={null}>Reported by me</a>
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
           <a href={null}>
-            <i className="topbar__dropdownMenuIcon icmn-cog" />
-            {' '}
-            Settings
+            <i className="topbar__dropdownMenuIcon icmn-cog" /> Settings
           </a>
         </Menu.Item>
       </Menu>

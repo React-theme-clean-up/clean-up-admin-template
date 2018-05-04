@@ -2,9 +2,8 @@ import React from 'react'
 import { Line } from 'react-peity'
 
 class BitcoinPrice extends React.Component {
-
   state = {
-    chartsData: [5, 3, 9, 6, 5, 9, 7, 3, 5, 2]
+    chartsData: [5, 3, 9, 6, 5, 9, 7, 3, 5, 2],
   }
 
   render() {
@@ -12,7 +11,7 @@ class BitcoinPrice extends React.Component {
     return (
       <div className="d-inline-block mr-4">
         Bitcoin Price:
-        <span style={{ margin: '0 8px', position: 'relative', top: '3px' }} >
+        <span style={{ margin: '0 8px', position: 'relative', top: '3px' }}>
           <Line values={chartsData} />
         </span>
         +20%

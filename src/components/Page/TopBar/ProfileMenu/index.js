@@ -26,14 +26,14 @@ class ProfileMenu extends React.Component {
             <strong>
               Hello, {userState.role}
             </strong>
-              <div>
-                <strong>Billing Plan:</strong> Professional
-                <br />
-              </div>
+            <div>
+              <strong>Billing Plan:</strong> Professional
+              <br />
+            </div>
 
-              <div>
-                <strong>Role:</strong> {userState.role}
-              </div>
+            <div>
+              <strong>Role:</strong> {userState.role}
+            </div>
           </div>
         </Menu.Item>
         <Menu.Divider />

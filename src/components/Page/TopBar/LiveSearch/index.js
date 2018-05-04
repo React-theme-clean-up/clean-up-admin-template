@@ -1,8 +1,7 @@
 import React from 'react'
-import { Input, Icon } from 'antd';
+import { Input, Icon } from 'antd'
 
 class LiveSearch extends React.Component {
-
   render() {
     return (
       <div className="d-inline-block mr-4">

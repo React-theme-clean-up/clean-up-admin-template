@@ -12,10 +12,13 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">now</span>
-                <a href={null}>Update Status: <span className="badge badge-danger">New</span></a>
+                <a href={null}>
+                  Update Status: <span className="badge badge-danger">New</span>
+                </a>
               </div>
               <div className="topbar__activity__descr">
-                Failed to get available update data. To ensure the proper functioning of your application, update now.
+                Failed to get available update data. To ensure the proper functioning of your
+                application, update now.
               </div>
             </div>
           </div>
@@ -24,10 +27,13 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">24 min ago</span>
-                <a href={null}>Income: <span className="badge badge-default">$299.00</span></a>
+                <a href={null}>
+                  Income: <span className="badge badge-default">$299.00</span>
+                </a>
               </div>
               <div className="topbar__activity__descr">
-                Failed to get available update data. To ensure the proper functioning of your application, update now.
+                Failed to get available update data. To ensure the proper functioning of your
+                application, update now.
               </div>
             </div>
           </div>
@@ -48,10 +54,13 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">now</span>
-                <a href={null}>Update Status: <span className="badge badge-primary">New</span></a>
+                <a href={null}>
+                  Update Status: <span className="badge badge-primary">New</span>
+                </a>
               </div>
               <div className="topbar__activity__descr">
-                Failed to get available update data. To ensure the proper functioning of your application, update now.
+                Failed to get available update data. To ensure the proper functioning of your
+                application, update now.
               </div>
             </div>
           </div>
@@ -60,10 +69,13 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">24 min ago</span>
-                <a href={null}>Income: <span className="badge badge-warning">$299.00</span></a>
+                <a href={null}>
+                  Income: <span className="badge badge-warning">$299.00</span>
+                </a>
               </div>
               <div className="topbar__activity__descr">
-                Failed to get available update data. To ensure the proper functioning of your application, update now.
+                Failed to get available update data. To ensure the proper functioning of your
+                application, update now.
               </div>
             </div>
           </div>

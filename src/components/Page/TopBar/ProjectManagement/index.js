@@ -9,34 +9,24 @@ class ProjectManagement extends React.Component {
           <strong>Active</strong>
         </span>
         <Menu.Item>
-          <a href={null}>
-            Project Management
-          </a>
+          <a href={null}>Project Management</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
-            User Interface Development
-          </a>
+          <a href={null}>User Interface Development</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
-            Documentation
-          </a>
+          <a href={null}>Documentation</a>
         </Menu.Item>
         <span className="topbar__dropdownTitle">
           <strong>Inactive</strong>
         </span>
         <Menu.Item>
-          <a href={null}>
-            Marketing
-          </a>
+          <a href={null}>Marketing</a>
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
           <a href={null}>
-            <i className="topbar__dropdownMenuIcon icmn-cog" />
-            {' '}
-            Settings
+            <i className="topbar__dropdownMenuIcon icmn-cog" /> Settings
           </a>
         </Menu.Item>
       </Menu>

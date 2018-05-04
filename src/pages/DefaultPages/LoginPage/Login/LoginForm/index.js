@@ -53,14 +53,17 @@ class LoginForm extends React.Component {
             })(<Input size="default" type="password" />)}
           </FormItem>
           <div className="mb-2">
-            <a href={null}
-              className="utils__link--blue utils__link--underlined"
-            >
+            <a href={null} className="utils__link--blue utils__link--underlined">
               Forgot password
             </a>
           </div>
           <div className="form-actions">
-            <Button type="primary" className="width-100 mr-4" htmlType="submit" loading={isSubmitForm}>
+            <Button
+              type="primary"
+              className="width-100 mr-4"
+              htmlType="submit"
+              loading={isSubmitForm}
+            >
               Login
             </Button>
             <Button className="width-100" htmlType="button">

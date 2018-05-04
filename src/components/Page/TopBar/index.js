@@ -17,19 +17,17 @@ class TopBar extends React.Component {
     return (
       <div className="topbar">
         <div className="topbar__left">
-          <IssuesHistory/>
-          <ProjectManagement/>
-          <LiveSearch/>
+          <IssuesHistory />
+          <ProjectManagement />
+          <LiveSearch />
         </div>
         <div className="topbar__right">
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="mr-4" >
-            <Button type="danger">
-              Buy Now 25$
-            </Button>
+          <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="mr-4">
+            <Button type="danger">Buy Now 25$</Button>
           </a>
-          <BitcoinPrice/>
-          <HomeMenu/>
-          <ProfileMenu/>
+          <BitcoinPrice />
+          <HomeMenu />
+          <ProfileMenu />
         </div>
       </div>
     )
