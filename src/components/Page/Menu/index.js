@@ -300,14 +300,14 @@ const menuItems = [
       {
         key: 'invoice',
         title: 'Invoice',
-        url:  '/pages/invoice',
+        url: '/pages/invoice',
       },
       {
         key: 'livesearch',
         title: 'Livesearch',
         url: '/pages/livesearch',
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'Apps',
@@ -317,24 +317,24 @@ const menuItems = [
       {
         title: 'Messaging',
         key: 'messaging',
-        url: '/apps/messaging'
+        url: '/apps/messaging',
       },
       {
         title: 'Mail',
         key: 'mail',
-        url: '/apps/mail'
+        url: '/apps/mail',
       },
       {
         title: 'Profile',
         key: 'profile',
-        url: '/apps/profile'
+        url: '/apps/profile',
       },
       {
         title: 'Gallery',
         key: 'gallery',
-        url: '/apps/gallery'
+        url: '/apps/gallery',
       },
-    ]
+    ],
   },
   {
     title: 'Ecommerce',
@@ -344,39 +344,39 @@ const menuItems = [
       {
         title: 'Dashboard',
         key: 'dashboard',
-        url: '/ecommerce/dashboard'
+        url: '/ecommerce/dashboard',
       },
       {
         title: 'Products Catalog',
         key: 'productsCatalog',
-        url: '/ecommerce/products-catalog'
+        url: '/ecommerce/products-catalog',
       },
       {
         title: 'Products Details',
         key: 'productsDetails',
-        url: '/ecommerce/product-details'
+        url: '/ecommerce/product-details',
       },
       {
         title: 'Products Edit',
         key: 'productsEdit',
-        url: '/ecommerce/product-edit'
+        url: '/ecommerce/product-edit',
       },
       {
         title: 'Products List',
         key: 'productsList',
-        url: '/ecommerce/produscts-list'
+        url: '/ecommerce/produscts-list',
       },
       {
         title: 'Orders',
         key: 'orders',
-        url: '/ecommerce/orders'
+        url: '/ecommerce/orders',
       },
       {
         title: 'Cart',
         key: 'cart',
-        url: '/ecommerce/cart'
-      }
-    ]
+        url: '/ecommerce/cart',
+      },
+    ],
   },
   {
     title: 'Icons',
@@ -397,8 +397,8 @@ const menuItems = [
         title: 'Icomoon',
         key: 'icoMoon',
         url: '/icons/icomoon',
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'Layout',
@@ -408,29 +408,29 @@ const menuItems = [
       {
         title: 'Bootstrap',
         key: 'bootstrap',
-        url: '/layout/bootstrap'
+        url: '/layout/bootstrap',
       },
       {
         title: 'Card',
         key: 'card',
-        url: '/layout/card'
+        url: '/layout/card',
       },
       {
         title: 'Utilities',
         key: 'utilities',
-        url: '/layout/utilities'
+        url: '/layout/utilities',
       },
       {
         title: 'Typography',
         key: 'typography',
-        url: '/layout/typography'
+        url: '/layout/typography',
       },
       {
         title: 'Mail Templates',
         key: 'mailTemplates',
-        url: '/layout/mail-templates'
+        url: '/layout/mail-templates',
       },
-    ]
+    ],
   },
   {
     title: 'Charts',
@@ -440,7 +440,7 @@ const menuItems = [
       {
         title: 'Chartist',
         key: 'chartist',
-        url: '/charts/chartist'
+        url: '/charts/chartist',
       },
       {
         title: 'Chart',
@@ -450,14 +450,14 @@ const menuItems = [
       {
         title: 'Piety',
         key: 'piety',
-        url: '/charts/piety'
+        url: '/charts/piety',
       },
       {
         title: 'C3',
         key: 'c3',
-        url: '/charts/c3'
+        url: '/charts/c3',
       },
-    ]
+    ],
   },
   {
     title: 'Blog',
@@ -467,7 +467,7 @@ const menuItems = [
       {
         title: 'Feed',
         key: 'blogFeed',
-        url: '/blog/feed'
+        url: '/blog/feed',
       },
       {
         title: 'Post',
@@ -478,8 +478,8 @@ const menuItems = [
         title: 'Add Post',
         key: 'blogAddPost',
         url: '/blog/add-blog-post',
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'YouTube',
@@ -489,14 +489,14 @@ const menuItems = [
       {
         title: 'Feed',
         key: 'youtubeFeed',
-        url: '/youtube/feed'
+        url: '/youtube/feed',
       },
       {
         title: 'View',
         key: 'youtubeView',
         url: '/youtube/view',
       },
-    ]
+    ],
   },
   {
     title: 'GitHub',
@@ -506,15 +506,15 @@ const menuItems = [
       {
         title: 'Explore',
         key: 'githubExplore',
-        url: '/github/explore'
+        url: '/github/explore',
       },
       {
         title: 'Discuss',
         key: 'githubDiscuss',
-        url: '/github/discuss'
+        url: '/github/discuss',
       },
-    ]
-  }
+    ],
+  },
 ]
 
 @connect(mapStateToProps)
