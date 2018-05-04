@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { Spinner } from 'react-redux-spinner'
 import { BackTop, Layout as AntLayout } from 'antd'
 import Routes from 'routes'
-import Header from 'components/Clean/Header'
-import Footer from 'components/Clean/Footer'
-import Menu from 'components/Clean/Menu'
+import TopBar from 'components/Page/TopBar'
+import Footer from 'components/Page/Footer'
+import Menu from 'components/Page/Menu'
 import Content from 'components/Page/Content'
 
 const AntContent = AntLayout.Content
@@ -39,7 +39,7 @@ class Layout extends React.Component {
         <Menu />
         <AntLayout>
           <AntHeader>
-            <Header />
+            <TopBar />
           </AntHeader>
           <AntContent style={{ height: '100%' }}>
             <Content />

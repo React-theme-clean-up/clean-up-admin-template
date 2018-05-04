@@ -130,9 +130,9 @@ export const logout = () => (dispatch: Function, getState: Function) => {
       },
     }),
   )
-  dispatch(push('/login'))
   window.localStorage.setItem('app.Authorization', '')
   window.localStorage.setItem('app.Role', '')
+  dispatch(push('/login'))
 }
 
 const initialState = {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { logout } from 'ducks/app'
-import { Menu, Dropdown } from 'antd'
+import { Menu, Dropdown, Avatar } from 'antd'
 
 const mapDispatchToProps = dispatch => ({
   logout: event => {
@@ -18,26 +18,22 @@ const mapStateToProps = (state, props) => ({
 @connect(mapStateToProps, mapDispatchToProps)
 class ProfileMenu extends React.Component {
   render() {
-    // $FlowFixMe
     const { userState, logout } = this.props
     const menu = (
       <Menu selectable={false}>
         <Menu.Item>
           <div className="rfq__widget__system-status__item">
             <strong>
-              Hello, {userState.firstName} {userState.lastName}
+              Hello, {userState.role}
             </strong>
-            {userState.role === 'agent' &&
-              <div>
-                <strong>Billing Plan:</strong> {userState.plan && userState.plan.name}
-                <br />
-                <strong>Status:</strong>
-                <span className="badge badge-primary font-size-14 ml-1">{userState.status}</span>
-              </div>}
-            {userState.role === 'administrator' &&
-              <div>
-                <strong>Role:</strong> Administrator
-              </div>}
+            <div>
+              <strong>Billing Plan:</strong> Professional
+              <br />
+            </div>
+
+            <div>
+              <strong>Role:</strong> {userState.role}
+            </div>
           </div>
         </Menu.Item>
         <Menu.Divider />
@@ -45,30 +41,28 @@ class ProfileMenu extends React.Component {
           <div className="rfq__widget__system-status__item">
             <strong>Email:</strong> {userState.email}
             <br />
-            <strong>Phone:</strong> {userState.phone ? userState.phone : '—'}
+            <strong>Phone:</strong> +1-800-MEDIATEC
           </div>
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
-          <Link to="/profile">
-            <i className="dropdown-icon icmn-user" /> Edit Profile
-          </Link>
+          <a href={null}>
+            <i className="topbar__dropdownMenuIcon icmn-user" /> Edit Profile
+          </a>
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
-          <a href="/" onClick={logout}>
-            <i className="dropdown-icon icmn-exit" /> Logout
+          <a href={null} onClick={logout}>
+            <i className="topbar__dropdownMenuIcon icmn-exit" /> Logout
           </a>
         </Menu.Item>
       </Menu>
     )
     return (
-      <div className="cat__top-bar__avatar-dropdown">
+      <div className="topbar__dropdown d-inline-block">
         <Dropdown overlay={menu} trigger={['click']} placement="bottomRight">
           <a className="ant-dropdown-link" href="/">
-            <span className="cat__top-bar__avatar cat__core__avatar--border">
-              <img src="/resources/images/avatars/temp.jpg" alt="" />
-            </span>
+            <Avatar className="topbar__avatar" shape="square" size="large" icon="user" />
           </a>
         </Dropdown>
       </div>
