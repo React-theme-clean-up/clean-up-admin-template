@@ -267,6 +267,254 @@ const menuItems = [
     key: 'dashboardAlfa',
     url: '/dashboard/alpha',
   },
+  {
+    title: 'Default Pages',
+    key: 'defaultPages',
+    icon: 'icomn icmn-home',
+    children: [
+      {
+        key: 'loginAlpha',
+        title: 'Login Alpha',
+        url: '/pages/login-alpha',
+      },
+      {
+        key: 'loginBeta',
+        title: 'Login Beta',
+        url: '/pages/login-beta',
+      },
+      {
+        key: 'register',
+        title: 'Register',
+        url: '/pages/register',
+      },
+      {
+        key: 'lockscreen',
+        title: 'Lockscreen',
+        url: '/pages/lockscreen',
+      },
+      {
+        key: 'pricingTable',
+        title: 'Pricing Table',
+        url: '/pages/pricing-table',
+      },
+      {
+        key: 'invoice',
+        title: 'Invoice',
+        url:  '/pages/invoice',
+      },
+      {
+        key: 'livesearch',
+        title: 'Livesearch',
+        url: '/pages/livesearch',
+      }
+    ]
+  },
+  {
+    title: 'Apps',
+    key: 'apps',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Messaging',
+        key: 'messaging',
+        url: '/apps/messaging'
+      },
+      {
+        title: 'Mail',
+        key: 'mail',
+        url: '/apps/mail'
+      },
+      {
+        title: 'Profile',
+        key: 'profile',
+        url: '/apps/profile'
+      },
+      {
+        title: 'Gallery',
+        key: 'gallery',
+        url: '/apps/gallery'
+      },
+    ]
+  },
+  {
+    title: 'Ecommerce',
+    key: 'ecommerce',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Dashboard',
+        key: 'dashboard',
+        url: '/ecommerce/dashboard'
+      },
+      {
+        title: 'Products Catalog',
+        key: 'productsCatalog',
+        url: '/ecommerce/products-catalog'
+      },
+      {
+        title: 'Products Details',
+        key: 'productsDetails',
+        url: '/ecommerce/product-details'
+      },
+      {
+        title: 'Products Edit',
+        key: 'productsEdit',
+        url: '/ecommerce/product-edit'
+      },
+      {
+        title: 'Products List',
+        key: 'productsList',
+        url: '/ecommerce/produscts-list'
+      },
+      {
+        title: 'Orders',
+        key: 'orders',
+        url: '/ecommerce/orders'
+      },
+      {
+        title: 'Cart',
+        key: 'cart',
+        url: '/ecommerce/cart'
+      }
+    ]
+  },
+  {
+    title: 'Icons',
+    key: 'icons',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'FontAwesome',
+        key: 'fontAwesome',
+        url: '/icons/fontawesome',
+      },
+      {
+        title: 'Linear',
+        key: 'linear',
+        url: '/icons/linear',
+      },
+      {
+        title: 'Icomoon',
+        key: 'icoMoon',
+        url: '/icons/icomoon',
+      }
+    ]
+  },
+  {
+    title: 'Layout',
+    key: 'layout',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Bootstrap',
+        key: 'bootstrap',
+        url: '/layout/bootstrap'
+      },
+      {
+        title: 'Card',
+        key: 'card',
+        url: '/layout/card'
+      },
+      {
+        title: 'Utilities',
+        key: 'utilities',
+        url: '/layout/utilities'
+      },
+      {
+        title: 'Typography',
+        key: 'typography',
+        url: '/layout/typography'
+      },
+      {
+        title: 'Mail Templates',
+        key: 'mailTemplates',
+        url: '/layout/mail-templates'
+      },
+    ]
+  },
+  {
+    title: 'Charts',
+    key: 'charts',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Chartist',
+        key: 'chartist',
+        url: '/charts/chartist'
+      },
+      {
+        title: 'Chart',
+        key: 'chart',
+        url: '/charts/chart',
+      },
+      {
+        title: 'Piety',
+        key: 'piety',
+        url: '/charts/piety'
+      },
+      {
+        title: 'C3',
+        key: 'c3',
+        url: '/charts/c3'
+      },
+    ]
+  },
+  {
+    title: 'Blog',
+    key: 'blog',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Feed',
+        key: 'blogFeed',
+        url: '/blog/feed'
+      },
+      {
+        title: 'Post',
+        key: 'blogPost',
+        url: '/blog/post',
+      },
+      {
+        title: 'Add Post',
+        key: 'blogAddPost',
+        url: '/blog/add-blog-post',
+      }
+    ]
+  },
+  {
+    title: 'YouTube',
+    key: 'youtube',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Feed',
+        key: 'youtubeFeed',
+        url: '/youtube/feed'
+      },
+      {
+        title: 'View',
+        key: 'youtubeView',
+        url: '/youtube/view',
+      },
+    ]
+  },
+  {
+    title: 'GitHub',
+    key: 'github',
+    icon: 'icmn icmn-home',
+    children: [
+      {
+        title: 'Explore',
+        key: 'githubExplore',
+        url: '/github/explore'
+      },
+      {
+        title: 'Discuss',
+        key: 'githubDiscuss',
+        url: '/github/discuss'
+      },
+    ]
+  }
 ]
 
 @connect(mapStateToProps)
@@ -285,6 +533,7 @@ class Navigation extends React.Component {
   changeCollapsed = value => {
     this.setState({
       collapsed: !!value,
+      opened: [''],
     })
   }
   handleClick = e => {
