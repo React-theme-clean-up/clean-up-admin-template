@@ -302,11 +302,6 @@ const menuItems = [
         title: 'Invoice',
         url: '/pages/invoice',
       },
-      {
-        key: 'livesearch',
-        title: 'Livesearch',
-        url: '/pages/livesearch',
-      },
     ],
   },
   {
