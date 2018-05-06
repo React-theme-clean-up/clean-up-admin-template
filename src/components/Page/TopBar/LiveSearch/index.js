@@ -56,7 +56,10 @@ class LiveSearch extends React.Component {
           onFocus={this.showLiveSearch}
         />
 
-        <div className={show === true ? 'livesearch livesearch--show' : 'livesearch'} id="livesearch">
+        <div
+          className={show === true ? 'livesearch livesearch--show' : 'livesearch'}
+          id="livesearch"
+        >
           <div className="livesearch__close" onClick={this.hideLiveSearch}>
             <i className="icmn-cross" />
           </div>
@@ -83,10 +86,10 @@ class LiveSearch extends React.Component {
                 <li className="livesearch__option">Press enter to search</li>
               </ul>
               <div className="livesearch__suggestion">
-              <span className="livesearch__suggestion-text">
-                Suggestion:
-                <span className="livesearch__suggestion-input-text ml-1">Some text</span>
-              </span>
+                <span className="livesearch__suggestion-text">
+                  Suggestion:
+                  <span className="livesearch__suggestion-input-text ml-1">Some text</span>
+                </span>
               </div>
               <div className="livesearch__results">
                 <div className="livesearch__results-title">
