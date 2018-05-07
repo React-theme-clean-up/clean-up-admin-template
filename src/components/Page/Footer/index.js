@@ -24,15 +24,15 @@ class AppFooter extends React.Component {
         <div className="footer__bottom">
           <div className="row">
             <div className="col-lg-6">
-              <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="mr-4">
+              <a href="http://google.com" target="_blank" rel="noopener noreferrer"  className="mr-4">
                 <Button type="primary">Buy Now 25$</Button>
               </a>
             </div>
             <div className="col-lg-6">
               <div className="footer__copyright">
-                <img src="resources/images/mediatec.png" target="_blank" title="Mediatec Software" />
+                <img src="resources/images/mediatec.png" target="_blank" rel="noopener noreferrer" alt="Mediatec Software" />
                 <span>
-                  © 2016 <a href="http://mediatec.org/" target="_blank">Mediatec Software</a>
+                  © 2016 <a href="http://mediatec.org/" target="_blank" rel="noopener noreferrer" >Mediatec Software</a>
                   <br />
                   All rights reserved
                 </span>

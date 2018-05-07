@@ -3,7 +3,6 @@ import { Menu, Dropdown } from 'antd'
 
 class HomeMenu extends React.Component {
   render() {
-    const { userState, logout } = this.props
     const menu = (
       <Menu selectable={false}>
         <div className="topbar__activity">
@@ -12,7 +11,7 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">now</span>
-                <a href={null}>
+                <a href="javascript: void(0);">
                   Update Status: <span className="badge badge-danger">New</span>
                 </a>
               </div>
@@ -27,7 +26,7 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">24 min ago</span>
-                <a href={null}>
+                <a href="javascript: void(0);">
                   Income: <span className="badge badge-default">$299.00</span>
                 </a>
               </div>
@@ -42,10 +41,10 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">30 min ago</span>
-                <a href={null}>Inbox Message</a>
+                <a href="javascript: void(0);">Inbox Message</a>
               </div>
               <div className="topbar__activity__descr">
-                From: <a href={null}>David Bowie</a>
+                From: <a href="javascript: void(0);">David Bowie</a>
               </div>
             </div>
           </div>
@@ -54,7 +53,7 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">now</span>
-                <a href={null}>
+                <a href="javascript: void(0);">
                   Update Status: <span className="badge badge-primary">New</span>
                 </a>
               </div>
@@ -69,7 +68,7 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">24 min ago</span>
-                <a href={null}>
+                <a href="javascript: void(0);">
                   Income: <span className="badge badge-warning">$299.00</span>
                 </a>
               </div>
@@ -84,10 +83,10 @@ class HomeMenu extends React.Component {
             <div className="topbar__activity__inner">
               <div className="topbar__activity__title">
                 <span className="pull-right">30 min ago</span>
-                <a href={null}>Inbox Message</a>
+                <a href="javascript: void(0);">Inbox Message</a>
               </div>
               <div className="topbar__activity__descr">
-                From: <a href={null}>David Bowie</a>
+                From: <a href="javascript: void(0);">David Bowie</a>
               </div>
             </div>
           </div>

@@ -107,7 +107,7 @@ class MailList extends React.Component {
         dataIndex: 'from',
         key: 'from',
         render: text =>
-          <a href="#">
+          <a href="javascript: void(0);">
             {text}
           </a>,
         sorter: (a, b) => a.from.length - b.from.length,

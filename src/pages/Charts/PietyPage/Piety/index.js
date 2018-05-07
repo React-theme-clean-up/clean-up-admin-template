@@ -10,7 +10,7 @@ class PietyItems extends React.Component {
             <strong>Peity</strong>
             <a
               href="http://benpickles.github.io/peity/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="btn btn-sm btn-primary ml-2"
             >
               Official Documentation <i className="icmn-link ml-1" />
@@ -25,7 +25,7 @@ class PietyItems extends React.Component {
               </h4>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://benpickles.github.io/peity/" target="_blank">
+                <a href="http://benpickles.github.io/peity/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -58,7 +58,7 @@ class PietyItems extends React.Component {
               </h4>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://benpickles.github.io/peity/" target="_blank">
+                <a href="http://benpickles.github.io/peity/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>

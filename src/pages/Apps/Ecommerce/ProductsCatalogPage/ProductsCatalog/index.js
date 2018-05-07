@@ -8,7 +8,6 @@ class ProductsCatalog extends React.Component {
   }
 
   render() {
-    const props = this.props
     return (
       <div className="card">
         <div className="card-header">

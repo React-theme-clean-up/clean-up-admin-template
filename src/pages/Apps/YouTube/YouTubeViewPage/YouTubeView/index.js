@@ -58,7 +58,7 @@ class YouTubeView extends React.Component {
                     </strong>
                     <div className="pull-right">
                       <Dropdown overlay={actions}>
-                        <a className="ant-dropdown-link" href="#">
+                        <a className="ant-dropdown-link" href="javascript: void(0);">
                           Actions <Icon type="down" />
                         </a>
                       </Dropdown>
@@ -102,7 +102,7 @@ class YouTubeView extends React.Component {
                             {comment.content}
                           </p>
                           <div className="video-page__comment-like">
-                            <a className="mr-2" href={null}>
+                            <a className="mr-2" href="javascript: void(0);">
                               <i className="icmn-heart mr-2" />
                               {comment.likesCount > 0 &&
                                 <span>
@@ -131,7 +131,7 @@ class YouTubeView extends React.Component {
               <ul className="video-page__watch-next">
                 {upNext.map((video, index) =>
                   <li className="video-page__next-item clearfix" key={index}>
-                    <a href="#" className="video-page__next-item-link">
+                    <a href="javascript: void(0);" className="video-page__next-item-link">
                       <div className="video-page__item-thumb">
                         <img
                           className="video-page__item-thumb-img"

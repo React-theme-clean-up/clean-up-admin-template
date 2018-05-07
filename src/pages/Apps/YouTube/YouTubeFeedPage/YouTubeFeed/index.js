@@ -24,14 +24,14 @@ class YouTubeFeed extends React.Component {
                 <div className="video-page__partition-head">
                   <h2 className="video-page__partition-title">
                     {partition.cover !== undefined &&
-                      <img className="video-page__partition-thumb mr-1" src={partition.cover} />}
+                      <img className="video-page__partition-thumb mr-1" src={partition.cover} alt="" />}
                     {partition.name}
                   </h2>
                 </div>
                 <ul className="video-page__partition-content">
                   {partition.videos.map((video, index) =>
                     <li className="video-page__next-item video-page__next-item--feed" key={index}>
-                      <a href="#" className="video-page__next-item-link">
+                      <a href="javascript: void(0);" className="video-page__next-item-link">
                         <div className="video-page__item-thumb">
                           <img
                             className="video-page__item-thumb-img"

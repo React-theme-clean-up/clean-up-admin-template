@@ -49,7 +49,7 @@ class Cart extends React.Component {
         title: 'Description',
         dataIndex: 'description',
         render: text =>
-          <a className="utils__link--underlined" href="#">
+          <a className="utils__link--underlined" href="javascript: void(0);">
             {text}
           </a>,
       },
@@ -70,7 +70,7 @@ class Cart extends React.Component {
         title: '',
         dataIndex: '',
         render: () =>
-          <a className="utils__link--underlined" href="#">
+          <a className="utils__link--underlined" href="javascript: void(0);">
             Remove
           </a>,
       },

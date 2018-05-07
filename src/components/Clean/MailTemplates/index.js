@@ -49,7 +49,7 @@ class MailTemplates extends React.Component {
                                 design and clear call to action.
                               </p>
                               <a
-                                href={null}
+                                href="javascript: void(0);"
                                 style={{
                                   display: 'inline-block',
                                   padding: '11px 30px 6px',
@@ -85,7 +85,7 @@ class MailTemplates extends React.Component {
                         <br />
                         Don't like these emails?{' '}
                         <a
-                          href={null}
+                          href="javascript: void(0);"
                           style={{
                             color: '#a09bb9',
                             textDecoration: 'underline',
@@ -151,7 +151,7 @@ class MailTemplates extends React.Component {
                               </p>
                               <div style={{ textAlign: 'center' }}>
                                 <a
-                                  href={null}
+                                  href="javascript: void(0);"
                                   style={{
                                     display: 'inline-block',
                                     padding: '11px 30px 6px',
@@ -188,7 +188,7 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href={null} style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
                           Unsubscribe
                         </a>
                         <br />
@@ -574,7 +574,7 @@ class MailTemplates extends React.Component {
                               <p style={{ textAlign: 'center' }}>
                                 Notice something wrong?{' '}
                                 <a
-                                  href={null}
+                                  href="javascript: void(0);"
                                   style={{ color: '#01a8fe', textDecoration: 'underline' }}
                                 >
                                   Contact our support team
@@ -598,7 +598,7 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href={null} style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
                           Unsubscribe
                         </a>
                         <br />
@@ -681,7 +681,7 @@ class MailTemplates extends React.Component {
                               <p>Congratulations! Something good has appened.</p>
                               <div style={{ textAlign: 'center' }}>
                                 <a
-                                  href={null}
+                                  href="javascript: void(0);"
                                   style={{
                                     display: 'inline-block',
                                     padding: '11px 30px 6px',
@@ -713,7 +713,7 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href={null} style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
                           Unsubscribe
                         </a>
                         <br />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Menu, Icon, Switch, Layout } from 'antd'
-import { Link, NavLink, withRouter } from 'react-router-dom'
+import { Menu, Switch, Layout } from 'antd'
+import { Link, withRouter } from 'react-router-dom'
 import './style.css'
 
 const { Sider } = Layout

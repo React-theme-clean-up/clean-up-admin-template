@@ -169,7 +169,7 @@ class ChartItems extends React.Component {
             <strong>Chart.js</strong>
             <a
               href="http://www.chartjs.org/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="btn btn-sm btn-primary ml-2"
             >
               Official Documentation <i className="icmn-link ml-1" />
@@ -184,7 +184,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -200,7 +200,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -218,7 +218,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -234,7 +234,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -252,7 +252,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -268,7 +268,7 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer" >
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>

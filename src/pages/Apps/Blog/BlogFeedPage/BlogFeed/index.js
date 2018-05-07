@@ -32,7 +32,7 @@ class BlogFeed extends React.Component {
                         <div className="blog-feed__article-information">
                           <div className="blog-feed__article-title">
                             <h1>
-                              <a href="#">
+                              <a href="javascript: void(0);">
                                 {article.name}
                               </a>
                             </h1>
@@ -40,7 +40,7 @@ class BlogFeed extends React.Component {
                           <ul className="blog-feed__article-meta">
                             <li className="blog-feed__article-meta-inf">
                               <span className="blog-feed__article-author">
-                                Post By <a href="#">{article.author}</a>
+                                Post By <a href="javascript: void(0);">{article.author}</a>
                               </span>
                             </li>
                             <li className="blog-feed__article-meta-inf">
@@ -51,7 +51,7 @@ class BlogFeed extends React.Component {
                           </ul>
                         </div>
                         <div className="blog-feed__article-media">
-                          <a href="#" className="blog-feed__article-link">
+                          <a href="javascript: void(0);" className="blog-feed__article-link">
                             <img src={article.cover} alt={article.name} />
                           </a>
                         </div>
@@ -72,7 +72,7 @@ class BlogFeed extends React.Component {
                             <div className="col-8">
                               <div className="blog-feed__article-hashtags">
                                 {article.tags.map((tag, index) =>
-                                  <a href="#" key={index}>
+                                  <a href="javascript: void(0);" key={index}>
                                     {tag}
                                   </a>,
                                 )}
@@ -81,17 +81,17 @@ class BlogFeed extends React.Component {
                             <div className="col-4">
                               <ul className="blog-feed__share">
                                 <li className="blog-feed__share-item">
-                                  <a href="#">
+                                  <a href="javascript: void(0);">
                                     <i className="fa fa-facebook" />
                                   </a>
                                 </li>
                                 <li className="blog-feed__share-item">
-                                  <a href="#">
+                                  <a href="javascript: void(0);">
                                     <i className="fa fa-twitter" />
                                   </a>
                                 </li>
                                 <li className="blog-feed__share-item">
-                                  <a href="#">
+                                  <a href="javascript: void(0);">
                                     <i className="fa fa-pinterest-p" />
                                   </a>
                                 </li>
@@ -128,7 +128,7 @@ class BlogFeed extends React.Component {
                       <ul className="blog-feed__categories-list">
                         {articlesCategories.map((category, index) =>
                           <li className="blog-feed__categories-item" key={index}>
-                            <a className="blog-feed__categories-link" href="#">
+                            <a className="blog-feed__categories-link" href="javascript: void(0);">
                               {category}
                             </a>
                           </li>,
@@ -142,14 +142,14 @@ class BlogFeed extends React.Component {
                       {latesArticlesData.map((latestArticle, index) =>
                         <article className="blog-feed__latest-post" key={index}>
                           <div className="blog-feed__latest-img">
-                            <a href="#">
+                            <a href="javascript: void(0);">
                               <img src={latestArticle.cover} alt={latestArticle.name} />
                             </a>
                           </div>
                           <div className="blog-feed__latest-data">
                             <div className="blog-feed__latest-name">
                               <h2>
-                                <a href="#">
+                                <a href="javascript: void(0);">
                                   {latestArticle.name}
                                 </a>
                               </h2>
@@ -157,7 +157,7 @@ class BlogFeed extends React.Component {
                             <ul className="blog-feed__article-meta blog-feed__article-meta--latest">
                               <li className="blog-feed__article-meta-inf">
                                 <span className="blog-feed__article-author">
-                                  Post By <a href="#">{latestArticle.author}</a>
+                                  Post By <a href="javascript: void(0);">{latestArticle.author}</a>
                                 </span>
                               </li>
                               <li className="blog-feed__article-meta-inf">

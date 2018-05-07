@@ -10,7 +10,7 @@ class GridBootstrap extends React.Component {
               <strong>Grid Options</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/layout/grid/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />

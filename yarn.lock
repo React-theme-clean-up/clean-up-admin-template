@@ -6419,6 +6419,10 @@ react-addons-perf@^15.4.2:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
+react-app-rewire-eslint@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/react-app-rewire-eslint/-/react-app-rewire-eslint-0.2.3.tgz#88e93d74569c33fe22185d46f6a2b521c4dd7fb6"
+
 react-app-rewire-less@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-app-rewire-less/-/react-app-rewire-less-2.0.4.tgz#2b55450cdd678aea0a2b777cce5af5caa9a7912a"
@@ -6426,9 +6430,9 @@ react-app-rewire-less@^2.0.4:
     less "^2.7.2"
     less-loader "^4.0.3"
 
-react-app-rewired@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-1.0.11.tgz#321ee7ce8bafe53ca797b0b5536cf9576bd089a4"
+react-app-rewired@^1.5.2yarn:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-1.5.2.tgz#0f5cdbc92f47f166bb0bcadf8a5d00999b90f68f"
   dependencies:
     cross-spawn "^5.1.0"
     dotenv "^4.0.0"

@@ -87,7 +87,7 @@ class ProductDetails extends React.Component {
                     >
                       {images.map((image, index) =>
                         <div key={index}>
-                          <img className="productDetails__item__img-item" src={image} />
+                          <img className="productDetails__item__img-item" src={image} alt="" />
                         </div>,
                       )}
                     </Carousel>
@@ -104,7 +104,7 @@ class ProductDetails extends React.Component {
                           : 'productDetails__photos-item'
                       }
                     >
-                      <img src={image} />
+                      <img src={image} alt="" />
                     </div>,
                   )}
                 </div>
@@ -114,22 +114,22 @@ class ProductDetails extends React.Component {
                   <Breadcrumb separator="">
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href={null}>Catalog</a>
+                        <a href="javascript: void(0);">Catalog</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href={null}>Chairs</a>
+                        <a href="javascript: void(0);">Chairs</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href={null}>With background</a>
+                        <a href="javascript: void(0);">With background</a>
                       </span>
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href={null}>White</a>
+                        <a href="javascript: void(0);">White</a>
                       </span>
                     </Breadcrumb.Item>
                   </Breadcrumb>
@@ -191,11 +191,11 @@ class ProductDetails extends React.Component {
                   <Button type="primary" size="large">
                     <Icon type="shopping-cart" />Buy now
                   </Button>
-                  <a href={null} className="btn btn-link">
+                  <a href="javascript: void(0);" className="btn btn-link">
                     <i className="icmn-heart mr-1" />
                     Add to Wishlist
                   </a>
-                  <a href={null} className="btn btn-link">
+                  <a href="javascript: void(0);" className="btn btn-link">
                     <i className="icmn-stats-bars mr-1" />
                     Add to Compare
                   </a>

@@ -23,7 +23,7 @@ class FontAwesomeIcons extends React.Component {
               <strong>FontAwesome</strong>
               <a
                 href="http://fontawesome.io/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />
