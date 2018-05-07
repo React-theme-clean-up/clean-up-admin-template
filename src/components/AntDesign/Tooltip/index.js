@@ -1,22 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderTooltipArrowpointatcenter } from './Arrowpointatcenter/index.js'
-import { default as renderTooltipAutoadjustoverflow } from './Autoadjustoverflow/index.js'
-import { default as renderTooltipBasic } from './Basic/index.js'
-import { default as renderTooltipPlacement } from './Placement/index.js'
+import { default as renderTooltipArrowpointatcenter } from './Arrowpointatcenter/index.js';
+import { default as renderTooltipAutoadjustoverflow } from './Autoadjustoverflow/index.js';
+import { default as renderTooltipBasic } from './Basic/index.js';
+import { default as renderTooltipPlacement } from './Placement/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class TooltipItems extends React.Component {
+
   componentDidMount() {
-    renderTooltipArrowpointatcenter(ReactDOM, document.getElementById('TooltipArrowpointatcenter'))
-    renderTooltipAutoadjustoverflow(ReactDOM, document.getElementById('TooltipAutoadjustoverflow'))
-    renderTooltipBasic(ReactDOM, document.getElementById('TooltipBasic'))
-    renderTooltipPlacement(ReactDOM, document.getElementById('TooltipPlacement'))
+    renderTooltipArrowpointatcenter(ReactDOM, document.getElementById("TooltipArrowpointatcenter"));
+renderTooltipAutoadjustoverflow(ReactDOM, document.getElementById("TooltipAutoadjustoverflow"));
+renderTooltipBasic(ReactDOM, document.getElementById("TooltipBasic"));
+renderTooltipPlacement(ReactDOM, document.getElementById("TooltipPlacement"));
+
   }
 
   render() {
@@ -28,45 +32,30 @@ class TooltipItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Tooltip</strong>
+                  <a href="https://ant.design/components/tooltip/" target="_blank" className="btn btn-sm btn-primary ml-2">
+                    Official Documentation <i className="icmn-link ml-1" />
+                  </a>
                 </h5>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-tooltip-demo-arrow-point-at-center">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Arrow pointing at the center</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        By specifying <code>{'arrowPointAtCenter'}</code> prop, the arrow will point
-                        to the center of the target element.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TooltipArrowpointatcenter" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Tooltip, Button \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Arrow pointing at the center</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">By specifying <code>{'arrowPointAtCenter'}</code> prop, the arrow will point to the center of the target element.
+</div>
+    <div className="card-body pb-0">
+      <div id="TooltipArrowpointatcenter" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Tooltip, Button \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -79,42 +68,27 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-tooltip-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">The simplest usage.</div>
-                      <div className="card-body pb-0">
-                        <div id="TooltipBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Tooltip \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-tooltip-demo-basic">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The simplest usage.
+</div>
+    <div className="card-body pb-0">
+      <div id="TooltipBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Tooltip \} from 'antd';
 
 ReactDOM.render(
   <Tooltip title="prompt text">
@@ -122,48 +96,30 @@ ReactDOM.render(
   </Tooltip>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-tooltip-demo-auto-adjust-overflow">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">
-                            Adjust placement automatically
-                          </strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Adjust popup placement automatically when popup is invisible
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TooltipAutoadjustoverflow" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Tooltip, Button \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Adjust placement automatically</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Adjust popup placement automatically when popup is invisible
+</div>
+    <div className="card-body pb-0">
+      <div id="TooltipAutoadjustoverflow" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Tooltip, Button \} from 'antd';
 
 const wrapStyles = \{
   overflow\: 'hidden',
@@ -184,42 +140,27 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-tooltip-demo-placement">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Placement</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">The ToolTip has 12 placements choice.</div>
-                      <div className="card-body pb-0">
-                        <div id="TooltipPlacement" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Tooltip, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-tooltip-demo-placement">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Placement</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The ToolTip has 12 placements choice.
+</div>
+    <div className="card-body pb-0">
+      <div id="TooltipPlacement" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Tooltip, Button \} from 'antd';
 
 const text = <span>prompt text</span>;
 
@@ -274,11 +215,12 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

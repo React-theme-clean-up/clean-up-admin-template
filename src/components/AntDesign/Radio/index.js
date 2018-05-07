@@ -1,30 +1,34 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderRadioBasic } from './Basic/index.js'
-import { default as renderRadioDisable } from './Disable/index.js'
-import { default as renderRadioRadiobutton } from './Radiobutton/index.js'
-import { default as renderRadioRadiogroupmore } from './Radiogroupmore/index.js'
-import { default as renderRadioRadiogroupoptions } from './Radiogroupoptions/index.js'
-import { default as renderRadioRadiogroupwithname } from './Radiogroupwithname/index.js'
-import { default as renderRadioRadiogroup } from './Radiogroup/index.js'
-import { default as renderRadioSize } from './Size/index.js'
+import { default as renderRadioBasic } from './Basic/index.js';
+import { default as renderRadioDisable } from './Disable/index.js';
+import { default as renderRadioRadiobutton } from './Radiobutton/index.js';
+import { default as renderRadioRadiogroupmore } from './Radiogroupmore/index.js';
+import { default as renderRadioRadiogroupoptions } from './Radiogroupoptions/index.js';
+import { default as renderRadioRadiogroupwithname } from './Radiogroupwithname/index.js';
+import { default as renderRadioRadiogroup } from './Radiogroup/index.js';
+import { default as renderRadioSize } from './Size/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class RadioItems extends React.Component {
+
   componentDidMount() {
-    renderRadioBasic(ReactDOM, document.getElementById('RadioBasic'))
-    renderRadioDisable(ReactDOM, document.getElementById('RadioDisable'))
-    renderRadioRadiobutton(ReactDOM, document.getElementById('RadioRadiobutton'))
-    renderRadioRadiogroupmore(ReactDOM, document.getElementById('RadioRadiogroupmore'))
-    renderRadioRadiogroupoptions(ReactDOM, document.getElementById('RadioRadiogroupoptions'))
-    renderRadioRadiogroupwithname(ReactDOM, document.getElementById('RadioRadiogroupwithname'))
-    renderRadioRadiogroup(ReactDOM, document.getElementById('RadioRadiogroup'))
-    renderRadioSize(ReactDOM, document.getElementById('RadioSize'))
+    renderRadioBasic(ReactDOM, document.getElementById("RadioBasic"));
+renderRadioDisable(ReactDOM, document.getElementById("RadioDisable"));
+renderRadioRadiobutton(ReactDOM, document.getElementById("RadioRadiobutton"));
+renderRadioRadiogroupmore(ReactDOM, document.getElementById("RadioRadiogroupmore"));
+renderRadioRadiogroupoptions(ReactDOM, document.getElementById("RadioRadiogroupoptions"));
+renderRadioRadiogroupwithname(ReactDOM, document.getElementById("RadioRadiogroupwithname"));
+renderRadioRadiogroup(ReactDOM, document.getElementById("RadioRadiogroup"));
+renderRadioSize(ReactDOM, document.getElementById("RadioSize"));
+
   }
 
   render() {
@@ -36,81 +40,54 @@ class RadioItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Radio</strong>
+                  <a href="https://ant.design/components/radio/" target="_blank" className="btn btn-sm btn-primary ml-2">
+                    Official Documentation <i className="icmn-link ml-1" />
+                  </a>
                 </h5>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-radio-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">The simplest use.</div>
-                      <div className="card-body pb-0">
-                        <div id="RadioBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The simplest use.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 
 ReactDOM.render(<Radio>Radio</Radio>, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-radiobutton">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">radio style</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">The combination of radio button style.</div>
-                      <div className="card-body pb-0">
-                        <div id="RadioRadiobutton" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-radiobutton">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">radio style</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The combination of radio button style.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioRadiobutton" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
 
@@ -147,45 +124,29 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-radiogroup-options">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">RadioGroup group</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Render radios by configuring <code>{'options'}</code>. > support after{' '}
-                        <code>{'2.9.0'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="RadioRadiogroupoptions" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-radiogroup-options">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">RadioGroup group</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Render radios by configuring <code>{'options'}</code>.
+
+> support after <code>{'2.9.0'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioRadiogroupoptions" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 const RadioGroup = Radio.Group;
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];
@@ -237,42 +198,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-radiogroup">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Radio Group</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">A group of radio components.</div>
-                      <div className="card-body pb-0">
-                        <div id="RadioRadiogroup" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-radiogroup">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Radio Group</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A group of radio components.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioRadiogroup" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 const RadioGroup = Radio.Group;
 
 class App extends React.Component \{
@@ -299,44 +245,30 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-radio-demo-disable">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">disabled</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Radio unavailable.</div>
-                      <div className="card-body pb-0">
-                        <div id="RadioDisable" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio, Button \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">disabled</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Radio unavailable.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioDisable" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -365,42 +297,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-radiogroup-more">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Vertical RadioGroup</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Vertical RadioGroup, with more radios.</div>
-                      <div className="card-body pb-0">
-                        <div id="RadioRadiogroupmore" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio, Input \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-radiogroup-more">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Vertical RadioGroup</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Vertical RadioGroup, with more radios.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioRadiogroupmore" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio, Input \} from 'antd';
 const RadioGroup = Radio.Group;
 
 class App extends React.Component \{
@@ -435,48 +352,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-radiogroup-with-name">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">RadioGroup with name</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Passing the <code>{'name'}</code> property to all{' '}
-                        <code>{'input[type="radio"]'}</code> that are in the same RadioGroup. It is
-                        usually used to let the browser see your RadioGroup as a real "group" and
-                        keep the default behavior. For example, using left/right keyboard arrow to
-                        change your selection that in the same RadioGroup.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="RadioRadiogroupwithname" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-radiogroup-with-name">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">RadioGroup with name</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Passing the <code>{'name'}</code> property to all <code>{'input[type="radio"]'}</code> that are in the same RadioGroup. It is usually used to let the browser see your RadioGroup as a real "group" and keep the default behavior. For example, using left/right keyboard arrow to change your selection that in the same RadioGroup.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioRadiogroupwithname" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 const RadioGroup = Radio.Group;
 
 function App() \{
@@ -492,45 +388,27 @@ function App() \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-radio-demo-size">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Size</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        There are three sizes available: large, medium, and small. It can coordinate
-                        with input box.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="RadioSize" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-radio-demo-size">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Size</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">There are three sizes available: large, medium, and small. It can coordinate with input box.
+</div>
+    <div className="card-body pb-0">
+      <div id="RadioSize" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Radio \} from 'antd';
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
 
@@ -563,11 +441,12 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

@@ -1,34 +1,38 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderCardBasic } from './Basic/index.js'
-import { default as renderCardBorderless } from './Borderless/index.js'
-import { default as renderCardFlexiblecontent } from './Flexiblecontent/index.js'
-import { default as renderCardGridcard } from './Gridcard/index.js'
-import { default as renderCardIncolumn } from './Incolumn/index.js'
-import { default as renderCardInner } from './Inner/index.js'
-import { default as renderCardLoading } from './Loading/index.js'
-import { default as renderCardMeta } from './Meta/index.js'
-import { default as renderCardSimple } from './Simple/index.js'
-import { default as renderCardTabs } from './Tabs/index.js'
+import { default as renderCardBasic } from './Basic/index.js';
+import { default as renderCardBorderless } from './Borderless/index.js';
+import { default as renderCardFlexiblecontent } from './Flexiblecontent/index.js';
+import { default as renderCardGridcard } from './Gridcard/index.js';
+import { default as renderCardIncolumn } from './Incolumn/index.js';
+import { default as renderCardInner } from './Inner/index.js';
+import { default as renderCardLoading } from './Loading/index.js';
+import { default as renderCardMeta } from './Meta/index.js';
+import { default as renderCardSimple } from './Simple/index.js';
+import { default as renderCardTabs } from './Tabs/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class CardItems extends React.Component {
+
   componentDidMount() {
-    renderCardBasic(ReactDOM, document.getElementById('CardBasic'))
-    renderCardBorderless(ReactDOM, document.getElementById('CardBorderless'))
-    renderCardFlexiblecontent(ReactDOM, document.getElementById('CardFlexiblecontent'))
-    renderCardGridcard(ReactDOM, document.getElementById('CardGridcard'))
-    renderCardIncolumn(ReactDOM, document.getElementById('CardIncolumn'))
-    renderCardInner(ReactDOM, document.getElementById('CardInner'))
-    renderCardLoading(ReactDOM, document.getElementById('CardLoading'))
-    renderCardMeta(ReactDOM, document.getElementById('CardMeta'))
-    renderCardSimple(ReactDOM, document.getElementById('CardSimple'))
-    renderCardTabs(ReactDOM, document.getElementById('CardTabs'))
+    renderCardBasic(ReactDOM, document.getElementById("CardBasic"));
+renderCardBorderless(ReactDOM, document.getElementById("CardBorderless"));
+renderCardFlexiblecontent(ReactDOM, document.getElementById("CardFlexiblecontent"));
+renderCardGridcard(ReactDOM, document.getElementById("CardGridcard"));
+renderCardIncolumn(ReactDOM, document.getElementById("CardIncolumn"));
+renderCardInner(ReactDOM, document.getElementById("CardInner"));
+renderCardLoading(ReactDOM, document.getElementById("CardLoading"));
+renderCardMeta(ReactDOM, document.getElementById("CardMeta"));
+renderCardSimple(ReactDOM, document.getElementById("CardSimple"));
+renderCardTabs(ReactDOM, document.getElementById("CardTabs"));
+
   }
 
   render() {
@@ -40,44 +44,30 @@ class CardItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Card</strong>
+                  <a href="https://ant.design/components/card/" target="_blank" className="btn btn-sm btn-primary ml-2">
+                    Official Documentation <i className="icmn-link ml-1" />
+                  </a>
                 </h5>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-card-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic card</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        A basic card containing a title, content and an extra corner content.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic card</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A basic card containing a title, content and an extra corner content.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 ReactDOM.render(
   <Card title="Card title" extra=\{<a href="#">More</a>\} style=\{\{ width\: 300 \}\}>
@@ -87,44 +77,28 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-flexible-content">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized content</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        You can use <code>{'Card.Meta'}</code> to support more flexible content.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardFlexiblecontent" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-flexible-content">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized content</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">You can use <code>{'Card.Meta'}</code> to support more flexible content.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="CardFlexiblecontent" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 const \{ Meta \} = Card;
 
 ReactDOM.render(
@@ -140,44 +114,27 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-in-column">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Card in column</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Cards usually cooperate with grid column layout in overview page.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardIncolumn" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card, Col, Row \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-in-column">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Card in column</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Cards usually cooperate with grid column layout in overview page.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardIncolumn" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card, Col, Row \} from 'antd';
 
 ReactDOM.render(
   <div style=\{\{ background\: '#ECECEC', padding\: '30px' \}\}>
@@ -195,44 +152,27 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-loading">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Loading card</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Shows a loading indicator while the contents of the card is being fetched.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardLoading" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-loading">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Loading card</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Shows a loading indicator while the contents of the card is being fetched.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardLoading" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 ReactDOM.render(
   <Card loading title="Card title" style=\{\{ width\: '34%' \}\}>
@@ -240,44 +180,27 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-simple">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Simple card</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        A simple card only containing a content area.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardSimple" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-simple">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Simple card</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A simple card only containing a content area.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardSimple" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 ReactDOM.render(
   <Card style=\{\{ width\: 300 \}\}>
@@ -287,44 +210,30 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-card-demo-border-less">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">No border</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">A borderless card on a gray background.</div>
-                      <div className="card-body pb-0">
-                        <div id="CardBorderless" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">No border</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A borderless card on a gray background.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardBorderless" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 ReactDOM.render(
   <div style=\{\{ background\: '#ECECEC', padding\: '30px' \}\}>
@@ -336,42 +245,27 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-grid-card">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Grid card</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Grid style card content.</div>
-                      <div className="card-body pb-0">
-                        <div id="CardGridcard" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-grid-card">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Grid card</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Grid style card content.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardGridcard" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 const gridStyle = \{
   width\: '25%',
@@ -390,45 +284,27 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-inner">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Inner card</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        It can be placed inside the ordinary card to display the information of the
-                        multilevel structure.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardInner" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-inner">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Inner card</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">It can be placed inside the ordinary card to display the information of the multilevel structure.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardInner" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 ReactDOM.render(
   <Card title="Card title">
@@ -460,47 +336,27 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-meta">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">
-                            Support more content configuration
-                          </strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        A Card that supports <code>{'cover'}</code>, <code>{'avatar'}</code>,{' '}
-                        <code>{'title'}</code> and <code>{'description'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CardMeta" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card, Icon, Avatar \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-meta">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Support more content configuration</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A Card that supports <code>{'cover'}</code>, <code>{'avatar'}</code>, <code>{'title'}</code> and <code>{'description'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardMeta" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card, Icon, Avatar \} from 'antd';
 const \{ Meta \} = Card;
 
 ReactDOM.render(
@@ -517,42 +373,27 @@ ReactDOM.render(
   </Card>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-card-demo-tabs">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">With tabs</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">More content can be hosted.</div>
-                      <div className="card-body pb-0">
-                        <div id="CardTabs" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Card \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-card-demo-tabs">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">With tabs</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">More content can be hosted.
+</div>
+    <div className="card-body pb-0">
+      <div id="CardTabs" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Card \} from 'antd';
 
 const tabList = [\{
   key\: 'tab1',
@@ -623,11 +464,12 @@ ReactDOM.render(
   <TabsCard />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

@@ -6,10 +6,7 @@ import './style.css'
 
 const { Sider } = Layout
 const SubMenu = Menu.SubMenu
-
-const mapStateToProps = (state, props) => ({})
-
-const menuItems = [
+const menuData = [
   {
     title: 'Ant Components',
     key: 'antComponents',
@@ -516,6 +513,7 @@ const menuItems = [
     ],
   },
 ]
+const mapStateToProps = (state, props) => ({})
 
 @connect(mapStateToProps)
 class Navigation extends React.Component {
@@ -551,7 +549,7 @@ class Navigation extends React.Component {
     let url = props.location.pathname
     let activeMenuItem = ''
     let opened = []
-    menuItems.forEach(menuItem => {
+    menuData.forEach(menuItem => {
       if (menuItem.children) {
         let menuItemKey = menuItem.key
         menuItem.children.forEach(innerMenuItem => {
@@ -572,8 +570,8 @@ class Navigation extends React.Component {
     })
   }
 
-  getMenuItems() {
-    return menuItems.map(menuItem => {
+  generateMenuPartitions(items) {
+    return items.map(menuItem => {
       if (menuItem.children) {
         let subMenuTitle = (
           <span className="appMenu__title-wrap">
@@ -585,9 +583,7 @@ class Navigation extends React.Component {
         )
         return (
           <SubMenu title={subMenuTitle} key={menuItem.key}>
-            {menuItem.children.map(child => {
-              return this.generateMenuItem(child)
-            })}
+            {this.generateMenuPartitions(menuItem.children)}
           </SubMenu>
         )
       }
@@ -615,10 +611,14 @@ class Navigation extends React.Component {
   componentDidMount() {
     this.getActiveMenuItem(this.props)
   }
+  
+  componentWillReceiveProps(newProps) {
+    this.getActiveMenuItem(newProps)
+  }
 
   render() {
     const { theme, collapsed, current, opened } = this.state
-    const menuItems = this.getMenuItems()
+    const menu = this.generateMenuPartitions(menuData)
     return (
       <Sider width={256} collapsed={collapsed}>
         <div className="appMenu__logo" />
@@ -631,7 +631,7 @@ class Navigation extends React.Component {
           mode="inline"
           className="appMenu__navigation"
         >
-          {menuItems}
+          {menu}
         </Menu>
 
         <br />

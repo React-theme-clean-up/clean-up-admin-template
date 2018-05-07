@@ -1,7 +1,13 @@
 import React from 'react'
 import './style.css'
-import { Alert } from 'antd'
+import { Alert } from 'antd';
+
+
+
 
 export default function(ReactDOM, mountNode) {
-  ReactDOM.render(<Alert message="Success Text" type="success" />, mountNode)
+  ReactDOM.render(
+  <Alert message="Success Text" type="success" />
+, mountNode);
+
 }
