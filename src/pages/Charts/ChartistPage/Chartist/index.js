@@ -343,7 +343,7 @@ class ChartistsItems extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Chartist.js</strong>
             <a
               href="https://gionkunz.github.io/chartist-js/"
@@ -353,7 +353,7 @@ class ChartistsItems extends React.Component {
             >
               Official Documentation <i className="icmn-link ml-1" />
             </a>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <div className="row">
