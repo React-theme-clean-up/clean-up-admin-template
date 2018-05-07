@@ -188,7 +188,10 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a
+                          href="javascript: void(0);"
+                          style={{ color: '#a09bb9', textDecoration: 'underline' }}
+                        >
                           Unsubscribe
                         </a>
                         <br />
@@ -598,7 +601,10 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a
+                          href="javascript: void(0);"
+                          style={{ color: '#a09bb9', textDecoration: 'underline' }}
+                        >
                           Unsubscribe
                         </a>
                         <br />
@@ -713,7 +719,10 @@ class MailTemplates extends React.Component {
                         Mediatec Software Inc., Abbey Road, San Francisco CA 94102
                         <br />
                         Don't like these emails?{' '}
-                        <a href="javascript: void(0);" style={{ color: '#a09bb9', textDecoration: 'underline' }}>
+                        <a
+                          href="javascript: void(0);"
+                          style={{ color: '#a09bb9', textDecoration: 'underline' }}
+                        >
                           Unsubscribe
                         </a>
                         <br />

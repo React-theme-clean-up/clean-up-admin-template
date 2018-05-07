@@ -33,7 +33,8 @@ class GridCard extends React.Component {
               <strong>Cards</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/components/card/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />

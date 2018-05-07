@@ -10,7 +10,8 @@ class Utilities extends React.Component {
               <strong>Utilities</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />
@@ -25,105 +26,120 @@ class Utilities extends React.Component {
               </p>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/borders/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Borders
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/clearfix/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Clearfix
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/close-icon/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Close icon
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/colors/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Colors
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/flexbox/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Flexbox
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/display-property/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Display Property
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/image-replacement/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Image Replacement
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/invisible-content/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Invisible Content
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/position/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Position
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/responsive-helpers/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Responsive Helpers
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/screenreaders/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Screenreaders
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/sizing/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Sizing
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/spacing/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Spacing
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/typography/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Typography
               </a>
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/vertical-align/"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Vertical Alignment
@@ -288,7 +304,8 @@ class Utilities extends React.Component {
                         <td>
                           <a
                             href="javascript: void(0)"
-                            target="_blank" rel="noopener noreferrer"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--underlined"
                           >
                             Underlined Link
@@ -302,7 +319,8 @@ class Utilities extends React.Component {
                         <td>
                           <a
                             href="javascript: void(0)"
-                            target="_blank" rel="noopener noreferrer"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--blue"
                           >
                             Blue Link
@@ -316,7 +334,8 @@ class Utilities extends React.Component {
                         <td>
                           <a
                             href="javascript: void(0)"
-                            target="_blank" rel="noopener noreferrer"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--underlined utils__link--blue"
                           >
                             Underlined and Blue Link

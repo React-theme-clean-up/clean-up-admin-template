@@ -302,7 +302,10 @@ class ProfileApp extends React.Component {
                                       <div className="mb-3">
                                         <div className="pull-right">
                                           <Dropdown overlay={actions}>
-                                            <a className="ant-dropdown-link" href="javascript: void(0);">
+                                            <a
+                                              className="ant-dropdown-link"
+                                              href="javascript: void(0);"
+                                            >
                                               Actions <Icon type="down" />
                                             </a>
                                           </Dropdown>

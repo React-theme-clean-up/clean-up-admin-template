@@ -24,7 +24,11 @@ class YouTubeFeed extends React.Component {
                 <div className="video-page__partition-head">
                   <h2 className="video-page__partition-title">
                     {partition.cover !== undefined &&
-                      <img className="video-page__partition-thumb mr-1" src={partition.cover} alt="" />}
+                      <img
+                        className="video-page__partition-thumb mr-1"
+                        src={partition.cover}
+                        alt=""
+                      />}
                     {partition.name}
                   </h2>
                 </div>

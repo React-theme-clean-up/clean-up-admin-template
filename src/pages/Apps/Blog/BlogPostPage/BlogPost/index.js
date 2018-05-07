@@ -212,7 +212,10 @@ class BlogPost extends React.Component {
                                             </div>
                                             <div className="pull-right">
                                               <Dropdown overlay={actions}>
-                                                <a className="ant-dropdown-link" href="javascript: void(0);">
+                                                <a
+                                                  className="ant-dropdown-link"
+                                                  href="javascript: void(0);"
+                                                >
                                                   Actions <Icon type="down" />
                                                 </a>
                                               </Dropdown>
