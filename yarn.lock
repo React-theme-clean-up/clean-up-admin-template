@@ -1452,6 +1452,10 @@ chartist-plugin-tooltip@^0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/chartist-plugin-tooltip/-/chartist-plugin-tooltip-0.0.11.tgz#cec2195fa505f4d34e6d8e41a86bfbcb9bfff461"
 
+chartist-plugin-tooltips@0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/chartist-plugin-tooltips/-/chartist-plugin-tooltips-0.0.17.tgz#fc1a98eb5d3771235b6e08cd1c18cc96c2110660"
+
 chartist@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/chartist/-/chartist-0.11.0.tgz#84ba5e05490d096d93dcfa9343ebc31ef6a3bd28"
@@ -1528,10 +1532,6 @@ clap@^1.0.9:
 classnames@2.x, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@~2.2.0:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
-
-classnames@^1.2.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-1.2.2.tgz#e96a2a0222d84925dd8fadb205d66e12f888edf9"
 
 clean-css@4.1.x:
   version "4.1.5"
@@ -6445,15 +6445,9 @@ react-c3js@^0.1.20:
   dependencies:
     c3 "^0.4.11"
 
-react-chartist-tooltip@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/react-chartist-tooltip/-/react-chartist-tooltip-0.4.1.tgz#34087c008e823cf392b3810362f77380d958f278"
-  dependencies:
-    classnames "^1.2.0"
-
-react-chartist@^0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/react-chartist/-/react-chartist-0.13.1.tgz#79cee44891dfd7008d555a7a5a623ab09c0b59d1"
+react-chartist@0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/react-chartist/-/react-chartist-0.13.0.tgz#171bcd6b59fafadbb5ee06cfa7e4613028a5971b"
   dependencies:
     prop-types "^15.5.8"
 
