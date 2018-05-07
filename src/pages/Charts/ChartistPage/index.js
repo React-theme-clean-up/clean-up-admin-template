@@ -6,6 +6,7 @@ import ChartistsItems from './Chartist'
 class ChartistPage extends React.Component {
   static defaultProps = {
     pathName: 'Chartists',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

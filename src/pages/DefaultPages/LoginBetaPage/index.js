@@ -6,6 +6,7 @@ import LoginBeta from './LoginBeta'
 class LoginBetaPage extends React.Component {
   static defaultProps = {
     pathName: 'Login Beta',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

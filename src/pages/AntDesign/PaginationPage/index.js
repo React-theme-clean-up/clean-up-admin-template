@@ -6,6 +6,7 @@ import PaginationItems from 'components/AntDesign/Pagination/index'
 class PaginationPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

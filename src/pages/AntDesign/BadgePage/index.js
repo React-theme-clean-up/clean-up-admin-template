@@ -6,6 +6,7 @@ import BadgeItems from 'components/AntDesign/Badge/index'
 class BadgePage extends React.Component {
   static defaultProps = {
     pathName: 'Badge',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import SliderItems from 'components/AntDesign/Slider/index'
 class SliderPage extends React.Component {
   static defaultProps = {
     pathName: 'Slider',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

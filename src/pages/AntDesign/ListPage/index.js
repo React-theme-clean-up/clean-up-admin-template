@@ -6,6 +6,7 @@ import ListItems from 'components/AntDesign/List/index'
 class ListPage extends React.Component {
   static defaultProps = {
     pathName: 'List',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

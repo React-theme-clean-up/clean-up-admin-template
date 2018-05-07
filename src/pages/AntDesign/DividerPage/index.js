@@ -6,6 +6,7 @@ import DividerItems from 'components/AntDesign/Divider/index'
 class DividerPage extends React.Component {
   static defaultProps = {
     pathName: 'Divider',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

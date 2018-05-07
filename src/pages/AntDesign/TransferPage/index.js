@@ -6,6 +6,7 @@ import TransferItems from 'components/AntDesign/Transfer/index'
 class TransferPage extends React.Component {
   static defaultProps = {
     pathName: 'Transfer',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

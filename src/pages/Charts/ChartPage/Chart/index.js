@@ -192,7 +192,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Line data={lineData} options={lineOptions} width="400" height="200" />
+                <Line data={lineData} options={lineOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -208,7 +208,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Bar data={barData} options={barOptions} width="400" height="200" />
+                <Bar data={barData} options={barOptions} width={400} height={200} />
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Radar data={radarData} options={radarOptions} width="400" height="200" />
+                <Radar data={radarData} options={radarOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -242,7 +242,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Polar data={polarData} options={polarOptions} width="400" height="200" />
+                <Polar data={polarData} options={polarOptions} width={400} height={200} />
               </div>
             </div>
           </div>
@@ -260,7 +260,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Pie data={pieData} options={pieOptions} width="400" height="200" />
+                <Pie data={pieData} options={pieOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -276,7 +276,7 @@ class ChartItems extends React.Component {
                 </a>
               </p>
               <div className="mb-5">
-                <Doughnut data={doughnutData} options={doughnutOptions} width="400" height="200" />
+                <Doughnut data={doughnutData} options={doughnutOptions} width={400} height={200} />
               </div>
             </div>
           </div>

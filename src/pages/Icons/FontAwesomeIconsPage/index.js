@@ -6,6 +6,7 @@ import FontAwesomeIcons from './FontAwesomeIcons'
 class FontAwesomeIconsPage extends React.Component {
   static defaultProps = {
     pathName: 'FontAwesome Icons',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

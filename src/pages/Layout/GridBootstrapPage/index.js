@@ -6,6 +6,7 @@ import GridBootstrap from './GridBootstrap'
 class GridBootstrapPage extends React.Component {
   static defaultProps = {
     pathName: 'Grid',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

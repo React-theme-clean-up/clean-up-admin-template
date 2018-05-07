@@ -6,6 +6,7 @@ import TreeselectItems from 'components/AntDesign/Treeselect/index'
 class TreeselectPage extends React.Component {
   static defaultProps = {
     pathName: 'TreeSelect',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -17,13 +17,13 @@ export const deleteDialogForm = createAction(`${NS}DELETE_DIALOG_FORM`)
 export const addSubmitForm = createAction(`${NS}ADD_SUBMIT_FORM`)
 export const deleteSubmitForm = createAction(`${NS}DELETE_SUBMIT_FORM`)
 
-export const setLoading = (isLoading: boolean) => {
+export const setLoading = (isLoading) => {
   const action = _setLoading(isLoading)
   action[pendingTask] = isLoading ? begin : end
   return action
 }
 
-export const resetHideLogin = () => (dispatch: Function, getState: Function) => {
+export const resetHideLogin = () => (dispatch, getState) => {
   const state = getState()
   if (state.pendingTasks === 0 && state.app.isHideLogin) {
     dispatch(_setHideLogin(false))
@@ -31,7 +31,7 @@ export const resetHideLogin = () => (dispatch: Function, getState: Function) => 
   return Promise.resolve()
 }
 
-export const toggleMenuLeft = () => (dispatch: Function, getState: Function) => {
+export const toggleMenuLeft = () => (dispatch, getState) => {
   const state = getState()
   const isMenuLeft = !state.app.isMenuLeft
   window.localStorage.setItem('app.isMenuLeft', isMenuLeft ? 'on' : 'off')
@@ -39,60 +39,56 @@ export const toggleMenuLeft = () => (dispatch: Function, getState: Function) => 
   return Promise.resolve()
 }
 
-export const initAuth = (roles: Array<string>) => (dispatch: Function, getState: Function) => {
+export const initAuth = (roles) => (dispatch, getState) => {
   // Use Axios there to get User Data by Auth Token with Bearer Method Authentication
 
-  const role = window.localStorage.getItem('app.Role')
+  const userRole = window.localStorage.getItem('app.Role')
   const state = getState()
   let data = null
 
-  console.log(role)
-
-  if (role === 'administrator') {
-    data = {
+  const users = {
+    administrator: {
       email: 'admin@mediatec.org',
       role: 'administrator',
-    }
-    dispatch(
-      setUserState({
-        userState: {
-          ...data,
-        },
-      }),
-    )
-    if (!roles.find(role => role === 'administrator')) {
-      if (!(state.routing.location.pathname === '/dashboard/alpha')) {
-        dispatch(push('/dashboard/alpha'))
-      }
-      return Promise.resolve(false)
-    }
-    return Promise.resolve(true)
-  } else if (role === 'agent') {
-    data = {
+    },
+    agent: {
       email: 'agent@mediatec.org',
       role: 'agent',
     }
+  }
+
+  const setUser = (userState) => {
     dispatch(
       setUserState({
         userState: {
-          ...data,
+          ...userState,
         },
       }),
     )
-    if (!roles.find(role => role === 'agent')) {
+    if (!roles.find(role => role === userRole)) {
       if (!(state.routing.location.pathname === '/dashboard/alpha')) {
         dispatch(push('/dashboard/alpha'))
       }
       return Promise.resolve(false)
     }
     return Promise.resolve(true)
-  } else {
-    const state = getState()
-    const location = state.routing.location
-    const from = location.pathname + location.search
-    dispatch(_setFrom(from))
-    dispatch(push('/login'))
-    return Promise.reject()
+  }
+
+  switch(userRole) {
+    case 'administrator':
+      console.log('admin')
+      return setUser(users.administrator, userRole)
+
+    case 'agent':
+      console.log('agent')
+      return setUser(users.agent, userRole)
+
+    default:
+      const location = state.routing.location
+      const from = location.pathname + location.search
+      dispatch(_setFrom(from))
+      dispatch(push('/login'))
+      return Promise.reject()
   }
 }
 
@@ -121,7 +117,7 @@ export function login(username, password, dispatch) {
   return false
 }
 
-export const logout = () => (dispatch: Function, getState: Function) => {
+export const logout = () => (dispatch, getState) => {
   dispatch(
     setUserState({
       userState: {

@@ -6,6 +6,7 @@ import RateItems from 'components/AntDesign/Rate/index'
 class RatePage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

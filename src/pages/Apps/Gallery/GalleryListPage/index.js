@@ -6,6 +6,7 @@ import GalleryList from './GalleryList'
 class GalleryAppPage extends React.Component {
   static defaultProps = {
     pathName: 'Gallery',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

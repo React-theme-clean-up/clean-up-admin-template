@@ -6,6 +6,7 @@ import PietyItems from './Piety'
 class PietyPage extends React.Component {
   static defaultProps = {
     pathName: 'Piety',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

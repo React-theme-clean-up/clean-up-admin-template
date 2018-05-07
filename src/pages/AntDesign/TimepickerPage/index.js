@@ -6,6 +6,7 @@ import TimepickerItems from 'components/AntDesign/Timepicker/index'
 class TimepickerPage extends React.Component {
   static defaultProps = {
     pathName: 'Timepicker',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

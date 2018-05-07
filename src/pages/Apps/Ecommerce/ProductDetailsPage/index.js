@@ -6,6 +6,7 @@ import ProductDetails from './ProductDetails'
 class ProductDetailsPage extends React.Component {
   static defaultProps = {
     pathName: 'Products Details',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

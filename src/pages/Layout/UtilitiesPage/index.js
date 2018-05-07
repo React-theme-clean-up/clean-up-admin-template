@@ -6,6 +6,7 @@ import Utilities from './Utilities'
 class UtilitiesPage extends React.Component {
   static defaultProps = {
     pathName: 'Utilities',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

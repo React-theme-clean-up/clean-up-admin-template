@@ -6,6 +6,7 @@ import CascaderItems from 'components/AntDesign/Cascader/index'
 class CascaderPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import Cart from './Cart'
 class CartPage extends React.Component {
   static defaultProps = {
     pathName: 'Cart / Checkout',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

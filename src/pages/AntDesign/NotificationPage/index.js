@@ -6,6 +6,7 @@ import NotificationItems from 'components/AntDesign/Notification/index'
 class NotificationPage extends React.Component {
   static defaultProps = {
     pathName: 'Notification',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import PricingTable from './PricingTable'
 class PricingTablePage extends React.Component {
   static defaultProps = {
     pathName: 'Pricing Table',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

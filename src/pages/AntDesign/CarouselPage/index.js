@@ -6,6 +6,7 @@ import CarouselItems from 'components/AntDesign/Carousel/index'
 class CarouselPage extends React.Component {
   static defaultProps = {
     pathName: 'Carousel',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

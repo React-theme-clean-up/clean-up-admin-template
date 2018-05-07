@@ -6,6 +6,7 @@ import SpinItems from 'components/AntDesign/Spin/index'
 class SpinPage extends React.Component {
   static defaultProps = {
     pathName: 'Spin',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

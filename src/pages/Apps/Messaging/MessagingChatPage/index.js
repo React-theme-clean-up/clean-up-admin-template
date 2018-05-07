@@ -6,6 +6,7 @@ import MessagingChat from './MessagingChat'
 class MessagingAppPage extends React.Component {
   static defaultProps = {
     pathName: 'Messaging App',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

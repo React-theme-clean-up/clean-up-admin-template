@@ -6,6 +6,7 @@ import MessageItems from 'components/AntDesign/Message/index'
 class MessagePage extends React.Component {
   static defaultProps = {
     pathName: 'Message',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

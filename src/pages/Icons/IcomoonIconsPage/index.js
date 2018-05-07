@@ -6,6 +6,7 @@ import IcomoonIcons from './IcomoonIcons'
 class IcomoonIconsPage extends React.Component {
   static defaultProps = {
     pathName: 'Icomoon Icons',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

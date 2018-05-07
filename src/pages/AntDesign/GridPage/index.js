@@ -6,6 +6,7 @@ import GridItems from 'components/AntDesign/Grid/index'
 class GridPage extends React.Component {
   static defaultProps = {
     pathName: 'Grid',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

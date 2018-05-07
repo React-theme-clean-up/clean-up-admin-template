@@ -6,6 +6,7 @@ import CalendarItems from 'components/AntDesign/Calendar/index'
 class CalendarPage extends React.Component {
   static defaultProps = {
     pathName: 'Calendar',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

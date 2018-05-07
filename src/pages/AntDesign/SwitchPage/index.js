@@ -6,6 +6,7 @@ import SwitchItems from 'components/AntDesign/Switch/index'
 class SwitchPage extends React.Component {
   static defaultProps = {
     pathName: 'Switch',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import BacktopItems from 'components/AntDesign/Backtop/index'
 class BacktopPage extends React.Component {
   static defaultProps = {
     pathName: 'Backtop',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

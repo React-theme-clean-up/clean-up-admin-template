@@ -6,6 +6,7 @@ import TabsItems from 'components/AntDesign/Tabs/index'
 class TabsPage extends React.Component {
   static defaultProps = {
     pathName: 'Tabs',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

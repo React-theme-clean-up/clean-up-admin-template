@@ -6,6 +6,7 @@ import AvatarItems from 'components/AntDesign/Avatar/index'
 class AvatarPage extends React.Component {
   static defaultProps = {
     pathName: 'Avatar',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

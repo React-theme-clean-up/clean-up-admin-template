@@ -6,6 +6,7 @@ import TimelineItems from 'components/AntDesign/Timeline/index'
 class TimelinePage extends React.Component {
   static defaultProps = {
     pathName: 'Timeline',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

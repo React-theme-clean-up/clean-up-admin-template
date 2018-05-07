@@ -6,6 +6,7 @@ import DropdownItems from 'components/AntDesign/Dropdown/index'
 class DropdownPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

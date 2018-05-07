@@ -6,6 +6,7 @@ import Dashboard from './Dashboard'
 class DashboardPage extends React.Component {
   static defaultProps = {
     pathName: 'Ecommerce Dashboard',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

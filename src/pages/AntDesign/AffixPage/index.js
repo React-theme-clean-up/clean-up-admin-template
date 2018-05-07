@@ -6,6 +6,7 @@ import AffixItems from 'components/AntDesign/Affix/index'
 class AffixPage extends React.Component {
   static defaultProps = {
     pathName: 'Affix',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

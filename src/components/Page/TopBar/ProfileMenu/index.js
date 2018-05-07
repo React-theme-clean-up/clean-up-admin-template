@@ -18,6 +18,9 @@ const mapStateToProps = (state, props) => ({
 class ProfileMenu extends React.Component {
   render() {
     const { userState, logout } = this.props
+
+    console.log('props', this.props)
+
     const menu = (
       <Menu selectable={false}>
         <Menu.Item>

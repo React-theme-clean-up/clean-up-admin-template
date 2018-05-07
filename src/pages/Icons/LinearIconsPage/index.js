@@ -6,6 +6,7 @@ import LinearIcons from './LinearIcons'
 class LinearIconsPage extends React.Component {
   static defaultProps = {
     pathName: 'Linear Icons',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

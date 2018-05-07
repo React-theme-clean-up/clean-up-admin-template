@@ -6,6 +6,7 @@ import StepsItems from 'components/AntDesign/Steps/index'
 class StepsPage extends React.Component {
   static defaultProps = {
     pathName: 'Steps',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import MailTemplates from 'components/Clean/MailTemplates'
 class MailTemplatesPage extends React.Component {
   static defaultProps = {
     pathName: 'Mail Templates',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

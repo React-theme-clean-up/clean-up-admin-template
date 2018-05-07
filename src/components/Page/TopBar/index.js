@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Button } from 'antd'
 import ProfileMenu from './ProfileMenu'
 import IssuesHistory from './IssuesHistory'
@@ -9,9 +8,6 @@ import HomeMenu from './HomeMenu'
 import LiveSearch from './LiveSearch'
 import './style.css'
 
-const mapStateToProps = (state, props) => ({})
-
-@connect(mapStateToProps)
 class TopBar extends React.Component {
   render() {
     return (

@@ -6,6 +6,7 @@ import YouTubeFeed from './YouTubeFeed'
 class YouTubeFeedPage extends React.Component {
   static defaultProps = {
     pathName: 'YouTube Feed',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

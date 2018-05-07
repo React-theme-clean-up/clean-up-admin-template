@@ -6,6 +6,7 @@ import BreadcrumbItems from 'components/AntDesign/Breadcrumb/index'
 class BreadcrumbPage extends React.Component {
   static defaultProps = {
     pathName: 'Breadcrumb',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

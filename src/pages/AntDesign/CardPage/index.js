@@ -6,6 +6,7 @@ import CardItems from 'components/AntDesign/Card/index'
 class CardPage extends React.Component {
   static defaultProps = {
     pathName: 'Card',
+    roles: ['agent', 'administrator'],
   }
 
   render() {
