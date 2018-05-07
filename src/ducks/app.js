@@ -17,7 +17,7 @@ export const deleteDialogForm = createAction(`${NS}DELETE_DIALOG_FORM`)
 export const addSubmitForm = createAction(`${NS}ADD_SUBMIT_FORM`)
 export const deleteSubmitForm = createAction(`${NS}DELETE_SUBMIT_FORM`)
 
-export const setLoading = (isLoading) => {
+export const setLoading = isLoading => {
   const action = _setLoading(isLoading)
   action[pendingTask] = isLoading ? begin : end
   return action
@@ -39,7 +39,7 @@ export const toggleMenuLeft = () => (dispatch, getState) => {
   return Promise.resolve()
 }
 
-export const initAuth = (roles) => (dispatch, getState) => {
+export const initAuth = roles => (dispatch, getState) => {
   // Use Axios there to get User Data by Auth Token with Bearer Method Authentication
 
   const userRole = window.localStorage.getItem('app.Role')
@@ -54,10 +54,10 @@ export const initAuth = (roles) => (dispatch, getState) => {
     agent: {
       email: 'agent@mediatec.org',
       role: 'agent',
-    }
+    },
   }
 
-  const setUser = (userState) => {
+  const setUser = userState => {
     dispatch(
       setUserState({
         userState: {
@@ -74,7 +74,7 @@ export const initAuth = (roles) => (dispatch, getState) => {
     return Promise.resolve(true)
   }
 
-  switch(userRole) {
+  switch (userRole) {
     case 'administrator':
       console.log('admin')
       return setUser(users.administrator, userRole)
