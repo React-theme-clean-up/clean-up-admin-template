@@ -76,11 +76,9 @@ export const initAuth = roles => (dispatch, getState) => {
 
   switch (userRole) {
     case 'administrator':
-      console.log('admin')
       return setUser(users.administrator, userRole)
 
     case 'agent':
-      console.log('agent')
       return setUser(users.agent, userRole)
 
     default:
@@ -118,6 +116,7 @@ export function login(username, password, dispatch) {
 }
 
 export const logout = () => (dispatch, getState) => {
+  console.log('LOGOUT')
   dispatch(
     setUserState({
       userState: {
@@ -142,7 +141,7 @@ const initialState = {
   activeDialog: '',
   dialogForms: {},
   submitForms: {},
-  isHideLogin: false,
+  isHideLogin: true,
 
   // USER PARAMETERS
   userState: {

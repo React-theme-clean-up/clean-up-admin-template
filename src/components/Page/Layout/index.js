@@ -7,6 +7,7 @@ import TopBar from 'components/Page/TopBar'
 import Footer from 'components/Page/Footer'
 import Menu from 'components/Page/Menu'
 import Content from 'components/Page/Content'
+import Loader from 'components/Page/Loader'
 
 const AntContent = AntLayout.Content
 const AntHeader = AntLayout.Header
@@ -48,6 +49,7 @@ class Layout extends React.Component {
             <Footer />
           </AntFooter>
         </AntLayout>
+        <Loader />
       </AntLayout>
     )
   }
