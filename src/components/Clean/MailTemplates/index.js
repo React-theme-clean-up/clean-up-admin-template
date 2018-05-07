@@ -40,7 +40,11 @@ class MailTemplates extends React.Component {
                       </tbody>
                     </table>
                     <div style={{ padding: '40px 40px 20px 40px', background: '#fff' }}>
-                      <table cellPadding="0" cellSpacing="0" style={{ width: '100%', border: '0px' }}>
+                      <table
+                        cellPadding="0"
+                        cellSpacing="0"
+                        style={{ width: '100%', border: '0px' }}
+                      >
                         <tbody>
                           <tr>
                             <td>
@@ -134,7 +138,11 @@ class MailTemplates extends React.Component {
                       </tbody>
                     </table>
                     <div style={{ padding: '40px 40px 20px 40px', background: '#fff' }}>
-                      <table cellPadding="0" cellSpacing="0" style={{ width: '100%', border: '0px' }}>
+                      <table
+                        cellPadding="0"
+                        cellSpacing="0"
+                        style={{ width: '100%', border: '0px' }}
+                      >
                         <tbody>
                           <tr>
                             <td>
@@ -242,7 +250,11 @@ class MailTemplates extends React.Component {
                       </tbody>
                     </table>
                     <div style={{ padding: '40px 40px 20px 40px', background: '#fff' }}>
-                      <table cellPadding="0" cellSpacing="0" style={{ width: '100%', border: '0px' }}>
+                      <table
+                        cellPadding="0"
+                        cellSpacing="0"
+                        style={{ width: '100%', border: '0px' }}
+                      >
                         <tbody>
                           <tr>
                             <td>
@@ -652,7 +664,11 @@ class MailTemplates extends React.Component {
                       </tbody>
                     </table>
                     <div style={{ padding: '40px 40px 20px 40px', background: '#fff' }}>
-                      <table cellPadding="0" cellSpacing="0" style={{ width: '100%', border: '0px' }}>
+                      <table
+                        cellPadding="0"
+                        cellSpacing="0"
+                        style={{ width: '100%', border: '0px' }}
+                      >
                         <tbody>
                           <tr>
                             <td>
