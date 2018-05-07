@@ -96,6 +96,7 @@ class ProductDetails extends React.Component {
                 <div className="productDetails__photos clearfix">
                   {images.map((image, index) =>
                     <div
+                      key={index}
                       onClick={e =>
                         this.slider.slick.innerSlider.slickGoTo(index) & this.setActiveImg(index)}
                       className={
@@ -204,7 +205,7 @@ class ProductDetails extends React.Component {
                   <Tabs defaultActiveKey="1">
                     <TabPane tab="Information" key="1">
                       {properties.map((property, index) =>
-                        <div className="productDetails__property mb-1">
+                        <div className="productDetails__property mb-1" key={index}>
                           <strong className="mr-1">
                             {property.name + ': '}
                           </strong>

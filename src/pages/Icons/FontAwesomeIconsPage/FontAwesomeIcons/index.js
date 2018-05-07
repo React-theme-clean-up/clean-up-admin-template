@@ -56,7 +56,7 @@ class FontAwesomeIcons extends React.Component {
                     </h3>
                     <ul className="utils__iconsBlock list-unstyled">
                       {iconsSet.icons.map((icon, index) =>
-                        <Tooltip title={'fa ' + icon}>
+                        <Tooltip title={'fa ' + icon} key={index}>
                           <li>
                             <i className={'fa ' + icon} />
                           </li>

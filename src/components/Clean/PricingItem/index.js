@@ -36,8 +36,6 @@ class PricingItem extends React.Component {
       }
     }
 
-    console.log(params)
-
     this.setState({
       btnType: btnType,
       type: type,

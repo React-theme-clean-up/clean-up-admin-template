@@ -1,7 +1,7 @@
 import React from 'react'
 import { Line, Bar } from 'react-peity'
 
-class PietyItems extends React.Component {
+class PeityItems extends React.Component {
   render() {
     return (
       <section className="card">
@@ -38,22 +38,24 @@ class PietyItems extends React.Component {
               </p>
               <div className="mb-5">
                 <table className="table table-hover table-vertical-middle">
-                  <tr>
-                    <td>Line Charts</td>
-                    <td>
-                      <Line values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                      <Line values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
-                      <Line values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Bar Charts</td>
-                    <td>
-                      <Bar values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                      <Bar values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
-                      <Bar values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Line Charts</td>
+                      <td>
+                        <Line values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
+                        <Line values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
+                        <Line values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bar Charts</td>
+                      <td>
+                        <Bar values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
+                        <Bar values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
+                        <Bar values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -75,30 +77,32 @@ class PietyItems extends React.Component {
               </p>
               <div className="mb-5">
                 <table className="table table-hover table-vertical-middle">
-                  <tr>
-                    <td>Line Charts</td>
-                    <td>
-                      <Line fill="green" stroke="green" values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                      <Line
-                        fill="green"
-                        stroke="green"
-                        values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]}
-                      />
-                      <Line
-                        fill="green"
-                        stroke="green"
-                        values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]}
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Bar Charts</td>
-                    <td>
-                      <Bar fill={['green']} values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                      <Bar fill={['green']} values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
-                      <Bar fill={['green']} values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Line Charts</td>
+                      <td>
+                        <Line fill="green" stroke="green" values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
+                        <Line
+                          fill="green"
+                          stroke="green"
+                          values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]}
+                        />
+                        <Line
+                          fill="green"
+                          stroke="green"
+                          values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]}
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bar Charts</td>
+                      <td>
+                        <Bar fill={['green']} values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
+                        <Bar fill={['green']} values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
+                        <Bar fill={['green']} values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -109,4 +113,4 @@ class PietyItems extends React.Component {
   }
 }
 
-export default PietyItems
+export default PeityItems

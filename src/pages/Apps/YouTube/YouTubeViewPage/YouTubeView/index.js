@@ -87,7 +87,7 @@ class YouTubeView extends React.Component {
                   </div>
                   <div className="video-page__comments-content">
                     {viewData.comments.map((comment, index) =>
-                      <div className="video-page__comment-item clearfix">
+                      <div className="video-page__comment-item clearfix" key={index}>
                         <div className="video-page__comment-avatar">
                           <Avatar src={comment.avatar} size="50" border="false" />
                         </div>
@@ -146,8 +146,8 @@ class YouTubeView extends React.Component {
                         <span className="video-page__item-author">
                           {video.author}
                         </span>
-                        <span class="cat__video-page__item-views text-muted">
-                          <span class="cat__video-page__item-count">{video.views}</span>
+                        <span className="video-page__item-views text-muted">
+                          <span className="video-page__item-count">{video.views}</span>
                           views
                         </span>
                       </div>

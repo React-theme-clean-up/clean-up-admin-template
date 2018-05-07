@@ -9,9 +9,6 @@ const mapStateToProps = (state, props) => ({
 class Loader extends React.Component {
   render() {
     const { isHideLogin } = this.props
-
-    console.log(isHideLogin)
-
     if (!isHideLogin) return null
     return <div className="utils__loadingPage" />
   }

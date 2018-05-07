@@ -162,7 +162,7 @@ class ProfileApp extends React.Component {
                   <strong>Skills</strong>
                 </h5>
                 {skills.map((skill, index) =>
-                  <div>
+                  <div key={index}>
                     <div className="mb-1">
                       {skill.name}
                     </div>
@@ -188,7 +188,7 @@ class ProfileApp extends React.Component {
                   <dt className="col-xl-3">Skills:</dt>
                   <dd className="col-xl-9">
                     {profSkills.map((skill, index) =>
-                      <span className="badge badge-default mr-1">
+                      <span className="badge badge-default mr-1" key={index}>
                         {skill}
                       </span>,
                     )}
@@ -242,7 +242,7 @@ class ProfileApp extends React.Component {
                     <hr />
                     {posts.map((post, index) => {
                       return (
-                        <div>
+                        <div key={index}>
                           <div className="profile__wall-item clearfix" key={index}>
                             <div className="profile__wall-avatar">
                               <Avatar size="50" src={post.avatar} border={false} />
@@ -294,7 +294,7 @@ class ProfileApp extends React.Component {
                             {post.comments.length > 0 &&
                               <div className="profile__wall-comments">
                                 {post.comments.map((postComment, index) =>
-                                  <div className="profile__wall-item clearfix">
+                                  <div className="profile__wall-item clearfix" key={index}>
                                     <div className="profile__wall-avatar">
                                       <Avatar size="50" src={postComment.avatar} border={false} />
                                     </div>
