@@ -13,9 +13,7 @@ class Loader extends React.Component {
     console.log(isHideLogin)
 
     if (!isHideLogin) return null
-    return (
-      <div className="utils__loadingPage" />
-    )
+    return <div className="utils__loadingPage" />
   }
 }
 
