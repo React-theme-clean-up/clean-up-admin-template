@@ -30,6 +30,13 @@ class PopoverItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Popover</strong>
+                  <a
+                    href="https://ant.design/components/popover/"
+                    target="_blank"
+                    className="btn btn-sm btn-primary ml-2"
+                  >
+                    Official Documentation <i className="icmn-link ml-1" />
+                  </a>
                 </h5>
               </div>
               <div className="card-body">
