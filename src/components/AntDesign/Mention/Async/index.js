@@ -1,47 +1,43 @@
 import React from 'react'
 import './style.css'
-import { Mention } from 'antd';
-
-
-
+import { Mention } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai'];
+  const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai']
 
-class AsyncMention extends React.Component {
-  state = {
-    suggestions: [],
-    loading: false,
-  }
-  fetchSuggestions = (value, callback) => {
-    setTimeout(() => {
-      callback(users.filter(item => item.indexOf(value) !== -1));
-    }, 500);
-  }
-  onSearchChange = (value) => {
-    this.fetchSuggestions(value, (suggestions) => {
+  class AsyncMention extends React.Component {
+    state = {
+      suggestions: [],
+      loading: false,
+    }
+    fetchSuggestions = (value, callback) => {
+      setTimeout(() => {
+        callback(users.filter(item => item.indexOf(value) !== -1))
+      }, 500)
+    }
+    onSearchChange = value => {
+      this.fetchSuggestions(value, suggestions => {
+        this.setState({
+          suggestions,
+          loading: false,
+        })
+      })
       this.setState({
-        suggestions,
-        loading: false,
-      });
-    });
-    this.setState({
-      loading: true,
-    });
+        loading: true,
+      })
+    }
+    render() {
+      const { suggestions, loading } = this.state
+      return (
+        <Mention
+          style={{ width: '100%' }}
+          loading={loading}
+          suggestions={suggestions}
+          onSearchChange={this.onSearchChange}
+        />
+      )
+    }
   }
-  render() {
-    const { suggestions, loading } = this.state;
-    return (
-      <Mention
-        style={{ width: '100%' }}
-        loading={loading}
-        suggestions={suggestions}
-        onSearchChange={this.onSearchChange}
-      />
-    );
-  }
-}
 
-ReactDOM.render(<AsyncMention />, mountNode);
-
+  ReactDOM.render(<AsyncMention />, mountNode)
 }

@@ -1,26 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderAvatarBadge } from './Badge/index.js';
-import { default as renderAvatarBasic } from './Basic/index.js';
-import { default as renderAvatarDynamic } from './Dynamic/index.js';
-import { default as renderAvatarType } from './Type/index.js';
+import { default as renderAvatarBadge } from './Badge/index.js'
+import { default as renderAvatarBasic } from './Basic/index.js'
+import { default as renderAvatarDynamic } from './Dynamic/index.js'
+import { default as renderAvatarType } from './Type/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class AvatarItems extends React.Component {
-
   componentDidMount() {
-    renderAvatarBadge(ReactDOM, document.getElementById("AvatarBadge"));
-renderAvatarBasic(ReactDOM, document.getElementById("AvatarBasic"));
-renderAvatarDynamic(ReactDOM, document.getElementById("AvatarDynamic"));
-renderAvatarType(ReactDOM, document.getElementById("AvatarType"));
-
+    renderAvatarBadge(ReactDOM, document.getElementById('AvatarBadge'))
+    renderAvatarBasic(ReactDOM, document.getElementById('AvatarBasic'))
+    renderAvatarDynamic(ReactDOM, document.getElementById('AvatarDynamic'))
+    renderAvatarType(ReactDOM, document.getElementById('AvatarType'))
   }
 
   render() {
@@ -32,7 +28,11 @@ renderAvatarType(ReactDOM, document.getElementById("AvatarType"));
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Avatar</strong>
-                  <a href="https://ant.design/components/avatar/" target="_blank" className="btn btn-sm btn-primary ml-2">
+                  <a
+                    href="https://ant.design/components/avatar/"
+                    target="_blank"
+                    className="btn btn-sm btn-primary ml-2"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -41,21 +41,36 @@ renderAvatarType(ReactDOM, document.getElementById("AvatarType"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-avatar-demo-badge">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">With Badge</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Usually used for messages remind.
-</div>
-    <div className="card-body pb-0">
-      <div id="AvatarBadge" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Avatar, Badge \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">With Badge</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Usually used for messages remind.</div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarBadge" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Avatar, Badge \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -68,27 +83,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-avatar-demo-dynamic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Autoset Font Size</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">For letter type Avatar, when the letters are too long to display, the font size can be automatically adjusted according to the width of the Avatar.
-</div>
-    <div className="card-body pb-0">
-      <div id="AvatarDynamic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Avatar, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-avatar-demo-dynamic">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Autoset Font Size</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        For letter type Avatar, when the letters are too long to display, the font
+                        size can be automatically adjusted according to the width of the Avatar.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarDynamic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Avatar, Button \} from 'antd';
 
 const UserList = ['U', 'Lucy', 'Tom', 'Edward'];
 const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
@@ -125,30 +158,46 @@ class Autoset extends React.Component \{
 ReactDOM.render(<Autoset />
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-avatar-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Three sizes and two shapes are available.
-</div>
-    <div className="card-body pb-0">
-      <div id="AvatarBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Avatar \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Three sizes and two shapes are available.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Avatar \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -165,27 +214,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-avatar-demo-type">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Type</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Image, Icon and letter are supported, and the latter two kinds avatar can have custom colors and background colors.
-</div>
-    <div className="card-body pb-0">
-      <div id="AvatarType" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Avatar \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-avatar-demo-type">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Type</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Image, Icon and letter are supported, and the latter two kinds avatar can
+                        have custom colors and background colors.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="AvatarType" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Avatar \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -198,12 +265,11 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

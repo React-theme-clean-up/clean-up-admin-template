@@ -1,28 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderPopoverArrowpointatcenter } from './Arrowpointatcenter/index.js';
-import { default as renderPopoverBasic } from './Basic/index.js';
-import { default as renderPopoverControl } from './Control/index.js';
-import { default as renderPopoverPlacement } from './Placement/index.js';
-import { default as renderPopoverTriggerType } from './TriggerType/index.js';
+import { default as renderPopoverArrowpointatcenter } from './Arrowpointatcenter/index.js'
+import { default as renderPopoverBasic } from './Basic/index.js'
+import { default as renderPopoverControl } from './Control/index.js'
+import { default as renderPopoverPlacement } from './Placement/index.js'
+import { default as renderPopoverTriggerType } from './TriggerType/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class PopoverItems extends React.Component {
-
   componentDidMount() {
-    renderPopoverArrowpointatcenter(ReactDOM, document.getElementById("PopoverArrowpointatcenter"));
-renderPopoverBasic(ReactDOM, document.getElementById("PopoverBasic"));
-renderPopoverControl(ReactDOM, document.getElementById("PopoverControl"));
-renderPopoverPlacement(ReactDOM, document.getElementById("PopoverPlacement"));
-renderPopoverTriggerType(ReactDOM, document.getElementById("PopoverTriggerType"));
-
+    renderPopoverArrowpointatcenter(ReactDOM, document.getElementById('PopoverArrowpointatcenter'))
+    renderPopoverBasic(ReactDOM, document.getElementById('PopoverBasic'))
+    renderPopoverControl(ReactDOM, document.getElementById('PopoverControl'))
+    renderPopoverPlacement(ReactDOM, document.getElementById('PopoverPlacement'))
+    renderPopoverTriggerType(ReactDOM, document.getElementById('PopoverTriggerType'))
   }
 
   render() {
@@ -34,7 +30,11 @@ renderPopoverTriggerType(ReactDOM, document.getElementById("PopoverTriggerType")
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Popover</strong>
-                  <a href="https://ant.design/components/popover/" target="_blank" className="btn btn-sm btn-primary ml-2">
+                  <a
+                    href="https://ant.design/components/popover/"
+                    target="_blank"
+                    className="btn btn-sm btn-primary ml-2"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -43,21 +43,39 @@ renderPopoverTriggerType(ReactDOM, document.getElementById("PopoverTriggerType")
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-popover-demo-arrow-point-at-center">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Arrow pointing</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The arrow points to the center of the target element, which set <code>{'arrowPointAtCenter'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="PopoverArrowpointatcenter" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Popover, Button \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Arrow pointing</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The arrow points to the center of the target element, which set{' '}
+                        <code>{'arrowPointAtCenter'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopoverArrowpointatcenter" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Popover, Button \} from 'antd';
 
 const text = <span>Title</span>;
 const content = (
@@ -78,27 +96,46 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-popover-demo-control">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Controlling the close of the dialog</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Use <code>{'visible'}</code> prop to control the display of the card.
-</div>
-    <div className="card-body pb-0">
-      <div id="PopoverControl" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Popover, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-popover-demo-control">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">
+                            Controlling the close of the dialog
+                          </strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Use <code>{'visible'}</code> prop to control the display of the card.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopoverControl" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Popover, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -129,27 +166,42 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-popover-demo-triggerType">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Three ways to trigger</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Mouse to click, focus and move in.
-</div>
-    <div className="card-body pb-0">
-      <div id="PopoverTriggerType" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Popover, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-popover-demo-triggerType">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Three ways to trigger</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Mouse to click, focus and move in.</div>
+                      <div className="card-body pb-0">
+                        <div id="PopoverTriggerType" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Popover, Button \} from 'antd';
 
 const content = (
   <div>
@@ -172,30 +224,47 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-popover-demo-basic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The most basic example. The size of the floating layer depends on the contents region.
-</div>
-    <div className="card-body pb-0">
-      <div id="PopoverBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Popover, Button \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The most basic example. The size of the floating layer depends on the
+                        contents region.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopoverBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Popover, Button \} from 'antd';
 
 const content = (
   <div>
@@ -210,27 +279,44 @@ ReactDOM.render(
   </Popover>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-popover-demo-placement">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Placement</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">There are 12 <code>{'placement'}</code> options available.
-</div>
-    <div className="card-body pb-0">
-      <div id="PopoverPlacement" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Popover, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-popover-demo-placement">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Placement</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        There are 12 <code>{'placement'}</code> options available.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="PopoverPlacement" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Popover, Button \} from 'antd';
 
 const text = <span>Title</span>;
 const content = (
@@ -291,12 +377,11 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

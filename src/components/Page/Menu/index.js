@@ -611,7 +611,7 @@ class Navigation extends React.Component {
   componentDidMount() {
     this.getActiveMenuItem(this.props)
   }
-  
+
   componentWillReceiveProps(newProps) {
     this.getActiveMenuItem(newProps)
   }
