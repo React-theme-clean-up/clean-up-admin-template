@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Menu, Switch, Layout } from 'antd'
 import { Link, withRouter } from 'react-router-dom'
-import { reduce } from 'lodash';
+import { reduce } from 'lodash'
 import './style.css'
 
 const { Sider } = Layout
@@ -544,33 +544,37 @@ class Navigation extends React.Component {
   }
 
   getPath(data, url, parents = []) {
-    let items = reduce(data, (result, entry) => {
-      if (result.length) {
-        return result;
-      } else if (entry.url === url) {
-        return [entry].concat(parents);
-      } else if (entry.children) {
-        let nested = this.getPath(entry.children, url, [entry].concat(parents));
-        return (nested) ? nested : result;
-      }
-      return result;
-    }, []);
-    return (items.length > 0) ? items : false;
+    let items = reduce(
+      data,
+      (result, entry) => {
+        if (result.length) {
+          return result
+        } else if (entry.url === url) {
+          return [entry].concat(parents)
+        } else if (entry.children) {
+          let nested = this.getPath(entry.children, url, [entry].concat(parents))
+          return nested ? nested : result
+        }
+        return result
+      },
+      [],
+    )
+    return items.length > 0 ? items : false
   }
 
   getActiveMenuItem = (props, items) => {
-    let url = props.location.pathname;
-    let [activeMenuItem, ...path] = this.getPath(items, url);
+    let url = props.location.pathname
+    let [activeMenuItem, ...path] = this.getPath(items, url)
     if (activeMenuItem) {
       this.setState({
         current: activeMenuItem.key,
-        opened: path.map(entry => entry.key)
-      });
+        opened: path.map(entry => entry.key),
+      })
     } else {
       this.setState({
         current: '',
         opened: [],
-      });
+      })
     }
   }
 
@@ -664,4 +668,4 @@ class Navigation extends React.Component {
 
 const AppMenu = withRouter(Navigation)
 
-export {AppMenu, menuData}
+export { AppMenu, menuData }

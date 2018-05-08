@@ -1,17 +1,14 @@
 import React from 'react'
 import './style.css'
-import { Badge } from 'antd';
-
-
-
+import { Badge } from 'antd'
 
 export default function(ReactDOM, mountNode) {
   ReactDOM.render(
-  <a href="javascript: void(0);" >
-    <Badge count={5}>
-      <span className="head-example" />
-    </Badge>
-  </a>
-, mountNode);
-
+    <a href="javascript: void(0);">
+      <Badge count={5}>
+        <span className="head-example" />
+      </Badge>
+    </a>,
+    mountNode,
+  )
 }
