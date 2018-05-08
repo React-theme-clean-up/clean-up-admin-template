@@ -6,6 +6,7 @@ import Register from './Register'
 class RegisterPage extends React.Component {
   static defaultProps = {
     pathName: 'Register',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

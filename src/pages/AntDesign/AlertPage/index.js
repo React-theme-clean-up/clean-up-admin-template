@@ -6,6 +6,7 @@ import AlertItems from 'components/AntDesign/Alert/index'
 class AlertPage extends React.Component {
   static defaultProps = {
     pathName: 'Alert',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

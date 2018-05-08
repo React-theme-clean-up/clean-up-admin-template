@@ -6,47 +6,47 @@ class IssuesHistory extends React.Component {
     const menu = (
       <Menu selectable={false}>
         <Menu.Item>
-          <a href={null}>Current search</a>
+          <a href="javascript: void(0);">Current search</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>Search for issues</a>
+          <a href="javascript: void(0);">Search for issues</a>
         </Menu.Item>
         <Menu.Divider />
         <span className="topbar__dropdownTitle">
           <strong>Opened</strong>
         </span>
         <Menu.Item>
-          <a href={null}>
+          <a href="javascript: void(0);">
             <i className="topbar__dropdownMenuIcon icmn-checkmark" /> CLNUI-253 Project implemen...
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
+          <a href="javascript: void(0);">
             <i className="topbar__dropdownMenuIcon icmn-checkmark" /> CLNUI-234 Active history
             iss...
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>
+          <a href="javascript: void(0);">
             <i className="topbar__dropdownMenuIcon icmn-clock" /> CLNUI-424 Ionicons intergrat...
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>More...</a>
+          <a href="javascript: void(0);">More...</a>
         </Menu.Item>
         <Menu.Divider />
         <span className="topbar__dropdownTitle">
           <strong>Filters</strong>
         </span>
         <Menu.Item>
-          <a href={null}>My open issues</a>
+          <a href="javascript: void(0);">My open issues</a>
         </Menu.Item>
         <Menu.Item>
-          <a href={null}>Reported by me</a>
+          <a href="javascript: void(0);">Reported by me</a>
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
-          <a href={null}>
+          <a href="javascript: void(0);">
             <i className="topbar__dropdownMenuIcon icmn-cog" /> Settings
           </a>
         </Menu.Item>

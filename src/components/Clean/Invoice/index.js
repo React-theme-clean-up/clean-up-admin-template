@@ -72,7 +72,7 @@ class Invoice extends React.Component {
               <strong>Invoice Info</strong>
             </h4>
             <p>
-              <a className="font-size-20" href={null}>
+              <a className="font-size-20" href="javascript: void(0);">
                 {data.invoiceNumber}
               </a>
               <br />

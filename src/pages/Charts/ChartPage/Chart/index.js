@@ -165,16 +165,17 @@ class ChartItems extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Chart.js</strong>
             <a
               href="http://www.chartjs.org/"
               target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-sm btn-primary ml-2"
             >
               Official Documentation <i className="icmn-link ml-1" />
             </a>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <div className="row">
@@ -184,14 +185,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Line data={lineData} options={lineOptions} width="400" height="200" />
+                <Line data={lineData} options={lineOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -200,14 +201,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Bar data={barData} options={barOptions} width="400" height="200" />
+                <Bar data={barData} options={barOptions} width={400} height={200} />
               </div>
             </div>
           </div>
@@ -218,14 +219,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Radar data={radarData} options={radarOptions} width="400" height="200" />
+                <Radar data={radarData} options={radarOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -234,14 +235,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Polar data={polarData} options={polarOptions} width="400" height="200" />
+                <Polar data={polarData} options={polarOptions} width={400} height={200} />
               </div>
             </div>
           </div>
@@ -252,14 +253,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Pie data={pieData} options={pieOptions} width="400" height="200" />
+                <Pie data={pieData} options={pieOptions} width={400} height={200} />
               </div>
             </div>
             <div className="col-lg-6">
@@ -268,14 +269,14 @@ class ChartItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://www.chartjs.org/" target="_blank">
+                <a href="http://www.chartjs.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
                 </a>
               </p>
               <div className="mb-5">
-                <Doughnut data={doughnutData} options={doughnutOptions} width="400" height="200" />
+                <Doughnut data={doughnutData} options={doughnutOptions} width={400} height={200} />
               </div>
             </div>
           </div>

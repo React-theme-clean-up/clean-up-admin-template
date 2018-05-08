@@ -6,6 +6,7 @@ import TableItems from 'components/AntDesign/Table/index'
 class TablePage extends React.Component {
   static defaultProps = {
     pathName: 'Table',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

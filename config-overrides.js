@@ -23,6 +23,9 @@ function rewire(config, env) {
   const rewireLess = require('react-app-rewire-less')
   config = rewireLess(config, env)
 
+  const rewireEslint = require('react-app-rewire-eslint')
+  config = rewireEslint(config, env)
+
   const path = require('path')
   config.resolve.modules = [path.resolve('src')].concat(config.resolve.modules)
 

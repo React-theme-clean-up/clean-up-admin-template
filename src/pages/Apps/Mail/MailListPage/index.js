@@ -6,6 +6,7 @@ import MailList from './MailList'
 class MailAppPage extends React.Component {
   static defaultProps = {
     pathName: 'Mail App',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

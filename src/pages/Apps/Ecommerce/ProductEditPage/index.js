@@ -6,6 +6,7 @@ import ProductEdit from './ProductEdit'
 class ProductEditPage extends React.Component {
   static defaultProps = {
     pathName: 'Product Edit',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

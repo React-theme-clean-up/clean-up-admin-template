@@ -6,6 +6,7 @@ import MentionItems from 'components/AntDesign/Mention/index'
 class MentionPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

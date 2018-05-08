@@ -6,6 +6,7 @@ import BlogFeed from './BlogFeed'
 class BlogFeedPage extends React.Component {
   static defaultProps = {
     pathName: 'Blog Feed',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -36,8 +36,6 @@ class PricingItem extends React.Component {
       }
     }
 
-    console.log(params)
-
     this.setState({
       btnType: btnType,
       type: type,
@@ -83,7 +81,7 @@ class PricingItem extends React.Component {
           )}
         </ul>
         <div className="pricing-table__footer">
-          <a href={null} className={btnClass} role="button">
+          <a href="javascript: void(0);" className={btnClass} role="button">
             <i className="icmn-download mr-3" aria-hidden="true" />
             {data.btnText}
           </a>

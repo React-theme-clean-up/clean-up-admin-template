@@ -25,6 +25,7 @@ class LinearIcons extends React.Component {
               <a
                 href="https://icomoon.io/#icons-icomoon"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />

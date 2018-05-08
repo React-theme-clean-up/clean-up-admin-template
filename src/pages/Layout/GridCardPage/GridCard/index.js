@@ -34,6 +34,7 @@ class GridCard extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/components/card/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />
@@ -51,11 +52,11 @@ class GridCard extends React.Component {
           <div className="card-header">
             <div className="pull-right mt-2">
               <span className="mr-3">
-                User: <a href={null}>Administrator</a>
+                User: <a href="javascript: void(0);">Administrator</a>
               </span>
               <div className="d-inline-block">
                 <Dropdown overlay={dropdownMenu}>
-                  <a href="#">
+                  <a href="javascript: void(0);">
                     <i className="icmn-database mr-2" />
                     <span className="hidden-lg-down mr-2">Dashboards</span>
                     <Icon type="down" />

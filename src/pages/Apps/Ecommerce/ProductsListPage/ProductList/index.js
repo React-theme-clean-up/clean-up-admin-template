@@ -78,7 +78,7 @@ class ProductsList extends React.Component {
   }
 
   render() {
-    let { tableData, pager, data } = this.state
+    let { pager, data } = this.state
 
     const columns = [
       {
@@ -86,7 +86,7 @@ class ProductsList extends React.Component {
         dataIndex: 'id',
         key: 'id',
         render: text =>
-          <a className="utils__link--underlined" href="#">
+          <a className="utils__link--underlined" href="javascript: void(0);">
             {'#' + text}
           </a>,
         sorter: (a, b) => a.id - b.id,
@@ -96,8 +96,8 @@ class ProductsList extends React.Component {
         dataIndex: 'thumbnail',
         key: 'thumbnail',
         render: text =>
-          <a href={null} className="productsList__thumbnail">
-            <img src={text} />
+          <a href="javascript: void(0);" className="productsList__thumbnail">
+            <img src={text} alt="" />
           </a>,
       },
       {
@@ -106,7 +106,7 @@ class ProductsList extends React.Component {
         key: 'name',
         sorter: (a, b) => a.name.length - b.name.length,
         render: text =>
-          <a className="utils__link--underlined" href="#">
+          <a className="utils__link--underlined" href="javascript: void(0);">
             {text}
           </a>,
         filterDropdown: (

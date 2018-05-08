@@ -6,6 +6,7 @@ import CheckboxItems from 'components/AntDesign/Checkbox/index'
 class CheckboxPage extends React.Component {
   static defaultProps = {
     pathName: 'Checkbox',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import GitHubDiscuss from './GitHubDiscuss'
 class GitHubDiscussPage extends React.Component {
   static defaultProps = {
     pathName: 'GitHub Discuss',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

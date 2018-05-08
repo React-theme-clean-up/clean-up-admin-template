@@ -6,6 +6,7 @@ import SelectItems from 'components/AntDesign/Select/index'
 class SelectPage extends React.Component {
   static defaultProps = {
     pathName: 'Select',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

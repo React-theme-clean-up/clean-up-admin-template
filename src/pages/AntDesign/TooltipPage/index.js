@@ -6,6 +6,7 @@ import TooltipItems from 'components/AntDesign/Tooltip/index'
 class TooltipPage extends React.Component {
   static defaultProps = {
     pathName: 'Tooltip',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

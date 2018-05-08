@@ -169,7 +169,7 @@ class DashboardAlpha extends React.Component {
         title: 'Name',
         dataIndex: 'name',
         render: text =>
-          <a href={null}>
+          <a href="javascript: void(0);">
             {text}
           </a>,
       },
@@ -177,7 +177,7 @@ class DashboardAlpha extends React.Component {
         title: 'Username',
         dataIndex: 'username',
         render: text =>
-          <a href={null}>
+          <a href="javascript: void(0);">
             {text}
           </a>,
       },

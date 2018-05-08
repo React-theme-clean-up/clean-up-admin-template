@@ -6,6 +6,7 @@ import TreeItems from 'components/AntDesign/Tree/index'
 class TreePage extends React.Component {
   static defaultProps = {
     pathName: 'Tree',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

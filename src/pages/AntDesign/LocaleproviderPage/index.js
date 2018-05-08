@@ -6,6 +6,7 @@ import LocaleproviderItems from 'components/AntDesign/Localeprovider/index'
 class LocaleproviderPage extends React.Component {
   static defaultProps = {
     pathName: 'Localeprovider',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

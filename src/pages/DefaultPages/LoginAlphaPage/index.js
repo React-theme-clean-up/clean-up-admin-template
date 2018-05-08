@@ -6,6 +6,7 @@ import LoginAlpha from './LoginAlpha'
 class LoginAlphaPage extends React.Component {
   static defaultProps = {
     pathName: 'Login Alpha',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

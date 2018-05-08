@@ -6,6 +6,7 @@ import GitHubExplore from './GitHubExplore'
 class GitHubExplorePage extends React.Component {
   static defaultProps = {
     pathName: 'GitHub Explore',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

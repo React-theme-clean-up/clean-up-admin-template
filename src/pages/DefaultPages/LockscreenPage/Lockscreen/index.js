@@ -46,7 +46,7 @@ class Lockscreen extends React.Component {
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
-                <a href={null}>
+                <a href="javascript: void(0);">
                   <img
                     src="resources/images/login/logo-inverse.png"
                     alt="Clean UI Admin Template"

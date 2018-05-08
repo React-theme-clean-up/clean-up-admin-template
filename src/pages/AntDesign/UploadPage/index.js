@@ -6,6 +6,7 @@ import UploadItems from 'components/AntDesign/Upload/index'
 class UploadPage extends React.Component {
   static defaultProps = {
     pathName: 'Upload',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

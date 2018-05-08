@@ -6,6 +6,7 @@ import GridCard from './GridCard'
 class GridCardPage extends React.Component {
   static defaultProps = {
     pathName: 'Card',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

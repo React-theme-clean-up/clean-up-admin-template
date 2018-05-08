@@ -6,6 +6,7 @@ import TagItems from 'components/AntDesign/Tag/index'
 class TagPage extends React.Component {
   static defaultProps = {
     pathName: 'Tag',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -357,7 +357,7 @@ const menuData = [
       {
         title: 'Products List',
         key: 'productsList',
-        url: '/ecommerce/produscts-list',
+        url: '/ecommerce/products-list',
       },
       {
         title: 'Orders',
@@ -441,7 +441,7 @@ const menuData = [
         url: '/charts/chart',
       },
       {
-        title: 'Piety',
+        title: 'Peity',
         key: 'piety',
         url: '/charts/piety',
       },

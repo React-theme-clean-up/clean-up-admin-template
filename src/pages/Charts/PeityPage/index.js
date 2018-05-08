@@ -1,22 +1,23 @@
 import React from 'react'
 import Page from 'components/Page'
 import Helmet from 'react-helmet'
-import PietyItems from './Piety'
+import PeityItems from './Peity'
 
-class PietyPage extends React.Component {
+class PeityPage extends React.Component {
   static defaultProps = {
-    pathName: 'Piety',
+    pathName: 'Peity',
+    roles: ['agent', 'administrator'],
   }
 
   render() {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Piety" />
-        <PietyItems />
+        <Helmet title="Clean UI - Peity" />
+        <PeityItems />
       </Page>
     )
   }
 }
 
-export default PietyPage
+export default PeityPage

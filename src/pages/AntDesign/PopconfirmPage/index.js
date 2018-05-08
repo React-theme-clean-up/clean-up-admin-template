@@ -6,6 +6,7 @@ import PopconfirmItems from 'components/AntDesign/Popconfirm/index'
 class PopconfirmPage extends React.Component {
   static defaultProps = {
     pathName: 'Popconfirm',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

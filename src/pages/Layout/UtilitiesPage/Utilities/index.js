@@ -11,6 +11,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />
@@ -26,6 +27,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/borders/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Borders
@@ -33,6 +35,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/clearfix/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Clearfix
@@ -40,6 +43,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/close-icon/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Close icon
@@ -47,6 +51,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/colors/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Colors
@@ -54,6 +59,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/flexbox/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Flexbox
@@ -61,6 +67,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/display-property/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Display Property
@@ -68,6 +75,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/image-replacement/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Image Replacement
@@ -75,6 +83,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/invisible-content/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Invisible Content
@@ -82,6 +91,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/position/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Position
@@ -89,6 +99,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/responsive-helpers/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Responsive Helpers
@@ -96,6 +107,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/screenreaders/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Screenreaders
@@ -103,6 +115,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/sizing/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Sizing
@@ -110,6 +123,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/spacing/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Spacing
@@ -117,6 +131,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/typography/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Typography
@@ -124,6 +139,7 @@ class Utilities extends React.Component {
               <a
                 href="http://v4-alpha.getbootstrap.com/utilities/vertical-align/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3"
               >
                 Vertical Alignment
@@ -289,6 +305,7 @@ class Utilities extends React.Component {
                           <a
                             href="javascript: void(0)"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--underlined"
                           >
                             Underlined Link
@@ -303,6 +320,7 @@ class Utilities extends React.Component {
                           <a
                             href="javascript: void(0)"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--blue"
                           >
                             Blue Link
@@ -317,6 +335,7 @@ class Utilities extends React.Component {
                           <a
                             href="javascript: void(0)"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="utils__link--underlined utils__link--blue"
                           >
                             Underlined and Blue Link

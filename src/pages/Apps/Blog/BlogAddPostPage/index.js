@@ -6,6 +6,7 @@ import BlogAddPost from './BlogAddPost'
 class BlogAddPostPage extends React.Component {
   static defaultProps = {
     pathName: 'Add Blog Post',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import AutocompleteItems from 'components/AntDesign/Autocomplete/index'
 class AutocompletePage extends React.Component {
   static defaultProps = {
     pathName: 'AutoComplete',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

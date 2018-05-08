@@ -6,6 +6,7 @@ import MenuItems from 'components/AntDesign/Menu/index'
 class MenuPage extends React.Component {
   static defaultProps = {
     pathName: 'Menu',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

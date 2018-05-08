@@ -6,6 +6,7 @@ import PopoverItems from 'components/AntDesign/Popover/index'
 class PopoverPage extends React.Component {
   static defaultProps = {
     pathName: 'Popover',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

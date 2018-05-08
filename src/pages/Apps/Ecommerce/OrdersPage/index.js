@@ -6,6 +6,7 @@ import Orders from './Orders'
 class OrdersPage extends React.Component {
   static defaultProps = {
     pathName: 'Orders',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

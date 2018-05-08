@@ -106,7 +106,7 @@ class GitHubDiscuss extends React.Component {
                       Closed
                     </span>}
                   <div className="discuss__meta-text">
-                    <a href="#" className="discuss__owner mr-1">
+                    <a href="javascript: void(0);" className="discuss__owner mr-1">
                       {discuss.authorName}
                     </a>
                     opened this discussion on
@@ -130,7 +130,7 @@ class GitHubDiscuss extends React.Component {
                             <div className="discuss__comment-head">
                               <div className="pull-right">
                                 <Dropdown overlay={postActions}>
-                                  <a className="ant-dropdown-link" href="#">
+                                  <a className="ant-dropdown-link" href="javascript: void(0);">
                                     Actions <Icon type="down" />
                                   </a>
                                 </Dropdown>
@@ -143,7 +143,7 @@ class GitHubDiscuss extends React.Component {
                               dangerouslySetInnerHTML={{ __html: comment.content }}
                             />
                             <div className="discuss__comment-bottom">
-                              <a href={null} className="mr-2">
+                              <a href="javascript: void(0);" className="mr-2">
                                 <i className="icmn-heart mr-1" />
                                 {comment.likesCount > 0 &&
                                   <span>
@@ -154,7 +154,7 @@ class GitHubDiscuss extends React.Component {
                                     {comment.likesCount + ' Like'}
                                   </span>}
                               </a>
-                              <a href={null} className="mr-2">
+                              <a href="javascript: void(0);" className="mr-2">
                                 <i className="icmn-reply mr-1" />
                                 Reply
                               </a>

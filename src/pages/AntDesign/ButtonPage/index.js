@@ -6,6 +6,7 @@ import ButtonItems from 'components/AntDesign/Button/index'
 class ButtonPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

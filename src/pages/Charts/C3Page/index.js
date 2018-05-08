@@ -6,6 +6,7 @@ import C3Items from './C3'
 class C3Page extends React.Component {
   static defaultProps = {
     pathName: 'C3.js',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

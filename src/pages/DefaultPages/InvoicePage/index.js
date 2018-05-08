@@ -6,6 +6,7 @@ import Invoice from 'components/Clean/Invoice'
 class InvoicePage extends React.Component {
   static defaultProps = {
     pathName: 'Invoice',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

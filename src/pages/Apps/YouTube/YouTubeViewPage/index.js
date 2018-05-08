@@ -6,6 +6,7 @@ import YouTubeView from './YouTubeView'
 class YouTubeViewPage extends React.Component {
   static defaultProps = {
     pathName: 'YouTube View',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -6,6 +6,7 @@ import ProgressItems from 'components/AntDesign/Progress/index'
 class ProgressPage extends React.Component {
   static defaultProps = {
     pathName: 'Progress',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

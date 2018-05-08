@@ -6,6 +6,7 @@ import DatepickerItems from 'components/AntDesign/Datepicker/index'
 class DatepickerPage extends React.Component {
   static defaultProps = {
     pathName: 'Date picker',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -564,12 +564,17 @@ class C3Items extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>C3</strong>
-            <a href="http://c3js.org/" target="_blank" className="btn btn-sm btn-primary ml-2">
+            <a
+              href="http://c3js.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-primary ml-2"
+            >
               Official Documentation <i className="icmn-link ml-1" />
             </a>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <div className="row">
@@ -579,7 +584,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -595,7 +600,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -618,7 +623,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -634,7 +639,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -652,7 +657,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -673,7 +678,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -691,7 +696,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -712,7 +717,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -734,7 +739,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -750,7 +755,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -768,7 +773,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>
@@ -784,7 +789,7 @@ class C3Items extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="http://c3js.org/" target="_blank">
+                <a href="http://c3js.org/" target="_blank" rel="noopener noreferrer">
                   official documentation<small>
                     <i className="icmn-link ml-1" />
                   </small>

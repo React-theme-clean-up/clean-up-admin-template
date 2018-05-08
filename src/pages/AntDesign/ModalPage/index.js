@@ -6,6 +6,7 @@ import ModalItems from 'components/AntDesign/Modal/index'
 class ModalPage extends React.Component {
   static defaultProps = {
     pathName: 'Modal',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -64,7 +64,7 @@ class Dashboard extends React.Component {
         dataIndex: 'product',
         key: 'product',
         render: text =>
-          <a href="#">
+          <a href="javascript: void(0);">
             {text}
           </a>,
         sorter: (a, b) => a.product - b.product,
@@ -96,7 +96,7 @@ class Dashboard extends React.Component {
         dataIndex: 'product',
         key: 'product',
         render: text =>
-          <a href="#">
+          <a href="javascript: void(0);">
             {text}
           </a>,
         sorter: (a, b) => a.product - b.product,
@@ -128,7 +128,7 @@ class Dashboard extends React.Component {
         dataIndex: 'name',
         key: 'name',
         render: text =>
-          <a href="#">
+          <a href="javascript: void(0);">
             {text}
           </a>,
         sorter: (a, b) => a.name - b.name,

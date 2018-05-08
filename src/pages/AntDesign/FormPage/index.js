@@ -6,6 +6,7 @@ import FormItems from 'components/AntDesign/Form/index'
 class FormPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

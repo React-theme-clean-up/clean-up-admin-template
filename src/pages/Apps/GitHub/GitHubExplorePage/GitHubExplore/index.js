@@ -86,25 +86,25 @@ class GitHubExplore extends React.Component {
             <div className="explore__overall-data">
               <ul className="explore__overall-data-list">
                 <li className="explore__overall-data-item">
-                  <a href="#" className="explore__overall-data-link">
+                  <a href="javascript: void(0);" className="explore__overall-data-link">
                     <i className="explore__overall-data-icon fa fa-check-circle-o mr-2" />
                     {projectData.commits + ' commits'}
                   </a>
                 </li>
                 <li className="explore__overall-data-item">
-                  <a href="#" className="explore__overall-data-link">
+                  <a href="javascript: void(0);" className="explore__overall-data-link">
                     <i className="explore__overall-data-icon fa fa-th-list mr-2" />
                     {projectData.branches + ' branch'}
                   </a>
                 </li>
                 <li className="explore__overall-data-item">
-                  <a href="#" className="explore__overall-data-link">
+                  <a href="javascript: void(0);" className="explore__overall-data-link">
                     <i className="explore__overall-data-icon fa fa-window-maximize mr-2" />
                     {projectData.releases + ' releases'}
                   </a>
                 </li>
                 <li className="explore__overall-data-item">
-                  <a href="#" className="explore__overall-data-link">
+                  <a href="javascript: void(0);" className="explore__overall-data-link">
                     <i className="explore__overall-data-icon fa fa-bell mr-2" />
                     {projectData.contributors + ' contributors'}
                   </a>
@@ -156,7 +156,7 @@ class GitHubExplore extends React.Component {
                       {item.type === 'file' && <i className="fa fa-file-o" />}
                     </td>
                     <td className="explore__nav-content">
-                      <a href="#" className="explore__nav-link">
+                      <a href="javascript: void(0);" className="explore__nav-link">
                         {item.name}
                       </a>
                     </td>

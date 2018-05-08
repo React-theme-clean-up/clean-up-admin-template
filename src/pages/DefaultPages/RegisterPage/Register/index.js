@@ -45,7 +45,7 @@ class Register extends React.Component {
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
-                <a href={null}>
+                <a href="javascript: void(0);">
                   <img
                     src="resources/images/login/logo-inverse.png"
                     alt="Clean UI Admin Template"
@@ -63,16 +63,16 @@ class Register extends React.Component {
               <div className="login__header__menu">
                 <ul className="list-unstyled list-inline">
                   <li className="list-inline-item">
-                    <a href={null}>&larr; Back</a>
+                    <a href="javascript: void(0);">&larr; Back</a>
                   </li>
                   <li className="list-inline-item active">
-                    <a href={null}>Login</a>
+                    <a href="javascript: void(0);">Login</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href={null}>About</a>
+                    <a href="javascript: void(0);">About</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href={null}>Support</a>
+                    <a href="javascript: void(0);">Support</a>
                   </li>
                 </ul>
               </div>
@@ -106,19 +106,19 @@ class Register extends React.Component {
         <div className="login__footer text-center">
           <ul className="list-unstyled list-inline">
             <li className="list-inline-item">
-              <a href={null}>Terms of Use</a>
+              <a href="javascript: void(0);">Terms of Use</a>
             </li>
             <li className="active list-inline-item">
-              <a href={null}>Compliance</a>
+              <a href="javascript: void(0);">Compliance</a>
             </li>
             <li className="list-inline-item">
-              <a href={null}>Confidential Information</a>
+              <a href="javascript: void(0);">Confidential Information</a>
             </li>
             <li className="list-inline-item">
-              <a href={null}>Support</a>
+              <a href="javascript: void(0);">Support</a>
             </li>
             <li className="list-inline-item">
-              <a href={null}>Contacts</a>
+              <a href="javascript: void(0);">Contacts</a>
             </li>
           </ul>
         </div>

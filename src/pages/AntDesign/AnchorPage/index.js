@@ -6,6 +6,7 @@ import AnchorItems from 'components/AntDesign/Anchor/index'
 class AnchorPage extends React.Component {
   static defaultProps = {
     pathName: 'Anchor',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

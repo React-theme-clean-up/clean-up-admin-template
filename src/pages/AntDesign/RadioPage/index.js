@@ -6,6 +6,7 @@ import RadioItems from 'components/AntDesign/Radio/index'
 class RadioPage extends React.Component {
   static defaultProps = {
     pathName: 'Button',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

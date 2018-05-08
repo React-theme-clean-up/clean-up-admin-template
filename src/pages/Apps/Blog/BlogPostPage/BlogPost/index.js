@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Icon, Button, Menu, Dropdown } from 'antd'
+import { Input, Icon, Menu, Dropdown } from 'antd'
 import Avatar from 'components/Clean/Avatar'
 import CommentForm from './CommentForm'
 import './style.css'
@@ -47,7 +47,7 @@ class BlogPost extends React.Component {
                     <div className="blog-feed__article-information">
                       <div className="blog-feed__article-title">
                         <h1>
-                          <a href="#">
+                          <a href="javascript: void(0);">
                             {articleData.name}
                           </a>
                         </h1>
@@ -55,7 +55,7 @@ class BlogPost extends React.Component {
                       <ul className="blog-feed__article-meta">
                         <li className="blog-feed__article-meta-inf">
                           <span className="blog-feed__article-author">
-                            Post By <a href="#">{articleData.author}</a>
+                            Post By <a href="javascript: void(0);">{articleData.author}</a>
                           </span>
                         </li>
                         <li className="blog-feed__article-meta-inf">
@@ -74,7 +74,7 @@ class BlogPost extends React.Component {
                         <div className="col-8">
                           <div className="blog-feed__article-hashtags">
                             {articleData.tags.map((tag, index) =>
-                              <a href="#" key={index}>
+                              <a href="javascript: void(0);" key={index}>
                                 {tag}
                               </a>,
                             )}
@@ -83,17 +83,17 @@ class BlogPost extends React.Component {
                         <div className="col-4">
                           <ul className="blog-feed__share">
                             <li className="blog-feed__share-item">
-                              <a href="#">
+                              <a href="javascript: void(0);">
                                 <i className="fa fa-facebook" />
                               </a>
                             </li>
                             <li className="blog-feed__share-item">
-                              <a href="#">
+                              <a href="javascript: void(0);">
                                 <i className="fa fa-twitter" />
                               </a>
                             </li>
                             <li className="blog-feed__share-item">
-                              <a href="#">
+                              <a href="javascript: void(0);">
                                 <i className="fa fa-pinterest-p" />
                               </a>
                             </li>
@@ -115,7 +115,7 @@ class BlogPost extends React.Component {
                       </p>
                       <div className="blog-feed__author-profile">
                         <a
-                          href="#"
+                          href="javascript: void(0);"
                           className="blog-feed__author-profile-btn btn btn-sm btn-primary"
                         >
                           View Profile
@@ -155,7 +155,7 @@ class BlogPost extends React.Component {
                                   </div>
                                   <div className="pull-right">
                                     <Dropdown overlay={actions}>
-                                      <a className="ant-dropdown-link" href="#">
+                                      <a className="ant-dropdown-link" href="javascript: void(0);">
                                         Actions <Icon type="down" />
                                       </a>
                                     </Dropdown>
@@ -163,7 +163,7 @@ class BlogPost extends React.Component {
                                 </div>
                                 <div dangerouslySetInnerHTML={{ __html: postComment.content }} />
                                 <div>
-                                  <a href={null} className="mr-3">
+                                  <a href="javascript: void(0);" className="mr-3">
                                     <i className="icmn-heart mr-2" />
                                     {postComment.likesCount > 0 &&
                                       <span>
@@ -174,7 +174,7 @@ class BlogPost extends React.Component {
                                         {postComment.likesCount + ' Like'}
                                       </span>}
                                   </a>
-                                  <a href={null} className="mr-3">
+                                  <a href="javascript: void(0);" className="mr-3">
                                     <i className="icmn-bubble mr-2" />
                                     {postComment.commentsCount > 0 &&
                                       <span>
@@ -185,7 +185,7 @@ class BlogPost extends React.Component {
                                         {postComment.commentsCount + ' Comment'}
                                       </span>}
                                   </a>
-                                  <a href={null}>
+                                  <a href="javascript: void(0);">
                                     <i className="icmn-reply mr-2" />
                                     <span>Reply</span>
                                   </a>
@@ -212,7 +212,10 @@ class BlogPost extends React.Component {
                                             </div>
                                             <div className="pull-right">
                                               <Dropdown overlay={actions}>
-                                                <a className="ant-dropdown-link" href="#">
+                                                <a
+                                                  className="ant-dropdown-link"
+                                                  href="javascript: void(0);"
+                                                >
                                                   Actions <Icon type="down" />
                                                 </a>
                                               </Dropdown>
@@ -222,7 +225,7 @@ class BlogPost extends React.Component {
                                             dangerouslySetInnerHTML={{ __html: subComment.content }}
                                           />
                                           <div>
-                                            <a href={null} className="mr-3">
+                                            <a href="javascript: void(0);" className="mr-3">
                                               <i className="icmn-heart mr-2" />
                                               {subComment.likesCount > 0 &&
                                                 <span>
@@ -233,7 +236,7 @@ class BlogPost extends React.Component {
                                                   {subComment.likesCount + ' Like'}
                                                 </span>}
                                             </a>
-                                            <a href={null} className="mr-3">
+                                            <a href="javascript: void(0);" className="mr-3">
                                               <i className="icmn-bubble mr-2" />
                                               {subComment.commentsCount > 0 &&
                                                 <span>
@@ -244,7 +247,7 @@ class BlogPost extends React.Component {
                                                   {subComment.commentsCount + ' Comment'}
                                                 </span>}
                                             </a>
-                                            <a href={null}>
+                                            <a href="javascript: void(0);">
                                               <i className="icmn-reply mr-2" />
                                               <span>Reply</span>
                                             </a>
@@ -257,7 +260,7 @@ class BlogPost extends React.Component {
                             </div>,
                           )}
                         </div>}
-                      <a href={null} className="btn btn-default btn-block">
+                      <a href="javascript: void(0);" className="btn btn-default btn-block">
                         Load More
                       </a>
                     </div>
@@ -287,7 +290,7 @@ class BlogPost extends React.Component {
                       <ul className="blog-feed__categories-list">
                         {articlesCategories.map((category, index) =>
                           <li className="blog-feed__categories-item" key={index}>
-                            <a className="blog-feed__categories-link" href="#">
+                            <a className="blog-feed__categories-link" href="javascript: void(0);">
                               {category}
                             </a>
                           </li>,
@@ -301,14 +304,14 @@ class BlogPost extends React.Component {
                       {latesArticlesData.map((latestArticle, index) =>
                         <article className="blog-feed__latest-post" key={index}>
                           <div className="blog-feed__latest-img">
-                            <a href="#">
+                            <a href="javascript: void(0);">
                               <img src={latestArticle.cover} alt={latestArticle.name} />
                             </a>
                           </div>
                           <div className="blog-feed__latest-data">
                             <div className="blog-feed__latest-name">
                               <h2>
-                                <a href="#">
+                                <a href="javascript: void(0);">
                                   {latestArticle.name}
                                 </a>
                               </h2>
@@ -316,7 +319,7 @@ class BlogPost extends React.Component {
                             <ul className="blog-feed__article-meta blog-feed__article-meta--latest">
                               <li className="blog-feed__article-meta-inf">
                                 <span className="blog-feed__article-author">
-                                  Post By <a href="#">{latestArticle.author}</a>
+                                  Post By <a href="javascript: void(0);">{latestArticle.author}</a>
                                 </span>
                               </li>
                               <li className="blog-feed__article-meta-inf">

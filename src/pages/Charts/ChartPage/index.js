@@ -6,6 +6,7 @@ import ChartItems from './Chart'
 class ChartistPage extends React.Component {
   static defaultProps = {
     pathName: 'Chart.js',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

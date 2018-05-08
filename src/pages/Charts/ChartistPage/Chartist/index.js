@@ -99,29 +99,30 @@ let smilListener = {
       })
     else if ('grid' === data.type) {
       var pos1Animation = {
-          begin: smilOptions.seq * delays,
-          dur: durations,
-          from: data[data.axis.units.pos + '1'] - 30,
-          to: data[data.axis.units.pos + '1'],
-          easing: 'easeOutQuart',
-        },
-        pos2Animation = {
-          begin: smilOptions.seq * delays,
-          dur: durations,
-          from: data[data.axis.units.pos + '2'] - 100,
-          to: data[data.axis.units.pos + '2'],
-          easing: 'easeOutQuart',
-        },
-        ctAnimations = {}
-      ;(ctAnimations[data.axis.units.pos + '1'] = pos1Animation), (ctAnimations[
-        data.axis.units.pos + '2'
-      ] = pos2Animation), (ctAnimations.opacity = {
+        begin: smilOptions.seq * delays,
+        dur: durations,
+        from: data[data.axis.units.pos + '1'] - 30,
+        to: data[data.axis.units.pos + '1'],
+        easing: 'easeOutQuart',
+      }
+      var pos2Animation = {
+        begin: smilOptions.seq * delays,
+        dur: durations,
+        from: data[data.axis.units.pos + '2'] - 100,
+        to: data[data.axis.units.pos + '2'],
+        easing: 'easeOutQuart',
+      }
+      var ctAnimations = {}
+      ctAnimations[data.axis.units.pos + '1'] = pos1Animation
+      ctAnimations[data.axis.units.pos + '2'] = pos2Animation
+      ctAnimations.opacity = {
         begin: smilOptions.seq * delays,
         dur: durations,
         from: 0,
         to: 1,
         easing: 'easeOutQuart',
-      }), data.element.animate(ctAnimations)
+      }
+      data.element.animate(ctAnimations)
     }
   },
 }
@@ -163,7 +164,7 @@ let scatterData = scatterTimes(52).map(Math.random).reduce(function(scatterData,
 }, {
   labels: [],
   series: scatterTimes(4).map(function() {
-    return new Array()
+    return []
   }),
 })
 
@@ -342,16 +343,17 @@ class ChartistsItems extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="cat__core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>Chartist.js</strong>
             <a
               href="https://gionkunz.github.io/chartist-js/"
               target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-sm btn-primary ml-2"
             >
               Official Documentation <i className="icmn-link ml-1" />
             </a>
-          </span>
+          </h5>
         </div>
         <div className="card-body">
           <div className="row">
@@ -361,7 +363,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -383,7 +389,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -408,7 +418,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -430,7 +444,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -454,7 +472,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -477,7 +499,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -501,7 +527,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -523,7 +553,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -547,7 +581,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -570,7 +608,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -595,7 +637,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />
@@ -617,7 +663,11 @@ class ChartistsItems extends React.Component {
               </h5>
               <p className="text-muted">
                 Element: read{' '}
-                <a href="https://gionkunz.github.io/chartist-js/" target="_blank">
+                <a
+                  href="https://gionkunz.github.io/chartist-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   official documentation
                   <small>
                     <i className="icmn-link ml-1" />

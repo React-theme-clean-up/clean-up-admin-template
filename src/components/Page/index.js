@@ -75,7 +75,7 @@ class Page extends React.Component {
       setTimeout(() => {
         dispatch(setLoading(false))
         dispatch(resetHideLogin())
-      })
+      }, 300)
     }
   }
 
@@ -108,7 +108,7 @@ class Page extends React.Component {
         if (isResolve) {
           this.stopLoading()
         }
-      }, 300) // show state.app.isLoading equal or more then 300ms
+      }) // show state.app.isLoading equal or more then 300ms
       if (this._onMounted) {
         this._onMounted()
           .catch(error => {

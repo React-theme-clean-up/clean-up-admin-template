@@ -6,6 +6,7 @@ import InputnumberItems from 'components/AntDesign/Inputnumber/index'
 class InputnumberPage extends React.Component {
   static defaultProps = {
     pathName: 'Input Number',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

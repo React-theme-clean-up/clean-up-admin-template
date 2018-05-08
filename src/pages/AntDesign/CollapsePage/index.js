@@ -6,6 +6,7 @@ import CollapseItems from 'components/AntDesign/Collapse/index'
 class CollapsePage extends React.Component {
   static defaultProps = {
     pathName: 'Collapse',
+    roles: ['agent', 'administrator'],
   }
 
   render() {

@@ -36,7 +36,10 @@ class GalleryList extends React.Component {
     let { imgData } = this.state
     return (
       <div className="card">
-        <div className="clearfix card-body pb-1">
+        <div className="card-header clearfix">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <strong>Photo Gallery</strong>
+          </h5>
           <div className="pull-right">
             <Upload {...props}>
               <Button type="primary">

@@ -6,6 +6,7 @@ import Typography from './Typography'
 class TypographyPage extends React.Component {
   static defaultProps = {
     pathName: 'Typography',
+    roles: ['agent', 'administrator'],
   }
 
   render() {
