@@ -5,7 +5,7 @@ import { BackTop, Layout as AntLayout } from 'antd'
 import Routes from 'routes'
 import TopBar from 'components/Page/TopBar'
 import Footer from 'components/Page/Footer'
-import Menu from 'components/Page/Menu'
+import { AppMenu } from 'components/Page/Menu'
 import Content from 'components/Page/Content'
 
 const AntContent = AntLayout.Content
@@ -36,7 +36,7 @@ class Layout extends React.Component {
         <Spinner />
         <BackTop />
         <Routes />
-        <Menu />
+        <AppMenu />
         <AntLayout>
           <AntHeader>
             <TopBar />

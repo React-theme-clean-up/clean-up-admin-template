@@ -24,6 +24,7 @@ class FontAwesomeIcons extends React.Component {
               <a
                 href="http://fontawesome.io/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
               >
                 Official Documentation <i className="icmn-link ml-1" />
@@ -55,7 +56,7 @@ class FontAwesomeIcons extends React.Component {
                     </h3>
                     <ul className="utils__iconsBlock list-unstyled">
                       {iconsSet.icons.map((icon, index) =>
-                        <Tooltip title={'fa ' + icon}>
+                        <Tooltip title={'fa ' + icon} key={index}>
                           <li>
                             <i className={'fa ' + icon} />
                           </li>

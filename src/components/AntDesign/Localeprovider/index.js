@@ -1,18 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderLocaleproviderAll } from './All/index.js'
-import { default as renderLocaleproviderBasic } from './Basic/index.js'
+import { default as renderLocaleproviderAll } from './All/index.js';
+import { default as renderLocaleproviderBasic } from './Basic/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class LocaleproviderItems extends React.Component {
+
   componentDidMount() {
-    renderLocaleproviderAll(ReactDOM, document.getElementById('LocaleproviderAll'))
-    renderLocaleproviderBasic(ReactDOM, document.getElementById('LocaleproviderBasic'))
+    renderLocaleproviderAll(ReactDOM, document.getElementById("LocaleproviderAll"));
+renderLocaleproviderBasic(ReactDOM, document.getElementById("LocaleproviderBasic"));
+
   }
 
   render() {
@@ -24,11 +28,7 @@ class LocaleproviderItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>LocaleProvider</strong>
-                  <a
-                    href="https://ant.design/components/locale-provider/"
-                    target="_blank"
-                    className="btn btn-sm btn-primary ml-2"
-                  >
+                  <a href="https://ant.design/components/locale-provider/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -37,39 +37,21 @@ class LocaleproviderItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-locale-provider-demo-all">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">All components</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Components which need localization support are listed here, you can toggle
-                        the language in the demo.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LocaleproviderAll" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">All components</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Components which need localization support are listed here, you can toggle the language in the demo.
+</div>
+    <div className="card-body pb-0">
+      <div id="LocaleproviderAll" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
          Popconfirm, Table, Modal, Button, Select, Transfer, Radio \} from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
@@ -195,47 +177,30 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-locale-provider-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Localization</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Wrap your app with <code>{'LocaleProvider'}</code>, and apply the
-                        corresponding language package.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LocaleproviderBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Pagination, LocaleProvider \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Localization</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Wrap your app with <code>{'LocaleProvider'}</code>, and apply the corresponding language package.
+</div>
+    <div className="card-body pb-0">
+      <div id="LocaleproviderBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Pagination, LocaleProvider \} from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 
 const App = () => (
@@ -250,11 +215,12 @@ ReactDOM.render(
   </LocaleProvider>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

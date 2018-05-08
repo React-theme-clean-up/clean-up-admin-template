@@ -1,0 +1,18 @@
+@import '../../../resources/mixins';
+
+.breadcrumbBar {
+  padding: rem(20);
+  margin: rem(-20);
+  margin-bottom: rem(20);
+  background-color: $white;
+
+  @media (max-width: $sm-max-width) {
+    padding: rem(20) 0;
+    overflow-x: hidden;
+  }
+
+  &__path {
+    font-size: rem(21);
+    color: $black-lighten-more;
+  }
+}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { setUpdatingContent } from 'ducks/app'
 import { isEmpty } from 'lodash'
+import Breadcrumb from 'components/Page/Breadcrumb'
 
 const mapStateToProps = (state, props) => ({
   isUpdatingContent: state.app.isUpdatingContent,
@@ -32,10 +33,11 @@ class AppContent extends React.Component {
 
   render() {
     const { getContentBuffer } = this.context
-    const { content } = getContentBuffer()
+    const { pathName, content } = getContentBuffer()
     return isEmpty(content)
       ? <div />
       : <div className="utils__content">
+          <Breadcrumb name={pathName} />
           {content}
         </div>
   }

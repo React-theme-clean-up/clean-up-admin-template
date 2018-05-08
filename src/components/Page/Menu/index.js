@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Menu, Icon, Switch, Layout } from 'antd'
-import { Link, NavLink, withRouter } from 'react-router-dom'
+import { Menu, Switch, Layout } from 'antd'
+import { Link, withRouter } from 'react-router-dom'
+import { reduce } from 'lodash';
 import './style.css'
 
 const { Sider } = Layout
@@ -508,6 +509,7 @@ const menuData = [
     ],
   },
 ]
+
 const mapStateToProps = (state, props) => ({})
 
 @connect(mapStateToProps)
@@ -517,6 +519,7 @@ class Navigation extends React.Component {
     collapsed: false,
     current: '',
     opened: [''],
+    mounted: false,
   }
   changeTheme = value => {
     this.setState({
@@ -540,36 +543,42 @@ class Navigation extends React.Component {
     })
   }
 
-  getActiveMenuItem = props => {
-    let url = props.location.pathname
-    let activeMenuItem = ''
-    let opened = []
-    menuData.forEach(menuItem => {
-      if (menuItem.children) {
-        let menuItemKey = menuItem.key
-        menuItem.children.forEach(innerMenuItem => {
-          if (innerMenuItem.url === url) {
-            activeMenuItem = innerMenuItem.key
-            opened.push(menuItemKey)
-          }
-        })
+  getPath(data, url, parents = []) {
+    let items = reduce(data, (result, entry) => {
+      if (result.length) {
+        return result;
+      } else if (entry.url === url) {
+        return [entry].concat(parents);
+      } else if (entry.children) {
+        let nested = this.getPath(entry.children, url, [entry].concat(parents));
+        return (nested) ? nested : result;
       }
-      if (menuItem.url !== undefined && menuItem.url === url) {
-        activeMenuItem = menuItem.key
-      }
-    })
+      return result;
+    }, []);
+    return (items.length > 0) ? items : false;
+  }
 
-    this.setState({
-      current: activeMenuItem,
-      opened: opened,
-    })
+  getActiveMenuItem = (props, items) => {
+    let url = props.location.pathname;
+    let [activeMenuItem, ...path] = this.getPath(items, url);
+    if (activeMenuItem) {
+      this.setState({
+        current: activeMenuItem.key,
+        opened: path.map(entry => entry.key)
+      });
+    } else {
+      this.setState({
+        current: '',
+        opened: [],
+      });
+    }
   }
 
   generateMenuPartitions(items) {
-    return items.map(menuItem => {
+    return items.map((menuItem, index) => {
       if (menuItem.children) {
         let subMenuTitle = (
-          <span className="appMenu__title-wrap">
+          <span className="appMenu__title-wrap" key={menuItem.key}>
             <span className="appMenu__item-title">
               {menuItem.title}
             </span>
@@ -604,11 +613,11 @@ class Navigation extends React.Component {
   }
 
   componentDidMount() {
-    this.getActiveMenuItem(this.props)
+    this.getActiveMenuItem(this.props, menuData)
   }
 
   componentWillReceiveProps(newProps) {
-    this.getActiveMenuItem(newProps)
+    this.getActiveMenuItem(newProps, menuData)
   }
 
   render() {
@@ -655,4 +664,4 @@ class Navigation extends React.Component {
 
 const AppMenu = withRouter(Navigation)
 
-export default AppMenu
+export {AppMenu, menuData}
