@@ -115,7 +115,7 @@ const loadableRoutes = {
     component: loadable(() => import('pages/Charts/ChartPage')),
   },
   '/charts/piety': {
-    component: loadable(() => import('pages/Charts/PietyPage')),
+    component: loadable(() => import('pages/Charts/PeityPage')),
   },
   '/charts/c3': {
     component: loadable(() => import('pages/Charts/C3Page')),
