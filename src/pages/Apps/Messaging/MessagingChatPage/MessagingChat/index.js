@@ -95,7 +95,7 @@ class MessagingChat extends React.Component {
       <div className="card messaging">
         <div className="messaging__sidebar">
           <div className="messaging__sidebar-header">
-            <Search placeholder="input search text" size="small" style={{ width: '100%' }} />
+            <Search placeholder="input search text" style={{ width: '100%' }} />
           </div>
           <div className="messaging__tabs">
             <Tabs defaultActiveKey="0" tabPosition={'left'} onChange={this.changeChat}>
@@ -112,7 +112,7 @@ class MessagingChat extends React.Component {
             </h4>
             <div className="pull-right">
               <Dropdown overlay={actionsMenu}>
-                <Button style={{ marginLeft: 4 }} size="small">
+                <Button style={{ marginLeft: 4 }}>
                   Actions <Icon type="setting" />
                 </Button>
               </Dropdown>

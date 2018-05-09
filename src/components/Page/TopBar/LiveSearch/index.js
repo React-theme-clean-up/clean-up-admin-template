@@ -75,7 +75,7 @@ class LiveSearch extends React.Component {
                   value={searchText}
                   onChange={this.changeSearchText}
                   id="livesearchInput"
-                  placeholder="Search..."
+                  placeholder="Type to search..."
                   ref={ele => (this.searchInput = ele)}
                 />
               </div>

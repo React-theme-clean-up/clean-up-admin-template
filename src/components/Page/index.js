@@ -75,7 +75,7 @@ class Page extends React.Component {
       setTimeout(() => {
         dispatch(setLoading(false))
         dispatch(resetHideLogin())
-      }, 300)
+      })
     }
   }
 
@@ -87,7 +87,6 @@ class Page extends React.Component {
     source = axios.CancelToken.source()
     axios.defaults.cancelToken = source.token
     const { onMounted, roles, dispatch } = this.props
-
     if (roles.length > 0) {
       this._onMounted = () => {
         return dispatch(initAuth(roles)).then(response => {
@@ -108,7 +107,7 @@ class Page extends React.Component {
         if (isResolve) {
           this.stopLoading()
         }
-      }) // show state.app.isLoading equal or more then 300ms
+      }, 300) // show state.app.isLoading equal or more then 300ms
       if (this._onMounted) {
         this._onMounted()
           .catch(error => {

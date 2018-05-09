@@ -141,7 +141,7 @@ const initialState = {
   activeDialog: '',
   dialogForms: {},
   submitForms: {},
-  isHideLogin: true,
+  isHideLogin: false,
 
   // USER PARAMETERS
   userState: {

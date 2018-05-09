@@ -151,7 +151,7 @@ class MailList extends React.Component {
       <div className="card mail">
         <div className="mail__sidebar">
           <div className="mail__sidebar-header">
-            <Search placeholder="input search text" size="small" style={{ width: '100%' }} />
+            <Search placeholder="input search text" style={{ width: '100%' }} />
           </div>
           <div className="mail__tabs">
             <Tabs defaultActiveKey="0" tabPosition={'left'} onChange={this.changeCategory}>
@@ -161,10 +161,10 @@ class MailList extends React.Component {
             </Tabs>
           </div>
         </div>
-        <div className="mail__content pt-2">
-          <div className="mail__content-header">
+        <div className="mail__content">
+          <div className="mail__content-header pt-3">
             <div className="pull-right mr-2 mt-1">
-              <Button size="small" type="primary">
+              <Button type="primary">
                 Compose mail
               </Button>
             </div>

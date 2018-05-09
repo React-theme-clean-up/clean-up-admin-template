@@ -34,6 +34,7 @@ class Layout extends React.Component {
   render() {
     return (
       <AntLayout>
+        <Loader />
         <Spinner />
         <BackTop />
         <Routes />
@@ -49,7 +50,6 @@ class Layout extends React.Component {
             <Footer />
           </AntFooter>
         </AntLayout>
-        <Loader />
       </AntLayout>
     )
   }
