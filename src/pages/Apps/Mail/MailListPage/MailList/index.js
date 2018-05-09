@@ -164,9 +164,7 @@ class MailList extends React.Component {
         <div className="mail__content">
           <div className="mail__content-header pt-3">
             <div className="pull-right mr-2 mt-1">
-              <Button type="primary">
-                Compose mail
-              </Button>
+              <Button type="primary">Compose mail</Button>
             </div>
             <Tabs defaultActiveKey="1" tabPosition={'top'}>
               <TabPane
