@@ -5,7 +5,6 @@ import { createStore, applyMiddleware } from 'redux'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createHashHistory'
 import thunk from 'redux-thunk'
-import FastClick from 'fastclick'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import 'es6-promise/auto'
@@ -36,7 +35,6 @@ if (isLogger && process.env.NODE_ENV === 'development') {
 }
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(...middlewares)))
 
-FastClick.attach(document.body)
 injectTapEventPlugin()
 
 ReactDOM.render(

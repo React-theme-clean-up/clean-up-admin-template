@@ -85,12 +85,6 @@ class LiveSearch extends React.Component {
                 </li>
                 <li className="livesearch__option">Press enter to search</li>
               </ul>
-              <div className="livesearch__suggestion">
-                <span className="livesearch__suggestion-text">
-                  Suggestion:
-                  <span className="livesearch__suggestion-input-text ml-1">Some text</span>
-                </span>
-              </div>
               <div className="livesearch__results">
                 <div className="livesearch__results-title">
                   <span className="livesearch__results-title-text">Pages Search Results</span>

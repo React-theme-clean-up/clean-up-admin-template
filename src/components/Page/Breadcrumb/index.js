@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import { menuData } from '../Menu'
+import { menuData } from '../Menu/MenuSider'
 import { reduce } from 'lodash'
 import './style.css'
 

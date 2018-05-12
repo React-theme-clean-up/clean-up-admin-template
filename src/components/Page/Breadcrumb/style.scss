@@ -5,6 +5,12 @@
   margin: rem(-20);
   margin-bottom: rem(20);
   background-color: $white;
+  border-bottom: 1px solid $gray-border;
+
+  @media(max-width: $sm-min-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   &__path {
     font-size: rem(18);
