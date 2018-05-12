@@ -103,7 +103,8 @@ export function login(username, password, dispatch) {
     notification.open({
       type: 'success',
       message: 'You have successfully logged in!',
-      description: 'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
+      description:
+        'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
     })
     return true
   }
@@ -116,7 +117,8 @@ export function login(username, password, dispatch) {
     notification.open({
       type: 'success',
       message: 'You have successfully logged in!',
-      description: 'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
+      description:
+        'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
     })
     return true
   }
@@ -152,7 +154,7 @@ const initialState = {
   submitForms: {},
   isHideLogin: false,
   openedMenuMobile: false,
-  collapsedMenuDesktop: (window.localStorage.getItem('app.collapsedMenuDesktop') === 'true'),
+  collapsedMenuDesktop: window.localStorage.getItem('app.collapsedMenuDesktop') === 'true',
 
   // USER PARAMETERS
   userState: {
@@ -191,7 +193,10 @@ export default createReducer(
       return { ...state, submitForms }
     },
     [setOpenedMenuMobile]: (state, openedMenuMobile) => ({ ...state, openedMenuMobile }),
-    [setCollapsedMenuDesktop]: (state, collapsedMenuDesktop) => ({ ...state, collapsedMenuDesktop }),
+    [setCollapsedMenuDesktop]: (state, collapsedMenuDesktop) => ({
+      ...state,
+      collapsedMenuDesktop,
+    }),
   },
   initialState,
 )

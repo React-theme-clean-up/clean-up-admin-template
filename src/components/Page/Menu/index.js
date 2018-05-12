@@ -1,9 +1,9 @@
 import 'rc-drawer-menu/assets/index.css'
 import React from 'react'
 import DrawerMenu from 'rc-drawer-menu'
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars'
 import { MenuSider } from './MenuSider'
-import { connect } from "react-redux";
+import { connect } from 'react-redux'
 import { setOpenedMenuMobile } from 'ducks/app'
 import './style.css'
 
@@ -14,7 +14,7 @@ const mapStateToProps = (state, props) => ({
 @connect(mapStateToProps)
 class AppMenu extends React.Component {
   state = {
-    open: this.props.openedMenuMobile
+    open: this.props.openedMenuMobile,
   }
 
   toggleOpen = () => {
@@ -25,15 +25,14 @@ class AppMenu extends React.Component {
   componentWillReceiveProps(newProps) {
     this.setState({
       open: newProps.openedMenuMobile,
-    });
+    })
   }
 
   render() {
     const { isMobile } = this.props
     const { open } = this.state
-    return (
-      isMobile ? (
-        <DrawerMenu
+    return isMobile
+      ? <DrawerMenu
           parent={null}
           level={null}
           open={open}
@@ -41,15 +40,11 @@ class AppMenu extends React.Component {
           onIconClick={this.toggleOpen}
           width="256px"
         >
-          <Scrollbars
-            style={{ height: '100vh' }}>
+          <Scrollbars style={{ height: '100vh' }}>
             <MenuSider {...this.props} />
           </Scrollbars>
         </DrawerMenu>
-      ) : (
-        <MenuSider {...this.props} />
-      )
-    )
+      : <MenuSider {...this.props} />
   }
 }
 

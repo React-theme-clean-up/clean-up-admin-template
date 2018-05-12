@@ -4,7 +4,7 @@ import { Menu, Switch, Layout } from 'antd'
 import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setOpenedMenuMobile, toggleMenuDesktop } from 'ducks/app'
-import 'rc-drawer-menu/assets/index.css';
+import 'rc-drawer-menu/assets/index.css'
 import './style.css'
 
 const { Sider } = Layout
@@ -45,7 +45,7 @@ const menuData = [
             title: 'Grid',
             url: '/antdesign/grid',
           },
-        ]
+        ],
       },
       {
         title: 'Navigation',
@@ -81,7 +81,7 @@ const menuData = [
             title: 'Steps',
             url: '/antdesign/steps',
           },
-        ]
+        ],
       },
       {
         title: 'Data Entry',
@@ -172,7 +172,7 @@ const menuData = [
             title: 'Upload',
             url: '/antdesign/upload',
           },
-        ]
+        ],
       },
       {
         title: 'Data Display',
@@ -248,7 +248,7 @@ const menuData = [
             title: 'Tree',
             url: '/antdesign/tree',
           },
-        ]
+        ],
       },
       {
         title: 'Feedback',
@@ -284,7 +284,7 @@ const menuData = [
             title: 'Spin',
             url: '/antdesign/spin',
           },
-        ]
+        ],
       },
       {
         title: 'Other',
@@ -310,7 +310,7 @@ const menuData = [
             title: 'Locale Provider',
             url: '/antdesign/localeprovider',
           },
-        ]
+        ],
       },
     ],
   },
@@ -586,13 +586,13 @@ const menuData = [
             key: 'nestedItem1-2',
             disabled: true,
           },
-        ]
+        ],
       },
       {
         title: 'Nested Items 1-2',
         key: 'nestedItem1-2',
       },
-    ]
+    ],
   },
   {
     title: 'Disabled Item',
@@ -603,7 +603,7 @@ const menuData = [
 ]
 
 const mapStateToProps = (state, props) => ({
-  collapsedMenuDesktop: state.app.collapsedMenuDesktop
+  collapsedMenuDesktop: state.app.collapsedMenuDesktop,
 })
 
 @connect(mapStateToProps)
@@ -674,9 +674,7 @@ class Navigation extends React.Component {
             <span className="menuSider__item-title">
               {menuItem.title}
             </span>
-            {menuItem.icon &&
-            <span className={menuItem.icon + ' menuSider__icon'} />
-            }
+            {menuItem.icon && <span className={menuItem.icon + ' menuSider__icon'} />}
           </span>
         )
         return (
@@ -696,39 +694,32 @@ class Navigation extends React.Component {
     const icon = item.icon
     const disabled = item.disabled
     const { dispatch } = this.props
-    return (
-      item.divider ?
-        <Divider key={Math.random()}/>
-        :
-        item.url ?
-          <Menu.Item key={key} disabled={disabled}>
+    return item.divider
+      ? <Divider key={Math.random()} />
+      : item.url
+        ? <Menu.Item key={key} disabled={disabled}>
             <Link
               to={url}
               onClick={
                 this.props.isMobile
                   ? () => {
-                    dispatch(setOpenedMenuMobile(false))
-                  }
+                      dispatch(setOpenedMenuMobile(false))
+                    }
                   : undefined
-              }>
+              }
+            >
               <span className="menuSider__item-title">
                 {title}
               </span>
-              {icon &&
-              <span className={icon + ' menuSider__icon'} />
-              }
+              {icon && <span className={icon + ' menuSider__icon'} />}
             </Link>
           </Menu.Item>
-          :
-          <Menu.Item key={key} disabled={disabled}>
+        : <Menu.Item key={key} disabled={disabled}>
             <span className="menuSider__item-title">
               {title}
             </span>
-            {icon &&
-            <span className={icon + ' menuSider__icon'} />
-            }
+            {icon && <span className={icon + ' menuSider__icon'} />}
           </Menu.Item>
-    )
   }
 
   onCollapse = (collapsed, type) => {
@@ -748,7 +739,7 @@ class Navigation extends React.Component {
     console.log(newProps)
     this.getActiveMenuItem(newProps, menuData)
     this.setState({
-      collapsed: newProps.collapsedMenuDesktop
+      collapsed: newProps.collapsedMenuDesktop,
     })
   }
 
@@ -771,9 +762,7 @@ class Navigation extends React.Component {
     }
     const params = isMobile ? paramsMobile : paramsDesktop
     return (
-      <Sider
-        {...params}
-      >
+      <Sider {...params}>
         <div className="menuSider__logo" />
         <Menu
           theme="dark"
@@ -785,10 +774,10 @@ class Navigation extends React.Component {
           className="menuSider__navigation"
         >
           <Menu.Item key={'settings'}>
-              <span className="menuSider__item-title">
-                Theme Settings
-              </span>
-            <span className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'} />
+            <span className="menuSider__item-title">Theme Settings</span>
+            <span
+              className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'}
+            />
           </Menu.Item>
           {menuItems}
         </Menu>

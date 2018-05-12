@@ -39,12 +39,12 @@ const query = {
   'screen-xxl': {
     minWidth: 1600,
   },
-};
+}
 
-let isMobile;
+let isMobile
 enquireScreen(b => {
-  isMobile = b;
-});
+  isMobile = b
+})
 
 let contentBuffer = {
   pathName: null,
@@ -59,7 +59,7 @@ class Layout extends React.Component {
 
   state = {
     isMobile,
-  };
+  }
 
   getChildContext() {
     return {
@@ -72,12 +72,12 @@ class Layout extends React.Component {
     this.enquireHandler = enquireScreen(mobile => {
       this.setState({
         isMobile: mobile,
-      });
-    });
+      })
+    })
   }
 
   componentWillUnmount() {
-    unenquireScreen(this.enquireHandler);
+    unenquireScreen(this.enquireHandler)
   }
 
   render() {
