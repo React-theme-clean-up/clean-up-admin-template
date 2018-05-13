@@ -10,7 +10,7 @@ class Lockscreen extends React.Component {
     fullSize: false,
   }
 
-    switchSize = () => {
+  switchSize = () => {
     let { fullSize } = this.state
 
     fullSize = !fullSize
@@ -26,18 +26,13 @@ class Lockscreen extends React.Component {
     const { backgroundImage, fullSize } = this.state
 
     return (
-      <div
-        className={fullSize === false ? 'login' : 'login login--fullscreen'}
-      >
+      <div className={fullSize === false ? 'login' : 'login login--fullscreen'}>
         <div className="login__header">
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
                 <a href="javascript: void(0);">
-                  <img
-                    src="resources/images/login/logo.png"
-                    alt="Clean UI Admin Template"
-                  />
+                  <img src="resources/images/login/logo.png" alt="Clean UI Admin Template" />
                 </a>
                 <Button className="ml-3" onClick={this.switchSize}>
                   Switch Fullscreen / Windowed

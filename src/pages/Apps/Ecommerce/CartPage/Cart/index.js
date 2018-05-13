@@ -70,7 +70,9 @@ class Cart extends React.Component {
         title: '',
         dataIndex: '',
         render: () =>
-          <Button icon="cross" size="small">Remove</Button>
+          <Button icon="cross" size="small">
+            Remove
+          </Button>,
       },
     ]
 

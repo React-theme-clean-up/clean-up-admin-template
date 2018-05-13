@@ -764,16 +764,13 @@ class Navigation extends React.Component {
     return (
       <Sider {...params}>
         <div className="menuSider__logo">
-          {
-            params.collapsed ?
-              <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
+          {params.collapsed
+            ? <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
                 <img src="/resources/images/logo-inverse-mobile.png" alt="" />
               </div>
-              :
-              <div className="menuSider__logoContainer">
+            : <div className="menuSider__logoContainer">
                 <img src="/resources/images/logo-inverse.png" alt="" />
-              </div>
-          }
+              </div>}
         </div>
         <Menu
           theme="dark"

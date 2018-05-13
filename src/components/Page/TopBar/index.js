@@ -18,7 +18,12 @@ class TopBar extends React.Component {
           <LiveSearch />
         </div>
         <div className="topbar__right">
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="mr-4 d-none d-sm-inline">
+          <a
+            href="http://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-4 d-none d-sm-inline"
+          >
             <Button type="danger">Buy Now 25$</Button>
           </a>
           <BitcoinPrice />

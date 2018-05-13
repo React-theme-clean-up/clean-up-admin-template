@@ -22,8 +22,7 @@ class Utilities extends React.Component {
             <div className="alert alert-warning" role="alert">
               <p className="mb-0">
                 <strong>Attention!</strong> This is only a part of all Bootstrap Utilites. Follow
-                next link to get information about all of them:
-                {' '}
+                next link to get information about all of them:{' '}
                 <a
                   href="https://getbootstrap.com/docs/4.1/utilities/borders/"
                   target="_blank"
