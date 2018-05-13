@@ -1,5 +1,6 @@
 import React from 'react'
 import { Line } from 'react-peity'
+import './style.css'
 
 class BitcoinPrice extends React.Component {
   state = {
@@ -9,7 +10,7 @@ class BitcoinPrice extends React.Component {
   render() {
     const { chartsData } = this.state
     return (
-      <div className="d-inline-block mr-4">
+      <div className="bitcoinPrice d-inline-block mr-4">
         Bitcoin Price:
         <span style={{ margin: '0 8px', position: 'relative', top: '3px' }}>
           <Line values={chartsData} />

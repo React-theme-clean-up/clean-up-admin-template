@@ -49,7 +49,7 @@ class LiveSearch extends React.Component {
     return (
       <div className="d-inline-block mr-4">
         <Input
-          className="topbar__liveSearch"
+          className="livesearch__topInput"
           placeholder="Type to search..."
           prefix={<Icon type="search" style={{ color: 'rgba(0,0,0,.25)' }} />}
           style={{ width: 200 }}

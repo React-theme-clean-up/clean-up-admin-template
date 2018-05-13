@@ -162,36 +162,38 @@ class MailList extends React.Component {
           </div>
         </div>
         <div className="mail__content">
-          <div className="mail__content-header pt-3">
-            <div className="pull-right mr-2 mt-1">
-              <Button type="primary">Compose mail</Button>
+          <div className="mail__content-header">
+            <div className="card-header clearfix">
+              <div className="pull-right">
+                <Button type="primary">Compose mail</Button>
+              </div>
+              <Tabs defaultActiveKey="1" tabPosition={'top'}>
+                <TabPane
+                  tab={
+                    <span>
+                      <Icon type="home" /> Primary
+                    </span>
+                  }
+                  key="1"
+                />
+                <TabPane
+                  tab={
+                    <span>
+                      <Icon type="message" /> Social
+                    </span>
+                  }
+                  key="2"
+                />
+                <TabPane
+                  tab={
+                    <span>
+                      <Icon type="tags" /> Promotion
+                    </span>
+                  }
+                  key="3"
+                />
+              </Tabs>
             </div>
-            <Tabs defaultActiveKey="1" tabPosition={'top'}>
-              <TabPane
-                tab={
-                  <span>
-                    <Icon type="home" /> Primary
-                  </span>
-                }
-                key="1"
-              />
-              <TabPane
-                tab={
-                  <span>
-                    <Icon type="message" /> Social
-                  </span>
-                }
-                key="2"
-              />
-              <TabPane
-                tab={
-                  <span>
-                    <Icon type="tags" /> Promotion
-                  </span>
-                }
-                key="3"
-              />
-            </Tabs>
           </div>
           <div className="mail__content-wrapper">
             <Table

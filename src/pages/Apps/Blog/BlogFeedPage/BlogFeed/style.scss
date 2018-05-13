@@ -20,6 +20,7 @@
   &__article-title {
     h1 {
       font-size: rem(28);
+      font-weight: bold;
       margin-bottom: rem(5);
       @media (max-width: $sm-max-width) {
         font-size: rem(24);
@@ -58,7 +59,7 @@
   }
 
   &__article-footer {
-    padding: rem(5) 0;
+    padding: rem(10) 0;
     border-top: 1px solid $gray-border;
     border-bottom: 1px solid $gray-border;
   }

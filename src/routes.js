@@ -15,6 +15,9 @@ const loadable = loader =>
 
 const loadableRoutes = {
   // Default Pages
+  '/documentation': {
+    component: loadable(() => import('pages/DefaultPages/DocumentationPage')),
+  },
   '/login': {
     component: loadable(() => import('pages/DefaultPages/LoginPage')),
   },

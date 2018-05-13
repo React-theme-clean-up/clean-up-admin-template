@@ -102,7 +102,9 @@ class BlogFeed extends React.Component {
                       </article>,
                     )}
                   </main>
-                  <Pagination defaultCurrent={1} total={50} />
+                  <div className="mb-5">
+                    <Pagination defaultCurrent={1} total={50} />
+                  </div>
                 </div>
                 <div className="col-lg-4">
                   <aside className="blog-feed__sidebar">

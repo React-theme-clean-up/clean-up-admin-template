@@ -29,7 +29,7 @@ class AppFooter extends React.Component {
         </div>
         <div className="footer__bottom">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-sm-6">
               <a
                 href="http://google.com"
                 target="_blank"
@@ -39,7 +39,7 @@ class AppFooter extends React.Component {
                 <Button type="primary">Buy Now 25$</Button>
               </a>
             </div>
-            <div className="col-lg-6">
+            <div className="col-sm-6">
               <div className="footer__copyright">
                 <img
                   src="resources/images/mediatec.png"
@@ -48,7 +48,7 @@ class AppFooter extends React.Component {
                   alt="Mediatec Software"
                 />
                 <span>
-                  © 2016{' '}
+                  © 2018{' '}
                   <a href="http://mediatec.org/" target="_blank" rel="noopener noreferrer">
                     Mediatec Software
                   </a>

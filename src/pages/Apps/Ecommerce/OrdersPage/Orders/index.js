@@ -181,12 +181,8 @@ class Orders extends React.Component {
         key: 'action',
         render: (text, record) =>
           <span>
-            <a className="mr-2" href="">
-              <i className="icmn-pencil mr-1" /> View
-            </a>
-            <a href="">
-              <i className="icmn-cross mr-1" /> Remove
-            </a>
+            <Button icon="edit" className="mr-1" size="small">View</Button>
+            <Button icon="cross" size="small">Remove</Button>
           </span>,
       },
     ]

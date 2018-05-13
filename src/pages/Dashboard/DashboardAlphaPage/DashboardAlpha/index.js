@@ -334,22 +334,22 @@ class DashboardAlpha extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="database" type="danger" />
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="users" type="danger" />
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="home" />
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="database" btnType="success" type="default" />
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="users" btnType="warning" />
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-sm-6 col-xl-4">
                     <InfoCard form="interactive" icon="home" btnType="default" />
                   </div>
                 </div>

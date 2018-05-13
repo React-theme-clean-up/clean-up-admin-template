@@ -763,7 +763,18 @@ class Navigation extends React.Component {
     const params = isMobile ? paramsMobile : paramsDesktop
     return (
       <Sider {...params}>
-        <div className="menuSider__logo" />
+        <div className="menuSider__logo">
+          {
+            params.collapsed ?
+              <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
+                <img src="/resources/images/logo-inverse-mobile.png" alt="" />
+              </div>
+              :
+              <div className="menuSider__logoContainer">
+                <img src="/resources/images/logo-inverse.png" alt="" />
+              </div>
+          }
+        </div>
         <Menu
           theme="dark"
           onClick={this.handleClick}
@@ -773,12 +784,14 @@ class Navigation extends React.Component {
           mode="inline"
           className="menuSider__navigation"
         >
+          {/*
           <Menu.Item key={'settings'}>
             <span className="menuSider__item-title">Theme Settings</span>
             <span
               className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'}
             />
           </Menu.Item>
+          */}
           {menuItems}
         </Menu>
       </Sider>

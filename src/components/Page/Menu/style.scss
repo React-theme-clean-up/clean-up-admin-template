@@ -23,3 +23,19 @@
   overflow: visible;
   background: $menuBg;
 }
+
+.drawer-button {
+  background: $menuBg !important;
+  top: 67px;
+}
+
+.drawer.drawer-open .drawer-button-icon {
+  background: transparent !important;
+}
+
+.drawer-button-icon {
+  background: $white !important;
+  &:after, &:before {
+    background: $white !important;
+  }
+}
