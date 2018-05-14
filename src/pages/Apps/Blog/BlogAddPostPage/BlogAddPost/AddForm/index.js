@@ -1,7 +1,7 @@
 // import React from 'react'
 import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import { Form, Input, Button, Radio, Select, Upload, Icon } from 'antd'
 //import './wysiwyg-editor.css'
 

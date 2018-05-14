@@ -2,7 +2,7 @@ import React from 'react'
 import { Tabs, Menu, Dropdown, Icon, Button } from 'antd'
 import { Editor } from 'react-draft-wysiwyg'
 import Avatar from 'components/CleanComponents/Avatar'
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import './style.css'
 import data from './data.json'
 
