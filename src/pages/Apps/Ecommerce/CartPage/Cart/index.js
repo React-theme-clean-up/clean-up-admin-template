@@ -70,9 +70,9 @@ class Cart extends React.Component {
         title: '',
         dataIndex: '',
         render: () =>
-          <a className="utils__link--underlined" href="javascript: void(0);">
+          <Button icon="cross" size="small">
             Remove
-          </a>,
+          </Button>,
       },
     ]
 

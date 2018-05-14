@@ -51,10 +51,10 @@ class LoginAlpha extends React.Component {
                     alt="Clean UI Admin Template"
                   />
                 </a>
-                <Button className="ml-3" onClick={this.switchSize} size="small">
+                <Button className="ml-3" onClick={this.switchSize}>
                   Switch Fullscreen / Windowed
                 </Button>
-                <Button className="ml-3" onClick={this.generateBackground} size="small">
+                <Button className="ml-3" onClick={this.generateBackground}>
                   Randomize Background Image
                 </Button>
               </div>

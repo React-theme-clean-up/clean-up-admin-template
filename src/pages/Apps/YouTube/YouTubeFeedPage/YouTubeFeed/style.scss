@@ -2,10 +2,16 @@
 
 .video-page {
   max-width: rem(1200);
-  margin: 0 auto;
+  margin: rem(30) auto;
 
   .card {
     padding: rem(16);
+  }
+
+  &__player {
+    img {
+      width: 100%;
+    }
   }
 
   &--feed {
@@ -127,6 +133,7 @@
 
   &__item-thumb {
     float: left;
+    margin-bottom: rem(15);
   }
 
   &__item-thumb-img {
@@ -200,9 +207,8 @@
   }
 
   &__partition-title {
-    font-size: rem(15);
+    font-size: rem(24);
     font-weight: bold;
-    margin-bottom: 0;
     vertical-align: middle;
   }
 
@@ -210,8 +216,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-top: rem(-2);
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
   }
 
   &__next-item--feed {

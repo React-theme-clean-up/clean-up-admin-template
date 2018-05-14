@@ -260,9 +260,11 @@ class BlogPost extends React.Component {
                             </div>,
                           )}
                         </div>}
-                      <a href="javascript: void(0);" className="btn btn-default btn-block">
-                        Load More
-                      </a>
+                      <div className="mb-5 pb-2">
+                        <a href="javascript: void(0);" className="btn btn-default btn-block mb-5">
+                          Load More
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

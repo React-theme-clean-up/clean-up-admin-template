@@ -5,13 +5,46 @@ import { BackTop, Layout as AntLayout } from 'antd'
 import Routes from 'routes'
 import TopBar from 'components/Page/TopBar'
 import Footer from 'components/Page/Footer'
-import { AppMenu } from 'components/Page/Menu'
+import AppMenu from 'components/Page/Menu'
 import Content from 'components/Page/Content'
 import Loader from 'components/Page/Loader'
+import { enquireScreen, unenquireScreen } from 'enquire-js'
+import { ContainerQuery } from 'react-container-query'
+import classNames from 'classnames'
 
 const AntContent = AntLayout.Content
 const AntHeader = AntLayout.Header
 const AntFooter = AntLayout.Footer
+
+const query = {
+  'screen-xs': {
+    maxWidth: 575,
+  },
+  'screen-sm': {
+    minWidth: 576,
+    maxWidth: 767,
+  },
+  'screen-md': {
+    minWidth: 768,
+    maxWidth: 991,
+  },
+  'screen-lg': {
+    minWidth: 992,
+    maxWidth: 1199,
+  },
+  'screen-xl': {
+    minWidth: 1200,
+    maxWidth: 1599,
+  },
+  'screen-xxl': {
+    minWidth: 1600,
+  },
+}
+
+let isMobile
+enquireScreen(b => {
+  isMobile = b
+})
 
 let contentBuffer = {
   pathName: null,
@@ -24,6 +57,10 @@ class Layout extends React.Component {
     setContentBuffer: PropTypes.func,
   }
 
+  state = {
+    isMobile,
+  }
+
   getChildContext() {
     return {
       getContentBuffer: () => contentBuffer,
@@ -31,26 +68,44 @@ class Layout extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.enquireHandler = enquireScreen(mobile => {
+      this.setState({
+        isMobile: mobile,
+      })
+    })
+  }
+
+  componentWillUnmount() {
+    unenquireScreen(this.enquireHandler)
+  }
+
   render() {
+    const isMobile = !!this.state.isMobile
     return (
-      <AntLayout>
-        <Spinner />
-        <BackTop />
-        <Routes />
-        <AppMenu />
-        <AntLayout>
-          <AntHeader>
-            <TopBar />
-          </AntHeader>
-          <AntContent style={{ height: '100%' }}>
-            <Content />
-          </AntContent>
-          <AntFooter>
-            <Footer />
-          </AntFooter>
-        </AntLayout>
-        <Loader />
-      </AntLayout>
+      <ContainerQuery query={query}>
+        {params =>
+          <div className={classNames(params)}>
+            <AntLayout>
+              <Loader />
+              <Spinner />
+              <BackTop />
+              <Routes />
+              <AppMenu isMobile={isMobile} />
+              <AntLayout>
+                <AntHeader>
+                  <TopBar />
+                </AntHeader>
+                <AntContent style={{ height: '100%' }}>
+                  <Content />
+                </AntContent>
+                <AntFooter>
+                  <Footer />
+                </AntFooter>
+              </AntLayout>
+            </AntLayout>
+          </div>}
+      </ContainerQuery>
     )
   }
 }

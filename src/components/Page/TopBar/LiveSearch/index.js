@@ -49,7 +49,7 @@ class LiveSearch extends React.Component {
     return (
       <div className="d-inline-block mr-4">
         <Input
-          className="topbar__liveSearch"
+          className="livesearch__topInput"
           placeholder="Type to search..."
           prefix={<Icon type="search" style={{ color: 'rgba(0,0,0,.25)' }} />}
           style={{ width: 200 }}
@@ -75,7 +75,7 @@ class LiveSearch extends React.Component {
                   value={searchText}
                   onChange={this.changeSearchText}
                   id="livesearchInput"
-                  placeholder="Search..."
+                  placeholder="Type to search..."
                   ref={ele => (this.searchInput = ele)}
                 />
               </div>
@@ -85,12 +85,6 @@ class LiveSearch extends React.Component {
                 </li>
                 <li className="livesearch__option">Press enter to search</li>
               </ul>
-              <div className="livesearch__suggestion">
-                <span className="livesearch__suggestion-text">
-                  Suggestion:
-                  <span className="livesearch__suggestion-input-text ml-1">Some text</span>
-                </span>
-              </div>
               <div className="livesearch__results">
                 <div className="livesearch__results-title">
                   <span className="livesearch__results-title-text">Pages Search Results</span>

@@ -1,13 +1,13 @@
 import { createAction, createReducer } from 'redux-act'
 import { push } from 'react-router-redux'
 import { pendingTask, begin, end } from 'react-redux-spinner'
+import { notification } from 'antd'
 
 const REDUCER = 'app'
 const NS = `@@${REDUCER}/`
 
 const _setFrom = createAction(`${NS}SET_FROM`)
 const _setLoading = createAction(`${NS}SET_LOADING`)
-const _setMenuLeft = createAction(`${NS}SET_MENU_LEFT`)
 const _setHideLogin = createAction(`${NS}SET_HIDE_LOGIN`)
 
 export const setUserState = createAction(`${NS}SET_USER_STATE`)
@@ -16,6 +16,8 @@ export const setActiveDialog = createAction(`${NS}SET_ACTIVE_DIALOG`)
 export const deleteDialogForm = createAction(`${NS}DELETE_DIALOG_FORM`)
 export const addSubmitForm = createAction(`${NS}ADD_SUBMIT_FORM`)
 export const deleteSubmitForm = createAction(`${NS}DELETE_SUBMIT_FORM`)
+export const setOpenedMenuMobile = createAction(`${NS}SET_OPENED_MENU_MOBILE`)
+export const setCollapsedMenuDesktop = createAction(`${NS}SET_COLLAPSED_MENU_DESKTOP`)
 
 export const setLoading = isLoading => {
   const action = _setLoading(isLoading)
@@ -31,11 +33,11 @@ export const resetHideLogin = () => (dispatch, getState) => {
   return Promise.resolve()
 }
 
-export const toggleMenuLeft = () => (dispatch, getState) => {
+export const toggleMenuDesktop = () => (dispatch, getState) => {
   const state = getState()
-  const isMenuLeft = !state.app.isMenuLeft
-  window.localStorage.setItem('app.isMenuLeft', isMenuLeft ? 'on' : 'off')
-  dispatch(_setMenuLeft(isMenuLeft))
+  const collapsedMenuDesktop = !state.app.collapsedMenuDesktop
+  window.localStorage.setItem('app.collapsedMenuDesktop', collapsedMenuDesktop ? 'true' : 'false')
+  dispatch(setCollapsedMenuDesktop(collapsedMenuDesktop))
   return Promise.resolve()
 }
 
@@ -98,6 +100,12 @@ export function login(username, password, dispatch) {
     window.localStorage.setItem('app.Role', 'administrator')
     dispatch(_setHideLogin(true))
     dispatch(push('/dashboard/alpha'))
+    notification.open({
+      type: 'success',
+      message: 'You have successfully logged in!',
+      description:
+        'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
+    })
     return true
   }
 
@@ -106,6 +114,12 @@ export function login(username, password, dispatch) {
     window.localStorage.setItem('app.Role', 'agent')
     dispatch(_setHideLogin(true))
     dispatch(push('/dashboard/alpha'))
+    notification.open({
+      type: 'success',
+      message: 'You have successfully logged in!',
+      description:
+        'Welcome to the Clean UI Admin Template. The Clean UI Admin Template is a complimentary template that empowers developers to make perfect looking and useful apps!',
+    })
     return true
   }
 
@@ -133,15 +147,14 @@ export const logout = () => (dispatch, getState) => {
 const initialState = {
   // APP PARAMETERS
   from: '',
-  isMenuLeft:
-    (window.localStorage.getItem('app.isMenuLeft') ||
-      (window.localStorage.setItem('app.isMenuLeft', 'on'), 'on')) === 'on',
   isUpdatingContent: false,
   isLoading: false,
   activeDialog: '',
   dialogForms: {},
   submitForms: {},
-  isHideLogin: true,
+  isHideLogin: false,
+  openedMenuMobile: false,
+  collapsedMenuDesktop: window.localStorage.getItem('app.collapsedMenuDesktop') === 'true',
 
   // USER PARAMETERS
   userState: {
@@ -154,7 +167,6 @@ export default createReducer(
   {
     [_setFrom]: (state, from) => ({ ...state, from }),
     [_setLoading]: (state, isLoading) => ({ ...state, isLoading }),
-    [_setMenuLeft]: (state, isMenuLeft) => ({ ...state, isMenuLeft }),
     [_setHideLogin]: (state, isHideLogin) => ({ ...state, isHideLogin }),
     [setUpdatingContent]: (state, isUpdatingContent) => ({ ...state, isUpdatingContent }),
     [setUserState]: (state, { userState }) => ({ ...state, userState }),
@@ -180,6 +192,11 @@ export default createReducer(
       delete submitForms[id]
       return { ...state, submitForms }
     },
+    [setOpenedMenuMobile]: (state, openedMenuMobile) => ({ ...state, openedMenuMobile }),
+    [setCollapsedMenuDesktop]: (state, collapsedMenuDesktop) => ({
+      ...state,
+      collapsedMenuDesktop,
+    }),
   },
   initialState,
 )

@@ -38,16 +38,8 @@ class YouTubeView extends React.Component {
         <div className="card-block">
           <div className="video-page clearfix">
             <div className="video-page__main-content">
-              <div className="mediatec-cleanvideoplayer">
-                <ul data-theme="default">
-                  <li
-                    data-title={viewData.title}
-                    data-type={viewData.type}
-                    data-url={viewData.url}
-                    data-poster={viewData.cover}
-                    data-free="true"
-                  />
-                </ul>
+              <div className="video-page__player">
+                <img src="resources/images/photos/4.jpeg" alt="" />
               </div>
               <div className="video-page__descr">
                 <div className="video-page__descr-wrapper card">

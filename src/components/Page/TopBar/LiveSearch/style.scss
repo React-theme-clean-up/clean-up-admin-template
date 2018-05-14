@@ -8,8 +8,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba($white, 0.95);
+  background: $white;
   line-height: 1.5;
+
+  &__topInput {
+    input {
+      background: $gray-lighten;
+    }
+
+    @media(max-width: 620px) {
+      width: 30px !important;
+      input {
+        width: 30px !important;
+        padding-left: 22px !important;
+      }
+      .ant-input-prefix {
+        left: 11px !important;
+        pointer-events: none;
+      }
+    }
+  }
 
   &--show {
     opacity: 1;
@@ -21,7 +39,8 @@
     padding-left: rem(65);
     padding-right: rem(15);
     @media (max-width: $sm-max-width) {
-      padding-left: rem(58);
+      padding-left: rem(60);
+      padding-right: rem(30);
     }
   }
 
@@ -59,16 +78,16 @@
     font-size: rem(64);
     background-color: transparent;
     font-weight: bold;
+    padding: 0;
     @media (max-width: $sm-max-width) {
       font-size: rem(40);
     }
   }
 
   &__options {
-    margin: 0;
+    margin: 0 0 rem(30);
     padding: 0;
     list-style: none;
-    margin-bottom: rem(10);
   }
 
   &__option {
@@ -135,7 +154,7 @@
   }
 
   &__result-thumb {
-    display: inline-block;
+    display: block;
     width: rem(50);
     height: rem(50);
     border-radius: 50%;
@@ -148,16 +167,18 @@
     font-size: rem(18);
     font-weight: bold;
     background-size: cover;
+    float: left;
   }
 
   &__result-content {
     margin-bottom: rem(20);
+    min-height: rem(50);
   }
 
   &__result {
-    display: inline-block;
+    display: block;
     vertical-align: top;
-    margin-left: rem(15);
+    margin-left: rem(70);
     padding-top: rem(8);
   }
 

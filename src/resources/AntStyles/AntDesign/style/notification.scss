@@ -2,8 +2,8 @@
 @import '../../../mixins';
 
 /////////////////////////////////////////////////////////////////////////////////////////
-/*  ANT DESIGN INPUT */
+/*  ANT DESIGN NOTIFICATION */
 
-.ant-input-disabled {
-  background: $gray-lighten-more-more;
+.ant-notification {
+  max-width: calc(100vw - 48px);
 }

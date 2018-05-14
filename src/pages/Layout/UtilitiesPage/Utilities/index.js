@@ -9,7 +9,7 @@ class Utilities extends React.Component {
             <h5 className="mb-0 mr-3 d-inline-block text-black">
               <strong>Utilities</strong>
               <a
-                href="http://v4-alpha.getbootstrap.com/utilities/"
+                href="https://getbootstrap.com/docs/4.1/utilities/borders/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-sm btn-primary ml-2"
@@ -20,130 +20,18 @@ class Utilities extends React.Component {
           </div>
           <div className="card-body">
             <div className="alert alert-warning" role="alert">
-              <p className="mb-2">
+              <p className="mb-0">
                 <strong>Attention!</strong> This is only a part of all Bootstrap Utilites. Follow
-                next links to get information about all of them:
+                next link to get information about all of them:{' '}
+                <a
+                  href="https://getbootstrap.com/docs/4.1/utilities/borders/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mr-3"
+                >
+                  Bootstrap Framework Documentation
+                </a>
               </p>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/borders/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Borders
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/clearfix/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Clearfix
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/close-icon/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Close icon
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/colors/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Colors
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/flexbox/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Flexbox
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/display-property/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Display Property
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/image-replacement/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Image Replacement
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/invisible-content/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Invisible Content
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/position/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Position
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/responsive-helpers/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Responsive Helpers
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/screenreaders/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Screenreaders
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/sizing/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Sizing
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/spacing/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Spacing
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/typography/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Typography
-              </a>
-              <a
-                href="http://v4-alpha.getbootstrap.com/utilities/vertical-align/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-3"
-              >
-                Vertical Alignment
-              </a>
             </div>
             <br />
             <div className="row">

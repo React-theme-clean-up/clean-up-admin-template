@@ -10,18 +10,6 @@ class Lockscreen extends React.Component {
     fullSize: false,
   }
 
-  generateBackground = () => {
-    let { backgroundImage } = this.state
-
-    let min = 1
-    let max = 5
-    let picNumber = Math.floor(Math.random() * (max - min + 1)) + min
-    backgroundImage = 'url(resources/images/login/' + picNumber + '.jpg)'
-    this.setState({
-      backgroundImage: backgroundImage,
-    })
-  }
-
   switchSize = () => {
     let { fullSize } = this.state
 
@@ -38,31 +26,22 @@ class Lockscreen extends React.Component {
     const { backgroundImage, fullSize } = this.state
 
     return (
-      <div
-        className={fullSize === false ? 'login' : 'login login--fullscreen'}
-        style={{ backgroundImage: backgroundImage }}
-      >
+      <div className={fullSize === false ? 'login' : 'login login--fullscreen'}>
         <div className="login__header">
           <div className="row">
             <div className="col-lg-8">
               <div className="login__header__logo">
                 <a href="javascript: void(0);">
-                  <img
-                    src="resources/images/login/logo-inverse.png"
-                    alt="Clean UI Admin Template"
-                  />
+                  <img src="resources/images/login/logo.png" alt="Clean UI Admin Template" />
                 </a>
-                <Button className="ml-3" onClick={this.switchSize} size="small">
+                <Button className="ml-3" onClick={this.switchSize}>
                   Switch Fullscreen / Windowed
-                </Button>
-                <Button className="ml-3" onClick={this.generateBackground} size="small">
-                  Randomize Background Image
                 </Button>
               </div>
             </div>
           </div>
         </div>
-        <div className="login__block">
+        <div className="login__block mb-5">
           <div className="row">
             <div className="col-xl-12">
               <div className="login__block__inner">
