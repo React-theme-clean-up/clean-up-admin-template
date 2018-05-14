@@ -2,6 +2,7 @@
   "name": "pricingiq",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "devDependencies": {
     "babel-plugin-flow-react-proptypes": "^3.4.3",
     "babel-plugin-idx": "^1.5.1",

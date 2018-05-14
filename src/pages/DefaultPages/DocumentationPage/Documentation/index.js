@@ -103,7 +103,7 @@ class Documentation extends React.Component {
           <pre>
             {`+
 +
-├─ cleanui-admin-template-angular/  .. angular version
+├─ cleanui-admin-template-react/    .. react version
 │  ├─ build/                        .. build app files after "yarn build" run
 │  ├─ node_modules/                 .. node.js modules installed after "npm install" run
 │  ├─ public/                       .. public createReactApp folder (bootstrap index.html file)
@@ -116,8 +116,8 @@ class Documentation extends React.Component {
 │  │  ├─ registerServiceWorker.js   .. serviceWorker (cache manager)
 │  │  └─ routes.js                  .. app routes
 │  ├─ resources/                    .. resources folder
-│  │  ├─ AntStyles/                 .. Ant Design styles
-│  │  ├─ CleanStyles/               .. Clean UI styles
+│  │  ├─ AntStyles/                 .. ant design styles
+│  │  ├─ CleanStyles/               .. clean ui styles
 │  │  ├─ _antd.less                 .. redefined Ant Design variables
 │  │  └─ _mixins.scss/              .. global styles variables
 │  ├─ *                             .. system react files
@@ -125,8 +125,9 @@ class Documentation extends React.Component {
 │  └─ README.md                     .. git readme file
 +
 +
-├─ cleanui-admin-template/          .. Available from our git (request access by email support@cleanuitemplate.com)
-├─ cleanui-website-template/        .. Available from our git (request access by email support@cleanuitemplate.com)
+├─ bonus/                           .. free bonuses
+│  ├─ cleanui-admin-template/       .. html version
+│  └─ cleanui-website-template/     .. landing page
 +
 +
 └─ documentation.html               .. link to template documentation`}
