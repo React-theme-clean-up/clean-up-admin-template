@@ -1,6 +1,7 @@
 // import React from 'react'
 import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import { Form, Input, Button, Radio, Select, Upload, Icon } from 'antd'
 //import './wysiwyg-editor.css'
 
@@ -54,7 +55,9 @@ class AddForm extends React.Component {
             <label className="add-post__label">
               <strong>Content</strong>
             </label>
-            <Editor />
+            <div className="add-post__editor">
+              <Editor />
+            </div>
           </div>
         </FormItem>
         <FormItem>

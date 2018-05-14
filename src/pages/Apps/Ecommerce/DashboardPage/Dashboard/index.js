@@ -3,7 +3,7 @@ import { Tabs, Select, Table } from 'antd'
 import ChartistGraph from 'react-chartist'
 import Chartist from 'chartist'
 import data from './data.json'
-import InfoCard from 'components/Clean/InfoCard'
+import InfoCard from 'components/CleanComponents/InfoCard'
 
 const TabPane = Tabs.TabPane
 const Option = Select.Option

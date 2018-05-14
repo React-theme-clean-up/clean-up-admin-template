@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import SliderItems from 'components/AntDesign/Slider/index'
+import SliderItems from 'components/AntComponents/Slider/index'
 
 class SliderPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import BreadcrumbItems from 'components/AntDesign/Breadcrumb/index'
+import BreadcrumbItems from 'components/AntComponents/Breadcrumb/index'
 
 class BreadcrumbPage extends React.Component {
   static defaultProps = {

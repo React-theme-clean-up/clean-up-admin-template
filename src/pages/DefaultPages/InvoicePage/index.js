@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import Invoice from 'components/Clean/Invoice'
+import Invoice from 'components/CleanComponents/Invoice'
 
 class InvoicePage extends React.Component {
   static defaultProps = {

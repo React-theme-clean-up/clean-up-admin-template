@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import ModalItems from 'components/AntDesign/Modal/index'
+import ModalItems from 'components/AntComponents/Modal/index'
 
 class ModalPage extends React.Component {
   static defaultProps = {

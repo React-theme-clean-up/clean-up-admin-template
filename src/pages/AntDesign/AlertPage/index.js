@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import AlertItems from 'components/AntDesign/Alert/index'
+import AlertItems from 'components/AntComponents/Alert/index'
 
 class AlertPage extends React.Component {
   static defaultProps = {

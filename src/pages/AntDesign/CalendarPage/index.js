@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CalendarItems from 'components/AntDesign/Calendar/index'
+import CalendarItems from 'components/AntComponents/Calendar/index'
 
 class CalendarPage extends React.Component {
   static defaultProps = {

@@ -16,13 +16,14 @@
 
   &__block {
     padding: rem(80) rem(40) rem(80);
+    margin-bottom: rem(70);
     width: 100%;
     align-self: center;
     position: relative;
     z-index: 2;
 
     @media (max-width: $md-max-width) {
-      padding: rem(80) rem(20) rem(80);
+      padding: rem(40) rem(20) rem(80);
     }
 
     &__inner {

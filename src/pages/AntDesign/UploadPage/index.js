@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import UploadItems from 'components/AntDesign/Upload/index'
+import UploadItems from 'components/AntComponents/Upload/index'
 
 class UploadPage extends React.Component {
   static defaultProps = {

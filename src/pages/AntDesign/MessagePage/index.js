@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import MessageItems from 'components/AntDesign/Message/index'
+import MessageItems from 'components/AntComponents/Message/index'
 
 class MessagePage extends React.Component {
   static defaultProps = {

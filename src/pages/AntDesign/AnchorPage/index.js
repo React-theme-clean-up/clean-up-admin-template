@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import AnchorItems from 'components/AntDesign/Anchor/index'
+import AnchorItems from 'components/AntComponents/Anchor/index'
 
 class AnchorPage extends React.Component {
   static defaultProps = {

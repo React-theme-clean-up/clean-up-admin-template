@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import RateItems from 'components/AntDesign/Rate/index'
+import RateItems from 'components/AntComponents/Rate/index'
 
 class RatePage extends React.Component {
   static defaultProps = {

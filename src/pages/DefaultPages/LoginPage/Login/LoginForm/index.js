@@ -36,6 +36,11 @@ class LoginForm extends React.Component {
           <strong>Please log in</strong>
         </h4>
         <br />
+        <p>
+          Email: <code>admin@mediatec.org</code> or <code>agent@mediatec.org</code>
+          <br />
+          Password: <code>123123</code>
+        </p>
         <Form layout="vertical" hideRequiredMark onSubmit={this.onSubmit(isSubmitForm)}>
           <FormItem label="Email">
             {form.getFieldDecorator('username', {

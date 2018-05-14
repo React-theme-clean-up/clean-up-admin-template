@@ -2,7 +2,7 @@ import React from 'react'
 import { Radio } from 'antd'
 import './style.css'
 import { user } from './data.json'
-import Avatar from 'components/Clean/Avatar'
+import Avatar from 'components/CleanComponents/Avatar'
 
 class UserCard extends React.Component {
   state = {

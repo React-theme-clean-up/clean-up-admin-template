@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TableItems from 'components/AntDesign/Table/index'
+import TableItems from 'components/AntComponents/Table/index'
 
 class TablePage extends React.Component {
   static defaultProps = {

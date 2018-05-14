@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CascaderItems from 'components/AntDesign/Cascader/index'
+import CascaderItems from 'components/AntComponents/Cascader/index'
 
 class CascaderPage extends React.Component {
   static defaultProps = {

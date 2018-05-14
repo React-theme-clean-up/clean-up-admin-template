@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import SwitchItems from 'components/AntDesign/Switch/index'
+import SwitchItems from 'components/AntComponents/Switch/index'
 
 class SwitchPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import DividerItems from 'components/AntDesign/Divider/index'
+import DividerItems from 'components/AntComponents/Divider/index'
 
 class DividerPage extends React.Component {
   static defaultProps = {

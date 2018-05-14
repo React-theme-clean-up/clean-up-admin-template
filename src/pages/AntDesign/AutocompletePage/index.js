@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import AutocompleteItems from 'components/AntDesign/Autocomplete/index'
+import AutocompleteItems from 'components/AntComponents/Autocomplete/index'
 
 class AutocompletePage extends React.Component {
   static defaultProps = {

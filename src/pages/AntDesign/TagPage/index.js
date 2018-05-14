@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TagItems from 'components/AntDesign/Tag/index'
+import TagItems from 'components/AntComponents/Tag/index'
 
 class TagPage extends React.Component {
   static defaultProps = {

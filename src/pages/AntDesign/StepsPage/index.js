@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import StepsItems from 'components/AntDesign/Steps/index'
+import StepsItems from 'components/AntComponents/Steps/index'
 
 class StepsPage extends React.Component {
   static defaultProps = {

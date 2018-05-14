@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import PopoverItems from 'components/AntDesign/Popover/index'
+import PopoverItems from 'components/AntComponents/Popover/index'
 
 class PopoverPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Tabs, Menu, Dropdown, Icon, Button } from 'antd'
 import { Editor } from 'react-draft-wysiwyg'
-import Avatar from 'components/Clean/Avatar'
+import Avatar from 'components/CleanComponents/Avatar'
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './style.css'
 import data from './data.json'
 
@@ -170,7 +171,7 @@ class GitHubDiscuss extends React.Component {
                         <Avatar size="50" src={discuss.authorImg} />
                       </div>
                       <div className="discuss__content-wrapper">
-                        <div className="discuss__comment-head discuss__comment-head--empty">
+                        <div className="discuss__comment-head discuss__comment-head--empty p-3">
                           <Editor />
                         </div>
                         <div className="discuss__comment-bottom">

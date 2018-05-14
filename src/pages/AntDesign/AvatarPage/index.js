@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import AvatarItems from 'components/AntDesign/Avatar/index'
+import AvatarItems from 'components/AntComponents/Avatar/index'
 
 class AvatarPage extends React.Component {
   static defaultProps = {

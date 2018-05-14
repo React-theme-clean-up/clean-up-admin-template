@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import ProgressItems from 'components/AntDesign/Progress/index'
+import ProgressItems from 'components/AntComponents/Progress/index'
 
 class ProgressPage extends React.Component {
   static defaultProps = {

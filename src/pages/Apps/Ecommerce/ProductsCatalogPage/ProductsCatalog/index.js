@@ -1,6 +1,6 @@
 import React from 'react'
-import InfoCard from 'components/Clean/InfoCard'
-import ProductCard from 'components/Clean/ProductCard'
+import InfoCard from 'components/CleanComponents/InfoCard'
+import ProductCard from 'components/CleanComponents/ProductCard'
 
 class ProductsCatalog extends React.Component {
   static defaultProps = {

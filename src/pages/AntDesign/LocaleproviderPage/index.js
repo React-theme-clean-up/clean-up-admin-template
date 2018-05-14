@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import LocaleproviderItems from 'components/AntDesign/Localeprovider/index'
+import LocaleproviderItems from 'components/AntComponents/Localeprovider/index'
 
 class LocaleproviderPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import DropdownItems from 'components/AntDesign/Dropdown/index'
+import DropdownItems from 'components/AntComponents/Dropdown/index'
 
 class DropdownPage extends React.Component {
   static defaultProps = {

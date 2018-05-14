@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TransferItems from 'components/AntDesign/Transfer/index'
+import TransferItems from 'components/AntComponents/Transfer/index'
 
 class TransferPage extends React.Component {
   static defaultProps = {
