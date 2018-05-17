@@ -615,7 +615,6 @@ class Navigation extends React.Component {
   }
 
   handleClick = e => {
-    console.log('handle ', e.key);
     if (e.key === 'settings') {
       return
     }
@@ -658,9 +657,9 @@ class Navigation extends React.Component {
     let [activeMenuItem, ...path] = ''
 
     if (!current) {
-      [activeMenuItem, ...path] = this.getPath(items, url)
+      ;[activeMenuItem, ...path] = this.getPath(items, url)
     } else {
-      [activeMenuItem, ...path] = this.getPath(items, current)
+      ;[activeMenuItem, ...path] = this.getPath(items, current)
     }
 
     if (collapsed) {
@@ -752,14 +751,12 @@ class Navigation extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log('newProps ', newProps);
-      if (!newProps.isMobile) {
-        this.getActiveMenuItem(newProps, menuData)
-      }
+    if (!newProps.isMobile) {
+      this.getActiveMenuItem(newProps, menuData)
+    }
   }
 
   render() {
-    console.log('render');
     const { collapsed, current, opened } = this.state
     const { isMobile } = this.props
     const menuItems = this.generateMenuPartitions(menuData)
