@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import InputItems from 'components/AntDesign/Input/index'
+import InputItems from 'components/AntComponents/Input/index'
 
 class InputPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import InputnumberItems from 'components/AntDesign/Inputnumber/index'
+import InputnumberItems from 'components/AntComponents/Inputnumber/index'
 
 class InputnumberPage extends React.Component {
   static defaultProps = {

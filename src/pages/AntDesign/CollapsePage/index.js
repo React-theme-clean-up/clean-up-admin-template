@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CollapseItems from 'components/AntDesign/Collapse/index'
+import CollapseItems from 'components/AntComponents/Collapse/index'
 
 class CollapsePage extends React.Component {
   static defaultProps = {

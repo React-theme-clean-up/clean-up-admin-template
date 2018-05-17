@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import NotificationItems from 'components/AntDesign/Notification/index'
+import NotificationItems from 'components/AntComponents/Notification/index'
 
 class NotificationPage extends React.Component {
   static defaultProps = {

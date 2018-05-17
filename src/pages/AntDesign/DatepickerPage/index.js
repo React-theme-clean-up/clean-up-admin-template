@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import DatepickerItems from 'components/AntDesign/Datepicker/index'
+import DatepickerItems from 'components/AntComponents/Datepicker/index'
 
 class DatepickerPage extends React.Component {
   static defaultProps = {

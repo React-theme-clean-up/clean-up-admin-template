@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import MentionItems from 'components/AntDesign/Mention/index'
+import MentionItems from 'components/AntComponents/Mention/index'
 
 class MentionPage extends React.Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TreeselectItems from 'components/AntDesign/Treeselect/index'
+import TreeselectItems from 'components/AntComponents/Treeselect/index'
 
 class TreeselectPage extends React.Component {
   static defaultProps = {

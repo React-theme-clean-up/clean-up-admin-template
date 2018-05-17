@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import MenuItems from 'components/AntDesign/Menu/index'
+import MenuItems from 'components/AntComponents/Menu/index'
 
 class MenuPage extends React.Component {
   static defaultProps = {

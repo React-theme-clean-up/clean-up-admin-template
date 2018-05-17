@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import FormItems from 'components/AntDesign/Form/index'
+import FormItems from 'components/AntComponents/Form/index'
 
 class FormPage extends React.Component {
   static defaultProps = {

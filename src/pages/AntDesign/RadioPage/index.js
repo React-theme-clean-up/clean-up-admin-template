@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import RadioItems from 'components/AntDesign/Radio/index'
+import RadioItems from 'components/AntComponents/Radio/index'
 
 class RadioPage extends React.Component {
   static defaultProps = {

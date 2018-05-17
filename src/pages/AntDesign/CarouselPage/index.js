@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CarouselItems from 'components/AntDesign/Carousel/index'
+import CarouselItems from 'components/AntComponents/Carousel/index'
 
 class CarouselPage extends React.Component {
   static defaultProps = {

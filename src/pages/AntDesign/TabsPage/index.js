@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TabsItems from 'components/AntDesign/Tabs/index'
+import TabsItems from 'components/AntComponents/Tabs/index'
 
 class TabsPage extends React.Component {
   static defaultProps = {

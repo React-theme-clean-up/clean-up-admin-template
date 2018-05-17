@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import BacktopItems from 'components/AntDesign/Backtop/index'
+import BacktopItems from 'components/AntComponents/Backtop/index'
 
 class BacktopPage extends React.Component {
   static defaultProps = {

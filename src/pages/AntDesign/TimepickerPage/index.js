@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TimepickerItems from 'components/AntDesign/Timepicker/index'
+import TimepickerItems from 'components/AntComponents/Timepicker/index'
 
 class TimepickerPage extends React.Component {
   static defaultProps = {

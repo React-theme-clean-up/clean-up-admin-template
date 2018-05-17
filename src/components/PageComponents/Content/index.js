@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { setUpdatingContent } from 'ducks/app'
 import { isEmpty } from 'lodash'
-import Breadcrumb from 'components/Page/Breadcrumb'
+import Breadcrumb from 'components/PageComponents/Breadcrumb'
 
 const mapStateToProps = (state, props) => ({
   isUpdatingContent: state.app.isUpdatingContent,

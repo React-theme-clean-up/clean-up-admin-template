@@ -1,6 +1,6 @@
 import React from 'react'
 import { Input, Icon, Menu, Dropdown } from 'antd'
-import Avatar from 'components/Clean/Avatar'
+import Avatar from 'components/CleanComponents/Avatar'
 import CommentForm from './CommentForm'
 import './style.css'
 import data from './data.json'

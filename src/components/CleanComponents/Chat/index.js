@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 
 import { chats } from './data.json'
-import Avatar from 'components/Clean/Avatar'
+import Avatar from 'components/CleanComponents/Avatar'
 
 const Message = ({ chat, user }) =>
   <div

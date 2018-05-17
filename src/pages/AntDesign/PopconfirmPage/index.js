@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import PopconfirmItems from 'components/AntDesign/Popconfirm/index'
+import PopconfirmItems from 'components/AntComponents/Popconfirm/index'
 
 class PopconfirmPage extends React.Component {
   static defaultProps = {

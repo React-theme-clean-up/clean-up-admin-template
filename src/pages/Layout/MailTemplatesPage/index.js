@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import MailTemplates from 'components/Clean/MailTemplates'
+import MailTemplates from 'components/CleanComponents/MailTemplates'
 
 class MailTemplatesPage extends React.Component {
   static defaultProps = {

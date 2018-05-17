@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import ButtonItems from 'components/AntDesign/Button/index'
+import ButtonItems from 'components/AntComponents/Button/index'
 
 class ButtonPage extends React.Component {
   static defaultProps = {

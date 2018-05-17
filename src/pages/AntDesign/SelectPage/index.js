@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import SelectItems from 'components/AntDesign/Select/index'
+import SelectItems from 'components/AntComponents/Select/index'
 
 class SelectPage extends React.Component {
   static defaultProps = {

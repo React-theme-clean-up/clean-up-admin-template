@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CardItems from 'components/AntDesign/Card/index'
+import CardItems from 'components/AntComponents/Card/index'
 
 class CardPage extends React.Component {
   static defaultProps = {

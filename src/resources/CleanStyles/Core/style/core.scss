@@ -63,6 +63,9 @@ label {
 code {
   color: $text;
   background: $gray-lighten-more;
+  display: inline-block;
+  padding: rem(2) rem(5);
+  border-radius: 3px;
 }
 
 // pre element

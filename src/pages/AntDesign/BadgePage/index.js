@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import BadgeItems from 'components/AntDesign/Badge/index'
+import BadgeItems from 'components/AntComponents/Badge/index'
 
 class BadgePage extends React.Component {
   static defaultProps = {

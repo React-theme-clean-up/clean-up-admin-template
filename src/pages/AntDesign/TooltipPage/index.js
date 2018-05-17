@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import TooltipItems from 'components/AntDesign/Tooltip/index'
+import TooltipItems from 'components/AntComponents/Tooltip/index'
 
 class TooltipPage extends React.Component {
   static defaultProps = {

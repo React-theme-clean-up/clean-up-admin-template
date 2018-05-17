@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import CheckboxItems from 'components/AntDesign/Checkbox/index'
+import CheckboxItems from 'components/AntComponents/Checkbox/index'
 
 class CheckboxPage extends React.Component {
   static defaultProps = {

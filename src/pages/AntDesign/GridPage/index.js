@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from 'components/Page'
+import Page from 'components/PageComponents'
 import Helmet from 'react-helmet'
-import GridItems from 'components/AntDesign/Grid/index'
+import GridItems from 'components/AntComponents/Grid/index'
 
 class GridPage extends React.Component {
   static defaultProps = {

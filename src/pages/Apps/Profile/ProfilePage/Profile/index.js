@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, Progress, Calendar, Tabs, Upload, Icon, Input, Menu, Dropdown } from 'antd'
 import data from './data.json'
 import './style.css'
-import Avatar from 'components/Clean/Avatar'
-import Donut from 'components/Clean/Donut'
-import Chat from 'components/Clean/Chat'
+import Avatar from 'components/CleanComponents/Avatar'
+import Donut from 'components/CleanComponents/Donut'
+import Chat from 'components/CleanComponents/Chat'
 import SettingsForm from './SettingsForm'
 
 const TabPane = Tabs.TabPane
