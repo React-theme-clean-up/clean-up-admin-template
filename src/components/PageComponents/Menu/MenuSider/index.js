@@ -612,10 +612,10 @@ class Navigation extends React.Component {
     collapsed: this.props.collapsedMenuDesktop,
     current: '',
     opened: [''],
-    mounted: false,
   }
 
   handleClick = e => {
+    console.log('handle ', e.key);
     if (e.key === 'settings') {
       return
     }
@@ -623,22 +623,25 @@ class Navigation extends React.Component {
       current: e.key,
     })
   }
+
   onOpenChange = openKeys => {
     this.setState({
       opened: openKeys,
     })
   }
 
-  getPath(data, url, parents = []) {
+  getPath(data, id, parents = []) {
     let items = reduce(
       data,
       (result, entry) => {
         if (result.length) {
           return result
-        } else if (entry.url === url) {
+        } else if (entry.url === id && this.state.current === '') {
+          return [entry].concat(parents)
+        } else if (entry.key === id && this.state.current !== '') {
           return [entry].concat(parents)
         } else if (entry.children) {
-          let nested = this.getPath(entry.children, url, [entry].concat(parents))
+          let nested = this.getPath(entry.children, id, [entry].concat(parents))
           return nested ? nested : result
         }
         return result
@@ -649,19 +652,32 @@ class Navigation extends React.Component {
   }
 
   getActiveMenuItem = (props, items) => {
+    let collapsed = props.collapsedMenuDesktop
+    let current = this.state.current
     let url = props.location.pathname
-    let [activeMenuItem, ...path] = this.getPath(items, url)
-    console.log(activeMenuItem)
-    console.log(path)
+    let [activeMenuItem, ...path] = ''
+
+    if (!current) {
+      [activeMenuItem, ...path] = this.getPath(items, url)
+    } else {
+      [activeMenuItem, ...path] = this.getPath(items, current)
+    }
+
+    if (collapsed) {
+      path = ['']
+    }
+
     if (activeMenuItem) {
       this.setState({
         current: activeMenuItem.key,
         opened: path.map(entry => entry.key),
+        collapsed: collapsed,
       })
     } else {
       this.setState({
         current: '',
-        opened: [''],
+        opened: [],
+        collapsed: collapsed,
       })
     }
   }
@@ -736,14 +752,14 @@ class Navigation extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log(newProps)
-    this.getActiveMenuItem(newProps, menuData)
-    this.setState({
-      collapsed: newProps.collapsedMenuDesktop,
-    })
+    console.log('newProps ', newProps);
+      if (!newProps.isMobile) {
+        this.getActiveMenuItem(newProps, menuData)
+      }
   }
 
   render() {
+    console.log('render');
     const { collapsed, current, opened } = this.state
     const { isMobile } = this.props
     const menuItems = this.generateMenuPartitions(menuData)
