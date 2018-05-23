@@ -23,11 +23,7 @@ class Register extends React.Component {
 
   switchSize = () => {
     let { fullSize } = this.state
-
     fullSize = !fullSize
-
-    console.log(fullSize)
-
     this.setState({
       fullSize: fullSize,
     })

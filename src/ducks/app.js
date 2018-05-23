@@ -121,7 +121,6 @@ export function login(username, password, dispatch) {
 }
 
 export const logout = () => (dispatch, getState) => {
-  console.log('LOGOUT')
   dispatch(
     setUserState({
       userState: {

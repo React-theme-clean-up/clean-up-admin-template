@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import qs from 'query-string'
+import qs from 'querystring'
 import { setLayoutState } from 'ducks/app'
 import { merge } from 'lodash'
 
@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => ({
 })
 
 const updateSettings = ({ layoutState }) => {
-  console.log(layoutState)
+  // console.log(layoutState)
   // if (isMenuLeft) {
   //   // $FlowFixMe
   //   document.body.classList.add(className)
@@ -25,7 +25,7 @@ const updateSettings = ({ layoutState }) => {
 class LayoutState extends React.PureComponent {
   bootstrapLayoutSettings() {
     const { dispatch } = this.props
-    const urlParams = qs.parse(this.props.location.search)
+    const urlParams = qs.parse((this.props.location.search).replace('?',''))
     const storageParams = JSON.parse(window.localStorage.getItem('app.layoutState'))
     const mergedParams = merge({}, storageParams, urlParams)
     const booleanMergedParams = JSON.parse(

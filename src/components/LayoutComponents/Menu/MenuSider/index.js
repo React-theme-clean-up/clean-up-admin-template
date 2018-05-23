@@ -607,7 +607,8 @@ const mapStateToProps = (state, props) => ({
 })
 
 @connect(mapStateToProps)
-class Navigation extends React.Component {
+@withRouter
+class MenuSider extends React.Component {
   state = {
     menuCollapsed: this.props.layoutState.menuCollapsed,
     current: '',
@@ -805,7 +806,5 @@ class Navigation extends React.Component {
     )
   }
 }
-
-const MenuSider = withRouter(Navigation)
 
 export { MenuSider, menuData }

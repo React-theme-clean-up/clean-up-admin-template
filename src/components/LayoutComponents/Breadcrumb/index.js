@@ -5,7 +5,8 @@ import { menuData } from '../Menu/MenuSider'
 import { reduce } from 'lodash'
 import './style.scss'
 
-class BreadcrumbBar extends React.Component {
+@withRouter
+class Breadcrumb extends React.Component {
   state = {
     breadcrumb: [],
   }
@@ -90,6 +91,5 @@ class BreadcrumbBar extends React.Component {
     )
   }
 }
-const Breadcrumb = withRouter(BreadcrumbBar)
 
 export default Breadcrumb
