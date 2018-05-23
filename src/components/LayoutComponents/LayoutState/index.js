@@ -25,7 +25,7 @@ const updateSettings = ({ layoutState }) => {
 class LayoutState extends React.PureComponent {
   bootstrapLayoutSettings() {
     const { dispatch } = this.props
-    const urlParams = qs.parse((this.props.location.search).replace('?',''))
+    const urlParams = qs.parse(this.props.location.search.replace('?', ''))
     const storageParams = JSON.parse(window.localStorage.getItem('app.layoutState'))
     const mergedParams = merge({}, storageParams, urlParams)
     const booleanMergedParams = JSON.parse(

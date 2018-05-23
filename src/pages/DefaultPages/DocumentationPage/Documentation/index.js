@@ -26,10 +26,12 @@ class Documentation extends React.Component {
             </a>. Thank you!
           </div>
           <div className="alert alert-default">
-            Please use Starter Kit if default package compiling slow (default package has about a hundreds of pages and components).
+            Please use Starter Kit if default package compiling slow (default package has about a
+            hundreds of pages and components).
           </div>
           <p>
-            Clean UI credits: <code>React</code>, <code>CreateReactApp</code>, <code>ReactAppRewired</code>,
+            Clean UI credits: <code>React</code>, <code>CreateReactApp</code>,{' '}
+            <code>ReactAppRewired</code>,
             <code>ESLint</code>, <code>SASS Loader</code>, <code>Axios</code>, <code>Redux</code>,{' '}
             <code>Redux-Thunk</code>,
             <code>React Router 4</code>,<code>Webpack 3</code>,<code>AntDesign</code>,<code>
