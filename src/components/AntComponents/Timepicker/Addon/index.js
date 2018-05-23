@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { TimePicker, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -17,10 +17,11 @@ export default function(ReactDOM, mountNode) {
         <TimePicker
           open={this.state.open}
           onOpenChange={this.handleOpenChange}
-          addon={() =>
+          addon={() => (
             <Button size="small" type="primary" onClick={this.handleClose}>
               Ok
-            </Button>}
+            </Button>
+          )}
         />
       )
     }

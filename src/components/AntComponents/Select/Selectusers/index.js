@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Select, Spin } from 'antd'
 
 import debounce from 'lodash/debounce'
@@ -23,17 +23,19 @@ export default function(ReactDOM, mountNode) {
       this.lastFetchId += 1
       const fetchId = this.lastFetchId
       this.setState({ data: [], fetching: true })
-      fetch('https://randomuser.me/api/?results=5').then(response => response.json()).then(body => {
-        if (fetchId !== this.lastFetchId) {
-          // for fetch callback order
-          return
-        }
-        const data = body.results.map(user => ({
-          text: `${user.name.first} ${user.name.last}`,
-          value: user.login.username,
-        }))
-        this.setState({ data, fetching: false })
-      })
+      fetch('https://randomuser.me/api/?results=5')
+        .then(response => response.json())
+        .then(body => {
+          if (fetchId !== this.lastFetchId) {
+            // for fetch callback order
+            return
+          }
+          const data = body.results.map(user => ({
+            text: `${user.name.first} ${user.name.last}`,
+            value: user.login.username,
+          }))
+          this.setState({ data, fetching: false })
+        })
     }
     handleChange = value => {
       this.setState({
@@ -56,11 +58,7 @@ export default function(ReactDOM, mountNode) {
           onChange={this.handleChange}
           style={{ width: '100%' }}
         >
-          {data.map(d =>
-            <Option key={d.value}>
-              {d.text}
-            </Option>,
-          )}
+          {data.map(d => <Option key={d.value}>{d.text}</Option>)}
         </Select>
       )
     }

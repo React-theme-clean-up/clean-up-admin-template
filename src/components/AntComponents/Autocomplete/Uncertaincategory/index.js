@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Icon, Button, Input, AutoComplete } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -14,11 +14,14 @@ export default function(ReactDOM, mountNode) {
   }
 
   function searchResult(query) {
-    return new Array(getRandomInt(5)).join('.').split('.').map((item, idx) => ({
-      query,
-      category: `${query}${idx}`,
-      count: getRandomInt(200, 100),
-    }))
+    return new Array(getRandomInt(5))
+      .join('.')
+      .split('.')
+      .map((item, idx) => ({
+        query,
+        category: `${query}${idx}`,
+        count: getRandomInt(200, 100),
+      }))
   }
 
   function renderOption(item) {

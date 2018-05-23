@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { List, Card } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -28,10 +28,11 @@ export default function(ReactDOM, mountNode) {
     <List
       grid={{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }}
       dataSource={data}
-      renderItem={item =>
+      renderItem={item => (
         <List.Item>
           <Card title={item.title}>Card content</Card>
-        </List.Item>}
+        </List.Item>
+      )}
     />,
     mountNode,
   )

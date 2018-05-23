@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Anchor } from 'antd'
 
 export default function(ReactDOM, mountNode) {

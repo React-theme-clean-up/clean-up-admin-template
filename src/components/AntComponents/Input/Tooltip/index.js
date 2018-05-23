@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Input, Tooltip } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -39,11 +39,11 @@ export default function(ReactDOM, mountNode) {
     }
     render() {
       const { value } = this.props
-      const title = value
-        ? <span className="numeric-input-title">
-            {value !== '-' ? formatNumber(value) : '-'}
-          </span>
-        : 'Input a number'
+      const title = value ? (
+        <span className="numeric-input-title">{value !== '-' ? formatNumber(value) : '-'}</span>
+      ) : (
+        'Input a number'
+      )
       return (
         <Tooltip
           trigger={['focus']}

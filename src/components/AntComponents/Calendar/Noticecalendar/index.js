@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Calendar, Badge } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -38,11 +38,11 @@ export default function(ReactDOM, mountNode) {
     const listData = getListData(value)
     return (
       <ul className="events">
-        {listData.map(item =>
+        {listData.map(item => (
           <li key={item.content}>
             <Badge status={item.type} text={item.content} />
-          </li>,
-        )}
+          </li>
+        ))}
       </ul>
     )
   }
@@ -55,14 +55,12 @@ export default function(ReactDOM, mountNode) {
 
   function monthCellRender(value) {
     const num = getMonthData(value)
-    return num
-      ? <div className="notes-month">
-          <section>
-            {num}
-          </section>
-          <span>Backlog number</span>
-        </div>
-      : null
+    return num ? (
+      <div className="notes-month">
+        <section>{num}</section>
+        <span>Backlog number</span>
+      </div>
+    ) : null
   }
 
   ReactDOM.render(

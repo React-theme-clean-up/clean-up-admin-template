@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Input, Popconfirm } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -13,16 +13,19 @@ export default function(ReactDOM, mountNode) {
     })
   }
 
-  const EditableCell = ({ editable, value, onChange }) =>
+  const EditableCell = ({ editable, value, onChange }) => (
     <div>
-      {editable
-        ? <Input
-            style={{ margin: '-5px 0' }}
-            value={value}
-            onChange={e => onChange(e.target.value)}
-          />
-        : value}
+      {editable ? (
+        <Input
+          style={{ margin: '-5px 0' }}
+          value={value}
+          onChange={e => onChange(e.target.value)}
+        />
+      ) : (
+        value
+      )}
     </div>
+  )
 
   class EditableTable extends React.Component {
     constructor(props) {
@@ -53,14 +56,16 @@ export default function(ReactDOM, mountNode) {
             const { editable } = record
             return (
               <div className="editable-row-operations">
-                {editable
-                  ? <span>
-                      <a onClick={() => this.save(record.key)}>Save</a>
-                      <Popconfirm title="Sure to cancel?" onConfirm={() => this.cancel(record.key)}>
-                        <a>Cancel</a>
-                      </Popconfirm>
-                    </span>
-                  : <a onClick={() => this.edit(record.key)}>Edit</a>}
+                {editable ? (
+                  <span>
+                    <a onClick={() => this.save(record.key)}>Save</a>
+                    <Popconfirm title="Sure to cancel?" onConfirm={() => this.cancel(record.key)}>
+                      <a>Cancel</a>
+                    </Popconfirm>
+                  </span>
+                ) : (
+                  <a onClick={() => this.edit(record.key)}>Edit</a>
+                )}
               </div>
             )
           },

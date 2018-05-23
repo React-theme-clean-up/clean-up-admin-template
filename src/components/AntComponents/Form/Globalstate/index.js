@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Form, Input } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -51,9 +51,7 @@ export default function(ReactDOM, mountNode) {
       return (
         <div>
           <CustomizedForm {...fields} onChange={this.handleFormChange} />
-          <pre className="language-bash">
-            {JSON.stringify(fields, null, 2)}
-          </pre>
+          <pre className="language-bash">{JSON.stringify(fields, null, 2)}</pre>
         </div>
       )
     }

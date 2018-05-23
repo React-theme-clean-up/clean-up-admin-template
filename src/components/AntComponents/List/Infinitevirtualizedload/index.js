@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { List, message, Avatar, Spin } from 'antd'
 
 import reqwest from 'reqwest'
@@ -75,11 +75,7 @@ export default function(ReactDOM, mountNode) {
             avatar={
               <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
             }
-            title={
-              <a href="https://ant.design">
-                {item.name.last}
-              </a>
-            }
+            title={<a href="https://ant.design">{item.name.last}</a>}
             description={item.email}
           />
           <div>Content</div>
@@ -88,7 +84,7 @@ export default function(ReactDOM, mountNode) {
     }
     render() {
       const { data } = this.state
-      const vlist = ({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered, width }) =>
+      const vlist = ({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered, width }) => (
         <VList
           autoHeight
           height={height}
@@ -102,26 +98,30 @@ export default function(ReactDOM, mountNode) {
           scrollTop={scrollTop}
           width={width}
         />
-      const autoSize = ({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered }) =>
+      )
+      const autoSize = ({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered }) => (
         <AutoSizer disableHeight>
           {({ width }) =>
-            vlist({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered, width })}
+            vlist({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered, width })
+          }
         </AutoSizer>
-      const infiniteLoader = ({ height, isScrolling, onChildScroll, scrollTop }) =>
+      )
+      const infiniteLoader = ({ height, isScrolling, onChildScroll, scrollTop }) => (
         <InfiniteLoader
           isRowLoaded={this.isRowLoaded}
           loadMoreRows={this.handleInfiniteOnLoad}
           rowCount={data.length}
         >
           {({ onRowsRendered }) =>
-            autoSize({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered })}
+            autoSize({ height, isScrolling, onChildScroll, scrollTop, onRowsRendered })
+          }
         </InfiniteLoader>
+      )
       return (
         <List>
-          {data.length > 0 &&
-            <WindowScroller scrollElement={null}>
-              {infiniteLoader}
-            </WindowScroller>}
+          {data.length > 0 && (
+            <WindowScroller scrollElement={null}>{infiniteLoader}</WindowScroller>
+          )}
           {this.state.loading && <Spin className="demo-loading" />}
         </List>
       )

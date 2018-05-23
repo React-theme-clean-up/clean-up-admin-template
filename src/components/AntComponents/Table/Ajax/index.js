@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table } from 'antd'
 
 import reqwest from 'reqwest'

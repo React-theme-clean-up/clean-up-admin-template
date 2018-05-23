@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { List, Avatar, Icon } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -23,11 +23,12 @@ export default function(ReactDOM, mountNode) {
     onChange: () => {},
   }
 
-  const IconText = ({ type, text }) =>
+  const IconText = ({ type, text }) => (
     <span>
       <Icon type={type} style={{ marginRight: 8 }} />
       {text}
     </span>
+  )
 
   ReactDOM.render(
     <List
@@ -35,7 +36,7 @@ export default function(ReactDOM, mountNode) {
       size="large"
       pagination={pagination}
       dataSource={listData}
-      renderItem={item =>
+      renderItem={item => (
         <List.Item
           key={item.title}
           actions={[
@@ -53,15 +54,12 @@ export default function(ReactDOM, mountNode) {
         >
           <List.Item.Meta
             avatar={<Avatar src={item.avatar} />}
-            title={
-              <a href={item.href}>
-                {item.title}
-              </a>
-            }
+            title={<a href={item.href}>{item.title}</a>}
             description={item.description}
           />
           {item.content}
-        </List.Item>}
+        </List.Item>
+      )}
     />,
     mountNode,
   )

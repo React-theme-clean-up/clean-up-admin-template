@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Menu, Icon, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {

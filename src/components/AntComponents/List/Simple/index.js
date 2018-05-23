@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { List } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -19,10 +19,7 @@ export default function(ReactDOM, mountNode) {
         footer={<div>Footer</div>}
         bordered
         dataSource={data}
-        renderItem={item =>
-          <List.Item>
-            {item}
-          </List.Item>}
+        renderItem={item => <List.Item>{item}</List.Item>}
       />
       <h3 style={{ margin: '16px 0' }}>Small Size</h3>
       <List
@@ -31,10 +28,7 @@ export default function(ReactDOM, mountNode) {
         footer={<div>Footer</div>}
         bordered
         dataSource={data}
-        renderItem={item =>
-          <List.Item>
-            {item}
-          </List.Item>}
+        renderItem={item => <List.Item>{item}</List.Item>}
       />
       <h3 style={{ margin: '16px 0' }}>Large Size</h3>
       <List
@@ -43,10 +37,7 @@ export default function(ReactDOM, mountNode) {
         footer={<div>Footer</div>}
         bordered
         dataSource={data}
-        renderItem={item =>
-          <List.Item>
-            {item}
-          </List.Item>}
+        renderItem={item => <List.Item>{item}</List.Item>}
       />
     </div>,
     mountNode,

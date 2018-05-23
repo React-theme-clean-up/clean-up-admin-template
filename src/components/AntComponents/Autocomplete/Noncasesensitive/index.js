@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { AutoComplete } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -12,7 +12,8 @@ export default function(ReactDOM, mountNode) {
         dataSource={dataSource}
         placeholder="try to type `b`"
         filterOption={(inputValue, option) =>
-          option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1}
+          option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+        }
       />
     )
   }

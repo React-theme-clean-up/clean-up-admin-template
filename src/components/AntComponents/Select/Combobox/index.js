@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Select } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -16,11 +16,7 @@ export default function(ReactDOM, mountNode) {
       } else {
         options = ['gmail.com', '163.com', 'qq.com'].map(domain => {
           const email = `${value}@${domain}`
-          return (
-            <Option key={email}>
-              {email}
-            </Option>
-          )
+          return <Option key={email}>{email}</Option>
         })
       }
       this.setState({ options })

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Input, Col, Select, InputNumber, DatePicker, AutoComplete, Cascader } from 'antd'
 
 export default function(ReactDOM, mountNode) {

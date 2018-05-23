@@ -233,7 +233,9 @@ ReactDOM.render(<App />, mountNode);
                         </h5>
                       </div>
                       <div className="card-body pb-0">
-                        There are three sizes of an Input box: <code>{'large'}</code> (40px)、<code>{'default'}</code>{' '}
+                        There are three sizes of an Input box: <code>{'large'}</code> (40px)、<code>
+                          {'default'}
+                        </code>{' '}
                         (32px) and <code>{'small'}</code> (24px). Note: Inside of forms, only the
                         large size is used.
                       </div>

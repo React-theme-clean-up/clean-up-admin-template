@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Input, Button, Icon } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -56,17 +56,12 @@ export default function(ReactDOM, mountNode) {
               ...record,
               name: (
                 <span>
-                  {record.name.split(reg).map(
-                    (text, i) =>
-                      i > 0
-                        ? [
-                            <span className="highlight">
-                              {match[0]}
-                            </span>,
-                            text,
-                          ]
-                        : text,
-                  )}
+                  {record.name
+                    .split(reg)
+                    .map(
+                      (text, i) =>
+                        i > 0 ? [<span className="highlight">{match[0]}</span>, text] : text,
+                    )}
                 </span>
               ),
             }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Select } from 'antd'
 
 import jsonp from 'fetch-jsonp'
@@ -24,19 +24,21 @@ export default function(ReactDOM, mountNode) {
         code: 'utf-8',
         q: value,
       })
-      jsonp(`https://suggest.taobao.com/sug?${str}`).then(response => response.json()).then(d => {
-        if (currentValue === value) {
-          const result = d.result
-          const data = []
-          result.forEach(r => {
-            data.push({
-              value: r[0],
-              text: r[0],
+      jsonp(`https://suggest.taobao.com/sug?${str}`)
+        .then(response => response.json())
+        .then(d => {
+          if (currentValue === value) {
+            const result = d.result
+            const data = []
+            result.forEach(r => {
+              data.push({
+                value: r[0],
+                text: r[0],
+              })
             })
-          })
-          callback(data)
-        }
-      })
+            callback(data)
+          }
+        })
     }
 
     timeout = setTimeout(fake, 300)
@@ -52,11 +54,7 @@ export default function(ReactDOM, mountNode) {
       fetch(value, data => this.setState({ data }))
     }
     render() {
-      const options = this.state.data.map(d =>
-        <Option key={d.value}>
-          {d.text}
-        </Option>,
-      )
+      const options = this.state.data.map(d => <Option key={d.value}>{d.text}</Option>)
       return (
         <Select
           mode="combobox"

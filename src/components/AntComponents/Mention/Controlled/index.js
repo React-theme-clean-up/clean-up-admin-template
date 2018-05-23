@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Mention, Form, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -49,7 +49,9 @@ export default function(ReactDOM, mountNode) {
               rules: [{ validator: this.checkMention }],
               initialValue: this.state.initValue,
             })(
-              <Mention suggestions={['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご']} />,
+              <Mention
+                suggestions={['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご']}
+              />,
             )}
           </FormItem>
           <FormItem wrapperCol={{ span: 14, offset: 6 }}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Icon, Input, AutoComplete } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -61,18 +61,16 @@ export default function(ReactDOM, mountNode) {
   }
 
   const options = dataSource
-    .map(group =>
+    .map(group => (
       <OptGroup key={group.title} label={renderTitle(group.title)}>
-        {group.children.map(opt =>
+        {group.children.map(opt => (
           <Option key={opt.title} value={opt.title}>
             {opt.title}
-            <span className="certain-search-item-count">
-              {opt.count} 人 关注
-            </span>
-          </Option>,
-        )}
-      </OptGroup>,
-    )
+            <span className="certain-search-item-count">{opt.count} 人 关注</span>
+          </Option>
+        ))}
+      </OptGroup>
+    ))
     .concat([
       <Option disabled key="all" className="show-all">
         <a href="https://www.google.com/search?q=antd" target="_blank" rel="noopener noreferrer">

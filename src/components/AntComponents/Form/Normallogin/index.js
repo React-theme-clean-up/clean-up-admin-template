@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Form, Icon, Input, Button, Checkbox } from 'antd'
 
 export default function(ReactDOM, mountNode) {

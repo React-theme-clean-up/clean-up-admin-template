@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Alert } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -13,14 +13,14 @@ export default function(ReactDOM, mountNode) {
     render() {
       return (
         <div>
-          {this.state.visiable
-            ? <Alert
-                message="Alert Message Text"
-                type="success"
-                closable
-                afterClose={this.handleClose}
-              />
-            : null}
+          {this.state.visiable ? (
+            <Alert
+              message="Alert Message Text"
+              type="success"
+              closable
+              afterClose={this.handleClose}
+            />
+          ) : null}
           <p>placeholder text here</p>
         </div>
       )

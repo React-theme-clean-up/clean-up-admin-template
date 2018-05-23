@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Tree, Input } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -98,17 +98,15 @@ export default function(ReactDOM, mountNode) {
           const beforeStr = item.key.substr(0, index)
           const afterStr = item.key.substr(index + searchValue.length)
           const title =
-            index > -1
-              ? <span>
-                  {beforeStr}
-                  <span style={{ color: '#f50' }}>
-                    {searchValue}
-                  </span>
-                  {afterStr}
-                </span>
-              : <span>
-                  {item.key}
-                </span>
+            index > -1 ? (
+              <span>
+                {beforeStr}
+                <span style={{ color: '#f50' }}>{searchValue}</span>
+                {afterStr}
+              </span>
+            ) : (
+              <span>{item.key}</span>
+            )
           if (item.children) {
             return (
               <TreeNode key={item.key} title={title}>

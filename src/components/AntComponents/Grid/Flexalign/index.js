@@ -1,12 +1,9 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Row, Col } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  const DemoBox = props =>
-    <p className={`height-${props.value}`}>
-      {props.children}
-    </p>
+  const DemoBox = props => <p className={`height-${props.value}`}>{props.children}</p>
 
   ReactDOM.render(
     <div>

@@ -175,7 +175,9 @@ ReactDOM.render(
                       </div>
                       <div className="card-body pb-0">
                         You can use the <code>{'gutter'}</code> property of <code>{'Row'}</code> as
-                        grid spacing, we recommend set it to <code>{'(16 + 8n) px'}</code>. (<code>{'n'}</code>{' '}
+                        grid spacing, we recommend set it to <code>{'(16 + 8n) px'}</code>. (<code>
+                          {'n'}
+                        </code>{' '}
                         stands for natural number.) You can set it to a object like{' '}
                         <code>{'{ xs: 8, sm: 16, md: 24, lg: 32 }'}</code> for responsive design.
                       </div>
@@ -461,8 +463,9 @@ ReactDOM.render(
                       </div>
                       <div className="card-body pb-0">
                         Use <code>{'row-flex'}</code> define <code>{'flex'}</code> layout, its child
-                        elements depending on the value of the <code>{'start'}</code>,<code>{' center'}</code>,{' '}
-                        <code>{'end'}</code>,<code>{' space-between'}</code>,{' '}
+                        elements depending on the value of the <code>{'start'}</code>,<code>
+                          {' center'}
+                        </code>, <code>{'end'}</code>,<code>{' space-between'}</code>,{' '}
                         <code>{'space-around'}</code>, which are defined in its parent node layout
                         mode.
                       </div>

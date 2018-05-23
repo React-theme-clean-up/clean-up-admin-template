@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Tree } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -44,11 +44,7 @@ export default function(ReactDOM, mountNode) {
       })
     }
     render() {
-      return (
-        <Tree loadData={this.onLoadData}>
-          {this.renderTreeNodes(this.state.treeData)}
-        </Tree>
-      )
+      return <Tree loadData={this.onLoadData}>{this.renderTreeNodes(this.state.treeData)}</Tree>
     }
   }
 

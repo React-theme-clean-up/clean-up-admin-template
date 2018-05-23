@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Badge, Menu, Dropdown, Icon } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -18,17 +18,18 @@ export default function(ReactDOM, mountNode) {
         {
           title: 'Status',
           key: 'state',
-          render: () =>
+          render: () => (
             <span>
               <Badge status="success" />Finished
-            </span>,
+            </span>
+          ),
         },
         { title: 'Upgrade Status', dataIndex: 'upgradeNum', key: 'upgradeNum' },
         {
           title: 'Action',
           dataIndex: 'operation',
           key: 'operation',
-          render: () =>
+          render: () => (
             <span className="table-operation">
               <a href="javascript: void(0);">Pause</a>
               <a href="javascript: void(0);">Stop</a>
@@ -37,7 +38,8 @@ export default function(ReactDOM, mountNode) {
                   More <Icon type="down" />
                 </a>
               </Dropdown>
-            </span>,
+            </span>
+          ),
         },
       ]
 

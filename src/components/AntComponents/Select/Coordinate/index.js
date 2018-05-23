@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Select } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -28,16 +28,10 @@ export default function(ReactDOM, mountNode) {
       })
     }
     render() {
-      const provinceOptions = provinceData.map(province =>
-        <Option key={province}>
-          {province}
-        </Option>,
-      )
-      const cityOptions = this.state.cities.map(city =>
-        <Option key={city}>
-          {city}
-        </Option>,
-      )
+      const provinceOptions = provinceData.map(province => (
+        <Option key={province}>{province}</Option>
+      ))
+      const cityOptions = this.state.cities.map(city => <Option key={city}>{city}</Option>)
       return (
         <div>
           <Select

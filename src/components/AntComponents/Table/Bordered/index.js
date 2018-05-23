@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -7,10 +7,7 @@ export default function(ReactDOM, mountNode) {
     {
       title: 'Name',
       dataIndex: 'name',
-      render: text =>
-        <a href="javascript: void(0);">
-          {text}
-        </a>,
+      render: text => <a href="javascript: void(0);">{text}</a>,
     },
     {
       title: 'Cash Assets',

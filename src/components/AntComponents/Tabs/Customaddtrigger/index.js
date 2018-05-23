@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Tabs, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -58,11 +58,11 @@ export default function(ReactDOM, mountNode) {
             type="editable-card"
             onEdit={this.onEdit}
           >
-            {this.state.panes.map(pane =>
+            {this.state.panes.map(pane => (
               <TabPane tab={pane.title} key={pane.key}>
                 {pane.content}
-              </TabPane>,
-            )}
+              </TabPane>
+            ))}
           </Tabs>
         </div>
       )

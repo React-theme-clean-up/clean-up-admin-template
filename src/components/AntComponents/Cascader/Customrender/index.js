@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Cascader } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -55,11 +55,7 @@ export default function(ReactDOM, mountNode) {
           </span>
         )
       }
-      return (
-        <span key={option.value}>
-          {label} /{' '}
-        </span>
-      )
+      return <span key={option.value}>{label} / </span>
     })
 
   ReactDOM.render(

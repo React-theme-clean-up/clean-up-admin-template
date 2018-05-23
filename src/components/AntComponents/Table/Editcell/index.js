@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Input, Icon, Button, Popconfirm } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -25,15 +25,17 @@ export default function(ReactDOM, mountNode) {
       const { value, editable } = this.state
       return (
         <div className="editable-cell">
-          {editable
-            ? <div className="editable-cell-input-wrapper">
-                <Input value={value} onChange={this.handleChange} onPressEnter={this.check} />
-                <Icon type="check" className="editable-cell-icon-check" onClick={this.check} />
-              </div>
-            : <div className="editable-cell-text-wrapper">
-                {value || ' '}
-                <Icon type="edit" className="editable-cell-icon" onClick={this.edit} />
-              </div>}
+          {editable ? (
+            <div className="editable-cell-input-wrapper">
+              <Input value={value} onChange={this.handleChange} onPressEnter={this.check} />
+              <Icon type="check" className="editable-cell-icon-check" onClick={this.check} />
+            </div>
+          ) : (
+            <div className="editable-cell-text-wrapper">
+              {value || ' '}
+              <Icon type="edit" className="editable-cell-icon" onClick={this.edit} />
+            </div>
+          )}
         </div>
       )
     }
@@ -47,8 +49,9 @@ export default function(ReactDOM, mountNode) {
           title: 'name',
           dataIndex: 'name',
           width: '30%',
-          render: (text, record) =>
-            <EditableCell value={text} onChange={this.onCellChange(record.key, 'name')} />,
+          render: (text, record) => (
+            <EditableCell value={text} onChange={this.onCellChange(record.key, 'name')} />
+          ),
         },
         {
           title: 'age',
@@ -62,11 +65,11 @@ export default function(ReactDOM, mountNode) {
           title: 'operation',
           dataIndex: 'operation',
           render: (text, record) => {
-            return this.state.dataSource.length > 1
-              ? <Popconfirm title="Sure to delete?" onConfirm={() => this.onDelete(record.key)}>
-                  <a href="javascript: void(0);">Delete</a>
-                </Popconfirm>
-              : null
+            return this.state.dataSource.length > 1 ? (
+              <Popconfirm title="Sure to delete?" onConfirm={() => this.onDelete(record.key)}>
+                <a href="javascript: void(0);">Delete</a>
+              </Popconfirm>
+            ) : null
           },
         },
       ]

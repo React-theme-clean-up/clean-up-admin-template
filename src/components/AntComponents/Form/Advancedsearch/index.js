@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Form, Row, Col, Input, Button, Icon } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -46,9 +46,7 @@ export default function(ReactDOM, mountNode) {
     render() {
       return (
         <Form className="ant-advanced-search-form" onSubmit={this.handleSearch}>
-          <Row gutter={24}>
-            {this.getFields()}
-          </Row>
+          <Row gutter={24}>{this.getFields()}</Row>
           <Row>
             <Col span={24} style={{ textAlign: 'right' }}>
               <Button type="primary" htmlType="submit">

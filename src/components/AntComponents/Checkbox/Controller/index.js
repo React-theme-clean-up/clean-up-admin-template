@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Checkbox, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -9,9 +9,9 @@ export default function(ReactDOM, mountNode) {
       disabled: false,
     }
     render() {
-      const label = `${this.state.checked ? 'Checked' : 'Unchecked'}-${this.state.disabled
-        ? 'Disabled'
-        : 'Enabled'}`
+      const label = `${this.state.checked ? 'Checked' : 'Unchecked'}-${
+        this.state.disabled ? 'Disabled' : 'Enabled'
+      }`
       return (
         <div>
           <p style={{ marginBottom: '20px' }}>

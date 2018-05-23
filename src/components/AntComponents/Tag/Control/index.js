@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Tag, Input, Tooltip, Icon } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -52,13 +52,15 @@ export default function(ReactDOM, mountNode) {
                 {isLongTag ? `${tag.slice(0, 20)}...` : tag}
               </Tag>
             )
-            return isLongTag
-              ? <Tooltip title={tag} key={tag}>
-                  {tagElem}
-                </Tooltip>
-              : tagElem
+            return isLongTag ? (
+              <Tooltip title={tag} key={tag}>
+                {tagElem}
+              </Tooltip>
+            ) : (
+              tagElem
+            )
           })}
-          {inputVisible &&
+          {inputVisible && (
             <Input
               ref={this.saveInputRef}
               type="text"
@@ -68,11 +70,13 @@ export default function(ReactDOM, mountNode) {
               onChange={this.handleInputChange}
               onBlur={this.handleInputConfirm}
               onPressEnter={this.handleInputConfirm}
-            />}
-          {!inputVisible &&
+            />
+          )}
+          {!inputVisible && (
             <Tag onClick={this.showInput} style={{ background: '#fff', borderStyle: 'dashed' }}>
               <Icon type="plus" /> New Tag
-            </Tag>}
+            </Tag>
+          )}
         </div>
       )
     }

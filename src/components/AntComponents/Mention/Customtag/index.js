@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Mention } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -26,13 +26,13 @@ export default function(ReactDOM, mountNode) {
       const filtered = webFrameworks.filter(
         item => item.name.toLowerCase().indexOf(searchValue) !== -1,
       )
-      const suggestions = filtered.map(suggestion =>
+      const suggestions = filtered.map(suggestion => (
         <Nav value={suggestion.name} data={suggestion}>
           <span>
             {suggestion.name} - {suggestion.type}
           </span>
-        </Nav>,
-      )
+        </Nav>
+      ))
       this.setState({ suggestions })
     }
     render() {

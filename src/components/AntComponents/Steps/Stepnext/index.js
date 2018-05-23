@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Steps, Button, message } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -42,22 +42,23 @@ export default function(ReactDOM, mountNode) {
           <Steps current={current}>
             {steps.map(item => <Step key={item.title} title={item.title} />)}
           </Steps>
-          <div className="steps-content">
-            {steps[this.state.current].content}
-          </div>
+          <div className="steps-content">{steps[this.state.current].content}</div>
           <div className="steps-action">
-            {this.state.current < steps.length - 1 &&
+            {this.state.current < steps.length - 1 && (
               <Button type="primary" onClick={() => this.next()}>
                 Next
-              </Button>}
-            {this.state.current === steps.length - 1 &&
+              </Button>
+            )}
+            {this.state.current === steps.length - 1 && (
               <Button type="primary" onClick={() => message.success('Processing complete!')}>
                 Done
-              </Button>}
-            {this.state.current > 0 &&
+              </Button>
+            )}
+            {this.state.current > 0 && (
               <Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>
                 Previous
-              </Button>}
+              </Button>
+            )}
           </div>
         </div>
       )

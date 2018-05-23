@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -22,18 +22,10 @@ export default function(ReactDOM, mountNode) {
       dataIndex: 'name',
       render: (text, row, index) => {
         if (index < 4) {
-          return (
-            <a href="javascript: void(0);">
-              {text}
-            </a>
-          )
+          return <a href="javascript: void(0);">{text}</a>
         }
         return {
-          children: (
-            <a href="javascript: void(0);">
-              {text}
-            </a>
-          ),
+          children: <a href="javascript: void(0);">{text}</a>,
           props: {
             colSpan: 5,
           },

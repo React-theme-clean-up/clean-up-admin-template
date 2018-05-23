@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { AutoComplete } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -23,11 +23,7 @@ export default function(ReactDOM, mountNode) {
     render() {
       const { result } = this.state
       const children = result.map(email => {
-        return (
-          <Option key={email}>
-            {email}
-          </Option>
-        )
+        return <Option key={email}>{email}</Option>
       })
       return (
         <AutoComplete style={{ width: 200 }} onSearch={this.handleSearch} placeholder="input here">

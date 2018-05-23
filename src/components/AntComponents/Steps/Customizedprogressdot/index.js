@@ -1,11 +1,11 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Steps, Popover } from 'antd'
 
 export default function(ReactDOM, mountNode) {
   const Step = Steps.Step
 
-  const customDot = (dot, { status, index }) =>
+  const customDot = (dot, { status, index }) => (
     <Popover
       content={
         <span>
@@ -15,6 +15,7 @@ export default function(ReactDOM, mountNode) {
     >
       {dot}
     </Popover>
+  )
 
   ReactDOM.render(
     <Steps current={1} progressDot={customDot}>

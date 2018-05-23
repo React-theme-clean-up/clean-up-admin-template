@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { List, message, Avatar, Spin } from 'antd'
 
 import reqwest from 'reqwest'
@@ -66,21 +66,18 @@ export default function(ReactDOM, mountNode) {
           >
             <List
               dataSource={this.state.data}
-              renderItem={item =>
+              renderItem={item => (
                 <List.Item key={item.id}>
                   <List.Item.Meta
                     avatar={
                       <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
                     }
-                    title={
-                      <a href="https://ant.design">
-                        {item.name.last}
-                      </a>
-                    }
+                    title={<a href="https://ant.design">{item.name.last}</a>}
                     description={item.email}
                   />
                   <div>Content</div>
-                </List.Item>}
+                </List.Item>
+              )}
             >
               {this.state.loading && this.state.hasMore && <Spin className="demo-loading" />}
             </List>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Form, Input, Icon, Button } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -82,14 +82,14 @@ export default function(ReactDOM, mountNode) {
                 },
               ],
             })(<Input placeholder="passenger name" style={{ width: '60%', marginRight: 8 }} />)}
-            {keys.length > 1
-              ? <Icon
-                  className="dynamic-delete-button"
-                  type="minus-circle-o"
-                  disabled={keys.length === 1}
-                  onClick={() => this.remove(k)}
-                />
-              : null}
+            {keys.length > 1 ? (
+              <Icon
+                className="dynamic-delete-button"
+                type="minus-circle-o"
+                disabled={keys.length === 1}
+                onClick={() => this.remove(k)}
+              />
+            ) : null}
           </FormItem>
         )
       })

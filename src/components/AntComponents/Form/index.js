@@ -189,7 +189,9 @@ ReactDOM.render(
                       <div className="card-body pb-0">
                         Customized or third-party form controls can be used in Form, too. Controls
                         must follow these conventions: > * It has a controlled property{' '}
-                        <code>{'value'}</code> or other name which is equal to the value of [<code>{'valuePropName'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
+                        <code>{'value'}</code> or other name which is equal to the value of [<code>
+                          {'valuePropName'}
+                        </code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
                         > * It has event <code>{'onChange'}</code> or an event which name is equal
                         to the value of [<code>{'trigger'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
                         > * It must be a class component.

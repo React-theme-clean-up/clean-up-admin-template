@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Collapse } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -18,19 +18,13 @@ export default function(ReactDOM, mountNode) {
   ReactDOM.render(
     <Collapse defaultActiveKey={['1']} onChange={callback}>
       <Panel header="This is panel header 1" key="1">
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
       </Panel>
       <Panel header="This is panel header 2" key="2">
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
       </Panel>
       <Panel header="This is panel header 3" key="3" disabled>
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
       </Panel>
     </Collapse>,
     mountNode,

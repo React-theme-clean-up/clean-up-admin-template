@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Tag } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -26,15 +26,15 @@ export default function(ReactDOM, mountNode) {
       return (
         <div>
           <h6 style={{ marginRight: 8, display: 'inline' }}>Categories:</h6>
-          {tagsFromServer.map(tag =>
+          {tagsFromServer.map(tag => (
             <CheckableTag
               key={tag}
               checked={selectedTags.indexOf(tag) > -1}
               onChange={checked => this.handleChange(tag, checked)}
             >
               {tag}
-            </CheckableTag>,
-          )}
+            </CheckableTag>
+          ))}
         </div>
       )
     }

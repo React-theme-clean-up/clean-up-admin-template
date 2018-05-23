@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Icon, Switch, Radio, Form, Divider } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -11,10 +11,7 @@ export default function(ReactDOM, mountNode) {
       dataIndex: 'name',
       key: 'name',
       width: 150,
-      render: text =>
-        <a href="javascript: void(0);">
-          {text}
-        </a>,
+      render: text => <a href="javascript: void(0);">{text}</a>,
     },
     {
       title: 'Age',
@@ -31,18 +28,17 @@ export default function(ReactDOM, mountNode) {
       title: 'Action',
       key: 'action',
       width: 360,
-      render: (text, record) =>
+      render: (text, record) => (
         <span>
-          <a href="javascript: void(0);">
-            Action 一 {record.name}
-          </a>
+          <a href="javascript: void(0);">Action 一 {record.name}</a>
           <Divider type="vertical" />
           <a href="javascript: void(0);">Delete</a>
           <Divider type="vertical" />
           <a href="javascript: void(0);" className="ant-dropdown-link">
             More actions <Icon type="down" />
           </a>
-        </span>,
+        </span>
+      ),
     },
   ]
 
@@ -57,10 +53,7 @@ export default function(ReactDOM, mountNode) {
     })
   }
 
-  const expandedRowRender = record =>
-    <p>
-      {record.description}
-    </p>
+  const expandedRowRender = record => <p>{record.description}</p>
   const title = () => 'Here is title'
   const showHeader = true
   const footer = () => 'Here is footer'

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Button, Select, notification } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -24,11 +24,11 @@ export default function(ReactDOM, mountNode) {
           })
         }}
       >
-        {options.map(val =>
+        {options.map(val => (
           <Option key={val} value={val}>
             {val}
-          </Option>,
-        )}
+          </Option>
+        ))}
       </Select>
       <Button type="primary" onClick={openNotification}>
         Open the notification box

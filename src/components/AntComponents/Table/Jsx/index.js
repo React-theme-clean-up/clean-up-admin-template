@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table, Icon, Divider } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -40,18 +40,17 @@ export default function(ReactDOM, mountNode) {
       <Column
         title="Action"
         key="action"
-        render={(text, record) =>
+        render={(text, record) => (
           <span>
-            <a href="javascript: void(0);">
-              Action 一 {record.name}
-            </a>
+            <a href="javascript: void(0);">Action 一 {record.name}</a>
             <Divider type="vertical" />
             <a href="javascript: void(0);">Delete</a>
             <Divider type="vertical" />
             <a href="javascript: void(0);" className="ant-dropdown-link">
               More actions <Icon type="down" />
             </a>
-          </span>}
+          </span>
+        )}
       />
     </Table>,
     mountNode,

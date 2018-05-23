@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Table } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -42,10 +42,7 @@ export default function(ReactDOM, mountNode) {
   ReactDOM.render(
     <Table
       columns={columns}
-      expandedRowRender={record =>
-        <p style={{ margin: 0 }}>
-          {record.description}
-        </p>}
+      expandedRowRender={record => <p style={{ margin: 0 }}>{record.description}</p>}
       dataSource={data}
     />,
     mountNode,

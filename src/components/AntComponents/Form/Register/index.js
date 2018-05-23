@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import {
   Form,
   Input,
@@ -130,11 +130,9 @@ export default function(ReactDOM, mountNode) {
         </Select>,
       )
 
-      const websiteOptions = autoCompleteResult.map(website =>
-        <AutoCompleteOption key={website}>
-          {website}
-        </AutoCompleteOption>,
-      )
+      const websiteOptions = autoCompleteResult.map(website => (
+        <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
+      ))
 
       return (
         <Form onSubmit={this.handleSubmit}>

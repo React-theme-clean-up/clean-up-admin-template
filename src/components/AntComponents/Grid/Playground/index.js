@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { Row, Col, Slider } from 'antd'
 
 export default function(ReactDOM, mountNode) {
@@ -64,9 +64,7 @@ export default function(ReactDOM, mountNode) {
               />
             </div>
           </div>
-          <Row gutter={this.gutters[gutterKey]}>
-            {cols}
-          </Row>
+          <Row gutter={this.gutters[gutterKey]}>{cols}</Row>
           <pre>{`<Row gutter={${this.gutters[gutterKey]}}>\n${colCode}</Row>`}</pre>
         </div>
       )
