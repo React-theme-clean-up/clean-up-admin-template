@@ -151,157 +151,157 @@ const loadableRoutes = {
     component: loadable(() => import('pages/Apps/GitHub/GitHubDiscussPage')),
   },
 
-  // AntDesign
-  '/antdesign/button': {
-    component: loadable(() => import('pages/AntDesign/ButtonPage')),
-  },
-  '/antdesign/breadcrumb': {
-    component: loadable(() => import('pages/AntDesign/BreadcrumbPage')),
-  },
-  '/antdesign/affix': {
-    component: loadable(() => import('pages/AntDesign/AffixPage')),
-  },
-  '/antdesign/grid': {
-    component: loadable(() => import('pages/AntDesign/GridPage')),
-  },
-  '/antdesign/dropdown': {
-    component: loadable(() => import('pages/AntDesign/DropdownPage')),
-  },
-  '/antdesign/menu': {
-    component: loadable(() => import('pages/AntDesign/MenuPage')),
-  },
-  '/antdesign/pagination': {
-    component: loadable(() => import('pages/AntDesign/PaginationPage')),
-  },
-  '/antdesign/steps': {
-    component: loadable(() => import('pages/AntDesign/StepsPage')),
-  },
-  '/antdesign/autocomplete': {
-    component: loadable(() => import('pages/AntDesign/AutocompletePage')),
-  },
-  '/antdesign/cascader': {
-    component: loadable(() => import('pages/AntDesign/CascaderPage')),
-  },
-  '/antdesign/datepicker': {
-    component: loadable(() => import('pages/AntDesign/DatepickerPage')),
-  },
-  '/antdesign/form': {
-    component: loadable(() => import('pages/AntDesign/FormPage')),
-  },
-  '/antdesign/input': {
-    component: loadable(() => import('pages/AntDesign/InputPage')),
-  },
-  '/antdesign/inputnumber': {
-    component: loadable(() => import('pages/AntDesign/InputnumberPage')),
-  },
-  '/antdesign/mention': {
-    component: loadable(() => import('pages/AntDesign/MentionPage')),
-  },
-  '/antdesign/rate': {
-    component: loadable(() => import('pages/AntDesign/RatePage')),
-  },
-  '/antdesign/radio': {
-    component: loadable(() => import('pages/AntDesign/RadioPage')),
-  },
-  '/antdesign/select': {
-    component: loadable(() => import('pages/AntDesign/SelectPage')),
-  },
-  '/antdesign/slider': {
-    component: loadable(() => import('pages/AntDesign/SliderPage')),
-  },
-  '/antdesign/switch': {
-    component: loadable(() => import('pages/AntDesign/SwitchPage')),
-  },
-  '/antdesign/treeselect': {
-    component: loadable(() => import('pages/AntDesign/TreeSelectPage')),
-  },
-  '/antdesign/timepicker': {
-    component: loadable(() => import('pages/AntDesign/TimepickerPage')),
-  },
-  '/antdesign/transfer': {
-    component: loadable(() => import('pages/AntDesign/TransferPage')),
-  },
-  '/antdesign/upload': {
-    component: loadable(() => import('pages/AntDesign/UploadPage')),
-  },
-  '/antdesign/avatar': {
-    component: loadable(() => import('pages/AntDesign/AvatarPage')),
-  },
-  '/antdesign/badge': {
-    component: loadable(() => import('pages/AntDesign/BadgePage')),
-  },
-  '/antdesign/calendar': {
-    component: loadable(() => import('pages/AntDesign/CalendarPage')),
-  },
-  '/antdesign/card': {
-    component: loadable(() => import('pages/AntDesign/CardPage')),
-  },
-  '/antdesign/carousel': {
-    component: loadable(() => import('pages/AntDesign/CarouselPage')),
-  },
-  '/antdesign/checkbox': {
-    component: loadable(() => import('pages/AntDesign/CheckboxPage')),
-  },
-  '/antdesign/collapse': {
-    component: loadable(() => import('pages/AntDesign/CollapsePage')),
-  },
-  '/antdesign/list': {
-    component: loadable(() => import('pages/AntDesign/ListPage')),
-  },
-  '/antdesign/popover': {
-    component: loadable(() => import('pages/AntDesign/PopoverPage')),
-  },
-  '/antdesign/tooltip': {
-    component: loadable(() => import('pages/AntDesign/TooltipPage')),
-  },
-  '/antdesign/table': {
-    component: loadable(() => import('pages/AntDesign/TablePage')),
-  },
-  '/antdesign/tabs': {
-    component: loadable(() => import('pages/AntDesign/TabsPage')),
-  },
-  '/antdesign/tag': {
-    component: loadable(() => import('pages/AntDesign/TagPage')),
-  },
-  '/antdesign/timeline': {
-    component: loadable(() => import('pages/AntDesign/TimelinePage')),
-  },
-  '/antdesign/tree': {
-    component: loadable(() => import('pages/AntDesign/TreePage')),
-  },
-  '/antdesign/alert': {
-    component: loadable(() => import('pages/AntDesign/AlertPage')),
-  },
-  '/antdesign/modal': {
-    component: loadable(() => import('pages/AntDesign/ModalPage')),
-  },
-  '/antdesign/message': {
-    component: loadable(() => import('pages/AntDesign/MessagePage')),
-  },
-  '/antdesign/notification': {
-    component: loadable(() => import('pages/AntDesign/NotificationPage')),
-  },
-  '/antdesign/progress': {
-    component: loadable(() => import('pages/AntDesign/ProgressPage')),
-  },
-  '/antdesign/popconfirm': {
-    component: loadable(() => import('pages/AntDesign/PopconfirmPage')),
-  },
-  '/antdesign/spin': {
-    component: loadable(() => import('pages/AntDesign/SpinPage')),
-  },
-  '/antdesign/anchor': {
-    component: loadable(() => import('pages/AntDesign/AnchorPage')),
-  },
-  '/antdesign/backtop': {
-    component: loadable(() => import('pages/AntDesign/BacktopPage')),
-  },
-  '/antdesign/divider': {
-    component: loadable(() => import('pages/AntDesign/DividerPage')),
-  },
-  '/antdesign/localeprovider': {
-    component: loadable(() => import('pages/AntDesign/LocaleproviderPage')),
-  },
+  // // AntDesign
+  // '/antdesign/button': {
+  //   component: loadable(() => import('pages/AntDesign/ButtonPage')),
+  // },
+  // '/antdesign/breadcrumb': {
+  //   component: loadable(() => import('pages/AntDesign/BreadcrumbPage')),
+  // },
+  // '/antdesign/affix': {
+  //   component: loadable(() => import('pages/AntDesign/AffixPage')),
+  // },
+  // '/antdesign/grid': {
+  //   component: loadable(() => import('pages/AntDesign/GridPage')),
+  // },
+  // '/antdesign/dropdown': {
+  //   component: loadable(() => import('pages/AntDesign/DropdownPage')),
+  // },
+  // '/antdesign/menu': {
+  //   component: loadable(() => import('pages/AntDesign/MenuPage')),
+  // },
+  // '/antdesign/pagination': {
+  //   component: loadable(() => import('pages/AntDesign/PaginationPage')),
+  // },
+  // '/antdesign/steps': {
+  //   component: loadable(() => import('pages/AntDesign/StepsPage')),
+  // },
+  // '/antdesign/autocomplete': {
+  //   component: loadable(() => import('pages/AntDesign/AutocompletePage')),
+  // },
+  // '/antdesign/cascader': {
+  //   component: loadable(() => import('pages/AntDesign/CascaderPage')),
+  // },
+  // '/antdesign/datepicker': {
+  //   component: loadable(() => import('pages/AntDesign/DatepickerPage')),
+  // },
+  // '/antdesign/form': {
+  //   component: loadable(() => import('pages/AntDesign/FormPage')),
+  // },
+  // '/antdesign/input': {
+  //   component: loadable(() => import('pages/AntDesign/InputPage')),
+  // },
+  // '/antdesign/inputnumber': {
+  //   component: loadable(() => import('pages/AntDesign/InputnumberPage')),
+  // },
+  // '/antdesign/mention': {
+  //   component: loadable(() => import('pages/AntDesign/MentionPage')),
+  // },
+  // '/antdesign/rate': {
+  //   component: loadable(() => import('pages/AntDesign/RatePage')),
+  // },
+  // '/antdesign/radio': {
+  //   component: loadable(() => import('pages/AntDesign/RadioPage')),
+  // },
+  // '/antdesign/select': {
+  //   component: loadable(() => import('pages/AntDesign/SelectPage')),
+  // },
+  // '/antdesign/slider': {
+  //   component: loadable(() => import('pages/AntDesign/SliderPage')),
+  // },
+  // '/antdesign/switch': {
+  //   component: loadable(() => import('pages/AntDesign/SwitchPage')),
+  // },
+  // '/antdesign/treeselect': {
+  //   component: loadable(() => import('pages/AntDesign/TreeSelectPage')),
+  // },
+  // '/antdesign/timepicker': {
+  //   component: loadable(() => import('pages/AntDesign/TimepickerPage')),
+  // },
+  // '/antdesign/transfer': {
+  //   component: loadable(() => import('pages/AntDesign/TransferPage')),
+  // },
+  // '/antdesign/upload': {
+  //   component: loadable(() => import('pages/AntDesign/UploadPage')),
+  // },
+  // '/antdesign/avatar': {
+  //   component: loadable(() => import('pages/AntDesign/AvatarPage')),
+  // },
+  // '/antdesign/badge': {
+  //   component: loadable(() => import('pages/AntDesign/BadgePage')),
+  // },
+  // '/antdesign/calendar': {
+  //   component: loadable(() => import('pages/AntDesign/CalendarPage')),
+  // },
+  // '/antdesign/card': {
+  //   component: loadable(() => import('pages/AntDesign/CardPage')),
+  // },
+  // '/antdesign/carousel': {
+  //   component: loadable(() => import('pages/AntDesign/CarouselPage')),
+  // },
+  // '/antdesign/checkbox': {
+  //   component: loadable(() => import('pages/AntDesign/CheckboxPage')),
+  // },
+  // '/antdesign/collapse': {
+  //   component: loadable(() => import('pages/AntDesign/CollapsePage')),
+  // },
+  // '/antdesign/list': {
+  //   component: loadable(() => import('pages/AntDesign/ListPage')),
+  // },
+  // '/antdesign/popover': {
+  //   component: loadable(() => import('pages/AntDesign/PopoverPage')),
+  // },
+  // '/antdesign/tooltip': {
+  //   component: loadable(() => import('pages/AntDesign/TooltipPage')),
+  // },
+  // '/antdesign/table': {
+  //   component: loadable(() => import('pages/AntDesign/TablePage')),
+  // },
+  // '/antdesign/tabs': {
+  //   component: loadable(() => import('pages/AntDesign/TabsPage')),
+  // },
+  // '/antdesign/tag': {
+  //   component: loadable(() => import('pages/AntDesign/TagPage')),
+  // },
+  // '/antdesign/timeline': {
+  //   component: loadable(() => import('pages/AntDesign/TimelinePage')),
+  // },
+  // '/antdesign/tree': {
+  //   component: loadable(() => import('pages/AntDesign/TreePage')),
+  // },
+  // '/antdesign/alert': {
+  //   component: loadable(() => import('pages/AntDesign/AlertPage')),
+  // },
+  // '/antdesign/modal': {
+  //   component: loadable(() => import('pages/AntDesign/ModalPage')),
+  // },
+  // '/antdesign/message': {
+  //   component: loadable(() => import('pages/AntDesign/MessagePage')),
+  // },
+  // '/antdesign/notification': {
+  //   component: loadable(() => import('pages/AntDesign/NotificationPage')),
+  // },
+  // '/antdesign/progress': {
+  //   component: loadable(() => import('pages/AntDesign/ProgressPage')),
+  // },
+  // '/antdesign/popconfirm': {
+  //   component: loadable(() => import('pages/AntDesign/PopconfirmPage')),
+  // },
+  // '/antdesign/spin': {
+  //   component: loadable(() => import('pages/AntDesign/SpinPage')),
+  // },
+  // '/antdesign/anchor': {
+  //   component: loadable(() => import('pages/AntDesign/AnchorPage')),
+  // },
+  // '/antdesign/backtop': {
+  //   component: loadable(() => import('pages/AntDesign/BacktopPage')),
+  // },
+  // '/antdesign/divider': {
+  //   component: loadable(() => import('pages/AntDesign/DividerPage')),
+  // },
+  // '/antdesign/localeprovider': {
+  //   component: loadable(() => import('pages/AntDesign/LocaleproviderPage')),
+  // },
 }
 
 class Routes extends React.Component {

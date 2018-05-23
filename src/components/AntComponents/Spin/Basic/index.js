@@ -1,11 +1,7 @@
 import React from 'react'
 import './style.scss'
-import { Spin } from 'antd';
-
-
-
+import { Spin } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  ReactDOM.render(<Spin />, mountNode);
-
+  ReactDOM.render(<Spin />, mountNode)
 }

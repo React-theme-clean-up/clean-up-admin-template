@@ -1,36 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderProgressCircledynamic } from './Circledynamic/index.js';
-import { default as renderProgressCirclemini } from './Circlemini/index.js';
-import { default as renderProgressCircle } from './Circle/index.js';
-import { default as renderProgressDashboard } from './Dashboard/index.js';
-import { default as renderProgressDynamic } from './Dynamic/index.js';
-import { default as renderProgressFormat } from './Format/index.js';
-import { default as renderProgressLinemini } from './Linemini/index.js';
-import { default as renderProgressLine } from './Line/index.js';
-import { default as renderProgressSegment } from './Segment/index.js';
+import { default as renderProgressCircledynamic } from './Circledynamic/index.js'
+import { default as renderProgressCirclemini } from './Circlemini/index.js'
+import { default as renderProgressCircle } from './Circle/index.js'
+import { default as renderProgressDashboard } from './Dashboard/index.js'
+import { default as renderProgressDynamic } from './Dynamic/index.js'
+import { default as renderProgressFormat } from './Format/index.js'
+import { default as renderProgressLinemini } from './Linemini/index.js'
+import { default as renderProgressLine } from './Line/index.js'
+import { default as renderProgressSegment } from './Segment/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class ProgressItems extends React.Component {
-
   componentDidMount() {
-    renderProgressCircledynamic(ReactDOM, document.getElementById("ProgressCircledynamic"));
-renderProgressCirclemini(ReactDOM, document.getElementById("ProgressCirclemini"));
-renderProgressCircle(ReactDOM, document.getElementById("ProgressCircle"));
-renderProgressDashboard(ReactDOM, document.getElementById("ProgressDashboard"));
-renderProgressDynamic(ReactDOM, document.getElementById("ProgressDynamic"));
-renderProgressFormat(ReactDOM, document.getElementById("ProgressFormat"));
-renderProgressLinemini(ReactDOM, document.getElementById("ProgressLinemini"));
-renderProgressLine(ReactDOM, document.getElementById("ProgressLine"));
-renderProgressSegment(ReactDOM, document.getElementById("ProgressSegment"));
-
+    renderProgressCircledynamic(ReactDOM, document.getElementById('ProgressCircledynamic'))
+    renderProgressCirclemini(ReactDOM, document.getElementById('ProgressCirclemini'))
+    renderProgressCircle(ReactDOM, document.getElementById('ProgressCircle'))
+    renderProgressDashboard(ReactDOM, document.getElementById('ProgressDashboard'))
+    renderProgressDynamic(ReactDOM, document.getElementById('ProgressDynamic'))
+    renderProgressFormat(ReactDOM, document.getElementById('ProgressFormat'))
+    renderProgressLinemini(ReactDOM, document.getElementById('ProgressLinemini'))
+    renderProgressLine(ReactDOM, document.getElementById('ProgressLine'))
+    renderProgressSegment(ReactDOM, document.getElementById('ProgressSegment'))
   }
 
   render() {
@@ -42,7 +38,12 @@ renderProgressSegment(ReactDOM, document.getElementById("ProgressSegment"));
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Progress</strong>
-                  <a href="https://ant.design/components/progress/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
+                  <a
+                    href="https://ant.design/components/progress/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-primary ml-2"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -51,21 +52,36 @@ renderProgressSegment(ReactDOM, document.getElementById("ProgressSegment"));
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-progress-demo-circle-dynamic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Dynamic circular progress bar</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A dynamic progress bar is better.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressCircledynamic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress, Button \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Dynamic circular progress bar</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A dynamic progress bar is better.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCircledynamic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress, Button \} from 'antd';
 const ButtonGroup = Button.Group;
 
 class App extends React.Component \{
@@ -101,27 +117,42 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-circle">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Circular progress bar</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A circular progress bar.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressCircle" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-circle">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Circular progress bar</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A circular progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCircle" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -131,27 +162,42 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-dynamic">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Dynamic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A dynamic progress bar is better.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressDynamic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-dynamic">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Dynamic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A dynamic progress bar is better.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressDynamic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress, Button \} from 'antd';
 const ButtonGroup = Button.Group;
 
 class App extends React.Component \{
@@ -187,27 +233,42 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-line-mini">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Mini size progress bar</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Appropriate for a narrow area.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressLinemini" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-line-mini">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Mini size progress bar</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Appropriate for a narrow area.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressLinemini" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(
   <div style=\{\{ width\: 170 \}\}>
@@ -218,27 +279,44 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-segment">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Progress bar with success segment</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A standard progress bar.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressSegment" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Tooltip, Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-segment">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">
+                            Progress bar with success segment
+                          </strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A standard progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressSegment" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Tooltip, Progress \} from 'antd';
 
 ReactDOM.render(
   <Tooltip title="3 done / 3 in progress / 4 to do">
@@ -246,30 +324,46 @@ ReactDOM.render(
   </Tooltip>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-progress-demo-circle-mini">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Mini size circular progress bar</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A smaller circular progress bar.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressCirclemini" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">
+                            Mini size circular progress bar
+                          </strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A smaller circular progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressCirclemini" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -279,51 +373,86 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-dashboard">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Dashboard</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">By setting <code>{'type=dashboard'}</code>, you can get a dashboard style of progress easily.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressDashboard" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-dashboard">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Dashboard</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        By setting <code>{'type=dashboard'}</code>, you can get a dashboard style of
+                        progress easily.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressDashboard" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(<Progress type="dashboard" percent=\{75\} />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-format">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Custom text format</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">You can custom text format by setting <code>{'format'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressFormat" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-format">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Custom text format</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        You can custom text format by setting <code>{'format'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressFormat" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -332,27 +461,42 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card" id="components-progress-demo-line">
-  <div className="card-header">
-    <h5 className="mb-0 mr-3 d-inline-block text-black">
-      <strong className="text-capitalize">Progress bar</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A standard progress bar.
-</div>
-    <div className="card-body pb-0">
-      <div id="ProgressLine" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Progress \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card" id="components-progress-demo-line">
+                      <div className="card-header">
+                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                          <strong className="text-capitalize">Progress bar</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">A standard progress bar.</div>
+                      <div className="card-body pb-0">
+                        <div id="ProgressLine" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Progress \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -364,12 +508,11 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
