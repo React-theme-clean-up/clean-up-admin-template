@@ -4,21 +4,11 @@ import { withRouter } from 'react-router-dom'
 import qs from 'querystring'
 import { setLayoutState } from 'ducks/app'
 import { merge } from 'lodash'
+import classNames from 'classnames'
 
 const mapStateToProps = (state, props) => ({
   layoutState: state.app.layoutState,
 })
-
-const updateSettings = ({ layoutState }) => {
-  // console.log(layoutState)
-  // if (isMenuLeft) {
-  //   // $FlowFixMe
-  //   document.body.classList.add(className)
-  // } else {
-  //   // $FlowFixMe
-  //   document.body.classList.remove(className)
-  // }
-}
 
 @connect(mapStateToProps)
 @withRouter
@@ -36,11 +26,15 @@ class LayoutState extends React.PureComponent {
   }
 
   componentWillReceiveProps(newProps) {
-    updateSettings(newProps)
+    this.updateBodyClass(newProps.layoutState)
   }
 
   componentDidMount() {
     this.bootstrapLayoutSettings()
+  }
+
+  updateBodyClass(layoutState) {
+    document.body.className = classNames(layoutState)
   }
 
   render() {

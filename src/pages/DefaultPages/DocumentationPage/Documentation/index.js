@@ -34,7 +34,7 @@ class Documentation extends React.Component {
             <code>ReactAppRewired</code>,
             <code>ESLint</code>, <code>SASS Loader</code>, <code>Axios</code>, <code>Redux</code>,{' '}
             <code>Redux-Thunk</code>,
-            <code>React Router 4</code>,<code>Webpack 3</code>,<code>AntDesign</code>,<code>
+            <code>ReactRouter 4</code>,<code>Webpack 3</code>,<code>AntDesign</code>,<code>
               Bootstrap
             </code>,
             <code>Chart.js</code>,<code>Chartist</code>,<code>Peity</code>,<code>C3</code>

@@ -151,9 +151,8 @@ const initialState = {
     menuHorizontal: false,
     menuShadow: false,
     themeLight: false,
-    superClean: false,
     squaredBorders: false,
-    hipsterStyles: false,
+    borderedCards: false,
     fixedWidth: false,
   },
 
