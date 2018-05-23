@@ -6,7 +6,7 @@ import ProjectManagement from './ProjectManagement'
 import BitcoinPrice from './BitcoinPrice'
 import HomeMenu from './HomeMenu'
 import LiveSearch from './LiveSearch'
-import './style.css'
+import './style.scss'
 
 class TopBar extends React.Component {
   render() {

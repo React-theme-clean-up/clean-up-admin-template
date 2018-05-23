@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tabs, Input, Menu, Dropdown, Button, Icon } from 'antd'
 import Avatar from 'components/CleanComponents/Avatar'
-import './style.css'
+import './style.scss'
 import data from './data.json'
 
 const TabPane = Tabs.TabPane

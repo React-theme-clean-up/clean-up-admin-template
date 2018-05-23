@@ -18,12 +18,12 @@ import registerServiceWorker from 'registerServiceWorker'
 import Layout from 'components/LayoutComponents/Layout'
 import reducer from 'ducks'
 
-import 'resources/_antd.less' // redefinition Ant Design variables
+import 'resources/_antd.less' // redefinition AntDesign variables
 import 'bootstrap/dist/css/bootstrap.min.css' // bootstrap styles
 
-import 'resources/AntStyles/AntDesign/antd.cleanui.css'
-import 'resources/CleanStyles/Core/core.cleanui.css'
-import 'resources/CleanStyles/Vendors/vendors.cleanui.css'
+import 'resources/AntStyles/AntDesign/antd.cleanui.scss'
+import 'resources/CleanStyles/Core/core.cleanui.scss'
+import 'resources/CleanStyles/Vendors/vendors.cleanui.scss'
 
 const history = createHistory()
 const router = routerMiddleware(history)

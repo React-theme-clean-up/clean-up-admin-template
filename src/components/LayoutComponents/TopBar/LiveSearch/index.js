@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input, Icon } from 'antd'
 import { Checkbox } from 'antd'
-import './style.css'
+import './style.scss'
 
 class LiveSearch extends React.Component {
   state = {

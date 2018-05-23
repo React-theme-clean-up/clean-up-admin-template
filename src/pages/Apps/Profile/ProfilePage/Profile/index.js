@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Progress, Calendar, Tabs, Upload, Icon, Input, Menu, Dropdown } from 'antd'
 import data from './data.json'
-import './style.css'
+import './style.scss'
 import Avatar from 'components/CleanComponents/Avatar'
 import Donut from 'components/CleanComponents/Donut'
 import Chat from 'components/CleanComponents/Chat'

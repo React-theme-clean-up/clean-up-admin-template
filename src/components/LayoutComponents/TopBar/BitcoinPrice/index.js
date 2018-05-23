@@ -1,6 +1,6 @@
 import React from 'react'
 import { Line } from 'react-peity'
-import './style.css'
+import './style.scss'
 
 class BitcoinPrice extends React.Component {
   state = {

@@ -3,7 +3,7 @@ import { Tabs, Menu, Dropdown, Icon, Button } from 'antd'
 import { Editor } from 'react-draft-wysiwyg'
 import Avatar from 'components/CleanComponents/Avatar'
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
-import './style.css'
+import './style.scss'
 import data from './data.json'
 
 const TabPane = Tabs.TabPane

@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'antd'
 import Avatar from 'components/CleanComponents/Avatar'
 import UnlockForm from './UnlockForm'
-import './style.css'
+import './style.scss'
 
 class Lockscreen extends React.Component {
   state = {

@@ -5,7 +5,7 @@ import { Scrollbars } from 'react-custom-scrollbars'
 import { MenuSider } from './MenuSider'
 import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
-import './style.css'
+import './style.scss'
 
 const mapStateToProps = (state, props) => ({
   layoutState: state.app.layoutState,

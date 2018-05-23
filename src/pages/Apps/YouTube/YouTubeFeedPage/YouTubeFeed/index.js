@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pagination } from 'antd'
-import './style.css'
+import './style.scss'
 import data from './data.json'
 
 class YouTubeFeed extends React.Component {

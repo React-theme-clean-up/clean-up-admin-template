@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
 import 'rc-drawer-menu/assets/index.css'
-import './style.css'
+import './style.scss'
 
 const { Sider } = Layout
 const SubMenu = Menu.SubMenu

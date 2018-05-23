@@ -1,6 +1,6 @@
 import React from 'react'
 import { Radio } from 'antd'
-import './style.css'
+import './style.scss'
 import { user } from './data.json'
 import Avatar from 'components/CleanComponents/Avatar'
 

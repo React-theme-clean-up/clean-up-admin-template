@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'antd'
 import RegisterForm from './RegisterForm'
-import './style.css'
+import './style.scss'
 
 class Register extends React.Component {
   state = {

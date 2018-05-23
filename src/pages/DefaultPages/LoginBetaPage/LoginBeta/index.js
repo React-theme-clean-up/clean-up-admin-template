@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'antd'
 import LoginForm from './LoginForm'
-import './style.css'
+import './style.scss'
 
 class LoginBeta extends React.Component {
   state = {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ChartistGraph from 'react-chartist'
 import Chartist from 'chartist'
-import './style.css'
+import './style.scss'
 
 const animationData = {
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],

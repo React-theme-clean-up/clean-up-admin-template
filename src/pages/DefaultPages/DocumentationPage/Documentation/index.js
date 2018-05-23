@@ -1,6 +1,6 @@
 import React from 'react'
 import { Collapse } from 'antd'
-import './style.css'
+import './style.scss'
 
 const Panel = Collapse.Panel
 

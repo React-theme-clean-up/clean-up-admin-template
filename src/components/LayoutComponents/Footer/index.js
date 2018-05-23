@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'antd'
-import './style.css'
+import './style.scss'
 
 class AppFooter extends React.Component {
   render() {

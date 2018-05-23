@@ -1,34 +1,26 @@
+const rewired = require('react-app-rewired')
+const { injectBabelPlugin } = require('react-app-rewired')
+const rewireLess = require('react-app-rewire-less')
+const rewireEslint = require('react-app-rewire-eslint')
+
 function rewire(config, env) {
-  const babelOptions = config.module.rules.find(conf => {
-    return conf.loader && conf.loader.includes('babel-loader')
-  }).options
-  const babelrc = require(babelOptions.presets[0])
-  babelrc.plugins = [
-    // ['module-resolver', { root: ['src'] }],
-    [
-      'import-inspector',
-      {
-        // serverSideRequirePath: true,
-        webpackRequireWeakId: true,
-      },
-    ],
-    ['import', { libraryName: 'antd', style: false }],
-    'lodash',
-    'babel-plugin-idx',
-    'tcomb',
-    'transform-decorators-legacy',
-  ].concat(babelrc.plugins || [])
-  babelOptions.presets = babelrc
+  config = injectBabelPlugin('transform-decorators-legacy', config)
 
-  const rewireLess = require('react-app-rewire-less')
+  const cssLoader = rewired.getLoader(
+    config.module.rules,
+    rule => rule.test && String(rule.test) === String(/\.css$/)
+  )
+
+  const sassLoader = {
+    test: /\.scss$/,
+    use: [...(cssLoader.loader || cssLoader.use), 'sass-loader']
+  }
+
+  const oneOf = config.module.rules.find(rule => rule.oneOf).oneOf
+  oneOf.unshift(sassLoader)
+
   config = rewireLess(config, env)
-
-  const rewireEslint = require('react-app-rewire-eslint')
   config = rewireEslint(config, env)
-
-  const path = require('path')
-  config.resolve.modules = [path.resolve('src')].concat(config.resolve.modules)
-
   return config
 }
 

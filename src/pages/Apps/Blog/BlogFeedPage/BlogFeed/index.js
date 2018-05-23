@@ -1,6 +1,6 @@
 import React from 'react'
 import { Input, Icon, Button, Pagination } from 'antd'
-import './style.css'
+import './style.scss'
 import data from './data.json'
 
 const Search = Input.Search

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 import { user } from './data.json'
 import Avatar from 'components/CleanComponents/Avatar'
 

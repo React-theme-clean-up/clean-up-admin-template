@@ -1,6 +1,6 @@
 import React from 'react'
 import { Upload, message, Button, Icon } from 'antd'
-import './style.css'
+import './style.scss'
 import data from './data.json'
 
 const props = {
