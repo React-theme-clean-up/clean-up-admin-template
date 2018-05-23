@@ -330,10 +330,11 @@ class Routes extends React.Component {
           return <Route key={path} path={path} {...props} />
         })}
         <Route
-          render={() =>
+          render={() => (
             <Page>
               <NotFoundPage />
-            </Page>}
+            </Page>
+          )}
         />
       </ConnectedSwitch>
     )

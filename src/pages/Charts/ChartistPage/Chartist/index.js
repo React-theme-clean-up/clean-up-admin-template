@@ -155,18 +155,23 @@ let scatterTimes = function(n) {
   return Array.apply(null, new Array(n))
 }
 
-let scatterData = scatterTimes(52).map(Math.random).reduce(function(scatterData, rnd, index) {
-  scatterData.labels.push(index + 1)
-  scatterData.series.forEach(function(series) {
-    series.push(Math.random() * 100)
-  })
-  return scatterData
-}, {
-  labels: [],
-  series: scatterTimes(4).map(function() {
-    return []
-  }),
-})
+let scatterData = scatterTimes(52)
+  .map(Math.random)
+  .reduce(
+    function(scatterData, rnd, index) {
+      scatterData.labels.push(index + 1)
+      scatterData.series.forEach(function(series) {
+        series.push(Math.random() * 100)
+      })
+      return scatterData
+    },
+    {
+      labels: [],
+      series: scatterTimes(4).map(function() {
+        return []
+      }),
+    },
+  )
 
 let scatterOptions = {
   showLine: false,

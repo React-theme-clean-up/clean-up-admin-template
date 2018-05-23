@@ -48,10 +48,11 @@ class Cart extends React.Component {
       {
         title: 'Description',
         dataIndex: 'description',
-        render: text =>
+        render: text => (
           <a className="utils__link--underlined" href="javascript: void(0);">
             {text}
-          </a>,
+          </a>
+        ),
       },
       {
         title: 'Quantity',
@@ -69,10 +70,11 @@ class Cart extends React.Component {
       {
         title: '',
         dataIndex: '',
-        render: () =>
+        render: () => (
           <Button icon="cross" size="small">
             Remove
-          </Button>,
+          </Button>
+        ),
       },
     ]
 
@@ -88,17 +90,13 @@ class Cart extends React.Component {
                 <p>
                   Sub - Total amount:{' '}
                   <strong>
-                    <span>
-                      {invoicePrices.invoiceAmount}
-                    </span>
+                    <span>{invoicePrices.invoiceAmount}</span>
                   </strong>
                 </p>
                 <p>
                   VAT:{' '}
                   <strong>
-                    <span>
-                      {invoicePrices.invoiceVAT}
-                    </span>
+                    <span>{invoicePrices.invoiceVAT}</span>
                   </strong>
                 </p>
                 <p>
@@ -157,22 +155,23 @@ class Cart extends React.Component {
         <Steps current={current}>
           {steps.map(item => <Step key={item.title} title={item.title} icon={item.icon} />)}
         </Steps>
-        <div className="steps-content">
-          {steps[this.state.current].content}
-        </div>
+        <div className="steps-content">{steps[this.state.current].content}</div>
         <div className="steps-action text-center">
-          {this.state.current > 0 &&
+          {this.state.current > 0 && (
             <Button style={{ marginRight: 8 }} onClick={() => this.prev()}>
               Previous
-            </Button>}
-          {this.state.current < steps.length - 1 &&
+            </Button>
+          )}
+          {this.state.current < steps.length - 1 && (
             <Button type="primary" onClick={() => this.next()}>
               Next
-            </Button>}
-          {this.state.current === steps.length - 1 &&
+            </Button>
+          )}
+          {this.state.current === steps.length - 1 && (
             <Button type="primary" onClick={() => message.success('Processing complete!')}>
               Done
-            </Button>}
+            </Button>
+          )}
         </div>
       </div>
     )

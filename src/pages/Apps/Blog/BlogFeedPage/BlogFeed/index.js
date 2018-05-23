@@ -27,14 +27,12 @@ class BlogFeed extends React.Component {
               <div className="row">
                 <div className="col-lg-8">
                   <main className="blog-feed__postbar">
-                    {articlesData.map((article, index) =>
+                    {articlesData.map((article, index) => (
                       <article className="blog-feed__article" key={index}>
                         <div className="blog-feed__article-information">
                           <div className="blog-feed__article-title">
                             <h1>
-                              <a href="javascript: void(0);">
-                                {article.name}
-                              </a>
+                              <a href="javascript: void(0);">{article.name}</a>
                             </h1>
                           </div>
                           <ul className="blog-feed__article-meta">
@@ -71,11 +69,11 @@ class BlogFeed extends React.Component {
                           <div className="row">
                             <div className="col-8">
                               <div className="blog-feed__article-hashtags">
-                                {article.tags.map((tag, index) =>
+                                {article.tags.map((tag, index) => (
                                   <a href="javascript: void(0);" key={index}>
                                     {tag}
-                                  </a>,
-                                )}
+                                  </a>
+                                ))}
                               </div>
                             </div>
                             <div className="col-4">
@@ -99,8 +97,8 @@ class BlogFeed extends React.Component {
                             </div>
                           </div>
                         </footer>
-                      </article>,
-                    )}
+                      </article>
+                    ))}
                   </main>
                   <div className="mb-5">
                     <Pagination defaultCurrent={1} total={50} />
@@ -128,20 +126,20 @@ class BlogFeed extends React.Component {
                         <span className="blog-feed__partition-name">Categories</span>
                       </div>
                       <ul className="blog-feed__categories-list">
-                        {articlesCategories.map((category, index) =>
+                        {articlesCategories.map((category, index) => (
                           <li className="blog-feed__categories-item" key={index}>
                             <a className="blog-feed__categories-link" href="javascript: void(0);">
                               {category}
                             </a>
-                          </li>,
-                        )}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="blog-feed__sidebar-partition">
                       <div className="blog-feed__partition-head">
                         <span className="blog-feed__partition-name">Latest post</span>
                       </div>
-                      {latesArticlesData.map((latestArticle, index) =>
+                      {latesArticlesData.map((latestArticle, index) => (
                         <article className="blog-feed__latest-post" key={index}>
                           <div className="blog-feed__latest-img">
                             <a href="javascript: void(0);">
@@ -151,9 +149,7 @@ class BlogFeed extends React.Component {
                           <div className="blog-feed__latest-data">
                             <div className="blog-feed__latest-name">
                               <h2>
-                                <a href="javascript: void(0);">
-                                  {latestArticle.name}
-                                </a>
+                                <a href="javascript: void(0);">{latestArticle.name}</a>
                               </h2>
                             </div>
                             <ul className="blog-feed__article-meta blog-feed__article-meta--latest">
@@ -169,8 +165,8 @@ class BlogFeed extends React.Component {
                               </li>
                             </ul>
                           </div>
-                        </article>,
-                      )}
+                        </article>
+                      ))}
                     </div>
                     <div className="blog-feed__sidebar-partition">
                       <div className="blog-feed__partition-head">

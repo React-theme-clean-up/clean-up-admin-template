@@ -31,20 +31,22 @@ class AppMenu extends React.Component {
   render() {
     const { isMobile } = this.props
     const { menuMobileOpened } = this.state
-    return isMobile
-      ? <DrawerMenu
-          parent={null}
-          level={null}
-          open={menuMobileOpened}
-          onMaskClick={this.toggleOpen}
-          onIconClick={this.toggleOpen}
-          width="256px"
-        >
-          <Scrollbars style={{ height: '100vh' }}>
-            <MenuSider {...this.props} />
-          </Scrollbars>
-        </DrawerMenu>
-      : <MenuSider {...this.props} />
+    return isMobile ? (
+      <DrawerMenu
+        parent={null}
+        level={null}
+        open={menuMobileOpened}
+        onMaskClick={this.toggleOpen}
+        onIconClick={this.toggleOpen}
+        width="256px"
+      >
+        <Scrollbars style={{ height: '100vh' }}>
+          <MenuSider {...this.props} />
+        </Scrollbars>
+      </DrawerMenu>
+    ) : (
+      <MenuSider {...this.props} />
+    )
   }
 }
 

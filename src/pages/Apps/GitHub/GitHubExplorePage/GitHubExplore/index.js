@@ -76,9 +76,7 @@ class GitHubExplore extends React.Component {
               </Tabs>
             </div>
             <div className="explore__descr clearfix">
-              <p className="explore__descr-text">
-                {projectData.description}
-              </p>
+              <p className="explore__descr-text">{projectData.description}</p>
               <span className="pull-right">
                 <Button>Edit</Button>
               </span>
@@ -120,7 +118,8 @@ class GitHubExplore extends React.Component {
                   optionFilterProp="children"
                   defaultActiveFirstOption={true}
                   filterOption={(input, option) =>
-                    option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                    option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                  }
                 >
                   <Option value="html">HTML</Option>
                   <Option value="css">CSS</Option>
@@ -149,7 +148,7 @@ class GitHubExplore extends React.Component {
             </div>
             <table className="explore__nav table table-hover">
               <tbody>
-                {projectData.explore.map((item, index) =>
+                {projectData.explore.map((item, index) => (
                   <tr key={index}>
                     <td className="explore__nav-icon">
                       {item.type === 'folder' && <i className="fa fa-folder" />}
@@ -160,14 +159,10 @@ class GitHubExplore extends React.Component {
                         {item.name}
                       </a>
                     </td>
-                    <td className="explore__nav-descr">
-                      {item.info}
-                    </td>
-                    <td className="explore__nav-time">
-                      {item.time}
-                    </td>
-                  </tr>,
-                )}
+                    <td className="explore__nav-descr">{item.info}</td>
+                    <td className="explore__nav-time">{item.time}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

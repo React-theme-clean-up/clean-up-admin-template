@@ -86,9 +86,7 @@ class GitHubDiscuss extends React.Component {
               </div>
               <div className="discuss__header clearfix">
                 <div className="discuss__title">
-                  <h1 className="discuss__title-text">
-                    {discuss.title}
-                  </h1>
+                  <h1 className="discuss__title-text">{discuss.title}</h1>
                   <div className="discuss__open">
                     <Button type="primary" size="small">
                       New discussion
@@ -96,16 +94,18 @@ class GitHubDiscuss extends React.Component {
                   </div>
                 </div>
                 <div className="discuss__meta">
-                  {discuss.status === 'open' &&
+                  {discuss.status === 'open' && (
                     <span className="discuss__status btn btn-success btn-sm">
                       <i className="fa fa-check-circle-o mr-2" />
                       Open
-                    </span>}
-                  {discuss.status === 'closed' &&
+                    </span>
+                  )}
+                  {discuss.status === 'closed' && (
                     <span className="discuss__status btn btn-danger btn-sm">
                       <i className="fa fa-times-circle mr-2" />
                       Closed
-                    </span>}
+                    </span>
+                  )}
                   <div className="discuss__meta-text">
                     <a href="javascript: void(0);" className="discuss__owner mr-1">
                       {discuss.authorName}
@@ -121,7 +121,7 @@ class GitHubDiscuss extends React.Component {
               <div className="row">
                 <div className="col-lg-10">
                   <div className="discuss__comments">
-                    {discuss.comments.map((comment, index) =>
+                    {discuss.comments.map((comment, index) => (
                       <div className="discuss__comment-item" key={index}>
                         <div className="discuss__comment-wrapper mb-0 pb-0 clearfix">
                           <div className="discuss__comment-avatar">
@@ -146,14 +146,12 @@ class GitHubDiscuss extends React.Component {
                             <div className="discuss__comment-bottom">
                               <a href="javascript: void(0);" className="mr-2">
                                 <i className="icmn-heart mr-1" />
-                                {comment.likesCount > 0 &&
-                                  <span>
-                                    {comment.likesCount + ' Likes'}
-                                  </span>}
-                                {comment.likesCount === 0 &&
-                                  <span>
-                                    {comment.likesCount + ' Like'}
-                                  </span>}
+                                {comment.likesCount > 0 && (
+                                  <span>{comment.likesCount + ' Likes'}</span>
+                                )}
+                                {comment.likesCount === 0 && (
+                                  <span>{comment.likesCount + ' Like'}</span>
+                                )}
                               </a>
                               <a href="javascript: void(0);" className="mr-2">
                                 <i className="icmn-reply mr-1" />
@@ -162,10 +160,10 @@ class GitHubDiscuss extends React.Component {
                             </div>
                           </div>
                         </div>
-                      </div>,
-                    )}
+                      </div>
+                    ))}
                   </div>
-                  {discuss.status === 'open' &&
+                  {discuss.status === 'open' && (
                     <div className="discuss__add-comment clearfix">
                       <div className="discuss__comment-avatar">
                         <Avatar size="50" src={discuss.authorImg} />
@@ -178,7 +176,8 @@ class GitHubDiscuss extends React.Component {
                           <Button type="primary">Comment</Button>
                         </div>
                       </div>
-                    </div>}
+                    </div>
+                  )}
                 </div>
                 <div className="col-lg-2">
                   <div className="discuss__sidebar">
@@ -208,11 +207,11 @@ class GitHubDiscuss extends React.Component {
                       <div className="discuss__sidebar-head">Participants</div>
                       <div className="discuss__sidebar-item-content">
                         <ul className="discuss__participants-list">
-                          {discuss.participants.map((participant, index) =>
+                          {discuss.participants.map((participant, index) => (
                             <li className="discuss__participants-item" key={index}>
                               <Avatar size="25" src={participant} />
-                            </li>,
-                          )}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>

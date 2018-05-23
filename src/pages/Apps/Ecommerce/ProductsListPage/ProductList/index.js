@@ -42,17 +42,12 @@ class ProductsList extends React.Component {
             ...record,
             name: (
               <span>
-                {record.name.split(reg).map(
-                  (text, i) =>
-                    i > 0
-                      ? [
-                          <span className="highlight">
-                            {match[0]}
-                          </span>,
-                          text,
-                        ]
-                      : text,
-                )}
+                {record.name
+                  .split(reg)
+                  .map(
+                    (text, i) =>
+                      i > 0 ? [<span className="highlight">{match[0]}</span>, text] : text,
+                  )}
               </span>
             ),
           }
@@ -85,30 +80,33 @@ class ProductsList extends React.Component {
         title: 'ID',
         dataIndex: 'id',
         key: 'id',
-        render: text =>
+        render: text => (
           <a className="utils__link--underlined" href="javascript: void(0);">
             {'#' + text}
-          </a>,
+          </a>
+        ),
         sorter: (a, b) => a.id - b.id,
       },
       {
         title: 'Thumbnail',
         dataIndex: 'thumbnail',
         key: 'thumbnail',
-        render: text =>
+        render: text => (
           <a href="javascript: void(0);" className="productsList__thumbnail">
             <img src={text} alt="" />
-          </a>,
+          </a>
+        ),
       },
       {
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
         sorter: (a, b) => a.name.length - b.name.length,
-        render: text =>
+        render: text => (
           <a className="utils__link--underlined" href="javascript: void(0);">
             {text}
-          </a>,
+          </a>
+        ),
         filterDropdown: (
           <div className="custom-filter-dropdown">
             <Input
@@ -158,10 +156,7 @@ class ProductsList extends React.Component {
         title: 'Price',
         dataIndex: 'price',
         key: 'price',
-        render: text =>
-          <span>
-            {'$' + text}
-          </span>,
+        render: text => <span>{'$' + text}</span>,
         sorter: (a, b) => a.price - b.price,
       },
       {
@@ -179,7 +174,7 @@ class ProductsList extends React.Component {
       {
         title: 'Action',
         key: 'action',
-        render: (text, record) =>
+        render: (text, record) => (
           <span>
             <a href="javascript: void(0);" className="mr-2">
               <i className="icmn-pencil mr-1" /> View
@@ -187,7 +182,8 @@ class ProductsList extends React.Component {
             <a href="javascript: void(0);">
               <i className="icmn-cross mr-1" /> Remove
             </a>
-          </span>,
+          </span>
+        ),
       },
     ]
 

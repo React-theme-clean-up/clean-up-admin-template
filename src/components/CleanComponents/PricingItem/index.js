@@ -56,29 +56,19 @@ class PricingItem extends React.Component {
       <div className={mainClass}>
         <div className="pricing-table__header">
           <div className="pricing-table__pricing__price">
-            <span className="pricing-table__pricing__currency">
-              {data.currency}
-            </span>
-            <span className="pricing-table__pricing__amount">
-              {data.amount}
-            </span>
-            <span className="pricing-table__pricing__period">
-              {data.period}
-            </span>
+            <span className="pricing-table__pricing__currency">{data.currency}</span>
+            <span className="pricing-table__pricing__amount">{data.amount}</span>
+            <span className="pricing-table__pricing__period">{data.period}</span>
           </div>
-          <div className="pricing-table__header__title">
-            {data.title}
-          </div>
+          <div className="pricing-table__header__title">{data.title}</div>
         </div>
         <ul className="pricing-table__features">
-          {data.features.map((feature, index) =>
+          {data.features.map((feature, index) => (
             <li key={index}>
-              <strong>
-                {feature.main}
-              </strong>
+              <strong>{feature.main}</strong>
               {' ' + feature.descr}
-            </li>,
-          )}
+            </li>
+          ))}
         </ul>
         <div className="pricing-table__footer">
           <a href="javascript: void(0);" className={btnClass} role="button">

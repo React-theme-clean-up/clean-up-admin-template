@@ -56,9 +56,7 @@ class YouTubeView extends React.Component {
                       </Dropdown>
                     </div>
                   </div>
-                  <p className="video-page__descr-text mb-0">
-                    {viewData.description}
-                  </p>
+                  <p className="video-page__descr-text mb-0">{viewData.description}</p>
                 </div>
               </div>
               <div className="video-page__comments">
@@ -78,7 +76,7 @@ class YouTubeView extends React.Component {
                     </div>
                   </div>
                   <div className="video-page__comments-content">
-                    {viewData.comments.map((comment, index) =>
+                    {viewData.comments.map((comment, index) => (
                       <div className="video-page__comment-item clearfix" key={index}>
                         <div className="video-page__comment-avatar">
                           <Avatar src={comment.avatar} size="50" border="false" />
@@ -90,25 +88,21 @@ class YouTubeView extends React.Component {
                               {comment.date}
                             </span>
                           </strong>
-                          <p className="mb-0">
-                            {comment.content}
-                          </p>
+                          <p className="mb-0">{comment.content}</p>
                           <div className="video-page__comment-like">
                             <a className="mr-2" href="javascript: void(0);">
                               <i className="icmn-heart mr-2" />
-                              {comment.likesCount > 0 &&
-                                <span>
-                                  {comment.likesCount + ' Likes'}
-                                </span>}
-                              {comment.likesCount === 0 &&
-                                <span>
-                                  {comment.likesCount + ' Like'}
-                                </span>}
+                              {comment.likesCount > 0 && (
+                                <span>{comment.likesCount + ' Likes'}</span>
+                              )}
+                              {comment.likesCount === 0 && (
+                                <span>{comment.likesCount + ' Like'}</span>
+                              )}
                             </a>
                           </div>
                         </div>
-                      </div>,
-                    )}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -121,7 +115,7 @@ class YouTubeView extends React.Component {
                 </div>
               </div>
               <ul className="video-page__watch-next">
-                {upNext.map((video, index) =>
+                {upNext.map((video, index) => (
                   <li className="video-page__next-item clearfix" key={index}>
                     <a href="javascript: void(0);" className="video-page__next-item-link">
                       <div className="video-page__item-thumb">
@@ -132,20 +126,16 @@ class YouTubeView extends React.Component {
                         />
                       </div>
                       <div className="video-page__item-descr">
-                        <span className="video-page__item-name">
-                          {video.name}
-                        </span>
-                        <span className="video-page__item-author">
-                          {video.author}
-                        </span>
+                        <span className="video-page__item-name">{video.name}</span>
+                        <span className="video-page__item-author">{video.author}</span>
                         <span className="video-page__item-views text-muted">
                           <span className="video-page__item-count">{video.views}</span>
                           views
                         </span>
                       </div>
                     </a>
-                  </li>,
-                )}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

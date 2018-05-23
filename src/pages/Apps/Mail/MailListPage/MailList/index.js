@@ -17,14 +17,15 @@ const mailTab = category => {
               : category.title}
           </strong>
         </div>
-        {category.mailCount > 0 &&
+        {category.mailCount > 0 && (
           <div>
             <small className="mail__tab-time">8:34PM</small>
             <div className="mail__tab-name">Barak Obama</div>
             <div className="mail__tab-text">
               Hello! Where you are now? I want to talk. Hello! Where you are now? I want to talk
             </div>
-          </div>}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -106,10 +107,7 @@ class MailList extends React.Component {
         title: 'From',
         dataIndex: 'from',
         key: 'from',
-        render: text =>
-          <a href="javascript: void(0);">
-            {text}
-          </a>,
+        render: text => <a href="javascript: void(0);">{text}</a>,
         sorter: (a, b) => a.from.length - b.from.length,
       },
       {
@@ -155,9 +153,9 @@ class MailList extends React.Component {
           </div>
           <div className="mail__tabs">
             <Tabs defaultActiveKey="0" tabPosition={'left'} onChange={this.changeCategory}>
-              {mailCategories.map((category, index) =>
-                <TabPane tab={mailTab(category)} key={index} />,
-              )}
+              {mailCategories.map((category, index) => (
+                <TabPane tab={mailTab(category)} key={index} />
+              ))}
             </Tabs>
           </div>
         </div>

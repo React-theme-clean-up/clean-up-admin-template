@@ -33,9 +33,7 @@ const chatTab = chat => {
       </div>
       <div className="messaging__tab-content">
         <small className="messaging__tab-time">8:34PM</small>
-        <div className="messaging__tab-name">
-          {tabName}
-        </div>
+        <div className="messaging__tab-name">{tabName}</div>
         <div className="messaging__tab-text" dangerouslySetInnerHTML={{ __html: lastMessage }} />
       </div>
     </div>
@@ -49,17 +47,15 @@ const Message = message => {
   let chatOwner = message.chatOwner
   return (
     <div
-      className={`clearfix messaging__item ${chatOwner === messageOwner
-        ? 'messaging__item--left'
-        : 'messaging__item--right'}`}
+      className={`clearfix messaging__item ${
+        chatOwner === messageOwner ? 'messaging__item--left' : 'messaging__item--right'
+      }`}
     >
       <div className="messaging__item-avatar">
         <Avatar src={messageImg} size="50" border="false" />
       </div>
       <div className="messaging__item-content">
-        <strong>
-          {messageOwner}
-        </strong>
+        <strong>{messageOwner}</strong>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
     </div>
@@ -106,9 +102,7 @@ class MessagingChat extends React.Component {
         <div className="messaging__content">
           <div className="card-header clearfix">
             <h4 className="mt-1 mb-1 text-black d-inline-block">
-              <strong>
-                {selectedChatData.companionName}
-              </strong>
+              <strong>{selectedChatData.companionName}</strong>
             </h4>
             <div className="pull-right">
               <Dropdown overlay={actionsMenu}>
@@ -120,9 +114,9 @@ class MessagingChat extends React.Component {
           </div>
           <div className="messaging__content-wrapper">
             <div className="messaging__chat height-700">
-              {messagesData.map((message, index) =>
-                <Message message={message} key={index} chatOwner={chatOwner} />,
-              )}
+              {messagesData.map((message, index) => (
+                <Message message={message} key={index} chatOwner={chatOwner} />
+              ))}
             </div>
             <form className="form-group mt-4 mb-3">
               <textarea

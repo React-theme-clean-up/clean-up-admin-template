@@ -40,12 +40,8 @@ class UserCard extends React.Component {
           size="90"
         />
         <div className="my-3 text-center">
-          <div className="userCard__userName font-size-18">
-            {user.name}
-          </div>
-          <div className="userCard__post">
-            {user.post}
-          </div>
+          <div className="userCard__userName font-size-18">{user.name}</div>
+          <div className="userCard__post">{user.post}</div>
         </div>
         <div className="text-center">
           <div className="btn-group text-center">

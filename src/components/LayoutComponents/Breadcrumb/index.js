@@ -39,22 +39,16 @@ class BreadcrumbBar extends React.Component {
           return (
             <span key={item.key}>
               <span className="breadcrumbBar__arrow text-muted" />
-              <span className="text-muted">
-                {item.title}
-              </span>
+              <span className="text-muted">{item.title}</span>
               <span className="breadcrumbBar__arrow" />
-              <strong>
-                {activeMenuItem.title}
-              </strong>
+              <strong>{activeMenuItem.title}</strong>
             </span>
           )
         } else {
           return (
             <span key={item.key}>
               <span className="breadcrumbBar__arrow text-muted" />
-              <span className="text-muted">
-                {item.title}
-              </span>
+              <span className="text-muted">{item.title}</span>
             </span>
           )
         }
@@ -63,9 +57,7 @@ class BreadcrumbBar extends React.Component {
       breadcrumb = (
         <span>
           <span className="breadcrumbBar__arrow" />
-          <strong>
-            {props.name}
-          </strong>
+          <strong>{props.name}</strong>
         </span>
       )
     }

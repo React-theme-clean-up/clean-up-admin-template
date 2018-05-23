@@ -85,20 +85,21 @@ class ProductDetails extends React.Component {
                       dots={false}
                       effect="fade"
                     >
-                      {images.map((image, index) =>
+                      {images.map((image, index) => (
                         <div key={index}>
                           <img className="productDetails__item__img-item" src={image} alt="" />
-                        </div>,
-                      )}
+                        </div>
+                      ))}
                     </Carousel>
                   </div>
                 </div>
                 <div className="productDetails__photos clearfix">
-                  {images.map((image, index) =>
+                  {images.map((image, index) => (
                     <div
                       key={index}
                       onClick={e =>
-                        this.slider.slick.innerSlider.slickGoTo(index) & this.setActiveImg(index)}
+                        this.slider.slick.innerSlider.slickGoTo(index) & this.setActiveImg(index)
+                      }
                       className={
                         imgActiveStatus[index] === 'active'
                           ? 'productDetails__photos-item productDetails__photos-item--active'
@@ -106,8 +107,8 @@ class ProductDetails extends React.Component {
                       }
                     >
                       <img src={image} alt="" />
-                    </div>,
-                  )}
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="col-lg-8">
@@ -143,22 +144,15 @@ class ProductDetails extends React.Component {
                   </div>
                 </div>
                 <h4 className="productDetails__main-title">
-                  <strong>
-                    {name}
-                  </strong>
+                  <strong>{name}</strong>
                 </h4>
                 <div className="productDetails__price">
                   {'$' + price}
-                  {oldPrice &&
-                    <div className="productDetails__price-before">
-                      {'$' + oldPrice}
-                    </div>}
+                  {oldPrice && <div className="productDetails__price-before">{'$' + oldPrice}</div>}
                 </div>
                 <hr />
                 <div className="productDetails__descr mb-1">
-                  <p>
-                    {shortDescr}
-                  </p>
+                  <p>{shortDescr}</p>
                 </div>
                 <div className="row">
                   <div className="col-lg-6">
@@ -204,19 +198,15 @@ class ProductDetails extends React.Component {
                 <div className="productDetails__info">
                   <Tabs defaultActiveKey="1">
                     <TabPane tab="Information" key="1">
-                      {properties.map((property, index) =>
+                      {properties.map((property, index) => (
                         <div className="productDetails__property mb-1" key={index}>
-                          <strong className="mr-1">
-                            {property.name + ': '}
-                          </strong>
+                          <strong className="mr-1">{property.name + ': '}</strong>
                           {property.value}
-                        </div>,
-                      )}
+                        </div>
+                      ))}
                     </TabPane>
                     <TabPane tab="Description" key="2">
-                      <p>
-                        {description}
-                      </p>
+                      <p>{description}</p>
                     </TabPane>
                   </Tabs>
                 </div>

@@ -95,9 +95,7 @@ class ProfileApp extends React.Component {
                     <Button style={{ width: 150 }}>Add to Friend</Button>
                   </Button.Group>
                   <br />
-                  <p className="text-white mt-2">
-                    {'Last activity: ' + lastActivity}
-                  </p>
+                  <p className="text-white mt-2">{'Last activity: ' + lastActivity}</p>
                   <p className="text-white mt-2">
                     {status === 'Online' && <Donut type="success" name={status} />}
                     {status === 'Offline' && <Donut type="danger" name={status} />}
@@ -111,29 +109,19 @@ class ProfileApp extends React.Component {
               <div className="profile__social-name">
                 <h2>
                   <span className="text-black mr-2">
-                    <strong>
-                      {name}
-                    </strong>
+                    <strong>{name}</strong>
                   </span>
-                  <small className="text-muted">
-                    {nickname}
-                  </small>
+                  <small className="text-muted">{nickname}</small>
                 </h2>
-                <p className="mb-1">
-                  {post}
-                </p>
+                <p className="mb-1">{post}</p>
               </div>
               <div className="profile__social-counts">
                 <div className="text-center mr-3">
-                  <h2>
-                    {followersCount}
-                  </h2>
+                  <h2>{followersCount}</h2>
                   <p className="mb-0">Followers</p>
                 </div>
                 <div className="text-center">
-                  <h2>
-                    {postsCount}
-                  </h2>
+                  <h2>{postsCount}</h2>
                   <p className="mb-0">Posts</p>
                 </div>
               </div>
@@ -161,14 +149,12 @@ class ProfileApp extends React.Component {
                 <h5 className="mb-3 text-black">
                   <strong>Skills</strong>
                 </h5>
-                {skills.map((skill, index) =>
+                {skills.map((skill, index) => (
                   <div key={index}>
-                    <div className="mb-1">
-                      {skill.name}
-                    </div>
+                    <div className="mb-1">{skill.name}</div>
                     <Progress percent={skill.value} showInfo={false} />
-                  </div>,
-                )}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="card">
@@ -178,29 +164,21 @@ class ProfileApp extends React.Component {
                 </h5>
                 <dl className="row">
                   <dt className="col-xl-3">Courses End:</dt>
-                  <dd className="col-xl-9">
-                    {coursesEnd}
-                  </dd>
+                  <dd className="col-xl-9">{coursesEnd}</dd>
                   <dt className="col-xl-3">Address:</dt>
-                  <dd className="col-xl-9">
-                    {adress}
-                  </dd>
+                  <dd className="col-xl-9">{adress}</dd>
                   <dt className="col-xl-3">Skills:</dt>
                   <dd className="col-xl-9">
-                    {profSkills.map((skill, index) =>
+                    {profSkills.map((skill, index) => (
                       <span className="badge badge-default mr-1" key={index}>
                         {skill}
-                      </span>,
-                    )}
+                      </span>
+                    ))}
                   </dd>
                   <dt className="col-xl-3">Last companies:</dt>
-                  <dd className="col-xl-9">
-                    {lastCompanies}
-                  </dd>
+                  <dd className="col-xl-9">{lastCompanies}</dd>
                   <dt className="col-xl-3">Personal Information:</dt>
-                  <dd className="col-xl-9">
-                    {personal}
-                  </dd>
+                  <dd className="col-xl-9">{personal}</dd>
                 </dl>
               </div>
             </div>
@@ -267,33 +245,27 @@ class ProfileApp extends React.Component {
                               <div className="mr-3">
                                 <a href="javascript: void(0);" className="mr-3">
                                   <i className="icmn-heart mr-2" />
-                                  {post.likesCount > 0 &&
-                                    <span>
-                                      {post.likesCount + ' Likes'}
-                                    </span>}
-                                  {post.likesCount === 0 &&
-                                    <span>
-                                      {post.likesCount + ' Like'}
-                                    </span>}
+                                  {post.likesCount > 0 && <span>{post.likesCount + ' Likes'}</span>}
+                                  {post.likesCount === 0 && (
+                                    <span>{post.likesCount + ' Like'}</span>
+                                  )}
                                 </a>
                                 <a href="javascript: void(0);">
                                   <i className="icmn-bubble mr-2" />
-                                  {post.commentsCount > 0 &&
-                                    <span>
-                                      {post.commentsCount + ' Comments'}
-                                    </span>}
-                                  {post.commentsCount === 0 &&
-                                    <span>
-                                      {post.commentsCount + ' Comment'}
-                                    </span>}
+                                  {post.commentsCount > 0 && (
+                                    <span>{post.commentsCount + ' Comments'}</span>
+                                  )}
+                                  {post.commentsCount === 0 && (
+                                    <span>{post.commentsCount + ' Comment'}</span>
+                                  )}
                                 </a>
                               </div>
                             </div>
                           </div>
                           <div className="profile__wall-content profile__wall-content--inner">
-                            {post.comments.length > 0 &&
+                            {post.comments.length > 0 && (
                               <div className="profile__wall-comments">
-                                {post.comments.map((postComment, index) =>
+                                {post.comments.map((postComment, index) => (
                                   <div className="profile__wall-item clearfix" key={index}>
                                     <div className="profile__wall-avatar">
                                       <Avatar size="50" src={postComment.avatar} border={false} />
@@ -320,20 +292,19 @@ class ProfileApp extends React.Component {
                                       <div>
                                         <a href="javascript: void(0);" className="mr-2">
                                           <i className="icmn-heart mr-2" />
-                                          {postComment.likesCount > 0 &&
-                                            <span>
-                                              {postComment.likesCount + ' Likes'}
-                                            </span>}
-                                          {postComment.likesCount === 0 &&
-                                            <span>
-                                              {postComment.likesCount + ' Like'}
-                                            </span>}
+                                          {postComment.likesCount > 0 && (
+                                            <span>{postComment.likesCount + ' Likes'}</span>
+                                          )}
+                                          {postComment.likesCount === 0 && (
+                                            <span>{postComment.likesCount + ' Like'}</span>
+                                          )}
                                         </a>
                                       </div>
                                     </div>
-                                  </div>,
-                                )}
-                              </div>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </div>
                           <div className="form-group mt-4 mb-0">
                             <TextArea rows={3} />

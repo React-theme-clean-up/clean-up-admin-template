@@ -47,9 +47,7 @@ class BlogPost extends React.Component {
                     <div className="blog-feed__article-information">
                       <div className="blog-feed__article-title">
                         <h1>
-                          <a href="javascript: void(0);">
-                            {articleData.name}
-                          </a>
+                          <a href="javascript: void(0);">{articleData.name}</a>
                         </h1>
                       </div>
                       <ul className="blog-feed__article-meta">
@@ -73,11 +71,11 @@ class BlogPost extends React.Component {
                       <div className="row">
                         <div className="col-8">
                           <div className="blog-feed__article-hashtags">
-                            {articleData.tags.map((tag, index) =>
+                            {articleData.tags.map((tag, index) => (
                               <a href="javascript: void(0);" key={index}>
                                 {tag}
-                              </a>,
-                            )}
+                              </a>
+                            ))}
                           </div>
                         </div>
                         <div className="col-4">
@@ -107,9 +105,7 @@ class BlogPost extends React.Component {
                       <Avatar src={articleData.authorAvatar} size="110" />
                     </div>
                     <div className="blog-feed__author-inf">
-                      <span className="blog-feed__author-name">
-                        {articleData.author}
-                      </span>
+                      <span className="blog-feed__author-name">{articleData.author}</span>
                       <p className="blog-feed__author-words">
                         &ldquo;{articleData.authorStatus}&rdquo;
                       </p>
@@ -132,9 +128,9 @@ class BlogPost extends React.Component {
                   <div className="blog-feed__comments mb-4">
                     <div className="blog-feed__comments-title">Comments</div>
                     <div className="blog-feed__comments-wrap mt-3">
-                      {comments.length > 0 &&
+                      {comments.length > 0 && (
                         <div className="blog-feed__comments">
-                          {comments.map((postComment, index) =>
+                          {comments.map((postComment, index) => (
                             <div
                               className={
                                 postComment.subComments !== undefined
@@ -165,34 +161,30 @@ class BlogPost extends React.Component {
                                 <div>
                                   <a href="javascript: void(0);" className="mr-3">
                                     <i className="icmn-heart mr-2" />
-                                    {postComment.likesCount > 0 &&
-                                      <span>
-                                        {postComment.likesCount + ' Likes'}
-                                      </span>}
-                                    {postComment.likesCount === 0 &&
-                                      <span>
-                                        {postComment.likesCount + ' Like'}
-                                      </span>}
+                                    {postComment.likesCount > 0 && (
+                                      <span>{postComment.likesCount + ' Likes'}</span>
+                                    )}
+                                    {postComment.likesCount === 0 && (
+                                      <span>{postComment.likesCount + ' Like'}</span>
+                                    )}
                                   </a>
                                   <a href="javascript: void(0);" className="mr-3">
                                     <i className="icmn-bubble mr-2" />
-                                    {postComment.commentsCount > 0 &&
-                                      <span>
-                                        {postComment.commentsCount + ' Comments'}
-                                      </span>}
-                                    {postComment.commentsCount === 0 &&
-                                      <span>
-                                        {postComment.commentsCount + ' Comment'}
-                                      </span>}
+                                    {postComment.commentsCount > 0 && (
+                                      <span>{postComment.commentsCount + ' Comments'}</span>
+                                    )}
+                                    {postComment.commentsCount === 0 && (
+                                      <span>{postComment.commentsCount + ' Comment'}</span>
+                                    )}
                                   </a>
                                   <a href="javascript: void(0);">
                                     <i className="icmn-reply mr-2" />
                                     <span>Reply</span>
                                   </a>
                                 </div>
-                                {postComment.subComments &&
+                                {postComment.subComments && (
                                   <div className="blog-feed__subcomments-content">
-                                    {postComment.subComments.map((subComment, index) =>
+                                    {postComment.subComments.map((subComment, index) => (
                                       <div className="blog-feed__comment-item clearfix" key={index}>
                                         <div className="blog-feed__comment-avatar">
                                           <Avatar
@@ -227,25 +219,23 @@ class BlogPost extends React.Component {
                                           <div>
                                             <a href="javascript: void(0);" className="mr-3">
                                               <i className="icmn-heart mr-2" />
-                                              {subComment.likesCount > 0 &&
-                                                <span>
-                                                  {subComment.likesCount + ' Likes'}
-                                                </span>}
-                                              {subComment.likesCount === 0 &&
-                                                <span>
-                                                  {subComment.likesCount + ' Like'}
-                                                </span>}
+                                              {subComment.likesCount > 0 && (
+                                                <span>{subComment.likesCount + ' Likes'}</span>
+                                              )}
+                                              {subComment.likesCount === 0 && (
+                                                <span>{subComment.likesCount + ' Like'}</span>
+                                              )}
                                             </a>
                                             <a href="javascript: void(0);" className="mr-3">
                                               <i className="icmn-bubble mr-2" />
-                                              {subComment.commentsCount > 0 &&
+                                              {subComment.commentsCount > 0 && (
                                                 <span>
                                                   {subComment.commentsCount + ' Comments'}
-                                                </span>}
-                                              {subComment.commentsCount === 0 &&
-                                                <span>
-                                                  {subComment.commentsCount + ' Comment'}
-                                                </span>}
+                                                </span>
+                                              )}
+                                              {subComment.commentsCount === 0 && (
+                                                <span>{subComment.commentsCount + ' Comment'}</span>
+                                              )}
                                             </a>
                                             <a href="javascript: void(0);">
                                               <i className="icmn-reply mr-2" />
@@ -253,13 +243,15 @@ class BlogPost extends React.Component {
                                             </a>
                                           </div>
                                         </div>
-                                      </div>,
-                                    )}
-                                  </div>}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
-                            </div>,
-                          )}
-                        </div>}
+                            </div>
+                          ))}
+                        </div>
+                      )}
                       <div className="mb-5 pb-2">
                         <a href="javascript: void(0);" className="btn btn-default btn-block mb-5">
                           Load More
@@ -290,20 +282,20 @@ class BlogPost extends React.Component {
                         <span className="blog-feed__partition-name">Categories</span>
                       </div>
                       <ul className="blog-feed__categories-list">
-                        {articlesCategories.map((category, index) =>
+                        {articlesCategories.map((category, index) => (
                           <li className="blog-feed__categories-item" key={index}>
                             <a className="blog-feed__categories-link" href="javascript: void(0);">
                               {category}
                             </a>
-                          </li>,
-                        )}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="blog-feed__sidebar-partition">
                       <div className="blog-feed__partition-head">
                         <span className="blog-feed__partition-name">Latest post</span>
                       </div>
-                      {latesArticlesData.map((latestArticle, index) =>
+                      {latesArticlesData.map((latestArticle, index) => (
                         <article className="blog-feed__latest-post" key={index}>
                           <div className="blog-feed__latest-img">
                             <a href="javascript: void(0);">
@@ -313,9 +305,7 @@ class BlogPost extends React.Component {
                           <div className="blog-feed__latest-data">
                             <div className="blog-feed__latest-name">
                               <h2>
-                                <a href="javascript: void(0);">
-                                  {latestArticle.name}
-                                </a>
+                                <a href="javascript: void(0);">{latestArticle.name}</a>
                               </h2>
                             </div>
                             <ul className="blog-feed__article-meta blog-feed__article-meta--latest">
@@ -331,8 +321,8 @@ class BlogPost extends React.Component {
                               </li>
                             </ul>
                           </div>
-                        </article>,
-                      )}
+                        </article>
+                      ))}
                     </div>
                     <div className="blog-feed__sidebar-partition">
                       <div className="blog-feed__partition-head">

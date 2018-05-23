@@ -14,27 +14,19 @@ class ProfileHeadCard extends React.Component {
           }}
         >
           <h2 className="text-white">
-            <strong>
-              {user.mind}
-            </strong>
+            <strong>{user.mind}</strong>
           </h2>
         </div>
         <div className="ProfileHeadCard__content">
           <div className="ProfileHeadCard__left">
             <Avatar src={user.avatar} size="90" borderColor="white" border="true" />
             <br />
-            <strong>
-              {user.name}
-            </strong>
+            <strong>{user.name}</strong>
             <br />
-            <span className="text-muted">
-              {user.link}
-            </span>
+            <span className="text-muted">{user.link}</span>
           </div>
           <div className="ProfileHeadCard__right">
-            <p>
-              {user.description}
-            </p>
+            <p>{user.description}</p>
           </div>
         </div>
       </div>

@@ -28,7 +28,9 @@ class Documentation extends React.Component {
           <p>
             Clean UI credits: <code>React</code>, <code>CreateReactApp</code>, <code>Redux</code>,{' '}
             <code>Redux-Saga</code>,
-            <code>React Router 4</code>,<code>Webpack 3</code>,<code>AntDesign</code>,<code>Bootstrap</code>,
+            <code>React Router 4</code>,<code>Webpack 3</code>,<code>AntDesign</code>,<code>
+              Bootstrap
+            </code>,
             <code>Chart.js</code>,<code>Chartist</code>,<code>Peity</code>,<code>C3</code>
           </p>
           <p>

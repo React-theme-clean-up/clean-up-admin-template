@@ -25,10 +25,11 @@ class ProductCard extends React.Component {
     return (
       <div className="productCard">
         <div className="productCard__img">
-          {productStatus === 'new' &&
+          {productStatus === 'new' && (
             <div className="productCard__status">
               <span className="productCard__status__title">New</span>
-            </div>}
+            </div>
+          )}
           <div className="productCard__like">
             <i className="icmn-heart" />
           </div>
@@ -37,14 +38,10 @@ class ProductCard extends React.Component {
           </a>
         </div>
         <div className="productCard__title">
-          <a href="javascript: void(0);">
-            {productName}
-          </a>
+          <a href="javascript: void(0);">{productName}</a>
           <div className="productCard__price">
             {productPrice}
-            <div className="productCard__price--old">
-              {productOldPrice}
-            </div>
+            <div className="productCard__price--old">{productOldPrice}</div>
           </div>
         </div>
         <div className="productCard__descr">

@@ -50,7 +50,7 @@ class GalleryList extends React.Component {
         </div>
         <div className="card-body">
           <div className="gallery">
-            {imgData.map((image, index) =>
+            {imgData.map((image, index) => (
               <div
                 className={
                   image.editable === false
@@ -60,7 +60,7 @@ class GalleryList extends React.Component {
                 style={{ backgroundImage: 'url(' + image.path + ')' }}
                 key={index}
               >
-                {image.editable === true &&
+                {image.editable === true && (
                   <div className="gallery__item-controls">
                     <Button.Group size="default">
                       <Button>
@@ -70,9 +70,10 @@ class GalleryList extends React.Component {
                         <Icon type="delete" />
                       </Button>
                     </Button.Group>
-                  </div>}
-              </div>,
-            )}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

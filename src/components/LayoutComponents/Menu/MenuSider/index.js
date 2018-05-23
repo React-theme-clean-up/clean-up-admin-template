@@ -686,9 +686,7 @@ class Navigation extends React.Component {
       if (menuItem.children) {
         let subMenuTitle = (
           <span className="menuSider__title-wrap" key={menuItem.key}>
-            <span className="menuSider__item-title">
-              {menuItem.title}
-            </span>
+            <span className="menuSider__item-title">{menuItem.title}</span>
             {menuItem.icon && <span className={menuItem.icon + ' menuSider__icon'} />}
           </span>
         )
@@ -709,32 +707,30 @@ class Navigation extends React.Component {
     const icon = item.icon
     const disabled = item.disabled
     const { dispatch } = this.props
-    return item.divider
-      ? <Divider key={Math.random()} />
-      : item.url
-        ? <Menu.Item key={key} disabled={disabled}>
-            <Link
-              to={url}
-              onClick={
-                this.props.isMobile
-                  ? () => {
-                      dispatch(setLayoutState({ menuCollapsed: false }))
-                    }
-                  : undefined
-              }
-            >
-              <span className="menuSider__item-title">
-                {title}
-              </span>
-              {icon && <span className={icon + ' menuSider__icon'} />}
-            </Link>
-          </Menu.Item>
-        : <Menu.Item key={key} disabled={disabled}>
-            <span className="menuSider__item-title">
-              {title}
-            </span>
-            {icon && <span className={icon + ' menuSider__icon'} />}
-          </Menu.Item>
+    return item.divider ? (
+      <Divider key={Math.random()} />
+    ) : item.url ? (
+      <Menu.Item key={key} disabled={disabled}>
+        <Link
+          to={url}
+          onClick={
+            this.props.isMobile
+              ? () => {
+                  dispatch(setLayoutState({ menuCollapsed: false }))
+                }
+              : undefined
+          }
+        >
+          <span className="menuSider__item-title">{title}</span>
+          {icon && <span className={icon + ' menuSider__icon'} />}
+        </Link>
+      </Menu.Item>
+    ) : (
+      <Menu.Item key={key} disabled={disabled}>
+        <span className="menuSider__item-title">{title}</span>
+        {icon && <span className={icon + ' menuSider__icon'} />}
+      </Menu.Item>
+    )
   }
 
   onCollapse = (collapsed, type) => {
@@ -776,13 +772,15 @@ class Navigation extends React.Component {
     return (
       <Sider {...params}>
         <div className="menuSider__logo">
-          {params.collapsed
-            ? <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
-                <img src="resources/images/logo-inverse-mobile.png" alt="" />
-              </div>
-            : <div className="menuSider__logoContainer">
-                <img src="resources/images/logo-inverse.png" alt="" />
-              </div>}
+          {params.collapsed ? (
+            <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
+              <img src="resources/images/logo-inverse-mobile.png" alt="" />
+            </div>
+          ) : (
+            <div className="menuSider__logoContainer">
+              <img src="resources/images/logo-inverse.png" alt="" />
+            </div>
+          )}
         </div>
         <Menu
           theme="dark"

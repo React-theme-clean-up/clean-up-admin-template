@@ -4,24 +4,21 @@ import './style.scss'
 import { chats } from './data.json'
 import Avatar from 'components/CleanComponents/Avatar'
 
-const Message = ({ chat, user }) =>
+const Message = ({ chat, user }) => (
   <div
-    className={`clearfix chat__item ${user === chat.username
-      ? 'chat__item--left'
-      : 'chat__item--right'}`}
+    className={`clearfix chat__item ${
+      user === chat.username ? 'chat__item--left' : 'chat__item--right'
+    }`}
   >
     <div className="chat__itemAvatar">
       <Avatar src={chat.img} size="50" border="false" />
     </div>
     <div className="chat__itemContent">
-      <strong>
-        {chat.username}
-      </strong>
-      <p>
-        {chat.content}
-      </p>
+      <strong>{chat.username}</strong>
+      <p>{chat.content}</p>
     </div>
   </div>
+)
 
 class Chat extends React.Component {
   state = {
