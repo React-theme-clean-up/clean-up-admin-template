@@ -19,7 +19,7 @@ class AppMenu extends React.Component {
 
   toggleOpen = () => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({menuMobileOpened: !this.state.menuMobileOpened}))
+    dispatch(setLayoutState({ menuMobileOpened: !this.state.menuMobileOpened }))
   }
 
   componentWillReceiveProps(newProps) {

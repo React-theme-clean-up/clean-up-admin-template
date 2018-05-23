@@ -718,7 +718,7 @@ class Navigation extends React.Component {
               onClick={
                 this.props.isMobile
                   ? () => {
-                      dispatch(setLayoutState({menuCollapsed: false}))
+                      dispatch(setLayoutState({ menuCollapsed: false }))
                     }
                   : undefined
               }
@@ -742,7 +742,7 @@ class Navigation extends React.Component {
     if (type === 'responsive' && this.state.menuCollapsed) {
       return
     }
-    dispatch(setLayoutState({menuCollapsed: !this.state.menuCollapsed}))
+    dispatch(setLayoutState({ menuCollapsed: !this.state.menuCollapsed }))
   }
 
   componentDidMount() {

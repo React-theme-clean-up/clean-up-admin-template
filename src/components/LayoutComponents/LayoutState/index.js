@@ -23,14 +23,16 @@ const updateSettings = ({ layoutState }) => {
 @connect(mapStateToProps)
 @withRouter
 class LayoutState extends React.PureComponent {
-
   bootstrapLayoutSettings() {
-    const { dispatch} = this.props
+    const { dispatch } = this.props
     const urlParams = qs.parse(this.props.location.search)
     const storageParams = JSON.parse(window.localStorage.getItem('app.layoutState'))
     const mergedParams = merge({}, storageParams, urlParams)
-    const booleanMergedParams = JSON.parse(JSON.stringify(mergedParams), (key, value) => (value === 'true') ? true : (value === 'false' ? false : value))
-    dispatch(setLayoutState({...booleanMergedParams}))
+    const booleanMergedParams = JSON.parse(
+      JSON.stringify(mergedParams),
+      (key, value) => (value === 'true' ? true : value === 'false' ? false : value),
+    )
+    dispatch(setLayoutState({ ...booleanMergedParams }))
   }
 
   componentWillReceiveProps(newProps) {
