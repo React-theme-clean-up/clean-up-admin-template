@@ -1,47 +1,48 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderFormAdvancedsearch } from './Advancedsearch/index.js'
-import { default as renderFormCoordinated } from './Coordinated/index.js'
-import { default as renderFormCustomizedformcontrols } from './Customizedformcontrols/index.js'
-import { default as renderFormDynamicformitem } from './Dynamicformitem/index.js'
-import { default as renderFormDynamicrule } from './Dynamicrule/index.js'
-import { default as renderFormForminmodal } from './Forminmodal/index.js'
-import { default as renderFormGlobalstate } from './Globalstate/index.js'
-import { default as renderFormHorizontallogin } from './Horizontallogin/index.js'
-import { default as renderFormLayout } from './Layout/index.js'
-import { default as renderFormNormallogin } from './Normallogin/index.js'
-import { default as renderFormRegister } from './Register/index.js'
-import { default as renderFormTimerelatedcontrols } from './Timerelatedcontrols/index.js'
-import { default as renderFormValidateother } from './Validateother/index.js'
-import { default as renderFormValidatestatic } from './Validatestatic/index.js'
-import { default as renderFormWithoutformcreate } from './Withoutformcreate/index.js'
+import { default as renderFormAdvancedsearch } from './Advancedsearch/index.js';
+import { default as renderFormCoordinated } from './Coordinated/index.js';
+import { default as renderFormCustomizedformcontrols } from './Customizedformcontrols/index.js';
+import { default as renderFormDynamicformitem } from './Dynamicformitem/index.js';
+import { default as renderFormDynamicrule } from './Dynamicrule/index.js';
+import { default as renderFormForminmodal } from './Forminmodal/index.js';
+import { default as renderFormGlobalstate } from './Globalstate/index.js';
+import { default as renderFormHorizontallogin } from './Horizontallogin/index.js';
+import { default as renderFormLayout } from './Layout/index.js';
+import { default as renderFormNormallogin } from './Normallogin/index.js';
+import { default as renderFormRegister } from './Register/index.js';
+import { default as renderFormTimerelatedcontrols } from './Timerelatedcontrols/index.js';
+import { default as renderFormValidateother } from './Validateother/index.js';
+import { default as renderFormValidatestatic } from './Validatestatic/index.js';
+import { default as renderFormWithoutformcreate } from './Withoutformcreate/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class FormItems extends React.Component {
+
   componentDidMount() {
-    renderFormAdvancedsearch(ReactDOM, document.getElementById('FormAdvancedsearch'))
-    renderFormCoordinated(ReactDOM, document.getElementById('FormCoordinated'))
-    renderFormCustomizedformcontrols(
-      ReactDOM,
-      document.getElementById('FormCustomizedformcontrols'),
-    )
-    renderFormDynamicformitem(ReactDOM, document.getElementById('FormDynamicformitem'))
-    renderFormDynamicrule(ReactDOM, document.getElementById('FormDynamicrule'))
-    renderFormForminmodal(ReactDOM, document.getElementById('FormForminmodal'))
-    renderFormGlobalstate(ReactDOM, document.getElementById('FormGlobalstate'))
-    renderFormHorizontallogin(ReactDOM, document.getElementById('FormHorizontallogin'))
-    renderFormLayout(ReactDOM, document.getElementById('FormLayout'))
-    renderFormNormallogin(ReactDOM, document.getElementById('FormNormallogin'))
-    renderFormRegister(ReactDOM, document.getElementById('FormRegister'))
-    renderFormTimerelatedcontrols(ReactDOM, document.getElementById('FormTimerelatedcontrols'))
-    renderFormValidateother(ReactDOM, document.getElementById('FormValidateother'))
-    renderFormValidatestatic(ReactDOM, document.getElementById('FormValidatestatic'))
-    renderFormWithoutformcreate(ReactDOM, document.getElementById('FormWithoutformcreate'))
+    renderFormAdvancedsearch(ReactDOM, document.getElementById("FormAdvancedsearch"));
+renderFormCoordinated(ReactDOM, document.getElementById("FormCoordinated"));
+renderFormCustomizedformcontrols(ReactDOM, document.getElementById("FormCustomizedformcontrols"));
+renderFormDynamicformitem(ReactDOM, document.getElementById("FormDynamicformitem"));
+renderFormDynamicrule(ReactDOM, document.getElementById("FormDynamicrule"));
+renderFormForminmodal(ReactDOM, document.getElementById("FormForminmodal"));
+renderFormGlobalstate(ReactDOM, document.getElementById("FormGlobalstate"));
+renderFormHorizontallogin(ReactDOM, document.getElementById("FormHorizontallogin"));
+renderFormLayout(ReactDOM, document.getElementById("FormLayout"));
+renderFormNormallogin(ReactDOM, document.getElementById("FormNormallogin"));
+renderFormRegister(ReactDOM, document.getElementById("FormRegister"));
+renderFormTimerelatedcontrols(ReactDOM, document.getElementById("FormTimerelatedcontrols"));
+renderFormValidateother(ReactDOM, document.getElementById("FormValidateother"));
+renderFormValidatestatic(ReactDOM, document.getElementById("FormValidatestatic"));
+renderFormWithoutformcreate(ReactDOM, document.getElementById("FormWithoutformcreate"));
+
   }
 
   render() {
@@ -53,12 +54,7 @@ class FormItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Form</strong>
-                  <a
-                    href="https://ant.design/components/form/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
-                  >
+                  <a href="https://ant.design/components/form/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -67,40 +63,24 @@ class FormItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-form-demo-advanced-search">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Advanced search</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Three columns layout is often used for advanced searching of data table.
-                        Because the width of label is not fixed, you may need to adjust it by
-                        customizing its style.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormAdvancedsearch" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Row, Col, Input, Button, Icon \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Advanced search</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Three columns layout is often used for advanced searching of data table.
+
+Because the width of label is not fixed, you may need to adjust it by customizing its style.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="FormAdvancedsearch" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Row, Col, Input, Button, Icon \} from 'antd';
 const FormItem = Form.Item;
 
 class AdvancedSearchForm extends React.Component \{
@@ -175,49 +155,30 @@ ReactDOM.render(
   mountNode
 );
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-customized-form-controls">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized Form Controls</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Customized or third-party form controls can be used in Form, too. Controls
-                        must follow these conventions: > * It has a controlled property{' '}
-                        <code>{'value'}</code> or other name which is equal to the value of [<code>{'valuePropName'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
-                        > * It has event <code>{'onChange'}</code> or an event which name is equal
-                        to the value of [<code>{'trigger'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
-                        > * It must be a class component.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormCustomizedformcontrols" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, Select, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-customized-form-controls">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized Form Controls</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Customized or third-party form controls can be used in Form, too. Controls must follow these conventions:
+> * It has a controlled property <code>{'value'}</code> or other name which is equal to the value of [<code>{'valuePropName'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
+> * It has event <code>{'onChange'}</code> or an event which name is equal to the value of [<code>{'trigger'}</code>](http://ant.design/components/form/?locale=en-US#getFieldDecorator's-parameters).
+> * It must be a class component.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormCustomizedformcontrols" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, Select, Button \} from 'antd';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
@@ -325,44 +286,27 @@ const WrappedDemo = Form.create()(Demo);
 
 ReactDOM.render(<WrappedDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-dynamic-rule">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Dynamic Rules</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Perform different check rules according to different situations.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormDynamicrule" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, Button, Checkbox \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-dynamic-rule">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Dynamic Rules</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Perform different check rules according to different situations.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormDynamicrule" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, Button, Checkbox \} from 'antd';
 const FormItem = Form.Item;
 
 const formItemLayout = \{
@@ -439,52 +383,29 @@ const WrappedDynamicRule = Form.create()(DynamicRule);
 ReactDOM.render(<WrappedDynamicRule />, mountNode);
 
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-global-state">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">
-                            Store Form Data into Upper Component
-                          </strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        We can store form data into upper component or
-                        [Redux](https://github.com/reactjs/redux) or
-                        [dva](https://github.com/dvajs/dva) by using <code>{'onFieldsChange'}</code>{' '}
-                        and <code>{'mapPropsToFields'}</code>, see more at this [rc-form
-                        demo](http://react-component.github.io/form/examples/redux.html). **Note:**
-                        You must wrap field data with <code>{'Form.createFormField'}</code> in{' '}
-                        <code>{'mapPropsToFields'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormGlobalstate" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-global-state">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Store Form Data into Upper Component</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">We can store form data into upper component or [Redux](https://github.com/reactjs/redux) or [dva](https://github.com/dvajs/dva) by using <code>{'onFieldsChange'}</code> and <code>{'mapPropsToFields'}</code>, see more at this [rc-form demo](http://react-component.github.io/form/examples/redux.html).
+
+**Note:** You must wrap field data with <code>{'Form.createFormField'}</code> in <code>{'mapPropsToFields'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormGlobalstate" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input \} from 'antd';
 const FormItem = Form.Item;
 
 const CustomizedForm = Form.create(\{
@@ -543,45 +464,27 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-layout">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Form Layout</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        There are three layout for form: <code>{'horizontal'}</code>,{' '}
-                        <code>{'vertical'}</code>, <code>{'inline'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormLayout" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, Button, Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-layout">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Form Layout</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">There are three layout for form: <code>{'horizontal'}</code>, <code>{'vertical'}</code>, <code>{'inline'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormLayout" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, Button, Radio \} from 'antd';
 const FormItem = Form.Item;
 
 class FormLayoutDemo extends React.Component \{
@@ -639,44 +542,27 @@ class FormLayoutDemo extends React.Component \{
 
 ReactDOM.render(<FormLayoutDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-register">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Registration</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Fill in this form to create a new account for you.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormRegister" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-register">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Registration</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Fill in this form to create a new account for you.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormRegister" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete \} from 'antd';
 const FormItem = Form.Item;
 const Option = Select.Option;
 const AutoCompleteOption = AutoComplete.Option;
@@ -920,45 +806,27 @@ const WrappedRegistrationForm = Form.create()(RegistrationForm);
 
 ReactDOM.render(<WrappedRegistrationForm />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-validate-other">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Other Form Controls</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Demostration for validataion configuration for form controls which are not
-                        show in the above demos.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormValidateother" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-validate-other">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Other Form Controls</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Demostration for validataion configuration for form controls which are not show in the above demos.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormValidateother" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{
   Form, Select, InputNumber, Switch, Radio,
   Slider, Button, Upload, Icon, Rate,
 \} from 'antd';
@@ -1147,47 +1015,27 @@ const WrappedDemo = Form.create()(Demo);
 
 ReactDOM.render(<WrappedDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-without-form-create">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Handle Form Data Manually</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        <code>{'Form.create'}</code> will collect and validate form data
-                        automatically. But if you don't need this feature or the default behaviour
-                        cannot satisfy your business, you can drop <code>{'Form.create'}</code> and
-                        handle form data manually.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormWithoutformcreate" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, InputNumber \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-without-form-create">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Handle Form Data Manually</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0"><code>{'Form.create'}</code> will collect and validate form data automatically. But if you don't need this feature or the default behaviour cannot satisfy your business, you can drop <code>{'Form.create'}</code> and handle form data manually.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormWithoutformcreate" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, InputNumber \} from 'antd';
 const FormItem = Form.Item;
 
 function validatePrimeNumber(number) \{
@@ -1246,47 +1094,30 @@ class RawForm extends React.Component \{
 
 ReactDOM.render(<RawForm />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-form-demo-coordinated">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Coordinated Controls</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Use <code>{'setFieldsValue'}</code> to set other control's value
-                        programmaticly.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormCoordinated" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Select, Input, Button \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Coordinated Controls</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Use <code>{'setFieldsValue'}</code> to set other control's value programmaticly.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormCoordinated" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Select, Input, Button \} from 'antd';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
@@ -1353,42 +1184,27 @@ const WrappedApp = Form.create()(App);
 
 ReactDOM.render(<WrappedApp />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-dynamic-form-item">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Dynamic Form Item</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Add or remove form items dynamically.</div>
-                      <div className="card-body pb-0">
-                        <div id="FormDynamicformitem" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, Icon, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-dynamic-form-item">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Dynamic Form Item</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Add or remove form items dynamically.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormDynamicformitem" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, Icon, Button \} from 'antd';
 const FormItem = Form.Item;
 
 let uuid = 0;
@@ -1498,46 +1314,27 @@ class DynamicFieldSet extends React.Component \{
 const WrappedDynamicFieldSet = Form.create()(DynamicFieldSet);
 ReactDOM.render(<WrappedDynamicFieldSet />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-form-in-modal">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Form in Modal to Create</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        When user visit a page with a list of items, and want to create a new item.
-                        The page can popup a form in Modal, then let user fills in the form to
-                        create an item.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormForminmodal" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Button, Modal, Form, Input, Radio \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-form-in-modal">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Form in Modal to Create</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">When user visit a page with a list of items, and want to create a new item. The page can popup a form in Modal, then let user fills in the form to create an item.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormForminmodal" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Button, Modal, Form, Input, Radio \} from 'antd';
 const FormItem = Form.Item;
 
 const CollectionCreateForm = Form.create()(
@@ -1623,44 +1420,27 @@ class CollectionsPage extends React.Component \{
 
 ReactDOM.render(<CollectionsPage />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-horizontal-login">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Horizontal Login Form</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Horizontal login form is often used in navigation bar.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormHorizontallogin" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Icon, Input, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-horizontal-login">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Horizontal Login Form</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Horizontal login form is often used in navigation bar.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormHorizontallogin" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Icon, Input, Button \} from 'antd';
 const FormItem = Form.Item;
 
 function hasErrors(fieldsError) \{
@@ -1726,44 +1506,27 @@ const WrappedHorizontalLoginForm = Form.create()(HorizontalLoginForm);
 
 ReactDOM.render(<WrappedHorizontalLoginForm />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-normal-login">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Login Form</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Normal login form which can contain more elements.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormNormallogin" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Icon, Input, Button, Checkbox \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-normal-login">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Login Form</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Normal login form which can contain more elements.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormNormallogin" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Icon, Input, Button, Checkbox \} from 'antd';
 const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component \{
@@ -1815,46 +1578,27 @@ const WrappedNormalLoginForm = Form.create()(NormalLoginForm);
 
 ReactDOM.render(<WrappedNormalLoginForm />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-time-related-controls">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        After <code>{'antd@2.0'}</code>, the <code>{'value'}</code> of time-related
-                        components had been changed to <code>{'moment'}</code>. So, we need to
-                        pre-process those values.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormTimerelatedcontrols" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, DatePicker, TimePicker, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-time-related-controls">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">After <code>{'antd@2.0'}</code>, the <code>{'value'}</code> of time-related components had been changed to <code>{'moment'}</code>. So, we need to pre-process those values.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormTimerelatedcontrols" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, DatePicker, TimePicker, Button \} from 'antd';
 const FormItem = Form.Item;
 const MonthPicker = DatePicker.MonthPicker;
 const RangePicker = DatePicker.RangePicker;
@@ -1971,50 +1715,31 @@ const WrappedTimeRelatedForm = Form.create()(TimeRelatedForm);
 
 ReactDOM.render(<WrappedTimeRelatedForm />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-form-demo-validate-static">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized Validation</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        We provide properties like <code>{'validateStatus'}</code>{' '}
-                        <code>{'help'}</code> <code>{'hasFeedback'}</code> to customize your own
-                        validate status and message, without using <code>{'Form.create'}</code> and{' '}
-                        <code>{'getFieldDecorator'}</code>. 1. <code>{'validateStatus'}</code>:
-                        validate status of form components which could be 'success', 'warning',
-                        'error', 'validating'. 2. <code>{'hasFeedback'}</code>: display feed icon of
-                        input control 3. <code>{'help'}</code>: display validate message.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="FormValidatestatic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Form, Input, DatePicker, Col, TimePicker, Select, Cascader, InputNumber \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-form-demo-validate-static">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized Validation</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">We provide properties like <code>{'validateStatus'}</code> <code>{'help'}</code> <code>{'hasFeedback'}</code> to customize your own validate status and message, without using <code>{'Form.create'}</code> and <code>{'getFieldDecorator'}</code>.
+
+1. <code>{'validateStatus'}</code>: validate status of form components which could be 'success', 'warning', 'error', 'validating'.
+2. <code>{'hasFeedback'}</code>: display feed icon of input control
+3. <code>{'help'}</code>: display validate message.
+</div>
+    <div className="card-body pb-0">
+      <div id="FormValidatestatic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Form, Input, DatePicker, Col, TimePicker, Select, Cascader, InputNumber \} from 'antd';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
@@ -2159,11 +1884,12 @@ ReactDOM.render(
   </Form>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

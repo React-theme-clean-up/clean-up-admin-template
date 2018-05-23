@@ -1,78 +1,81 @@
 import React from 'react'
-import './style.css'
-import { Select } from 'antd'
+import './style.scss'
+import { Select } from 'antd';
 
-import jsonp from 'fetch-jsonp'
+import jsonp from 'fetch-jsonp';
 
-import querystring from 'querystring'
+import querystring from 'querystring';
+
+
 
 export default function(ReactDOM, mountNode) {
-  const Option = Select.Option
+  const Option = Select.Option;
 
-  let timeout
-  let currentValue
+let timeout;
+let currentValue;
 
-  function fetch(value, callback) {
-    if (timeout) {
-      clearTimeout(timeout)
-      timeout = null
-    }
-    currentValue = value
+function fetch(value, callback) {
+  if (timeout) {
+    clearTimeout(timeout);
+    timeout = null;
+  }
+  currentValue = value;
 
-    function fake() {
-      const str = querystring.encode({
-        code: 'utf-8',
-        q: value,
-      })
-      jsonp(`https://suggest.taobao.com/sug?${str}`).then(response => response.json()).then(d => {
+  function fake() {
+    const str = querystring.encode({
+      code: 'utf-8',
+      q: value,
+    });
+    jsonp(`https://suggest.taobao.com/sug?${str}`)
+      .then(response => response.json())
+      .then((d) => {
         if (currentValue === value) {
-          const result = d.result
-          const data = []
-          result.forEach(r => {
+          const result = d.result;
+          const data = [];
+          result.forEach((r) => {
             data.push({
               value: r[0],
               text: r[0],
-            })
-          })
-          callback(data)
+            });
+          });
+          callback(data);
         }
-      })
-    }
-
-    timeout = setTimeout(fake, 300)
+      });
   }
 
-  class SearchInput extends React.Component {
-    state = {
-      data: [],
-      value: '',
-    }
-    handleChange = value => {
-      this.setState({ value })
-      fetch(value, data => this.setState({ data }))
-    }
-    render() {
-      const options = this.state.data.map(d =>
-        <Option key={d.value}>
-          {d.text}
-        </Option>,
-      )
-      return (
-        <Select
-          mode="combobox"
-          value={this.state.value}
-          placeholder={this.props.placeholder}
-          style={this.props.style}
-          defaultActiveFirstOption={false}
-          showArrow={false}
-          filterOption={false}
-          onChange={this.handleChange}
-        >
-          {options}
-        </Select>
-      )
-    }
-  }
+  timeout = setTimeout(fake, 300);
+}
 
-  ReactDOM.render(<SearchInput placeholder="input search text" style={{ width: 200 }} />, mountNode)
+class SearchInput extends React.Component {
+  state = {
+    data: [],
+    value: '',
+  }
+  handleChange = (value) => {
+    this.setState({ value });
+    fetch(value, data => this.setState({ data }));
+  }
+  render() {
+    const options = this.state.data.map(d => <Option key={d.value}>{d.text}</Option>);
+    return (
+      <Select
+        mode="combobox"
+        value={this.state.value}
+        placeholder={this.props.placeholder}
+        style={this.props.style}
+        defaultActiveFirstOption={false}
+        showArrow={false}
+        filterOption={false}
+        onChange={this.handleChange}
+      >
+        {options}
+      </Select>
+    );
+  }
+}
+
+ReactDOM.render(
+  <SearchInput placeholder="input search text" style={{ width: 200 }} />
+, mountNode);
+
 }

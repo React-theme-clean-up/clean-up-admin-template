@@ -1,32 +1,36 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderLayoutBasic } from './Basic/index.js'
-import { default as renderLayoutCustomtrigger } from './Customtrigger/index.js'
-import { default as renderLayoutFixedsider } from './Fixedsider/index.js'
-import { default as renderLayoutFixed } from './Fixed/index.js'
-import { default as renderLayoutResponsive } from './Responsive/index.js'
-import { default as renderLayoutSide } from './Side/index.js'
-import { default as renderLayoutTopside2 } from './Topside2/index.js'
-import { default as renderLayoutTopside } from './Topside/index.js'
-import { default as renderLayoutTop } from './Top/index.js'
+import { default as renderLayoutBasic } from './Basic/index.js';
+import { default as renderLayoutCustomtrigger } from './Customtrigger/index.js';
+import { default as renderLayoutFixedsider } from './Fixedsider/index.js';
+import { default as renderLayoutFixed } from './Fixed/index.js';
+import { default as renderLayoutResponsive } from './Responsive/index.js';
+import { default as renderLayoutSide } from './Side/index.js';
+import { default as renderLayoutTopside2 } from './Topside2/index.js';
+import { default as renderLayoutTopside } from './Topside/index.js';
+import { default as renderLayoutTop } from './Top/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class LayoutItems extends React.Component {
+
   componentDidMount() {
-    renderLayoutBasic(ReactDOM, document.getElementById('LayoutBasic'))
-    renderLayoutCustomtrigger(ReactDOM, document.getElementById('LayoutCustomtrigger'))
-    renderLayoutFixedsider(ReactDOM, document.getElementById('LayoutFixedsider'))
-    renderLayoutFixed(ReactDOM, document.getElementById('LayoutFixed'))
-    renderLayoutResponsive(ReactDOM, document.getElementById('LayoutResponsive'))
-    renderLayoutSide(ReactDOM, document.getElementById('LayoutSide'))
-    renderLayoutTopside2(ReactDOM, document.getElementById('LayoutTopside2'))
-    renderLayoutTopside(ReactDOM, document.getElementById('LayoutTopside'))
-    renderLayoutTop(ReactDOM, document.getElementById('LayoutTop'))
+    renderLayoutBasic(ReactDOM, document.getElementById("LayoutBasic"));
+renderLayoutCustomtrigger(ReactDOM, document.getElementById("LayoutCustomtrigger"));
+renderLayoutFixedsider(ReactDOM, document.getElementById("LayoutFixedsider"));
+renderLayoutFixed(ReactDOM, document.getElementById("LayoutFixed"));
+renderLayoutResponsive(ReactDOM, document.getElementById("LayoutResponsive"));
+renderLayoutSide(ReactDOM, document.getElementById("LayoutSide"));
+renderLayoutTopside2(ReactDOM, document.getElementById("LayoutTopside2"));
+renderLayoutTopside(ReactDOM, document.getElementById("LayoutTopside"));
+renderLayoutTop(ReactDOM, document.getElementById("LayoutTop"));
+
   }
 
   render() {
@@ -38,12 +42,7 @@ class LayoutItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Layout</strong>
-                  <a
-                    href="https://ant.design/components/layout/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
-                  >
+                  <a href="https://ant.design/components/layout/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -52,36 +51,21 @@ class LayoutItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-layout-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic Structure</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Classic page layouts.</div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic Structure</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Classic page layouts.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout \} from 'antd';
 const \{ Header, Footer, Sider, Content \} = Layout;
 
 ReactDOM.render(
@@ -121,45 +105,27 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-fixed-sider">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Fixed Sider</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        When dealing with long content, a fixed sider can provide a better user
-                        experience.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutFixedsider" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-fixed-sider">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Fixed Sider</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">When dealing with long content, a fixed sider can provide a better user experience.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutFixedsider" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Icon \} from 'antd';
 const \{ Header, Content, Footer, Sider \} = Layout;
 
 ReactDOM.render(
@@ -227,48 +193,29 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-responsive">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Responsive</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Layout.Sider supports responsive layout. > Note: You can get a responsive
-                        layout by setting <code>{'breakpoint'}</code>, the Sider will collapse to
-                        the width of <code>{'collapsedWidth'}</code> when window width is below the{' '}
-                        <code>{'breakpoint'}</code>. And a special trigger will appear if the{' '}
-                        <code>{'collapsedWidth'}</code> is set to <code>{'0'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutResponsive" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-responsive">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Responsive</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Layout.Sider supports responsive layout.
+
+> Note: You can get a responsive layout by setting <code>{'breakpoint'}</code>, the Sider will collapse to the width of <code>{'collapsedWidth'}</code> when window width is below the <code>{'breakpoint'}</code>. And a special trigger will appear if the <code>{'collapsedWidth'}</code> is set to <code>{'0'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutResponsive" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Icon \} from 'antd';
 const \{ Header, Content, Footer, Sider \} = Layout;
 
 ReactDOM.render(
@@ -312,44 +259,27 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-top-side-2">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Header Sider 2</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Both the top navigation and the sidebar, commonly used in application site.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutTopside2" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-top-side-2">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Header Sider 2</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Both the top navigation and the sidebar, commonly used in application site.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutTopside2" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
 const \{ SubMenu \} = Menu;
 const \{ Header, Content, Sider \} = Layout;
 
@@ -410,54 +340,32 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-top">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        The most basic "header-content-footer" layout. Generally, the mainnav is
-                        placed at the top of the page, and includes the logo, the first level
-                        navigation, and the secondary menu (users, settings, notifications) from
-                        left to right in it. We always put contents in a fixed size navigation (eg:{' '}
-                        <code>{'1200px'}</code>), the layout of the whole page is stable, it's not
-                        affected by viewing area. Top-bottom structure is conform with the
-                        top-bottom viewing habit, it's a classical navigation pattern of websites.
-                        This pattern demonstrates efficiency in the main workarea, while using some
-                        vertical space. And because the horizontal space of the navigation is
-                        limited, this pattern is not suitable for cases when the first level
-                        navigation contains many elements or links
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutTop" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Breadcrumb \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-top">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The most basic "header-content-footer" layout.
+
+Generally, the mainnav is placed at the top of the page, and includes the logo, the first level navigation, and the secondary menu (users, settings, notifications) from left to right in it.
+We always put contents in a fixed size navigation (eg: <code>{'1200px'}</code>), the layout of the whole page is stable, it's not affected by viewing area.
+
+Top-bottom structure is conform with the top-bottom viewing habit, it's a classical navigation pattern of websites. This pattern demonstrates efficiency in the main workarea, while using some vertical space. And because the horizontal space of the navigation is limited, this pattern is not suitable for cases when the first level navigation contains many elements or links
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutTop" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Breadcrumb \} from 'antd';
 const \{ Header, Content, Footer \} = Layout;
 
 ReactDOM.render(
@@ -489,47 +397,30 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-layout-demo-custom-trigger">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Custom trigger</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        If you want to use a customized trigger, you can hide the default one by
-                        setting <code>{'trigger={null}'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutCustomtrigger" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Icon \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Custom trigger</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">If you want to use a customized trigger, you can hide the default one by setting <code>{'trigger={null}'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutCustomtrigger" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Icon \} from 'antd';
 const \{ Header, Sider, Content \} = Layout;
 
 class SiderDemo extends React.Component \{
@@ -584,45 +475,27 @@ class SiderDemo extends React.Component \{
 
 ReactDOM.render(<SiderDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-fixed">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Fixed Header</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Fixed Header is generally used to fix the top navigation to facilitate page
-                        switching.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutFixed" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Breadcrumb \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-fixed">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Fixed Header</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Fixed Header is generally used to fix the top navigation to facilitate page switching.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutFixed" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Breadcrumb \} from 'antd';
 const \{ Header, Content, Footer \} = Layout;
 
 ReactDOM.render(
@@ -654,53 +527,31 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-side">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Sider</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Two-columns layout. The sider menu can be collapsed when horizontal space is
-                        limited. Generally, the mainnav is placed on the left side of the page, and
-                        the secondary menu is placed on the top of the working area. Contents will
-                        adapt the layout to the viewing area to improve the horizontal space usage,
-                        while the layout of the whole page is not stable. The level of the aisde
-                        navigation is scalable. The first, second, and third level navigations could
-                        be present more fluently and relevantly, and aside navigation can be fixed,
-                        allowing the user to quickly switch and spot the current position, improving
-                        the user experience. However, this navigation occupies some horizontal space
-                        of the contents
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutSide" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-side">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Sider</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Two-columns layout. The sider menu can be collapsed when horizontal space is limited.
+
+Generally, the mainnav is placed on the left side of the page, and the secondary menu is placed on the top of the working area. Contents will adapt the layout to the viewing area to improve the horizontal space usage, while the layout of the whole page is not stable.
+
+The level of the aisde navigation is scalable. The first, second, and third level navigations could be present more fluently and relevantly, and aside navigation can be fixed, allowing the user to quickly switch and spot the current position, improving the user experience. However, this navigation occupies some horizontal space of the contents
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutSide" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
 const \{ Header, Content, Footer, Sider \} = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -773,45 +624,27 @@ class SiderDemo extends React.Component \{
 
 ReactDOM.render(<SiderDemo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-layout-demo-top-side">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Both the top navigation and the sidebar, commonly used in documentation
-                        site.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="LayoutTopside" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-layout-demo-top-side">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Both the top navigation and the sidebar, commonly used in documentation site.
+</div>
+    <div className="card-body pb-0">
+      <div id="LayoutTopside" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Layout, Menu, Breadcrumb, Icon \} from 'antd';
 const \{ SubMenu \} = Menu;
 const \{ Header, Content, Footer, Sider \} = Layout;
 
@@ -875,11 +708,12 @@ ReactDOM.render(
   </Layout>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

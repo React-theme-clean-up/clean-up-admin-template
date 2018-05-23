@@ -1,63 +1,64 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderTableAjax } from './Ajax/index.js'
-import { default as renderTableBasic } from './Basic/index.js'
-import { default as renderTableBordered } from './Bordered/index.js'
-import { default as renderTableColspanrowspan } from './Colspanrowspan/index.js'
-import { default as renderTableCustomfilterpanel } from './Customfilterpanel/index.js'
-import { default as renderTableDragsorting } from './Dragsorting/index.js'
-import { default as renderTableDynamicsettings } from './Dynamicsettings/index.js'
-import { default as renderTableEditcell } from './Editcell/index.js'
-import { default as renderTableEditrow } from './Editrow/index.js'
-import { default as renderTableExpandchildren } from './Expandchildren/index.js'
-import { default as renderTableExpand } from './Expand/index.js'
-import { default as renderTableFixedcolumnsheader } from './Fixedcolumnsheader/index.js'
-import { default as renderTableFixedcolumns } from './Fixedcolumns/index.js'
-import { default as renderTableFixedheader } from './Fixedheader/index.js'
-import { default as renderTableGroupingcolumns } from './Groupingcolumns/index.js'
-import { default as renderTableHead } from './Head/index.js'
-import { default as renderTableJsx } from './Jsx/index.js'
-import { default as renderTableNestedtable } from './Nestedtable/index.js'
-import { default as renderTableResetfilter } from './Resetfilter/index.js'
-import { default as renderTableRowselectionandoperation } from './Rowselectionandoperation/index.js'
-import { default as renderTableRowselectioncustom } from './Rowselectioncustom/index.js'
-import { default as renderTableRowselection } from './Rowselection/index.js'
-import { default as renderTableSize } from './Size/index.js'
+import { default as renderTableAjax } from './Ajax/index.js';
+import { default as renderTableBasic } from './Basic/index.js';
+import { default as renderTableBordered } from './Bordered/index.js';
+import { default as renderTableColspanrowspan } from './Colspanrowspan/index.js';
+import { default as renderTableCustomfilterpanel } from './Customfilterpanel/index.js';
+import { default as renderTableDragsorting } from './Dragsorting/index.js';
+import { default as renderTableDynamicsettings } from './Dynamicsettings/index.js';
+import { default as renderTableEditcell } from './Editcell/index.js';
+import { default as renderTableEditrow } from './Editrow/index.js';
+import { default as renderTableExpandchildren } from './Expandchildren/index.js';
+import { default as renderTableExpand } from './Expand/index.js';
+import { default as renderTableFixedcolumnsheader } from './Fixedcolumnsheader/index.js';
+import { default as renderTableFixedcolumns } from './Fixedcolumns/index.js';
+import { default as renderTableFixedheader } from './Fixedheader/index.js';
+import { default as renderTableGroupingcolumns } from './Groupingcolumns/index.js';
+import { default as renderTableHead } from './Head/index.js';
+import { default as renderTableJsx } from './Jsx/index.js';
+import { default as renderTableNestedtable } from './Nestedtable/index.js';
+import { default as renderTableResetfilter } from './Resetfilter/index.js';
+import { default as renderTableRowselectionandoperation } from './Rowselectionandoperation/index.js';
+import { default as renderTableRowselectioncustom } from './Rowselectioncustom/index.js';
+import { default as renderTableRowselection } from './Rowselection/index.js';
+import { default as renderTableSize } from './Size/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class TableItems extends React.Component {
+
   componentDidMount() {
-    renderTableAjax(ReactDOM, document.getElementById('TableAjax'))
-    renderTableBasic(ReactDOM, document.getElementById('TableBasic'))
-    renderTableBordered(ReactDOM, document.getElementById('TableBordered'))
-    renderTableColspanrowspan(ReactDOM, document.getElementById('TableColspanrowspan'))
-    renderTableCustomfilterpanel(ReactDOM, document.getElementById('TableCustomfilterpanel'))
-    renderTableDragsorting(ReactDOM, document.getElementById('TableDragsorting'))
-    renderTableDynamicsettings(ReactDOM, document.getElementById('TableDynamicsettings'))
-    renderTableEditcell(ReactDOM, document.getElementById('TableEditcell'))
-    renderTableEditrow(ReactDOM, document.getElementById('TableEditrow'))
-    renderTableExpandchildren(ReactDOM, document.getElementById('TableExpandchildren'))
-    renderTableExpand(ReactDOM, document.getElementById('TableExpand'))
-    renderTableFixedcolumnsheader(ReactDOM, document.getElementById('TableFixedcolumnsheader'))
-    renderTableFixedcolumns(ReactDOM, document.getElementById('TableFixedcolumns'))
-    renderTableFixedheader(ReactDOM, document.getElementById('TableFixedheader'))
-    renderTableGroupingcolumns(ReactDOM, document.getElementById('TableGroupingcolumns'))
-    renderTableHead(ReactDOM, document.getElementById('TableHead'))
-    renderTableJsx(ReactDOM, document.getElementById('TableJsx'))
-    renderTableNestedtable(ReactDOM, document.getElementById('TableNestedtable'))
-    renderTableResetfilter(ReactDOM, document.getElementById('TableResetfilter'))
-    renderTableRowselectionandoperation(
-      ReactDOM,
-      document.getElementById('TableRowselectionandoperation'),
-    )
-    renderTableRowselectioncustom(ReactDOM, document.getElementById('TableRowselectioncustom'))
-    renderTableRowselection(ReactDOM, document.getElementById('TableRowselection'))
-    renderTableSize(ReactDOM, document.getElementById('TableSize'))
+    renderTableAjax(ReactDOM, document.getElementById("TableAjax"));
+renderTableBasic(ReactDOM, document.getElementById("TableBasic"));
+renderTableBordered(ReactDOM, document.getElementById("TableBordered"));
+renderTableColspanrowspan(ReactDOM, document.getElementById("TableColspanrowspan"));
+renderTableCustomfilterpanel(ReactDOM, document.getElementById("TableCustomfilterpanel"));
+renderTableDragsorting(ReactDOM, document.getElementById("TableDragsorting"));
+renderTableDynamicsettings(ReactDOM, document.getElementById("TableDynamicsettings"));
+renderTableEditcell(ReactDOM, document.getElementById("TableEditcell"));
+renderTableEditrow(ReactDOM, document.getElementById("TableEditrow"));
+renderTableExpandchildren(ReactDOM, document.getElementById("TableExpandchildren"));
+renderTableExpand(ReactDOM, document.getElementById("TableExpand"));
+renderTableFixedcolumnsheader(ReactDOM, document.getElementById("TableFixedcolumnsheader"));
+renderTableFixedcolumns(ReactDOM, document.getElementById("TableFixedcolumns"));
+renderTableFixedheader(ReactDOM, document.getElementById("TableFixedheader"));
+renderTableGroupingcolumns(ReactDOM, document.getElementById("TableGroupingcolumns"));
+renderTableHead(ReactDOM, document.getElementById("TableHead"));
+renderTableJsx(ReactDOM, document.getElementById("TableJsx"));
+renderTableNestedtable(ReactDOM, document.getElementById("TableNestedtable"));
+renderTableResetfilter(ReactDOM, document.getElementById("TableResetfilter"));
+renderTableRowselectionandoperation(ReactDOM, document.getElementById("TableRowselectionandoperation"));
+renderTableRowselectioncustom(ReactDOM, document.getElementById("TableRowselectioncustom"));
+renderTableRowselection(ReactDOM, document.getElementById("TableRowselection"));
+renderTableSize(ReactDOM, document.getElementById("TableSize"));
+
   }
 
   render() {
@@ -69,12 +70,7 @@ class TableItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Table</strong>
-                  <a
-                    href="https://ant.design/components/table/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
-                  >
+                  <a href="https://ant.design/components/table/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -83,41 +79,24 @@ class TableItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-table-demo-ajax">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Ajax</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        This example shows how to fetch and present data from remote server, and how
-                        to implement filtering and sorting in server side by sending related
-                        parameters to server. **Note, this example use [Mock
-                        API](https://randomuser.me) that you can look up in Network Console.**
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableAjax" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Ajax
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">This example shows how to fetch and present data from remote server, and how to implement filtering and sorting in server side by sending related parameters to server.
+
+**Note, this example use [Mock API](https://randomuser.me) that you can look up in Network Console.**
+</div>
+    <div className="card-body pb-0">
+      <div id="TableAjax" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 import reqwest from 'reqwest';
 
 const columns = [\{
@@ -200,42 +179,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-bordered">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize" />
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Add border, title and footer for table.</div>
-                      <div className="card-body pb-0">
-                        <div id="TableBordered" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-bordered">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize"></strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Add border, title and footer for table.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableBordered" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -277,46 +241,28 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-custom-filter-panel">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Customized filter panel</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Implement a customized column search example via{' '}
-                        <code>{'filterDropdown'}</code>, <code>{'filterDropdownVisible'}</code> and{' '}
-                        <code>{'filterDropdownVisibleChange'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableCustomfilterpanel" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Input, Button, Icon \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-custom-filter-panel">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Customized filter panel
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Implement a customized column search example via <code>{'filterDropdown'}</code>, <code>{'filterDropdownVisible'}</code> and <code>{'filterDropdownVisibleChange'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableCustomfilterpanel" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Input, Button, Icon \} from 'antd';
 
 const data = [\{
   key\: '1',
@@ -421,44 +367,28 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-dynamic-settings">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Dynamic Settings</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Select different settings to see the result.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableDynamicsettings" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Icon, Switch, Radio, Form, Divider \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-dynamic-settings">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Dynamic Settings
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Select different settings to see the result.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableDynamicsettings" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Icon, Switch, Radio, Form, Divider \} from 'antd';
 const FormItem = Form.Item;
 
 const columns = [\{
@@ -624,42 +554,28 @@ class Demo extends React.Component \{
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-edit-row">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Editable Rows</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Table with editable rows.</div>
-                      <div className="card-body pb-0">
-                        <div id="TableEditrow" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Input, Popconfirm \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-edit-row">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Editable Rows
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Table with editable rows.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableEditrow" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Input, Popconfirm \} from 'antd';
 
 const data = [];
 for (let i = 0; i < 100; i++) \{
@@ -772,45 +688,28 @@ class EditableTable extends React.Component \{
 
 ReactDOM.render(<EditableTable />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-expand">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Expandable Row</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        When there's too much information to show and the table can't display all at
-                        once.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableExpand" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-expand">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Expandable Row
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">When there's too much information to show and the table can't display all at once.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableExpand" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [
   \{ title\: 'Name', dataIndex\: 'name', key\: 'name' \},
@@ -833,48 +732,32 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-fixed-columns">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Fixed Columns</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        To fix some columns and scroll inside other columns, and you must set{' '}
-                        <code>{'scroll.x'}</code> meanwhile. > Specify the width of columns if
-                        header and cell do not align properly. > A fixed value which is greater than
-                        table width for <code>{'scroll.x'}</code> is recommended. The sum of unfixed
-                        columns should not greater than <code>{'scroll.x'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableFixedcolumns" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-fixed-columns">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Fixed Columns
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">To fix some columns and scroll inside other columns, and you must set <code>{'scroll.x'}</code> meanwhile.
+
+> Specify the width of columns if header and cell do not align properly.
+
+> A fixed value which is greater than table width for <code>{'scroll.x'}</code> is recommended. The sum of unfixed columns should not greater than <code>{'scroll.x'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableFixedcolumns" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [
   \{ title\: 'Full Name', width\: 100, dataIndex\: 'name', key\: 'name', fixed\: 'left' \},
@@ -910,44 +793,28 @@ const data = [\{
 
 ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1300 \}\} />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-grouping-columns">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Grouping table head</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Group table head with <code>{'columns[n].children'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableGroupingcolumns" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-grouping-columns">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Grouping table head
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Group table head with <code>{'columns[n].children'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableGroupingcolumns" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -1037,47 +904,30 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-jsx">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">JSX style API</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Using JSX style API (introduced in 2.5.0) > Since this is just a syntax
-                        sugar for the prop <code>{'columns'}</code>, so that you can't compose{' '}
-                        <code>{'Column'}</code> and <code>{'ColumnGroup'}</code> with other
-                        Components.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableJsx" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Icon, Divider \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-jsx">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">JSX style API
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Using JSX style API (introduced in 2.5.0)
+
+> Since this is just a syntax sugar for the prop <code>{'columns'}</code>, so that you can't compose <code>{'Column'}</code> and <code>{'ColumnGroup'}</code> with other Components.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableJsx" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Icon, Divider \} from 'antd';
 
 const \{ Column, ColumnGroup \} = Table;
 
@@ -1143,48 +993,32 @@ ReactDOM.render(
   </Table>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-reset-filter">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Reset filters and sorters</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Control filters and sorters by <code>{'filteredValue'}</code> and{' '}
-                        <code>{'sortOrder'}</code>. > 1. Defining <code>{'filteredValue'}</code> or{' '}
-                        <code>{'sortOrder'}</code> means that it is in the controlled mode. > 2.
-                        Make sure <code>{'sortOrder'}</code> is assigned for only one column. > 3.{' '}
-                        <code>{'column.key'}</code> is required.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableResetfilter" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-reset-filter">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Reset filters and sorters
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Control filters and sorters by <code>{'filteredValue'}</code> and <code>{'sortOrder'}</code>.
+
+> 1. Defining <code>{'filteredValue'}</code> or <code>{'sortOrder'}</code> means that it is in the controlled mode.
+> 2. Make sure <code>{'sortOrder'}</code> is assigned for only one column.
+> 3. <code>{'column.key'}</code> is required.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableResetfilter" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Button \} from 'antd';
 
 const data = [\{
   key\: '1',
@@ -1287,46 +1121,29 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-row-selection-custom">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Custom selection</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Use <code>{'rowSelection.selections'}</code> custom selections, default no
-                        select dropdown, show default selections via setting to{' '}
-                        <code>{'true'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableRowselectioncustom" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-row-selection-custom">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Custom selection
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Use <code>{'rowSelection.selections'}</code> custom selections, default no select dropdown, show default selections via setting to <code>{'true'}</code>.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="TableRowselectioncustom" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -1408,45 +1225,28 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-size">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">size</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Two compacted table size: <code>{'middle'}</code> and <code>{'small'}</code>,{' '}
-                        <code>{'small'}</code> size is used in Modal only.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableSize" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-size">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">size
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Two compacted table size: <code>{'middle'}</code> and <code>{'small'}</code>, <code>{'small'}</code> size is used in Modal only.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableSize" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -1484,44 +1284,31 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-table-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic Usage</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Simple table with actions.</div>
-                      <div className="card-body pb-0">
-                        <div id="TableBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Icon, Divider \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic Usage
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Simple table with actions.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Icon, Divider \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -1571,47 +1358,30 @@ const data = [\{
 
 ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-colspan-rowspan">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">colSpan and rowSpan</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Table column title supports <code>{'colSpan'}</code> that set in{' '}
-                        <code>{'column'}</code>. Table cell supports <code>{'colSpan'}</code> and{' '}
-                        <code>{'rowSpan'}</code> that set in render return object. When each of them
-                        is set to <code>{'0'}</code>, the cell will not be rendered.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableColspanrowspan" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-colspan-rowspan">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">colSpan and rowSpan
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Table column title supports <code>{'colSpan'}</code> that set in <code>{'column'}</code>.
+
+Table cell supports <code>{'colSpan'}</code> and <code>{'rowSpan'}</code> that set in render return object. When each of them is set to <code>{'0'}</code>, the cell will not be rendered.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableColspanrowspan" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 // In the fifth row, other columns are merged into first column
 // by setting it's colSpan to be 0
@@ -1716,45 +1486,28 @@ const data = [\{
 ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} bordered />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-drag-sorting">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Drag sorting</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        By using custom components, we can integrate table with react-dnd to
-                        implement drag sorting.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableDragsorting" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-drag-sorting">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Drag sorting
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">By using custom components, we can integrate table with react-dnd to implement drag sorting.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableDragsorting" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 import \{ DragDropContext, DragSource, DropTarget \} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
@@ -1932,42 +1685,28 @@ const Demo = DragDropContext(HTML5Backend)(DragSortingTable);
 
 ReactDOM.render(<Demo />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-edit-cell">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Editable Cells</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Table with editable cells.</div>
-                      <div className="card-body pb-0">
-                        <div id="TableEditcell" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Input, Icon, Button, Popconfirm \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-edit-cell">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Editable Cells
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Table with editable cells.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableEditcell" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Input, Icon, Button, Popconfirm \} from 'antd';
 
 class EditableCell extends React.Component \{
   state = \{
@@ -2110,46 +1849,30 @@ class EditableTable extends React.Component \{
 
 ReactDOM.render(<EditableTable />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-expand-children">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Tree data</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Display tree structure data in Table, control the indent width by setting{' '}
-                        <code>{'indentSize'}</code>. > Note, no support for recursive selection of
-                        tree structure data table yet.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableExpandchildren" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-expand-children">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Tree data
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Display tree structure data in Table, control the indent width by setting <code>{'indentSize'}</code>.
+
+> Note, no support for recursive selection of tree structure data table yet.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableExpandchildren" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -2235,48 +1958,32 @@ ReactDOM.render(
   <Table columns=\{columns\} rowSelection=\{rowSelection\} dataSource=\{data\} />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-fixed-columns-header">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Fixed Columns and Header</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        A Solution for displaying large amounts of data with long columns. > Specify
-                        the width of columns if header and cell do not align properly. > A fixed
-                        value which is greater than table width for <code>{'scroll.x'}</code> is
-                        recommended. The sum of unfixed columns should not greater than{' '}
-                        <code>{'scroll.x'}</code>.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableFixedcolumnsheader" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-fixed-columns-header">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Fixed Columns and Header
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">A Solution for displaying large amounts of data with long columns.
+
+> Specify the width of columns if header and cell do not align properly.
+
+> A fixed value which is greater than table width for <code>{'scroll.x'}</code> is recommended. The sum of unfixed columns should not greater than <code>{'scroll.x'}</code>.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableFixedcolumnsheader" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [
   \{ title\: 'Full Name', width\: 100, dataIndex\: 'name', key\: 'name', fixed\: 'left' \},
@@ -2310,45 +2017,30 @@ for (let i = 0; i < 100; i++) \{
 
 ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1500, y\: 300 \}\} />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-fixed-header">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Fixed Header</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Display large amounts of data in scrollable view. > Specify the width of
-                        each column if header and cell do not align properly.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableFixedheader" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-fixed-header">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Fixed Header
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Display large amounts of data in scrollable view.
+
+> Specify the width of each column if header and cell do not align properly.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableFixedheader" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -2377,50 +2069,32 @@ ReactDOM.render(
   <Table columns=\{columns\} dataSource=\{data\} pagination=\{\{ pageSize\: 50 \}\} scroll=\{\{ y\: 240 \}\} />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-head">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Filter and sorter</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Use <code>{'filters'}</code> to generate filter menu in columns,{' '}
-                        <code>{'onFilter'}</code> to determine filtered result, and{' '}
-                        <code>{'filterMultiple'}</code> to indicate whether it's multiple or single
-                        selection. Use <code>{'sorter'}</code> to make a column sortable.{' '}
-                        <code>{'sorter'}</code> can be a function{' '}
-                        <code>{'function(a, b) { ... }'}</code> for sorting data locally. Uses{' '}
-                        <code>{'defaultSortOrder'}</code> to make a column sorted by default.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableHead" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-head">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Filter and sorter
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Use <code>{'filters'}</code> to generate filter menu in columns, <code>{'onFilter'}</code> to determine filtered result, and <code>{'filterMultiple'}</code> to indicate whether it's multiple or single selection.
+
+Use <code>{'sorter'}</code> to make a column sortable. <code>{'sorter'}</code> can be a function <code>{'function(a, b) { ... }'}</code> for sorting data locally.
+
+Uses <code>{'defaultSortOrder'}</code> to make a column sorted by default.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableHead" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -2496,42 +2170,28 @@ ReactDOM.render(
   <Table columns=\{columns\} dataSource=\{data\} onChange=\{onChange\} />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-nested-table">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Nested tables</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Showing more detailed info of every row.</div>
-                      <div className="card-body pb-0">
-                        <div id="TableNestedtable" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-nested-table">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Nested tables
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Showing more detailed info of every row.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableNestedtable" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`
 import \{ Table, Badge, Menu, Dropdown, Icon \} from 'antd';
 
 const menu = (
@@ -2623,45 +2283,29 @@ function NestedTable() \{
 
 ReactDOM.render(<NestedTable />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-row-selection-and-operation">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Selection and operation</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        To perform operations and clear selections after selecting some rows, use{' '}
-                        <code>{'rowSelection.selectedRowKeys'}</code> to control selected rows.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableRowselectionandoperation" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-row-selection-and-operation">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Selection and operation
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">To perform operations and clear selections after selecting some rows, use <code>{'rowSelection.selectedRowKeys'}</code> to control selected rows.
+
+</div>
+    <div className="card-body pb-0">
+      <div id="TableRowselectionandoperation" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table, Button \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -2733,47 +2377,30 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-table-demo-row-selection">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">selection</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Rows can be selectable by making first column as a selectable column. >
-                        selection happens when clicking checkbox defaultly. You can see
-                        https://codesandbox.io/s/000vqw38rl if you need row-click selection
-                        behavior.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="TableRowselection" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Table \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-table-demo-row-selection">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">selection
+ </strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Rows can be selectable by making first column as a selectable column.
+
+> selection happens when clicking checkbox defaultly. You can see https://codesandbox.io/s/000vqw38rl if you need row-click selection behavior.
+</div>
+    <div className="card-body pb-0">
+      <div id="TableRowselection" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Table \} from 'antd';
 
 const columns = [\{
   title\: 'Name',
@@ -2823,11 +2450,12 @@ ReactDOM.render(
   <Table rowSelection=\{rowSelection\} columns=\{columns\} dataSource=\{data\} />
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

@@ -1,26 +1,30 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism'
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
-import { Collapse, Icon } from 'antd'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
+import { Collapse, Icon } from 'antd';
 
-import { default as renderCheckboxBasic } from './Basic/index.js'
-import { default as renderCheckboxCheckall } from './Checkall/index.js'
-import { default as renderCheckboxController } from './Controller/index.js'
-import { default as renderCheckboxDisabled } from './Disabled/index.js'
-import { default as renderCheckboxGroup } from './Group/index.js'
-import { default as renderCheckboxLayout } from './Layout/index.js'
+import { default as renderCheckboxBasic } from './Basic/index.js';
+import { default as renderCheckboxCheckall } from './Checkall/index.js';
+import { default as renderCheckboxController } from './Controller/index.js';
+import { default as renderCheckboxDisabled } from './Disabled/index.js';
+import { default as renderCheckboxGroup } from './Group/index.js';
+import { default as renderCheckboxLayout } from './Layout/index.js';
 
-const Panel = Collapse.Panel
+
+const Panel = Collapse.Panel;
+
 
 class CheckboxItems extends React.Component {
+
   componentDidMount() {
-    renderCheckboxBasic(ReactDOM, document.getElementById('CheckboxBasic'))
-    renderCheckboxCheckall(ReactDOM, document.getElementById('CheckboxCheckall'))
-    renderCheckboxController(ReactDOM, document.getElementById('CheckboxController'))
-    renderCheckboxDisabled(ReactDOM, document.getElementById('CheckboxDisabled'))
-    renderCheckboxGroup(ReactDOM, document.getElementById('CheckboxGroup'))
-    renderCheckboxLayout(ReactDOM, document.getElementById('CheckboxLayout'))
+    renderCheckboxBasic(ReactDOM, document.getElementById("CheckboxBasic"));
+renderCheckboxCheckall(ReactDOM, document.getElementById("CheckboxCheckall"));
+renderCheckboxController(ReactDOM, document.getElementById("CheckboxController"));
+renderCheckboxDisabled(ReactDOM, document.getElementById("CheckboxDisabled"));
+renderCheckboxGroup(ReactDOM, document.getElementById("CheckboxGroup"));
+renderCheckboxLayout(ReactDOM, document.getElementById("CheckboxLayout"));
+
   }
 
   render() {
@@ -32,12 +36,7 @@ class CheckboxItems extends React.Component {
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
                   <strong>Checkbox</strong>
-                  <a
-                    href="https://ant.design/components/checkbox/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
-                  >
+                  <a href="https://ant.design/components/checkbox/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-2">
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </h5>
@@ -46,36 +45,21 @@ class CheckboxItems extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card" id="components-checkbox-demo-basic">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Basic</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Basic usage of checkbox.</div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxBasic" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Basic</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Basic usage of checkbox.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxBasic" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox \} from 'antd';
 
 function onChange(e) \{
   console.log(\`checked = \$\{e.target.checked\}\`);
@@ -85,42 +69,27 @@ ReactDOM.render(
   <Checkbox onChange=\{onChange\}>Checkbox</Checkbox>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-checkbox-demo-controller">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Controlled Checkbox</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Communicated with other components.</div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxController" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox, Button \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-checkbox-demo-controller">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Controlled Checkbox</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Communicated with other components.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxController" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox, Button \} from 'antd';
 
 class App extends React.Component \{
   state = \{
@@ -176,44 +145,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-checkbox-demo-group">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Checkbox Group</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        Generate a group of checkboxes from an array.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxGroup" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-checkbox-demo-group">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Checkbox Group</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Generate a group of checkboxes from an array.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxGroup" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox \} from 'antd';
 const CheckboxGroup = Checkbox.Group;
 
 function onChange(checkedValues) \{
@@ -242,47 +194,30 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                   <div className="col-lg-6">
                     <div className="card" id="components-checkbox-demo-check-all">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Check all</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        The <code>{'indeterminate'}</code> property can help you to achieve a 'check
-                        all' effect.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxCheckall" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox \} from 'antd';
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Check all</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">The <code>{'indeterminate'}</code> property can help you to achieve a 'check all' effect.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxCheckall" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox \} from 'antd';
 const CheckboxGroup = Checkbox.Group;
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];
@@ -329,42 +264,27 @@ class App extends React.Component \{
 
 ReactDOM.render(<App />, mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-checkbox-demo-disabled">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Disabled</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">Disabled checkbox.</div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxDisabled" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-checkbox-demo-disabled">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Disabled</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">Disabled checkbox.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxDisabled" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox \} from 'antd';
 
 ReactDOM.render(
   <div>
@@ -374,44 +294,27 @@ ReactDOM.render(
   </div>
   , mountNode);
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
-                    <div className="card" id="components-checkbox-demo-layout">
-                      <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
-                          <strong className="text-capitalize">Use with Grid</strong>
-                        </h5>
-                      </div>
-                      <div className="card-body pb-0">
-                        We can use Checkbox and Grid in Checkbox.Group, to implement complex layout.
-                      </div>
-                      <div className="card-body pb-0">
-                        <div id="CheckboxLayout" />
-                      </div>
-                      <div className="utils__codeCollapse">
-                        <Collapse bordered={false} defaultActiveKey={['1']}>
-                          <Panel
-                            header={
-                              <span>
-                                <i
-                                  className="fa fa-code"
-                                  style={{ fontSize: 16, color: '#9f9f9f' }}
-                                />
-                                <span className="ml-2 text-primary">Show Code</span>
-                              </span>
-                            }
-                            key="2"
-                            showArrow={false}
-                          >
-                            <SyntaxHighlighter
-                              language="jsx"
-                              style={base16AteliersulphurpoolLight}
-                              useInlineStyles={true}
-                            >
-                              {`import \{ Checkbox, Row, Col \} from 'antd';
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+<div className="card" id="components-checkbox-demo-layout">
+  <div className="card-header">
+    <h5 className="mb-0 mr-3 d-inline-block text-black">
+      <strong className="text-capitalize">Use with Grid</strong>
+    </h5>
+  </div>
+    <div className="card-body pb-0">We can use Checkbox and Grid in Checkbox.Group, to implement complex layout.
+</div>
+    <div className="card-body pb-0">
+      <div id="CheckboxLayout" />
+    </div>
+    <div className="utils__codeCollapse">
+      <Collapse bordered={false} defaultActiveKey={['1']}>
+        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
+          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
+            {`import \{ Checkbox, Row, Col \} from 'antd';
 
 function onChange(checkedValues) \{
   console.log('checked = ', checkedValues);
@@ -430,11 +333,12 @@ ReactDOM.render(
   mountNode
 );
 `}
-                            </SyntaxHighlighter>
-                          </Panel>
-                        </Collapse>
-                      </div>
-                    </div>
+          </SyntaxHighlighter>
+        </Panel>
+      </Collapse>
+    </div>
+</div>
+
                   </div>
                 </div>
               </div>

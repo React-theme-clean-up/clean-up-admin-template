@@ -1,58 +1,60 @@
 import React from 'react'
-import './style.css'
-import { Modal, Button } from 'antd'
+import './style.scss'
+import { Modal, Button } from 'antd';
+
+
+
 
 export default function(ReactDOM, mountNode) {
   class LocalizedModal extends React.Component {
-    state = { visible: false }
-    showModal = () => {
-      this.setState({
-        visible: true,
-      })
-    }
-    hideModal = () => {
-      this.setState({
-        visible: false,
-      })
-    }
-    render() {
-      return (
-        <div>
-          <Button type="primary" onClick={this.showModal}>
-            Modal
-          </Button>
-          <Modal
-            title="Modal"
-            visible={this.state.visible}
-            onOk={this.hideModal}
-            onCancel={this.hideModal}
-            okText="确认"
-            cancelText="取消"
-          >
-            <p>Bla bla ...</p>
-            <p>Bla bla ...</p>
-            <p>Bla bla ...</p>
-          </Modal>
-        </div>
-      )
-    }
+  state = { visible: false }
+  showModal = () => {
+    this.setState({
+      visible: true,
+    });
   }
-
-  function confirm() {
-    Modal.confirm({
-      title: 'Confirm',
-      content: 'Bla bla ...',
-      okText: '确认',
-      cancelText: '取消',
-    })
+  hideModal = () => {
+    this.setState({
+      visible: false,
+    });
   }
+  render() {
+    return (
+      <div>
+        <Button type="primary" onClick={this.showModal}>Modal</Button>
+        <Modal
+          title="Modal"
+          visible={this.state.visible}
+          onOk={this.hideModal}
+          onCancel={this.hideModal}
+          okText="确认"
+          cancelText="取消"
+        >
+          <p>Bla bla ...</p>
+          <p>Bla bla ...</p>
+          <p>Bla bla ...</p>
+        </Modal>
+      </div>
+    );
+  }
+}
 
-  ReactDOM.render(
-    <div>
-      <LocalizedModal />
-      <br />
-      <Button onClick={confirm}>Confirm</Button>
-    </div>,
-    mountNode,
-  )
+function confirm() {
+  Modal.confirm({
+    title: 'Confirm',
+    content: 'Bla bla ...',
+    okText: '确认',
+    cancelText: '取消',
+  });
+}
+
+ReactDOM.render(
+  <div>
+    <LocalizedModal />
+    <br />
+    <Button onClick={confirm}>Confirm</Button>
+  </div>,
+  mountNode
+);
+
 }
