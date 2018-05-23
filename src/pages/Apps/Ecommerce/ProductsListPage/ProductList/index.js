@@ -181,10 +181,10 @@ class ProductsList extends React.Component {
         key: 'action',
         render: (text, record) =>
           <span>
-            <a href="" className="mr-2">
+            <a href="javascript: void(0);" className="mr-2">
               <i className="icmn-pencil mr-1" /> View
             </a>
-            <a href="">
+            <a href="javascript: void(0);">
               <i className="icmn-cross mr-1" /> Remove
             </a>
           </span>,

@@ -15,7 +15,7 @@ import { LocaleProvider } from 'antd'
 import enGB from 'antd/lib/locale-provider/en_GB'
 import registerServiceWorker from 'registerServiceWorker'
 
-import Layout from 'components/PageComponents/Layout'
+import Layout from 'components/LayoutComponents/Layout'
 import reducer from 'ducks'
 
 import 'resources/_antd.less' // redefinition Ant Design variables

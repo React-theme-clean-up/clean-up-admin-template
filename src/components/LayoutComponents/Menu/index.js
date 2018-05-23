@@ -4,38 +4,38 @@ import DrawerMenu from 'rc-drawer-menu'
 import { Scrollbars } from 'react-custom-scrollbars'
 import { MenuSider } from './MenuSider'
 import { connect } from 'react-redux'
-import { setOpenedMenuMobile } from 'ducks/app'
+import { setLayoutState } from 'ducks/app'
 import './style.css'
 
 const mapStateToProps = (state, props) => ({
-  openedMenuMobile: state.app.openedMenuMobile,
+  layoutState: state.app.layoutState,
 })
 
 @connect(mapStateToProps)
 class AppMenu extends React.Component {
   state = {
-    open: this.props.openedMenuMobile,
+    menuMobileOpened: this.props.layoutState.menuMobileOpened,
   }
 
   toggleOpen = () => {
     const { dispatch } = this.props
-    dispatch(setOpenedMenuMobile(!this.state.open))
+    dispatch(setLayoutState({menuMobileOpened: !this.state.menuMobileOpened}))
   }
 
   componentWillReceiveProps(newProps) {
     this.setState({
-      open: newProps.openedMenuMobile,
+      menuMobileOpened: newProps.layoutState.menuMobileOpened,
     })
   }
 
   render() {
     const { isMobile } = this.props
-    const { open } = this.state
+    const { menuMobileOpened } = this.state
     return isMobile
       ? <DrawerMenu
           parent={null}
           level={null}
-          open={open}
+          open={menuMobileOpened}
           onMaskClick={this.toggleOpen}
           onIconClick={this.toggleOpen}
           width="256px"

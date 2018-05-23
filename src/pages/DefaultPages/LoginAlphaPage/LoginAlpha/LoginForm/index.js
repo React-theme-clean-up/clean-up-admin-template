@@ -48,7 +48,7 @@ class LoginFormComponent extends React.Component {
           <a
             className="login-form-forgot pull-right text-primary"
             style={{ lineHeight: '36px' }}
-            href=""
+            href="javascript: void(0);"
           >
             Forgot password?
           </a>

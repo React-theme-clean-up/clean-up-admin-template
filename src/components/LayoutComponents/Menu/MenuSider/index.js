@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Menu, Switch, Layout } from 'antd'
 import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
-import { setOpenedMenuMobile, toggleMenuDesktop } from 'ducks/app'
+import { setLayoutState } from 'ducks/app'
 import 'rc-drawer-menu/assets/index.css'
 import './style.css'
 
@@ -603,13 +603,13 @@ const menuData = [
 ]
 
 const mapStateToProps = (state, props) => ({
-  collapsedMenuDesktop: state.app.collapsedMenuDesktop,
+  layoutState: state.app.layoutState,
 })
 
 @connect(mapStateToProps)
 class Navigation extends React.Component {
   state = {
-    collapsed: this.props.collapsedMenuDesktop,
+    menuCollapsed: this.props.layoutState.menuCollapsed,
     current: '',
     opened: [''],
   }
@@ -651,7 +651,7 @@ class Navigation extends React.Component {
   }
 
   getActiveMenuItem = (props, items) => {
-    let collapsed = props.collapsedMenuDesktop
+    let menuCollapsed = props.layoutState.menuCollapsed
     let current = this.state.current
     let url = props.location.pathname
     let [activeMenuItem, ...path] = ''
@@ -662,7 +662,7 @@ class Navigation extends React.Component {
       ;[activeMenuItem, ...path] = this.getPath(items, current)
     }
 
-    if (collapsed) {
+    if (menuCollapsed) {
       path = ['']
     }
 
@@ -670,13 +670,13 @@ class Navigation extends React.Component {
       this.setState({
         current: activeMenuItem.key,
         opened: path.map(entry => entry.key),
-        collapsed: collapsed,
+        menuCollapsed,
       })
     } else {
       this.setState({
         current: '',
         opened: [],
-        collapsed: collapsed,
+        menuCollapsed,
       })
     }
   }
@@ -718,7 +718,7 @@ class Navigation extends React.Component {
               onClick={
                 this.props.isMobile
                   ? () => {
-                      dispatch(setOpenedMenuMobile(false))
+                      dispatch(setLayoutState({menuCollapsed: false}))
                     }
                   : undefined
               }
@@ -739,11 +739,10 @@ class Navigation extends React.Component {
 
   onCollapse = (collapsed, type) => {
     const { dispatch } = this.props
-    const isCollapsed = this.state.collapsed
-    if (type === 'responsive' && isCollapsed) {
+    if (type === 'responsive' && this.state.menuCollapsed) {
       return
     }
-    dispatch(toggleMenuDesktop())
+    dispatch(setLayoutState({menuCollapsed: !this.state.menuCollapsed}))
   }
 
   componentDidMount() {
@@ -757,7 +756,7 @@ class Navigation extends React.Component {
   }
 
   render() {
-    const { collapsed, current, opened } = this.state
+    const { menuCollapsed, current, opened } = this.state
     const { isMobile } = this.props
     const menuItems = this.generateMenuPartitions(menuData)
     const paramsMobile = {
@@ -769,7 +768,7 @@ class Navigation extends React.Component {
     const paramsDesktop = {
       width: 256,
       collapsible: true,
-      collapsed,
+      collapsed: menuCollapsed,
       onCollapse: this.onCollapse,
       breakpoint: 'lg',
     }

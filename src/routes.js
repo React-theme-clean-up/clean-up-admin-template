@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import { ConnectedSwitch } from 'reactRouterConnected'
 import Loadable from 'react-loadable'
-import Page from 'components/PageComponents'
+import Page from 'components/LayoutComponents/Page'
 import NotFoundPage from 'pages/DefaultPages/NotFoundPage'
 import HomePage from 'pages/DefaultPages/HomePage'
 
@@ -40,10 +40,10 @@ const loadableRoutes = {
     component: loadable(() => import('pages/DefaultPages/InvoicePage')),
   },
 
-  // // Dashboards
-  // '/dashboard/alpha': {
-  //   component: loadable(() => import('pages/Dashboard/DashboardAlphaPage')),
-  // },
+  // Dashboards
+  '/dashboard/alpha': {
+    component: loadable(() => import('pages/Dashboard/DashboardAlphaPage')),
+  },
   //
   // // Apps
   // '/apps/messaging': {

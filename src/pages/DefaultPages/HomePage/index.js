@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from 'components/PageComponents'
+import Page from 'components/LayoutComponents/Page'
 
 class HomePage extends React.Component {
   static defaultProps = {

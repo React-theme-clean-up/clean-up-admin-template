@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from 'components/PageComponents'
+import Page from 'components/LayoutComponents/Page'
 import Helmet from 'react-helmet'
 import PeityItems from './Peity'
 

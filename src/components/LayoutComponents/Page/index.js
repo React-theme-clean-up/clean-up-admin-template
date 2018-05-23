@@ -4,8 +4,6 @@ import { connect } from 'react-redux'
 import { initAuth, setLoading, setUpdatingContent, resetHideLogin } from 'ducks/app'
 import axios from 'axios'
 import NotFoundPage from 'pages/DefaultPages/NotFoundPage'
-import Layout from './Layout'
-import Dialog from './Dialog'
 
 let source = null
 
@@ -148,5 +146,4 @@ class Page extends React.Component {
   }
 }
 
-export { Layout, Dialog }
 export default Page

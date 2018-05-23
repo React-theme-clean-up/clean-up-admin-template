@@ -16,8 +16,7 @@ export const setActiveDialog = createAction(`${NS}SET_ACTIVE_DIALOG`)
 export const deleteDialogForm = createAction(`${NS}DELETE_DIALOG_FORM`)
 export const addSubmitForm = createAction(`${NS}ADD_SUBMIT_FORM`)
 export const deleteSubmitForm = createAction(`${NS}DELETE_SUBMIT_FORM`)
-export const setOpenedMenuMobile = createAction(`${NS}SET_OPENED_MENU_MOBILE`)
-export const setCollapsedMenuDesktop = createAction(`${NS}SET_COLLAPSED_MENU_DESKTOP`)
+export const setLayoutState = createAction(`${NS}SET_LAYOUT_STATE`)
 
 export const setLoading = isLoading => {
   const action = _setLoading(isLoading)
@@ -30,14 +29,6 @@ export const resetHideLogin = () => (dispatch, getState) => {
   if (state.pendingTasks === 0 && state.app.isHideLogin) {
     dispatch(_setHideLogin(false))
   }
-  return Promise.resolve()
-}
-
-export const toggleMenuDesktop = () => (dispatch, getState) => {
-  const state = getState()
-  const collapsedMenuDesktop = !state.app.collapsedMenuDesktop
-  window.localStorage.setItem('app.collapsedMenuDesktop', collapsedMenuDesktop ? 'true' : 'false')
-  dispatch(setCollapsedMenuDesktop(collapsedMenuDesktop))
   return Promise.resolve()
 }
 
@@ -145,7 +136,7 @@ export const logout = () => (dispatch, getState) => {
 }
 
 const initialState = {
-  // APP PARAMETERS
+  // APP STATE
   from: '',
   isUpdatingContent: false,
   isLoading: false,
@@ -153,10 +144,21 @@ const initialState = {
   dialogForms: {},
   submitForms: {},
   isHideLogin: false,
-  openedMenuMobile: false,
-  collapsedMenuDesktop: window.localStorage.getItem('app.collapsedMenuDesktop') === 'true',
 
-  // USER PARAMETERS
+  // LAYOUT STATE
+  layoutState: {
+    menuMobileOpened: false,
+    menuCollapsed: true,
+    menuHorizontal: false,
+    menuShadow: false,
+    themeLight: false,
+    superClean: false,
+    squaredBorders: false,
+    hipsterStyles: false,
+    fixedWidth: false,
+  },
+
+  // USER STATE
   userState: {
     email: '',
     role: '',
@@ -170,6 +172,12 @@ export default createReducer(
     [_setHideLogin]: (state, isHideLogin) => ({ ...state, isHideLogin }),
     [setUpdatingContent]: (state, isUpdatingContent) => ({ ...state, isUpdatingContent }),
     [setUserState]: (state, { userState }) => ({ ...state, userState }),
+    [setLayoutState]: (state, param) => {
+      const layoutState = { ...state.layoutState, ...param }
+      const newState = { ...state, layoutState }
+      window.localStorage.setItem('app.layoutState', JSON.stringify(newState.layoutState))
+      return newState
+    },
     [setActiveDialog]: (state, activeDialog) => {
       const result = { ...state, activeDialog }
       if (activeDialog !== '') {
@@ -192,11 +200,6 @@ export default createReducer(
       delete submitForms[id]
       return { ...state, submitForms }
     },
-    [setOpenedMenuMobile]: (state, openedMenuMobile) => ({ ...state, openedMenuMobile }),
-    [setCollapsedMenuDesktop]: (state, collapsedMenuDesktop) => ({
-      ...state,
-      collapsedMenuDesktop,
-    }),
   },
   initialState,
 )

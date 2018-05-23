@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import { Spinner } from 'react-redux-spinner'
 import { BackTop, Layout as AntLayout } from 'antd'
 import Routes from 'routes'
-import TopBar from 'components/PageComponents/TopBar'
-import Footer from 'components/PageComponents/Footer'
-import AppMenu from 'components/PageComponents/Menu'
-import Content from 'components/PageComponents/Content'
-import Loader from 'components/PageComponents/Loader'
+import TopBar from 'components/LayoutComponents/TopBar'
+import Footer from 'components/LayoutComponents/Footer'
+import Menu from 'components/LayoutComponents/Menu'
+import Content from 'components/LayoutComponents/Content'
+import Loader from 'components/LayoutComponents/Loader'
+import LayoutState from 'components/LayoutComponents/LayoutState'
 import { enquireScreen, unenquireScreen } from 'enquire-js'
 import { ContainerQuery } from 'react-container-query'
 import classNames from 'classnames'
@@ -87,11 +88,12 @@ class Layout extends React.Component {
         {params =>
           <div className={classNames(params)}>
             <AntLayout>
+              <LayoutState />
               <Loader />
               <Spinner />
               <BackTop />
               <Routes />
-              <AppMenu isMobile={isMobile} />
+              <Menu isMobile={isMobile} />
               <AntLayout>
                 <AntHeader>
                   <TopBar />
