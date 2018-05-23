@@ -611,8 +611,8 @@ const mapStateToProps = (state, props) => ({
 class MenuSider extends React.Component {
   state = {
     menuCollapsed: this.props.layoutState.menuCollapsed,
-    current: '',
-    opened: [''],
+    selectedKeys: '',
+    openKeys: [''],
   }
 
   handleClick = e => {
@@ -620,13 +620,13 @@ class MenuSider extends React.Component {
       return
     }
     this.setState({
-      current: e.key,
+      selectedKeys: e.key,
     })
   }
 
   onOpenChange = openKeys => {
     this.setState({
-      opened: openKeys,
+      openKeys: openKeys,
     })
   }
 
@@ -636,9 +636,9 @@ class MenuSider extends React.Component {
       (result, entry) => {
         if (result.length) {
           return result
-        } else if (entry.url === id && this.state.current === '') {
+        } else if (entry.url === id && this.state.selectedKeys === '') {
           return [entry].concat(parents)
-        } else if (entry.key === id && this.state.current !== '') {
+        } else if (entry.key === id && this.state.selectedKeys !== '') {
           return [entry].concat(parents)
         } else if (entry.children) {
           let nested = this.getPath(entry.children, id, [entry].concat(parents))
@@ -653,33 +653,19 @@ class MenuSider extends React.Component {
 
   getActiveMenuItem = (props, items) => {
     let menuCollapsed = props.layoutState.menuCollapsed
-    let current = this.state.current
+    let selectedKeys = this.state.selectedKeys
     let url = props.location.pathname
-    let [activeMenuItem, ...path] = ''
-
-    if (!current) {
-      ;[activeMenuItem, ...path] = this.getPath(items, url)
-    } else {
-      ;[activeMenuItem, ...path] = this.getPath(items, current)
-    }
+    let [activeMenuItem, ...path] = this.getPath(items, !selectedKeys ? url : selectedKeys)
 
     if (menuCollapsed) {
       path = ['']
     }
 
-    if (activeMenuItem) {
-      this.setState({
-        current: activeMenuItem.key,
-        opened: path.map(entry => entry.key),
-        menuCollapsed,
-      })
-    } else {
-      this.setState({
-        current: '',
-        opened: [],
-        menuCollapsed,
-      })
-    }
+    this.setState({
+      selectedKeys: activeMenuItem ? activeMenuItem.key : '',
+      openKeys: activeMenuItem ? path.map(entry => entry.key) : [],
+      menuCollapsed,
+    })
   }
 
   generateMenuPartitions(items) {
@@ -753,7 +739,7 @@ class MenuSider extends React.Component {
   }
 
   render() {
-    const { menuCollapsed, current, opened } = this.state
+    const { menuCollapsed, selectedKeys, openKeys } = this.state
     const { isMobile } = this.props
     const menuItems = this.generateMenuPartitions(menuData)
     const paramsMobile = {
@@ -786,8 +772,8 @@ class MenuSider extends React.Component {
         <Menu
           theme="dark"
           onClick={this.handleClick}
-          selectedKeys={[current]}
-          openKeys={opened}
+          selectedKeys={[selectedKeys]}
+          openKeys={openKeys}
           onOpenChange={this.onOpenChange}
           mode="inline"
           className="menuSider__navigation"

@@ -147,7 +147,7 @@ const initialState = {
   // LAYOUT STATE
   layoutState: {
     menuMobileOpened: false,
-    menuCollapsed: true,
+    menuCollapsed: false,
     menuHorizontal: false,
     menuShadow: false,
     themeLight: false,
