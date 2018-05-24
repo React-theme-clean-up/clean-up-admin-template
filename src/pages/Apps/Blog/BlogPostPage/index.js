@@ -6,7 +6,7 @@ import BlogPost from './BlogPost'
 class BlogPostPage extends React.Component {
   static defaultProps = {
     pathName: 'Blog Post',
-    roles: ['agent', 'administrator']
+    roles: ['agent', 'administrator'],
   }
 
   render() {
