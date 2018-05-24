@@ -38,7 +38,7 @@ class BlogPost extends React.Component {
             <strong>Blog Post</strong>
           </h5>
         </div>
-        <div className="card-block">
+        <div className="card-body">
           <div className="blog-feed">
             <div className="container">
               <div className="row">

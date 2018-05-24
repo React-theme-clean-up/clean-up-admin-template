@@ -148,12 +148,12 @@ const initialState = {
   layoutState: {
     menuMobileOpened: false,
     menuCollapsed: false,
-    menuHorizontal: false,
     menuShadow: false,
     themeLight: false,
     squaredBorders: false,
     borderedCards: false,
     fixedWidth: false,
+    settingsOpened: false,
   },
 
   // USER STATE

@@ -8,7 +8,7 @@
 
   &__logoContainer {
     height: 64px;
-    padding: 15px 20px 15px 22px;
+    padding: 13px 20px 15px 22px;
     img {
       height: 36px;
     }
@@ -17,12 +17,25 @@
   &__navigation {
     margin-top: rem(15) !important;
 
+    &.ant-menu-vertical, &.ant-menu-inline {
+      border-right: none;
+    }
+
     > .ant-menu-item-divider {
       margin: 0 23px !important;
     }
 
     .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow {
       right: 50px;
+    }
+
+    .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+      border-right: none;
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      box-shadow: none !important;
+      transition: all .3s;
     }
 
     &.ant-menu-inline-collapsed {
@@ -42,38 +55,69 @@
       }
     }
 
+    &.ant-menu-light {
+      .menuSider__icon {
+        opacity: .8;
+      }
+
+      .ant-menu-submenu-arrow {
+        opacity: .7;
+      }
+
+      .ant-menu-item:after {
+        right: auto;
+        left: 0;
+      }
+
+      .ant-menu-item, .ant-menu-submenu-title {
+        width: 100%;
+      }
+    }
+
     &.ant-menu-dark {
       > .ant-menu-item-divider {
         opacity: .2;
       }
-    }
 
-    .ant-menu-item {
-      > a:hover {
+      .ant-menu-item {
+        > a:hover {
+          .menuSider__icon {
+            color: $white !important;
+          }
+        }
+      }
+
+      .ant-menu-item-selected {
+        > a {
+          .menuSider__icon {
+            color: $white !important;
+          }
+        }
+      }
+
+      .ant-menu-submenu:hover, .ant-menu-submenu-selected, .ant-menu-submenu-open {
         .menuSider__icon {
           color: $white !important;
         }
       }
-    }
 
-    .ant-menu-item-selected {
-      > a {
+      .ant-menu-submenu-active {
         .menuSider__icon {
-          color: $white !important;
+          color: $blue !important;
         }
       }
-    }
 
-    .ant-menu-submenu:hover, .ant-menu-submenu-selected, .ant-menu-submenu-open {
-      .menuSider__icon {
-        color: $white !important;
+      .ant-menu-inline.ant-menu-sub {
+        box-shadow: none !important;
+        transition: all .3s;
       }
-    }
 
-    .ant-menu-submenu-active {
-      .menuSider__icon {
-        color: $blue !important;
+      .ant-menu-item:after {
+        border-right: 3px solid $white !important;
+        right: auto;
+        left: 0;
       }
+
     }
   }
 

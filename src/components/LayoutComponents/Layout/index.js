@@ -9,6 +9,7 @@ import Menu from 'components/LayoutComponents/Menu'
 import Content from 'components/LayoutComponents/Content'
 import Loader from 'components/LayoutComponents/Loader'
 import LayoutState from 'components/LayoutComponents/LayoutState'
+import SettingsSider from 'components/LayoutComponents/SettingsSider'
 import { enquireScreen, unenquireScreen } from 'enquire-js'
 import { ContainerQuery } from 'react-container-query'
 import classNames from 'classnames'
@@ -94,6 +95,7 @@ class Layout extends React.Component {
               <BackTop />
               <Routes />
               <Menu isMobile={isMobile} />
+              <SettingsSider />
               <AntLayout>
                 <AntHeader>
                   <TopBar />

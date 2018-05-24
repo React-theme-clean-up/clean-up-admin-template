@@ -17,6 +17,9 @@ class LayoutState extends React.PureComponent {
     const { dispatch } = this.props
     const urlParams = qs.parse(this.props.location.search.replace('?', ''))
     const storageParams = JSON.parse(window.localStorage.getItem('app.layoutState'))
+    if (storageParams) {
+      delete storageParams.settingsOpened
+    }
     const mergedParams = merge({}, storageParams, urlParams)
     const booleanMergedParams = JSON.parse(
       JSON.stringify(mergedParams),

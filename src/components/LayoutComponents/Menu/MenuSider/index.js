@@ -611,12 +611,16 @@ const mapStateToProps = (state, props) => ({
 class MenuSider extends React.Component {
   state = {
     menuCollapsed: this.props.layoutState.menuCollapsed,
+    themeLight: this.props.layoutState.themeLight,
     selectedKeys: '',
     openKeys: [''],
+    settingsOpened: this.props.layoutState.settingsOpened,
   }
 
   handleClick = e => {
+    const { dispatch } = this.props
     if (e.key === 'settings') {
+      dispatch(setLayoutState({settingsOpened: !this.state.settingsOpened}))
       return
     }
     this.setState({
@@ -736,10 +740,14 @@ class MenuSider extends React.Component {
     if (!newProps.isMobile) {
       this.getActiveMenuItem(newProps, menuData)
     }
+    this.setState({
+      themeLight: newProps.layoutState.themeLight,
+      settingsOpened: newProps.layoutState.settingsOpened,
+    })
   }
 
   render() {
-    const { menuCollapsed, selectedKeys, openKeys } = this.state
+    const { menuCollapsed, selectedKeys, openKeys, themeLight } = this.state
     const { isMobile } = this.props
     const menuItems = this.generateMenuPartitions(menuData)
     const paramsMobile = {
@@ -770,7 +778,7 @@ class MenuSider extends React.Component {
           )}
         </div>
         <Menu
-          theme="dark"
+          theme={themeLight ? 'light' : 'dark'}
           onClick={this.handleClick}
           selectedKeys={[selectedKeys]}
           openKeys={openKeys}
@@ -778,14 +786,12 @@ class MenuSider extends React.Component {
           mode="inline"
           className="menuSider__navigation"
         >
-          {/*
           <Menu.Item key={'settings'}>
             <span className="menuSider__item-title">Theme Settings</span>
             <span
               className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'}
             />
           </Menu.Item>
-          */}
           {menuItems}
         </Menu>
       </Sider>

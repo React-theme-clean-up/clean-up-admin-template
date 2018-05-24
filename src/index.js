@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createHashHistory'
 import thunk from 'redux-thunk'
-import injectTapEventPlugin from 'react-tap-event-plugin'
+//import injectTapEventPlugin from 'react-tap-event-plugin'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import 'es6-promise/auto'
 import 'setimmediate'
@@ -35,7 +35,7 @@ if (isLogger && process.env.NODE_ENV === 'development') {
 }
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(...middlewares)))
 
-injectTapEventPlugin()
+//injectTapEventPlugin()
 
 ReactDOM.render(
   <Provider store={store}>

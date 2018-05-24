@@ -1,5 +1,5 @@
 import React from 'react'
-import { Line } from 'react-peity'
+import { Line } from 'peity-react'
 import './style.scss'
 
 class BitcoinPrice extends React.Component {

@@ -33,9 +33,9 @@ class GitHubDiscuss extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <span className="core__title">
+          <h5 className="mb-0 mr-3 d-inline-block text-black">
             <strong>GitHub Discussion</strong>
-          </span>
+          </h5>
         </div>
         <div className="card-block">
           <div className="discuss">

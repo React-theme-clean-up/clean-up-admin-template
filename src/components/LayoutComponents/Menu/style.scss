@@ -22,6 +22,7 @@
 .drawer-content {
   overflow: visible;
   background: $menuBg;
+  transition: background .3s;
 }
 
 .drawer-button {
@@ -37,5 +38,11 @@
   background: $white !important;
   &:after, &:before {
     background: $white !important;
+  }
+}
+
+.drawer {
+  .ant-layout-sider {
+    box-shadow: none !important;
   }
 }

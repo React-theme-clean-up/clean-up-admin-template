@@ -1,5 +1,5 @@
 import React from 'react'
-import { Line, Bar } from 'react-peity'
+import { Line } from 'peity-react'
 
 class PeityItems extends React.Component {
   render() {
@@ -47,14 +47,6 @@ class PeityItems extends React.Component {
                         <Line values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Bar Charts</td>
-                      <td>
-                        <Bar values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                        <Bar values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
-                        <Bar values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -92,14 +84,6 @@ class PeityItems extends React.Component {
                           stroke="green"
                           values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]}
                         />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Bar Charts</td>
-                      <td>
-                        <Bar fill={['green']} values={[5, 3, 9, 6, 5, 9, 7, 3, 5, 2]} />
-                        <Bar fill={['green']} values={[5, 3, 2, -1, -3, -2, 2, 3, 5, 2]} />
-                        <Bar fill={['green']} values={[0, -3, -6, -4, -5, -4, -7, -3, -5, -2]} />
                       </td>
                     </tr>
                   </tbody>
