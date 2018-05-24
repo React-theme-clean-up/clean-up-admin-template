@@ -153,7 +153,7 @@ const initialState = {
     squaredBorders: true,
     borderedCards: true,
     fixedWidth: false,
-    settingsOpened: false
+    settingsOpened: false,
   },
 
   // USER STATE
