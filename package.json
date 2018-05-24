@@ -68,10 +68,11 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
+    "src/*.js": [
       "prettier --tab-width 2 --print-width 100 --single-quote --trailing-comma all --no-semi --parser babylon --write"
     ]
   }
