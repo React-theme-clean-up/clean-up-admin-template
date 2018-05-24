@@ -17,10 +17,6 @@
   &__navigation {
     margin-top: rem(15) !important;
 
-    &.ant-menu-vertical, &.ant-menu-inline {
-      border-right: none;
-    }
-
     > .ant-menu-item-divider {
       margin: 0 23px !important;
     }
@@ -56,6 +52,7 @@
     }
 
     &.ant-menu-light {
+
       .menuSider__icon {
         opacity: .8;
       }

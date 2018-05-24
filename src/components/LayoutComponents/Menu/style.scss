@@ -45,4 +45,9 @@
   .ant-layout-sider {
     box-shadow: none !important;
   }
+
+  .ant-menu {
+    color: $text;
+    border-right: none !important;
+  }
 }
