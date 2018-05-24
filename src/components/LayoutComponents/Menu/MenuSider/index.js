@@ -620,7 +620,7 @@ class MenuSider extends React.Component {
   handleClick = e => {
     const { dispatch } = this.props
     if (e.key === 'settings') {
-      dispatch(setLayoutState({settingsOpened: !this.state.settingsOpened}))
+      dispatch(setLayoutState({ settingsOpened: !this.state.settingsOpened }))
       return
     }
     this.setState({

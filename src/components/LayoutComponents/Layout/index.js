@@ -86,7 +86,7 @@ class Layout extends React.Component {
     const isMobile = !!this.state.isMobile
     return (
       <ContainerQuery query={query}>
-        {params =>
+        {params => (
           <div className={classNames(params)}>
             <AntLayout>
               <LayoutState />
@@ -108,7 +108,8 @@ class Layout extends React.Component {
                 </AntFooter>
               </AntLayout>
             </AntLayout>
-          </div>}
+          </div>
+        )}
       </ContainerQuery>
     )
   }

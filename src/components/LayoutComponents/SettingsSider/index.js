@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
 import { Scrollbars } from 'react-custom-scrollbars'
-import { Switch } from 'antd';
+import { Switch } from 'antd'
 import './style.scss'
 
 const mapStateToProps = (state, props) => ({
@@ -17,49 +17,51 @@ class SettingsSider extends React.Component {
 
   componentWillReceiveProps(newProps) {
     this.setState({
-      layoutState: newProps.layoutState
+      layoutState: newProps.layoutState,
     })
   }
 
   closeSettings = () => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({settingsOpened: false}))
+    dispatch(setLayoutState({ settingsOpened: false }))
   }
 
-  setMenuCollapsed = (state) => {
+  setMenuCollapsed = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({menuCollapsed: state}))
+    dispatch(setLayoutState({ menuCollapsed: state }))
   }
 
-  setMenuShadow = (state) => {
+  setMenuShadow = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({menuShadow: state}))
+    dispatch(setLayoutState({ menuShadow: state }))
   }
 
-  setThemeLight = (state) => {
+  setThemeLight = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({themeLight: state}))
+    dispatch(setLayoutState({ themeLight: state }))
   }
 
-  setSquaredBorders = (state) => {
+  setSquaredBorders = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({squaredBorders: state}))
+    dispatch(setLayoutState({ squaredBorders: state }))
   }
 
-  setBorderedCards = (state) => {
+  setBorderedCards = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({borderedCards: state}))
+    dispatch(setLayoutState({ borderedCards: state }))
   }
 
-  setFixedWidth = (state) => {
+  setFixedWidth = state => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({fixedWidth: state}))
+    dispatch(setLayoutState({ fixedWidth: state }))
   }
 
   render() {
     const { layoutState } = this.state
     return (
-      <div className={'settingsSider ' + (layoutState.settingsOpened ? 'settingsSider--opened' : '')}>
+      <div
+        className={'settingsSider ' + (layoutState.settingsOpened ? 'settingsSider--opened' : '')}
+      >
         <Scrollbars style={{ height: '100vh' }}>
           <div className="settingsSider__container">
             <div className="settingsSider__title">
@@ -67,8 +69,8 @@ class SettingsSider extends React.Component {
               <span className="fa fa-times" onClick={this.closeSettings} />
             </div>
             <div className="settingsSider__description">
-              This component "SettingsSider" gives possibility to construct custom blocks with any widgets,
-              components and elements inside, like this theme settings
+              This component "SettingsSider" gives possibility to construct custom blocks with any
+              widgets, components and elements inside, like this theme settings
             </div>
             <div className="settingsSider__item">
               <Switch checked={layoutState.menuCollapsed} onChange={this.setMenuCollapsed} />
