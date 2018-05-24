@@ -19,7 +19,7 @@ class TopBar extends React.Component {
         </div>
         <div className="topbar__right">
           <a
-            href="http://google.com"
+            href="https://themeforest.net/item/clean-ui-admin-template-react-redux-ant-design-fully-responsive-freebies/21938700"
             target="_blank"
             rel="noopener noreferrer"
             className="mr-4 d-none d-sm-inline"

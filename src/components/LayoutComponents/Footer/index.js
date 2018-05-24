@@ -31,7 +31,7 @@ class AppFooter extends React.Component {
           <div className="row">
             <div className="col-sm-6">
               <a
-                href="http://google.com"
+                href="https://themeforest.net/item/clean-ui-admin-template-react-redux-ant-design-fully-responsive-freebies/21938700"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-4"
