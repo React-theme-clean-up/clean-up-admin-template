@@ -618,11 +618,17 @@ class MenuSider extends React.Component {
   }
 
   handleClick = e => {
-    const { dispatch } = this.props
+    const { dispatch, isMobile } = this.props
+    if (isMobile) {
+      // collapse menu on isMobile state
+      dispatch(setLayoutState({ menuMobileOpened: false }))
+    }
     if (e.key === 'settings') {
+      // prevent click and toggle settings block on theme settings link
       dispatch(setLayoutState({ settingsOpened: !this.state.settingsOpened }))
       return
     }
+    // set current selected keys
     this.setState({
       selectedKeys: e.key,
     })

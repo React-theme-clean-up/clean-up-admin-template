@@ -71,21 +71,35 @@
       }
     }
 
+
+
     &.ant-menu-dark {
+      color: $text;
+
       > .ant-menu-item-divider {
         opacity: .2;
       }
 
+      .ant-menu-sub {
+        color: $text;
+      }
+
       .ant-menu-item {
-        > a:hover {
-          .menuSider__icon {
-            color: $white !important;
+        > a {
+          color: $text;
+          &:hover {
+            .menuSider__icon {
+              color: $white !important;
+            }
           }
         }
+
       }
 
       .ant-menu-item-selected {
         > a {
+          color: $white;
+
           .menuSider__icon {
             color: $white !important;
           }
