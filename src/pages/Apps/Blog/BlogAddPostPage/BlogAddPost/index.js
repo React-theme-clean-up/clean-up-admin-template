@@ -11,11 +11,9 @@ class BlogAddPost extends React.Component {
             <strong>Post Add/Edit</strong>
           </h5>>
         </div>
-        <div className="card-block">
+        <div className="card-body">
           <div className="add-post">
-            <div className="container">
-              <AddForm />
-            </div>
+            <AddForm />
           </div>
         </div>
       </section>

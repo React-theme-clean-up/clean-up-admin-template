@@ -35,7 +35,7 @@ class YouTubeView extends React.Component {
             <strong>YouTube View</strong>
           </h5>
         </div>
-        <div className="card-block">
+        <div className="card-body">
           <div className="video-page clearfix">
             <div className="video-page__main-content">
               <div className="video-page__player">

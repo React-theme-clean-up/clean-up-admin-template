@@ -1,6 +1,8 @@
 @import '../../../../../resources/mixins';
 
 .add-post {
+  max-width: rem(1000);
+  margin: 0 auto;
 
   &__label {
     margin-bottom: 0;

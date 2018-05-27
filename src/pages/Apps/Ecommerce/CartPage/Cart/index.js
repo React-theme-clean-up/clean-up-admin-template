@@ -151,7 +151,7 @@ class Cart extends React.Component {
     ]
 
     return (
-      <div className="card-body cart">
+      <div className="cart">
         <Steps current={current}>
           {steps.map(item => <Step key={item.title} title={item.title} icon={item.icon} />)}
         </Steps>

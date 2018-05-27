@@ -81,7 +81,7 @@ class ProfileApp extends React.Component {
       <div className="profile">
         <div className="row">
           <div className="col-xl-4">
-            <section
+            <div
               className="card profile__header"
               style={{ backgroundImage: 'url(' + background + ')' }}
             >
@@ -102,34 +102,7 @@ class ProfileApp extends React.Component {
                   </p>
                 </div>
               </div>
-            </section>
-          </div>
-          <div className="col-xl-8">
-            <div className="card profile__social-info">
-              <div className="profile__social-name">
-                <h2>
-                  <span className="text-black mr-2">
-                    <strong>{name}</strong>
-                  </span>
-                  <small className="text-muted">{nickname}</small>
-                </h2>
-                <p className="mb-1">{post}</p>
-              </div>
-              <div className="profile__social-counts">
-                <div className="text-center mr-3">
-                  <h2>{followersCount}</h2>
-                  <p className="mb-0">Followers</p>
-                </div>
-                <div className="text-center">
-                  <h2>{postsCount}</h2>
-                  <p className="mb-0">Posts</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xl-4">
             <div className="card">
               <div className="card-body">
                 <h5 className="mb-3 text-black">
@@ -192,7 +165,28 @@ class ProfileApp extends React.Component {
             </div>
           </div>
           <div className="col-xl-8">
-            <div className="card profile__content-wrapper">
+            <div className="card profile__social-info">
+              <div className="profile__social-name">
+                <h2>
+                  <span className="text-black mr-2">
+                    <strong>{name}</strong>
+                  </span>
+                  <small className="text-muted">{nickname}</small>
+                </h2>
+                <p className="mb-1">{post}</p>
+              </div>
+              <div className="profile__social-counts">
+                <div className="text-center mr-3">
+                  <h2>{followersCount}</h2>
+                  <p className="mb-0">Followers</p>
+                </div>
+                <div className="text-center">
+                  <h2>{postsCount}</h2>
+                  <p className="mb-0">Posts</p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
               <div className="card-body">
                 <Tabs defaultActiveKey="1">
                   <TabPane

@@ -50,7 +50,7 @@ class InputItems extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-lg-6">
+                  <div className="col-xl-6 col-lg-12">
                     <div className="card" id="components-input-demo-addon">
                       <div className="card-header">
                         <h5 className="mb-0 mr-3 d-inline-block text-black">
@@ -394,7 +394,7 @@ ReactDOM.render(<NumericInputDemo />, mountNode);
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-xl-6 col-lg-12">
                     <div className="card" id="components-input-demo-autosize-textarea">
                       <div className="card-header">
                         <h5 className="mb-0 mr-3 d-inline-block text-black">

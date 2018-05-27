@@ -126,11 +126,6 @@ class ProductDetails extends React.Component {
                     </Breadcrumb.Item>
                     <Breadcrumb.Item>
                       <span className="productDetails__breadcrumb-item">
-                        <a href="javascript: void(0);">With background</a>
-                      </span>
-                    </Breadcrumb.Item>
-                    <Breadcrumb.Item>
-                      <span className="productDetails__breadcrumb-item">
                         <a href="javascript: void(0);">White</a>
                       </span>
                     </Breadcrumb.Item>

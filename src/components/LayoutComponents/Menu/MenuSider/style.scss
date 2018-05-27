@@ -16,6 +16,7 @@
 
   &__navigation {
     margin-top: rem(15) !important;
+    margin-bottom: rem(20) !important;
 
     > .ant-menu-item-divider {
       margin: 0 23px !important;
@@ -71,22 +72,24 @@
       }
     }
 
-
-
     &.ant-menu-dark {
-      color: $text;
+      color: $gray-darken;
+
+      .ant-menu-item {
+        color: $gray-darken;
+      }
 
       > .ant-menu-item-divider {
         opacity: .2;
       }
 
       .ant-menu-sub {
-        color: $text;
+        color: $gray-darken;
       }
 
       .ant-menu-item {
         > a {
-          color: $text;
+          color: $gray-darken;
           &:hover {
             .menuSider__icon {
               color: $white !important;

@@ -29,7 +29,7 @@ class GitHubExplore extends React.Component {
             <strong>GitHub Explore</strong>
           </h5>
         </div>
-        <div className="card-block pt-3">
+        <div className="card-body pt-3">
           <div className="explore">
             <div className="explore__menu mb-3">
               <Tabs type="card" defaultActiveKey="1">

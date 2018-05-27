@@ -17,7 +17,7 @@ class YouTubeFeed extends React.Component {
             <strong>YouTube Feed</strong>
           </h5>
         </div>
-        <div className="card-block video-page video-page--feed">
+        <div className="card-body video-page video-page--feed">
           <div className="video-page__feeds">
             {partitions.map((partition, index) => (
               <div className="video-page__feed-partition" key={index}>
@@ -58,7 +58,9 @@ class YouTubeFeed extends React.Component {
                 </ul>
               </div>
             ))}
-            <Pagination defaultCurrent={1} total={50} />
+            <div className="mb-5">
+              <Pagination defaultCurrent={1} total={50} />
+            </div>
           </div>
         </div>
       </section>

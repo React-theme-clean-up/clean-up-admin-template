@@ -4,8 +4,11 @@
   background: $white;
   position: relative;
   border-radius: .25rem;
-  margin-bottom: 1.35rem;
   border: 1px solid $gray-border;
+
+  @media (max-width: $md-max-width) {
+    margin-bottom: 1.35rem;
+  }
 
   &--typed {
 

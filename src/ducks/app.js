@@ -151,7 +151,7 @@ const initialState = {
     menuShadow: true,
     themeLight: true,
     squaredBorders: true,
-    borderedCards: true,
+    borderedCards: false,
     fixedWidth: false,
     settingsOpened: false,
   },

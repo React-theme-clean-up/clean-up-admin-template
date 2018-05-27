@@ -1,8 +1,8 @@
 @import '../../../../../resources/mixins';
 
 .video-page {
-  max-width: rem(1200);
-  margin: rem(30) auto;
+  max-width: rem(1000);
+  margin: 0 auto;
 
   .card {
     padding: rem(16);
@@ -126,8 +126,7 @@
 
   &__next-item {
     display: block;
-    padding-top: rem(12);
-    padding-bottom: rem(12);
+    padding-top: rem(15);
     border-top: 1px solid $gray-border;
   }
 
@@ -171,7 +170,7 @@
 
   &__feeds {
     max-width: rem(1250);
-    margin: rem(15) auto;
+    margin: 0 auto;
   }
 
   &__feed-partition {

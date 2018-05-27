@@ -20,7 +20,6 @@ class ProfileHeadCard extends React.Component {
         <div className="ProfileHeadCard__content">
           <div className="ProfileHeadCard__left">
             <Avatar src={user.avatar} size="90" borderColor="white" border="true" />
-            <br />
             <strong>{user.name}</strong>
             <br />
             <span className="text-muted">{user.link}</span>

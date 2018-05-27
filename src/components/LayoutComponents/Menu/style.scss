@@ -27,7 +27,7 @@
 
 .drawer-button {
   background: $menuBg !important;
-  top: 81px;
+  top: 64px;
 }
 
 .drawer.drawer-open .drawer-button-icon {
@@ -47,7 +47,6 @@
   }
 
   .ant-menu {
-    color: $text;
     border-right: none !important;
   }
 }

@@ -1,6 +1,8 @@
 @import '../../../../../resources/mixins';
 
 .discuss {
+  max-width: rem(1000);
+  margin: 0 auto;
 
   &__header {
     position: relative;

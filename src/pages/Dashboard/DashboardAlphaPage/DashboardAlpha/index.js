@@ -259,7 +259,7 @@ class DashboardAlpha extends React.Component {
     return (
       <div>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-12 col-xl-6">
             <div className="card">
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
@@ -268,10 +268,10 @@ class DashboardAlpha extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-xl-7">
+                  <div className="col-lg-7 col-xl-12">
                     <ProfileHeadCard />
                   </div>
-                  <div className="col-xl-5">
+                  <div className="col-lg-5 col-xl-12">
                     <ProgressGroup />
                   </div>
                 </div>
@@ -285,13 +285,10 @@ class DashboardAlpha extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-xl-4">
+                  <div className="col-md-6">
                     <UserCard />
                   </div>
-                  <div className="col-xl-4">
-                    <UserCard />
-                  </div>
-                  <div className="col-xl-4">
+                  <div className="col-md-6">
                     <UserCard />
                   </div>
                 </div>
@@ -334,29 +331,17 @@ class DashboardAlpha extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-sm-6 col-xl-4">
+                  <div className="col-md-6">
                     <InfoCard form="interactive" icon="database" type="danger" />
                   </div>
-                  <div className="col-sm-6 col-xl-4">
-                    <InfoCard form="interactive" icon="users" type="danger" />
-                  </div>
-                  <div className="col-sm-6 col-xl-4">
-                    <InfoCard form="interactive" icon="home" />
-                  </div>
-                  <div className="col-sm-6 col-xl-4">
+                  <div className="col-md-6">
                     <InfoCard form="interactive" icon="database" btnType="success" type="default" />
-                  </div>
-                  <div className="col-sm-6 col-xl-4">
-                    <InfoCard form="interactive" icon="users" btnType="warning" />
-                  </div>
-                  <div className="col-sm-6 col-xl-4">
-                    <InfoCard form="interactive" icon="home" btnType="default" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-12 col-xl-6">
             <div className="card">
               <div className="card-header">
                 <h5 className="mb-0 mr-3 d-inline-block text-black">
@@ -399,14 +384,10 @@ class DashboardAlpha extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                     <InfoCard form="stats" icon="database" type="success" />
-                  </div>
-                  <div className="col-lg-6">
                     <InfoCard form="stats" icon="users" type="primary" />
                   </div>
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="bullhorn" type="warning" />
-                  </div>
-                  <div className="col-lg-6">
+                    <InfoCard form="stats" icon="bullhorn" type="warning"  />
                     <InfoCard form="stats" icon="price-tags" type="danger" />
                   </div>
                 </div>

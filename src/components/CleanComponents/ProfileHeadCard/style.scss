@@ -5,28 +5,35 @@
   background: $white;
   position: relative;
   border-radius: .25rem;
-  margin-bottom: 1.35rem;
 
-    &__head {
-      height: rem(250);
-      background: $gray-lighten-more;
-      background-size: cover;
-      background-position: center center;
-      border-radius: .25rem;
-      line-height: 1.1;
-      padding: rem(25) rem(30);
-    }
-
-    &__left {
-      float: left;
-      padding-left: rem(20);
-      margin-top: rem(-50);
-    }
-
-    &__right {
-      margin-left: rem(140);
-      padding-top: rem(45);
-      padding-right: rem(20);
-      padding-bottom: 1px;
-    }
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
   }
+
+  @media (max-width: 1440px) {
+    margin-bottom: 1.25rem;
+  }
+
+  &__head {
+    height: rem(250);
+    background: $gray-lighten-more;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .25rem;
+    line-height: 1.1;
+    padding: rem(25) rem(30);
+  }
+
+  &__left {
+    float: left;
+    padding-left: rem(20);
+    margin-top: rem(-50);
+  }
+
+  &__right {
+    margin-left: rem(140);
+    padding-top: rem(40);
+    padding-right: rem(20);
+    padding-bottom: 1px;
+  }
+}

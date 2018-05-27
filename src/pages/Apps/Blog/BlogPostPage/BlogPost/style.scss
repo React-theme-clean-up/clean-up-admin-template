@@ -1,6 +1,9 @@
 @import '../../../../../resources/mixins';
 
 .blog-feed {
+  max-width: rem(1000);
+  margin: 0 auto;
+
   &__article {
     margin-bottom: rem(40);
 

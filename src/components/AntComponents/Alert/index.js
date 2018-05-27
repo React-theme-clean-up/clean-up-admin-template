@@ -48,7 +48,7 @@ class AlertItems extends React.Component {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <div className="col-lg-6">
+                  <div className="col-xl-6 col-lg-12">
                     <div className="card" id="components-alert-demo-banner">
                       <div className="card-header">
                         <h5 className="mb-0 mr-3 d-inline-block text-black">
@@ -291,7 +291,7 @@ ReactDOM.render(
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-xl-6 col-lg-12">
                     <div className="card" id="components-alert-demo-basic">
                       <div className="card-header">
                         <h5 className="mb-0 mr-3 d-inline-block text-black">
