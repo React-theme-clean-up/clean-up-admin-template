@@ -56,9 +56,7 @@ class BlogPost extends React.Component {
                         </span>
                       </li>
                       <li className="blog-feed__article-meta-inf">
-                        <span className="blog-feed__article-date">
-                          {'On ' + articleData.date}
-                        </span>
+                        <span className="blog-feed__article-date">{'On ' + articleData.date}</span>
                       </li>
                     </ul>
                   </div>
@@ -186,20 +184,14 @@ class BlogPost extends React.Component {
                                   {postComment.subComments.map((subComment, index) => (
                                     <div className="blog-feed__comment-item clearfix" key={index}>
                                       <div className="blog-feed__comment-avatar">
-                                        <Avatar
-                                          size="50"
-                                          src={subComment.avatar}
-                                          border={false}
-                                        />
+                                        <Avatar size="50" src={subComment.avatar} border={false} />
                                       </div>
                                       <div className="blog-feed__comment-content">
                                         <div className="mb-3 clearfix">
                                           <div className="pull-left">
                                             <strong>{subComment.name}</strong> posted:
                                             <br />
-                                            <small className="text-muted">
-                                              {subComment.date}
-                                            </small>
+                                            <small className="text-muted">{subComment.date}</small>
                                           </div>
                                           <div className="pull-right">
                                             <Dropdown overlay={actions}>
@@ -228,9 +220,7 @@ class BlogPost extends React.Component {
                                           <a href="javascript: void(0);" className="mr-3">
                                             <i className="icmn-bubble mr-2" />
                                             {subComment.commentsCount > 0 && (
-                                              <span>
-                                                {subComment.commentsCount + ' Comments'}
-                                              </span>
+                                              <span>{subComment.commentsCount + ' Comments'}</span>
                                             )}
                                             {subComment.commentsCount === 0 && (
                                               <span>{subComment.commentsCount + ' Comment'}</span>

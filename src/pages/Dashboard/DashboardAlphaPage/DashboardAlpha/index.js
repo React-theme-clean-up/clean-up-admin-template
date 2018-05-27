@@ -48,11 +48,11 @@ function dateCellRender(value) {
   const listData = getListData(value)
   return (
     <ul className="events">
-      {listData.map(item =>
+      {listData.map(item => (
         <li key={item.content}>
           <Badge status={item.type} text={item.content} />
-        </li>,
-      )}
+        </li>
+      ))}
     </ul>
   )
 }
@@ -122,17 +122,14 @@ class DashboardAlpha extends React.Component {
             ...record,
             name: (
               <span>
-                {record.name.split(reg).map(
-                  (text, i) =>
-                    i > 0
-                      ? [
-                          <span style={{ backgroundColor: 'yellow' }}>
-                            {match[0]}
-                          </span>,
-                          text,
-                        ]
-                      : text,
-                )}
+                {record.name
+                  .split(reg)
+                  .map(
+                    (text, i) =>
+                      i > 0
+                        ? [<span style={{ backgroundColor: 'yellow' }}>{match[0]}</span>, text]
+                        : text,
+                  )}
               </span>
             ),
           }
@@ -168,30 +165,25 @@ class DashboardAlpha extends React.Component {
       {
         title: 'Name',
         dataIndex: 'name',
-        render: text =>
-          <a href="javascript: void(0);">
-            {text}
-          </a>,
+        render: text => <a href="javascript: void(0);">{text}</a>,
       },
       {
         title: 'Username',
         dataIndex: 'username',
-        render: text =>
-          <a href="javascript: void(0);">
-            {text}
-          </a>,
+        render: text => <a href="javascript: void(0);">{text}</a>,
       },
       {
         title: 'Actions',
         dataIndex: 'actions',
-        render: () =>
+        render: () => (
           <div className="pull-right">
             <Dropdown overlay={dropdownMenu}>
               <Button style={{ marginLeft: 8 }} size="small">
                 Action <Icon type="down" />
               </Button>
             </Dropdown>
-          </div>,
+          </div>
+        ),
       },
     ]
 
@@ -387,7 +379,7 @@ class DashboardAlpha extends React.Component {
                     <InfoCard form="stats" icon="users" type="primary" />
                   </div>
                   <div className="col-lg-6">
-                    <InfoCard form="stats" icon="bullhorn" type="warning"  />
+                    <InfoCard form="stats" icon="bullhorn" type="warning" />
                     <InfoCard form="stats" icon="price-tags" type="danger" />
                   </div>
                 </div>

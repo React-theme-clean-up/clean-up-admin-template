@@ -41,9 +41,7 @@ class BlogFeed extends React.Component {
                             </span>
                           </li>
                           <li className="blog-feed__article-meta-inf">
-                            <span className="blog-feed__article-date">
-                              {'On ' + article.date}
-                            </span>
+                            <span className="blog-feed__article-date">{'On ' + article.date}</span>
                           </li>
                         </ul>
                       </div>
