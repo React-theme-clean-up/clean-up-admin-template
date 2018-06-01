@@ -149,11 +149,12 @@ const initialState = {
     menuMobileOpened: false,
     menuCollapsed: true,
     menuShadow: true,
-    themeLight: true,
+    themeLight: false,
     squaredBorders: true,
     borderedCards: false,
     fixedWidth: false,
     settingsOpened: false,
+    borderLess: false,
   },
 
   // USER STATE

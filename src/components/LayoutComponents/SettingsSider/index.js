@@ -56,6 +56,11 @@ class SettingsSider extends React.Component {
     dispatch(setLayoutState({ fixedWidth: state }))
   }
 
+  setBorderLess = state => {
+    const { dispatch } = this.props
+    dispatch(setLayoutState({ borderLess: state }))
+  }
+
   render() {
     const { layoutState } = this.state
     return (
@@ -83,6 +88,10 @@ class SettingsSider extends React.Component {
             <div className="settingsSider__item">
               <Switch checked={layoutState.themeLight} onChange={this.setThemeLight} />
               <span className="settingsSider__itemLabel">Light Theme</span>
+            </div>
+            <div className="settingsSider__item">
+              <Switch checked={layoutState.borderLess} onChange={this.setBorderLess} />
+              <span className="settingsSider__itemLabel">Borderless Cards</span>
             </div>
             <div className="settingsSider__item">
               <Switch checked={layoutState.squaredBorders} onChange={this.setSquaredBorders} />
