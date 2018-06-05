@@ -1,40 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderDatepickerBasic } from './Basic/index.js';
-import { default as renderDatepickerDaterender } from './Daterender/index.js';
-import { default as renderDatepickerDisableddate } from './Disableddate/index.js';
-import { default as renderDatepickerDisabled } from './Disabled/index.js';
-import { default as renderDatepickerExtrafooter } from './Extrafooter/index.js';
-import { default as renderDatepickerFormat } from './Format/index.js';
-import { default as renderDatepickerMode } from './Mode/index.js';
-import { default as renderDatepickerPresettedranges } from './Presettedranges/index.js';
-import { default as renderDatepickerSize } from './Size/index.js';
-import { default as renderDatepickerStartend } from './Startend/index.js';
-import { default as renderDatepickerTime } from './Time/index.js';
+import { default as renderDatepickerBasic } from './Basic/index.js'
+import { default as renderDatepickerDaterender } from './Daterender/index.js'
+import { default as renderDatepickerDisableddate } from './Disableddate/index.js'
+import { default as renderDatepickerDisabled } from './Disabled/index.js'
+import { default as renderDatepickerExtrafooter } from './Extrafooter/index.js'
+import { default as renderDatepickerFormat } from './Format/index.js'
+import { default as renderDatepickerMode } from './Mode/index.js'
+import { default as renderDatepickerPresettedranges } from './Presettedranges/index.js'
+import { default as renderDatepickerSize } from './Size/index.js'
+import { default as renderDatepickerStartend } from './Startend/index.js'
+import { default as renderDatepickerTime } from './Time/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class DatepickerItems extends React.Component {
-
   componentDidMount() {
-    renderDatepickerBasic(ReactDOM, document.getElementById("DatepickerBasic"));
-renderDatepickerDaterender(ReactDOM, document.getElementById("DatepickerDaterender"));
-renderDatepickerDisableddate(ReactDOM, document.getElementById("DatepickerDisableddate"));
-renderDatepickerDisabled(ReactDOM, document.getElementById("DatepickerDisabled"));
-renderDatepickerExtrafooter(ReactDOM, document.getElementById("DatepickerExtrafooter"));
-renderDatepickerFormat(ReactDOM, document.getElementById("DatepickerFormat"));
-renderDatepickerMode(ReactDOM, document.getElementById("DatepickerMode"));
-renderDatepickerPresettedranges(ReactDOM, document.getElementById("DatepickerPresettedranges"));
-renderDatepickerSize(ReactDOM, document.getElementById("DatepickerSize"));
-renderDatepickerStartend(ReactDOM, document.getElementById("DatepickerStartend"));
-renderDatepickerTime(ReactDOM, document.getElementById("DatepickerTime"));
-
+    renderDatepickerBasic(ReactDOM, document.getElementById('DatepickerBasic'))
+    renderDatepickerDaterender(ReactDOM, document.getElementById('DatepickerDaterender'))
+    renderDatepickerDisableddate(ReactDOM, document.getElementById('DatepickerDisableddate'))
+    renderDatepickerDisabled(ReactDOM, document.getElementById('DatepickerDisabled'))
+    renderDatepickerExtrafooter(ReactDOM, document.getElementById('DatepickerExtrafooter'))
+    renderDatepickerFormat(ReactDOM, document.getElementById('DatepickerFormat'))
+    renderDatepickerMode(ReactDOM, document.getElementById('DatepickerMode'))
+    renderDatepickerPresettedranges(ReactDOM, document.getElementById('DatepickerPresettedranges'))
+    renderDatepickerSize(ReactDOM, document.getElementById('DatepickerSize'))
+    renderDatepickerStartend(ReactDOM, document.getElementById('DatepickerStartend'))
+    renderDatepickerTime(ReactDOM, document.getElementById('DatepickerTime'))
   }
 
   render() {
@@ -46,7 +42,12 @@ renderDatepickerTime(ReactDOM, document.getElementById("DatepickerTime"));
               <div className="card-header">
                 <div className="utils__title">
                   <strong>DatePicker</strong>
-                  <a href="https://ant.design/components/date-picker/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-4">
+                  <a
+                    href="https://ant.design/components/date-picker/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-primary ml-4"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </div>
@@ -55,21 +56,38 @@ renderDatepickerTime(ReactDOM, document.getElementById("DatepickerTime"));
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
                     <div className="card card--example" id="components-date-picker-demo-basic">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Basic use case. Users can select or input a date in panel.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Basic use case. Users can select or input a date in panel.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 const \{ MonthPicker, RangePicker, WeekPicker \} = DatePicker;
 
 function onChange(date, dateString) \{
@@ -88,27 +106,49 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-disabled-date">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Disabled Date</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Disabled part of dates and time by <code>{'disabledDate'}</code> and <code>{'disabledTime'}</code> respectively, and <code>{'disabledTime'}</code> only works with <code>{'showTime'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerDisableddate" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import moment from 'moment';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-disabled-date"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Disabled Date</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Disabled part of dates and time by <code>{'disabledDate'}</code> and{' '}
+                        <code>{'disabledTime'}</code> respectively, and{' '}
+                        <code>{'disabledTime'}</code> only works with <code>{'showTime'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDisableddate" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import moment from 'moment';
 import \{ DatePicker \} from 'antd';
 const \{ MonthPicker, RangePicker \} = DatePicker;
 
@@ -172,27 +212,47 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-extra-footer">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Extra Footer</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Render extra footer in panel for customized requirements.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerExtrafooter" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-extra-footer"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Extra Footer</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Render extra footer in panel for customized requirements.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerExtrafooter" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 const \{ RangePicker, MonthPicker \} = DatePicker;
 
 ReactDOM.render(
@@ -205,27 +265,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-mode">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Controlled Panels</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Determing which panel to show with <code>{'mode'}</code> and <code>{'onPanelChange'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerMode" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-mode">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Controlled Panels</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Determing which panel to show with <code>{'mode'}</code> and{' '}
+                        <code>{'onPanelChange'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerMode" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 const \{ RangePicker \} = DatePicker;
 
 class ControlledDatePicker extends React.Component \{
@@ -291,28 +369,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-size">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Three Sizes</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The input box comes in three sizes. <code>{'default'}</code> will be used if <code>{'size'}</code> is omitted.
-
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerSize" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker, Radio \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-size">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Three Sizes</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The input box comes in three sizes. <code>{'default'}</code> will be used if{' '}
+                        <code>{'size'}</code> is omitted.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerSize" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker, Radio \} from 'antd';
 const \{ MonthPicker, RangePicker, WeekPicker \} = DatePicker;
 
 class PickerSizesDemo extends React.Component \{
@@ -348,27 +443,46 @@ class PickerSizesDemo extends React.Component \{
 
 ReactDOM.render(<PickerSizesDemo />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-time">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Choose Time</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">This property provide an additional time selection. When <code>{'showTime'}</code> is an Object, its properties will be passed on to built-in <code>{'TimePicker'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerTime" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-time">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Choose Time</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        This property provide an additional time selection. When{' '}
+                        <code>{'showTime'}</code> is an Object, its properties will be passed on to
+                        built-in <code>{'TimePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerTime" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 const \{ RangePicker \} = DatePicker;
 
 function onChange(value, dateString) \{
@@ -400,30 +514,50 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card card--example" id="components-date-picker-demo-date-render">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Customized Date Rendering</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">We can customize the rendering of date cells in the calendar by providing a <code>{'dateRender'}</code> function to <code>{'DatePicker'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerDaterender" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-date-render"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Customized Date Rendering</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        We can customize the rendering of date cells in the calendar by providing a{' '}
+                        <code>{'dateRender'}</code> function to <code>{'DatePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDaterender" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 const \{ RangePicker \} = DatePicker;
 
 ReactDOM.render(
@@ -459,27 +593,44 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-disabled">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Disabled</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A disabled state of the <code>{'DatePicker'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerDisabled" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-disabled">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Disabled</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        A disabled state of the <code>{'DatePicker'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerDisabled" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 import moment from 'moment';
 const \{ MonthPicker, RangePicker \} = DatePicker;
 
@@ -497,27 +648,44 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-format">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Date Format</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">We can set the date format by <code>{'format'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerFormat" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-format">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Date Format</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        We can set the date format by <code>{'format'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerFormat" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 import moment from 'moment';
 const \{ MonthPicker, RangePicker \} = DatePicker;
 
@@ -536,27 +704,47 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-presetted-ranges">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Presetted Ranges</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">We can set presetted ranges to RangePicker to improve user experience.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerPresettedranges" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-presetted-ranges"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Presetted Ranges</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        We can set presetted ranges to RangePicker to improve user experience.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerPresettedranges" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 import moment from 'moment';
 const RangePicker = DatePicker.RangePicker;
 
@@ -582,29 +770,48 @@ ReactDOM.render(
   mountNode
 );
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-date-picker-demo-start-end">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Customized Range Picker</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">When <code>{'RangePicker'}</code> does not satisfied your requirements, try to implement similar functionality with two <code>{'DatePicker'}</code>.
-> * Use the <code>{'disabledDate'}</code> property to limit the start and end dates.
-> * Improve user experience with <code>{'open'}</code> and <code>{'onOpenChange'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DatepickerStartend" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ DatePicker \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-date-picker-demo-start-end">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Customized Range Picker</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        When <code>{'RangePicker'}</code> does not satisfied your requirements, try
+                        to implement similar functionality with two <code>{'DatePicker'}</code>. > *
+                        Use the <code>{'disabledDate'}</code> property to limit the start and end
+                        dates. > * Improve user experience with <code>{'open'}</code> and{' '}
+                        <code>{'onOpenChange'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DatepickerStartend" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ DatePicker \} from 'antd';
 
 class DateRange extends React.Component \{
   state = \{
@@ -683,12 +890,11 @@ class DateRange extends React.Component \{
 
 ReactDOM.render(<DateRange />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

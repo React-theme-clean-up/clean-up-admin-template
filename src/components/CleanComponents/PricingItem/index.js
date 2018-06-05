@@ -13,7 +13,11 @@ class PricingItem extends React.Component {
     const { data, extended, type } = this.props
 
     return (
-      <div className={`pricing-table__item  ${extended > 0 ? ' pricing-table__item--extended' : ''} ${type ? ' pricing-table__item--' +  type : ''}`}>
+      <div
+        className={`pricing-table__item  ${extended > 0 ? ' pricing-table__item--extended' : ''} ${
+          type ? ' pricing-table__item--' + type : ''
+        }`}
+      >
         <div className="pricing-table__header">
           <div className="pricing-table__pricing__price">
             <span className="pricing-table__pricing__currency">{data.currency}</span>

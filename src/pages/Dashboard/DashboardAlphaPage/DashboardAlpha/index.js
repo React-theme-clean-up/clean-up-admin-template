@@ -4,9 +4,7 @@ import PaymentAccount from 'components/CleanComponents/PaymentAccount'
 import PaymentTx from 'components/CleanComponents/PaymentTx'
 import ChartCard from 'components/CleanComponents/ChartCard'
 import { Button, Input, Icon, Table } from 'antd'
-import {
-  tableData,
-} from './data.json'
+import { tableData } from './data.json'
 
 class DashboardAlpha extends React.Component {
   state = {
@@ -52,9 +50,7 @@ class DashboardAlpha extends React.Component {
     return (
       <div>
         <div className="utils__title utils__title--flat mb-3">
-          <span className="text-uppercase font-size-16">
-            Last Week Statistics
-          </span>
+          <span className="text-uppercase font-size-16">Last Week Statistics</span>
         </div>
         <div className="row">
           <div className="col-xl-4">
@@ -69,7 +65,7 @@ class DashboardAlpha extends React.Component {
                     values: [2, 11, 8, 14, 18, 20, 26],
                     colors: {
                       area: 'rgba(199, 228, 255, 0.5)',
-                      line: '#004585'
+                      line: '#004585',
                     },
                   },
                 ],
@@ -88,7 +84,7 @@ class DashboardAlpha extends React.Component {
                     values: [20, 80, 67, 120, 132, 66, 97],
                     colors: {
                       area: 'rgba(199, 228, 255, 0.5)',
-                      line: '#004585'
+                      line: '#004585',
                     },
                   },
                 ],
@@ -107,7 +103,7 @@ class DashboardAlpha extends React.Component {
                     values: [42, 40, 80, 67, 84, 20, 97],
                     colors: {
                       area: 'rgba(199, 228, 255, 0.5)',
-                      line: '#004585'
+                      line: '#004585',
                     },
                   },
                 ],
@@ -119,9 +115,7 @@ class DashboardAlpha extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <div className="utils__title">
-                  Recently Referrals
-                </div>
+                <div className="utils__title">Recently Referrals</div>
                 <div className="utils__titleDescription">
                   Block with important Recently Referrals information
                 </div>
@@ -137,12 +131,8 @@ class DashboardAlpha extends React.Component {
           </div>
         </div>
         <div className="utils__title utils__title--flat mb-3">
-          <span className="text-uppercase font-size-16">
-            Your Cards (3)
-          </span>
-          <Button className="ml-3">
-            View All
-          </Button>
+          <span className="text-uppercase font-size-16">Your Cards (3)</span>
+          <Button className="ml-3">View All</Button>
         </div>
         <div className="row">
           <div className="col-lg-4">
@@ -177,12 +167,8 @@ class DashboardAlpha extends React.Component {
           </div>
         </div>
         <div className="utils__title utils__title--flat mb-3">
-          <span className="text-uppercase font-size-16">
-            Your Accounts (6)
-          </span>
-          <Button className="ml-3">
-            View All
-          </Button>
+          <span className="text-uppercase font-size-16">Your Accounts (6)</span>
+          <Button className="ml-3">View All</Button>
         </div>
         <div className="row">
           <div className="col-lg-6">
@@ -221,12 +207,8 @@ class DashboardAlpha extends React.Component {
           </div>
         </div>
         <div className="utils__title mb-3">
-          <span className="text-uppercase font-size-16">
-            Recent Transactions (167)
-          </span>
-          <Button className="ml-3">
-            View All
-          </Button>
+          <span className="text-uppercase font-size-16">Recent Transactions (167)</span>
+          <Button className="ml-3">View All</Button>
         </div>
         <div className="row">
           <div className="col-lg-12">

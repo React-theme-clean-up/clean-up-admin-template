@@ -6,27 +6,22 @@ class Login extends React.Component {
   state = {}
 
   componentDidMount() {
-    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
   }
 
   componentWillUnmount() {
-    document.getElementsByTagName('body')[0].style.overflow = '';
+    document.getElementsByTagName('body')[0].style.overflow = ''
   }
 
   render() {
     return (
-      <div
-        className="main-login main-login--fullscreen"
-      >
+      <div className="main-login main-login--fullscreen">
         <div className="main-login__header">
           <div className="row">
             <div className="col-lg-12">
               <div className="main-login__header__logo">
                 <a href="javascript: void(0);">
-                  <img
-                    src="resources/images/login/logo.png"
-                    alt="Clean UI Admin Template"
-                  />
+                  <img src="resources/images/login/logo.png" alt="Clean UI Admin Template" />
                 </a>
               </div>
             </div>

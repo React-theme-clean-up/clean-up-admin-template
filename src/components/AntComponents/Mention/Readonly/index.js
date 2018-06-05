@@ -1,44 +1,38 @@
 import React from 'react'
 import './style.scss'
-import { Mention } from 'antd';
-
-
+import { Mention } from 'antd'
 
 export default function(ReactDOM, mountNode) {
-  const { toString } = Mention;
+  const { toString } = Mention
 
-function onChange(editorState) {
-  console.log(toString(editorState));
-}
+  function onChange(editorState) {
+    console.log(toString(editorState))
+  }
 
-const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai'];
+  const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai']
 
-function App() {
-  return (
-    <div>
-      <div style={{ marginBottom: 10 }}>
+  function App() {
+    return (
+      <div>
+        <div style={{ marginBottom: 10 }}>
+          <Mention
+            style={{ width: '100%' }}
+            onChange={onChange}
+            placeholder="this is disabled Mention"
+            suggestions={users}
+            disabled
+          />
+        </div>
         <Mention
           style={{ width: '100%' }}
           onChange={onChange}
-          placeholder="this is disabled Mention"
+          placeholder="this is readOnly Mention"
           suggestions={users}
-          disabled
+          readOnly
         />
       </div>
-      <Mention
-        style={{ width: '100%' }}
-        onChange={onChange}
-        placeholder="this is readOnly Mention"
-        suggestions={users}
-        readOnly
-      />
-    </div>
-  );
-}
+    )
+  }
 
-
-ReactDOM.render(
-  <App />
-, mountNode);
-
+  ReactDOM.render(<App />, mountNode)
 }

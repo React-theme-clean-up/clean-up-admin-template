@@ -1,36 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderDropdownBasic } from './Basic/index.js';
-import { default as renderDropdownContextmenu } from './Contextmenu/index.js';
-import { default as renderDropdownDropdownbutton } from './Dropdownbutton/index.js';
-import { default as renderDropdownEvent } from './Event/index.js';
-import { default as renderDropdownItem } from './Item/index.js';
-import { default as renderDropdownOverlayvisible } from './Overlayvisible/index.js';
-import { default as renderDropdownPlacement } from './Placement/index.js';
-import { default as renderDropdownSubmenu } from './Submenu/index.js';
-import { default as renderDropdownTrigger } from './Trigger/index.js';
+import { default as renderDropdownBasic } from './Basic/index.js'
+import { default as renderDropdownContextmenu } from './Contextmenu/index.js'
+import { default as renderDropdownDropdownbutton } from './Dropdownbutton/index.js'
+import { default as renderDropdownEvent } from './Event/index.js'
+import { default as renderDropdownItem } from './Item/index.js'
+import { default as renderDropdownOverlayvisible } from './Overlayvisible/index.js'
+import { default as renderDropdownPlacement } from './Placement/index.js'
+import { default as renderDropdownSubmenu } from './Submenu/index.js'
+import { default as renderDropdownTrigger } from './Trigger/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class DropdownItems extends React.Component {
-
   componentDidMount() {
-    renderDropdownBasic(ReactDOM, document.getElementById("DropdownBasic"));
-renderDropdownContextmenu(ReactDOM, document.getElementById("DropdownContextmenu"));
-renderDropdownDropdownbutton(ReactDOM, document.getElementById("DropdownDropdownbutton"));
-renderDropdownEvent(ReactDOM, document.getElementById("DropdownEvent"));
-renderDropdownItem(ReactDOM, document.getElementById("DropdownItem"));
-renderDropdownOverlayvisible(ReactDOM, document.getElementById("DropdownOverlayvisible"));
-renderDropdownPlacement(ReactDOM, document.getElementById("DropdownPlacement"));
-renderDropdownSubmenu(ReactDOM, document.getElementById("DropdownSubmenu"));
-renderDropdownTrigger(ReactDOM, document.getElementById("DropdownTrigger"));
-
+    renderDropdownBasic(ReactDOM, document.getElementById('DropdownBasic'))
+    renderDropdownContextmenu(ReactDOM, document.getElementById('DropdownContextmenu'))
+    renderDropdownDropdownbutton(ReactDOM, document.getElementById('DropdownDropdownbutton'))
+    renderDropdownEvent(ReactDOM, document.getElementById('DropdownEvent'))
+    renderDropdownItem(ReactDOM, document.getElementById('DropdownItem'))
+    renderDropdownOverlayvisible(ReactDOM, document.getElementById('DropdownOverlayvisible'))
+    renderDropdownPlacement(ReactDOM, document.getElementById('DropdownPlacement'))
+    renderDropdownSubmenu(ReactDOM, document.getElementById('DropdownSubmenu'))
+    renderDropdownTrigger(ReactDOM, document.getElementById('DropdownTrigger'))
   }
 
   render() {
@@ -42,7 +38,12 @@ renderDropdownTrigger(ReactDOM, document.getElementById("DropdownTrigger"));
               <div className="card-header">
                 <div className="utils__title">
                   <strong>Dropdown</strong>
-                  <a href="https://ant.design/components/dropdown/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-4">
+                  <a
+                    href="https://ant.design/components/dropdown/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-primary ml-4"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </div>
@@ -51,21 +52,36 @@ renderDropdownTrigger(ReactDOM, document.getElementById("DropdownTrigger"));
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
                     <div className="card card--example" id="components-dropdown-demo-basic">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Basic</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The most basic dropdown menu.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Basic</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">The most basic dropdown menu.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon \} from 'antd';
 
 const menu = (
   <Menu>
@@ -89,27 +105,47 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-dropdown-button">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Button with dropdown menu</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">A button is on the left, and a related functional menu is on the right.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownDropdownbutton" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Button, Icon, message \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-dropdown-demo-dropdown-button"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Button with dropdown menu</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        A button is on the left, and a related functional menu is on the right.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownDropdownbutton" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Button, Icon, message \} from 'antd';
 
 function handleButtonClick(e) \{
   message.info('Click on left button.');
@@ -150,27 +186,42 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-item">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Other elements</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Divider and disabled menu item.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownItem" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-dropdown-demo-item">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Other elements</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Divider and disabled menu item.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownItem" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon \} from 'antd';
 
 const menu = (
   <Menu>
@@ -193,27 +244,42 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-placement">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Placement</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Support 6 placements.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownPlacement" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Button \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-dropdown-demo-placement">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Placement</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Support 6 placements.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownPlacement" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Button \} from 'antd';
 
 const menu = (
   <Menu>
@@ -253,27 +319,45 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-trigger">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Trigger mode</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The default trigger mode is <code>{'hover'}</code>, you can change it to <code>{'click'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownTrigger" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-dropdown-demo-trigger">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Trigger mode</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The default trigger mode is <code>{'hover'}</code>, you can change it to{' '}
+                        <code>{'click'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownTrigger" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon \} from 'antd';
 
 const menu = (
   <Menu>
@@ -296,30 +380,47 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
                     <div className="card card--example" id="components-dropdown-demo-context-menu">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Context Menu</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The default trigger mode is <code>{'hover'}</code>, you can change it to <code>{'click'}</code>.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownContextmenu" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Context Menu</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The default trigger mode is <code>{'hover'}</code>, you can change it to{' '}
+                        <code>{'click'}</code>.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownContextmenu" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown \} from 'antd';
 
 const menu = (
   <Menu>
@@ -335,27 +436,45 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-event">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Click event</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">An event will be triggered when you click menu items, in which you can make different operations according to item's key.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownEvent" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon, message \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-dropdown-demo-event">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Click event</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        An event will be triggered when you click menu items, in which you can make
+                        different operations according to item's key.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownEvent" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon, message \} from 'antd';
 const onClick = function (\{ key \}) \{
   message.info(\`Click on item \$\{key\}\`);
 \};
@@ -376,27 +495,48 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-overlay-visible">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">The way of hiding</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The default is to close the menu when you click on menu items, this feature can be turned off.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownOverlayvisible" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-dropdown-demo-overlay-visible"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">The way of hiding</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The default is to close the menu when you click on menu items, this feature
+                        can be turned off.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownOverlayvisible" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon \} from 'antd';
 
 class OverlayVisible extends React.Component \{
   state = \{
@@ -433,27 +573,42 @@ class OverlayVisible extends React.Component \{
 
 ReactDOM.render(<OverlayVisible />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-dropdown-demo-sub-menu">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Cascading menu</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The menu has multiple levels.
-</div>
-    <div className="card-body pb-0">
-      <div id="DropdownSubmenu" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ Menu, Dropdown, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-dropdown-demo-sub-menu">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Cascading menu</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">The menu has multiple levels.</div>
+                      <div className="card-body pb-0">
+                        <div id="DropdownSubmenu" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ Menu, Dropdown, Icon \} from 'antd';
 const SubMenu = Menu.SubMenu;
 
 const menu = (
@@ -479,12 +634,11 @@ ReactDOM.render(
   </Dropdown>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

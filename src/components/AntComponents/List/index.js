@@ -1,34 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism';
-import { Collapse, Icon } from 'antd';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism'
+import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/styles/prism'
+import { Collapse, Icon } from 'antd'
 
-import { default as renderListBasic } from './Basic/index.js';
-import { default as renderListGrid } from './Grid/index.js';
-import { default as renderListInfiniteload } from './Infiniteload/index.js';
-import { default as renderListInfinitevirtualizedload } from './Infinitevirtualizedload/index.js';
-import { default as renderListLoadmore } from './Loadmore/index.js';
-import { default as renderListResposive } from './Resposive/index.js';
-import { default as renderListSimple } from './Simple/index.js';
-import { default as renderListVertical } from './Vertical/index.js';
+import { default as renderListBasic } from './Basic/index.js'
+import { default as renderListGrid } from './Grid/index.js'
+import { default as renderListInfiniteload } from './Infiniteload/index.js'
+import { default as renderListInfinitevirtualizedload } from './Infinitevirtualizedload/index.js'
+import { default as renderListLoadmore } from './Loadmore/index.js'
+import { default as renderListResposive } from './Resposive/index.js'
+import { default as renderListSimple } from './Simple/index.js'
+import { default as renderListVertical } from './Vertical/index.js'
 
-
-const Panel = Collapse.Panel;
-
+const Panel = Collapse.Panel
 
 class ListItems extends React.Component {
-
   componentDidMount() {
-    renderListBasic(ReactDOM, document.getElementById("ListBasic"));
-renderListGrid(ReactDOM, document.getElementById("ListGrid"));
-renderListInfiniteload(ReactDOM, document.getElementById("ListInfiniteload"));
-renderListInfinitevirtualizedload(ReactDOM, document.getElementById("ListInfinitevirtualizedload"));
-renderListLoadmore(ReactDOM, document.getElementById("ListLoadmore"));
-renderListResposive(ReactDOM, document.getElementById("ListResposive"));
-renderListSimple(ReactDOM, document.getElementById("ListSimple"));
-renderListVertical(ReactDOM, document.getElementById("ListVertical"));
-
+    renderListBasic(ReactDOM, document.getElementById('ListBasic'))
+    renderListGrid(ReactDOM, document.getElementById('ListGrid'))
+    renderListInfiniteload(ReactDOM, document.getElementById('ListInfiniteload'))
+    renderListInfinitevirtualizedload(
+      ReactDOM,
+      document.getElementById('ListInfinitevirtualizedload'),
+    )
+    renderListLoadmore(ReactDOM, document.getElementById('ListLoadmore'))
+    renderListResposive(ReactDOM, document.getElementById('ListResposive'))
+    renderListSimple(ReactDOM, document.getElementById('ListSimple'))
+    renderListVertical(ReactDOM, document.getElementById('ListVertical'))
   }
 
   render() {
@@ -40,7 +39,12 @@ renderListVertical(ReactDOM, document.getElementById("ListVertical"));
               <div className="card-header">
                 <div className="utils__title">
                   <strong>List</strong>
-                  <a href="https://ant.design/components/list/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary ml-4">
+                  <a
+                    href="https://ant.design/components/list/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-primary ml-4"
+                  >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
                 </div>
@@ -49,21 +53,36 @@ renderListVertical(ReactDOM, document.getElementById("ListVertical"));
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
                     <div className="card card--example" id="components-list-demo-basic">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Basic list</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Basic list.
-</div>
-    <div className="card-body pb-0">
-      <div id="ListBasic" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, Avatar \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Basic list</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">Basic list.</div>
+                      <div className="card-body pb-0">
+                        <div id="ListBasic" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, Avatar \} from 'antd';
 
 const data = [
   \{
@@ -96,27 +115,45 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-infinite-load">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Scrolling loaded</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">The example of infinite load with [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller).
-</div>
-    <div className="card-body pb-0">
-      <div id="ListInfiniteload" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, message, Avatar, Spin \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-list-demo-infinite-load">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Scrolling loaded</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        The example of infinite load with
+                        [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListInfiniteload" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, message, Avatar, Spin \} from 'antd';
 import reqwest from 'reqwest';
 
 import InfiniteScroll from 'react-infinite-scroller';
@@ -201,27 +238,44 @@ class InfiniteListExample extends React.Component \{
 
 ReactDOM.render(<InfiniteListExample />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-loadmore">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Load more</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Load more list with <code>{'loadMore'}</code> property.
-</div>
-    <div className="card-body pb-0">
-      <div id="ListLoadmore" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, Avatar, Button, Spin \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-list-demo-loadmore">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Load more</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Load more list with <code>{'loadMore'}</code> property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListLoadmore" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, Avatar, Button, Spin \} from 'antd';
 
 import reqwest from 'reqwest';
 
@@ -302,31 +356,48 @@ class LoadMoreList extends React.Component \{
 
 ReactDOM.render(<LoadMoreList />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-simple">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Simple list</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Ant Design supports a default list size as well as a large and small size.
-
-If a large or small list is desired, set the size property to either large or small respectively. Omit the size property for a list with the default size.
-
-Customizing the header and footer of list by setting <code>{'header'}</code> and <code>{'footer'}</code> property.
-</div>
-    <div className="card-body pb-0">
-      <div id="ListSimple" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-list-demo-simple">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Simple list</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Ant Design supports a default list size as well as a large and small size.
+                        If a large or small list is desired, set the size property to either large
+                        or small respectively. Omit the size property for a list with the default
+                        size. Customizing the header and footer of list by setting{' '}
+                        <code>{'header'}</code> and <code>{'footer'}</code> property.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListSimple" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List \} from 'antd';
 
 const data = [
   'Racing car sprays burning fuel into crowd.',
@@ -367,30 +438,46 @@ ReactDOM.render(
   </div>
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
                     <div className="card card--example" id="components-list-demo-grid">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Grid</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Creating a grid list by setting the <code>{'grid'}</code> property of List
-</div>
-    <div className="card-body pb-0">
-      <div id="ListGrid" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, Card \} from 'antd';
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Grid</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Creating a grid list by setting the <code>{'grid'}</code> property of List
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListGrid" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, Card \} from 'antd';
 
 const data = [
   \{
@@ -419,29 +506,52 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-infinite-virtualized-load">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Infinite</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">An example of infinite list & virtualized loading using [react-virtualized](https://github.com/bvaughn/react-virtualized). [Learn more](https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization/)
-
-<code>{'Virtualized'}</code> rendering is a technique to mount big sets of data. It reduces the amount of rendered DOM nodes by tracking and hiding whatever isn't currently visible.
-</div>
-    <div className="card-body pb-0">
-      <div id="ListInfinitevirtualizedload" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, message, Avatar, Spin \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div
+                      className="card card--example"
+                      id="components-list-demo-infinite-virtualized-load"
+                    >
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Infinite</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        An example of infinite list & virtualized loading using
+                        [react-virtualized](https://github.com/bvaughn/react-virtualized). [Learn
+                        more](https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization/)
+                        <code>{'Virtualized'}</code> rendering is a technique to mount big sets of
+                        data. It reduces the amount of rendered DOM nodes by tracking and hiding
+                        whatever isn't currently visible.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListInfinitevirtualizedload" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, message, Avatar, Spin \} from 'antd';
 
 import reqwest from 'reqwest';
 
@@ -565,27 +675,45 @@ class VirtualizedExample extends React.Component \{
 
 ReactDOM.render(<VirtualizedExample />, mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-resposive">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Responsive grid list</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Responsive grid list. The size property is as same as [Layout Grid](https://ant.design/components/grid/#Col).
-</div>
-    <div className="card-body pb-0">
-      <div id="ListResposive" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, Card \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-list-demo-resposive">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Responsive grid list</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Responsive grid list. The size property is as same as [Layout
+                        Grid](https://ant.design/components/grid/#Col).
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListResposive" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, Card \} from 'antd';
 
 const data = [
   \{
@@ -620,27 +748,45 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-<div className="card card--example" id="components-list-demo-vertical">
-  <div className="card-header">
-    <h5 className="text-black">
-      <strong className="text-capitalize">Vertical</strong>
-    </h5>
-  </div>
-    <div className="card-body pb-0">Setting <code>{'itemLayout'}</code> property with <code>{'vertical'}</code> to create a vertical list.
-</div>
-    <div className="card-body pb-0">
-      <div id="ListVertical" />
-    </div>
-    <div className="utils__codeCollapse">
-      <Collapse bordered={false} defaultActiveKey={['1']}>
-        <Panel header={<span><i className="fa fa-code" style={{ fontSize: 16, color: '#9f9f9f' }}></i><span className="ml-2 text-primary">Show Code</span></span>} key="2" showArrow={false}>
-          <SyntaxHighlighter language='jsx' style={base16AteliersulphurpoolLight} useInlineStyles={true}>
-            {`import \{ List, Avatar, Icon \} from 'antd';
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
+                    <div className="card card--example" id="components-list-demo-vertical">
+                      <div className="card-header">
+                        <h5 className="text-black">
+                          <strong className="text-capitalize">Vertical</strong>
+                        </h5>
+                      </div>
+                      <div className="card-body pb-0">
+                        Setting <code>{'itemLayout'}</code> property with <code>{'vertical'}</code>{' '}
+                        to create a vertical list.
+                      </div>
+                      <div className="card-body pb-0">
+                        <div id="ListVertical" />
+                      </div>
+                      <div className="utils__codeCollapse">
+                        <Collapse bordered={false} defaultActiveKey={['1']}>
+                          <Panel
+                            header={
+                              <span>
+                                <i
+                                  className="fa fa-code"
+                                  style={{ fontSize: 16, color: '#9f9f9f' }}
+                                />
+                                <span className="ml-2 text-primary">Show Code</span>
+                              </span>
+                            }
+                            key="2"
+                            showArrow={false}
+                          >
+                            <SyntaxHighlighter
+                              language="jsx"
+                              style={base16AteliersulphurpoolLight}
+                              useInlineStyles={true}
+                            >
+                              {`import \{ List, Avatar, Icon \} from 'antd';
 
 const listData = [];
 for (let i = 0; i < 5; i++) \{
@@ -690,12 +836,11 @@ ReactDOM.render(
   />
 , mountNode);
 `}
-          </SyntaxHighlighter>
-        </Panel>
-      </Collapse>
-    </div>
-</div>
-
+                            </SyntaxHighlighter>
+                          </Panel>
+                        </Collapse>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

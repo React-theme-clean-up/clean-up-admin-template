@@ -815,7 +815,10 @@ class MenuSider extends React.Component {
             </div>
           )}
         </div>
-        <Scrollbars style={{ height: isMobile ? 'calc(100vh - 64px)' : 'calc(100vh - 112px)' }}>
+        <Scrollbars
+          autoHide
+          style={{ height: isMobile ? 'calc(100vh - 64px)' : 'calc(100vh - 112px)' }}
+        >
           <Menu
             theme={themeLight ? 'light' : 'dark'}
             onClick={this.handleClick}

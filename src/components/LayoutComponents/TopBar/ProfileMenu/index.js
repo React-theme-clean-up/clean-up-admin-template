@@ -17,12 +17,12 @@ const mapStateToProps = (state, props) => ({
 @connect(mapStateToProps, mapDispatchToProps)
 class ProfileMenu extends React.Component {
   state = {
-    count: 7
+    count: 7,
   }
 
   addCount = () => {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     })
   }
 
@@ -33,9 +33,7 @@ class ProfileMenu extends React.Component {
       <Menu selectable={false}>
         <Menu.Item>
           <div className="rfq__widget__system-status__item">
-            <strong>
-              Hello, {userState.role}
-            </strong>
+            <strong>Hello, {userState.role}</strong>
             <div>
               <strong>Billing Plan:</strong> Professional
               <br />
@@ -70,8 +68,13 @@ class ProfileMenu extends React.Component {
     )
     return (
       <div className="topbar__dropdown d-inline-block">
-        <Dropdown overlay={menu} trigger={['click']} placement="bottomRight" onVisibleChange={this.addCount}>
-          <a className="ant-dropdown-link" href="/" >
+        <Dropdown
+          overlay={menu}
+          trigger={['click']}
+          placement="bottomRight"
+          onVisibleChange={this.addCount}
+        >
+          <a className="ant-dropdown-link" href="/">
             <Badge count={count}>
               <Avatar className="topbar__avatar" shape="square" size="large" icon="user" />
             </Badge>

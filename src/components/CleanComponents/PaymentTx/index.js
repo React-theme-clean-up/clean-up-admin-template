@@ -24,21 +24,24 @@ class PaymentTx extends React.Component {
     const { income, amount, footer, info } = this.state
 
     return (
-      <a href={"javascript: void(0);"} className={income ? 'card card--withShadow paymentTx paymentTx--income' : 'card card--withShadow paymentTx'}>
+      <a
+        href={'javascript: void(0);'}
+        className={
+          income
+            ? 'card card--withShadow paymentTx paymentTx--income'
+            : 'card card--withShadow paymentTx'
+        }
+      >
         <div className="paymentTx__icon">
-          <i className={income ? 'lnr lnr-arrow-left' : 'lnr lnr-arrow-right' } />
+          <i className={income ? 'lnr lnr-arrow-left' : 'lnr lnr-arrow-right'} />
         </div>
-        {amount &&
+        {amount && (
           <div>
             <span className="paymentTx__amount">{amount}</span>
-            {info &&
-              <sup className="paymentTx__info">{info}</sup>
-            }
+            {info && <sup className="paymentTx__info">{info}</sup>}
           </div>
-        }
-        {footer &&
-          <div className="paymentTx__footer">{footer}</div>
-        }
+        )}
+        {footer && <div className="paymentTx__footer">{footer}</div>}
       </a>
     )
   }

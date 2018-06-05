@@ -450,9 +450,7 @@ class DashboardBeta extends React.Component {
                 <div className="utils__title">
                   <strong>Chat</strong>
                 </div>
-                <div className="utils__titleDescription">
-                  Block with important Chat information
-                </div>
+                <div className="utils__titleDescription">Block with important Chat information</div>
               </div>
               <div className="card-body">
                 <Chat />

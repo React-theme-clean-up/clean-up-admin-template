@@ -132,7 +132,8 @@ class ProductEdit extends React.Component {
                           placeholder="Select a color"
                           optionFilterProp="children"
                           filterOption={(input, option) =>
-                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                          }
                         >
                           <Option value="blue">Blue</Option>
                           <Option value="red">Red</Option>
@@ -150,7 +151,8 @@ class ProductEdit extends React.Component {
                           placeholder="Select a size"
                           optionFilterProp="children"
                           filterOption={(input, option) =>
-                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                          }
                         >
                           <Option value="s">Small</Option>
                           <Option value="m">Middle</Option>

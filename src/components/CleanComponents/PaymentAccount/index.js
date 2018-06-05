@@ -24,21 +24,15 @@ class PaymentAccount extends React.Component {
     const { icon, number, footer, sum } = this.state
 
     return (
-      <a href={"javascript: void(0);"} className="card card--withShadow paymentAccount">
-        {icon &&
+      <a href={'javascript: void(0);'} className="card card--withShadow paymentAccount">
+        {icon && (
           <div className="paymentAccount__icon">
             <i className={icon} />
           </div>
-        }
-        {number &&
-          <span className="paymentAccount__number">{number}</span>
-        }
-        {sum &&
-        <span className="paymentAccount__sum">{sum}</span>
-        }
-        {footer &&
-          <div className="paymentAccount__footer">{footer}</div>
-        }
+        )}
+        {number && <span className="paymentAccount__number">{number}</span>}
+        {sum && <span className="paymentAccount__sum">{sum}</span>}
+        {footer && <div className="paymentAccount__footer">{footer}</div>}
       </a>
     )
   }

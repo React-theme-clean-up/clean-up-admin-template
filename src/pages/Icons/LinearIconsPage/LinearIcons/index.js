@@ -36,13 +36,13 @@ class LinearIcons extends React.Component {
             <div className="row">
               <div className="col-xl-6 offset-xl-3">
                 <ul className="utils__iconsBlock list-unstyled">
-                  {iconsData.map((icon, index) =>
+                  {iconsData.map((icon, index) => (
                     <Tooltip title={'lnr ' + icon} key={index}>
                       <li>
                         <i className={'lnr ' + icon} />
                       </li>
-                    </Tooltip>,
-                  )}
+                    </Tooltip>
+                  ))}
                 </ul>
               </div>
             </div>

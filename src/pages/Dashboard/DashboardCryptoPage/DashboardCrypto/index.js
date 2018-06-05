@@ -1,9 +1,7 @@
 import React from 'react'
 
 class DashboardCrypto extends React.Component {
-  state = {
-
-  }
+  state = {}
 
   render() {
     return (
@@ -16,12 +14,9 @@ class DashboardCrypto extends React.Component {
                   <strong>Some Title</strong>
                 </div>
               </div>
-              <div className="card-body">
-                Hey hey
-              </div>
+              <div className="card-body">Hey hey</div>
             </div>
           </div>
-
         </div>
       </div>
     )
