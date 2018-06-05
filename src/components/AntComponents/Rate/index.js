@@ -30,24 +30,24 @@ class RateItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Rate</strong>
                   <a
                     href="https://ant.design/components/rate/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-rate-demo-basic">
+                    <div className="card card--example" id="components-rate-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -84,9 +84,9 @@ ReactDOM.render(<Rate />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-rate-demo-clear">
+                    <div className="card card--example" id="components-rate-demo-clear">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Clear star</strong>
                         </h5>
                       </div>
@@ -131,9 +131,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-rate-demo-half">
+                    <div className="card card--example" id="components-rate-demo-half">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Half star</strong>
                         </h5>
                       </div>
@@ -172,9 +172,9 @@ ReactDOM.render(<Rate allowHalf defaultValue=\{2.5\} />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-rate-demo-character">
+                    <div className="card card--example" id="components-rate-demo-character">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Other Character</strong>
                         </h5>
                       </div>
@@ -222,9 +222,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-rate-demo-disabled">
+                    <div className="card card--example" id="components-rate-demo-disabled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Read only</strong>
                         </h5>
                       </div>
@@ -261,9 +261,9 @@ ReactDOM.render(<Rate disabled defaultValue=\{2\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-rate-demo-text">
+                    <div className="card card--example" id="components-rate-demo-text">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Show copywriting</strong>
                         </h5>
                       </div>

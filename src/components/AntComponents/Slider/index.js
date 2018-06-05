@@ -32,24 +32,24 @@ class SliderItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Slider</strong>
                   <a
                     href="https://ant.design/components/slider/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-slider-demo-basic">
+                    <div className="card card--example" id="components-slider-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -109,9 +109,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-slider-demo-icon-slider">
+                    <div className="card card--example" id="components-slider-demo-icon-slider">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Slider with icon</strong>
                         </h5>
                       </div>
@@ -173,9 +173,9 @@ ReactDOM.render(<IconSlider min=\{0\} max=\{20\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-slider-demo-mark">
+                    <div className="card card--example" id="components-slider-demo-mark">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Graduated slider</strong>
                         </h5>
                       </div>
@@ -245,9 +245,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-slider-demo-vertical">
+                    <div className="card card--example" id="components-slider-demo-vertical">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>
@@ -317,9 +317,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-slider-demo-event">
+                    <div className="card card--example" id="components-slider-demo-event">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Event</strong>
                         </h5>
                       </div>
@@ -374,9 +374,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-slider-demo-input-number">
+                    <div className="card card--example" id="components-slider-demo-input-number">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Slider with InputNumber</strong>
                         </h5>
                       </div>
@@ -479,9 +479,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-slider-demo-tip-formatter">
+                    <div className="card card--example" id="components-slider-demo-tip-formatter">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customerize tooltip</strong>
                         </h5>
                       </div>

@@ -32,24 +32,24 @@ class SpinItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Spin</strong>
                   <a
                     href="https://ant.design/components/spin/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-spin-demo-basic">
+                    <div className="card card--example" id="components-spin-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">basic Usage</strong>
                         </h5>
                       </div>
@@ -86,9 +86,9 @@ ReactDOM.render(<Spin />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-spin-demo-delayAndDebounce">
+                    <div className="card card--example" id="components-spin-demo-delayAndDebounce">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">delay</strong>
                         </h5>
                       </div>
@@ -152,9 +152,9 @@ ReactDOM.render(<Card />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-spin-demo-nested">
+                    <div className="card card--example" id="components-spin-demo-nested">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Embedded mode</strong>
                         </h5>
                       </div>
@@ -217,9 +217,9 @@ ReactDOM.render(<Card />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-spin-demo-tip">
+                    <div className="card card--example" id="components-spin-demo-tip">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized description</strong>
                         </h5>
                       </div>
@@ -266,9 +266,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-spin-demo-custom-indicator">
+                    <div className="card card--example" id="components-spin-demo-custom-indicator">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Custom spinning indicator</strong>
                         </h5>
                       </div>
@@ -307,9 +307,9 @@ ReactDOM.render(<Spin indicator=\{antIcon\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-spin-demo-inside">
+                    <div className="card card--example" id="components-spin-demo-inside">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Inside a container</strong>
                         </h5>
                       </div>
@@ -350,9 +350,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-spin-demo-size">
+                    <div className="card card--example" id="components-spin-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>

@@ -3,14 +3,14 @@
     "first": {
       "name": "Work Progress:",
       "description": "Ipsum is simply dummy",
-      "progress": 87,
+      "progress": 66,
       "status": "active"
     },
     "second": {
       "name": "Airplanes:",
       "description": "Typesetting industry",
       "progress": 23,
-      "status": "active"
+      "status": "success"
     },
     "third": {
       "name": "Robots:",
@@ -27,8 +27,8 @@
     "fives": {
       "name": "Total Time:",
       "description": "Printing and typesetting",
-      "progress": 100,
-      "status": ""
+      "progress": 98,
+      "status": "active"
     }
   }
 }

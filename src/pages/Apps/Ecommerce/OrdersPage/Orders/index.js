@@ -41,17 +41,12 @@ class Orders extends React.Component {
             ...record,
             name: (
               <span>
-                {record.name.split(reg).map(
-                  (text, i) =>
-                    i > 0
-                      ? [
-                          <span className="highlight">
-                            {match[0]}
-                          </span>,
-                          text,
-                        ]
-                      : text,
-                )}
+                {record.name
+                  .split(reg)
+                  .map(
+                    (text, i) =>
+                      i > 0 ? [<span className="highlight">{match[0]}</span>, text] : text,
+                  )}
               </span>
             ),
           }
@@ -84,10 +79,11 @@ class Orders extends React.Component {
         title: 'ID',
         dataIndex: 'id',
         key: 'id',
-        render: text =>
+        render: text => (
           <a className="utils__link--underlined" href="javascript: void(0);">
             {'#' + text}
-          </a>,
+          </a>
+        ),
         sorter: (a, b) => a.id - b.id,
       },
       {
@@ -100,10 +96,11 @@ class Orders extends React.Component {
         dataIndex: 'customer',
         key: 'customer',
         sorter: (a, b) => a.name.length - b.name.length,
-        render: text =>
+        render: text => (
           <a className="utils__link--underlined" href="javascript: void(0);">
             {text}
-          </a>,
+          </a>
+        ),
         filterDropdown: (
           <div className="custom-filter-dropdown">
             <Input
@@ -135,30 +132,21 @@ class Orders extends React.Component {
         title: 'Grand Total',
         dataIndex: 'total',
         key: 'total',
-        render: text =>
-          <span>
-            {'$' + text}
-          </span>,
+        render: text => <span>{'$' + text}</span>,
         sorter: (a, b) => a.total - b.total,
       },
       {
         title: 'Tax',
         dataIndex: 'tax',
         key: 'tax',
-        render: text =>
-          <span>
-            {'$' + text}
-          </span>,
+        render: text => <span>{'$' + text}</span>,
         sorter: (a, b) => a.tax - b.tax,
       },
       {
         title: 'Shipping',
         dataIndex: 'shipping',
         key: 'shipping',
-        render: text =>
-          <span>
-            {'$' + text}
-          </span>,
+        render: text => <span>{'$' + text}</span>,
         sorter: (a, b) => a.shipping - b.shipping,
       },
       {
@@ -171,15 +159,16 @@ class Orders extends React.Component {
         title: 'Status',
         dataIndex: 'status',
         key: 'status',
-        render: text =>
+        render: text => (
           <span className={text === 'Processing' ? 'badge badge-primary' : 'badge badge-default'}>
             {text}
-          </span>,
+          </span>
+        ),
       },
       {
         title: 'Action',
         key: 'action',
-        render: (text, record) =>
+        render: (text, record) => (
           <span>
             <Button icon="edit" className="mr-1" size="small">
               View
@@ -187,16 +176,17 @@ class Orders extends React.Component {
             <Button icon="cross" size="small">
               Remove
             </Button>
-          </span>,
+          </span>
+        ),
       },
     ]
 
     return (
       <div className="card">
         <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
+          <div className="utils__title">
             <strong>Orders</strong>
-          </h5>
+          </div>
         </div>
         <div className="card-body">
           <Table

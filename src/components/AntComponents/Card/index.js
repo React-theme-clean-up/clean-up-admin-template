@@ -38,24 +38,24 @@ class CardItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Card</strong>
                   <a
                     href="https://ant.design/components/card/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-card-demo-basic">
+                    <div className="card card--example" id="components-card-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic card</strong>
                         </h5>
                       </div>
@@ -100,9 +100,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-flexible-content">
+                    <div className="card card--example" id="components-card-demo-flexible-content">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized content</strong>
                         </h5>
                       </div>
@@ -153,9 +153,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-in-column">
+                    <div className="card card--example" id="components-card-demo-in-column">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Card in column</strong>
                         </h5>
                       </div>
@@ -208,9 +208,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-loading">
+                    <div className="card card--example" id="components-card-demo-loading">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Loading card</strong>
                         </h5>
                       </div>
@@ -253,9 +253,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-simple">
+                    <div className="card card--example" id="components-card-demo-simple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Simple card</strong>
                         </h5>
                       </div>
@@ -302,9 +302,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-card-demo-border-less">
+                    <div className="card card--example" id="components-card-demo-border-less">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">No border</strong>
                         </h5>
                       </div>
@@ -349,9 +349,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-grid-card">
+                    <div className="card card--example" id="components-card-demo-grid-card">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Grid card</strong>
                         </h5>
                       </div>
@@ -403,9 +403,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-inner">
+                    <div className="card card--example" id="components-card-demo-inner">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Inner card</strong>
                         </h5>
                       </div>
@@ -473,9 +473,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-meta">
+                    <div className="card card--example" id="components-card-demo-meta">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             Support more content configuration
                           </strong>
@@ -530,9 +530,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-card-demo-tabs">
+                    <div className="card card--example" id="components-card-demo-tabs">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">With tabs</strong>
                         </h5>
                       </div>

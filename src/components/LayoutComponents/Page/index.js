@@ -105,7 +105,7 @@ class Page extends React.Component {
         if (isResolve) {
           this.stopLoading()
         }
-      }, 300) // show state.app.isLoading equal or more then 300ms
+      }, 0) // show state.app.isLoading equal or more then 0ms
       if (this._onMounted) {
         this._onMounted()
           .catch(error => {

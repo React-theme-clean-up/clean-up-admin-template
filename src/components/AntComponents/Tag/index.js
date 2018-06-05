@@ -28,24 +28,24 @@ class TagItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Tag</strong>
                   <a
                     href="https://ant.design/components/tag/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tag-demo-basic">
+                    <div className="card card--example" id="components-tag-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -103,9 +103,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tag-demo-colorful">
+                    <div className="card card--example" id="components-tag-demo-colorful">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Colorful Tag</strong>
                         </h5>
                       </div>
@@ -169,9 +169,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tag-demo-hot-tags">
+                    <div className="card card--example" id="components-tag-demo-hot-tags">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Hot Tags</strong>
                         </h5>
                       </div>
@@ -246,9 +246,9 @@ ReactDOM.render(<HotTags />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tag-demo-checkable">
+                    <div className="card card--example" id="components-tag-demo-checkable">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Checkable</strong>
                         </h5>
                       </div>
@@ -306,9 +306,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tag-demo-control">
+                    <div className="card card--example" id="components-tag-demo-control">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Add</strong>
                         </h5>
                       </div>

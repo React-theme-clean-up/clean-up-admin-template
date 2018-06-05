@@ -38,24 +38,24 @@ class GridItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Grid</strong>
                   <a
                     href="https://ant.design/components/grid/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-grid-demo-basic">
+                    <div className="card card--example" id="components-grid-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic Grid</strong>
                         </h5>
                       </div>
@@ -116,9 +116,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-flex-order">
+                    <div className="card card--example" id="components-grid-demo-flex-order">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Flex Order</strong>
                         </h5>
                       </div>
@@ -167,9 +167,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-gutter">
+                    <div className="card card--example" id="components-grid-demo-gutter">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Grid Gutter</strong>
                         </h5>
                       </div>
@@ -230,9 +230,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-playground">
+                    <div className="card card--example" id="components-grid-demo-playground">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Playground</strong>
                         </h5>
                       </div>
@@ -335,9 +335,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-responsive">
+                    <div className="card card--example" id="components-grid-demo-responsive">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Responsive</strong>
                         </h5>
                       </div>
@@ -387,9 +387,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-grid-demo-flex-align">
+                    <div className="card card--example" id="components-grid-demo-flex-align">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Flex Alignment</strong>
                         </h5>
                       </div>
@@ -455,9 +455,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-flex">
+                    <div className="card card--example" id="components-grid-demo-flex">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Flex Layout</strong>
                         </h5>
                       </div>
@@ -544,9 +544,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-offset">
+                    <div className="card card--example" id="components-grid-demo-offset">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Column offset</strong>
                         </h5>
                       </div>
@@ -602,9 +602,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-responsive-more">
+                    <div className="card card--example" id="components-grid-demo-responsive-more">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">More responsive</strong>
                         </h5>
                       </div>
@@ -653,9 +653,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-grid-demo-sort">
+                    <div className="card card--example" id="components-grid-demo-sort">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Grid sort</strong>
                         </h5>
                       </div>

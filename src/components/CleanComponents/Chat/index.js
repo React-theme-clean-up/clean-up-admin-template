@@ -27,11 +27,10 @@ class Chat extends React.Component {
   }
 
   render() {
-    let { chats, username } = this.state
-
+    const { chats, username } = this.state
     return (
       <div className="chat">
-        <div className="chat__messaging height-300">
+        <div className="chat__messaging" style={{ height: 287 }}>
           <div className="chat__block">
             {chats.map((chat, index) => <Message chat={chat} user={username} key={index} />)}
           </div>

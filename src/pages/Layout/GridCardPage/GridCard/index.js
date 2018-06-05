@@ -29,17 +29,17 @@ class GridCard extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <div className="utils__title">
               <strong>Cards</strong>
               <a
                 href="http://v4-alpha.getbootstrap.com/components/card/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-sm btn-primary ml-2"
+                className="btn btn-sm btn-primary ml-4"
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </h5>
+            </div>
           </div>
           <div className="card-body">
             <span>Default Card Body</span>
@@ -64,9 +64,9 @@ class GridCard extends React.Component {
                 </Dropdown>
               </div>
             </div>
-            <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <div className="utils__title">
               <strong>Default Card Heading w/ Controls</strong>
-            </h5>
+            </div>
           </div>
           <div className="card-body">
             <span>Default Card Body</span>
@@ -79,9 +79,9 @@ class GridCard extends React.Component {
           <div className="col-lg-4">
             <section className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Card in Grid</strong>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <span>
@@ -96,9 +96,9 @@ class GridCard extends React.Component {
           <div className="col-lg-8">
             <section className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Card in Grid</strong>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <span>
@@ -113,23 +113,23 @@ class GridCard extends React.Component {
         </section>
         <section className="card">
           <div className="card-header">
-            <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <div className="utils__title">
               <strong>Nested Cards</strong>
-            </h5>
+            </div>
           </div>
           <div className="card-body">
             <section className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Nested Card Heading: Level 1</strong>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <section className="card">
                   <div className="card-header">
-                    <h5 className="mb-0 mr-3 d-inline-block text-black">
+                    <div className="utils__title">
                       <strong>Nested Card Heading: Level 2</strong>
-                    </h5>
+                    </div>
                   </div>
                   <div className="card-body">
                     <span>Nested Card body: Level 2</span>
@@ -140,9 +140,9 @@ class GridCard extends React.Component {
                 </section>
                 <section className="card">
                   <div className="card-header">
-                    <h5 className="mb-0 mr-3 d-inline-block text-black">
+                    <div className="utils__title">
                       <strong>Nested Card Heading: Level 2</strong>
-                    </h5>
+                    </div>
                   </div>
                   <div className="card-body">
                     <span>Nested Card body: Level 2</span>

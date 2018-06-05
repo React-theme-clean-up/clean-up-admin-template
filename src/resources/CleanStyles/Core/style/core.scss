@@ -4,10 +4,7 @@
 /*  CORE MODULE STYLES */
 
 html {
-  font-size: 14px;
-  @media (max-width: $xl-max-width) {
-    font-size: 13px;
-  }
+  font-size: 13px;
   @media (max-width: $sm-max-width) {
     font-size: 12px;
   }
@@ -17,10 +14,8 @@ body {
   font-family: $base__font-family;
   color: $text-darken-more;
   background: $gray-lighten-more;
+  line-height: 1.7;
 
-  @media (max-width: $xl-max-width) {
-    font-size: 13px;
-  }
   @media (max-width: $sm-max-width) {
     font-size: 12px;
   }
@@ -90,12 +85,21 @@ button, input, select, textarea {
 
   // main container
   &__content {
-    padding: rem(20);
+    padding: rem(30);
 
     @media (max-width: $sm-max-width) {
-      padding: rem(20) 0;
+      padding: rem(30) rem(20);
       overflow-x: hidden;
     }
+  }
+
+  &__title {
+    font-size: rem(17);
+    color: $black;
+  }
+
+  &__titleDescription {
+    color: $text-lighten;
   }
 
   // scrollable block
@@ -150,6 +154,7 @@ button, input, select, textarea {
     .width-50 {width: rem(50);}
     .width-75 {width: rem(75);}
     .width-100 {width: rem(100);}
+    .width-150 {width: rem(150);}
     .width-200 {width: rem(200);}
     .width-300 {width: rem(300);}
     .width-400 {width: rem(400);}
@@ -269,7 +274,8 @@ button, input, select, textarea {
   // ant design example blocks
   &__codeCollapse {
     .ant-collapse > .ant-collapse-item.ant-collapse-no-arrow > .ant-collapse-header {
-      padding-left: rem(18);
+      padding-left: rem(30);
+      padding-right: rem(30);
     }
 
     .ant-collapse-borderless > .ant-collapse-item {

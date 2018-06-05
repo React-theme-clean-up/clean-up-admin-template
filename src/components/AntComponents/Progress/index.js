@@ -36,24 +36,27 @@ class ProgressItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Progress</strong>
                   <a
                     href="https://ant.design/components/progress/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-progress-demo-circle-dynamic">
+                    <div
+                      className="card card--example"
+                      id="components-progress-demo-circle-dynamic"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dynamic circular progress bar</strong>
                         </h5>
                       </div>
@@ -122,9 +125,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-circle">
+                    <div className="card card--example" id="components-progress-demo-circle">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Circular progress bar</strong>
                         </h5>
                       </div>
@@ -167,9 +170,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-dynamic">
+                    <div className="card card--example" id="components-progress-demo-dynamic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dynamic</strong>
                         </h5>
                       </div>
@@ -238,9 +241,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-line-mini">
+                    <div className="card card--example" id="components-progress-demo-line-mini">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Mini size progress bar</strong>
                         </h5>
                       </div>
@@ -284,9 +287,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-segment">
+                    <div className="card card--example" id="components-progress-demo-segment">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             Progress bar with success segment
                           </strong>
@@ -331,9 +334,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-progress-demo-circle-mini">
+                    <div className="card card--example" id="components-progress-demo-circle-mini">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             Mini size circular progress bar
                           </strong>
@@ -378,9 +381,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-dashboard">
+                    <div className="card card--example" id="components-progress-demo-dashboard">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dashboard</strong>
                         </h5>
                       </div>
@@ -420,9 +423,9 @@ ReactDOM.render(<Progress type="dashboard" percent=\{75\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-format">
+                    <div className="card card--example" id="components-progress-demo-format">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Custom text format</strong>
                         </h5>
                       </div>
@@ -466,9 +469,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-progress-demo-line">
+                    <div className="card card--example" id="components-progress-demo-line">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Progress bar</strong>
                         </h5>
                       </div>

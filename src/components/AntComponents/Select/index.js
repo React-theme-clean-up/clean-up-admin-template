@@ -45,24 +45,27 @@ class SelectItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Select</strong>
                   <a
                     href="https://ant.design/components/select/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-select-demo-automatic-tokenization">
+                    <div
+                      className="card card--example"
+                      id="components-select-demo-automatic-tokenization"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Automatic tokenization</strong>
                         </h5>
                       </div>
@@ -121,9 +124,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-combobox">
+                    <div className="card card--example" id="components-select-demo-combobox">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Automatic completion</strong>
                         </h5>
                       </div>
@@ -197,9 +200,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-label-in-value">
+                    <div className="card card--example" id="components-select-demo-label-in-value">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Get value of selected item</strong>
                         </h5>
                       </div>
@@ -251,9 +254,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-optgroup">
+                    <div className="card card--example" id="components-select-demo-optgroup">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Option Group</strong>
                         </h5>
                       </div>
@@ -311,9 +314,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-search">
+                    <div className="card card--example" id="components-select-demo-search">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Select with search field</strong>
                         </h5>
                       </div>
@@ -378,9 +381,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-size">
+                    <div className="card card--example" id="components-select-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Sizes</strong>
                         </h5>
                       </div>
@@ -496,9 +499,9 @@ ReactDOM.render(<SelectSizesDemo />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-select-demo-basic">
+                    <div className="card card--example" id="components-select-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
@@ -552,9 +555,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-coordinate">
+                    <div className="card card--example" id="components-select-demo-coordinate">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">coordinate</strong>
                         </h5>
                       </div>
@@ -635,9 +638,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-multiple">
+                    <div className="card card--example" id="components-select-demo-multiple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">multiple selection</strong>
                         </h5>
                       </div>
@@ -696,9 +699,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-search-box">
+                    <div className="card card--example" id="components-select-demo-search-box">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Search Box</strong>
                         </h5>
                       </div>
@@ -803,9 +806,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-select-users">
+                    <div className="card card--example" id="components-select-demo-select-users">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Search and Select Users</strong>
                         </h5>
                       </div>
@@ -903,9 +906,9 @@ ReactDOM.render(<UserRemoteSelect />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-select-demo-tags">
+                    <div className="card card--example" id="components-select-demo-tags">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Tags</strong>
                         </h5>
                       </div>

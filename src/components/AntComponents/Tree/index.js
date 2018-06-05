@@ -32,24 +32,24 @@ class TreeItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Tree</strong>
                   <a
                     href="https://ant.design/components/tree/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tree-demo-basic-controlled">
+                    <div className="card card--example" id="components-tree-demo-basic-controlled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">basic controlled example</strong>
                         </h5>
                       </div>
@@ -177,9 +177,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-demo-customized-icon">
+                    <div className="card card--example" id="components-tree-demo-customized-icon">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customize Icon</strong>
                         </h5>
                       </div>
@@ -247,9 +247,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-demo-dynamic">
+                    <div className="card card--example" id="components-tree-demo-dynamic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">load data asynchronously</strong>
                         </h5>
                       </div>
@@ -336,9 +336,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-demo-search">
+                    <div className="card card--example" id="components-tree-demo-search">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Searchable</strong>
                         </h5>
                       </div>
@@ -499,9 +499,9 @@ ReactDOM.render(<SearchTree />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tree-demo-basic">
+                    <div className="card card--example" id="components-tree-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">basic</strong>
                         </h5>
                       </div>
@@ -573,9 +573,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-demo-draggable">
+                    <div className="card card--example" id="components-tree-demo-draggable">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">draggable</strong>
                         </h5>
                       </div>
@@ -723,9 +723,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-demo-line">
+                    <div className="card card--example" id="components-tree-demo-line">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Tree With Line</strong>
                         </h5>
                       </div>

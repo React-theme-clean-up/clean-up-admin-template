@@ -37,24 +37,24 @@ class ListItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>List</strong>
                   <a
                     href="https://ant.design/components/list/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-list-demo-basic">
+                    <div className="card card--example" id="components-list-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic list</strong>
                         </h5>
                       </div>
@@ -120,9 +120,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-infinite-load">
+                    <div className="card card--example" id="components-list-demo-infinite-load">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Scrolling loaded</strong>
                         </h5>
                       </div>
@@ -243,9 +243,9 @@ ReactDOM.render(<InfiniteListExample />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-loadmore">
+                    <div className="card card--example" id="components-list-demo-loadmore">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Load more</strong>
                         </h5>
                       </div>
@@ -361,9 +361,9 @@ ReactDOM.render(<LoadMoreList />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-simple">
+                    <div className="card card--example" id="components-list-demo-simple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Simple list</strong>
                         </h5>
                       </div>
@@ -445,9 +445,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-list-demo-grid">
+                    <div className="card card--example" id="components-list-demo-grid">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Grid</strong>
                         </h5>
                       </div>
@@ -511,9 +511,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-infinite-virtualized-load">
+                    <div
+                      className="card card--example"
+                      id="components-list-demo-infinite-virtualized-load"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Infinite</strong>
                         </h5>
                       </div>
@@ -677,9 +680,9 @@ ReactDOM.render(<VirtualizedExample />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-resposive">
+                    <div className="card card--example" id="components-list-demo-resposive">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Responsive grid list</strong>
                         </h5>
                       </div>
@@ -750,9 +753,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-list-demo-vertical">
+                    <div className="card card--example" id="components-list-demo-vertical">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Vertical</strong>
                         </h5>
                       </div>

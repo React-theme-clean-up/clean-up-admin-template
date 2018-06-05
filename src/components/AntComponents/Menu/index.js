@@ -32,24 +32,24 @@ class MenuItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Menu</strong>
                   <a
                     href="https://ant.design/components/menu/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-menu-demo-horizontal">
+                    <div className="card card--example" id="components-menu-demo-horizontal">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Top Navigation</strong>
                         </h5>
                       </div>
@@ -129,9 +129,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-menu-demo-inline">
+                    <div className="card card--example" id="components-menu-demo-inline">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Inline menu</strong>
                         </h5>
                       </div>
@@ -212,9 +212,9 @@ ReactDOM.render(<Sider />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-menu-demo-switch-mode">
+                    <div className="card card--example" id="components-menu-demo-switch-mode">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Switch the menu type</strong>
                         </h5>
                       </div>
@@ -312,9 +312,9 @@ ReactDOM.render(<Sider />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-menu-demo-vertical">
+                    <div className="card card--example" id="components-menu-demo-vertical">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Vertical menu</strong>
                         </h5>
                       </div>
@@ -386,9 +386,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-menu-demo-inline-collapsed">
+                    <div className="card card--example" id="components-menu-demo-inline-collapsed">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Collapsed inline menu</strong>
                         </h5>
                       </div>
@@ -483,9 +483,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-menu-demo-sider-current">
+                    <div className="card card--example" id="components-menu-demo-sider-current">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Open current submenu only</strong>
                         </h5>
                       </div>
@@ -575,9 +575,9 @@ ReactDOM.render(<Sider />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-menu-demo-theme">
+                    <div className="card card--example" id="components-menu-demo-theme">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Menu Themes</strong>
                         </h5>
                       </div>

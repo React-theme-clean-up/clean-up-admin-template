@@ -40,24 +40,24 @@ class MentionItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Mention</strong>
                   <a
                     href="https://ant.design/components/mention/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-mention-demo-async">
+                    <div className="card card--example" id="components-mention-demo-async">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Asynchronous loading</strong>
                         </h5>
                       </div>
@@ -130,9 +130,9 @@ ReactDOM.render(<AsyncMention />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-basic">
+                    <div className="card card--example" id="components-mention-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -186,9 +186,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-controlled">
+                    <div className="card card--example" id="components-mention-demo-controlled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">With Form</strong>
                         </h5>
                       </div>
@@ -291,9 +291,9 @@ ReactDOM.render(<FormDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-multilines">
+                    <div className="card card--example" id="components-mention-demo-multilines">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
@@ -342,9 +342,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-placement">
+                    <div className="card card--example" id="components-mention-demo-placement">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Placement</strong>
                         </h5>
                       </div>
@@ -398,9 +398,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-readonly">
+                    <div className="card card--example" id="components-mention-demo-readonly">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">disabled or readOnly</strong>
                         </h5>
                       </div>
@@ -474,9 +474,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-mention-demo-avatar">
+                    <div className="card card--example" id="components-mention-demo-avatar">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Icon Image</strong>
                         </h5>
                       </div>
@@ -558,9 +558,12 @@ ReactDOM.render(<CustomNavMention />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-controllder-simple">
+                    <div
+                      className="card card--example"
+                      id="components-mention-demo-controllder-simple"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Controlled</strong>
                         </h5>
                       </div>
@@ -622,9 +625,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-custom-tag">
+                    <div className="card card--example" id="components-mention-demo-custom-tag">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customize Suggestion</strong>
                         </h5>
                       </div>
@@ -707,9 +710,12 @@ ReactDOM.render(<CustomNavMention />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-multiple-trigger">
+                    <div
+                      className="card card--example"
+                      id="components-mention-demo-multiple-trigger"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customize Trigger Token</strong>
                         </h5>
                       </div>
@@ -792,9 +798,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-mention-demo-popupContainer">
+                    <div className="card card--example" id="components-mention-demo-popupContainer">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">SuggestionContainer</strong>
                         </h5>
                       </div>

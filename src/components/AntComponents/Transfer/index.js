@@ -28,24 +28,24 @@ class TransferItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Transfer</strong>
                   <a
                     href="https://ant.design/components/transfer/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-transfer-demo-advanced">
+                    <div className="card card--example" id="components-transfer-demo-advanced">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Advanced</strong>
                         </h5>
                       </div>
@@ -144,9 +144,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-transfer-demo-custom-item">
+                    <div className="card card--example" id="components-transfer-demo-custom-item">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Custom datasource</strong>
                         </h5>
                       </div>
@@ -243,9 +243,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-transfer-demo-search">
+                    <div className="card card--example" id="components-transfer-demo-search">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Search</strong>
                         </h5>
                       </div>
@@ -329,9 +329,9 @@ ReactDOM.render(<App />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-transfer-demo-basic">
+                    <div className="card card--example" id="components-transfer-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -429,9 +429,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-transfer-demo-large-data">
+                    <div className="card card--example" id="components-transfer-demo-large-data">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Performance Test</strong>
                         </h5>
                       </div>

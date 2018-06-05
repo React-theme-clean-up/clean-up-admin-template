@@ -19,17 +19,17 @@ class FontAwesomeIcons extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <div className="utils__title">
               <strong>FontAwesome</strong>
               <a
                 href="http://fontawesome.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-sm btn-primary ml-2"
+                className="btn btn-sm btn-primary ml-4"
               >
                 Official Documentation <i className="icmn-link ml-1" />
               </a>
-            </h5>
+            </div>
           </div>
           <div className="card-body">
             <div className="row">
@@ -47,24 +47,22 @@ class FontAwesomeIcons extends React.Component {
             </div>
             <div className="row">
               <div className="col-xl-6 offset-xl-3">
-                {iconsData.map((iconsSet, index) =>
+                {iconsData.map((iconsSet, index) => (
                   <div className="text-center" key={index}>
                     <h3 className="text-block mt-5 mb-4">
-                      <strong>
-                        {iconsSet.setName}
-                      </strong>
+                      <strong>{iconsSet.setName}</strong>
                     </h3>
                     <ul className="utils__iconsBlock list-unstyled">
-                      {iconsSet.icons.map((icon, index) =>
+                      {iconsSet.icons.map((icon, index) => (
                         <Tooltip title={'fa ' + icon} key={index}>
                           <li>
                             <i className={'fa ' + icon} />
                           </li>
-                        </Tooltip>,
-                      )}
+                        </Tooltip>
+                      ))}
                     </ul>
-                  </div>,
-                )}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -36,24 +36,24 @@ class DropdownItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Dropdown</strong>
                   <a
                     href="https://ant.design/components/dropdown/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-dropdown-demo-basic">
+                    <div className="card card--example" id="components-dropdown-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -110,9 +110,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-dropdown-button">
+                    <div
+                      className="card card--example"
+                      id="components-dropdown-demo-dropdown-button"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Button with dropdown menu</strong>
                         </h5>
                       </div>
@@ -188,9 +191,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-item">
+                    <div className="card card--example" id="components-dropdown-demo-item">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Other elements</strong>
                         </h5>
                       </div>
@@ -246,9 +249,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-placement">
+                    <div className="card card--example" id="components-dropdown-demo-placement">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Placement</strong>
                         </h5>
                       </div>
@@ -321,9 +324,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-trigger">
+                    <div className="card card--example" id="components-dropdown-demo-trigger">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Trigger mode</strong>
                         </h5>
                       </div>
@@ -384,9 +387,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-dropdown-demo-context-menu">
+                    <div className="card card--example" id="components-dropdown-demo-context-menu">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Context Menu</strong>
                         </h5>
                       </div>
@@ -438,9 +441,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-event">
+                    <div className="card card--example" id="components-dropdown-demo-event">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Click event</strong>
                         </h5>
                       </div>
@@ -497,9 +500,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-overlay-visible">
+                    <div
+                      className="card card--example"
+                      id="components-dropdown-demo-overlay-visible"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">The way of hiding</strong>
                         </h5>
                       </div>
@@ -572,9 +578,9 @@ ReactDOM.render(<OverlayVisible />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-dropdown-demo-sub-menu">
+                    <div className="card card--example" id="components-dropdown-demo-sub-menu">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Cascading menu</strong>
                         </h5>
                       </div>

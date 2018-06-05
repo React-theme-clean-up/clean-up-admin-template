@@ -36,24 +36,24 @@ class PaginationItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Pagination</strong>
                   <a
                     href="https://ant.design/components/pagination/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-pagination-demo-basic">
+                    <div className="card card--example" id="components-pagination-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -90,9 +90,9 @@ ReactDOM.render(<Pagination defaultCurrent=\{1\} total=\{50\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-controlled">
+                    <div className="card card--example" id="components-pagination-demo-controlled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Controlled</strong>
                         </h5>
                       </div>
@@ -144,9 +144,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-jump">
+                    <div className="card card--example" id="components-pagination-demo-jump">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Jumper</strong>
                         </h5>
                       </div>
@@ -190,9 +190,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-more">
+                    <div className="card card--example" id="components-pagination-demo-more">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">More</strong>
                         </h5>
                       </div>
@@ -231,9 +231,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-total">
+                    <div className="card card--example" id="components-pagination-demo-total">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Total number</strong>
                         </h5>
                       </div>
@@ -290,9 +290,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-pagination-demo-changer">
+                    <div className="card card--example" id="components-pagination-demo-changer">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Changer</strong>
                         </h5>
                       </div>
@@ -337,9 +337,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-itemRender">
+                    <div className="card card--example" id="components-pagination-demo-itemRender">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Prev and next</strong>
                         </h5>
                       </div>
@@ -387,9 +387,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-mini">
+                    <div className="card card--example" id="components-pagination-demo-mini">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Mini size</strong>
                         </h5>
                       </div>
@@ -436,9 +436,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-pagination-demo-simple">
+                    <div className="card card--example" id="components-pagination-demo-simple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Simple mode</strong>
                         </h5>
                       </div>

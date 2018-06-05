@@ -46,14 +46,14 @@ class SettingsSider extends React.Component {
     dispatch(setLayoutState({ squaredBorders: state }))
   }
 
-  setBorderedCards = state => {
-    const { dispatch } = this.props
-    dispatch(setLayoutState({ borderedCards: state }))
-  }
-
   setFixedWidth = state => {
     const { dispatch } = this.props
     dispatch(setLayoutState({ fixedWidth: state }))
+  }
+
+  setBorderLess = state => {
+    const { dispatch } = this.props
+    dispatch(setLayoutState({ borderLess: state }))
   }
 
   render() {
@@ -85,12 +85,12 @@ class SettingsSider extends React.Component {
               <span className="settingsSider__itemLabel">Light Theme</span>
             </div>
             <div className="settingsSider__item">
-              <Switch checked={layoutState.squaredBorders} onChange={this.setSquaredBorders} />
-              <span className="settingsSider__itemLabel">Squared Borders</span>
+              <Switch checked={layoutState.borderLess} onChange={this.setBorderLess} />
+              <span className="settingsSider__itemLabel">Borderless Cards</span>
             </div>
             <div className="settingsSider__item">
-              <Switch checked={layoutState.borderedCards} onChange={this.setBorderedCards} />
-              <span className="settingsSider__itemLabel">Bordered Cards</span>
+              <Switch checked={layoutState.squaredBorders} onChange={this.setSquaredBorders} />
+              <span className="settingsSider__itemLabel">Squared Borders</span>
             </div>
             <div className="settingsSider__item">
               <Switch checked={layoutState.fixedWidth} onChange={this.setFixedWidth} />

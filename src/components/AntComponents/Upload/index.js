@@ -34,24 +34,24 @@ class UploadItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Upload</strong>
                   <a
                     href="https://ant.design/components/upload/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-upload-demo-avatar">
+                    <div className="card card--example" id="components-upload-demo-avatar">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Avatar</strong>
                         </h5>
                       </div>
@@ -152,9 +152,9 @@ ReactDOM.render(<Avatar />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-defaultFileList">
+                    <div className="card card--example" id="components-upload-demo-defaultFileList">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Default Files</strong>
                         </h5>
                       </div>
@@ -226,9 +226,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-fileList">
+                    <div className="card card--example" id="components-upload-demo-fileList">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             Complete control over file list
                           </strong>
@@ -324,9 +324,9 @@ ReactDOM.render(<MyUpload />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-picture-style">
+                    <div className="card card--example" id="components-upload-demo-picture-style">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Pictures with list style</strong>
                         </h5>
                       </div>
@@ -411,9 +411,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-upload-demo-basic">
+                    <div className="card card--example" id="components-upload-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Upload by clicking</strong>
                         </h5>
                       </div>
@@ -476,9 +476,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-drag">
+                    <div className="card card--example" id="components-upload-demo-drag">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Drag and Drop</strong>
                         </h5>
                       </div>
@@ -545,9 +545,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-picture-card">
+                    <div className="card card--example" id="components-upload-demo-picture-card">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Pictures Wall</strong>
                         </h5>
                       </div>
@@ -637,9 +637,9 @@ ReactDOM.render(<PicturesWall />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-upload-demo-upload-manually">
+                    <div className="card card--example" id="components-upload-demo-upload-manually">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Upload manually</strong>
                         </h5>
                       </div>

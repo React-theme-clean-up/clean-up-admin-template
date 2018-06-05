@@ -40,24 +40,24 @@ class TabsItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Tabs</strong>
                   <a
                     href="https://ant.design/components/tabs/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tabs-demo-basic">
+                    <div className="card card--example" id="components-tabs-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -105,9 +105,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-card">
+                    <div className="card card--example" id="components-tabs-demo-card">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Card type tab</strong>
                         </h5>
                       </div>
@@ -157,9 +157,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-disabled">
+                    <div className="card card--example" id="components-tabs-demo-disabled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
@@ -203,9 +203,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-extra">
+                    <div className="card card--example" id="components-tabs-demo-extra">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Extra content</strong>
                         </h5>
                       </div>
@@ -253,9 +253,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-position">
+                    <div className="card card--example" id="components-tabs-demo-position">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Position</strong>
                         </h5>
                       </div>
@@ -330,9 +330,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-slide">
+                    <div className="card card--example" id="components-tabs-demo-slide">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Slide</strong>
                         </h5>
                       </div>
@@ -416,9 +416,9 @@ ReactDOM.render(<SlidingTabsDemo />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tabs-demo-card-top">
+                    <div className="card card--example" id="components-tabs-demo-card-top">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Container of card type Tab</strong>
                         </h5>
                       </div>
@@ -478,9 +478,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-custom-add-trigger">
+                    <div
+                      className="card card--example"
+                      id="components-tabs-demo-custom-add-trigger"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized trigger of new tab</strong>
                         </h5>
                       </div>
@@ -580,9 +583,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-editable-card">
+                    <div className="card card--example" id="components-tabs-demo-editable-card">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Add</strong>
                         </h5>
                       </div>
@@ -678,9 +681,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-icon">
+                    <div className="card card--example" id="components-tabs-demo-icon">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Icon</strong>
                         </h5>
                       </div>
@@ -727,9 +730,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tabs-demo-size">
+                    <div className="card card--example" id="components-tabs-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>

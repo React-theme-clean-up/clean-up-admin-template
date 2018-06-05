@@ -2,54 +2,26 @@ import React from 'react'
 import './style.scss'
 
 class Avatar extends React.Component {
-  state = {
-    size: undefined,
-    border: 'false',
+  static defaultProps = {
+    size: false,
+    border: false,
     borderColor: '#d2d9e5',
-    src: undefined,
-    className: 'avatar',
-  }
-
-  getParams = () => {
-    let params = this.props
-
-    let { className } = this.state
-
-    if (params.size !== undefined) {
-      className = className + ' avatar--' + params.size
-    }
-
-    if (params.border === 'true') {
-      className = className + ' avatar--border'
-    }
-
-    if (params.borderColor !== undefined) {
-      this.setState({
-        borderColor: params.borderColor,
-      })
-    }
-
-    this.setState({
-      className: className,
-    })
-  }
-
-  componentWillMount() {
-    this.getParams()
+    src: '',
   }
 
   render() {
-    const { className, borderColor } = this.state
-
+    const { size, borderColor, src, border } = this.props
     return (
       <a
-        className={'d-block mx-auto ' + className}
+        className={`d-block mx-auto ${size > 0 ? 'avatar avatar--' + size : ''} ${
+          border ? ' avatar--border' : ''
+        }`}
         href="javascript: void(0);"
         style={{
           borderColor: borderColor,
         }}
       >
-        <img src={this.props.src} alt="User" />
+        <img src={src} alt="User" />
       </a>
     )
   }

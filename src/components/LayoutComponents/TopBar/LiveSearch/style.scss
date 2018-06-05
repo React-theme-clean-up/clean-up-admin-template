@@ -93,12 +93,12 @@
   &__option {
     display: inline-block;
     margin-right: rem(26);
-    font-size: rem(14);
+    font-size: rem(13);
 
     &--checkbox {
       .ant-checkbox-wrapper {
         span {
-          font-size: rem(14);
+          font-size: rem(13);
           color: $text-darken-more;
         }
 

@@ -35,10 +35,10 @@ $warning: #f39834;
 $danger: #fb434a;
 
 // Font Family
-$base__font-family: 'PT Sans', sans-serif !important;
+$base__font-family: 'Nunito Sans', sans-serif !important;
 
 // Font Size
-$base__font-size: 14 !default;
+$base__font-size: 13 !default;
 
 // Convert value rem() sass mixin
 @function rem($px, $base: $base__font-size) {

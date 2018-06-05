@@ -26,24 +26,24 @@ class TreeselectItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>TreeSelect</strong>
                   <a
                     href="https://ant.design/components/tree-select/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tree-select-demo-basic">
+                    <div className="card card--example" id="components-tree-select-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -115,9 +115,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-select-demo-multiple">
+                    <div className="card card--example" id="components-tree-select-demo-multiple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Multiple Selection</strong>
                         </h5>
                       </div>
@@ -192,9 +192,9 @@ ReactDOM.render(<Demo />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-tree-select-demo-checkable">
+                    <div className="card card--example" id="components-tree-select-demo-checkable">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Checkable</strong>
                         </h5>
                       </div>
@@ -284,9 +284,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-tree-select-demo-treeData">
+                    <div className="card card--example" id="components-tree-select-demo-treeData">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Generate form tree data</strong>
                         </h5>
                       </div>

@@ -39,24 +39,24 @@ class AutocompleteItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>AutoComplete</strong>
                   <a
                     href="https://ant.design/components/auto-complete/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-auto-complete-demo-basic">
+                    <div className="card card--example" id="components-auto-complete-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
@@ -129,9 +129,9 @@ ReactDOM.render(<Complete />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-auto-complete-demo-custom">
+                    <div className="card card--example" id="components-auto-complete-demo-custom">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customize Input Component</strong>
                         </h5>
                       </div>
@@ -212,9 +212,9 @@ ReactDOM.render(<Complete />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-auto-complete-demo-options">
+                    <div className="card card--example" id="components-auto-complete-demo-options">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized</strong>
                         </h5>
                       </div>
@@ -290,9 +290,12 @@ ReactDOM.render(<Complete />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-auto-complete-demo-certain-category">
+                    <div
+                      className="card card--example"
+                      id="components-auto-complete-demo-certain-category"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
@@ -421,9 +424,12 @@ ReactDOM.render(<Complete />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-auto-complete-demo-non-case-sensitive">
+                    <div
+                      className="card card--example"
+                      id="components-auto-complete-demo-non-case-sensitive"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
@@ -473,9 +479,12 @@ ReactDOM.render(<Complete />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-auto-complete-demo-uncertain-category">
+                    <div
+                      className="card card--example"
+                      id="components-auto-complete-demo-uncertain-category"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>

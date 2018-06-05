@@ -564,17 +564,17 @@ class C3Items extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
+          <div className="utils__title">
             <strong>C3</strong>
             <a
               href="http://c3js.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm btn-primary ml-2"
+              className="btn btn-sm btn-primary ml-4"
             >
               Official Documentation <i className="icmn-link ml-1" />
             </a>
-          </h5>
+          </div>
         </div>
         <div className="card-body">
           <div className="row">

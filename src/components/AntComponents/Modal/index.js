@@ -36,24 +36,24 @@ class ModalItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Modal</strong>
                   <a
                     href="https://ant.design/components/modal/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-modal-demo-async">
+                    <div className="card card--example" id="components-modal-demo-async">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Asynchronously close</strong>
                         </h5>
                       </div>
@@ -140,9 +140,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-confirm-promise">
+                    <div className="card card--example" id="components-modal-demo-confirm-promise">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Confirmation modal dialog</strong>
                         </h5>
                       </div>
@@ -200,9 +200,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-footer">
+                    <div className="card card--example" id="components-modal-demo-footer">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized Footer</strong>
                         </h5>
                       </div>
@@ -294,9 +294,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-locale">
+                    <div className="card card--example" id="components-modal-demo-locale">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Internationalization</strong>
                         </h5>
                       </div>
@@ -385,9 +385,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-position">
+                    <div className="card card--example" id="components-modal-demo-position">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             To customize the position of modal
                           </strong>
@@ -476,9 +476,9 @@ ReactDOM.render(<App />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-modal-demo-basic">
+                    <div className="card card--example" id="components-modal-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -553,9 +553,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-confirm">
+                    <div className="card card--example" id="components-modal-demo-confirm">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Confirmation modal dialog</strong>
                         </h5>
                       </div>
@@ -633,9 +633,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-info">
+                    <div className="card card--example" id="components-modal-demo-info">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Information modal dialog</strong>
                         </h5>
                       </div>
@@ -717,9 +717,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-modal-demo-manual">
+                    <div className="card card--example" id="components-modal-demo-manual">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Manual to destroy</strong>
                         </h5>
                       </div>

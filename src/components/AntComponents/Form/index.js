@@ -51,24 +51,24 @@ class FormItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Form</strong>
                   <a
                     href="https://ant.design/components/form/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-form-demo-advanced-search">
+                    <div className="card card--example" id="components-form-demo-advanced-search">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Advanced search</strong>
                         </h5>
                       </div>
@@ -180,9 +180,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-customized-form-controls">
+                    <div
+                      className="card card--example"
+                      id="components-form-demo-customized-form-controls"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized Form Controls</strong>
                         </h5>
                       </div>
@@ -332,9 +335,9 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-dynamic-rule">
+                    <div className="card card--example" id="components-form-demo-dynamic-rule">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dynamic Rules</strong>
                         </h5>
                       </div>
@@ -446,9 +449,9 @@ ReactDOM.render(<WrappedDynamicRule />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-global-state">
+                    <div className="card card--example" id="components-form-demo-global-state">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">
                             Store Form Data into Upper Component
                           </strong>
@@ -550,9 +553,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-layout">
+                    <div className="card card--example" id="components-form-demo-layout">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Form Layout</strong>
                         </h5>
                       </div>
@@ -646,9 +649,9 @@ ReactDOM.render(<FormLayoutDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-register">
+                    <div className="card card--example" id="components-form-demo-register">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Registration</strong>
                         </h5>
                       </div>
@@ -927,9 +930,9 @@ ReactDOM.render(<WrappedRegistrationForm />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-validate-other">
+                    <div className="card card--example" id="components-form-demo-validate-other">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Other Form Controls</strong>
                         </h5>
                       </div>
@@ -1154,9 +1157,12 @@ ReactDOM.render(<WrappedDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-without-form-create">
+                    <div
+                      className="card card--example"
+                      id="components-form-demo-without-form-create"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Handle Form Data Manually</strong>
                         </h5>
                       </div>
@@ -1255,9 +1261,9 @@ ReactDOM.render(<RawForm />, mountNode);
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-form-demo-coordinated">
+                    <div className="card card--example" id="components-form-demo-coordinated">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Coordinated Controls</strong>
                         </h5>
                       </div>
@@ -1360,9 +1366,9 @@ ReactDOM.render(<WrappedApp />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-dynamic-form-item">
+                    <div className="card card--example" id="components-form-demo-dynamic-form-item">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dynamic Form Item</strong>
                         </h5>
                       </div>
@@ -1505,9 +1511,9 @@ ReactDOM.render(<WrappedDynamicFieldSet />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-form-in-modal">
+                    <div className="card card--example" id="components-form-demo-form-in-modal">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Form in Modal to Create</strong>
                         </h5>
                       </div>
@@ -1630,9 +1636,9 @@ ReactDOM.render(<CollectionsPage />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-horizontal-login">
+                    <div className="card card--example" id="components-form-demo-horizontal-login">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Horizontal Login Form</strong>
                         </h5>
                       </div>
@@ -1733,9 +1739,9 @@ ReactDOM.render(<WrappedHorizontalLoginForm />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-normal-login">
+                    <div className="card card--example" id="components-form-demo-normal-login">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Login Form</strong>
                         </h5>
                       </div>
@@ -1822,9 +1828,12 @@ ReactDOM.render(<WrappedNormalLoginForm />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-time-related-controls">
+                    <div
+                      className="card card--example"
+                      id="components-form-demo-time-related-controls"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
@@ -1978,9 +1987,9 @@ ReactDOM.render(<WrappedTimeRelatedForm />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-form-demo-validate-static">
+                    <div className="card card--example" id="components-form-demo-validate-static">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized Validation</strong>
                         </h5>
                       </div>

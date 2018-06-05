@@ -34,24 +34,24 @@ class TimepickerItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>TimePicker</strong>
                   <a
                     href="https://ant.design/components/time-picker/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-time-picker-demo-12hours">
+                    <div className="card card--example" id="components-time-picker-demo-12hours">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">12 hours</strong>
                         </h5>
                       </div>
@@ -101,9 +101,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-basic">
+                    <div className="card card--example" id="components-time-picker-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -151,9 +151,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-hide-column">
+                    <div
+                      className="card card--example"
+                      id="components-time-picker-demo-hide-column"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Hour and minute</strong>
                         </h5>
                       </div>
@@ -198,9 +201,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-size">
+                    <div className="card card--example" id="components-time-picker-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Three Sizes</strong>
                         </h5>
                       </div>
@@ -249,9 +252,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-time-picker-demo-addon">
+                    <div className="card card--example" id="components-time-picker-demo-addon">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Addon</strong>
                         </h5>
                       </div>
@@ -314,9 +317,9 @@ ReactDOM.render(<TimePickerAddonDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-disabled">
+                    <div className="card card--example" id="components-time-picker-demo-disabled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">disabled</strong>
                         </h5>
                       </div>
@@ -358,9 +361,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-interval-options">
+                    <div
+                      className="card card--example"
+                      id="components-time-picker-demo-interval-options"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">interval option</strong>
                         </h5>
                       </div>
@@ -402,9 +408,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-time-picker-demo-value">
+                    <div className="card card--example" id="components-time-picker-demo-value">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Under Control</strong>
                         </h5>
                       </div>

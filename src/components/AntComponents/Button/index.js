@@ -34,24 +34,24 @@ class ButtonItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Button</strong>
                   <a
                     href="https://ant.design/components/button/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-button-demo-basic">
+                    <div className="card card--example" id="components-button-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Type</strong>
                         </h5>
                       </div>
@@ -99,9 +99,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-disabled">
+                    <div className="card card--example" id="components-button-demo-disabled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
@@ -156,9 +156,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-icon">
+                    <div className="card card--example" id="components-button-demo-icon">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Icon</strong>
                         </h5>
                       </div>
@@ -216,9 +216,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-multiple">
+                    <div className="card card--example" id="components-button-demo-multiple">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Multiple Buttons</strong>
                         </h5>
                       </div>
@@ -284,9 +284,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-button-demo-button-group">
+                    <div className="card card--example" id="components-button-demo-button-group">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Button Group</strong>
                         </h5>
                       </div>
@@ -362,9 +362,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-ghost">
+                    <div className="card card--example" id="components-button-demo-ghost">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Ghost Button</strong>
                         </h5>
                       </div>
@@ -411,9 +411,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-loading">
+                    <div className="card card--example" id="components-button-demo-loading">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Loading</strong>
                         </h5>
                       </div>
@@ -491,9 +491,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-button-demo-size">
+                    <div className="card card--example" id="components-button-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Size</strong>
                         </h5>
                       </div>

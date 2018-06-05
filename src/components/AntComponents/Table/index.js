@@ -67,24 +67,24 @@ class TableItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>Table</strong>
                   <a
                     href="https://ant.design/components/table/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-table-demo-ajax">
+                    <div className="card card--example" id="components-table-demo-ajax">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Ajax</strong>
                         </h5>
                       </div>
@@ -205,9 +205,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-bordered">
+                    <div className="card card--example" id="components-table-demo-bordered">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize" />
                         </h5>
                       </div>
@@ -282,9 +282,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-custom-filter-panel">
+                    <div
+                      className="card card--example"
+                      id="components-table-demo-custom-filter-panel"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized filter panel</strong>
                         </h5>
                       </div>
@@ -426,9 +429,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-dynamic-settings">
+                    <div className="card card--example" id="components-table-demo-dynamic-settings">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Dynamic Settings</strong>
                         </h5>
                       </div>
@@ -629,9 +632,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-edit-row">
+                    <div className="card card--example" id="components-table-demo-edit-row">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Editable Rows</strong>
                         </h5>
                       </div>
@@ -777,9 +780,9 @@ ReactDOM.render(<EditableTable />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-expand">
+                    <div className="card card--example" id="components-table-demo-expand">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Expandable Row</strong>
                         </h5>
                       </div>
@@ -838,9 +841,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-fixed-columns">
+                    <div className="card card--example" id="components-table-demo-fixed-columns">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Fixed Columns</strong>
                         </h5>
                       </div>
@@ -915,9 +918,9 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-grouping-columns">
+                    <div className="card card--example" id="components-table-demo-grouping-columns">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Grouping table head</strong>
                         </h5>
                       </div>
@@ -1042,9 +1045,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-jsx">
+                    <div className="card card--example" id="components-table-demo-jsx">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">JSX style API</strong>
                         </h5>
                       </div>
@@ -1148,9 +1151,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-reset-filter">
+                    <div className="card card--example" id="components-table-demo-reset-filter">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Reset filters and sorters</strong>
                         </h5>
                       </div>
@@ -1292,9 +1295,12 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-row-selection-custom">
+                    <div
+                      className="card card--example"
+                      id="components-table-demo-row-selection-custom"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Custom selection</strong>
                         </h5>
                       </div>
@@ -1413,9 +1419,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-size">
+                    <div className="card card--example" id="components-table-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">size</strong>
                         </h5>
                       </div>
@@ -1491,9 +1497,9 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-table-demo-basic">
+                    <div className="card card--example" id="components-table-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic Usage</strong>
                         </h5>
                       </div>
@@ -1576,9 +1582,9 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-colspan-rowspan">
+                    <div className="card card--example" id="components-table-demo-colspan-rowspan">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">colSpan and rowSpan</strong>
                         </h5>
                       </div>
@@ -1721,9 +1727,9 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} bordered />
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-drag-sorting">
+                    <div className="card card--example" id="components-table-demo-drag-sorting">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Drag sorting</strong>
                         </h5>
                       </div>
@@ -1937,9 +1943,9 @@ ReactDOM.render(<Demo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-edit-cell">
+                    <div className="card card--example" id="components-table-demo-edit-cell">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Editable Cells</strong>
                         </h5>
                       </div>
@@ -2115,9 +2121,9 @@ ReactDOM.render(<EditableTable />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-expand-children">
+                    <div className="card card--example" id="components-table-demo-expand-children">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Tree data</strong>
                         </h5>
                       </div>
@@ -2240,9 +2246,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-fixed-columns-header">
+                    <div
+                      className="card card--example"
+                      id="components-table-demo-fixed-columns-header"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Fixed Columns and Header</strong>
                         </h5>
                       </div>
@@ -2315,9 +2324,9 @@ ReactDOM.render(<Table columns=\{columns\} dataSource=\{data\} scroll=\{\{ x\: 1
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-fixed-header">
+                    <div className="card card--example" id="components-table-demo-fixed-header">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Fixed Header</strong>
                         </h5>
                       </div>
@@ -2382,9 +2391,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-head">
+                    <div className="card card--example" id="components-table-demo-head">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Filter and sorter</strong>
                         </h5>
                       </div>
@@ -2501,9 +2510,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-nested-table">
+                    <div className="card card--example" id="components-table-demo-nested-table">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Nested tables</strong>
                         </h5>
                       </div>
@@ -2628,9 +2637,12 @@ ReactDOM.render(<NestedTable />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-row-selection-and-operation">
+                    <div
+                      className="card card--example"
+                      id="components-table-demo-row-selection-and-operation"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Selection and operation</strong>
                         </h5>
                       </div>
@@ -2738,9 +2750,9 @@ ReactDOM.render(<App />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-table-demo-row-selection">
+                    <div className="card card--example" id="components-table-demo-row-selection">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">selection</strong>
                         </h5>
                       </div>

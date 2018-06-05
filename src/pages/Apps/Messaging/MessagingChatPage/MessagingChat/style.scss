@@ -4,6 +4,11 @@
   overflow-x: hidden;
   position: relative;
 
+  .card-header {
+    padding: .75rem 1.25rem !important;
+    border-bottom: 1px solid $gray-border !important;
+  }
+
   .avatar {
     border-width: 2px;
   }

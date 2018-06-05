@@ -40,24 +40,24 @@ class DatepickerItems extends React.Component {
           <div className="col-lg-12">
             <div className="card">
               <div className="card-header">
-                <h5 className="mb-0 mr-3 d-inline-block text-black">
+                <div className="utils__title">
                   <strong>DatePicker</strong>
                   <a
                     href="https://ant.design/components/date-picker/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-primary ml-2"
+                    className="btn btn-sm btn-primary ml-4"
                   >
                     Official Documentation <i className="icmn-link ml-1" />
                   </a>
-                </h5>
+                </div>
               </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-date-picker-demo-basic">
+                    <div className="card card--example" id="components-date-picker-demo-basic">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Basic</strong>
                         </h5>
                       </div>
@@ -111,9 +111,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-disabled-date">
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-disabled-date"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Disabled Date</strong>
                         </h5>
                       </div>
@@ -214,9 +217,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-extra-footer">
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-extra-footer"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Extra Footer</strong>
                         </h5>
                       </div>
@@ -264,9 +270,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-mode">
+                    <div className="card card--example" id="components-date-picker-demo-mode">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Controlled Panels</strong>
                         </h5>
                       </div>
@@ -368,9 +374,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-size">
+                    <div className="card card--example" id="components-date-picker-demo-size">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Three Sizes</strong>
                         </h5>
                       </div>
@@ -442,9 +448,9 @@ ReactDOM.render(<PickerSizesDemo />, mountNode);
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-time">
+                    <div className="card card--example" id="components-date-picker-demo-time">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Choose Time</strong>
                         </h5>
                       </div>
@@ -515,9 +521,12 @@ ReactDOM.render(
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-12">
-                    <div className="card" id="components-date-picker-demo-date-render">
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-date-render"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized Date Rendering</strong>
                         </h5>
                       </div>
@@ -589,9 +598,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-disabled">
+                    <div className="card card--example" id="components-date-picker-demo-disabled">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Disabled</strong>
                         </h5>
                       </div>
@@ -644,9 +653,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-format">
+                    <div className="card card--example" id="components-date-picker-demo-format">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Date Format</strong>
                         </h5>
                       </div>
@@ -700,9 +709,12 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-presetted-ranges">
+                    <div
+                      className="card card--example"
+                      id="components-date-picker-demo-presetted-ranges"
+                    >
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Presetted Ranges</strong>
                         </h5>
                       </div>
@@ -763,9 +775,9 @@ ReactDOM.render(
                         </Collapse>
                       </div>
                     </div>
-                    <div className="card" id="components-date-picker-demo-start-end">
+                    <div className="card card--example" id="components-date-picker-demo-start-end">
                       <div className="card-header">
-                        <h5 className="mb-0 mr-3 d-inline-block text-black">
+                        <h5 className="text-black">
                           <strong className="text-capitalize">Customized Range Picker</strong>
                         </h5>
                       </div>

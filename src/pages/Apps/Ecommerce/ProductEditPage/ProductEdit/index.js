@@ -39,9 +39,9 @@ class ProductEdit extends React.Component {
     return (
       <div className="card">
         <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
+          <div className="utils__title">
             <strong>Product Edit</strong>
-          </h5>
+          </div>
         </div>
         <div className="card-body">
           <h4 className="text-black mb-3">
@@ -132,7 +132,8 @@ class ProductEdit extends React.Component {
                           placeholder="Select a color"
                           optionFilterProp="children"
                           filterOption={(input, option) =>
-                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                          }
                         >
                           <Option value="blue">Blue</Option>
                           <Option value="red">Red</Option>
@@ -150,7 +151,8 @@ class ProductEdit extends React.Component {
                           placeholder="Select a size"
                           optionFilterProp="children"
                           filterOption={(input, option) =>
-                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                          }
                         >
                           <Option value="s">Small</Option>
                           <Option value="m">Middle</Option>

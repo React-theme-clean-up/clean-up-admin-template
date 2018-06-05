@@ -5,18 +5,18 @@ import './style.scss'
 class PricingTable extends React.Component {
   render() {
     return (
-      <div>
+      <div className="mb-5">
         <div className="pricing-table">
           <PricingItem type="success" extended={true} />
-          <PricingItem btnType="primary" />
-          <PricingItem btnType="warning" />
+          <PricingItem />
+          <PricingItem />
           <PricingItem type="default" />
         </div>
         <div className="pricing-table">
           <PricingItem type="warning" />
-          <PricingItem btnType="primary" />
-          <PricingItem extended={true} btnType="primary" />
-          <PricingItem btnType="primary" />
+          <PricingItem />
+          <PricingItem extended={true} />
+          <PricingItem />
         </div>
       </div>
     )
