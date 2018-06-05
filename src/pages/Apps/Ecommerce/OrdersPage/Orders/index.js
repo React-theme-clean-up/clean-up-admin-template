@@ -194,9 +194,9 @@ class Orders extends React.Component {
     return (
       <div className="card">
         <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
+          <div className="utils__title">
             <strong>Orders</strong>
-          </h5>
+          </div>
         </div>
         <div className="card-body">
           <Table

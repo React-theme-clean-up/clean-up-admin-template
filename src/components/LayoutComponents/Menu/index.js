@@ -1,7 +1,6 @@
 import 'rc-drawer-menu/assets/index.css'
 import React from 'react'
 import DrawerMenu from 'rc-drawer-menu'
-import { Scrollbars } from 'react-custom-scrollbars'
 import { MenuSider } from './MenuSider'
 import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
@@ -40,9 +39,7 @@ class AppMenu extends React.Component {
         onIconClick={this.toggleOpen}
         width="256px"
       >
-        <Scrollbars style={{ height: '100vh' }}>
-          <MenuSider {...this.props} />
-        </Scrollbars>
+        <MenuSider {...this.props} />
       </DrawerMenu>
     ) : (
       <MenuSider {...this.props} />

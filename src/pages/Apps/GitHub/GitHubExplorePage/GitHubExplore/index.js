@@ -25,9 +25,9 @@ class GitHubExplore extends React.Component {
     return (
       <section className="card">
         <div className="card-header">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
+          <div className="utils__title">
             <strong>GitHub Explore</strong>
-          </h5>
+          </div>
         </div>
         <div className="card-body pt-3">
           <div className="explore">

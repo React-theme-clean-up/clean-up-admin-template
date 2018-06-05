@@ -36,11 +36,12 @@ class LoginForm extends React.Component {
           <strong>Please log in</strong>
         </h4>
         <br />
-        <p>
+        <div className="mb-2">
           Email: <code>admin@mediatec.org</code> or <code>agent@mediatec.org</code>
-          <br />
+        </div>
+        <div className="mb-4">
           Password: <code>123123</code>
-        </p>
+        </div>
         <Form layout="vertical" hideRequiredMark onSubmit={this.onSubmit(isSubmitForm)}>
           <FormItem label="Email">
             {form.getFieldDecorator('username', {
@@ -65,7 +66,7 @@ class LoginForm extends React.Component {
           <div className="form-actions">
             <Button
               type="primary"
-              className="width-100 mr-4"
+              className="width-150 mr-4"
               htmlType="submit"
               loading={isSubmitForm}
             >

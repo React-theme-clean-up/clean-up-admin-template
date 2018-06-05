@@ -1,6 +1,20 @@
 @import '../../../../resources/mixins';
 
 .menuSider {
+
+  .ant-layout-sider-children {
+    position: fixed;
+    height: 100%;
+    width: 256px;
+    transition: width .3s;
+  }
+
+  &.ant-layout-sider-collapsed {
+    .ant-layout-sider-children {
+      width: 80px;
+    }
+  }
+
   &__logo {
     height: 64px;
     background: $menuBg-darken;
@@ -16,7 +30,6 @@
 
   &__navigation {
     margin-top: rem(15) !important;
-    margin-bottom: rem(20) !important;
 
     > .ant-menu-item-divider {
       margin: 0 23px !important;

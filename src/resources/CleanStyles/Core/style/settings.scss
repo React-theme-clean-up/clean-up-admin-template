@@ -93,11 +93,15 @@ body.borderLess {
     padding-top: rem(20);
     padding-bottom: 0;
     border-bottom: 0;
-    text-transform: uppercase;
   }
 
   .card-footer {
     padding-top: 0;
     border-top: 0;
+  }
+
+  .utils__title {
+    text-transform: uppercase;
+    font-size: rem(16);
   }
 }

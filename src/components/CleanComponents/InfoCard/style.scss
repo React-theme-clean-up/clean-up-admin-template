@@ -8,7 +8,7 @@
   display: block;
   margin-bottom: rem(20);
 
-  &__digit {
+    &__digit {
     float: left;
     margin-right: rem(20);
     font-size: rem(42);
@@ -35,6 +35,10 @@
   &--default, &--primary, &--secondary,
   &--success, &--info, &--warning, &--danger {
     color: $white !important;
+  }
+
+  &--empty {
+    border: 1px solid $gray-border;
   }
 
   &--default {
@@ -105,7 +109,7 @@
       }
       &__title {
         font-weight: bold;
-        font-size: rem(14);
+        font-size: rem(13);
       }
       &__desc {
         padding-top: 0;

@@ -8,13 +8,13 @@
   border-bottom: 1px solid $gray-border;
 
   @media(max-width: $sm-min-width) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: rem(-20);
+    margin-right: rem(-20);
   }
 
   &__path {
     font-size: rem(18);
-    color: $black-lighten-more;
+    color: $black;
   }
 
   &__arrow {

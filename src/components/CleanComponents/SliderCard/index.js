@@ -3,33 +3,14 @@ import { Carousel } from 'antd'
 import './style.scss'
 
 class SliderCard extends React.Component {
-  state = {
+  static defaultProps = {
     inverse: false,
   }
 
-  getParams = () => {
-    let params = this.props
-
-    let { inverse } = this.state
-
-    if (params.inverse !== undefined) {
-      inverse = params.inverse
-    }
-
-    this.setState({
-      inverse: inverse,
-    })
-  }
-
-  componentWillMount() {
-    this.getParams()
-  }
-
   render() {
-    let { inverse } = this.state
-
+    const { inverse } = this.props
     return (
-      <div className={`sliderCard ${inverse === true ? 'sliderCard--inverse' : ''}`}>
+      <div className={`sliderCard ${inverse ? 'sliderCard--inverse' : ''}`}>
         <Carousel autoplay>
           <div className="sliderCard__item">
             <a href="javascript: void(0);" className="sliderCard__body">

@@ -5,37 +5,18 @@ import { user } from './data.json'
 import Avatar from 'components/CleanComponents/Avatar'
 
 class UserCard extends React.Component {
-  state = {
+  static defaultProps = {
     type: '',
   }
 
-  getParams = () => {
-    let params = this.props
-
-    let { type } = this.state
-
-    if (params.type !== undefined) {
-      type = params.type
-    }
-
-    this.setState({
-      type: type,
-    })
-  }
-
-  componentWillMount() {
-    this.getParams()
-  }
-
   render() {
-    let { type } = this.state
-
+    let { type } = this.props
     return (
       <div className={`userCard px-3 py-5 ${type.length > 0 ? 'userCard--typed bg-' + type : ''}`}>
         <button className="userCard__plusBtn">Add</button>
         <Avatar
           src={user.avatar}
-          border="true"
+          border={true}
           borderColor={`${type.length > 0 ? 'white' : ''}`}
           size="90"
         />

@@ -2,25 +2,14 @@ import React from 'react'
 import './style.scss'
 
 class Donut extends React.Component {
-  state = {
+  static defaultProps = {
     name: 'Donut',
     type: 'default',
     color: undefined,
   }
 
-  getParams = () => {
-    let params = this.props
-    this.setState({
-      ...params,
-    })
-  }
-
-  componentWillMount() {
-    this.getParams()
-  }
-
   render() {
-    const { name, color, type } = this.state
+    const { name, color, type } = this.props
 
     return (
       <span className="mr-2 nowrap">

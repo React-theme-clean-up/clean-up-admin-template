@@ -64,9 +64,9 @@ class ProductDetails extends React.Component {
       <div>
         <section className="card">
           <div className="card-header">
-            <h5 className="mb-0 mr-3 d-inline-block text-black">
+            <div className="utils__title">
               <strong>Product Details</strong>
-            </h5>
+            </div>
           </div>
           <div className="card-body">
             <div className="row">

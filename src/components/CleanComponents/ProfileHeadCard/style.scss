@@ -4,21 +4,12 @@
   border: 0px solid $white;
   background: $white;
   position: relative;
-  border-radius: .25rem;
-
-  @media (min-width: 1440px) {
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 1440px) {
-    margin-bottom: 1.25rem;
-  }
+  border-radius: 3px;
 
   &__head {
     height: rem(250);
-    background: $gray-lighten-more;
+    background: $gray-lighten-more center center;
     background-size: cover;
-    background-position: center center;
     border-radius: .25rem;
     line-height: 1.1;
     padding: rem(25) rem(30);

@@ -3,55 +3,16 @@ import './style.scss'
 import { stats, commerceStats } from './data.json'
 
 class InfoCard extends React.Component {
-  state = {
+  static defaultProps = {
     form: 'stats',
     icon: 'bullhorn',
     type: '',
-    className: 'infoCard',
     btnType: 'default',
   }
 
-  getParams = () => {
-    let params = this.props
-    let { form, icon, type, className, btnType } = this.state
-
-    if (params.form !== undefined) {
-      form = params.form
-    }
-
-    if (params.icon !== undefined) {
-      icon = params.icon
-    }
-
-    if (params.type !== undefined) {
-      className = className + ' infoCard--' + params.type
-      type = params.type
-    } else {
-      className = className + '  infoCard--' + type
-    }
-
-    if (params.btnType !== undefined) {
-      btnType = params.btnType
-    } else {
-      btnType = type
-    }
-
-    this.setState({
-      form: form,
-      icon: icon,
-      type: type,
-      className: className,
-      btnType: btnType,
-    })
-  }
-
-  componentWillMount() {
-    this.getParams()
-  }
-
   render() {
-    const { form, icon, className, btnType } = this.state
-
+    const { form, icon, btnType, type } = this.props
+    const className = `infoCard ${type.length > 0 ? 'infoCard--' + type : ''}`
     return (
       <div>
         {form === 'stats' && (

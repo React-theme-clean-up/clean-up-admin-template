@@ -4,6 +4,7 @@ import { Menu, Switch, Layout } from 'antd'
 import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
+import { Scrollbars } from 'react-custom-scrollbars'
 import 'rc-drawer-menu/assets/index.css'
 import './style.scss'
 
@@ -24,10 +25,27 @@ const menuData = [
     title: 'Dashboard Alpha',
     key: 'dashboardAlpha',
     url: '/dashboard/alpha',
-    icon: 'icomn icmn-home',
+    icon: 'icmn icmn-home',
   },
   {
-    title: 'Ant Components',
+    title: 'Dashboard Beta',
+    key: 'dashboardBeta',
+    url: '/dashboard/beta',
+    icon: 'icmn icmn-home',
+  },
+  /*
+  {
+    title: 'Dashboard Crypto',
+    key: 'dashboardCrypto',
+    url: '/dashboard/crypto',
+    icon: 'icmn icmn-home',
+  },
+  */
+  {
+    divider: true,
+  },
+  {
+    title: 'AntDesign Components',
     key: 'antComponents',
     icon: 'anticon anticon-ant-design',
     children: [
@@ -314,13 +332,27 @@ const menuData = [
       },
     ],
   },
+  /*
+  {
+    title: 'Reactstrap Components',
+    key: 'reactstrapComponents',
+    icon: 'icmn icmn-book',
+    children: [
+      {
+        key: 'reactstrapButton',
+        title: 'Button',
+        url: '/reactstrap/button',
+      },
+    ]
+  },
+  */
   {
     divider: true,
   },
   {
     title: 'Default Pages',
     key: 'defaultPages',
-    icon: 'icomn icmn-file-text',
+    icon: 'icmn icmn-file-text',
     children: [
       {
         key: 'loginAlpha',
@@ -541,13 +573,13 @@ const menuData = [
     ],
   },
   {
-    title: 'Bootstrap',
+    title: 'Bootstrap Grid',
     key: 'bootstrap',
     url: '/layout/bootstrap',
     icon: 'icmn icmn-html-five',
   },
   {
-    title: 'Card',
+    title: 'Bootstrap Card',
     key: 'card',
     url: '/layout/card',
     icon: 'icmn icmn-stack',
@@ -771,7 +803,7 @@ class MenuSider extends React.Component {
     }
     const params = isMobile ? paramsMobile : paramsDesktop
     return (
-      <Sider {...params}>
+      <Sider {...params} className="menuSider">
         <div className="menuSider__logo">
           {params.collapsed ? (
             <div className="menuSider__logoContainer menuSider__logoContainer--collapsed">
@@ -783,23 +815,25 @@ class MenuSider extends React.Component {
             </div>
           )}
         </div>
-        <Menu
-          theme={themeLight ? 'light' : 'dark'}
-          onClick={this.handleClick}
-          selectedKeys={[selectedKeys]}
-          openKeys={openKeys}
-          onOpenChange={this.onOpenChange}
-          mode="inline"
-          className="menuSider__navigation"
-        >
-          <Menu.Item key={'settings'}>
-            <span className="menuSider__item-title">Theme Settings</span>
-            <span
-              className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'}
-            />
-          </Menu.Item>
-          {menuItems}
-        </Menu>
+        <Scrollbars style={{ height: isMobile ? 'calc(100vh - 64px)' : 'calc(100vh - 112px)' }}>
+          <Menu
+            theme={themeLight ? 'light' : 'dark'}
+            onClick={this.handleClick}
+            selectedKeys={[selectedKeys]}
+            openKeys={openKeys}
+            onOpenChange={this.onOpenChange}
+            mode="inline"
+            className="menuSider__navigation"
+          >
+            <Menu.Item key={'settings'}>
+              <span className="menuSider__item-title">Theme Settings</span>
+              <span
+                className={'icmn icmn-cog menuSider__icon utils__spin-delayed--pseudo-selector'}
+              />
+            </Menu.Item>
+            {menuItems}
+          </Menu>
+        </Scrollbars>
       </Sider>
     )
   }

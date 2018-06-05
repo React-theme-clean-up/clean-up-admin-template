@@ -99,7 +99,7 @@ class LoginBeta extends React.Component {
                   <h4 className="login__block__sidebar__title text-white">
                     <strong>Agile Dev Meetup</strong>
                     <br />
-                    <span>2017</span>
+                    <span>August 2018</span>
                   </h4>
                   <div className="login__block__sidebar__item">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem

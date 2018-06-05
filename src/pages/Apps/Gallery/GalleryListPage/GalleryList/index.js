@@ -37,15 +37,15 @@ class GalleryList extends React.Component {
     return (
       <div className="card">
         <div className="card-header clearfix">
-          <h5 className="mb-0 mr-3 d-inline-block text-black">
-            <strong>Photo Gallery</strong>
-          </h5>
           <div className="pull-right">
             <Upload {...props}>
               <Button type="primary">
                 <Icon type="upload" /> Click to Upload
               </Button>
             </Upload>
+          </div>
+          <div className="utils__title">
+            <strong>Photo Gallery</strong>
           </div>
         </div>
         <div className="card-body">
