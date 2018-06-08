@@ -13,7 +13,7 @@ class GitHubExplorePage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - GitHub Explore" />
+        <Helmet title="GitHub Explore" />
         <GitHubExplore />
       </Page>
     )

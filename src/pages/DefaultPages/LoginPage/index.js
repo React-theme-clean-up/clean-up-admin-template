@@ -8,7 +8,7 @@ class LoginPage extends React.Component {
     const { match, ...props } = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Login" />
+        <Helmet title="Login" />
         <Login match={match} />
       </Page>
     )

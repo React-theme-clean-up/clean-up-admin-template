@@ -13,7 +13,7 @@ class YouTubeFeedPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - YouTube Feed" />
+        <Helmet title="YouTube Feed" />
         <YouTubeFeed />
       </Page>
     )

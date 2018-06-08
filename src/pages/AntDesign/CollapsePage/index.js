@@ -13,7 +13,7 @@ class CollapsePage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Collapse" />
+        <Helmet title="Collapse" />
         <CollapseItems />
       </Page>
     )

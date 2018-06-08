@@ -13,7 +13,7 @@ class PopoverPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Popover" />
+        <Helmet title="Popover" />
         <PopoverItems />
       </Page>
     )

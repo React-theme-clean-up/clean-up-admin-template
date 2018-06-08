@@ -13,7 +13,7 @@ class IcomoonIconsPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Icomoon Icons" />
+        <Helmet title="Icomoon Icons" />
         <IcomoonIcons />
       </Page>
     )

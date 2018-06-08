@@ -13,7 +13,7 @@ class ProductsListPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Product List" />
+        <Helmet title="Product List" />
         <ProductsList />
       </Page>
     )

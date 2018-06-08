@@ -13,7 +13,7 @@ class DashboardPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Ecommerce Dashboard" />
+        <Helmet title="Ecommerce Dashboard" />
         <div className="card">
           <div className="card-body">
             <Dashboard />

@@ -13,7 +13,7 @@ class InputnumberPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Input Number" />
+        <Helmet title="Input Number" />
         <InputnumberItems />
       </Page>
     )

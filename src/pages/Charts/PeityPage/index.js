@@ -13,7 +13,7 @@ class PeityPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Peity" />
+        <Helmet title="Peity" />
         <PeityItems />
       </Page>
     )

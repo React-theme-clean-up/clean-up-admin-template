@@ -13,7 +13,7 @@ class TablePage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Table" />
+        <Helmet title="Table" />
         <TableItems />
       </Page>
     )

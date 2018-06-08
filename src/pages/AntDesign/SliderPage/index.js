@@ -13,7 +13,7 @@ class SliderPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Slider" />
+        <Helmet title="Slider" />
         <SliderItems />
       </Page>
     )

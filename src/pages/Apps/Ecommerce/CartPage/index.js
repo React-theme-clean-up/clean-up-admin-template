@@ -13,7 +13,7 @@ class CartPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Cart/Checkout" />
+        <Helmet title="Cart/Checkout" />
         <div className="card">
           <div className="card-body">
             <Cart />

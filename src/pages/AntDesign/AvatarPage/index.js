@@ -13,7 +13,7 @@ class AvatarPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Avatar" />
+        <Helmet title="Avatar" />
         <AvatarItems />
       </Page>
     )
