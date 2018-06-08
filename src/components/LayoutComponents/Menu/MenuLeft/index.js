@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
 import { Scrollbars } from 'react-custom-scrollbars'
-import { default as menuData } from './menuData';
+import { default as menuData } from './menuData'
 import 'rc-drawer-menu/assets/index.css'
 import './style.scss'
 
@@ -13,14 +13,14 @@ const { Sider } = Layout
 const SubMenu = Menu.SubMenu
 const Divider = Menu.Divider
 
-const mapStateToProps = ({app, routing}, props) => {
-  const { layoutState } = app;
+const mapStateToProps = ({ app, routing }, props) => {
+  const { layoutState } = app
   return {
     pathname: routing.location.pathname,
     collapsed: layoutState.menuCollapsed,
-    theme: (layoutState.themeLight) ? 'light' : 'dark',
+    theme: layoutState.themeLight ? 'light' : 'dark',
     settingsOpened: layoutState.settingsOpened,
-  };
+  }
 }
 
 @connect(mapStateToProps)
@@ -59,7 +59,7 @@ class MenuLeft extends React.Component {
   }
 
   getPath(data, id, parents = []) {
-    const { selectedKeys } = this.state;
+    const { selectedKeys } = this.state
     let items = reduce(
       data,
       (result, entry) => {
@@ -77,12 +77,12 @@ class MenuLeft extends React.Component {
       },
       [],
     )
-    return (items.length > 0) ? items : false
+    return items.length > 0 ? items : false
   }
 
   getActiveMenuItem = (props, items) => {
-    const { selectedKeys, pathname } = this.state;
-    let { collapsed } = props;
+    const { selectedKeys, pathname } = this.state
+    let { collapsed } = props
     let [activeMenuItem, ...path] = this.getPath(items, !selectedKeys ? pathname : selectedKeys)
 
     if (collapsed) {
@@ -97,7 +97,7 @@ class MenuLeft extends React.Component {
   }
 
   generateMenuPartitions(items) {
-    return items.map((menuItem) => {
+    return items.map(menuItem => {
       if (menuItem.children) {
         let subMenuTitle = (
           <span className="menuSider__title-wrap" key={menuItem.key}>
@@ -116,7 +116,7 @@ class MenuLeft extends React.Component {
   }
 
   generateMenuItem(item) {
-    const { key, title, url, icon, disabled } = item;
+    const { key, title, url, icon, disabled } = item
     const { dispatch } = this.props
     return item.divider ? (
       <Divider key={Math.random()} />
@@ -158,16 +158,19 @@ class MenuLeft extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    this.setState({
-      selectedKeys: '',
-      pathname: newProps.pathname,
-      theme: newProps.theme,
-      settingsOpened: newProps.settingsOpened,
-    }, () => {
-      if (!newProps.isMobile) {
-        this.getActiveMenuItem(newProps, menuData)
-      }
-    });
+    this.setState(
+      {
+        selectedKeys: '',
+        pathname: newProps.pathname,
+        theme: newProps.theme,
+        settingsOpened: newProps.settingsOpened,
+      },
+      () => {
+        if (!newProps.isMobile) {
+          this.getActiveMenuItem(newProps, menuData)
+        }
+      },
+    )
   }
 
   render() {

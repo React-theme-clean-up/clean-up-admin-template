@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
 import './style.scss'
 
-const mapStateToProps = ({app}, props) => ({
+const mapStateToProps = ({ app }, props) => ({
   open: app.layoutState.menuMobileOpened,
 })
 
@@ -22,7 +22,7 @@ class AppMenu extends React.Component {
     dispatch(setLayoutState({ menuMobileOpened: !open }))
   }
 
-  componentWillReceiveProps({open}) {
+  componentWillReceiveProps({ open }) {
     this.setState({
       open,
     })

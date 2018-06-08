@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import createHistory from 'history/createHashHistory'
 import thunk from 'redux-thunk'
