@@ -13,7 +13,7 @@ class MailTemplatesPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Mail Templates" />
+        <Helmet title="Mail Templates" />
         <MailTemplates />
       </Page>
     )

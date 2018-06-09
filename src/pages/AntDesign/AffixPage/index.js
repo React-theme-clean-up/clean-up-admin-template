@@ -13,7 +13,7 @@ class AffixPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Affix" />
+        <Helmet title="Affix" />
         <AffixItems />
       </Page>
     )

@@ -13,7 +13,7 @@ class NotificationPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Notification" />
+        <Helmet title="Notification" />
         <NotificationItems />
       </Page>
     )

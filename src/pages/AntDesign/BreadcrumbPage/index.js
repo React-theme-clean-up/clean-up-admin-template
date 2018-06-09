@@ -13,7 +13,7 @@ class BreadcrumbPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Breadcrumb" />
+        <Helmet title="Breadcrumb" />
         <BreadcrumbItems />
       </Page>
     )

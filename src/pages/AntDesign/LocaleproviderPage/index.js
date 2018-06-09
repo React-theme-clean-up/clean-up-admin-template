@@ -13,7 +13,7 @@ class LocaleproviderPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Localeprovider" />
+        <Helmet title="Localeprovider" />
         <LocaleproviderItems />
       </Page>
     )

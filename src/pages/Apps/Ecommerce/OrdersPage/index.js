@@ -13,7 +13,7 @@ class OrdersPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Orders" />
+        <Helmet title="Orders" />
         <Orders />
       </Page>
     )

@@ -13,7 +13,7 @@ class CheckboxPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Checkbox" />
+        <Helmet title="Checkbox" />
         <CheckboxItems />
       </Page>
     )

@@ -13,7 +13,7 @@ class C3Page extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - C3.js" />
+        <Helmet title="C3.js" />
         <C3Items />
       </Page>
     )

@@ -13,7 +13,7 @@ class ListPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - List" />
+        <Helmet title="List" />
         <ListItems />
       </Page>
     )

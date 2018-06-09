@@ -13,7 +13,7 @@ class BadgePage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Badge" />
+        <Helmet title="Badge" />
         <BadgeItems />
       </Page>
     )
