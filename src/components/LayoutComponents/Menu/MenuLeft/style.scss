@@ -1,6 +1,6 @@
 @import '../../../../resources/mixins';
 
-.menuSider {
+.menuLeft {
 
   .ant-layout-sider-children {
     position: fixed;
@@ -49,7 +49,7 @@
     }
 
     &.ant-menu-inline-collapsed {
-      .menuSider__item-title {
+      .menuLeft__item-title {
         display: none;
       }
 
@@ -60,14 +60,14 @@
         right: 14px;
       }
 
-      .menuSider__icon {
+      .menuLeft__icon {
         right: 30px;
       }
     }
 
     &.ant-menu-light {
 
-      .menuSider__icon {
+      .menuLeft__icon {
         opacity: .8;
       }
 
@@ -104,7 +104,7 @@
         > a {
           color: $gray-darken;
           &:hover {
-            .menuSider__icon {
+            .menuLeft__icon {
               color: $white !important;
             }
           }
@@ -116,20 +116,20 @@
         > a {
           color: $white;
 
-          .menuSider__icon {
+          .menuLeft__icon {
             color: $white !important;
           }
         }
       }
 
       .ant-menu-submenu:hover, .ant-menu-submenu-selected, .ant-menu-submenu-open {
-        .menuSider__icon {
+        .menuLeft__icon {
           color: $white !important;
         }
       }
 
       .ant-menu-submenu-active {
-        .menuSider__icon {
+        .menuLeft__icon {
           color: $blue !important;
         }
       }
@@ -161,7 +161,7 @@
 
 }
 
-.ant-menu-inline-collapsed-tooltip .menuSider__icon {
+.ant-menu-inline-collapsed-tooltip .menuLeft__icon {
   display: none;
 }
 

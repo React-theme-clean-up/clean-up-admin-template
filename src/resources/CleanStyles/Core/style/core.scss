@@ -87,8 +87,14 @@ button, input, select, textarea {
   &__content {
     padding: rem(30);
 
-    @media (max-width: $sm-max-width) {
+    @media (max-width: $md-max-width) {
       padding: rem(30) rem(20);
+      overflow-x: hidden;
+    }
+
+
+    @media (max-width: $sm-max-width) {
+      padding: rem(30) rem(10);
       overflow-x: hidden;
     }
   }

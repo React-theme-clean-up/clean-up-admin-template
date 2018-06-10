@@ -25,6 +25,9 @@ class LayoutState extends React.PureComponent {
       JSON.stringify(mergedParams),
       (key, value) => (value === 'true' ? true : value === 'false' ? false : value),
     )
+
+    console.log(booleanMergedParams)
+
     dispatch(setLayoutState({ ...booleanMergedParams }))
   }
 
@@ -32,7 +35,7 @@ class LayoutState extends React.PureComponent {
     this.updateBodyClass(newProps.layoutState)
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.bootstrapLayoutSettings()
   }
 
