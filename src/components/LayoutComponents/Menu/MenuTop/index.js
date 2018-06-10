@@ -1,15 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Menu, Layout } from 'antd'
+import { Menu } from 'antd'
 import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
-import { Scrollbars } from 'react-custom-scrollbars'
 import { default as menuData } from './menuData'
 import 'rc-drawer-menu/assets/index.css'
 import './style.scss'
 
-const { Sider } = Layout
 const SubMenu = Menu.SubMenu
 const Divider = Menu.Divider
 
@@ -49,12 +47,13 @@ class MenuTop extends React.Component {
     // set current selected keys
     this.setState({
       selectedKeys: e.key,
+      openKeys: e.keyPath,
     })
   }
 
   onOpenChange = openKeys => {
     this.setState({
-      openKeys: openKeys,
+      openKeys,
     })
   }
 
@@ -83,15 +82,10 @@ class MenuTop extends React.Component {
   getActiveMenuItem = (props, items) => {
     const { selectedKeys, pathname } = this.state
     let { collapsed } = props
-    let [activeMenuItem, ...path] = this.getPath(items, !selectedKeys ? pathname : selectedKeys)
-
-    if (collapsed) {
-      path = ['']
-    }
+    let [activeMenuItem] = this.getPath(items, !selectedKeys ? pathname : selectedKeys)
 
     this.setState({
       selectedKeys: activeMenuItem ? activeMenuItem.key : '',
-      openKeys: activeMenuItem ? path.map(entry => entry.key) : [],
       collapsed,
     })
   }
@@ -144,14 +138,13 @@ class MenuTop extends React.Component {
     )
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getActiveMenuItem(this.props, menuData)
   }
 
   componentWillReceiveProps(newProps) {
     this.setState(
       {
-        selectedKeys: '',
         pathname: newProps.pathname,
         theme: newProps.theme,
         settingsOpened: newProps.settingsOpened,
