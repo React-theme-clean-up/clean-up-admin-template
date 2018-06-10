@@ -46,11 +46,10 @@ class AppMenu extends React.Component {
       >
         <MenuLeft {...this.props} />
       </DrawerMenu>
+    ) : isMenuTop ? (
+      <MenuTop {...this.props} />
     ) : (
-      isMenuTop ?
-        <MenuTop {...this.props} />
-        :
-        <MenuLeft {...this.props} />
+      <MenuLeft {...this.props} />
     )
   }
 }

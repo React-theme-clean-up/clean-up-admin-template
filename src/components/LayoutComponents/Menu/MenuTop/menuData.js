@@ -27,7 +27,7 @@ export default [
           url: '/dashboard/crypto',
         },
         */
-      ]
+    ],
   },
   {
     title: 'AntDesign',
@@ -437,152 +437,152 @@ export default [
           },
         ],
       },
-    ]
+    ],
   },
   {
     title: 'Pages&Blocks',
     key: 'pagesBlocks',
     icon: 'icmn icmn-stack',
     children: [
-  {
-    title: 'Default Pages',
-    key: 'defaultPages',
-    children: [
       {
-        key: 'loginAlpha',
-        title: 'Login Alpha',
-        url: '/pages/login-alpha',
-      },
-      {
-        key: 'loginBeta',
-        title: 'Login Beta',
-        url: '/pages/login-beta',
-      },
-      {
-        key: 'register',
-        title: 'Register',
-        url: '/pages/register',
-      },
-      {
-        key: 'lockscreen',
-        title: 'Lockscreen',
-        url: '/pages/lockscreen',
-      },
-      {
-        key: 'pricingTable',
-        title: 'Pricing Table',
-        url: '/pages/pricing-table',
-      },
-      {
-        key: 'invoice',
-        title: 'Invoice',
-        url: '/pages/invoice',
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    key: 'charts',
-    children: [
-      {
-        title: 'Chartist',
-        key: 'chartist',
-        url: '/charts/chartist',
-      },
-      {
-        title: 'Chart',
-        key: 'chart',
-        url: '/charts/chart',
-      },
-      {
-        title: 'Peity',
-        key: 'peity',
-        url: '/charts/peity',
-      },
-      {
-        title: 'C3',
-        key: 'c3',
-        url: '/charts/c3',
-      },
-    ],
-  },
-  {
-    title: 'Mail Templates',
-    key: 'mailTemplates',
-    url: '/layout/mail-templates',
-  },
-  {
-    title: 'Icons',
-    key: 'icons',
-    children: [
-      {
-        title: 'FontAwesome',
-        key: 'fontAwesome',
-        url: '/icons/fontawesome',
-      },
-      {
-        title: 'Linear',
-        key: 'linear',
-        url: '/icons/linear',
-      },
-      {
-        title: 'Icomoon',
-        key: 'icoMoon',
-        url: '/icons/icomoon',
-      },
-    ],
-  },
-  {
-    title: 'Bootstrap Grid',
-    key: 'bootstrap',
-    url: '/layout/bootstrap',
-  },
-  {
-    title: 'Bootstrap Card',
-    key: 'card',
-    url: '/layout/card',
-  },
-  {
-    title: 'Typography',
-    key: 'typography',
-    url: '/layout/typography',
-  },
-  {
-    title: 'Utilities',
-    key: 'utilities',
-    url: '/layout/utilities',
-  },
-  {
-    title: 'Nested Items',
-    key: 'nestedItem1',
-    disabled: true,
-    children: [
-      {
-        title: 'Nested Item 1-1',
-        key: 'nestedItem1-1',
+        title: 'Default Pages',
+        key: 'defaultPages',
         children: [
           {
-            title: 'Nested Item 1-1-1',
-            key: 'nestedItem1-1',
+            key: 'loginAlpha',
+            title: 'Login Alpha',
+            url: '/pages/login-alpha',
           },
           {
-            title: 'Nested Items 1-1-2',
-            key: 'nestedItem1-2',
-            disabled: true,
+            key: 'loginBeta',
+            title: 'Login Beta',
+            url: '/pages/login-beta',
+          },
+          {
+            key: 'register',
+            title: 'Register',
+            url: '/pages/register',
+          },
+          {
+            key: 'lockscreen',
+            title: 'Lockscreen',
+            url: '/pages/lockscreen',
+          },
+          {
+            key: 'pricingTable',
+            title: 'Pricing Table',
+            url: '/pages/pricing-table',
+          },
+          {
+            key: 'invoice',
+            title: 'Invoice',
+            url: '/pages/invoice',
           },
         ],
       },
       {
-        title: 'Nested Items 1-2',
-        key: 'nestedItem1-2',
+        title: 'Charts',
+        key: 'charts',
+        children: [
+          {
+            title: 'Chartist',
+            key: 'chartist',
+            url: '/charts/chartist',
+          },
+          {
+            title: 'Chart',
+            key: 'chart',
+            url: '/charts/chart',
+          },
+          {
+            title: 'Peity',
+            key: 'peity',
+            url: '/charts/peity',
+          },
+          {
+            title: 'C3',
+            key: 'c3',
+            url: '/charts/c3',
+          },
+        ],
+      },
+      {
+        title: 'Mail Templates',
+        key: 'mailTemplates',
+        url: '/layout/mail-templates',
+      },
+      {
+        title: 'Icons',
+        key: 'icons',
+        children: [
+          {
+            title: 'FontAwesome',
+            key: 'fontAwesome',
+            url: '/icons/fontawesome',
+          },
+          {
+            title: 'Linear',
+            key: 'linear',
+            url: '/icons/linear',
+          },
+          {
+            title: 'Icomoon',
+            key: 'icoMoon',
+            url: '/icons/icomoon',
+          },
+        ],
+      },
+      {
+        title: 'Bootstrap Grid',
+        key: 'bootstrap',
+        url: '/layout/bootstrap',
+      },
+      {
+        title: 'Bootstrap Card',
+        key: 'card',
+        url: '/layout/card',
+      },
+      {
+        title: 'Typography',
+        key: 'typography',
+        url: '/layout/typography',
+      },
+      {
+        title: 'Utilities',
+        key: 'utilities',
+        url: '/layout/utilities',
+      },
+      {
+        title: 'Nested Items',
+        key: 'nestedItem1',
+        disabled: true,
+        children: [
+          {
+            title: 'Nested Item 1-1',
+            key: 'nestedItem1-1',
+            children: [
+              {
+                title: 'Nested Item 1-1-1',
+                key: 'nestedItem1-1',
+              },
+              {
+                title: 'Nested Items 1-1-2',
+                key: 'nestedItem1-2',
+                disabled: true,
+              },
+            ],
+          },
+          {
+            title: 'Nested Items 1-2',
+            key: 'nestedItem1-2',
+          },
+        ],
+      },
+      {
+        title: 'Disabled Item',
+        key: 'disabledItem',
+        disabled: true,
       },
     ],
-  },
-  {
-    title: 'Disabled Item',
-    key: 'disabledItem',
-    disabled: true,
-  },
-      ]
   },
 ]

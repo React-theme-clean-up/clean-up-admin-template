@@ -127,8 +127,8 @@ class MenuTop extends React.Component {
           onClick={
             this.props.isMobile
               ? () => {
-                dispatch(setLayoutState({ menuCollapsed: false }))
-              }
+                  dispatch(setLayoutState({ menuCollapsed: false }))
+                }
               : undefined
           }
         >
@@ -185,9 +185,7 @@ class MenuTop extends React.Component {
         >
           <Menu.Item key={'settings'}>
             <span className="menuTop__item-title">Settings</span>
-            <span
-              className={'icmn icmn-cog menuTop__icon utils__spin-delayed--pseudo-selector'}
-            />
+            <span className={'icmn icmn-cog menuTop__icon utils__spin-delayed--pseudo-selector'} />
           </Menu.Item>
           {menuItems}
         </Menu>
