@@ -13,7 +13,7 @@ class BlogAddPostPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Add Blog Post" />
+        <Helmet title="Add Blog Post" />
         <BlogAddPost />
       </Page>
     )

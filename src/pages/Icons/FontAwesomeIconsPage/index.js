@@ -13,7 +13,7 @@ class FontAwesomeIconsPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - FontAwesome Icons" />
+        <Helmet title="FontAwesome Icons" />
         <FontAwesomeIcons />
       </Page>
     )

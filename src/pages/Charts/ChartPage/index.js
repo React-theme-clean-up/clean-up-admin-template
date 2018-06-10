@@ -13,7 +13,7 @@ class ChartistPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Chart.js" />
+        <Helmet title="Chart.js" />
         <ChartItems />
       </Page>
     )

@@ -13,7 +13,7 @@ class LoginAlphaPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Login Alpha" />
+        <Helmet title="Login Alpha" />
         <LoginAlpha />
       </Page>
     )

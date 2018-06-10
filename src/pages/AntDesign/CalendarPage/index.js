@@ -13,7 +13,7 @@ class CalendarPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Calendar" />
+        <Helmet title="Calendar" />
         <CalendarItems />
       </Page>
     )

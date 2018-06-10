@@ -13,7 +13,7 @@ class GridCardPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Card" />
+        <Helmet title="Card" />
         <GridCard />
       </Page>
     )

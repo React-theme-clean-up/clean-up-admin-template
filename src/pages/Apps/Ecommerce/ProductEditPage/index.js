@@ -13,7 +13,7 @@ class ProductEditPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Product Edit" />
+        <Helmet title="Product Edit" />
         <ProductEdit />
       </Page>
     )

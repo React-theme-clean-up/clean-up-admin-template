@@ -13,7 +13,7 @@ class MenuPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Menu" />
+        <Helmet title="Menu" />
         <MenuItems />
       </Page>
     )

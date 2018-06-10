@@ -13,7 +13,7 @@ class LinearIconsPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Linear Icons" />
+        <Helmet title="Linear Icons" />
         <LinearIcons />
       </Page>
     )

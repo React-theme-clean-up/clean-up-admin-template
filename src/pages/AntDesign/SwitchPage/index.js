@@ -13,7 +13,7 @@ class SwitchPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Switch" />
+        <Helmet title="Switch" />
         <SwitchItems />
       </Page>
     )

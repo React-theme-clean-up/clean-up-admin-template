@@ -13,7 +13,7 @@ class DashboardCryptoPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Dashboard Crypto" />
+        <Helmet title="Dashboard Crypto" />
         <DashboardCrypto />
       </Page>
     )

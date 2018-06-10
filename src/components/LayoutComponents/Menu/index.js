@@ -6,35 +6,36 @@ import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
 import './style.scss'
 
-const mapStateToProps = (state, props) => ({
-  layoutState: state.app.layoutState,
+const mapStateToProps = ({ app }, props) => ({
+  open: app.layoutState.menuMobileOpened,
 })
 
 @connect(mapStateToProps)
 class AppMenu extends React.Component {
   state = {
-    menuMobileOpened: this.props.layoutState.menuMobileOpened,
+    open: this.props.open,
   }
 
   toggleOpen = () => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({ menuMobileOpened: !this.state.menuMobileOpened }))
+    const { open } = this.state
+    dispatch(setLayoutState({ menuMobileOpened: !open }))
   }
 
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps({ open }) {
     this.setState({
-      menuMobileOpened: newProps.layoutState.menuMobileOpened,
+      open,
     })
   }
 
   render() {
     const { isMobile } = this.props
-    const { menuMobileOpened } = this.state
+    const { open } = this.state
     return isMobile ? (
       <DrawerMenu
         parent={null}
         level={null}
-        open={menuMobileOpened}
+        open={open}
         onMaskClick={this.toggleOpen}
         onIconClick={this.toggleOpen}
         width="256px"

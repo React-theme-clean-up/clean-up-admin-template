@@ -13,7 +13,7 @@ class DatepickerPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Date picker" />
+        <Helmet title="Date picker" />
         <DatepickerItems />
       </Page>
     )

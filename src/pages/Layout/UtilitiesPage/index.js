@@ -13,7 +13,7 @@ class UtilitiesPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Utilities" />
+        <Helmet title="Utilities" />
         <Utilities />
       </Page>
     )

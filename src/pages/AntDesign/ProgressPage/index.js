@@ -13,7 +13,7 @@ class ProgressPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Progress" />
+        <Helmet title="Progress" />
         <ProgressItems />
       </Page>
     )

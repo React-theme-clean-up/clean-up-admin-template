@@ -13,7 +13,7 @@ class TransferPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Transfer" />
+        <Helmet title="Transfer" />
         <TransferItems />
       </Page>
     )

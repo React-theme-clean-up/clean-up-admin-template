@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
+import { Helmet } from 'react-helmet'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import createHistory from 'history/createHashHistory'
 import thunk from 'redux-thunk'
-import { composeWithDevTools } from 'redux-devtools-extension'
 import 'es6-promise/auto'
 import 'setimmediate'
 import 'chartist-plugin-tooltip'
@@ -38,7 +39,10 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <LocaleProvider locale={enGB}>
-        <Layout />
+        <div>
+          <Helmet titleTemplate="Clean UI - %s" />
+          <Layout />
+        </div>
       </LocaleProvider>
     </ConnectedRouter>
   </Provider>,

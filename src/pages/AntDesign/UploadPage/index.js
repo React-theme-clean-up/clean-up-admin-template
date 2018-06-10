@@ -13,7 +13,7 @@ class UploadPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Upload" />
+        <Helmet title="Upload" />
         <UploadItems />
       </Page>
     )

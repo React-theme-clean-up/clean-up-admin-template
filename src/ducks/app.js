@@ -37,7 +37,6 @@ export const initAuth = roles => (dispatch, getState) => {
 
   const userRole = window.localStorage.getItem('app.Role')
   const state = getState()
-  let data = null
 
   const users = {
     administrator: {
