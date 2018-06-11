@@ -20,14 +20,12 @@ export default [
     url: '/dashboard/beta',
     icon: 'icmn icmn-home',
   },
-  /*
-    {
-      title: 'Dashboard Crypto',
-      key: 'dashboardCrypto',
-      url: '/dashboard/crypto',
-      icon: 'icmn icmn-home',
-    },
-    */
+  {
+    title: 'Dashboard Crypto',
+    key: 'dashboardCrypto',
+    url: '/dashboard/crypto',
+    icon: 'icmn icmn-home',
+  },
   {
     divider: true,
   },

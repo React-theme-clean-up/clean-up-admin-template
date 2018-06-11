@@ -20,13 +20,11 @@ export default [
         key: 'dashboardBeta',
         url: '/dashboard/beta',
       },
-      /*
-        {
-          title: 'Dashboard Crypto',
-          key: 'dashboardCrypto',
-          url: '/dashboard/crypto',
-        },
-        */
+      {
+        title: 'Dashboard Crypto',
+        key: 'dashboardCrypto',
+        url: '/dashboard/crypto',
+      },
     ],
   },
   {
@@ -440,7 +438,7 @@ export default [
     ],
   },
   {
-    title: 'Pages&Blocks',
+    title: 'Pages & Blocks',
     key: 'pagesBlocks',
     icon: 'icmn icmn-stack',
     children: [
