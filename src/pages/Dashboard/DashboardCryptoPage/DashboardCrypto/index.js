@@ -1,14 +1,9 @@
 import React from 'react'
 import TradeChart from './TradeChart'
-import { getData } from "./TradeChart/utils"
-import { Spin, Alert, Table, Select, Tag, Radio, Form, Input, Button } from "antd"
+import { getData } from './TradeChart/utils'
+import { Spin, Alert, Table, Select, Tag, Radio, Form, Input, Button } from 'antd'
 import './style.scss'
-import {
-  myOpenOrders,
-  marketHistory,
-  orderBookBuy,
-  orderBookSell,
-} from './data.json'
+import { myOpenOrders, marketHistory, orderBookBuy, orderBookSell } from './data.json'
 
 class DashboardCrypto extends React.Component {
   state = {
@@ -30,7 +25,7 @@ class DashboardCrypto extends React.Component {
     orderBook: {
       buy: orderBookBuy,
       sell: orderBookSell,
-    }
+    },
   }
 
   componentDidMount() {
@@ -77,14 +72,21 @@ class DashboardCrypto extends React.Component {
     }, 1500)
   }
 
-  toggleOrderType = (e) => {
+  toggleOrderType = e => {
     this.setState({
       orderType: e.target.value,
-    });
+    })
   }
 
   render() {
-    const { graphData, myOpenOrders, myOrderHistory, marketHistory, orderBook, orderType } = this.state
+    const {
+      graphData,
+      myOpenOrders,
+      myOrderHistory,
+      marketHistory,
+      orderBook,
+      orderType,
+    } = this.state
 
     const myOrderColumns = [
       {
@@ -101,13 +103,9 @@ class DashboardCrypto extends React.Component {
         title: 'Type',
         dataIndex: 'type',
         key: 'type',
-        render: (value) => {
-          return (
-            <span style={{color: value === 'SELL' ? '#f75535' : '#00a45b'}}>
-              {value}
-            </span>
-          )
-        }
+        render: value => {
+          return <span style={{ color: value === 'SELL' ? '#f75535' : '#00a45b' }}>{value}</span>
+        },
       },
       {
         title: 'Bid/Ask',
@@ -146,13 +144,9 @@ class DashboardCrypto extends React.Component {
         title: 'BUY/SELL',
         dataIndex: 'type',
         key: 'type',
-        render: (value) => {
-          return (
-            <span style={{color: value === 'SELL' ? '#f75535' : '#00a45b'}}>
-              {value}
-            </span>
-          )
-        }
+        render: value => {
+          return <span style={{ color: value === 'SELL' ? '#f75535' : '#00a45b' }}>{value}</span>
+        },
       },
       {
         title: 'Bid/Ask',
@@ -196,13 +190,9 @@ class DashboardCrypto extends React.Component {
         key: 'bid',
         width: 120,
         align: 'right',
-        render: (value) => {
-          return (
-            <span style={{color: '#00a45b'}}>
-              {value}
-            </span>
-          )
-        }
+        render: value => {
+          return <span style={{ color: '#00a45b' }}>{value}</span>
+        },
       },
       {
         title: '',
@@ -216,7 +206,7 @@ class DashboardCrypto extends React.Component {
               <strong>SELL</strong>
             </a>
           )
-        }
+        },
       },
     ]
 
@@ -229,23 +219,19 @@ class DashboardCrypto extends React.Component {
         render: () => {
           return (
             <a href="javascript: void(0);" className="utils__link--blue ml-2">
-               <strong>BUY</strong>
+              <strong>BUY</strong>
             </a>
           )
-        }
+        },
       },
       {
         title: 'ASK',
         dataIndex: 'ask',
         key: 'ask',
         width: 120,
-        render: (value) => {
-          return (
-            <span style={{color: '#f75535'}}>
-              {value}
-            </span>
-          )
-        }
+        render: value => {
+          return <span style={{ color: '#f75535' }}>{value}</span>
+        },
       },
       {
         title: 'Size',
@@ -270,34 +256,48 @@ class DashboardCrypto extends React.Component {
           <div className="utils__title utils__title--flat mb-3">
             <strong>Markets</strong>
           </div>
-          <Select showSearch size="large" defaultValue="btc" style={{width: '100%'}}>
+          <Select showSearch size="large" defaultValue="btc" style={{ width: '100%' }}>
             <Select.Option value="btc">
               BTC (Bitcoin)
-              <Tag color="blue" className="ml-3">11.7%</Tag>
+              <Tag color="blue" className="ml-3">
+                11.7%
+              </Tag>
             </Select.Option>
             <Select.Option value="snt">
               SNT (Status Network Token)
-              <Tag color="red" className="ml-3">-2.3%</Tag>
+              <Tag color="red" className="ml-3">
+                -2.3%
+              </Tag>
             </Select.Option>
             <Select.Option value="rads">
               RADS (Radium)
-              <Tag color="red" className="ml-3">-7.2%</Tag>
+              <Tag color="red" className="ml-3">
+                -7.2%
+              </Tag>
             </Select.Option>
             <Select.Option value="meme">
               MEME (Memetic)
-              <Tag color="red" className="ml-3">-11.7%</Tag>
+              <Tag color="red" className="ml-3">
+                -11.7%
+              </Tag>
             </Select.Option>
             <Select.Option value="xmr">
               XMR (Monero)
-              <Tag color="blue" className="ml-3">67.5%</Tag>
+              <Tag color="blue" className="ml-3">
+                67.5%
+              </Tag>
             </Select.Option>
             <Select.Option value="gld">
               GLD (GoldCoin)
-              <Tag color="red" className="ml-3">-22.9%</Tag>
+              <Tag color="red" className="ml-3">
+                -22.9%
+              </Tag>
             </Select.Option>
             <Select.Option value="neo">
               NEO (Neo)
-              <Tag color="red" className="ml-3">-12.3%</Tag>
+              <Tag color="red" className="ml-3">
+                -12.3%
+              </Tag>
             </Select.Option>
           </Select>
         </div>
@@ -307,99 +307,71 @@ class DashboardCrypto extends React.Component {
           </div>
           <a href="javascript: void(0);" className="crypto__listItem crypto__listItem--current">
             <span className="crypto__listPercents">
-              <span>
-                11.7%
-              </span>
+              <span>11.7%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                BTC
-              </span>
+              <span>BTC</span>
               97.20
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem crypto__listItem--negative">
             <span className="crypto__listPercents">
-              <span>
-                -2.3%
-              </span>
+              <span>-2.3%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                SNT
-              </span>
+              <span>SNT</span>
               44.90
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem">
             <span className="crypto__listPercents">
-              <span>
-                7.2%
-              </span>
+              <span>7.2%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                RADS
-              </span>
+              <span>RADS</span>
               32.78
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem crypto__listItem--negative">
             <span className="crypto__listPercents">
-              <span>
-                -11.7%
-              </span>
+              <span>-11.7%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                MEME
-              </span>
+              <span>MEME</span>
               12.25
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem">
             <span className="crypto__listPercents">
-              <span>
-                67.5%
-              </span>
+              <span>67.5%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                XMR
-              </span>
+              <span>XMR</span>
               8.26
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem crypto__listItem--negative">
             <span className="crypto__listPercents">
-              <span>
-                -22.9%
-              </span>
+              <span>-22.9%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                GLD
-              </span>
+              <span>GLD</span>
               5.20
             </span>
           </a>
           <a href="javascript: void(0);" className="crypto__listItem crypto__listItem--negative">
             <span className="crypto__listPercents">
-              <span>
-                -12.3%
-              </span>
+              <span>-12.3%</span>
               0.00016985
             </span>
             <span className="crypto__listCurrency">
-              <span>
-                NEO
-              </span>
+              <span>NEO</span>
               3.20
             </span>
           </a>
@@ -410,10 +382,8 @@ class DashboardCrypto extends React.Component {
           </div>
           <div className="card">
             <div className="card-body">
-              <div style={{height: 400}}>
-                {graphData !== null &&
-                  <TradeChart type="hybrid" data={graphData} />
-                }
+              <div style={{ height: 400 }}>
+                {graphData !== null && <TradeChart type="hybrid" data={graphData} />}
               </div>
             </div>
           </div>
@@ -430,7 +400,7 @@ class DashboardCrypto extends React.Component {
                       dataSource={orderBook.sell}
                       pagination={true}
                       size="small"
-                      scroll={{x: true}}
+                      scroll={{ x: true }}
                     />
                   </div>
                 </div>
@@ -441,46 +411,43 @@ class DashboardCrypto extends React.Component {
                         <Radio.Group
                           onChange={this.toggleOrderType}
                           value={orderType}
-                          style={{ width: '100%' }}>
-                          <Radio.Button value="buy" style={{ width: '50%', textAlign: 'center' }}>BUY</Radio.Button>
-                          <Radio.Button value="sell" style={{ width: '50%', textAlign: 'center' }}>SELL</Radio.Button>
+                          style={{ width: '100%' }}
+                        >
+                          <Radio.Button value="buy" style={{ width: '50%', textAlign: 'center' }}>
+                            BUY
+                          </Radio.Button>
+                          <Radio.Button value="sell" style={{ width: '50%', textAlign: 'center' }}>
+                            SELL
+                          </Radio.Button>
                         </Radio.Group>
                       </Form.Item>
-                      {orderType === 'buy' &&
+                      {orderType === 'buy' && (
                         <div>
-                          <span className="crypto__formLabel">
-                            ORDER TYPE
-                          </span>
+                          <span className="crypto__formLabel">ORDER TYPE</span>
                           <Form.Item>
                             <Select defaultValue="limit">
                               <Select.Option value="limit">Limit (Default)</Select.Option>
                               <Select.Option value="conditional">Conditional</Select.Option>
                             </Select>
                           </Form.Item>
-                          <span className="crypto__formLabel">
-                            QUANTITY (BTC)
-                          </span>
+                          <span className="crypto__formLabel">QUANTITY (BTC)</span>
                           <Form.Item>
                             <Input value="0.00000000" />
                           </Form.Item>
-                          <span className="crypto__formLabel">
-                            BID PRICE
-                          </span>
+                          <span className="crypto__formLabel">BID PRICE</span>
                           <Form.Item>
                             <Input value="0.00645198" />
                           </Form.Item>
-                          <span className="crypto__formLabel">
-                            TOTAL
-                          </span>
+                          <span className="crypto__formLabel">TOTAL</span>
                           <Form.Item>
                             <Input value="0.00000000" />
                           </Form.Item>
-                          <span className="crypto__formLabel">
-                            TIME IN FORCE
-                          </span>
+                          <span className="crypto__formLabel">TIME IN FORCE</span>
                           <Form.Item>
                             <Select defaultValue="good">
-                              <Select.Option value="good">Good 'Til Cancelled (Default)</Select.Option>
+                              <Select.Option value="good">
+                                Good 'Til Cancelled (Default)
+                              </Select.Option>
                               <Select.Option value="immediate">Immediate or Cancel</Select.Option>
                             </Select>
                           </Form.Item>
@@ -489,77 +456,71 @@ class DashboardCrypto extends React.Component {
                           </div>
                           <div className="my-3 text-center">
                             <div>
-                              <strong>
-                                Available Balance
-                              </strong>
+                              <strong>Available Balance</strong>
                             </div>
                             <div>12.92520000 BTC</div>
                             <div>1450.00 USD</div>
                             <div>
-                              <a href="javascript: void(0);" className="utils__link--blue utils__link--underlined">
+                              <a
+                                href="javascript: void(0);"
+                                className="utils__link--blue utils__link--underlined"
+                              >
                                 <strong>Max Buy</strong>
                               </a>
                             </div>
                           </div>
                         </div>
-                      }
-                      {orderType === 'sell' &&
-                      <div>
-                        <span className="crypto__formLabel">
-                          ORDER TYPE
-                        </span>
-                        <Form.Item>
-                          <Select defaultValue="limit">
-                            <Select.Option value="limit">Limit (Default)</Select.Option>
-                            <Select.Option value="conditional">Conditional</Select.Option>
-                          </Select>
-                        </Form.Item>
-                        <span className="crypto__formLabel">
-                          QUANTITY (BTC)
-                        </span>
-                        <Form.Item>
-                          <Input value="0.00000000" />
-                        </Form.Item>
-                        <span className="crypto__formLabel">
-                          ASK PRICE
-                        </span>
-                        <Form.Item>
-                          <Input value="0.00645198" />
-                        </Form.Item>
-                        <span className="crypto__formLabel">
-                          TOTAL
-                        </span>
-                        <Form.Item>
-                          <Input value="0.00000000" />
-                        </Form.Item>
-                        <span className="crypto__formLabel">
-                          TIME IN FORCE
-                        </span>
-                        <Form.Item>
-                          <Select defaultValue="good">
-                            <Select.Option value="good">Good 'Til Cancelled (Default)</Select.Option>
-                            <Select.Option value="immediate">Immediate or Cancel</Select.Option>
-                          </Select>
-                        </Form.Item>
-                        <div className="btn btn-danger" style={{ width: '100%' }}>
-                          <strong>SELL BTC</strong>
-                        </div>
-                        <div className="my-3 text-center">
-                          <div>
-                            <strong>
-                              Available Balance
-                            </strong>
+                      )}
+                      {orderType === 'sell' && (
+                        <div>
+                          <span className="crypto__formLabel">ORDER TYPE</span>
+                          <Form.Item>
+                            <Select defaultValue="limit">
+                              <Select.Option value="limit">Limit (Default)</Select.Option>
+                              <Select.Option value="conditional">Conditional</Select.Option>
+                            </Select>
+                          </Form.Item>
+                          <span className="crypto__formLabel">QUANTITY (BTC)</span>
+                          <Form.Item>
+                            <Input value="0.00000000" />
+                          </Form.Item>
+                          <span className="crypto__formLabel">ASK PRICE</span>
+                          <Form.Item>
+                            <Input value="0.00645198" />
+                          </Form.Item>
+                          <span className="crypto__formLabel">TOTAL</span>
+                          <Form.Item>
+                            <Input value="0.00000000" />
+                          </Form.Item>
+                          <span className="crypto__formLabel">TIME IN FORCE</span>
+                          <Form.Item>
+                            <Select defaultValue="good">
+                              <Select.Option value="good">
+                                Good 'Til Cancelled (Default)
+                              </Select.Option>
+                              <Select.Option value="immediate">Immediate or Cancel</Select.Option>
+                            </Select>
+                          </Form.Item>
+                          <div className="btn btn-danger" style={{ width: '100%' }}>
+                            <strong>SELL BTC</strong>
                           </div>
-                          <div>12.92520000 BTC</div>
-                          <div>1450.00 USD</div>
-                          <div>
-                            <a href="javascript: void(0);" className="utils__link--blue utils__link--underlined">
-                              <strong>Max SELL</strong>
-                            </a>
+                          <div className="my-3 text-center">
+                            <div>
+                              <strong>Available Balance</strong>
+                            </div>
+                            <div>12.92520000 BTC</div>
+                            <div>1450.00 USD</div>
+                            <div>
+                              <a
+                                href="javascript: void(0);"
+                                className="utils__link--blue utils__link--underlined"
+                              >
+                                <strong>Max SELL</strong>
+                              </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      }
+                      )}
                     </Form>
                   </div>
                 </div>
@@ -570,10 +531,10 @@ class DashboardCrypto extends React.Component {
                       dataSource={orderBook.buy}
                       pagination={true}
                       size="small"
-                      scroll={{x: true}}
+                      scroll={{ x: true }}
                     />
-                   </div>
-                 </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -588,7 +549,7 @@ class DashboardCrypto extends React.Component {
                   dataSource={marketHistory.data}
                   pagination={true}
                   size="small"
-                  scroll={{x: true}}
+                  scroll={{ x: true }}
                 />
               </div>
             </div>
@@ -599,7 +560,7 @@ class DashboardCrypto extends React.Component {
           <div className="card">
             <div className="card-body">
               <div>
-                {!myOpenOrders.loaded &&
+                {!myOpenOrders.loaded && (
                   <div onClick={this.handleMyOpenOrders}>
                     <Spin spinning={myOpenOrders.loading}>
                       <Alert
@@ -609,18 +570,18 @@ class DashboardCrypto extends React.Component {
                       />
                     </Spin>
                   </div>
-                }
-                {myOpenOrders.loaded &&
+                )}
+                {myOpenOrders.loaded && (
                   <div className="crypto__table text-nowrap">
                     <Table
                       columns={myOrderColumns}
                       dataSource={myOpenOrders.data}
                       pagination={true}
                       size="small"
-                      scroll={{x: true}}
+                      scroll={{ x: true }}
                     />
                   </div>
-                }
+                )}
               </div>
             </div>
           </div>
@@ -630,7 +591,7 @@ class DashboardCrypto extends React.Component {
           <div className="card">
             <div className="card-body">
               <div>
-                {!myOrderHistory.loaded &&
+                {!myOrderHistory.loaded && (
                   <div onClick={this.handleMyOrderHistory}>
                     <Spin spinning={myOrderHistory.loading}>
                       <Alert
@@ -640,18 +601,18 @@ class DashboardCrypto extends React.Component {
                       />
                     </Spin>
                   </div>
-                }
-                {myOrderHistory.loaded &&
+                )}
+                {myOrderHistory.loaded && (
                   <div className="crypto__table text-nowrap">
                     <Table
                       columns={myOrderColumns}
                       dataSource={myOpenOrders.data}
                       pagination={true}
                       size="small"
-                      scroll={{x: true}}
+                      scroll={{ x: true }}
                     />
                   </div>
-                }
+                )}
               </div>
             </div>
           </div>
