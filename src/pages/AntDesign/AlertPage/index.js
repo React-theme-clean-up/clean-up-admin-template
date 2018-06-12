@@ -13,7 +13,7 @@ class AlertPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Alert" />
+        <Helmet title="Alert" />
         <AlertItems />
       </Page>
     )

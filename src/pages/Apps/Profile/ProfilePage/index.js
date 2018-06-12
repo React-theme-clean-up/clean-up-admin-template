@@ -13,7 +13,7 @@ class ProfileAppPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Profile" />
+        <Helmet title="Profile" />
         <Profile />
       </Page>
     )

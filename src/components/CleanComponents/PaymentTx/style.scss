@@ -1,7 +1,7 @@
 @import '../../../resources/mixins';
 
 .paymentTx {
-  padding: rem(15) rem(20);
+  padding: rem(15) rem(25);
   position: relative;
   border-left: 4px solid $danger !important;
 
@@ -44,8 +44,8 @@
 
   &__footer {
     color: $text;
-    padding: rem(10) rem(20);
-    margin: rem(10) rem(-20) rem(-15);
+    padding: rem(10) rem(25);
+    margin: rem(10) rem(-25) rem(-15);
     font-style: italic;
     font-size: rem(13);
     background: $gray-lighten-more-more;

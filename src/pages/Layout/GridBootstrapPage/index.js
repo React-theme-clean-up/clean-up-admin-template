@@ -13,7 +13,7 @@ class GridBootstrapPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Grid" />
+        <Helmet title="Grid" />
         <GridBootstrap />
       </Page>
     )

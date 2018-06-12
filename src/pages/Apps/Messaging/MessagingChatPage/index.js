@@ -13,7 +13,7 @@ class MessagingAppPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Messaging App" />
+        <Helmet title="Messaging App" />
         <MessagingChat />
       </Page>
     )

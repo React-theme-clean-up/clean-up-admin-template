@@ -32,7 +32,7 @@ class LayoutState extends React.PureComponent {
     this.updateBodyClass(newProps.layoutState)
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.bootstrapLayoutSettings()
   }
 

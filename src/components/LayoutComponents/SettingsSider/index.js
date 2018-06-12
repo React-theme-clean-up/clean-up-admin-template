@@ -56,6 +56,11 @@ class SettingsSider extends React.Component {
     dispatch(setLayoutState({ borderLess: state }))
   }
 
+  setIsMenuTop = state => {
+    const { dispatch } = this.props
+    dispatch(setLayoutState({ isMenuTop: state }))
+  }
+
   render() {
     const { layoutState } = this.state
     return (
@@ -71,6 +76,10 @@ class SettingsSider extends React.Component {
             <div className="settingsSider__description">
               This component "SettingsSider" gives possibility to construct custom blocks with any
               widgets, components and elements inside, like this theme settings
+            </div>
+            <div className="settingsSider__item">
+              <Switch checked={layoutState.isMenuTop} onChange={this.setIsMenuTop} />
+              <span className="settingsSider__itemLabel">Menu Top (Horizontal)</span>
             </div>
             <div className="settingsSider__item">
               <Switch checked={layoutState.menuCollapsed} onChange={this.setMenuCollapsed} />

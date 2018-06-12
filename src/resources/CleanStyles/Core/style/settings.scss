@@ -21,6 +21,20 @@ body.fixedWidth {
       border-right: none !important;
     }
   }
+
+  @media (min-width: 1440px) {
+    &.isMenuTop {
+      .utils__content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .breadcrumbBar, .footer {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
 }
 
 body.squaredBorders {
@@ -77,6 +91,9 @@ body.themeLight {
 
   .ant-menu-item > a {
     color: $text;
+    &:hover {
+      color: $blue;
+    }
   }
 
   .drawer-content {

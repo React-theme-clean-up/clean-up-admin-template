@@ -13,7 +13,7 @@ class CarouselPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Carousel" />
+        <Helmet title="Carousel" />
         <CarouselItems />
       </Page>
     )

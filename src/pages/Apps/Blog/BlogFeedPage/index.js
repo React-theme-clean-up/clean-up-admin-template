@@ -13,7 +13,7 @@ class BlogFeedPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Blog Feed" />
+        <Helmet title="Blog Feed" />
         <BlogFeed />
       </Page>
     )

@@ -1,7 +1,7 @@
 @import '../../../resources/mixins';
 
 .paymentAccount {
-  padding: rem(30) rem(20);
+  padding: rem(30) rem(30);
   position: relative;
   transition: box-shadow .1s ease-in-out;
 
@@ -12,7 +12,7 @@
   &__icon {
     position: absolute;
     top: rem(25);
-    right: rem(20);
+    right: rem(30);
     i {
       font-size: rem(42);
       color: $gray-darken;

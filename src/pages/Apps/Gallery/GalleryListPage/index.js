@@ -13,7 +13,7 @@ class GalleryAppPage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Gallery" />
+        <Helmet title="Gallery" />
         <GalleryList />
       </Page>
     )

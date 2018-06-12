@@ -1,48 +1,55 @@
 import 'rc-drawer-menu/assets/index.css'
 import React from 'react'
 import DrawerMenu from 'rc-drawer-menu'
-import { MenuSider } from './MenuSider'
+import { MenuLeft } from './MenuLeft'
+import { MenuTop } from './MenuTop'
 import { connect } from 'react-redux'
 import { setLayoutState } from 'ducks/app'
 import './style.scss'
 
-const mapStateToProps = (state, props) => ({
-  layoutState: state.app.layoutState,
+const mapStateToProps = ({ app }, props) => ({
+  open: app.layoutState.menuMobileOpened,
+  isMenuTop: app.layoutState.isMenuTop,
 })
 
 @connect(mapStateToProps)
 class AppMenu extends React.Component {
   state = {
-    menuMobileOpened: this.props.layoutState.menuMobileOpened,
+    open: this.props.open,
+    isMenuTop: this.props.isMenuTop,
   }
 
   toggleOpen = () => {
     const { dispatch } = this.props
-    dispatch(setLayoutState({ menuMobileOpened: !this.state.menuMobileOpened }))
+    const { open } = this.state
+    dispatch(setLayoutState({ menuMobileOpened: !open }))
   }
 
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps({ open, isMenuTop }) {
     this.setState({
-      menuMobileOpened: newProps.layoutState.menuMobileOpened,
+      open,
+      isMenuTop,
     })
   }
 
   render() {
     const { isMobile } = this.props
-    const { menuMobileOpened } = this.state
+    const { open, isMenuTop } = this.state
     return isMobile ? (
       <DrawerMenu
         parent={null}
         level={null}
-        open={menuMobileOpened}
+        open={open}
         onMaskClick={this.toggleOpen}
         onIconClick={this.toggleOpen}
         width="256px"
       >
-        <MenuSider {...this.props} />
+        <MenuLeft {...this.props} />
       </DrawerMenu>
+    ) : isMenuTop ? (
+      <MenuTop {...this.props} />
     ) : (
-      <MenuSider {...this.props} />
+      <MenuLeft {...this.props} />
     )
   }
 }

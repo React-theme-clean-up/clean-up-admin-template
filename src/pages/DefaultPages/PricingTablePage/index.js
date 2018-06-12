@@ -13,7 +13,7 @@ class PricingTablePage extends React.Component {
     const props = this.props
     return (
       <Page {...props}>
-        <Helmet title="Clean UI - Pricing Table" />
+        <Helmet title="Pricing Table" />
         <PricingTable />
       </Page>
     )
