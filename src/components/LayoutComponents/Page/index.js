@@ -79,10 +79,13 @@ class Page extends React.Component {
 
   componentDidMount() {
     if (source) {
-      // FIXME https://github.com/mzabriskie/axios/issues/1013
       source.cancel()
     }
+    // FIXME https://github.com/axios/axios/issues/978
     source = axios.CancelToken.source()
+    this.source.token.throwIfRequested = this.source.token.throwIfRequested;
+    source.token.promise.then = source.token.promise.then.bind(source.token.promise);
+    source.token.promise.catch = source.token.promise.catch.bind(source.token.promise);
     axios.defaults.cancelToken = source.token
     const { onMounted, roles, dispatch } = this.props
     if (roles.length > 0) {
