@@ -1,6 +1,7 @@
 const rewired = require('react-app-rewired')
 const rewireLess = require('react-app-rewire-less')
 const rewireEslint = require('react-app-rewire-eslint')
+const path = require('path')
 
 function rewire(config, env) {
   const cssLoader = rewired.getLoader(
@@ -17,6 +18,7 @@ function rewire(config, env) {
   config = rewired.injectBabelPlugin('transform-decorators-legacy', config)
   config = rewireLess(config, env)
   config = rewireEslint(config, env)
+  config.resolve.modules.push(path.resolve('./src'))
 
   return config
 }
