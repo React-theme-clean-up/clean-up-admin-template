@@ -40,7 +40,7 @@
     "peity-react": "^0.0.7",
     "popper.js": "^1.14.3",
     "prop-types": "^15.5.10",
-    "rc-drawer-menu": "^0.5.7",
+    "rc-drawer": "^1.4.4",
     "react": "^16.4.0",
     "react-avatar-editor": "^10.2.1",
     "react-c3js": "^0.1.20",

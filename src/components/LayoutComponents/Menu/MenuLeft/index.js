@@ -6,7 +6,6 @@ import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
 import { Scrollbars } from 'react-custom-scrollbars'
 import { default as menuData } from './menuData'
-import 'rc-drawer-menu/assets/index.css'
 import './style.scss'
 
 const { Sider } = Layout
