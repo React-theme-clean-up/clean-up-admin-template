@@ -5,7 +5,6 @@ import { Link, withRouter } from 'react-router-dom'
 import { reduce } from 'lodash'
 import { setLayoutState } from 'ducks/app'
 import { default as menuData } from './menuData'
-import 'rc-drawer-menu/assets/index.css'
 import './style.scss'
 
 const SubMenu = Menu.SubMenu

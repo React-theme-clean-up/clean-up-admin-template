@@ -1,6 +1,6 @@
-import 'rc-drawer-menu/assets/index.css'
+import 'rc-drawer/assets/index.css'
 import React from 'react'
-import DrawerMenu from 'rc-drawer-menu'
+import DrawerMenu from 'rc-drawer'
 import { MenuLeft } from './MenuLeft'
 import { MenuTop } from './MenuTop'
 import { connect } from 'react-redux'
@@ -37,12 +37,11 @@ class AppMenu extends React.Component {
     const { open, isMenuTop } = this.state
     return isMobile ? (
       <DrawerMenu
-        parent={null}
+        getContainer={null}
         level={null}
         open={open}
         onMaskClick={this.toggleOpen}
-        onIconClick={this.toggleOpen}
-        width="256px"
+        onHandleClick={this.toggleOpen}
       >
         <MenuLeft {...this.props} />
       </DrawerMenu>
