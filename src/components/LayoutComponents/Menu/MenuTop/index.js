@@ -79,7 +79,7 @@ class MenuTop extends React.Component {
   }
 
   getActiveMenuItem = (props, items) => {
-    const { selectedKeys, pathname } = this.state;
+    const { selectedKeys, pathname } = this.state
     let { collapsed } = props
     let [activeMenuItem, ...path] = this.getPath(items, !selectedKeys ? pathname : selectedKeys)
 
