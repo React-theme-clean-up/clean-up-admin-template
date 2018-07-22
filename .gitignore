@@ -22,3 +22,7 @@ yarn-lock.log*
 yarn.lock*
 /src/**/*.css
 package-lock.json*
+
+
+#idea folder which is the IDE setting files
+.idea

@@ -132,9 +132,8 @@ class Documentation extends React.Component {
 │  └─ README.md                     .. git readme file
 +
 +
-├─ bonus/                           .. free bonuses
-│  ├─ cleanui-admin-template/       .. html version
-│  └─ cleanui-website-template/     .. landing page
+├─ cleanui-admin-template-react/    .. starter kit
+├─ cleanui-website-template/        .. landing page
 +
 +
 └─ documentation.html               .. link to template documentation`}
